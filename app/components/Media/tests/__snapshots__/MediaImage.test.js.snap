@@ -1,0 +1,687 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MediaImage /> should adopt the "imageAlign" prop set to "bottom" 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <MediaImage__StyledImg
+    imageAlign="bottom"
+    imageAlt="test"
+    imageHeight="auto"
+    imageSource="/test.png"
+    imageWidth="100%"
+    reverse={false}
+/>,
+  "nodes": Array [
+    <MediaImage__StyledImg
+      imageAlign="bottom"
+      imageAlt="test"
+      imageHeight="auto"
+      imageSource="/test.png"
+      imageWidth="100%"
+      reverse={false}
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <MediaImage
+        imageAlign="bottom"
+        imageAlt="test"
+        imageHeight="auto"
+        imageSource="/test.png"
+        imageWidth="100%"
+        reverse={false}
+/>,
+      "_debugID": 12,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "imageAlign": "bottom",
+          "imageAlt": "test",
+          "imageHeight": "auto",
+          "imageSource": "/test.png",
+          "imageWidth": "100%",
+          "reverse": false,
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 3,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <MediaImage__StyledImg
+          imageAlign="bottom"
+          imageAlt="test"
+          imageHeight="auto"
+          imageSource="/test.png"
+          imageWidth="100%"
+          reverse={false}
+/>,
+        "_debugID": 13,
+        "_renderedOutput": <MediaImage__StyledImg
+          imageAlign="bottom"
+          imageAlt="test"
+          imageHeight="auto"
+          imageSource="/test.png"
+          imageWidth="100%"
+          reverse={false}
+/>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <MediaImage
+    imageAlign="bottom"
+    imageAlt="test"
+    imageHeight="auto"
+    imageSource="/test.png"
+    imageWidth="100%"
+    reverse={false}
+/>,
+}
+`;
+
+exports[`<MediaImage /> should adopt the "imageAlign" prop set to "middle" 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <MediaImage__StyledImg
+    imageAlign="middle"
+    imageAlt="test"
+    imageHeight="auto"
+    imageSource="/test.png"
+    imageWidth="100%"
+    reverse={false}
+/>,
+  "nodes": Array [
+    <MediaImage__StyledImg
+      imageAlign="middle"
+      imageAlt="test"
+      imageHeight="auto"
+      imageSource="/test.png"
+      imageWidth="100%"
+      reverse={false}
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <MediaImage
+        imageAlign="middle"
+        imageAlt="test"
+        imageHeight="auto"
+        imageSource="/test.png"
+        imageWidth="100%"
+        reverse={false}
+/>,
+      "_debugID": 10,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "imageAlign": "middle",
+          "imageAlt": "test",
+          "imageHeight": "auto",
+          "imageSource": "/test.png",
+          "imageWidth": "100%",
+          "reverse": false,
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 2,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <MediaImage__StyledImg
+          imageAlign="middle"
+          imageAlt="test"
+          imageHeight="auto"
+          imageSource="/test.png"
+          imageWidth="100%"
+          reverse={false}
+/>,
+        "_debugID": 11,
+        "_renderedOutput": <MediaImage__StyledImg
+          imageAlign="middle"
+          imageAlt="test"
+          imageHeight="auto"
+          imageSource="/test.png"
+          imageWidth="100%"
+          reverse={false}
+/>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <MediaImage
+    imageAlign="middle"
+    imageAlt="test"
+    imageHeight="auto"
+    imageSource="/test.png"
+    imageWidth="100%"
+    reverse={false}
+/>,
+}
+`;
+
+exports[`<MediaImage /> should adopt the "imageAlign" prop set to "top" 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <MediaImage__StyledImg
+    imageAlign="top"
+    imageAlt="test"
+    imageHeight="auto"
+    imageSource="/test.png"
+    imageWidth="100%"
+    reverse={false}
+/>,
+  "nodes": Array [
+    <MediaImage__StyledImg
+      imageAlign="top"
+      imageAlt="test"
+      imageHeight="auto"
+      imageSource="/test.png"
+      imageWidth="100%"
+      reverse={false}
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <MediaImage
+        imageAlign="top"
+        imageAlt="test"
+        imageHeight="auto"
+        imageSource="/test.png"
+        imageWidth="100%"
+        reverse={false}
+/>,
+      "_debugID": 8,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "imageAlign": "top",
+          "imageAlt": "test",
+          "imageHeight": "auto",
+          "imageSource": "/test.png",
+          "imageWidth": "100%",
+          "reverse": false,
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <MediaImage__StyledImg
+          imageAlign="top"
+          imageAlt="test"
+          imageHeight="auto"
+          imageSource="/test.png"
+          imageWidth="100%"
+          reverse={false}
+/>,
+        "_debugID": 9,
+        "_renderedOutput": <MediaImage__StyledImg
+          imageAlign="top"
+          imageAlt="test"
+          imageHeight="auto"
+          imageSource="/test.png"
+          imageWidth="100%"
+          reverse={false}
+/>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <MediaImage
+    imageAlign="top"
+    imageAlt="test"
+    imageHeight="auto"
+    imageSource="/test.png"
+    imageWidth="100%"
+    reverse={false}
+/>,
+}
+`;
+
+exports[`<MediaImage /> should adopt the "imageHeight" prop 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <MediaImage__StyledImg
+    imageAlign="top"
+    imageAlt="test"
+    imageHeight="10px"
+    imageSource="/test.png"
+    imageWidth="100%"
+    reverse={false}
+/>,
+  "nodes": Array [
+    <MediaImage__StyledImg
+      imageAlign="top"
+      imageAlt="test"
+      imageHeight="10px"
+      imageSource="/test.png"
+      imageWidth="100%"
+      reverse={false}
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <MediaImage
+        imageAlign="top"
+        imageAlt="test"
+        imageHeight="10px"
+        imageSource="/test.png"
+        imageWidth="100%"
+        reverse={false}
+/>,
+      "_debugID": 14,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "imageAlign": "top",
+          "imageAlt": "test",
+          "imageHeight": "10px",
+          "imageSource": "/test.png",
+          "imageWidth": "100%",
+          "reverse": false,
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 4,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <MediaImage__StyledImg
+          imageAlign="top"
+          imageAlt="test"
+          imageHeight="10px"
+          imageSource="/test.png"
+          imageWidth="100%"
+          reverse={false}
+/>,
+        "_debugID": 15,
+        "_renderedOutput": <MediaImage__StyledImg
+          imageAlign="top"
+          imageAlt="test"
+          imageHeight="10px"
+          imageSource="/test.png"
+          imageWidth="100%"
+          reverse={false}
+/>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <MediaImage
+    imageAlign="top"
+    imageAlt="test"
+    imageHeight="10px"
+    imageSource="/test.png"
+    imageWidth="100%"
+    reverse={false}
+/>,
+}
+`;
+
+exports[`<MediaImage /> should adopt the "imageWidth" prop 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <MediaImage__StyledImg
+    imageAlign="top"
+    imageAlt="test"
+    imageHeight="auto"
+    imageSource="/test.png"
+    imageWidth="10px"
+    reverse={false}
+/>,
+  "nodes": Array [
+    <MediaImage__StyledImg
+      imageAlign="top"
+      imageAlt="test"
+      imageHeight="auto"
+      imageSource="/test.png"
+      imageWidth="10px"
+      reverse={false}
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <MediaImage
+        imageAlign="top"
+        imageAlt="test"
+        imageHeight="auto"
+        imageSource="/test.png"
+        imageWidth="10px"
+        reverse={false}
+/>,
+      "_debugID": 16,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "imageAlign": "top",
+          "imageAlt": "test",
+          "imageHeight": "auto",
+          "imageSource": "/test.png",
+          "imageWidth": "10px",
+          "reverse": false,
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 5,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <MediaImage__StyledImg
+          imageAlign="top"
+          imageAlt="test"
+          imageHeight="auto"
+          imageSource="/test.png"
+          imageWidth="10px"
+          reverse={false}
+/>,
+        "_debugID": 17,
+        "_renderedOutput": <MediaImage__StyledImg
+          imageAlign="top"
+          imageAlt="test"
+          imageHeight="auto"
+          imageSource="/test.png"
+          imageWidth="10px"
+          reverse={false}
+/>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <MediaImage
+    imageAlign="top"
+    imageAlt="test"
+    imageHeight="auto"
+    imageSource="/test.png"
+    imageWidth="10px"
+    reverse={false}
+/>,
+}
+`;
+
+exports[`<MediaImage /> should adopt the "reverse" prop 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <MediaImage__StyledImg
+    imageAlign="top"
+    imageAlt="test"
+    imageHeight="auto"
+    imageSource="/test.png"
+    imageWidth="100%"
+    reverse={false}
+/>,
+  "nodes": Array [
+    <MediaImage__StyledImg
+      imageAlign="top"
+      imageAlt="test"
+      imageHeight="auto"
+      imageSource="/test.png"
+      imageWidth="100%"
+      reverse={false}
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 2,
+      "_context": Object {},
+      "_currentElement": <MediaImage
+        imageAlign="top"
+        imageAlt="test"
+        imageHeight="auto"
+        imageSource="/test.png"
+        imageWidth="100%"
+        reverse={false}
+/>,
+      "_debugID": 18,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": StatelessComponent {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "imageAlign": "top",
+          "imageAlt": "test",
+          "imageHeight": "auto",
+          "imageSource": "/test.png",
+          "imageWidth": "100%",
+          "reverse": false,
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 6,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <MediaImage__StyledImg
+          imageAlign="top"
+          imageAlt="test"
+          imageHeight="auto"
+          imageSource="/test.png"
+          imageWidth="100%"
+          reverse={false}
+/>,
+        "_debugID": 19,
+        "_renderedOutput": <MediaImage__StyledImg
+          imageAlign="top"
+          imageAlt="test"
+          imageHeight="auto"
+          imageSource="/test.png"
+          imageWidth="100%"
+          reverse={false}
+/>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <MediaImage
+    imageAlign="top"
+    imageAlt="test"
+    imageHeight="auto"
+    imageSource="/test.png"
+    imageWidth="100%"
+    reverse={false}
+/>,
+}
+`;
+
+exports[`<MediaImage /> should render and match the snapshot 1`] = `
+<img
+  alt="test"
+  className="MediaImage__StyledImg-eZgtXX eiwsFb"
+  src="/test.png"
+/>
+`;

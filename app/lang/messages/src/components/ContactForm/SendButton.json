@@ -1,0 +1,18 @@
+[
+  {
+    "id": "send_button.idle",
+    "defaultMessage": "Send"
+  },
+  {
+    "id": "send_button.sending",
+    "defaultMessage": "Sending..."
+  },
+  {
+    "id": "send_button.success",
+    "defaultMessage": "Sent! I'll respond as soon as possible."
+  },
+  {
+    "id": "send_button.error",
+    "defaultMessage": "Failed. Please try again"
+  }
+]

@@ -1,0 +1,53 @@
+import React from 'react';
+import ReactTooltip from 'react-tooltip';
+import { shallow, mount } from 'enzyme';
+import { IntlProvider } from 'react-intl';
+
+import SocialLinks from '../index';
+import Aside from '../Aside';
+import Header from '../Header';
+import StyledUL from '../StyledUL';
+import StyledLI from '../StyledLI';
+
+describe('SocialLinks', () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = mount(
+      <IntlProvider locale={'en'}>
+        <SocialLinks />
+      </IntlProvider>,
+    );
+  });
+
+  it('should have an `Aside` component', () => {
+    expect(wrapper.find(Aside)).toHaveLength(1);
+  });
+
+  it('should have an `Header` component', () => {
+    expect(wrapper.find(Header)).toHaveLength(1);
+  });
+
+  it('should have an `StyledUL` component', () => {
+    expect(wrapper.find(StyledUL)).toHaveLength(1);
+  });
+
+  it('should have four `StyledLI` components', () => {
+    expect(wrapper.find(StyledLI)).toHaveLength(4);
+  });
+
+  it('each `StyledLI` component should have a data-tip property', () => {
+    wrapper.find(StyledLI).forEach((node) => {
+      expect(node.prop('data-tip')).toBeTruthy();
+    });
+  });
+
+  it('should have a `ReactTooltip` component', () => {
+    expect(wrapper.find(ReactTooltip)).toHaveLength(1);
+  });
+
+  it('Should render and match the snapshot', () => {
+    wrapper = shallow(<SocialLinks />);
+    expect(wrapper).toMatchSnapshot();
+  });
+});

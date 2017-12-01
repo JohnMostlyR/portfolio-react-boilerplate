@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Media /> should adopt children 1`] = `
+<div
+  className="MediaWrapper__MediaWrapper-hidAJw dlgURj"
+  spacing="0"
+>
+  <img
+    alt="test"
+    className="MediaImage__StyledImg-eZgtXX eiwsFb"
+    spacing="0"
+    src="/tests.png"
+  />
+  <p
+    className="MediaBody__MediaBody-lcBNve xLawl"
+    spacing="0"
+  >
+    Child
+  </p>
+</div>
+`;
+
+exports[`<Media /> should render and match the snapshot 1`] = `
+<div
+  className="MediaWrapper__MediaWrapper-hidAJw dlgURj"
+  spacing="0"
+>
+  <img
+    alt="test"
+    className="MediaImage__StyledImg-eZgtXX eiwsFb"
+    spacing="0"
+    src="/tests.png"
+  />
+  <p
+    className="MediaBody__MediaBody-lcBNve xLawl"
+    spacing="0"
+  />
+</div>
+`;

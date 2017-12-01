@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledLI Should render and match the snapshot 1`] = `
+<ul
+  className="StyledUL__StyledUL-kEPlCt ejMHhz"
+/>
+`;

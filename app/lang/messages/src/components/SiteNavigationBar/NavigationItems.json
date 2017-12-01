@@ -1,0 +1,22 @@
+[
+  {
+    "id": "portfolio.nav.home",
+    "defaultMessage": "Intro"
+  },
+  {
+    "id": "portfolio.nav.about",
+    "defaultMessage": "About"
+  },
+  {
+    "id": "portfolio.nav.skills",
+    "defaultMessage": "Skills"
+  },
+  {
+    "id": "portfolio.nav.projects",
+    "defaultMessage": "Projects"
+  },
+  {
+    "id": "portfolio.nav.contact",
+    "defaultMessage": "Contact"
+  }
+]

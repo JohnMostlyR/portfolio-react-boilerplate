@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getContent Saga should call the contentLoadingError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getContent Saga should call the contentLoadingError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "https://cdn.contentful.com/spaces/1tymefars1bj/entries?access_token=9e9c6e46f1e52cfe1d30836842c1d98b131c9cb130902159f51b44bf6c41f09e&content_type=skills&select=fields&locale=en-US",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getContent Saga should dispatch the contentLoaded action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getContent Saga should dispatch the contentLoaded action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "https://cdn.contentful.com/spaces/1tymefars1bj/entries?access_token=9e9c6e46f1e52cfe1d30836842c1d98b131c9cb130902159f51b44bf6c41f09e&content_type=skills&select=fields&locale=en-US",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;

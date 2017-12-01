@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialLinks Should render and match the snapshot 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <Aside__Aside>
+    <Header__Header>
+        <FormattedMessage
+            defaultMessage="Also find me on:"
+            id="portfolio.social_links.header"
+            values={Object {}}
+        />
+    </Header__Header>
+    <StyledUL__StyledUL
+        innerRef={[Function]}
+    >
+        <StyledLI__StyledLI
+            data-tip="freeCodeCamp"
+        >
+            <ExternalLink
+                description="freeCodeCamp"
+                faIcon="free-code-camp"
+                href="https://www.freecodecamp.org/mensae"
+            />
+        </StyledLI__StyledLI>
+        <StyledLI__StyledLI
+            data-tip="GitHub"
+        >
+            <ExternalLink
+                description="GitHub"
+                faIcon="github"
+                href="https://github.com/Mensae"
+            />
+        </StyledLI__StyledLI>
+        <StyledLI__StyledLI
+            data-tip="LinkedIn"
+        >
+            <ExternalLink
+                description="LinkedIn"
+                faIcon="linkedin-square"
+                href="https://nl.linkedin.com/in/jmeester"
+            />
+        </StyledLI__StyledLI>
+        <StyledLI__StyledLI
+            data-tip="Codepen"
+        >
+            <ExternalLink
+                description="Codepen"
+                faIcon="codepen"
+                href="https://codepen.io/jmeester"
+            />
+        </StyledLI__StyledLI>
+    </StyledUL__StyledUL>
+    <ReactTooltip
+        insecure={true}
+        resizeHide={true}
+        wrapper="div"
+    />
+</Aside__Aside>,
+  "nodes": Array [
+    <Aside__Aside>
+      <Header__Header>
+            <FormattedMessage
+                  defaultMessage="Also find me on:"
+                  id="portfolio.social_links.header"
+                  values={Object {}}
+            />
+      </Header__Header>
+      <StyledUL__StyledUL
+            innerRef={[Function]}
+      >
+            <StyledLI__StyledLI
+                  data-tip="freeCodeCamp"
+            >
+                  <ExternalLink
+                        description="freeCodeCamp"
+                        faIcon="free-code-camp"
+                        href="https://www.freecodecamp.org/mensae"
+                  />
+            </StyledLI__StyledLI>
+            <StyledLI__StyledLI
+                  data-tip="GitHub"
+            >
+                  <ExternalLink
+                        description="GitHub"
+                        faIcon="github"
+                        href="https://github.com/Mensae"
+                  />
+            </StyledLI__StyledLI>
+            <StyledLI__StyledLI
+                  data-tip="LinkedIn"
+            >
+                  <ExternalLink
+                        description="LinkedIn"
+                        faIcon="linkedin-square"
+                        href="https://nl.linkedin.com/in/jmeester"
+                  />
+            </StyledLI__StyledLI>
+            <StyledLI__StyledLI
+                  data-tip="Codepen"
+            >
+                  <ExternalLink
+                        description="Codepen"
+                        faIcon="codepen"
+                        href="https://codepen.io/jmeester"
+                  />
+            </StyledLI__StyledLI>
+      </StyledUL__StyledUL>
+      <ReactTooltip
+            insecure={true}
+            resizeHide={true}
+            wrapper="div"
+      />
+</Aside__Aside>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <SocialLinks />,
+      "_debugID": 344,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": SocialLinks {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "playAnimation": [Function],
+        "props": Object {},
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <Aside__Aside>
+          <Header__Header>
+                    <FormattedMessage
+                              defaultMessage="Also find me on:"
+                              id="portfolio.social_links.header"
+                              values={Object {}}
+                    />
+          </Header__Header>
+          <StyledUL__StyledUL
+                    innerRef={[Function]}
+          >
+                    <StyledLI__StyledLI
+                              data-tip="freeCodeCamp"
+                    >
+                              <ExternalLink
+                                        description="freeCodeCamp"
+                                        faIcon="free-code-camp"
+                                        href="https://www.freecodecamp.org/mensae"
+                              />
+                    </StyledLI__StyledLI>
+                    <StyledLI__StyledLI
+                              data-tip="GitHub"
+                    >
+                              <ExternalLink
+                                        description="GitHub"
+                                        faIcon="github"
+                                        href="https://github.com/Mensae"
+                              />
+                    </StyledLI__StyledLI>
+                    <StyledLI__StyledLI
+                              data-tip="LinkedIn"
+                    >
+                              <ExternalLink
+                                        description="LinkedIn"
+                                        faIcon="linkedin-square"
+                                        href="https://nl.linkedin.com/in/jmeester"
+                              />
+                    </StyledLI__StyledLI>
+                    <StyledLI__StyledLI
+                              data-tip="Codepen"
+                    >
+                              <ExternalLink
+                                        description="Codepen"
+                                        faIcon="codepen"
+                                        href="https://codepen.io/jmeester"
+                              />
+                    </StyledLI__StyledLI>
+          </StyledUL__StyledUL>
+          <ReactTooltip
+                    insecure={true}
+                    resizeHide={true}
+                    wrapper="div"
+          />
+</Aside__Aside>,
+        "_debugID": 345,
+        "_renderedOutput": <Aside__Aside>
+          <Header__Header>
+                    <FormattedMessage
+                              defaultMessage="Also find me on:"
+                              id="portfolio.social_links.header"
+                              values={Object {}}
+                    />
+          </Header__Header>
+          <StyledUL__StyledUL
+                    innerRef={[Function]}
+          >
+                    <StyledLI__StyledLI
+                              data-tip="freeCodeCamp"
+                    >
+                              <ExternalLink
+                                        description="freeCodeCamp"
+                                        faIcon="free-code-camp"
+                                        href="https://www.freecodecamp.org/mensae"
+                              />
+                    </StyledLI__StyledLI>
+                    <StyledLI__StyledLI
+                              data-tip="GitHub"
+                    >
+                              <ExternalLink
+                                        description="GitHub"
+                                        faIcon="github"
+                                        href="https://github.com/Mensae"
+                              />
+                    </StyledLI__StyledLI>
+                    <StyledLI__StyledLI
+                              data-tip="LinkedIn"
+                    >
+                              <ExternalLink
+                                        description="LinkedIn"
+                                        faIcon="linkedin-square"
+                                        href="https://nl.linkedin.com/in/jmeester"
+                              />
+                    </StyledLI__StyledLI>
+                    <StyledLI__StyledLI
+                              data-tip="Codepen"
+                    >
+                              <ExternalLink
+                                        description="Codepen"
+                                        faIcon="codepen"
+                                        href="https://codepen.io/jmeester"
+                              />
+                    </StyledLI__StyledLI>
+          </StyledUL__StyledUL>
+          <ReactTooltip
+                    insecure={true}
+                    resizeHide={true}
+                    wrapper="div"
+          />
+</Aside__Aside>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <SocialLinks />,
+}
+`;

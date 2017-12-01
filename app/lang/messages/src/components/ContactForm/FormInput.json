@@ -1,0 +1,10 @@
+[
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.range",
+    "defaultMessage": "Should be between {minLength, number} and {maxLength, number} characters. Is now: {count, number}"
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.valid",
+    "defaultMessage": "Thanks!"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "portfolio.page.index.title",
+    "defaultMessage": "Introduction"
+  },
+  {
+    "id": "portfolio.page.index.header.greeting",
+    "defaultMessage": "WELCOME"
+  },
+  {
+    "id": "portfolio.page.index.header.intro",
+    "defaultMessage": "I am {name}"
+  },
+  {
+    "id": "portfolio.page.index.header.trade",
+    "defaultMessage": "FRONT-END DEVELOPER"
+  }
+]

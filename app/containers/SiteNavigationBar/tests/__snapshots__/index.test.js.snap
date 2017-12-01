@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SiteNavigationBar should render and match the snapshot 1`] = `
+<nav
+  className="SiteNavigation__SiteNavigation-kWNIHR bPQrYT"
+>
+  <h2
+    className="H2__H2-dhGylN hFunTg"
+  >
+    <span>
+      Site navigation
+    </span>
+  </h2>
+  <ul
+    className="StyledUL__StyledUL-kEPlCt cXXRcw"
+  >
+    <li
+      className="StyledLI__StyledLI-eahKvU goUeeF"
+    >
+      <a
+        className="SiteNavigationLink__SiteNavLink-gHsuvY iOYPYp"
+        data-isactive={true}
+        href="/"
+        onClick={[Function]}
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-home fa-fw SiteNavigationIcon__SiteNavigationIcon-cszPoD hfGaUp"
+        />
+        <span
+          className="Description__Description-xTRQy dsqbVX"
+        >
+          <span>
+            Intro
+          </span>
+        </span>
+      </a>
+    </li>
+    <li
+      className="StyledLI__StyledLI-eahKvU goUeeF"
+    >
+      <a
+        className="SiteNavigationLink__SiteNavLink-gHsuvY cPIMfr"
+        data-isactive={false}
+        href="/about"
+        onClick={[Function]}
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-address-card fa-fw SiteNavigationIcon__SiteNavigationIcon-cszPoD hfGaUp"
+        />
+        <span
+          className="Description__Description-xTRQy dsqbVX"
+        >
+          <span>
+            About
+          </span>
+        </span>
+      </a>
+    </li>
+    <li
+      className="StyledLI__StyledLI-eahKvU goUeeF"
+    >
+      <a
+        className="SiteNavigationLink__SiteNavLink-gHsuvY cPIMfr"
+        data-isactive={false}
+        href="/skills"
+        onClick={[Function]}
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-code fa-fw SiteNavigationIcon__SiteNavigationIcon-cszPoD hfGaUp"
+        />
+        <span
+          className="Description__Description-xTRQy dsqbVX"
+        >
+          <span>
+            Skills
+          </span>
+        </span>
+      </a>
+    </li>
+    <li
+      className="StyledLI__StyledLI-eahKvU goUeeF"
+    >
+      <a
+        className="SiteNavigationLink__SiteNavLink-gHsuvY cPIMfr"
+        data-isactive={false}
+        href="/projects"
+        onClick={[Function]}
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-list fa-fw SiteNavigationIcon__SiteNavigationIcon-cszPoD hfGaUp"
+        />
+        <span
+          className="Description__Description-xTRQy dsqbVX"
+        >
+          <span>
+            Projects
+          </span>
+        </span>
+      </a>
+    </li>
+    <li
+      className="StyledLI__StyledLI-eahKvU goUeeF"
+    >
+      <a
+        className="SiteNavigationLink__SiteNavLink-gHsuvY cPIMfr"
+        data-isactive={false}
+        href="/contact"
+        onClick={[Function]}
+      >
+        <span
+          aria-hidden={true}
+          className="fa fa-send fa-fw SiteNavigationIcon__SiteNavigationIcon-cszPoD hfGaUp"
+        />
+        <span
+          className="Description__Description-xTRQy dsqbVX"
+        >
+          <span>
+            Contact
+          </span>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

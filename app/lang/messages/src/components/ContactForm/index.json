@@ -1,0 +1,58 @@
+[
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.subject.text",
+    "defaultMessage": "Please provide a subject for your message."
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.subject.label",
+    "defaultMessage": "Subject"
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.subject.error",
+    "defaultMessage": "A subject is required."
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.your_message.text",
+    "defaultMessage": "Please add your message here."
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.your_message.label",
+    "defaultMessage": "Your message"
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.your_message.error",
+    "defaultMessage": "A message is required."
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.name.text",
+    "defaultMessage": "Please add your name here."
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.name.label",
+    "defaultMessage": "Your name"
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.name.placeholder",
+    "defaultMessage": "(e.g. John Doo)"
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.name.error",
+    "defaultMessage": "Your name is required."
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.email.text",
+    "defaultMessage": "Please add your email address here."
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.email.label",
+    "defaultMessage": "Your email address"
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.email.placeholder",
+    "defaultMessage": "(e.g. my@email.com)"
+  },
+  {
+    "id": "portfolio.page.contact.form_input.helper_text.email.error",
+    "defaultMessage": "Your email address is required."
+  }
+]

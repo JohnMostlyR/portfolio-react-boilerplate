@@ -1,0 +1,641 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomePage /> should render the page message 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <IntroPageArticle__IntroPageArticle>
+    <HelmetWrapper
+        encodeSpecialCharacters={true}
+    >
+        <title>
+            Intro
+        </title>
+        <meta
+            content="Intro pagina van Johan Meester zijn portfolio"
+            name="description"
+        />
+    </HelmetWrapper>
+    <LocaleToggleWidget__LocaleToggleWidget>
+        <Connect(LocaleToggle) />
+    </LocaleToggleWidget__LocaleToggleWidget>
+    <Styled(RowContainer)
+        tagName="div"
+    >
+        <Breakpoints
+            fluid={true}
+        >
+            <IntroHeader__IntroHeader>
+                <InvisibleH2__InvisibleH2>
+                    <FormattedMessage
+                        defaultMessage="Introduction"
+                        id="portfolio.page.index.title"
+                        values={Object {}}
+                    />
+                </InvisibleH2__InvisibleH2>
+                <SpeechBubble__SpeechBubble
+                    innerRef={[Function]}
+                >
+                    <svg
+                        height="100%"
+                        preserveAspectRatio="xMinYMid"
+                        viewBox="0 365.1 595.3 425.3"
+                        width="100%"
+                    >
+                        <g
+                            id="g1"
+                        >
+                            <path
+                                d="M-754.1,133.2v140.3l78.7,153.1h80.3L-754.1,133.2z"
+                                fill="#212120"
+                                id="p1"
+                            />
+                            <path
+                                d="M159,733.2 v0 H78.700002 78.7z"
+                                fill="#818180"
+                                id="p2"
+                            />
+                            <path
+                                d="M52.5,790.4 v0 h75.8 v0z"
+                                fill="#414140"
+                                id="p3"
+                            />
+                            <path
+                                d="M5.3,702.1 v0 h73.9 v0z"
+                                fill="#818180"
+                                id="p4"
+                            />
+                            <path
+                                d="M-31.8,309.6c0-4.4-3.6-8.1-8.1-8.1h-401.2l-145.1,270.6h546.3 c4.4,0,8.1-3.6,8.1-8.1V309.6L-31.8,309.6z"
+                                fill="#575756"
+                                id="p5"
+                                style={
+                                    Object {
+                                        "opacity": 0,
+                                      }
+                                }
+                            />
+                        </g>
+                        <path
+                            d="M172 440h387.2v141.4h-387z"
+                            fill="none"
+                        />
+                        <FormattedMessage
+                            defaultMessage="WELCOME"
+                            id="portfolio.page.index.header.greeting"
+                            values={Object {}}
+                        >
+                            [Function]
+                        </FormattedMessage>
+                        <FormattedMessage
+                            defaultMessage="WELCOME"
+                            id="portfolio.page.index.header.greeting"
+                            values={Object {}}
+                        >
+                            [Function]
+                        </FormattedMessage>
+                        <g
+                            id="g2"
+                            style={
+                                Object {
+                                    "opacity": 0,
+                                  }
+                            }
+                        >
+                            <FormattedMessage
+                                defaultMessage="I am {name}"
+                                id="portfolio.page.index.header.intro"
+                                values={
+                                    Object {
+                                        "name": "Johan Meester",
+                                      }
+                                }
+                            >
+                                [Function]
+                            </FormattedMessage>
+                            <defs>
+                                <mask
+                                    id="m1"
+                                >
+                                    <circle
+                                        cx="553"
+                                        cy="407"
+                                        fill="#fff"
+                                        r="32.5"
+                                    />
+                                </mask>
+                            </defs>
+                            <image
+                                height="65"
+                                mask="url('#m1')"
+                                preserveAspectRatio="none"
+                                width="65"
+                                x="520"
+                                xlinkHref="IMAGE_MOCK"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                y="374"
+                            />
+                        </g>
+                        <FormattedMessage
+                            defaultMessage="FRONT-END DEVELOPER"
+                            id="portfolio.page.index.header.trade"
+                            values={Object {}}
+                        >
+                            [Function]
+                        </FormattedMessage>
+                    </svg>
+                </SpeechBubble__SpeechBubble>
+            </IntroHeader__IntroHeader>
+        </Breakpoints>
+    </Styled(RowContainer)>
+</IntroPageArticle__IntroPageArticle>,
+  "nodes": Array [
+    <IntroPageArticle__IntroPageArticle>
+      <HelmetWrapper
+            encodeSpecialCharacters={true}
+      >
+            <title>
+                  Intro
+            </title>
+            <meta
+                  content="Intro pagina van Johan Meester zijn portfolio"
+                  name="description"
+            />
+      </HelmetWrapper>
+      <LocaleToggleWidget__LocaleToggleWidget>
+            <Connect(LocaleToggle) />
+      </LocaleToggleWidget__LocaleToggleWidget>
+      <Styled(RowContainer)
+            tagName="div"
+      >
+            <Breakpoints
+                  fluid={true}
+            >
+                  <IntroHeader__IntroHeader>
+                        <InvisibleH2__InvisibleH2>
+                              <FormattedMessage
+                                    defaultMessage="Introduction"
+                                    id="portfolio.page.index.title"
+                                    values={Object {}}
+                              />
+                        </InvisibleH2__InvisibleH2>
+                        <SpeechBubble__SpeechBubble
+                              innerRef={[Function]}
+                        >
+                              <svg
+                                    height="100%"
+                                    preserveAspectRatio="xMinYMid"
+                                    viewBox="0 365.1 595.3 425.3"
+                                    width="100%"
+                              >
+                                    <g
+                                          id="g1"
+                                    >
+                                          <path
+                                                d="M-754.1,133.2v140.3l78.7,153.1h80.3L-754.1,133.2z"
+                                                fill="#212120"
+                                                id="p1"
+                                          />
+                                          <path
+                                                d="M159,733.2 v0 H78.700002 78.7z"
+                                                fill="#818180"
+                                                id="p2"
+                                          />
+                                          <path
+                                                d="M52.5,790.4 v0 h75.8 v0z"
+                                                fill="#414140"
+                                                id="p3"
+                                          />
+                                          <path
+                                                d="M5.3,702.1 v0 h73.9 v0z"
+                                                fill="#818180"
+                                                id="p4"
+                                          />
+                                          <path
+                                                d="M-31.8,309.6c0-4.4-3.6-8.1-8.1-8.1h-401.2l-145.1,270.6h546.3 c4.4,0,8.1-3.6,8.1-8.1V309.6L-31.8,309.6z"
+                                                fill="#575756"
+                                                id="p5"
+                                                style={
+                                                      Object {
+                                                            "opacity": 0,
+                                                          }
+                                                }
+                                          />
+                                    </g>
+                                    <path
+                                          d="M172 440h387.2v141.4h-387z"
+                                          fill="none"
+                                    />
+                                    <FormattedMessage
+                                          defaultMessage="WELCOME"
+                                          id="portfolio.page.index.header.greeting"
+                                          values={Object {}}
+                                    >
+                                          [Function]
+                                    </FormattedMessage>
+                                    <FormattedMessage
+                                          defaultMessage="WELCOME"
+                                          id="portfolio.page.index.header.greeting"
+                                          values={Object {}}
+                                    >
+                                          [Function]
+                                    </FormattedMessage>
+                                    <g
+                                          id="g2"
+                                          style={
+                                                Object {
+                                                      "opacity": 0,
+                                                    }
+                                          }
+                                    >
+                                          <FormattedMessage
+                                                defaultMessage="I am {name}"
+                                                id="portfolio.page.index.header.intro"
+                                                values={
+                                                      Object {
+                                                            "name": "Johan Meester",
+                                                          }
+                                                }
+                                          >
+                                                [Function]
+                                          </FormattedMessage>
+                                          <defs>
+                                                <mask
+                                                      id="m1"
+                                                >
+                                                      <circle
+                                                            cx="553"
+                                                            cy="407"
+                                                            fill="#fff"
+                                                            r="32.5"
+                                                      />
+                                                </mask>
+                                          </defs>
+                                          <image
+                                                height="65"
+                                                mask="url('#m1')"
+                                                preserveAspectRatio="none"
+                                                width="65"
+                                                x="520"
+                                                xlinkHref="IMAGE_MOCK"
+                                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                                y="374"
+                                          />
+                                    </g>
+                                    <FormattedMessage
+                                          defaultMessage="FRONT-END DEVELOPER"
+                                          id="portfolio.page.index.header.trade"
+                                          values={Object {}}
+                                    >
+                                          [Function]
+                                    </FormattedMessage>
+                              </svg>
+                        </SpeechBubble__SpeechBubble>
+                  </IntroHeader__IntroHeader>
+            </Breakpoints>
+      </Styled(RowContainer)>
+</IntroPageArticle__IntroPageArticle>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <HomePage />,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": HomePage {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {},
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <IntroPageArticle__IntroPageArticle>
+          <HelmetWrapper
+                    encodeSpecialCharacters={true}
+          >
+                    <title>
+                              Intro
+                    </title>
+                    <meta
+                              content="Intro pagina van Johan Meester zijn portfolio"
+                              name="description"
+                    />
+          </HelmetWrapper>
+          <LocaleToggleWidget__LocaleToggleWidget>
+                    <Connect(LocaleToggle) />
+          </LocaleToggleWidget__LocaleToggleWidget>
+          <Styled(RowContainer)
+                    tagName="div"
+          >
+                    <Breakpoints
+                              fluid={true}
+                    >
+                              <IntroHeader__IntroHeader>
+                                        <InvisibleH2__InvisibleH2>
+                                                  <FormattedMessage
+                                                            defaultMessage="Introduction"
+                                                            id="portfolio.page.index.title"
+                                                            values={Object {}}
+                                                  />
+                                        </InvisibleH2__InvisibleH2>
+                                        <SpeechBubble__SpeechBubble
+                                                  innerRef={[Function]}
+                                        >
+                                                  <svg
+                                                            height="100%"
+                                                            preserveAspectRatio="xMinYMid"
+                                                            viewBox="0 365.1 595.3 425.3"
+                                                            width="100%"
+                                                  >
+                                                            <g
+                                                                      id="g1"
+                                                            >
+                                                                      <path
+                                                                                d="M-754.1,133.2v140.3l78.7,153.1h80.3L-754.1,133.2z"
+                                                                                fill="#212120"
+                                                                                id="p1"
+                                                                      />
+                                                                      <path
+                                                                                d="M159,733.2 v0 H78.700002 78.7z"
+                                                                                fill="#818180"
+                                                                                id="p2"
+                                                                      />
+                                                                      <path
+                                                                                d="M52.5,790.4 v0 h75.8 v0z"
+                                                                                fill="#414140"
+                                                                                id="p3"
+                                                                      />
+                                                                      <path
+                                                                                d="M5.3,702.1 v0 h73.9 v0z"
+                                                                                fill="#818180"
+                                                                                id="p4"
+                                                                      />
+                                                                      <path
+                                                                                d="M-31.8,309.6c0-4.4-3.6-8.1-8.1-8.1h-401.2l-145.1,270.6h546.3 c4.4,0,8.1-3.6,8.1-8.1V309.6L-31.8,309.6z"
+                                                                                fill="#575756"
+                                                                                id="p5"
+                                                                                style={
+                                                                                          Object {
+                                                                                                    "opacity": 0,
+                                                                                                  }
+                                                                                }
+                                                                      />
+                                                            </g>
+                                                            <path
+                                                                      d="M172 440h387.2v141.4h-387z"
+                                                                      fill="none"
+                                                            />
+                                                            <FormattedMessage
+                                                                      defaultMessage="WELCOME"
+                                                                      id="portfolio.page.index.header.greeting"
+                                                                      values={Object {}}
+                                                            >
+                                                                      [Function]
+                                                            </FormattedMessage>
+                                                            <FormattedMessage
+                                                                      defaultMessage="WELCOME"
+                                                                      id="portfolio.page.index.header.greeting"
+                                                                      values={Object {}}
+                                                            >
+                                                                      [Function]
+                                                            </FormattedMessage>
+                                                            <g
+                                                                      id="g2"
+                                                                      style={
+                                                                                Object {
+                                                                                          "opacity": 0,
+                                                                                        }
+                                                                      }
+                                                            >
+                                                                      <FormattedMessage
+                                                                                defaultMessage="I am {name}"
+                                                                                id="portfolio.page.index.header.intro"
+                                                                                values={
+                                                                                          Object {
+                                                                                                    "name": "Johan Meester",
+                                                                                                  }
+                                                                                }
+                                                                      >
+                                                                                [Function]
+                                                                      </FormattedMessage>
+                                                                      <defs>
+                                                                                <mask
+                                                                                          id="m1"
+                                                                                >
+                                                                                          <circle
+                                                                                                    cx="553"
+                                                                                                    cy="407"
+                                                                                                    fill="#fff"
+                                                                                                    r="32.5"
+                                                                                          />
+                                                                                </mask>
+                                                                      </defs>
+                                                                      <image
+                                                                                height="65"
+                                                                                mask="url('#m1')"
+                                                                                preserveAspectRatio="none"
+                                                                                width="65"
+                                                                                x="520"
+                                                                                xlinkHref="IMAGE_MOCK"
+                                                                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                                                                y="374"
+                                                                      />
+                                                            </g>
+                                                            <FormattedMessage
+                                                                      defaultMessage="FRONT-END DEVELOPER"
+                                                                      id="portfolio.page.index.header.trade"
+                                                                      values={Object {}}
+                                                            >
+                                                                      [Function]
+                                                            </FormattedMessage>
+                                                  </svg>
+                                        </SpeechBubble__SpeechBubble>
+                              </IntroHeader__IntroHeader>
+                    </Breakpoints>
+          </Styled(RowContainer)>
+</IntroPageArticle__IntroPageArticle>,
+        "_debugID": 2,
+        "_renderedOutput": <IntroPageArticle__IntroPageArticle>
+          <HelmetWrapper
+                    encodeSpecialCharacters={true}
+          >
+                    <title>
+                              Intro
+                    </title>
+                    <meta
+                              content="Intro pagina van Johan Meester zijn portfolio"
+                              name="description"
+                    />
+          </HelmetWrapper>
+          <LocaleToggleWidget__LocaleToggleWidget>
+                    <Connect(LocaleToggle) />
+          </LocaleToggleWidget__LocaleToggleWidget>
+          <Styled(RowContainer)
+                    tagName="div"
+          >
+                    <Breakpoints
+                              fluid={true}
+                    >
+                              <IntroHeader__IntroHeader>
+                                        <InvisibleH2__InvisibleH2>
+                                                  <FormattedMessage
+                                                            defaultMessage="Introduction"
+                                                            id="portfolio.page.index.title"
+                                                            values={Object {}}
+                                                  />
+                                        </InvisibleH2__InvisibleH2>
+                                        <SpeechBubble__SpeechBubble
+                                                  innerRef={[Function]}
+                                        >
+                                                  <svg
+                                                            height="100%"
+                                                            preserveAspectRatio="xMinYMid"
+                                                            viewBox="0 365.1 595.3 425.3"
+                                                            width="100%"
+                                                  >
+                                                            <g
+                                                                      id="g1"
+                                                            >
+                                                                      <path
+                                                                                d="M-754.1,133.2v140.3l78.7,153.1h80.3L-754.1,133.2z"
+                                                                                fill="#212120"
+                                                                                id="p1"
+                                                                      />
+                                                                      <path
+                                                                                d="M159,733.2 v0 H78.700002 78.7z"
+                                                                                fill="#818180"
+                                                                                id="p2"
+                                                                      />
+                                                                      <path
+                                                                                d="M52.5,790.4 v0 h75.8 v0z"
+                                                                                fill="#414140"
+                                                                                id="p3"
+                                                                      />
+                                                                      <path
+                                                                                d="M5.3,702.1 v0 h73.9 v0z"
+                                                                                fill="#818180"
+                                                                                id="p4"
+                                                                      />
+                                                                      <path
+                                                                                d="M-31.8,309.6c0-4.4-3.6-8.1-8.1-8.1h-401.2l-145.1,270.6h546.3 c4.4,0,8.1-3.6,8.1-8.1V309.6L-31.8,309.6z"
+                                                                                fill="#575756"
+                                                                                id="p5"
+                                                                                style={
+                                                                                          Object {
+                                                                                                    "opacity": 0,
+                                                                                                  }
+                                                                                }
+                                                                      />
+                                                            </g>
+                                                            <path
+                                                                      d="M172 440h387.2v141.4h-387z"
+                                                                      fill="none"
+                                                            />
+                                                            <FormattedMessage
+                                                                      defaultMessage="WELCOME"
+                                                                      id="portfolio.page.index.header.greeting"
+                                                                      values={Object {}}
+                                                            >
+                                                                      [Function]
+                                                            </FormattedMessage>
+                                                            <FormattedMessage
+                                                                      defaultMessage="WELCOME"
+                                                                      id="portfolio.page.index.header.greeting"
+                                                                      values={Object {}}
+                                                            >
+                                                                      [Function]
+                                                            </FormattedMessage>
+                                                            <g
+                                                                      id="g2"
+                                                                      style={
+                                                                                Object {
+                                                                                          "opacity": 0,
+                                                                                        }
+                                                                      }
+                                                            >
+                                                                      <FormattedMessage
+                                                                                defaultMessage="I am {name}"
+                                                                                id="portfolio.page.index.header.intro"
+                                                                                values={
+                                                                                          Object {
+                                                                                                    "name": "Johan Meester",
+                                                                                                  }
+                                                                                }
+                                                                      >
+                                                                                [Function]
+                                                                      </FormattedMessage>
+                                                                      <defs>
+                                                                                <mask
+                                                                                          id="m1"
+                                                                                >
+                                                                                          <circle
+                                                                                                    cx="553"
+                                                                                                    cy="407"
+                                                                                                    fill="#fff"
+                                                                                                    r="32.5"
+                                                                                          />
+                                                                                </mask>
+                                                                      </defs>
+                                                                      <image
+                                                                                height="65"
+                                                                                mask="url('#m1')"
+                                                                                preserveAspectRatio="none"
+                                                                                width="65"
+                                                                                x="520"
+                                                                                xlinkHref="IMAGE_MOCK"
+                                                                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                                                                y="374"
+                                                                      />
+                                                            </g>
+                                                            <FormattedMessage
+                                                                      defaultMessage="FRONT-END DEVELOPER"
+                                                                      id="portfolio.page.index.header.trade"
+                                                                      values={Object {}}
+                                                            >
+                                                                      [Function]
+                                                            </FormattedMessage>
+                                                  </svg>
+                                        </SpeechBubble__SpeechBubble>
+                              </IntroHeader__IntroHeader>
+                    </Breakpoints>
+          </Styled(RowContainer)>
+</IntroPageArticle__IntroPageArticle>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <HomePage />,
+}
+`;

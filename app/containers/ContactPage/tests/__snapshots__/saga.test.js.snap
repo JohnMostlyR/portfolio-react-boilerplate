@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sendForm Saga should call the sendFormError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "https://meester-johan.info/contact-request",
+      Object {
+        "body": "{\\"title\\":\\"Test\\"}",
+        "headers": Object {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+        },
+        "method": "POST",
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`sendForm Saga should dispatch the sendFormError action if server side validation failed 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "https://meester-johan.info/contact-request",
+      Object {
+        "body": "{\\"title\\":\\"Test\\"}",
+        "headers": Object {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+        },
+        "method": "POST",
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`sendForm Saga should dispatch the sendFormSuccess action if it sent the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "https://meester-johan.info/contact-request",
+      Object {
+        "body": "{\\"title\\":\\"Test\\"}",
+        "headers": Object {
+          "Accept": "application/json",
+          "Content-Type": "application/json",
+        },
+        "method": "POST",
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
