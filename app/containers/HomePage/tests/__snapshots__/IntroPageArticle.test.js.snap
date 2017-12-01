@@ -9,11 +9,11 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <article
-    className="IntroPageArticle__IntroPageArticle-guOsQo bggCMy"
+    className="IntroPageArticle__IntroPageArticle-guOsQo VvVDK"
 />,
   "nodes": Array [
     <article
-      className="IntroPageArticle__IntroPageArticle-guOsQo bggCMy"
+      className="IntroPageArticle__IntroPageArticle-guOsQo VvVDK"
 />,
   ],
   "options": Object {},
@@ -36,7 +36,7 @@ ShallowWrapper {
         "props": Object {},
         "refs": Object {},
         "state": Object {
-          "generatedClassName": "bggCMy",
+          "generatedClassName": "VvVDK",
           "theme": Object {},
         },
         "updater": Object {
@@ -58,11 +58,11 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <article
-          className="IntroPageArticle__IntroPageArticle-guOsQo bggCMy"
+          className="IntroPageArticle__IntroPageArticle-guOsQo VvVDK"
 />,
         "_debugID": 2,
         "_renderedOutput": <article
-          className="IntroPageArticle__IntroPageArticle-guOsQo bggCMy"
+          className="IntroPageArticle__IntroPageArticle-guOsQo VvVDK"
 />,
       },
       "_renderedNodeType": 0,

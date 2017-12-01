@@ -9,7 +9,7 @@
  * export const YOUR_ACTION_CONSTANT = 'yourproject/YourContainer/YOUR_ACTION_CONSTANT';
  */
 
-export const DEFAULT_LOCALE = 'nl';
+export const DEFAULT_LOCALE = 'en';
 export const SET_SITE_NAVIGATION_OFFSET_HEIGHT = 'portfolio/App/SET_SITE_NAVIGATION_OFFSET_HEIGHT';
 export const SET_SITE_NAVIGATION_TOP_POSITION = 'portfolio/App/SET_SITE_NAVIGATION_TOP_POSITION';
 export const SET_SITE_NAVIGATION_IS_AT_SCREEN_TOP = 'portfolio/App/SET_SITE_NAVIGATION_IS_AT_SCREEN_TOP';

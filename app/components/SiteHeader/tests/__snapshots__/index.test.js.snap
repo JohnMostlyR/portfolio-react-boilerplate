@@ -17,7 +17,6 @@ ShallowWrapper {
             imageSource="IMAGE_MOCK"
             text="JOHAN MEESTER"
         />
-        <Connect(LocaleToggle) />
         <SocialLinks />
     </Wrapper__Wrapper>
     <Connect(SiteNavigationBar) />
@@ -32,7 +31,6 @@ ShallowWrapper {
                   imageSource="IMAGE_MOCK"
                   text="JOHAN MEESTER"
             />
-            <Connect(LocaleToggle) />
             <SocialLinks />
       </Wrapper__Wrapper>
       <Connect(SiteNavigationBar) />
@@ -87,7 +85,6 @@ ShallowWrapper {
                               imageSource="IMAGE_MOCK"
                               text="JOHAN MEESTER"
                     />
-                    <Connect(LocaleToggle) />
                     <SocialLinks />
           </Wrapper__Wrapper>
           <Connect(SiteNavigationBar) />
@@ -102,7 +99,6 @@ ShallowWrapper {
                               imageSource="IMAGE_MOCK"
                               text="JOHAN MEESTER"
                     />
-                    <Connect(LocaleToggle) />
                     <SocialLinks />
           </Wrapper__Wrapper>
           <Connect(SiteNavigationBar) />
