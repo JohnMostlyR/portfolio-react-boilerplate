@@ -172,7 +172,7 @@ class HomePage extends React.Component { // eslint-disable-line react/prefer-sta
     return (
       <IntroPageArticle>
         <Helmet>
-          <title>Intro</title>
+          <title>Welkom op Johan Meester zijn portfolio</title>
           <meta name="description" content="Intro pagina van Johan Meester zijn portfolio" />
         </Helmet>
         <LocaleToggleWidget>

@@ -13,7 +13,7 @@ ShallowWrapper {
         encodeSpecialCharacters={true}
     >
         <title>
-            Intro
+            Welkom op Johan Meester zijn portfolio
         </title>
         <meta
             content="Intro pagina van Johan Meester zijn portfolio"
@@ -159,7 +159,7 @@ ShallowWrapper {
             encodeSpecialCharacters={true}
       >
             <title>
-                  Intro
+                  Welkom op Johan Meester zijn portfolio
             </title>
             <meta
                   content="Intro pagina van Johan Meester zijn portfolio"
@@ -339,7 +339,7 @@ ShallowWrapper {
                     encodeSpecialCharacters={true}
           >
                     <title>
-                              Intro
+                              Welkom op Johan Meester zijn portfolio
                     </title>
                     <meta
                               content="Intro pagina van Johan Meester zijn portfolio"
@@ -485,7 +485,7 @@ ShallowWrapper {
                     encodeSpecialCharacters={true}
           >
                     <title>
-                              Intro
+                              Welkom op Johan Meester zijn portfolio
                     </title>
                     <meta
                               content="Intro pagina van Johan Meester zijn portfolio"
