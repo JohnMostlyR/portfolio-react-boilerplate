@@ -36,6 +36,7 @@ import '!file-loader?name=[name].[ext]!./images/mstile-310x150.png';
 import '!file-loader?name=[name].[ext]!./images/mstile-310x310.png';
 import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess';
+import 'file-loader?name=[name].[ext]!./BingSiteAuth.xml';
 /* eslint-enable import/no-unresolved, import/extensions */
 
 import configureStore from './configureStore';
