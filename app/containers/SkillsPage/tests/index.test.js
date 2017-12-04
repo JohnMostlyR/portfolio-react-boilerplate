@@ -4,8 +4,9 @@ import { Provider } from 'react-redux';
 import { IntlProvider } from 'react-intl';
 import createHistory from 'history/createMemoryHistory';
 
-import { SkillsPage } from '../index';
+import { SkillsPage, mapDispatchToProps } from '../index';
 import configureStore from '../../../configureStore';
+import { loadContent } from '../actions';
 
 describe('<SkillsPage />', () => {
   it('should render and match the snapshot', () => {
@@ -26,5 +27,22 @@ describe('<SkillsPage />', () => {
       </Provider>
     );
     expect(getContent).toBeCalled();
+  });
+
+  describe('mapDispatchToProps', () => {
+    describe('getContent', () => {
+      it('should be injected', () => {
+        const dispatch = jest.fn();
+        const props = mapDispatchToProps(dispatch);
+        expect(props.getContent).toBeDefined();
+      });
+    });
+
+    it('should dispatch loadContent when called', () => {
+      const dispatch = jest.fn();
+      const props = mapDispatchToProps(dispatch);
+      props.getContent();
+      expect(dispatch).toHaveBeenCalledWith(loadContent());
+    });
   });
 });

@@ -66,7 +66,7 @@ const mapStateToProps = createStructuredSelector({
   skillsText: makeSelectSkillsText(),
 });
 
-function mapDispatchToProps(dispatch) {
+export function mapDispatchToProps(dispatch) {
   return {
     getContent: () => {
       dispatch(loadContent());
