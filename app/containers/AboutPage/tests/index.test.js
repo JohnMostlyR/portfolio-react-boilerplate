@@ -4,7 +4,8 @@ import { Provider } from 'react-redux';
 import { IntlProvider } from 'react-intl';
 import createHistory from 'history/createMemoryHistory';
 
-import { AboutPage } from '../index';
+import { AboutPage, mapDispatchToProps } from '../index';
+import { loadContent } from '../actions';
 import configureStore from '../../../configureStore';
 
 describe('<AboutPage />', () => {
@@ -26,5 +27,22 @@ describe('<AboutPage />', () => {
       </Provider>
     );
     expect(getContent).toBeCalled();
+  });
+
+  describe('mapDispatchToProps', () => {
+    describe('getContent', () => {
+      it('should be injected', () => {
+        const dispatch = jest.fn();
+        const props = mapDispatchToProps(dispatch);
+        expect(props.getContent).toBeDefined();
+      });
+    });
+
+    it('should dispatch loadContent when called', () => {
+      const dispatch = jest.fn();
+      const props = mapDispatchToProps(dispatch);
+      props.getContent();
+      expect(dispatch).toHaveBeenCalledWith(loadContent());
+    });
   });
 });
