@@ -71,7 +71,7 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
     return (
       /* eslint no-return-assign: "off" */
       <Wrapper innerRef={(el) => this.wrapper = el}>
-        <h1 hidden><FormattedMessage {...messages.title} /></h1>
+        <h1 hidden aria-hidden="false"><FormattedMessage {...messages.title} /></h1>
         <SiteHeader />
         <StyledMain
           fixedSiteNavOffset={this.props.siteNavigationOffsetHeight}
