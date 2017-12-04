@@ -84,7 +84,7 @@ const mapStateToProps = createStructuredSelector({
   projects: makeSelectProjectsPageProjects(),
 });
 
-function mapDispatchToProps(dispatch) {
+export function mapDispatchToProps(dispatch) {
   return {
     getContent: () => {
       dispatch(loadContent());
