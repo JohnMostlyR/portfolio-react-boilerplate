@@ -43,7 +43,7 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
     this.wrapper.ownerDocument.removeEventListener('scroll', this.handleScrollEvent);
   }
 
-  /* eslint no-underscore-dangle: "off" */
+  /* eslint-disable no-underscore-dangle */
   handleScrollEvent = (ev) => {
     if (this.state._isScrolling) {
       return;
@@ -66,10 +66,11 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
       });
     }
   };
+  /* eslint-enable no-underscore-dangle */
 
   render() {
     return (
-      /* eslint no-return-assign: "off" */
+      // eslint-disable-next-line no-return-assign
       <Wrapper innerRef={(el) => this.wrapper = el}>
         <h1 hidden aria-hidden="false"><FormattedMessage {...messages.title} /></h1>
         <SiteHeader />
