@@ -1,8 +1,14 @@
 # My Portfolio Website build with React Boilerplate
 
 <div align="center">
-  [![Build Status](https://travis-ci.org/Mensae/portfolio-react-boilerplate.svg?branch=master)](https://travis-ci.org/Mensae/portfolio-react-boilerplate)
-  [![Coverage Status](https://coveralls.io/repos/github/Mensae/portfolio-react-boilerplate/badge.svg)](https://coveralls.io/github/Mensae/portfolio-react-boilerplate)
+  <!-- Build Status -->
+  <a href="https://travis-ci.org/Mensae/portfolio-react-boilerplate">
+    <img src="https://travis-ci.org/Mensae/portfolio-react-boilerplate.svg" alt="Build Status" />
+  </a>
+  <!-- Test Coverage -->
+  <a href="https://coveralls.io/r/Mensae/portfolio-react-boilerplate">
+    <img src="https://coveralls.io/repos/github/Mensae/portfolio-react-boilerplate/badge.svg" alt="Test Coverage" />
+  </a>
 </div>
 
 ## Background Information
