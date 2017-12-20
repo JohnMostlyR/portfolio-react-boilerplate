@@ -1,8 +1,14 @@
 # My Portfolio Website build with React Boilerplate
 
+<div align="center">
+  [![Build Status](https://travis-ci.org/Mensae/portfolio-react-boilerplate.svg?branch=master)](https://travis-ci.org/Mensae/portfolio-react-boilerplate)
+  [![Coverage Status](https://coveralls.io/repos/github/Mensae/portfolio-react-boilerplate/badge.svg)](https://coveralls.io/github/Mensae/portfolio-react-boilerplate)
+</div>
+
 ## Background Information
 
-My [original](https://github.com/Mensae/portfolio-react) portolfio website now build upon react-boilerplate. This to get practise with Redux, Saga, Reselect and lots of testing with Enzyme.
+My [original](https://github.com/Mensae/portfolio-react) portfolio website now build upon react-boilerplate. This to 
+get practise with Redux, Saga, Reselect and lots of testing with Enzyme.
 
 ### Packages:
 
