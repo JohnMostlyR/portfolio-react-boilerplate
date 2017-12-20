@@ -2,10 +2,8 @@ language: node_js
 
 node_js:
   - 8
-  - 6
 
 script:
-  - node ./internals/scripts/generate-templates-for-linting
   - npm run test
   - npm run build
 
