@@ -1,5 +1,7 @@
 # My Portfolio Website build with React Boilerplate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Mensae/portfolio-react-boilerplate.svg)](https://greenkeeper.io/)
+
 <div align="center">
   <!-- Build Status -->
   <a href="https://travis-ci.org/Mensae/portfolio-react-boilerplate">
