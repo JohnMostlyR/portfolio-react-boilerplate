@@ -9,12 +9,14 @@
 import styled from 'styled-components';
 
 const Img = styled.img`
+  width: 100%; /* [1] - Internet Explorer */
   max-width: 100%; /* [1] */
   font-style: italic; /* [2] */
   vertical-align: middle; /* [3] */
   
   &[height],
   &[width] {
+    width: unset;
     max-width: none;
   }
 `;

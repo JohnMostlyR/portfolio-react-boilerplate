@@ -9,11 +9,11 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <img
-    className="Img__Img-hamkNM corVMy"
+    className="Img__Img-hamkNM lDWXs"
 />,
   "nodes": Array [
     <img
-      className="Img__Img-hamkNM corVMy"
+      className="Img__Img-hamkNM lDWXs"
 />,
   ],
   "options": Object {},
@@ -36,7 +36,7 @@ ShallowWrapper {
         "props": Object {},
         "refs": Object {},
         "state": Object {
-          "generatedClassName": "corVMy",
+          "generatedClassName": "lDWXs",
           "theme": Object {},
         },
         "updater": Object {
@@ -58,11 +58,11 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <img
-          className="Img__Img-hamkNM corVMy"
+          className="Img__Img-hamkNM lDWXs"
 />,
         "_debugID": 2,
         "_renderedOutput": <img
-          className="Img__Img-hamkNM corVMy"
+          className="Img__Img-hamkNM lDWXs"
 />,
       },
       "_renderedNodeType": 0,
