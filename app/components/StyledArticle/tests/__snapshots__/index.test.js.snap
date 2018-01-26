@@ -2,6 +2,6 @@
 
 exports[`StyledArticle Should render and match the snapshot 1`] = `
 <article
-  className="StyledArticle__StyledArticle-gMrQVX cvcySW"
+  className="StyledArticle__StyledArticle-gMrQVX kKEAga"
 />
 `;

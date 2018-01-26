@@ -6,6 +6,7 @@ const StyledArticle = styled.article`
   align-self: center;
   height: 100%;
   padding-right: 0;
+  width: 100%;
   
   ${mq.m`
     padding-right: ${rem('114px')}
