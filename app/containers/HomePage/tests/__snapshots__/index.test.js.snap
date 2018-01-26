@@ -23,10 +23,10 @@ ShallowWrapper {
     <LocaleToggleWidget__LocaleToggleWidget>
         <Connect(LocaleToggle) />
     </LocaleToggleWidget__LocaleToggleWidget>
-    <Styled(RowContainer)
+    <FullHeightRow__FullHeightRow
         tagName="div"
     >
-        <Breakpoints
+        <FullHeightColumn__FullHeightColumn
             fluid={true}
         >
             <IntroHeader__IntroHeader>
@@ -150,8 +150,8 @@ ShallowWrapper {
                     </svg>
                 </SpeechBubble__SpeechBubble>
             </IntroHeader__IntroHeader>
-        </Breakpoints>
-    </Styled(RowContainer)>
+        </FullHeightColumn__FullHeightColumn>
+    </FullHeightRow__FullHeightRow>
 </IntroPageArticle__IntroPageArticle>,
   "nodes": Array [
     <IntroPageArticle__IntroPageArticle>
@@ -169,10 +169,10 @@ ShallowWrapper {
       <LocaleToggleWidget__LocaleToggleWidget>
             <Connect(LocaleToggle) />
       </LocaleToggleWidget__LocaleToggleWidget>
-      <Styled(RowContainer)
+      <FullHeightRow__FullHeightRow
             tagName="div"
       >
-            <Breakpoints
+            <FullHeightColumn__FullHeightColumn
                   fluid={true}
             >
                   <IntroHeader__IntroHeader>
@@ -296,8 +296,8 @@ ShallowWrapper {
                               </svg>
                         </SpeechBubble__SpeechBubble>
                   </IntroHeader__IntroHeader>
-            </Breakpoints>
-      </Styled(RowContainer)>
+            </FullHeightColumn__FullHeightColumn>
+      </FullHeightRow__FullHeightRow>
 </IntroPageArticle__IntroPageArticle>,
   ],
   "options": Object {},
@@ -349,10 +349,10 @@ ShallowWrapper {
           <LocaleToggleWidget__LocaleToggleWidget>
                     <Connect(LocaleToggle) />
           </LocaleToggleWidget__LocaleToggleWidget>
-          <Styled(RowContainer)
+          <FullHeightRow__FullHeightRow
                     tagName="div"
           >
-                    <Breakpoints
+                    <FullHeightColumn__FullHeightColumn
                               fluid={true}
                     >
                               <IntroHeader__IntroHeader>
@@ -476,8 +476,8 @@ ShallowWrapper {
                                                   </svg>
                                         </SpeechBubble__SpeechBubble>
                               </IntroHeader__IntroHeader>
-                    </Breakpoints>
-          </Styled(RowContainer)>
+                    </FullHeightColumn__FullHeightColumn>
+          </FullHeightRow__FullHeightRow>
 </IntroPageArticle__IntroPageArticle>,
         "_debugID": 2,
         "_renderedOutput": <IntroPageArticle__IntroPageArticle>
@@ -495,10 +495,10 @@ ShallowWrapper {
           <LocaleToggleWidget__LocaleToggleWidget>
                     <Connect(LocaleToggle) />
           </LocaleToggleWidget__LocaleToggleWidget>
-          <Styled(RowContainer)
+          <FullHeightRow__FullHeightRow
                     tagName="div"
           >
-                    <Breakpoints
+                    <FullHeightColumn__FullHeightColumn
                               fluid={true}
                     >
                               <IntroHeader__IntroHeader>
@@ -622,8 +622,8 @@ ShallowWrapper {
                                                   </svg>
                                         </SpeechBubble__SpeechBubble>
                               </IntroHeader__IntroHeader>
-                    </Breakpoints>
-          </Styled(RowContainer)>
+                    </FullHeightColumn__FullHeightColumn>
+          </FullHeightRow__FullHeightRow>
 </IntroPageArticle__IntroPageArticle>,
       },
       "_renderedNodeType": 1,

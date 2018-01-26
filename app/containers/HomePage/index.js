@@ -9,7 +9,6 @@
 
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import { Row, Column } from 'hedron';
 import { Helmet } from 'react-helmet';
 
 import messages from './messages';
@@ -19,6 +18,8 @@ import IntroPageArticle from './IntroPageArticle';
 import InvisibleH2 from './InvisibleH2';
 import SpeechBubble from './SpeechBubble';
 import LocaleToggleWidget from './LocaleToggleWidget';
+import FullHeightRow from './FullHeightRow';
+import FullHeightColumn from './FullHeightColumn';
 import MyPicture from './itsme-trevi-rome.jpg';
 import LocaleToggle from '../../containers/LocaleToggle';
 
@@ -178,8 +179,8 @@ class HomePage extends React.Component { // eslint-disable-line react/prefer-sta
         <LocaleToggleWidget>
           <LocaleToggle />
         </LocaleToggleWidget>
-        <Row tagName={'div'}>
-          <Column fluid>
+        <FullHeightRow tagName={'div'}>
+          <FullHeightColumn fluid>
             <IntroHeader>
               <InvisibleH2><FormattedMessage {...messages.title} /></InvisibleH2>
               <SpeechBubble
@@ -283,8 +284,8 @@ class HomePage extends React.Component { // eslint-disable-line react/prefer-sta
                 </svg>
               </SpeechBubble>
             </IntroHeader>
-          </Column>
-        </Row>
+          </FullHeightColumn>
+        </FullHeightRow>
       </IntroPageArticle>
     );
   }
