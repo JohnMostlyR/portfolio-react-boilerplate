@@ -7,10 +7,6 @@ const Form = styled.form`
   border-radius: .5rem;
   color: #222;
   padding: .5rem;
-  
-  @media (min-width: 31em) {
-    width: 31em;
-  }
 `;
 
 export default Form;
