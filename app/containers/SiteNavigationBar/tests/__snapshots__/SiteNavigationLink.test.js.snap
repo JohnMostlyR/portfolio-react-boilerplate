@@ -9,13 +9,13 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <Link
-    className="SiteNavigationLink__SiteNavLink-gHsuvY cPIMfr"
+    className="SiteNavigationLink__SiteNavigationLink-cMrvTY lbunGA"
     replace={false}
     to="/"
 />,
   "nodes": Array [
     <Link
-      className="SiteNavigationLink__SiteNavLink-gHsuvY cPIMfr"
+      className="SiteNavigationLink__SiteNavigationLink-cMrvTY lbunGA"
       replace={false}
       to="/"
 />,
@@ -26,7 +26,7 @@ ShallowWrapper {
       "_calledComponentWillUnmount": false,
       "_compositeType": 0,
       "_context": Object {},
-      "_currentElement": <SiteNavigationLink__SiteNavLink
+      "_currentElement": <SiteNavigationLink__SiteNavigationLink
         to="/"
 />,
       "_debugID": 1,
@@ -44,7 +44,7 @@ ShallowWrapper {
         },
         "refs": Object {},
         "state": Object {
-          "generatedClassName": "cPIMfr",
+          "generatedClassName": "lbunGA",
           "theme": Object {},
         },
         "updater": Object {
@@ -66,13 +66,13 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <Link
-          className="SiteNavigationLink__SiteNavLink-gHsuvY cPIMfr"
+          className="SiteNavigationLink__SiteNavigationLink-cMrvTY lbunGA"
           replace={false}
           to="/"
 />,
         "_debugID": 2,
         "_renderedOutput": <Link
-          className="SiteNavigationLink__SiteNavLink-gHsuvY cPIMfr"
+          className="SiteNavigationLink__SiteNavigationLink-cMrvTY lbunGA"
           replace={false}
           to="/"
 />,
@@ -87,7 +87,7 @@ ShallowWrapper {
     "render": [Function],
   },
   "root": [Circular],
-  "unrendered": <SiteNavigationLink__SiteNavLink
+  "unrendered": <SiteNavigationLink__SiteNavigationLink
     to="/"
 />,
 }

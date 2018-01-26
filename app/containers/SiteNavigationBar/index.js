@@ -6,7 +6,7 @@ import { createStructuredSelector } from 'reselect';
 
 import StyledUL from './StyledUL';
 import StyledLI from './StyledLI';
-import SiteNavLink from './SiteNavigationLink';
+import SiteNavigationLink from './SiteNavigationLink';
 import SiteNavigationIcon from './SiteNavigationIcon';
 import Description from './Description';
 import SiteNavigation from './SiteNavigation';
@@ -52,15 +52,15 @@ class SiteNavigationBar extends Component {
         <H2><FormattedMessage {...messages.header} /></H2>
         <StyledUL>
           <StyledLI>
-            <SiteNavLink to={'/'} data-isactive={CURRENT_PATHNAME === '/'}>
+            <SiteNavigationLink to={'/'} data-isactive={CURRENT_PATHNAME === '/'}>
               <SiteNavigationIcon name={'home'} fixedWidth />
               <Description>
                 <FormattedMessage {...messages.homePageLink} />
               </Description>
-            </SiteNavLink>
+            </SiteNavigationLink>
           </StyledLI>
           <StyledLI>
-            <SiteNavLink
+            <SiteNavigationLink
               to={'/about'}
               data-isactive={CURRENT_PATHNAME === '/about'}
             >
@@ -68,10 +68,10 @@ class SiteNavigationBar extends Component {
               <Description>
                 <FormattedMessage {...messages.aboutPageLink} />
               </Description>
-            </SiteNavLink>
+            </SiteNavigationLink>
           </StyledLI>
           <StyledLI>
-            <SiteNavLink
+            <SiteNavigationLink
               to={'/skills'}
               data-isactive={CURRENT_PATHNAME === '/skills'}
             >
@@ -79,10 +79,10 @@ class SiteNavigationBar extends Component {
               <Description>
                 <FormattedMessage {...messages.skillsPageLink} />
               </Description>
-            </SiteNavLink>
+            </SiteNavigationLink>
           </StyledLI>
           <StyledLI>
-            <SiteNavLink
+            <SiteNavigationLink
               to={'/projects'}
               data-isactive={CURRENT_PATHNAME === '/projects'}
             >
@@ -90,10 +90,10 @@ class SiteNavigationBar extends Component {
               <Description>
                 <FormattedMessage {...messages.projectsPageLink} />
               </Description>
-            </SiteNavLink>
+            </SiteNavigationLink>
           </StyledLI>
           <StyledLI>
-            <SiteNavLink
+            <SiteNavigationLink
               to={'/contact'}
               data-isactive={CURRENT_PATHNAME === '/contact'}
             >
@@ -101,7 +101,7 @@ class SiteNavigationBar extends Component {
               <Description>
                 <FormattedMessage {...messages.contactPageLink} />
               </Description>
-            </SiteNavLink>
+            </SiteNavigationLink>
           </StyledLI>
         </StyledUL>
       </SiteNavigation>

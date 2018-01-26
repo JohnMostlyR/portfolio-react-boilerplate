@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import mq from '../../styles/templates/mediaQueries';
 import typography, { baseFontStackSansSerif } from '../../styles/templates/typography';
 
-const SiteNavLink = styled(Link)`
+const SiteNavigationLink = styled(Link)`
   display: inline-block;
   position: relative;
   background-color: #FF6633;
@@ -16,6 +16,7 @@ const SiteNavLink = styled(Link)`
   text-align: center;
   text-decoration: none !important;
   transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap;
 
   font-family: ${baseFontStackSansSerif}
   font-weight: 400;
@@ -55,7 +56,7 @@ const SiteNavLink = styled(Link)`
 
   ${mq.m`
     border-radius: 5px;
-    width: 7rem; // For IE and Edge who don't support the max-content prop.
+    width: 100%; // For IE and Edge who don't support the max-content prop.
     width: max-content;
   `}
   
@@ -76,4 +77,4 @@ const SiteNavLink = styled(Link)`
   }}
 `;
 
-export default SiteNavLink;
+export default SiteNavigationLink;
