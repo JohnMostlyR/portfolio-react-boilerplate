@@ -9,11 +9,11 @@ ShallowWrapper {
   },
   "length": 1,
   "node": <nav
-    className="SiteNavigation__SiteNavigation-kWNIHR bPQrYT"
+    className="SiteNavigation__SiteNavigation-kWNIHR jGGlLT"
 />,
   "nodes": Array [
     <nav
-      className="SiteNavigation__SiteNavigation-kWNIHR bPQrYT"
+      className="SiteNavigation__SiteNavigation-kWNIHR jGGlLT"
 />,
   ],
   "options": Object {},
@@ -36,7 +36,7 @@ ShallowWrapper {
         "props": Object {},
         "refs": Object {},
         "state": Object {
-          "generatedClassName": "bPQrYT",
+          "generatedClassName": "jGGlLT",
           "theme": Object {},
         },
         "updater": Object {
@@ -58,11 +58,11 @@ ShallowWrapper {
       "_pendingStateQueue": null,
       "_renderedComponent": NoopInternalComponent {
         "_currentElement": <nav
-          className="SiteNavigation__SiteNavigation-kWNIHR bPQrYT"
+          className="SiteNavigation__SiteNavigation-kWNIHR jGGlLT"
 />,
         "_debugID": 2,
         "_renderedOutput": <nav
-          className="SiteNavigation__SiteNavigation-kWNIHR bPQrYT"
+          className="SiteNavigation__SiteNavigation-kWNIHR jGGlLT"
 />,
       },
       "_renderedNodeType": 0,

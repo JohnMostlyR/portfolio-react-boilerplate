@@ -9,6 +9,7 @@ const SiteNavigation = styled.nav`
   padding: .35rem 0;
   position: ${(props) => props.isAtScreenTop ? 'fixed' : 'unset'};
   top: 0;
+  z-index: 99999;
   background-color: #575756;
 
   ${mq.m`
