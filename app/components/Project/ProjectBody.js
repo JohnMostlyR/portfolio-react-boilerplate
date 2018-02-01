@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import mq from '../../styles/templates/mediaQueries';
 
 const ProjectBody = styled.div`
   flex: 1 0 50%;
@@ -8,13 +7,13 @@ const ProjectBody = styled.div`
   padding-left: 2.5vw;
   padding-right: 2.5vw;
   padding-top: 3vw;
-  
-  ${mq.m`
+
+  @media (min-width: 600px) {
     order: 1;
     padding-bottom: 1vw;
     padding-left: 3vw;
     padding-top: 1vw;
-  `}
+  }
 `;
 
 export default ProjectBody;

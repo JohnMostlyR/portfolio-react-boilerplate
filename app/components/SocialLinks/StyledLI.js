@@ -10,7 +10,7 @@ const StyledLI = styled.li`
   }
 
   @media (min-width: 37.5em) and (max-height: 31.25em) {
-    /**/
+    /* TODO */
   }
 `;
 

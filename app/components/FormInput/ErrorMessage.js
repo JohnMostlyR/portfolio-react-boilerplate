@@ -5,8 +5,7 @@ const ErrorMessage = styled.span`
   display: none;
   color: red;
   font-size: 12px;
-
-  ${(props) => props.showError ? 'display: inline; margin-right: .5em;' : ''}
+  ${(props) => props.showError ? 'display: inline; margin-right: 0.5em;' : ''}
 `;
 
 ErrorMessage.propTypes = {

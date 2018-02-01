@@ -2,178 +2,100 @@
 
 exports[`<MediaWrapper /> should adopt the "spacing" prop 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <div
-    className="MediaWrapper__MediaWrapper-hidAJw fblUDg"
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MediaWrapper__MediaWrapper
     spacing="10px"
 />,
-  "nodes": Array [
-    <div
-      className="MediaWrapper__MediaWrapper-hidAJw fblUDg"
-      spacing="10px"
-/>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 0,
-      "_context": Object {},
-      "_currentElement": <MediaWrapper__MediaWrapper
-        spacing="10px"
-/>,
-      "_debugID": 3,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StyledComponent {
-        "_reactInternalInstance": [Circular],
-        "attrs": Object {},
-        "context": Object {
-          "__styled-components-stylesheet__": undefined,
-          "__styled-components__": undefined,
-        },
-        "props": Object {
-          "spacing": "10px",
-        },
-        "refs": Object {},
-        "state": Object {
-          "generatedClassName": "fblUDg",
-          "theme": Object {},
-        },
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 2,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <div
-          className="MediaWrapper__MediaWrapper-hidAJw fblUDg"
-          spacing="10px"
-/>,
-        "_debugID": 4,
-        "_renderedOutput": <div
-          className="MediaWrapper__MediaWrapper-hidAJw fblUDg"
-          spacing="10px"
-/>,
-      },
-      "_renderedNodeType": 0,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
     "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
   },
-  "root": [Circular],
-  "unrendered": <MediaWrapper__MediaWrapper
-    spacing="10px"
-/>,
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "className": "MediaWrapper__MediaWrapper-hXAHqV gNFhJR",
+      "spacing": "10px",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "className": "MediaWrapper__MediaWrapper-hXAHqV gNFhJR",
+        "spacing": "10px",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
 }
 `;
 
 exports[`<MediaWrapper /> should render and match the snapshot 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <div
-    className="MediaWrapper__MediaWrapper-hidAJw dlgURj"
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MediaWrapper__MediaWrapper
     spacing="0"
 />,
-  "nodes": Array [
-    <div
-      className="MediaWrapper__MediaWrapper-hidAJw dlgURj"
-      spacing="0"
-/>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 0,
-      "_context": Object {},
-      "_currentElement": <MediaWrapper__MediaWrapper
-        spacing="0"
-/>,
-      "_debugID": 1,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StyledComponent {
-        "_reactInternalInstance": [Circular],
-        "attrs": Object {},
-        "context": Object {
-          "__styled-components-stylesheet__": undefined,
-          "__styled-components__": undefined,
-        },
-        "props": Object {
-          "spacing": "0",
-        },
-        "refs": Object {},
-        "state": Object {
-          "generatedClassName": "dlgURj",
-          "theme": Object {},
-        },
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 1,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <div
-          className="MediaWrapper__MediaWrapper-hidAJw dlgURj"
-          spacing="0"
-/>,
-        "_debugID": 2,
-        "_renderedOutput": <div
-          className="MediaWrapper__MediaWrapper-hidAJw dlgURj"
-          spacing="0"
-/>,
-      },
-      "_renderedNodeType": 0,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
     "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
   },
-  "root": [Circular],
-  "unrendered": <MediaWrapper__MediaWrapper
-    spacing="0"
-/>,
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "className": "MediaWrapper__MediaWrapper-hXAHqV dZuwsg",
+      "spacing": "0",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "className": "MediaWrapper__MediaWrapper-hXAHqV dZuwsg",
+        "spacing": "0",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
 }
 `;

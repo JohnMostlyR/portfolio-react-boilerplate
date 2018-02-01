@@ -38,16 +38,48 @@ import FormInfoItemsListItem from '../../components/FormInfoItemsListItem';
 import FormInput from '../../components/FormInput';
 import SendButton from '../../components/SendButton';
 
+export function validateForm(field, fieldError) {
+  const errMessages = Object
+    .keys(fieldError)
+    .filter((key) => fieldError[key]);
+
+  if (!field.email) {
+    return true;
+  }
+
+  if (!field.message) {
+    return true;
+  }
+
+  if (!field.name) {
+    return true;
+  }
+
+  if (!field.subject) {
+    return true;
+  }
+
+  if (errMessages.length) {
+    return true;
+  }
+
+  return false;
+}
+
 export class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
-  state = {
-    field: this.props.field || {
-      subject: '',
-      message: '',
-      name: '',
-      email: '',
-    },
-    fieldError: this.props.error || {},
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      field: this.props.field || {
+        subject: '',
+        message: '',
+        name: '',
+        email: '',
+      },
+      fieldError: this.props.error || {},
+    };
+  }
 
   componentWillReceiveProps(update) {
     this.setState({
@@ -69,7 +101,7 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
   onFormSubmit = (ev) => {
     ev.preventDefault();
 
-    if (this.validateForm()) {
+    if (validateForm(this.state.field, this.state.fieldError)) {
       return;
     }
 
@@ -77,42 +109,14 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
     this.props.onSubmit(field);
   };
 
-  validateForm = () => {
-    const field = this.state.field;
-    const fieldError = this.state.fieldError;
-    const errMessages = Object.keys(fieldError).filter((key) => fieldError[key]);
-
-    if (!field.email) {
-      return true;
-    }
-
-    if (!field.message) {
-      return true;
-    }
-
-    if (!field.name) {
-      return true;
-    }
-
-    if (!field.subject) {
-      return true;
-    }
-
-    if (errMessages.length) {
-      return true;
-    }
-
-    return false;
-  };
-
   render() {
     const status = this.props.sendStatus;
 
     const renderSendButton = () => ({
-      IDLE: <SendButton buttonState={'idle'} disabled={this.validateForm()} />,
+      IDLE: <SendButton buttonState={'idle'} disabled={validateForm(this.state.field, this.state.fieldError)} />,
       SENDING: <SendButton buttonState={'sending'} disabled />,
       SUCCESS: <SendButton buttonState={'success'} disabled />,
-      ERROR: <SendButton buttonState={'error'} disabled={this.validateForm()} />,
+      ERROR: <SendButton buttonState={'error'} disabled={validateForm(this.state.field, this.state.fieldError)} />,
     }[status]);
 
     return (

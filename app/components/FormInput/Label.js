@@ -5,7 +5,7 @@ const Label = styled.label`
   display: inline-block;
   width: 100%;
   font-size: 16px;
-  height: 12px; // font size on focus
+  height: 12px; /* font size on focus */
 `;
 
 export default Label;

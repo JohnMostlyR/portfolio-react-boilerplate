@@ -11,7 +11,7 @@ const InputGroup = styled.div`
   z-index: 1;
 
   &:not(:first-child) {
-    padding-top: .5rem;
+    padding-top: 0.5rem;
   }
 `;
 

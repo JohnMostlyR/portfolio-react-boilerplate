@@ -5,17 +5,17 @@ import { baseFontStackSerif } from '../../styles/templates/typography';
 
 const Bubble = styled.div`
   position: relative;
-  background-color: #F90;
-  border-radius: .5rem;
-  font-family: ${baseFontStackSerif}
-  padding: .5em;
+  background-color: #f90;
+  border-radius: 0.5rem;
+  font-family: ${baseFontStackSerif};
+  padding: 0.5em;
 
   @media (min-height: 750px) {
     margin-right: 0;
-    border-bottom-left-radius: ${(props) => (props.isLeftHanded) ? 0 : '.5rem'};
-    border-bottom-right-radius: ${(props) => (props.isLeftHanded) ? '.5rem' : 0};
+    border-bottom-left-radius: ${(props) => (props.isLeftHanded) ? 0 : '0.5rem'};
+    border-bottom-right-radius: ${(props) => (props.isLeftHanded) ? '0.5rem' : 0};
 
-    &:after {
+    &::after {
       content: "";
       height: 9vh;
       left: 0;

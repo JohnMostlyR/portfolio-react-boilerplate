@@ -13,11 +13,12 @@ const Img = styled.img`
   max-width: 100%; /* [1] */
   font-style: italic; /* [2] */
   vertical-align: middle; /* [3] */
-  
+
   &[height],
   &[width] {
     width: unset;
     max-width: none;
   }
 `;
+
 export default Img;

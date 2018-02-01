@@ -5,16 +5,16 @@ import { svgToURL } from '../../styles/tools';
 const HeaderSpeechBubble = styled.div`
   position: relative;
   background-color: #575756;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 3vh 4vw;
 
   @media (min-height: 750px) {
     margin-bottom: 4vh;
     margin-right: 0;
-    border-bottom-left-radius: ${(props) => (props.isLeftHanded) ? 0 : '.5rem'};
-    border-bottom-right-radius: ${(props) => (props.isLeftHanded) ? '.5rem' : 0};
+    border-bottom-left-radius: ${(props) => (props.isLeftHanded) ? 0 : '0.5rem'};
+    border-bottom-right-radius: ${(props) => (props.isLeftHanded) ? '0.5rem' : 0};
 
-    &:after {
+    &::after {
       content: "";
       height: 4vh;
       left: 0;

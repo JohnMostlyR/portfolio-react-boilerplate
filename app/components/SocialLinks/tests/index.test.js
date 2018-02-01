@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 import { IntlProvider } from 'react-intl';
 
 import SocialLinks from '../index';
 import Aside from '../Aside';
-import Header from '../Header';
 import StyledUL from '../StyledUL';
 import StyledLI from '../StyledLI';
 
@@ -24,10 +23,6 @@ describe('SocialLinks', () => {
     expect(wrapper.find(Aside)).toHaveLength(1);
   });
 
-  it('should have an `Header` component', () => {
-    expect(wrapper.find(Header)).toHaveLength(1);
-  });
-
   it('should have an `StyledUL` component', () => {
     expect(wrapper.find(StyledUL)).toHaveLength(1);
   });
@@ -44,10 +39,5 @@ describe('SocialLinks', () => {
 
   it('should have a `ReactTooltip` component', () => {
     expect(wrapper.find(ReactTooltip)).toHaveLength(1);
-  });
-
-  it('Should render and match the snapshot', () => {
-    wrapper = shallow(<SocialLinks />);
-    expect(wrapper).toMatchSnapshot();
   });
 });

@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import mq from '../../styles/templates/mediaQueries';
 
 const Figure = styled.figure`
   align-items: center;
@@ -9,8 +8,8 @@ const Figure = styled.figure`
   order: ${(props) => props.isOdd ? 1 : 2};
   position: relative;
   width: 100%;
-  background-color: ${(props) => props.isOdd ? '#0062A3' : '#A36200'};
-  border-radius: .5rem;
+  background-color: ${(props) => props.isOdd ? '#0062a3' : '#a36200'};
+  border-radius: 0.5rem;
 
   &::before {
     height: 0;
@@ -21,25 +20,25 @@ const Figure = styled.figure`
     width: 0;
     content: "";
     border-bottom: 0;
-    border-left: .75em solid transparent;
-    border-top: .75em solid ${(props) => props.isOdd ? '#0062A3' : '#A36200'};
-    border-right: .75em solid transparent;
-    
-    ${mq.m`
+    border-left: 0.75em solid transparent;
+    border-top: 0.75em solid ${(props) => props.isOdd ? '#0062a3' : '#a36200'};
+    border-right: 0.75em solid transparent;
+
+    @media (min-width: 600px) {
       left: ${(props) => props.isOdd ? '100%' : 'inherit'};
       right: ${(props) => props.isOdd ? 'inherit' : '100%'};
       top: inherit;
       transform: translateX(0);
-      border-bottom: .75em solid transparent;
-      border-left: ${(props) => props.isOdd ? '.75em solid #0062A3' : 0};
-      border-top: .75em solid transparent;
-      border-right: ${(props) => props.isOdd ? 0 : '.75em solid #A36200'};
-    `}
+      border-bottom: 0.75em solid transparent;
+      border-left: ${(props) => props.isOdd ? '0.75em solid #0062a3' : 0};
+      border-top: 0.75em solid transparent;
+      border-right: ${(props) => props.isOdd ? 0 : '0.75em solid #a36200'};
+    }
   }
-  
-  ${mq.m`
+
+  @media (min-width: 600px) {
     width: auto;
-  `}
+  }
 `;
 
 Figure.propTypes = {

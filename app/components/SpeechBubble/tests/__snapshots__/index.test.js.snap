@@ -2,10 +2,10 @@
 
 exports[`SpeechBubble Should render and match the snapshot 1`] = `
 <div
-  className="Wrapper__Wrapper-cZxMuO hTtzzS"
+  className="Wrapper__Wrapper-fEDTQp dKhNgq"
 >
   <div
-    className="Bubble__Bubble-gotHyH edNvvq"
+    className="Bubble__Bubble-kfMqWC jXfggt"
   />
 </div>
 `;

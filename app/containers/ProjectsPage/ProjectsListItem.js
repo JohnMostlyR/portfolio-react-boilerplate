@@ -1,22 +1,20 @@
 import styled from 'styled-components';
 
-import mq from '../../styles/templates/mediaQueries';
-
 const ProjectsListItem = styled.li`
   margin-top: 2vh;
   position: relative;
-  background-color: #F90;
-  border-radius: .5rem;
+  background-color: #f90;
+  border-radius: 0.5rem;
 
   &:nth-child(odd) {
-    background-color: #09F;
-    color: #D0EB2A;
+    background-color: #09f;
+    color: #d0eb2a;
 
-    ${mq.l`
+    @media (min-width: 900px) {
       margin-left: 14vw;
       border-bottom-right-radius: 0;
-    
-      &:after {
+
+      &::after {
         content: "";
         height: 9vmin;
         left: 0;
@@ -29,15 +27,15 @@ const ProjectsListItem = styled.li`
         background-position: left top;
         transform: rotateY(180deg);
       }
-    `}
+    }
   }
 
   &:nth-child(even) {
-    ${mq.l`
+    @media (min-width: 900px) {
       margin-right: 14vw;
       border-bottom-left-radius: 0;
 
-      &:after {
+      &::after {
         content: "";
         height: 9vmin;
         left: 0;
@@ -49,7 +47,7 @@ const ProjectsListItem = styled.li`
         background-size: contain;
         background-position: left top;
       }
-    `}
+    }
   }
 `;
 

@@ -31,6 +31,8 @@ function svgToURL(svg) {
   return `"data:image/svg+xml;charset=utf-8,${svgURL}"`;
 }
 
-const SVGBackgroundImage = (svg) => css`background-image: url(${svgToURL(svg)});`;
+const SVGBackgroundImage = (svg) => css`
+  background-image: url(${svgToURL(svg)});
+`;
 
 export { svgToURL, SVGBackgroundImage };

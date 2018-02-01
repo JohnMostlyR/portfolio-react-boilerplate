@@ -19,4 +19,6 @@ ResponsiveImage.defaultProps = {
   noPlaceholder: false,
 };
 
-export default styled(ResponsiveImage)``;
+export default styled(ResponsiveImage)`
+  /* make it a styled component */
+`;

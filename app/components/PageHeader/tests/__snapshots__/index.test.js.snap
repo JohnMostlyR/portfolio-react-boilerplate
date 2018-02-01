@@ -2,215 +2,240 @@
 
 exports[`<PageHeader /> should adopt any children 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <StyledHeader__StyledHeader>
-    <HeaderSpeechBubble__HeaderSpeechBubble
-        isLeftHanded={true}
-    >
-        <H2__H2>
-            <div>
-                children
-            </div>
-        </H2__H2>
-    </HeaderSpeechBubble__HeaderSpeechBubble>
-</StyledHeader__StyledHeader>,
-  "nodes": Array [
-    <StyledHeader__StyledHeader>
-      <HeaderSpeechBubble__HeaderSpeechBubble
-            isLeftHanded={true}
-      >
-            <H2__H2>
-                  <div>
-                        children
-                  </div>
-            </H2__H2>
-      </HeaderSpeechBubble__HeaderSpeechBubble>
-</StyledHeader__StyledHeader>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <PageHeader
-        isLeftHanded={true}
->
-        <div>
-                children
-        </div>
-</PageHeader>,
-      "_debugID": 11,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "children": <div>
-            children
-</div>,
-          "isLeftHanded": true,
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 2,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <StyledHeader__StyledHeader>
-          <HeaderSpeechBubble__HeaderSpeechBubble
-                    isLeftHanded={true}
-          >
-                    <H2__H2>
-                              <div>
-                                        children
-                              </div>
-                    </H2__H2>
-          </HeaderSpeechBubble__HeaderSpeechBubble>
-</StyledHeader__StyledHeader>,
-        "_debugID": 12,
-        "_renderedOutput": <StyledHeader__StyledHeader>
-          <HeaderSpeechBubble__HeaderSpeechBubble
-                    isLeftHanded={true}
-          >
-                    <H2__H2>
-                              <div>
-                                        children
-                              </div>
-                    </H2__H2>
-          </HeaderSpeechBubble__HeaderSpeechBubble>
-</StyledHeader__StyledHeader>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <PageHeader
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PageHeader
     isLeftHanded={true}
 >
     <div>
         children
     </div>
 </PageHeader>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <HeaderSpeechBubble__HeaderSpeechBubble
+        isLeftHanded={true}
+>
+        <H2__H2>
+                <div>
+                        children
+                </div>
+        </H2__H2>
+</HeaderSpeechBubble__HeaderSpeechBubble>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <H2__H2>
+          <div>
+                    children
+          </div>
+</H2__H2>,
+        "isLeftHanded": true,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <div>
+            children
+</div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "children",
+          },
+          "ref": null,
+          "rendered": "children",
+          "type": "div",
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <HeaderSpeechBubble__HeaderSpeechBubble
+          isLeftHanded={true}
+>
+          <H2__H2>
+                    <div>
+                              children
+                    </div>
+          </H2__H2>
+</HeaderSpeechBubble__HeaderSpeechBubble>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <H2__H2>
+            <div>
+                        children
+            </div>
+</H2__H2>,
+          "isLeftHanded": true,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <div>
+              children
+</div>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "children",
+            },
+            "ref": null,
+            "rendered": "children",
+            "type": "div",
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
 }
 `;
 
 exports[`<PageHeader /> should render and match the snapshot 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <StyledHeader__StyledHeader>
-    <HeaderSpeechBubble__HeaderSpeechBubble
-        isLeftHanded={true}
-    >
-        <H2__H2 />
-    </HeaderSpeechBubble__HeaderSpeechBubble>
-</StyledHeader__StyledHeader>,
-  "nodes": Array [
-    <StyledHeader__StyledHeader>
-      <HeaderSpeechBubble__HeaderSpeechBubble
-            isLeftHanded={true}
-      >
-            <H2__H2 />
-      </HeaderSpeechBubble__HeaderSpeechBubble>
-</StyledHeader__StyledHeader>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <PageHeader
-        isLeftHanded={true}
-/>,
-      "_debugID": 1,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "isLeftHanded": true,
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 1,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <StyledHeader__StyledHeader>
-          <HeaderSpeechBubble__HeaderSpeechBubble
-                    isLeftHanded={true}
-          >
-                    <H2__H2 />
-          </HeaderSpeechBubble__HeaderSpeechBubble>
-</StyledHeader__StyledHeader>,
-        "_debugID": 2,
-        "_renderedOutput": <StyledHeader__StyledHeader>
-          <HeaderSpeechBubble__HeaderSpeechBubble
-                    isLeftHanded={true}
-          >
-                    <H2__H2 />
-          </HeaderSpeechBubble__HeaderSpeechBubble>
-</StyledHeader__StyledHeader>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <PageHeader
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PageHeader
     isLeftHanded={true}
 />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <HeaderSpeechBubble__HeaderSpeechBubble
+        isLeftHanded={true}
+>
+        <H2__H2 />
+</HeaderSpeechBubble__HeaderSpeechBubble>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <H2__H2 />,
+        "isLeftHanded": true,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <HeaderSpeechBubble__HeaderSpeechBubble
+          isLeftHanded={true}
+>
+          <H2__H2 />
+</HeaderSpeechBubble__HeaderSpeechBubble>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <H2__H2 />,
+          "isLeftHanded": true,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
 }
 `;

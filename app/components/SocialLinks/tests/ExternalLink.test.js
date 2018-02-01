@@ -5,7 +5,6 @@ import FontAwesome from 'react-fontawesome';
 
 import ExternalLink from '../ExternalLink';
 import StyledA from '../StyledA';
-import VisuallyHiddenSpan from '../VisuallyHiddenSpan';
 
 describe('ExternalLink', () => {
   const DESCRIPTION = 'Follow me';
@@ -41,12 +40,6 @@ describe('ExternalLink', () => {
     ).toHaveLength(1);
   });
 
-  it('Should have a `VisuallyHiddenSpan` component', () => {
-    expect(
-      wrapper.find(VisuallyHiddenSpan),
-    ).toHaveLength(1);
-  });
-
   describe('Anker element', () => {
     beforeEach(() => {
       wrapper = mount(
@@ -78,13 +71,6 @@ describe('ExternalLink', () => {
     it('Should get the `name` property', () => {
       const FONT_AWESOME = wrapper.find(FontAwesome);
       expect(FONT_AWESOME.props().name).toBe(ICON);
-    });
-  });
-
-  describe('VisuallyHiddenSpan component', () => {
-    it('Should get the correct description', () => {
-      const SPAN = wrapper.find(VisuallyHiddenSpan);
-      expect(SPAN.text()).toBe(DESCRIPTION);
     });
   });
 });

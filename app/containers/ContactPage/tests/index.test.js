@@ -1,8 +1,9 @@
 import React from 'react';
-import { shallowWithIntl } from '../../../helpers/intl-enzyme-test-helper';
 
-import { ContactPage, mapDispatchToProps } from '../index';
+import { ContactPage, mapDispatchToProps, validateForm } from '../index';
 import { sendForm } from '../actions';
+
+import { shallowWithIntl, mountWithIntl } from '../../../helpers/intl-enzyme-test-helper';
 
 describe('<ContactPage />', () => {
   it('should render and match the snapshot', () => {
@@ -64,17 +65,9 @@ describe('<ContactPage />', () => {
   });
 
   describe('validateForm', () => {
-    let wrapper = null;
-    let instance = null;
     let initialState = {};
 
     beforeEach(() => {
-      wrapper = shallowWithIntl(
-        <ContactPage />
-      );
-
-      instance = wrapper.instance();
-
       initialState = {
         field: {
           subject: 'A subject',
@@ -86,48 +79,38 @@ describe('<ContactPage />', () => {
       };
     });
 
-    afterEach(() => {
-      jest.clearAllMocks();
-    });
-
     it('should return "true" when there is no "subject"', () => {
       const field = Object.assign(initialState.field, { ...field, subject: '' });
       initialState = { ...initialState, field };
-      wrapper.setState(initialState);
-      expect(instance.validateForm()).toBe(true);
+      expect(validateForm(initialState.field, initialState.fieldError)).toBe(true);
     });
 
     it('should return "true" when there is no "message"', () => {
       const field = Object.assign(initialState.field, { ...field, message: '' });
       initialState = { ...initialState, field };
-      wrapper.setState(initialState);
-      expect(instance.validateForm()).toBe(true);
+      expect(validateForm(initialState.field, initialState.fieldError)).toBe(true);
     });
 
     it('should return "true" when there is no "name"', () => {
       const field = Object.assign(initialState.field, { ...field, name: '' });
       initialState = { ...initialState, field };
-      wrapper.setState(initialState);
-      expect(instance.validateForm()).toBe(true);
+      expect(validateForm(initialState.field, initialState.fieldError)).toBe(true);
     });
 
     it('should return "true" when there is no "email"', () => {
       const field = Object.assign(initialState.field, { ...field, email: '' });
       initialState = { ...initialState, field };
-      wrapper.setState(initialState);
-      expect(instance.validateForm()).toBe(true);
+      expect(validateForm(initialState.field, initialState.fieldError)).toBe(true);
     });
 
     it('should return "true" when there are any errors', () => {
       const fieldError = Object.assign(initialState.fieldError, { ...fieldError, email: 'Error' });
       initialState = { ...initialState, fieldError };
-      wrapper.setState(initialState);
-      expect(instance.validateForm()).toBe(true);
+      expect(validateForm(initialState.field, initialState.fieldError)).toBe(true);
     });
 
     it('should return "false" when all fields are correctly filled', () => {
-      wrapper.setState(initialState);
-      expect(instance.validateForm()).toBe(false);
+      expect(validateForm(initialState.field, initialState.fieldError)).toBe(false);
     });
   });
 
@@ -140,7 +123,7 @@ describe('<ContactPage />', () => {
     let wrapper = null;
 
     beforeEach(() => {
-      wrapper = shallowWithIntl(
+      wrapper = mountWithIntl(
         <ContactPage />
       );
 

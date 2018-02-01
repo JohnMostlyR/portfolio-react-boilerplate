@@ -2,6 +2,6 @@
 
 exports[`<MediaBody /> should render and match the snapshot 1`] = `
 <p
-  className="MediaBody__MediaBody-lcBNve xLawl"
+  className="MediaBody__MediaBody-bQhINl ePGjIZ"
 />
 `;

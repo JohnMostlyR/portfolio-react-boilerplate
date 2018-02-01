@@ -2,88 +2,49 @@
 
 exports[`<StyledMain /> should render and match the snapshot 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <main
-    className="StyledMain__StyledMain-faocEy jtHeHY"
-/>,
-  "nodes": Array [
-    <main
-      className="StyledMain__StyledMain-faocEy jtHeHY"
-/>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 0,
-      "_context": Object {},
-      "_currentElement": <StyledMain__StyledMain
-        fixedSiteNavOffset={0}
-        siteNavIsFixed={false}
-/>,
-      "_debugID": 1,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StyledComponent {
-        "_reactInternalInstance": [Circular],
-        "attrs": Object {},
-        "context": Object {
-          "__styled-components-stylesheet__": undefined,
-          "__styled-components__": undefined,
-        },
-        "props": Object {
-          "fixedSiteNavOffset": 0,
-          "siteNavIsFixed": false,
-        },
-        "refs": Object {},
-        "state": Object {
-          "generatedClassName": "jtHeHY",
-          "theme": Object {},
-        },
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 1,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <main
-          className="StyledMain__StyledMain-faocEy jtHeHY"
-/>,
-        "_debugID": 2,
-        "_renderedOutput": <main
-          className="StyledMain__StyledMain-faocEy jtHeHY"
-/>,
-      },
-      "_renderedNodeType": 0,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <StyledMain__StyledMain
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <StyledMain__StyledMain
     fixedSiteNavOffset={0}
     siteNavIsFixed={false}
 />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "className": "StyledMain__StyledMain-bHlEmi gctBdK",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": "main",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "className": "StyledMain__StyledMain-bHlEmi gctBdK",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "main",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
 }
 `;

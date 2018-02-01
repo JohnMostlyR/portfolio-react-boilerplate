@@ -6,7 +6,7 @@ import FontAwesome from 'react-fontawesome';
 const ListItem = styled.li`
   display: inline-block;
   margin-right: 1rem;
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   vertical-align: middle;
 
   &:hover {

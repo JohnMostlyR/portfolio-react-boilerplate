@@ -2,100 +2,55 @@
 
 exports[`<ImageWrapper /> should render and match the snapshot 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <ResponsiveImage
-    className="sc-bdVaJa DvMqt"
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ResponsiveImage
     imageAlt="Test"
     imageSource="./test.png"
-    noPlaceholder={false}
 />,
-  "nodes": Array [
-    <ResponsiveImage
-      className="sc-bdVaJa DvMqt"
-      imageAlt="Test"
-      imageSource="./test.png"
-      noPlaceholder={false}
-/>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 0,
-      "_context": Object {},
-      "_currentElement": <Styled(ResponsiveImage)
-        imageAlt="Test"
-        imageSource="./test.png"
-/>,
-      "_debugID": 1,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StyledComponent {
-        "_reactInternalInstance": [Circular],
-        "attrs": Object {},
-        "context": Object {
-          "__styled-components-stylesheet__": undefined,
-          "__styled-components__": undefined,
-        },
-        "props": Object {
-          "imageAlt": "Test",
-          "imageSource": "./test.png",
-        },
-        "refs": Object {},
-        "state": Object {
-          "generatedClassName": "DvMqt",
-          "theme": Object {},
-        },
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 1,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <ResponsiveImage
-          className="sc-bdVaJa DvMqt"
-          imageAlt="Test"
-          imageSource="./test.png"
-          noPlaceholder={false}
-/>,
-        "_debugID": 2,
-        "_renderedOutput": <ResponsiveImage
-          className="sc-bdVaJa DvMqt"
-          imageAlt="Test"
-          imageSource="./test.png"
-          noPlaceholder={false}
-/>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
     "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
   },
-  "root": [Circular],
-  "unrendered": <Styled(ResponsiveImage)
-    imageAlt="Test"
-    imageSource="./test.png"
-/>,
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "className": "ResponsiveImage-eiJyBH dxdQpB",
+      "imageAlt": "Test",
+      "imageSource": "./test.png",
+      "noPlaceholder": false,
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "className": "ResponsiveImage-eiJyBH dxdQpB",
+        "imageAlt": "Test",
+        "imageSource": "./test.png",
+        "noPlaceholder": false,
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
 }
 `;

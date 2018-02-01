@@ -13,10 +13,8 @@ import styled from 'styled-components';
  */
 const Wrapper = styled.div`
   position: relative;
-
   height: 0; /* [1] */
   overflow: hidden; /* [2] */
-
   background-color: ${(props) => (props.noPlaceholder) ? 'transparent' : '#f0f0f0'};
 
   /**
@@ -35,7 +33,7 @@ const Wrapper = styled.div`
 
   /**
    * Aspect radio modifiers
-   */  
+   */
   padding-bottom: ${(props) => {
     switch (props.ratio) {
       case '1by1':

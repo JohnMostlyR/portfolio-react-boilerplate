@@ -8,7 +8,7 @@ const LocaleToggleWidget = styled.div`
   right: unset;
   top: 1rem;
   width: 100%;
-  
+
   @media (max-height: 400px) and (max-width: ${sizes.m}px) {
     justify-content: flex-end;
     right: 1rem;

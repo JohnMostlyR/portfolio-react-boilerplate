@@ -14,9 +14,9 @@ const Button = styled.button`
 
   > span {
     display: inline-block;
-    background-color: #A36200;
-    border: 1px solid #A36200;
-    border-radius: .25rem;
+    background-color: #a36200;
+    border: 1px solid #a36200;
+    border-radius: 0.25rem;
     color: orange;
     cursor: pointer;
     padding: 1rem;
@@ -41,7 +41,9 @@ const Button = styled.button`
     background-repeat: no-repeat;
     background-size: 1.5rem;
     color: inherit;
-    transition: left .3s, right .3s;
+    transition:
+      left 0.3s,
+      right 0.3s;
   }
 
   &::before {

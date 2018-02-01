@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const ProjectDetailsTitle = styled.p`
-  margin-top: .25em;
+  margin-top: 0.25em;
 `;
 
 export default ProjectDetailsTitle;

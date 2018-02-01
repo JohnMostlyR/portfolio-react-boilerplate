@@ -5,8 +5,7 @@ const LabelContent = styled.span`
   display: inline-block;
   position: absolute;
   top: 100%;
-  transition: top .2s;
-  
+  transition: top 0.2s;
   ${(props) => ((props.hasFocus) ? 'top: -16px; font-size: 12px;' : '')}
 `;
 

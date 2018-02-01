@@ -2,6 +2,6 @@
 
 exports[`<StyledHeader /> Should render and match the snapshot 1`] = `
 <header
-  className="StyledHeader__StyledHeader-eUpxQR ijApqi"
+  className="StyledHeader__StyledHeader-kHWYFT gHdlJG"
 />
 `;

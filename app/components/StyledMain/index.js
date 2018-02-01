@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { svgToURL } from '../../styles/tools';
-import mq from '../../styles/templates/mediaQueries';
 
 const StyledMain = styled.main`
   display: flex;
@@ -14,8 +13,10 @@ const StyledMain = styled.main`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 100% 50%;
-  
-  ${mq.m `padding-top: 0;`}
+
+  @media (min-width: 600px) {
+    padding-top: 0;
+  }
 `;
 
 StyledMain.propTypes = {

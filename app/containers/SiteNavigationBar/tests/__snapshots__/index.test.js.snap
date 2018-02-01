@@ -2,33 +2,34 @@
 
 exports[`SiteNavigationBar should render and match the snapshot 1`] = `
 <nav
-  className="SiteNavigation__SiteNavigation-kWNIHR jGGlLT"
+  className="SiteNavigation__SiteNavigation-hZVVtP czMuRh"
 >
   <h2
-    className="H2__H2-dhGylN hFunTg"
+    aria-hidden="false"
+    hidden={true}
   >
     <span>
       Site navigation
     </span>
   </h2>
   <ul
-    className="StyledUL__StyledUL-kEPlCt cXXRcw"
+    className="StyledUL__StyledUL-hGhxpW exrwlO"
   >
     <li
-      className="StyledLI__StyledLI-eahKvU goUeeF"
+      className="StyledLI__StyledLI-kuyQty fCxmtC"
     >
       <a
-        className="SiteNavigationLink__SiteNavigationLink-cMrvTY gOUwvr"
+        className="SiteNavigationLink__SiteNavigationLink-ceKnDH jJELoO"
         data-isactive={true}
         href="/"
         onClick={[Function]}
       >
         <span
           aria-hidden={true}
-          className="fa fa-home fa-fw SiteNavigationIcon__SiteNavigationIcon-cszPoD hfGaUp"
+          className="fa fa-home fa-fw SiteNavigationIcon__SiteNavigationIcon-gFXsxd jnGacV"
         />
         <span
-          className="Description__Description-xTRQy dsqbVX"
+          className="Description__Description-exBwFC jSiycK"
         >
           <span>
             Intro
@@ -37,20 +38,20 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
       </a>
     </li>
     <li
-      className="StyledLI__StyledLI-eahKvU goUeeF"
+      className="StyledLI__StyledLI-kuyQty fCxmtC"
     >
       <a
-        className="SiteNavigationLink__SiteNavigationLink-cMrvTY lbunGA"
+        className="SiteNavigationLink__SiteNavigationLink-ceKnDH iuprkt"
         data-isactive={false}
         href="/about"
         onClick={[Function]}
       >
         <span
           aria-hidden={true}
-          className="fa fa-address-card fa-fw SiteNavigationIcon__SiteNavigationIcon-cszPoD hfGaUp"
+          className="fa fa-address-card fa-fw SiteNavigationIcon__SiteNavigationIcon-gFXsxd jnGacV"
         />
         <span
-          className="Description__Description-xTRQy dsqbVX"
+          className="Description__Description-exBwFC jSiycK"
         >
           <span>
             About
@@ -59,20 +60,20 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
       </a>
     </li>
     <li
-      className="StyledLI__StyledLI-eahKvU goUeeF"
+      className="StyledLI__StyledLI-kuyQty fCxmtC"
     >
       <a
-        className="SiteNavigationLink__SiteNavigationLink-cMrvTY lbunGA"
+        className="SiteNavigationLink__SiteNavigationLink-ceKnDH iuprkt"
         data-isactive={false}
         href="/skills"
         onClick={[Function]}
       >
         <span
           aria-hidden={true}
-          className="fa fa-code fa-fw SiteNavigationIcon__SiteNavigationIcon-cszPoD hfGaUp"
+          className="fa fa-code fa-fw SiteNavigationIcon__SiteNavigationIcon-gFXsxd jnGacV"
         />
         <span
-          className="Description__Description-xTRQy dsqbVX"
+          className="Description__Description-exBwFC jSiycK"
         >
           <span>
             Skills
@@ -81,20 +82,20 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
       </a>
     </li>
     <li
-      className="StyledLI__StyledLI-eahKvU goUeeF"
+      className="StyledLI__StyledLI-kuyQty fCxmtC"
     >
       <a
-        className="SiteNavigationLink__SiteNavigationLink-cMrvTY lbunGA"
+        className="SiteNavigationLink__SiteNavigationLink-ceKnDH iuprkt"
         data-isactive={false}
         href="/projects"
         onClick={[Function]}
       >
         <span
           aria-hidden={true}
-          className="fa fa-list fa-fw SiteNavigationIcon__SiteNavigationIcon-cszPoD hfGaUp"
+          className="fa fa-list fa-fw SiteNavigationIcon__SiteNavigationIcon-gFXsxd jnGacV"
         />
         <span
-          className="Description__Description-xTRQy dsqbVX"
+          className="Description__Description-exBwFC jSiycK"
         >
           <span>
             Projects
@@ -103,20 +104,20 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
       </a>
     </li>
     <li
-      className="StyledLI__StyledLI-eahKvU goUeeF"
+      className="StyledLI__StyledLI-kuyQty fCxmtC"
     >
       <a
-        className="SiteNavigationLink__SiteNavigationLink-cMrvTY lbunGA"
+        className="SiteNavigationLink__SiteNavigationLink-ceKnDH iuprkt"
         data-isactive={false}
         href="/contact"
         onClick={[Function]}
       >
         <span
           aria-hidden={true}
-          className="fa fa-send fa-fw SiteNavigationIcon__SiteNavigationIcon-cszPoD hfGaUp"
+          className="fa fa-send fa-fw SiteNavigationIcon__SiteNavigationIcon-gFXsxd jnGacV"
         />
         <span
-          className="Description__Description-xTRQy dsqbVX"
+          className="Description__Description-exBwFC jSiycK"
         >
           <span>
             Contact

@@ -2,6 +2,6 @@
 
 exports[`StyledLI Should render and match the snapshot 1`] = `
 <ul
-  className="StyledUL__StyledUL-kEPlCt ejMHhz"
+  className="StyledUL__StyledUL-hGhxpW feEjHg"
 />
 `;

@@ -77,7 +77,7 @@ injectGlobal`
     font-family: ${baseFontStackSansSerif};
   }
 
-  [hidden][aria-hidden="false] {
+  [hidden][aria-hidden="false"] {
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;

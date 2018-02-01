@@ -8,13 +8,13 @@ const Icon = styled.div`
   height: ${rem(24)};
   width: ${rem(36)};
   border: 1px solid #fff;
-  
-  &:hover > img {
-    filter: saturate(150%);
-  }
-  
+
   > img {
     filter: ${(props) => props.isChecked ? 'saturate(150%)' : 'saturate(50%)'};
+  }
+
+  &:hover > img {
+    filter: saturate(150%);
   }
 `;
 
