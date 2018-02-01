@@ -1,12 +1,14 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import 'jest-styled-components';
 
 import HeaderSpeechBubble from '../HeaderSpeechBubble';
 
 describe('<HeaderSpeechBubble />', () => {
   it('Should render and match the snapshot', () => {
     const tree = shallow(<HeaderSpeechBubble />);
-    expect(tree).toMatchSnapshot();
+    expect(toJson(tree)).toMatchSnapshot();
   });
 
   it('Should adopt the "isLeftHanded" prop', () => {
