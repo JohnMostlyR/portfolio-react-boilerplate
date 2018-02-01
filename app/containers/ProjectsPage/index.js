@@ -10,7 +10,6 @@ import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
-import { Row, Column } from 'hedron';
 import { Helmet } from 'react-helmet';
 
 import saga from './saga';
@@ -26,6 +25,8 @@ import injectReducer from '../../utils/injectReducer';
 import StyledArticle from '../../components/StyledArticle';
 import PageHeader from '../../components/PageHeader';
 import Project from '../../components/Project';
+import FlexRow from '../../components/FlexRow';
+import FlexColumn from '../../components/FlexColumn';
 
 export class ProjectsPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   componentDidMount() {
@@ -39,15 +40,15 @@ export class ProjectsPage extends React.Component { // eslint-disable-line react
           <title>Mijn projected</title>
           <meta name="description" content="Mijn projecten pagina van Johan Meester zijn portfolio" />
         </Helmet>
-        <Row tagName={'div'}>
-          <Column>
+        <FlexRow>
+          <FlexColumn>
             <PageHeader isLeftHanded>
               <FormattedMessage {...messages.title} />
             </PageHeader>
-          </Column>
-        </Row>
-        <Row tagName={'div'}>
-          <Column>
+          </FlexColumn>
+        </FlexRow>
+        <FlexRow>
+          <FlexColumn>
             <ProjectsList>
               {
                 this.props.projects.map((project, idx) => (
@@ -64,8 +65,8 @@ export class ProjectsPage extends React.Component { // eslint-disable-line react
                   ))
               }
             </ProjectsList>
-          </Column>
-        </Row>
+          </FlexColumn>
+        </FlexRow>
       </StyledArticle>
     );
   }

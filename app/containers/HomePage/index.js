@@ -17,10 +17,10 @@ import IntroHeader from './IntroHeader';
 import IntroPageArticle from './IntroPageArticle';
 import SpeechBubble from './SpeechBubble';
 import LocaleToggleWidget from './LocaleToggleWidget';
-import FullHeightRow from './FullHeightRow';
-import FullHeightColumn from './FullHeightColumn';
 import MyPicture from './itsme-trevi-rome.jpg';
 import LocaleToggle from '../../containers/LocaleToggle';
+import FlexRow from '../../components/FlexRow';
+import FlexColumn from '../../components/FlexColumn';
 
 class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   componentDidMount() {
@@ -178,8 +178,8 @@ class HomePage extends React.Component { // eslint-disable-line react/prefer-sta
         <LocaleToggleWidget>
           <LocaleToggle />
         </LocaleToggleWidget>
-        <FullHeightRow tagName={'div'}>
-          <FullHeightColumn fluid>
+        <FlexRow fullHeight>
+          <FlexColumn fullHeight fluid>
             <IntroHeader>
               <h2 hidden aria-hidden="false"><FormattedMessage {...messages.title} /></h2>
               <SpeechBubble
@@ -283,8 +283,8 @@ class HomePage extends React.Component { // eslint-disable-line react/prefer-sta
                 </svg>
               </SpeechBubble>
             </IntroHeader>
-          </FullHeightColumn>
-        </FullHeightRow>
+          </FlexColumn>
+        </FlexRow>
       </IntroPageArticle>
     );
   }

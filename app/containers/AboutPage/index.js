@@ -10,7 +10,6 @@ import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
-import { Row, Column } from 'hedron';
 import { Helmet } from 'react-helmet';
 
 import { makeSelectAboutMeText } from './selectors';
@@ -24,6 +23,8 @@ import injectReducer from '../../utils/injectReducer';
 import StyledArticle from '../../components/StyledArticle';
 import SpeechBubble from '../../components/SpeechBubble';
 import PageHeader from '../../components/PageHeader';
+import FlexRow from '../../components/FlexRow';
+import FlexColumn from '../../components/FlexColumn';
 
 export class AboutPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   componentDidMount() {
@@ -37,20 +38,20 @@ export class AboutPage extends React.Component { // eslint-disable-line react/pr
           <title>Over mij</title>
           <meta name="description" content="Over mij pagina van Johan Meester zijn portfolio" />
         </Helmet>
-        <Row tagName={'div'}>
-          <Column>
+        <FlexRow>
+          <FlexColumn>
             <PageHeader isLeftHanded>
               <FormattedMessage {...messages.title} />
             </PageHeader>
-          </Column>
-        </Row>
-        <Row tagName={'div'}>
-          <Column>
+          </FlexColumn>
+        </FlexRow>
+        <FlexRow>
+          <FlexColumn>
             <SpeechBubble>
               {this.props.aboutMeText}
             </SpeechBubble>
-          </Column>
-        </Row>
+          </FlexColumn>
+        </FlexRow>
       </StyledArticle>
     );
   }

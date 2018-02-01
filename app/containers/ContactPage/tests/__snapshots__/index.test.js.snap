@@ -104,10 +104,8 @@ ShallowWrapper {
                     name="description"
           />
 </HelmetWrapper>,
-        <Styled(RowContainer)
-          tagName="div"
->
-          <Breakpoints>
+        <FlexRow__FlexRow>
+          <FlexColumn__FlexColumn>
                     <PageHeader
                               isLeftHanded={true}
                     >
@@ -117,12 +115,10 @@ ShallowWrapper {
                                         values={Object {}}
                               />
                     </PageHeader>
-          </Breakpoints>
-</Styled(RowContainer)>,
-        <Styled(RowContainer)
-          tagName="div"
->
-          <Breakpoints>
+          </FlexColumn__FlexColumn>
+</FlexRow__FlexRow>,
+        <FlexRow__FlexRow>
+          <FlexColumn__FlexColumn>
                     <SpeechBubble>
                               <Form__Form
                                         onSubmit={[Function]}
@@ -195,8 +191,8 @@ ShallowWrapper {
                                         </div>
                               </Form__Form>
                     </SpeechBubble>
-          </Breakpoints>
-</Styled(RowContainer)>,
+          </FlexColumn__FlexColumn>
+</FlexRow__FlexRow>,
       ],
     },
     "ref": null,
@@ -251,7 +247,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Breakpoints>
+          "children": <FlexColumn__FlexColumn>
             <PageHeader
                         isLeftHanded={true}
             >
@@ -261,8 +257,7 @@ ShallowWrapper {
                                     values={Object {}}
                         />
             </PageHeader>
-</Breakpoints>,
-          "tagName": "div",
+</FlexColumn__FlexColumn>,
         },
         "ref": null,
         "rendered": Object {
@@ -318,7 +313,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Breakpoints>
+          "children": <FlexColumn__FlexColumn>
             <SpeechBubble>
                         <Form__Form
                                     onSubmit={[Function]}
@@ -391,8 +386,7 @@ ShallowWrapper {
                                     </div>
                         </Form__Form>
             </SpeechBubble>
-</Breakpoints>,
-          "tagName": "div",
+</FlexColumn__FlexColumn>,
         },
         "ref": null,
         "rendered": Object {
@@ -1016,10 +1010,8 @@ ShallowWrapper {
                         name="description"
             />
 </HelmetWrapper>,
-          <Styled(RowContainer)
-            tagName="div"
->
-            <Breakpoints>
+          <FlexRow__FlexRow>
+            <FlexColumn__FlexColumn>
                         <PageHeader
                                     isLeftHanded={true}
                         >
@@ -1029,12 +1021,10 @@ ShallowWrapper {
                                                 values={Object {}}
                                     />
                         </PageHeader>
-            </Breakpoints>
-</Styled(RowContainer)>,
-          <Styled(RowContainer)
-            tagName="div"
->
-            <Breakpoints>
+            </FlexColumn__FlexColumn>
+</FlexRow__FlexRow>,
+          <FlexRow__FlexRow>
+            <FlexColumn__FlexColumn>
                         <SpeechBubble>
                                     <Form__Form
                                                 onSubmit={[Function]}
@@ -1107,8 +1097,8 @@ ShallowWrapper {
                                                 </div>
                                     </Form__Form>
                         </SpeechBubble>
-            </Breakpoints>
-</Styled(RowContainer)>,
+            </FlexColumn__FlexColumn>
+</FlexRow__FlexRow>,
         ],
       },
       "ref": null,
@@ -1163,7 +1153,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Breakpoints>
+            "children": <FlexColumn__FlexColumn>
               <PageHeader
                             isLeftHanded={true}
               >
@@ -1173,8 +1163,7 @@ ShallowWrapper {
                                           values={Object {}}
                             />
               </PageHeader>
-</Breakpoints>,
-            "tagName": "div",
+</FlexColumn__FlexColumn>,
           },
           "ref": null,
           "rendered": Object {
@@ -1230,7 +1219,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Breakpoints>
+            "children": <FlexColumn__FlexColumn>
               <SpeechBubble>
                             <Form__Form
                                           onSubmit={[Function]}
@@ -1303,8 +1292,7 @@ ShallowWrapper {
                                           </div>
                             </Form__Form>
               </SpeechBubble>
-</Breakpoints>,
-            "tagName": "div",
+</FlexColumn__FlexColumn>,
           },
           "ref": null,
           "rendered": Object {

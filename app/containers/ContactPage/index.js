@@ -10,7 +10,6 @@ import { connect } from 'react-redux';
 import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
-import { Row, Column } from 'hedron';
 import isEmail from 'validator/lib/isEmail';
 import isLength from 'validator/lib/isLength';
 import { Helmet } from 'react-helmet';
@@ -37,6 +36,8 @@ import PageHeader from '../../components/PageHeader';
 import FormInfoItemsListItem from '../../components/FormInfoItemsListItem';
 import FormInput from '../../components/FormInput';
 import SendButton from '../../components/SendButton';
+import FlexRow from '../../components/FlexRow';
+import FlexColumn from '../../components/FlexColumn';
 
 export function validateForm(field, fieldError) {
   const errMessages = Object
@@ -125,15 +126,15 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
           <title>Contact pagina</title>
           <meta name="description" content="Contact pagina van Johan Meester zijn portfolio" />
         </Helmet>
-        <Row tagName={'div'}>
-          <Column>
+        <FlexRow>
+          <FlexColumn>
             <PageHeader isLeftHanded>
               <FormattedMessage {...messages.header} />
             </PageHeader>
-          </Column>
-        </Row>
-        <Row tagName={'div'}>
-          <Column>
+          </FlexColumn>
+        </FlexRow>
+        <FlexRow>
+          <FlexColumn>
             <SpeechBubble>
               <Form onSubmit={this.onFormSubmit}>
                 <div>
@@ -205,8 +206,8 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
                 </div>
               </Form>
             </SpeechBubble>
-          </Column>
-        </Row>
+          </FlexColumn>
+        </FlexRow>
       </StyledArticle>
     );
   }
