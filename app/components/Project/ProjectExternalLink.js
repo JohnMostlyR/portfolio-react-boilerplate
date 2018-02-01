@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import FontAwesome from 'react-fontawesome';
-import { visuallyHidden } from '../../styles/mixins';
 
 const ListItem = styled.li`
   display: inline-block;
@@ -19,10 +18,6 @@ const StyledA = styled.a`
   color: #fff;
 `;
 
-const VisuallyHiddenSpan = styled.span`
-  ${visuallyHidden}
-`;
-
 const ProjectExternalLink = (props) => (
   <ListItem data-tip={props.name}>
     <StyledA
@@ -31,7 +26,7 @@ const ProjectExternalLink = (props) => (
       rel="noopener noreferrer"
     >
       <FontAwesome name={props.faIcon} fixedWidth />
-      <VisuallyHiddenSpan>{props.name}</VisuallyHiddenSpan>
+      <span hidden aria-hidden="false">{props.name}</span>
     </StyledA>
   </ListItem>
 );

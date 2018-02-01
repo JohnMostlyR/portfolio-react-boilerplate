@@ -10,7 +10,6 @@ import SiteNavigationLink from './SiteNavigationLink';
 import SiteNavigationIcon from './SiteNavigationIcon';
 import Description from './Description';
 import SiteNavigation from './SiteNavigation';
-import H2 from './H2';
 import messages from './messages';
 
 import {
@@ -49,7 +48,7 @@ class SiteNavigationBar extends Component {
           }
         }
       >
-        <H2><FormattedMessage {...messages.header} /></H2>
+        <h2 hidden aria-hidden="false"><FormattedMessage {...messages.header} /></h2>
         <StyledUL>
           <StyledLI>
             <SiteNavigationLink to={'/'} data-isactive={CURRENT_PATHNAME === '/'}>

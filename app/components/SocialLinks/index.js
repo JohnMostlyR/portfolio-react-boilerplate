@@ -4,7 +4,6 @@ import { FormattedMessage } from 'react-intl';
 
 import ExternalLink from './ExternalLink';
 import Aside from './Aside';
-import Header from './Header';
 import StyledUL from './StyledUL';
 import StyledLI from './StyledLI';
 import messages from './messages';
@@ -63,7 +62,7 @@ class SocialLinks extends Component {
 
     return (
       <Aside>
-        <Header><FormattedMessage {...messages.header} /></Header>
+        <h2 hidden aria-hidden="false"><FormattedMessage {...messages.header} /></h2>
         <StyledUL
           innerRef={
             (e) => {

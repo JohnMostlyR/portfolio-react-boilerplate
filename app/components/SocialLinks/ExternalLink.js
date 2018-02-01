@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import FontAwesome from 'react-fontawesome';
 
 import StyledA from './StyledA';
-import VisuallyHiddenSpan from './VisuallyHiddenSpan';
 
 const ExternalLink = (props) => (
   <StyledA href={props.href} target="_blank" rel="noopener noreferrer">
-    <FontAwesome name={props.faIcon} /><VisuallyHiddenSpan>{props.description}</VisuallyHiddenSpan>
+    <FontAwesome name={props.faIcon} /><span hidden aria-hidden="false">{props.description}</span>
   </StyledA>
 );
 

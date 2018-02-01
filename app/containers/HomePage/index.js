@@ -15,7 +15,6 @@ import messages from './messages';
 
 import IntroHeader from './IntroHeader';
 import IntroPageArticle from './IntroPageArticle';
-import InvisibleH2 from './InvisibleH2';
 import SpeechBubble from './SpeechBubble';
 import LocaleToggleWidget from './LocaleToggleWidget';
 import FullHeightRow from './FullHeightRow';
@@ -182,7 +181,7 @@ class HomePage extends React.Component { // eslint-disable-line react/prefer-sta
         <FullHeightRow tagName={'div'}>
           <FullHeightColumn fluid>
             <IntroHeader>
-              <InvisibleH2><FormattedMessage {...messages.title} /></InvisibleH2>
+              <h2 hidden aria-hidden="false"><FormattedMessage {...messages.title} /></h2>
               <SpeechBubble
                 innerRef={
                   (d) => {
