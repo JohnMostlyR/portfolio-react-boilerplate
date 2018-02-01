@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import mq from '../../styles/templates/mediaQueries';
-import typography, { baseFontStackSansSerif } from '../../styles/templates/typography';
+import { baseFontStackSansSerif } from '../../styles/templates/typography';
 
 const SiteNavigationLink = styled(Link)`
   display: inline-block;
@@ -20,8 +20,7 @@ const SiteNavigationLink = styled(Link)`
 
   font-family: ${baseFontStackSansSerif}
   font-weight: 400;
-  ${typography.pica}
-  
+
   &:active,
   &:hover {
     background-color: transparent;

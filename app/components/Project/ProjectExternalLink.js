@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import FontAwesome from 'react-fontawesome';
-import typography from '../../styles/templates/typography';
 import { visuallyHidden } from '../../styles/mixins';
 
 const ListItem = styled.li`
@@ -18,7 +17,6 @@ const ListItem = styled.li`
 
 const StyledA = styled.a`
   color: #fff;
-  ${typography.doublePica}
 `;
 
 const VisuallyHiddenSpan = styled.span`

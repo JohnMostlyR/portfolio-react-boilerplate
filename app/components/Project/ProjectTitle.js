@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import typography from '../../styles/templates/typography';
 
 const ProjectTitle = styled.h2`
   flex: 1;
@@ -9,8 +8,6 @@ const ProjectTitle = styled.h2`
   word-wrap: break-word;
   -ms-word-break: break-all;
   word-break: break-word;
-  
-  ${typography.doublePica}
 `;
 
 export default ProjectTitle;

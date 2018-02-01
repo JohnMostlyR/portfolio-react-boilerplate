@@ -1,19 +1,16 @@
 import styled from 'styled-components';
 
-import typography from '../../styles/templates/typography';
-
 const StyledLI = styled.li`
-  padding: .5em;
-  transition: transform .2s;
+  padding: 0.5em;
+  transition: transform 0.2s;
+  font-size: 16px;
 
   &:hover {
     transform: scale(1.5);
   }
 
-  ${typography.doublePica};
-  
   @media (min-width: 37.5em) and (max-height: 31.25em) {
-    ${typography.pica}
+    /**/
   }
 `;
 

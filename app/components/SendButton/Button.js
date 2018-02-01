@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import typography, { baseFontBold } from '../../styles/templates/typography';
+import { baseFontBold } from '../../styles/templates/typography';
 import { svgToURL } from '../../styles/tools';
 
 const Button = styled.button`
@@ -10,7 +10,6 @@ const Button = styled.button`
   background-color: transparent;
   border: 0;
   padding: 0;
-  ${typography.longPrimer}
   ${baseFontBold}
 
   > span {
