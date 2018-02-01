@@ -4,6 +4,10 @@ import backGround from './images/polka-dots.png';
 
 /* eslint no-unused-expressions: 0 */
 injectGlobal`
+  * {
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+
   *::before,
   *::after {
     box-sizing: inherit;
@@ -76,6 +80,11 @@ injectGlobal`
     height: 100%;
     color: #575756;
     font-family: ${baseFontStackSansSerif};
+  }
+  
+  body,
+  p {
+    font-size: 18px;
   }
 
   [hidden][aria-hidden="false"] {
