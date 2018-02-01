@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FlexColumn> should accept the fluid prop 1`] = `
+.c0 {
+  height: unset;
+  padding: 0;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<FlexColumn> should accept the fullHeight prop 1`] = `
+.c0 {
+  height: 100%;
+  padding: 0.25rem;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<FlexColumn> should render and match the snapshot 1`] = `
+.c0 {
+  height: unset;
+  padding: 0.25rem;
+}
+
+<div
+  className="c0"
+/>
+`;
