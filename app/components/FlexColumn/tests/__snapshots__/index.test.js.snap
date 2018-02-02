@@ -4,6 +4,7 @@ exports[`<FlexColumn> should accept the fluid prop 1`] = `
 .c0 {
   height: unset;
   padding: 0;
+  width: 100%;
 }
 
 <div
@@ -15,6 +16,7 @@ exports[`<FlexColumn> should accept the fullHeight prop 1`] = `
 .c0 {
   height: 100%;
   padding: 0.25rem;
+  width: 100%;
 }
 
 <div
@@ -26,6 +28,7 @@ exports[`<FlexColumn> should render and match the snapshot 1`] = `
 .c0 {
   height: unset;
   padding: 0.25rem;
+  width: 100%;
 }
 
 <div
