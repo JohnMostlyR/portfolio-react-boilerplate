@@ -17,16 +17,14 @@ import messages from './messages';
 import { loadContent } from './actions';
 import { makeSelectProjectsPageProjects } from './selectors';
 import reducer from './reducer';
-import ProjectsList from './ProjectsList';
-import ProjectsListItem from './ProjectsListItem';
 
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
 import StyledArticle from '../../components/StyledArticle';
 import PageHeader from '../../components/PageHeader';
-import Project from '../../components/Project';
 import FlexRow from '../../components/FlexRow';
 import FlexColumn from '../../components/FlexColumn';
+import Projects from '../../components/Projects';
 
 export class ProjectsPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   componentDidMount() {
@@ -37,7 +35,7 @@ export class ProjectsPage extends React.Component { // eslint-disable-line react
     return (
       <StyledArticle>
         <Helmet>
-          <title>Mijn projected</title>
+          <title>Mijn projecten</title>
           <meta name="description" content="Mijn projecten pagina van Johan Meester zijn portfolio" />
         </Helmet>
         <FlexRow>
@@ -49,22 +47,7 @@ export class ProjectsPage extends React.Component { // eslint-disable-line react
         </FlexRow>
         <FlexRow>
           <FlexColumn>
-            <ProjectsList>
-              {
-                this.props.projects.map((project, idx) => (
-                  <ProjectsListItem key={project.title}>
-                    <Project
-                      thumbnailUrl={project.thumbnail.url}
-                      title={project.title}
-                      links={project.externalLinks}
-                      detailsTitle={project.subtitle}
-                      detailsBodyText={project.description}
-                      isOdd={!(idx % 2)}
-                    />
-                  </ProjectsListItem>
-                  ))
-              }
-            </ProjectsList>
+            <Projects projects={this.props.projects} />
           </FlexColumn>
         </FlexRow>
       </StyledArticle>

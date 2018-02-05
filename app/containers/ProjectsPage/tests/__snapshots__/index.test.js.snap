@@ -26,7 +26,7 @@ ShallowWrapper {
           encodeSpecialCharacters={true}
 >
           <title>
-                    Mijn projected
+                    Mijn projecten
           </title>
           <meta
                     content="Mijn projecten pagina van Johan Meester zijn portfolio"
@@ -48,9 +48,9 @@ ShallowWrapper {
 </FlexRow__FlexRow>,
         <FlexRow__FlexRow>
           <FlexColumn__FlexColumn>
-                    <ProjectsList__ProjectsList>
-                              
-                    </ProjectsList__ProjectsList>
+                    <Projects
+                              projects={Array []}
+                    />
           </FlexColumn__FlexColumn>
 </FlexRow__FlexRow>,
       ],
@@ -64,7 +64,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <title>
-              Mijn projected
+              Mijn projecten
 </title>,
             <meta
               content="Mijn projecten pagina van Johan Meester zijn portfolio"
@@ -81,10 +81,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Mijn projected",
+              "children": "Mijn projecten",
             },
             "ref": null,
-            "rendered": "Mijn projected",
+            "rendered": "Mijn projecten",
             "type": "title",
           },
           Object {
@@ -174,9 +174,9 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <FlexColumn__FlexColumn>
-            <ProjectsList__ProjectsList>
-                        
-            </ProjectsList__ProjectsList>
+            <Projects
+                        projects={Array []}
+            />
 </FlexColumn__FlexColumn>,
         },
         "ref": null,
@@ -185,9 +185,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <ProjectsList__ProjectsList>
-              
-</ProjectsList__ProjectsList>,
+            "children": <Projects
+              projects={Array []}
+/>,
           },
           "ref": null,
           "rendered": Object {
@@ -195,10 +195,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": Array [],
+              "projects": Array [],
             },
             "ref": null,
-            "rendered": Array [],
+            "rendered": null,
             "type": [Function],
           },
           "type": [Function],
@@ -220,7 +220,7 @@ ShallowWrapper {
             encodeSpecialCharacters={true}
 >
             <title>
-                        Mijn projected
+                        Mijn projecten
             </title>
             <meta
                         content="Mijn projecten pagina van Johan Meester zijn portfolio"
@@ -242,9 +242,9 @@ ShallowWrapper {
 </FlexRow__FlexRow>,
           <FlexRow__FlexRow>
             <FlexColumn__FlexColumn>
-                        <ProjectsList__ProjectsList>
-                                    
-                        </ProjectsList__ProjectsList>
+                        <Projects
+                                    projects={Array []}
+                        />
             </FlexColumn__FlexColumn>
 </FlexRow__FlexRow>,
         ],
@@ -258,7 +258,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <title>
-                Mijn projected
+                Mijn projecten
 </title>,
               <meta
                 content="Mijn projecten pagina van Johan Meester zijn portfolio"
@@ -275,10 +275,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Mijn projected",
+                "children": "Mijn projecten",
               },
               "ref": null,
-              "rendered": "Mijn projected",
+              "rendered": "Mijn projecten",
               "type": "title",
             },
             Object {
@@ -368,9 +368,9 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <FlexColumn__FlexColumn>
-              <ProjectsList__ProjectsList>
-                            
-              </ProjectsList__ProjectsList>
+              <Projects
+                            projects={Array []}
+              />
 </FlexColumn__FlexColumn>,
           },
           "ref": null,
@@ -379,9 +379,9 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <ProjectsList__ProjectsList>
-                
-</ProjectsList__ProjectsList>,
+              "children": <Projects
+                projects={Array []}
+/>,
             },
             "ref": null,
             "rendered": Object {
@@ -389,10 +389,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": Array [],
+                "projects": Array [],
               },
               "ref": null,
-              "rendered": Array [],
+              "rendered": null,
               "type": [Function],
             },
             "type": [Function],

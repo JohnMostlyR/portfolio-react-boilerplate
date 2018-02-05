@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Project
+    hasFocus={false}
     links={
         Array [
             Object {
@@ -45,33 +46,26 @@ ShallowWrapper {
                               <ProjectTitle__ProjectTitle>
                                         New Project
                               </ProjectTitle__ProjectTitle>
-                              <ProjectLinksList
-                                        links={
-                                                  Array [
-                                                            Object {
-                                                              "faIcon": "github",
-                                                              "name": "github",
-                                                              "url": "https://github.com/",
-                                                            },
-                                                            Object {
-                                                              "faIcon": "codepen",
-                                                              "name": "codepen",
-                                                              "url": "https://codepen.io/",
-                                                            },
-                                                          ]
-                                        }
-                              />
                     </ProjectHeader__ProjectHeader>
-                    <ProjectDetailsTitle__ProjectDetailsTitle>
-                              <strong />
-                    </ProjectDetailsTitle__ProjectDetailsTitle>
           </div>
           <ProjectDetailsBody__ProjectDetailsBody />
 </ProjectBody__ProjectBody>,
-        <ReactTooltip
-          insecure={true}
-          resizeHide={true}
-          wrapper="div"
+        <ProjectLinksList
+          hasFocus={false}
+          links={
+                    Array [
+                              Object {
+                                "faIcon": "github",
+                                "name": "github",
+                                "url": "https://github.com/",
+                              },
+                              Object {
+                                "faIcon": "codepen",
+                                "name": "codepen",
+                                "url": "https://codepen.io/",
+                              },
+                            ]
+          }
 />,
       ],
     },
@@ -100,26 +94,7 @@ ShallowWrapper {
                             <ProjectTitle__ProjectTitle>
                                           New Project
                             </ProjectTitle__ProjectTitle>
-                            <ProjectLinksList
-                                          links={
-                                                        Array [
-                                                                      Object {
-                                                                        "faIcon": "github",
-                                                                        "name": "github",
-                                                                        "url": "https://github.com/",
-                                                                      },
-                                                                      Object {
-                                                                        "faIcon": "codepen",
-                                                                        "name": "codepen",
-                                                                        "url": "https://codepen.io/",
-                                                                      },
-                                                                    ]
-                                          }
-                            />
               </ProjectHeader__ProjectHeader>
-              <ProjectDetailsTitle__ProjectDetailsTitle>
-                            <strong />
-              </ProjectDetailsTitle__ProjectDetailsTitle>
 </div>,
             <ProjectDetailsBody__ProjectDetailsBody />,
           ],
@@ -131,122 +106,36 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <ProjectHeader__ProjectHeader>
-                  <ProjectTitle__ProjectTitle>
-                                    New Project
-                  </ProjectTitle__ProjectTitle>
-                  <ProjectLinksList
-                                    links={
-                                                      Array [
-                                                                        Object {
-                                                                          "faIcon": "github",
-                                                                          "name": "github",
-                                                                          "url": "https://github.com/",
-                                                                        },
-                                                                        Object {
-                                                                          "faIcon": "codepen",
-                                                                          "name": "codepen",
-                                                                          "url": "https://codepen.io/",
-                                                                        },
-                                                                      ]
-                                    }
-                  />
+              "children": <ProjectHeader__ProjectHeader>
+                <ProjectTitle__ProjectTitle>
+                                New Project
+                </ProjectTitle__ProjectTitle>
 </ProjectHeader__ProjectHeader>,
-                <ProjectDetailsTitle__ProjectDetailsTitle>
-                  <strong />
-</ProjectDetailsTitle__ProjectDetailsTitle>,
-              ],
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": Array [
-                    <ProjectTitle__ProjectTitle>
-                      New Project
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <ProjectTitle__ProjectTitle>
+                  New Project
 </ProjectTitle__ProjectTitle>,
-                    <ProjectLinksList
-                      links={
-                                            Array [
-                                                                  Object {
-                                                                    "faIcon": "github",
-                                                                    "name": "github",
-                                                                    "url": "https://github.com/",
-                                                                  },
-                                                                  Object {
-                                                                    "faIcon": "codepen",
-                                                                    "name": "codepen",
-                                                                    "url": "https://codepen.io/",
-                                                                  },
-                                                                ]
-                      }
-/>,
-                  ],
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "New Project",
-                    },
-                    "ref": null,
-                    "rendered": "New Project",
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "links": Array [
-                        Object {
-                          "faIcon": "github",
-                          "name": "github",
-                          "url": "https://github.com/",
-                        },
-                        Object {
-                          "faIcon": "codepen",
-                          "name": "codepen",
-                          "url": "https://codepen.io/",
-                        },
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                ],
-                "type": [Function],
               },
-              Object {
+              "ref": null,
+              "rendered": Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": <strong />,
+                  "children": "New Project",
                 },
                 "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": undefined,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "strong",
-                },
+                "rendered": "New Project",
                 "type": [Function],
               },
-            ],
+              "type": [Function],
+            },
             "type": "div",
           },
           Object {
@@ -266,11 +155,21 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
-          "insecure": true,
-          "resizeHide": true,
-          "wrapper": "div",
+          "hasFocus": false,
+          "links": Array [
+            Object {
+              "faIcon": "github",
+              "name": "github",
+              "url": "https://github.com/",
+            },
+            Object {
+              "faIcon": "codepen",
+              "name": "codepen",
+              "url": "https://codepen.io/",
+            },
+          ],
         },
         "ref": null,
         "rendered": null,
@@ -296,33 +195,26 @@ ShallowWrapper {
                                     <ProjectTitle__ProjectTitle>
                                                 New Project
                                     </ProjectTitle__ProjectTitle>
-                                    <ProjectLinksList
-                                                links={
-                                                            Array [
-                                                                        Object {
-                                                                          "faIcon": "github",
-                                                                          "name": "github",
-                                                                          "url": "https://github.com/",
-                                                                        },
-                                                                        Object {
-                                                                          "faIcon": "codepen",
-                                                                          "name": "codepen",
-                                                                          "url": "https://codepen.io/",
-                                                                        },
-                                                                      ]
-                                                }
-                                    />
                         </ProjectHeader__ProjectHeader>
-                        <ProjectDetailsTitle__ProjectDetailsTitle>
-                                    <strong />
-                        </ProjectDetailsTitle__ProjectDetailsTitle>
             </div>
             <ProjectDetailsBody__ProjectDetailsBody />
 </ProjectBody__ProjectBody>,
-          <ReactTooltip
-            insecure={true}
-            resizeHide={true}
-            wrapper="div"
+          <ProjectLinksList
+            hasFocus={false}
+            links={
+                        Array [
+                                    Object {
+                                      "faIcon": "github",
+                                      "name": "github",
+                                      "url": "https://github.com/",
+                                    },
+                                    Object {
+                                      "faIcon": "codepen",
+                                      "name": "codepen",
+                                      "url": "https://codepen.io/",
+                                    },
+                                  ]
+            }
 />,
         ],
       },
@@ -351,26 +243,7 @@ ShallowWrapper {
                                 <ProjectTitle__ProjectTitle>
                                                 New Project
                                 </ProjectTitle__ProjectTitle>
-                                <ProjectLinksList
-                                                links={
-                                                                Array [
-                                                                                Object {
-                                                                                  "faIcon": "github",
-                                                                                  "name": "github",
-                                                                                  "url": "https://github.com/",
-                                                                                },
-                                                                                Object {
-                                                                                  "faIcon": "codepen",
-                                                                                  "name": "codepen",
-                                                                                  "url": "https://codepen.io/",
-                                                                                },
-                                                                              ]
-                                                }
-                                />
                 </ProjectHeader__ProjectHeader>
-                <ProjectDetailsTitle__ProjectDetailsTitle>
-                                <strong />
-                </ProjectDetailsTitle__ProjectDetailsTitle>
 </div>,
               <ProjectDetailsBody__ProjectDetailsBody />,
             ],
@@ -382,122 +255,36 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <ProjectHeader__ProjectHeader>
-                    <ProjectTitle__ProjectTitle>
-                                        New Project
-                    </ProjectTitle__ProjectTitle>
-                    <ProjectLinksList
-                                        links={
-                                                            Array [
-                                                                                Object {
-                                                                                  "faIcon": "github",
-                                                                                  "name": "github",
-                                                                                  "url": "https://github.com/",
-                                                                                },
-                                                                                Object {
-                                                                                  "faIcon": "codepen",
-                                                                                  "name": "codepen",
-                                                                                  "url": "https://codepen.io/",
-                                                                                },
-                                                                              ]
-                                        }
-                    />
+                "children": <ProjectHeader__ProjectHeader>
+                  <ProjectTitle__ProjectTitle>
+                                    New Project
+                  </ProjectTitle__ProjectTitle>
 </ProjectHeader__ProjectHeader>,
-                  <ProjectDetailsTitle__ProjectDetailsTitle>
-                    <strong />
-</ProjectDetailsTitle__ProjectDetailsTitle>,
-                ],
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": Array [
-                      <ProjectTitle__ProjectTitle>
-                        New Project
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <ProjectTitle__ProjectTitle>
+                    New Project
 </ProjectTitle__ProjectTitle>,
-                      <ProjectLinksList
-                        links={
-                                                Array [
-                                                                        Object {
-                                                                          "faIcon": "github",
-                                                                          "name": "github",
-                                                                          "url": "https://github.com/",
-                                                                        },
-                                                                        Object {
-                                                                          "faIcon": "codepen",
-                                                                          "name": "codepen",
-                                                                          "url": "https://codepen.io/",
-                                                                        },
-                                                                      ]
-                        }
-/>,
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "class",
-                      "props": Object {
-                        "children": "New Project",
-                      },
-                      "ref": null,
-                      "rendered": "New Project",
-                      "type": [Function],
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "links": Array [
-                          Object {
-                            "faIcon": "github",
-                            "name": "github",
-                            "url": "https://github.com/",
-                          },
-                          Object {
-                            "faIcon": "codepen",
-                            "name": "codepen",
-                            "url": "https://codepen.io/",
-                          },
-                        ],
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": [Function],
-                    },
-                  ],
-                  "type": [Function],
                 },
-                Object {
+                "ref": null,
+                "rendered": Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": <strong />,
+                    "children": "New Project",
                   },
                   "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": undefined,
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "strong",
-                  },
+                  "rendered": "New Project",
                   "type": [Function],
                 },
-              ],
+                "type": [Function],
+              },
               "type": "div",
             },
             Object {
@@ -517,11 +304,21 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
-            "insecure": true,
-            "resizeHide": true,
-            "wrapper": "div",
+            "hasFocus": false,
+            "links": Array [
+              Object {
+                "faIcon": "github",
+                "name": "github",
+                "url": "https://github.com/",
+              },
+              Object {
+                "faIcon": "codepen",
+                "name": "codepen",
+                "url": "https://codepen.io/",
+              },
+            ],
           },
           "ref": null,
           "rendered": null,

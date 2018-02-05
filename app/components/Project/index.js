@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactTooltip from 'react-tooltip';
 
 import Article from './Article';
 import ProjectLinksList from './ProjectLinksList';
@@ -8,7 +7,6 @@ import ProjectBody from './ProjectBody';
 import ProjectHeader from './ProjectHeader';
 import ProjectTitle from './ProjectTitle';
 import ProjectDetailsBody from './ProjectDetailsBody';
-import ProjectDetailsTitle from './ProjectDetailsTitle';
 
 import MediaAsset from '../MediaAsset';
 
@@ -19,27 +17,26 @@ const Project = (props) => (
       <div>
         <ProjectHeader>
           <ProjectTitle>{props.title}</ProjectTitle>
-          <ProjectLinksList links={props.links} />
         </ProjectHeader>
-        <ProjectDetailsTitle><strong>{props.detailsTitle}</strong></ProjectDetailsTitle>
       </div>
       <ProjectDetailsBody>{props.detailsBodyText}</ProjectDetailsBody>
     </ProjectBody>
-    <ReactTooltip />
+    <ProjectLinksList links={props.links} hasFocus={props.hasFocus} />
   </Article>
 );
 
 Project.propTypes = {
-  detailsTitle: PropTypes.string,
   detailsBodyText: PropTypes.string,
   isOdd: PropTypes.bool,
   links: PropTypes.array,
   thumbnailUrl: PropTypes.string,
   title: PropTypes.string,
+  hasFocus: PropTypes.bool,
 };
 
 Project.defaultProps = {
   title: 'New Project',
+  hasFocus: false,
 };
 
 export default Project;

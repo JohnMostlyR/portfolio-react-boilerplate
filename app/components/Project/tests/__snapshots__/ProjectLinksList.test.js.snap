@@ -1,138 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProjectLinksList should render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ProjectLinksList
-    links={
-        Array [
-            Object {
-              "faIcon": "github",
-              "name": "github",
-              "url": "https://github.com/",
-            },
-            Object {
-              "faIcon": "codepen",
-              "name": "codepen",
-              "url": "https://codepen.io/",
-            },
-          ]
-    }
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": Array [
-        <ProjectExternalLink
-          faIcon="github"
-          name="github"
-          url="https://github.com/"
-/>,
-        <ProjectExternalLink
-          faIcon="codepen"
-          name="codepen"
-          url="https://codepen.io/"
-/>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": "github",
-        "nodeType": "function",
-        "props": Object {
-          "faIcon": "github",
-          "name": "github",
-          "url": "https://github.com/",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "codepen",
-        "nodeType": "function",
-        "props": Object {
-          "faIcon": "codepen",
-          "name": "codepen",
-          "url": "https://codepen.io/",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <ProjectExternalLink
-            faIcon="github"
-            name="github"
-            url="https://github.com/"
-/>,
-          <ProjectExternalLink
-            faIcon="codepen"
-            name="codepen"
-            url="https://codepen.io/"
-/>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": "github",
-          "nodeType": "function",
-          "props": Object {
-            "faIcon": "github",
-            "name": "github",
-            "url": "https://github.com/",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "codepen",
-          "nodeType": "function",
-          "props": Object {
-            "faIcon": "codepen",
-            "name": "codepen",
-            "url": "https://codepen.io/",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+<ProjectLinksList__Wrapper
+  hasFocus={false}
+>
+  <ProjectLinksList__StyledList>
+    <ProjectExternalLink
+      faIcon="external-link"
+      hasFocus={false}
+      key="github"
+      name="github"
+      url="https://github.com/"
+    />
+    <ProjectExternalLink
+      faIcon="external-link"
+      hasFocus={false}
+      key="codepen"
+      name="codepen"
+      url="https://codepen.io/"
+    />
+  </ProjectLinksList__StyledList>
+</ProjectLinksList__Wrapper>
 `;

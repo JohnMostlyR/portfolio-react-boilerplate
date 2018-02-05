@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Projects /> should render and match the snapshot 1`] = `
+<React.Fragment>
+  <ProjectsList__ProjectsList>
+    <ProjectsListItem__ProjectsListItem
+      key="In progress..."
+      onFocus={[Function]}
+      onMouseOver={[Function]}
+    >
+      <Project
+        detailsBodyText="Busy creating some new awesomeness."
+        detailsTitle="More to come!"
+        hasFocus={false}
+        isOdd={true}
+        links={Array []}
+        thumbnailUrl="#"
+        title="In progress..."
+      />
+    </ProjectsListItem__ProjectsListItem>
+  </ProjectsList__ProjectsList>
+</React.Fragment>
+`;

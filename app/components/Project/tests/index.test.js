@@ -74,4 +74,17 @@ describe('Project', () => {
 
     expect(wrapper.prop('isOdd')).toBe(PROP);
   });
+
+  it('should adopt the "hasFocus" prop', () => {
+    const PROP = true;
+    const wrapper = mount(
+      <Project
+        links={LINKS}
+        thumbnailUrl={THUMB}
+        hasFocus={PROP}
+      />
+    );
+
+    expect(wrapper.prop('hasFocus')).toBe(PROP);
+  });
 });

@@ -1,47 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProjectDetailsBody /> should render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ProjectDetailsBody__ProjectDetailsBody />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "className": "ProjectDetailsBody__ProjectDetailsBody-QYRBN gcMCKr",
-    },
-    "ref": null,
-    "rendered": null,
-    "type": "p",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "className": "ProjectDetailsBody__ProjectDetailsBody-QYRBN gcMCKr",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "p",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
+.c0 {
+  min-width: 32vw;
+  margin-top: 0.5em;
+  font-size: 0.875rem;
 }
+
+<p
+  className="c0"
+/>
 `;

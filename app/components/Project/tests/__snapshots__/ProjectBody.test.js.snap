@@ -1,47 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProjectBody /> should render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ProjectBody__ProjectBody />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "className": "ProjectBody__ProjectBody-etPNCI fDXmnW",
-    },
-    "ref": null,
-    "rendered": null,
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "className": "ProjectBody__ProjectBody-etPNCI fDXmnW",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
+.c0 {
+  -webkit-flex: 1 0 50%;
+  -ms-flex: 1 0 50%;
+  flex: 1 0 50%;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  padding-bottom: 2vw;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  padding-top: 3vw;
 }
+
+@media (min-width:600px) {
+  .c0 {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    padding-bottom: 1vw;
+    padding-left: 3vw;
+    padding-top: 1vw;
+  }
+}
+
+<div
+  className="c0"
+/>
 `;

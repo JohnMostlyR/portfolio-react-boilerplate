@@ -1,183 +1,111 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProjectExternalLink should render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ProjectExternalLink
-    faIcon="meh-o"
-    name="Name"
-    url="#"
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "children": <ProjectExternalLink__StyledA
-        href="#"
-        rel="noopener noreferrer"
-        target="_blank"
+exports[`<ProjectExternalLink /> should adopt the faIcon property 1`] = `
+<ProjectExternalLink__ListItem
+  data-tip="External Link"
+  hasFocus={false}
 >
-        <FontAwesome
-                fixedWidth={true}
-                name="meh-o"
-        />
-        <span
-                aria-hidden="false"
-                hidden={true}
-        >
-                Name
-        </span>
-</ProjectExternalLink__StyledA>,
-      "data-tip": "Name",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <FontAwesome
-            fixedWidth={true}
-            name="meh-o"
-/>,
-          <span
-            aria-hidden="false"
-            hidden={true}
+  <ProjectExternalLink__StyledA
+    href="#"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <span>
+      External Link
+       
+      <FontAwesome
+        fixedWidth={true}
+        name="meh-o"
+      />
+    </span>
+  </ProjectExternalLink__StyledA>
+</ProjectExternalLink__ListItem>
+`;
+
+exports[`<ProjectExternalLink /> should adopt the hasFocus property 1`] = `
+<ProjectExternalLink__ListItem
+  data-tip="External Link"
+  hasFocus={true}
 >
-            Name
-</span>,
-        ],
-        "href": "#",
-        "rel": "noopener noreferrer",
-        "target": "_blank",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "fixedWidth": true,
-            "name": "meh-o",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "aria-hidden": "false",
-            "children": "Name",
-            "hidden": true,
-          },
-          "ref": null,
-          "rendered": "Name",
-          "type": "span",
-        },
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <ProjectExternalLink__StyledA
-          href="#"
-          rel="noopener noreferrer"
-          target="_blank"
+  <ProjectExternalLink__StyledA
+    href="#"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <span>
+      External Link
+       
+      <FontAwesome
+        fixedWidth={true}
+        name="external-link"
+      />
+    </span>
+  </ProjectExternalLink__StyledA>
+</ProjectExternalLink__ListItem>
+`;
+
+exports[`<ProjectExternalLink /> should adopt the name property 1`] = `
+<ProjectExternalLink__ListItem
+  data-tip="Testing"
+  hasFocus={false}
 >
-          <FontAwesome
-                    fixedWidth={true}
-                    name="meh-o"
-          />
-          <span
-                    aria-hidden="false"
-                    hidden={true}
-          >
-                    Name
-          </span>
-</ProjectExternalLink__StyledA>,
-        "data-tip": "Name",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <FontAwesome
-              fixedWidth={true}
-              name="meh-o"
-/>,
-            <span
-              aria-hidden="false"
-              hidden={true}
+  <ProjectExternalLink__StyledA
+    href="#"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <span>
+      Testing
+       
+      <FontAwesome
+        fixedWidth={true}
+        name="external-link"
+      />
+    </span>
+  </ProjectExternalLink__StyledA>
+</ProjectExternalLink__ListItem>
+`;
+
+exports[`<ProjectExternalLink /> should adopt the url property 1`] = `
+<ProjectExternalLink__ListItem
+  data-tip="External Link"
+  hasFocus={false}
 >
-              Name
-</span>,
-          ],
-          "href": "#",
-          "rel": "noopener noreferrer",
-          "target": "_blank",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "fixedWidth": true,
-              "name": "meh-o",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "aria-hidden": "false",
-              "children": "Name",
-              "hidden": true,
-            },
-            "ref": null,
-            "rendered": "Name",
-            "type": "span",
-          },
-        ],
-        "type": [Function],
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+  <ProjectExternalLink__StyledA
+    href="http://link.to"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <span>
+      External Link
+       
+      <FontAwesome
+        fixedWidth={true}
+        name="external-link"
+      />
+    </span>
+  </ProjectExternalLink__StyledA>
+</ProjectExternalLink__ListItem>
+`;
+
+exports[`<ProjectExternalLink /> should render and match the snapshot 1`] = `
+<ProjectExternalLink__ListItem
+  data-tip="External Link"
+  hasFocus={false}
+>
+  <ProjectExternalLink__StyledA
+    href="#"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <span>
+      External Link
+       
+      <FontAwesome
+        fixedWidth={true}
+        name="external-link"
+      />
+    </span>
+  </ProjectExternalLink__StyledA>
+</ProjectExternalLink__ListItem>
 `;

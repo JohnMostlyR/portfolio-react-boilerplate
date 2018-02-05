@@ -1,5 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import 'jest-styled-components';
 
 import ProjectLinksList from '../ProjectLinksList';
 
@@ -20,7 +22,7 @@ describe('ProjectLinksList', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<ProjectLinksList links={links} />);
+    wrapper = toJson(shallow(<ProjectLinksList links={links} />));
   });
 
   it('should render and match the snapshot', () => {
