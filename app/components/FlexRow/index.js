@@ -5,6 +5,7 @@ const FlexRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   height: ${({ fullHeight }) => fullHeight ? '100%' : 'unset'};
+  width: 100%; /* IE */
 `;
 
 FlexRow.propTypes = {
