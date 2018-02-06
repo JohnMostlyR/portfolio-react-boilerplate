@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<StyledA> Should render and match the snapshot 1`] = `
+.c0 {
+  color: #575756;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
 <a
-  className="StyledA__StyledA-iHqXXL bRsxAK"
+  className="c0"
 />
 `;
