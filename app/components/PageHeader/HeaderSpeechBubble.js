@@ -39,6 +39,7 @@ const HeaderSpeechBubble = styled.div`
       content: "";
       height: 4vh;
       left: 0;
+      margin-top: -1px;
       position: absolute;
       right: 0;
       top: 100%;
