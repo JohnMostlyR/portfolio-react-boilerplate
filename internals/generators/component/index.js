@@ -60,7 +60,7 @@ module.exports = {
       abortOnFail: true,
     }, {
       type: 'add',
-      path: '../../app/components/{{properCase name}}/tests/FormInfoItemsList.test.js',
+      path: '../../app/components/{{properCase name}}/tests/index.test.js',
       templateFile: './component/tests.js.hbs',
       abortOnFail: true,
     }];
