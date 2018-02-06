@@ -1,7 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Wrapper Should render and match the snapshot 1`] = `
+exports[`<Wrapper /> Should render and match the snapshot 1`] = `
+.c0 {
+  margin-bottom: 9vh;
+  padding: 1vh 1vw;
+  width: 100%;
+  -webkit-filter: drop-shadow(0 0 10px grey);
+  filter: drop-shadow(0 0 10px grey);
+  -webkit-transition: filter 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out;
+}
+
+.c0:active,
+.c0:focus,
+.c0:hover {
+  -webkit-filter: drop-shadow(0 0 5px dimgrey);
+  filter: drop-shadow(0 0 5px dimgrey);
+}
+
+.c0 .Bubble__Bubble-kfMqWCp:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+@media (min-width:1008px) {
+  .c0 {
+    max-width: 63rem;
+  }
+}
+
 <div
-  className="Wrapper__Wrapper-fEDTQp dKhNgq"
+  className="c0"
 />
 `;

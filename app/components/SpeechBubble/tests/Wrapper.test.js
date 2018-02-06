@@ -1,11 +1,13 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import 'jest-styled-components';
 
 import Wrapper from '../Wrapper';
 
-describe('Wrapper', () => {
+describe('<Wrapper />', () => {
   it('Should render and match the snapshot', () => {
-    const tree = renderer.create(<Wrapper />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const wrapper = shallow(<Wrapper />);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
