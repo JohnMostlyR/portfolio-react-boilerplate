@@ -14,7 +14,10 @@ const SiteNavigationLink = styled(Link)`
   padding: 0.5em;
   text-align: center;
   text-decoration: none !important;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s 0s ease-in-out,
+    color 0.3s 0s ease-in-out,
+    box-shadow 0.3s 0s ease-in-out;
   white-space: nowrap;
   font-family: ${baseFontStackSansSerif};
   font-weight: 400;
@@ -31,7 +34,9 @@ const SiteNavigationLink = styled(Link)`
     border-radius: inherit;
     opacity: 0;
     transform: scale3d(0.6, 0.6, 1);
-    transition: transform 0.3s, opacity 0.3s;
+    transition:
+      transform 0.3s 0s ease-in-out,
+      opacity 0.3s 0s ease-in-out;
     transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 
     @media (min-width: 600px) {
@@ -49,14 +54,24 @@ const SiteNavigationLink = styled(Link)`
       opacity: 1;
       transform: scale3d(1, 1, 1);
     }
+
+    @media (min-width: 600px) {
+      background-color: white;
+      box-shadow: 0 0 5px lightgrey;
+    }
   }
 
   @media (min-width: 600px) {
-    border-radius: 5px;
     width: 100%; /* For IE and Edge who don't support the max-content prop. */
     width: max-content;
+    border-radius: 5px;
+    box-shadow: 0 0 10px grey;
   }
 
+  /* stylelint-disable */
+
+  /* Making sure that style is applied when changing routes. */
+  /* Because we are using styled-components I don't want to rely on a class added by react-router. */
   ${(props) => {
     if (props['data-isactive']) {
       return (`
@@ -67,11 +82,18 @@ const SiteNavigationLink = styled(Link)`
           opacity: 1;
           transform: scale3d(1, 1, 1);
         }
+
+        @media (min-width: 600px) {
+          background-color: white;
+          box-shadow: 0 0 5px lightgrey;
+        }
       `);
     }
 
     return '';
   }}
+
+  /* stylelint-enable */
 `;
 
 export default SiteNavigationLink;
