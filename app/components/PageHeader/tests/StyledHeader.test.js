@@ -1,11 +1,13 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import 'jest-styled-components';
 
 import StyledHeader from '../StyledHeader';
 
 describe('<StyledHeader />', () => {
   it('Should render and match the snapshot', () => {
-    const tree = renderer.create(<StyledHeader />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const wrapper = shallow(<StyledHeader />);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

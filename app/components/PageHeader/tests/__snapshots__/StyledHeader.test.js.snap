@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<StyledHeader /> Should render and match the snapshot 1`] = `
+.c0 {
+  float: left;
+  -webkit-filter: drop-shadow(0 0 10px grey);
+  filter: drop-shadow(0 0 10px grey);
+  padding-left: 1em;
+}
+
 <header
-  className="StyledHeader__StyledHeader-kHWYFT gHdlJG"
+  className="c0"
 />
 `;
