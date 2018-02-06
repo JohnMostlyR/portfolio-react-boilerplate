@@ -6,7 +6,7 @@ const LabelContent = styled.span`
   position: absolute;
   top: 100%;
   transition: top 0.2s;
-  ${(props) => ((props.hasFocus) ? 'top: -16px; font-size: 12px;' : '')}
+  ${(props) => ((props.hasFocus) ? 'top: -4px; font-size: 12px;' : '')}
 `;
 
 LabelContent.propTypes = {

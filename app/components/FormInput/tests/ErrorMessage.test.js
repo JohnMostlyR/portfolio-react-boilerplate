@@ -1,12 +1,14 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import 'jest-styled-components';
 
 import ErrorMessage from '../ErrorMessage';
 
 describe('<ErrorMessage />', () => {
   it('should render and match the snapshot', () => {
     const renderedComponent = shallow(<ErrorMessage />);
-    expect(renderedComponent).toMatchSnapshot();
+    expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   it('should adopt the "showError" prop', () => {

@@ -56,20 +56,20 @@ ShallowWrapper {
           type="dummy"
           value="This is valid"
 />,
-        <div>
+        <SubText__SubText>
           <ErrorMessage__ErrorMessage
                     showError={false}
           >
                     undefined 
           </ErrorMessage__ErrorMessage>
-          <HelperText__HelperText>
+          <span>
                     <FormattedMessage
                               defaultMessage="Thanks!"
                               id="portfolio.components.FormInput.helperText.valid"
                               values={Object {}}
                     />
-          </HelperText__HelperText>
-</div>,
+          </span>
+</SubText__SubText>,
       ],
     },
     "ref": null,
@@ -164,7 +164,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             <ErrorMessage__ErrorMessage
@@ -172,13 +172,13 @@ ShallowWrapper {
 >
               undefined 
 </ErrorMessage__ErrorMessage>,
-            <HelperText__HelperText>
+            <span>
               <FormattedMessage
                             defaultMessage="Thanks!"
                             id="portfolio.components.FormInput.helperText.valid"
                             values={Object {}}
               />
-</HelperText__HelperText>,
+</span>,
           ],
         },
         "ref": null,
@@ -198,7 +198,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
               "children": <FormattedMessage
                 defaultMessage="Thanks!"
@@ -220,10 +220,10 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
-            "type": [Function],
+            "type": "span",
           },
         ],
-        "type": "div",
+        "type": [Function],
       },
     ],
     "type": [Function],
@@ -261,20 +261,20 @@ ShallowWrapper {
             type="dummy"
             value="This is valid"
 />,
-          <div>
+          <SubText__SubText>
             <ErrorMessage__ErrorMessage
                         showError={false}
             >
                         undefined 
             </ErrorMessage__ErrorMessage>
-            <HelperText__HelperText>
+            <span>
                         <FormattedMessage
                                     defaultMessage="Thanks!"
                                     id="portfolio.components.FormInput.helperText.valid"
                                     values={Object {}}
                         />
-            </HelperText__HelperText>
-</div>,
+            </span>
+</SubText__SubText>,
         ],
       },
       "ref": null,
@@ -369,7 +369,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
               <ErrorMessage__ErrorMessage
@@ -377,13 +377,13 @@ ShallowWrapper {
 >
                 undefined 
 </ErrorMessage__ErrorMessage>,
-              <HelperText__HelperText>
+              <span>
                 <FormattedMessage
                                 defaultMessage="Thanks!"
                                 id="portfolio.components.FormInput.helperText.valid"
                                 values={Object {}}
                 />
-</HelperText__HelperText>,
+</span>,
             ],
           },
           "ref": null,
@@ -403,7 +403,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "children": <FormattedMessage
                   defaultMessage="Thanks!"
@@ -425,10 +425,10 @@ ShallowWrapper {
                 "rendered": null,
                 "type": [Function],
               },
-              "type": [Function],
+              "type": "span",
             },
           ],
-          "type": "div",
+          "type": [Function],
         },
       ],
       "type": [Function],
@@ -500,13 +500,13 @@ ShallowWrapper {
           type="dummy"
           value=""
 />,
-        <div>
+        <SubText__SubText>
           <ErrorMessage__ErrorMessage
                     showError={true}
           >
                     Error, Error, Error 
           </ErrorMessage__ErrorMessage>
-          <HelperText__HelperText>
+          <span>
                     <span>
                               This is a helper text
                                
@@ -522,8 +522,8 @@ ShallowWrapper {
                                         }
                               />
                     </span>
-          </HelperText__HelperText>
-</div>,
+          </span>
+</SubText__SubText>,
       ],
     },
     "ref": null,
@@ -618,7 +618,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             <ErrorMessage__ErrorMessage
@@ -626,7 +626,7 @@ ShallowWrapper {
 >
               Error, Error, Error 
 </ErrorMessage__ErrorMessage>,
-            <HelperText__HelperText>
+            <span>
               <span>
                             This is a helper text
                              
@@ -642,7 +642,7 @@ ShallowWrapper {
                                           }
                             />
               </span>
-</HelperText__HelperText>,
+</span>,
           ],
         },
         "ref": null,
@@ -662,7 +662,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
               "children": <span>
                 This is a helper text
@@ -726,10 +726,10 @@ ShallowWrapper {
               ],
               "type": "span",
             },
-            "type": [Function],
+            "type": "span",
           },
         ],
-        "type": "div",
+        "type": [Function],
       },
     ],
     "type": [Function],
@@ -767,13 +767,13 @@ ShallowWrapper {
             type="dummy"
             value=""
 />,
-          <div>
+          <SubText__SubText>
             <ErrorMessage__ErrorMessage
                         showError={true}
             >
                         Error, Error, Error 
             </ErrorMessage__ErrorMessage>
-            <HelperText__HelperText>
+            <span>
                         <span>
                                     This is a helper text
                                      
@@ -789,8 +789,8 @@ ShallowWrapper {
                                                 }
                                     />
                         </span>
-            </HelperText__HelperText>
-</div>,
+            </span>
+</SubText__SubText>,
         ],
       },
       "ref": null,
@@ -885,7 +885,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
               <ErrorMessage__ErrorMessage
@@ -893,7 +893,7 @@ ShallowWrapper {
 >
                 Error, Error, Error 
 </ErrorMessage__ErrorMessage>,
-              <HelperText__HelperText>
+              <span>
                 <span>
                                 This is a helper text
                                  
@@ -909,7 +909,7 @@ ShallowWrapper {
                                                 }
                                 />
                 </span>
-</HelperText__HelperText>,
+</span>,
             ],
           },
           "ref": null,
@@ -929,7 +929,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "children": <span>
                   This is a helper text
@@ -993,10 +993,10 @@ ShallowWrapper {
                 ],
                 "type": "span",
               },
-              "type": [Function],
+              "type": "span",
             },
           ],
-          "type": "div",
+          "type": [Function],
         },
       ],
       "type": [Function],
@@ -1072,20 +1072,20 @@ ShallowWrapper {
           }
           value="The value"
 />,
-        <div>
+        <SubText__SubText>
           <ErrorMessage__ErrorMessage
                     showError={false}
           >
                     false 
           </ErrorMessage__ErrorMessage>
-          <HelperText__HelperText>
+          <span>
                     <FormattedMessage
                               defaultMessage="Thanks!"
                               id="portfolio.components.FormInput.helperText.valid"
                               values={Object {}}
                     />
-          </HelperText__HelperText>
-</div>,
+          </span>
+</SubText__SubText>,
       ],
     },
     "ref": null,
@@ -1182,7 +1182,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             <ErrorMessage__ErrorMessage
@@ -1190,13 +1190,13 @@ ShallowWrapper {
 >
               false 
 </ErrorMessage__ErrorMessage>,
-            <HelperText__HelperText>
+            <span>
               <FormattedMessage
                             defaultMessage="Thanks!"
                             id="portfolio.components.FormInput.helperText.valid"
                             values={Object {}}
               />
-</HelperText__HelperText>,
+</span>,
           ],
         },
         "ref": null,
@@ -1216,7 +1216,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
               "children": <FormattedMessage
                 defaultMessage="Thanks!"
@@ -1238,10 +1238,10 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
-            "type": [Function],
+            "type": "span",
           },
         ],
-        "type": "div",
+        "type": [Function],
       },
     ],
     "type": [Function],
@@ -1283,20 +1283,20 @@ ShallowWrapper {
             }
             value="The value"
 />,
-          <div>
+          <SubText__SubText>
             <ErrorMessage__ErrorMessage
                         showError={false}
             >
                         false 
             </ErrorMessage__ErrorMessage>
-            <HelperText__HelperText>
+            <span>
                         <FormattedMessage
                                     defaultMessage="Thanks!"
                                     id="portfolio.components.FormInput.helperText.valid"
                                     values={Object {}}
                         />
-            </HelperText__HelperText>
-</div>,
+            </span>
+</SubText__SubText>,
         ],
       },
       "ref": null,
@@ -1393,7 +1393,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
               <ErrorMessage__ErrorMessage
@@ -1401,13 +1401,13 @@ ShallowWrapper {
 >
                 false 
 </ErrorMessage__ErrorMessage>,
-              <HelperText__HelperText>
+              <span>
                 <FormattedMessage
                                 defaultMessage="Thanks!"
                                 id="portfolio.components.FormInput.helperText.valid"
                                 values={Object {}}
                 />
-</HelperText__HelperText>,
+</span>,
             ],
           },
           "ref": null,
@@ -1427,7 +1427,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "children": <FormattedMessage
                   defaultMessage="Thanks!"
@@ -1449,10 +1449,10 @@ ShallowWrapper {
                 "rendered": null,
                 "type": [Function],
               },
-              "type": [Function],
+              "type": "span",
             },
           ],
-          "type": "div",
+          "type": [Function],
         },
       ],
       "type": [Function],
@@ -1516,14 +1516,14 @@ ShallowWrapper {
           type="text"
           value={undefined}
 />,
-        <div>
+        <SubText__SubText>
           <ErrorMessage__ErrorMessage
                     showError={false}
           >
                     false 
           </ErrorMessage__ErrorMessage>
-          <HelperText__HelperText />
-</div>,
+          <span />
+</SubText__SubText>,
       ],
     },
     "ref": null,
@@ -1612,7 +1612,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             <ErrorMessage__ErrorMessage
@@ -1620,7 +1620,7 @@ ShallowWrapper {
 >
               false 
 </ErrorMessage__ErrorMessage>,
-            <HelperText__HelperText />,
+            <span />,
           ],
         },
         "ref": null,
@@ -1640,16 +1640,16 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
               "children": "",
             },
             "ref": null,
             "rendered": "",
-            "type": [Function],
+            "type": "span",
           },
         ],
-        "type": "div",
+        "type": [Function],
       },
     ],
     "type": [Function],
@@ -1685,14 +1685,14 @@ ShallowWrapper {
             type="text"
             value={undefined}
 />,
-          <div>
+          <SubText__SubText>
             <ErrorMessage__ErrorMessage
                         showError={false}
             >
                         false 
             </ErrorMessage__ErrorMessage>
-            <HelperText__HelperText />
-</div>,
+            <span />
+</SubText__SubText>,
         ],
       },
       "ref": null,
@@ -1781,7 +1781,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
               <ErrorMessage__ErrorMessage
@@ -1789,7 +1789,7 @@ ShallowWrapper {
 >
                 false 
 </ErrorMessage__ErrorMessage>,
-              <HelperText__HelperText />,
+              <span />,
             ],
           },
           "ref": null,
@@ -1809,16 +1809,16 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "children": "",
               },
               "ref": null,
               "rendered": "",
-              "type": [Function],
+              "type": "span",
             },
           ],
-          "type": "div",
+          "type": [Function],
         },
       ],
       "type": [Function],
@@ -1894,13 +1894,13 @@ ShallowWrapper {
           }
           value="The value"
 />,
-        <div>
+        <SubText__SubText>
           <ErrorMessage__ErrorMessage
                     showError={false}
           >
                     false 
           </ErrorMessage__ErrorMessage>
-          <HelperText__HelperText>
+          <span>
                     <span>
                               This is a helper text
                                
@@ -1916,8 +1916,8 @@ ShallowWrapper {
                                         }
                               />
                     </span>
-          </HelperText__HelperText>
-</div>,
+          </span>
+</SubText__SubText>,
       ],
     },
     "ref": null,
@@ -2014,7 +2014,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             <ErrorMessage__ErrorMessage
@@ -2022,7 +2022,7 @@ ShallowWrapper {
 >
               false 
 </ErrorMessage__ErrorMessage>,
-            <HelperText__HelperText>
+            <span>
               <span>
                             This is a helper text
                              
@@ -2038,7 +2038,7 @@ ShallowWrapper {
                                           }
                             />
               </span>
-</HelperText__HelperText>,
+</span>,
           ],
         },
         "ref": null,
@@ -2058,7 +2058,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
               "children": <span>
                 This is a helper text
@@ -2122,10 +2122,10 @@ ShallowWrapper {
               ],
               "type": "span",
             },
-            "type": [Function],
+            "type": "span",
           },
         ],
-        "type": "div",
+        "type": [Function],
       },
     ],
     "type": [Function],
@@ -2167,13 +2167,13 @@ ShallowWrapper {
             }
             value="The value"
 />,
-          <div>
+          <SubText__SubText>
             <ErrorMessage__ErrorMessage
                         showError={false}
             >
                         false 
             </ErrorMessage__ErrorMessage>
-            <HelperText__HelperText>
+            <span>
                         <span>
                                     This is a helper text
                                      
@@ -2189,8 +2189,8 @@ ShallowWrapper {
                                                 }
                                     />
                         </span>
-            </HelperText__HelperText>
-</div>,
+            </span>
+</SubText__SubText>,
         ],
       },
       "ref": null,
@@ -2287,7 +2287,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
               <ErrorMessage__ErrorMessage
@@ -2295,7 +2295,7 @@ ShallowWrapper {
 >
                 false 
 </ErrorMessage__ErrorMessage>,
-              <HelperText__HelperText>
+              <span>
                 <span>
                                 This is a helper text
                                  
@@ -2311,7 +2311,7 @@ ShallowWrapper {
                                                 }
                                 />
                 </span>
-</HelperText__HelperText>,
+</span>,
             ],
           },
           "ref": null,
@@ -2331,7 +2331,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "children": <span>
                   This is a helper text
@@ -2395,10 +2395,10 @@ ShallowWrapper {
                 ],
                 "type": "span",
               },
-              "type": [Function],
+              "type": "span",
             },
           ],
-          "type": "div",
+          "type": [Function],
         },
       ],
       "type": [Function],
@@ -2470,13 +2470,13 @@ ShallowWrapper {
           type="dummy"
           value="The value"
 />,
-        <div>
+        <SubText__SubText>
           <ErrorMessage__ErrorMessage
                     showError={false}
           >
                     false 
           </ErrorMessage__ErrorMessage>
-          <HelperText__HelperText>
+          <span>
                     <span>
                               This is a helper text
                                
@@ -2492,8 +2492,8 @@ ShallowWrapper {
                                         }
                               />
                     </span>
-          </HelperText__HelperText>
-</div>,
+          </span>
+</SubText__SubText>,
       ],
     },
     "ref": null,
@@ -2588,7 +2588,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             <ErrorMessage__ErrorMessage
@@ -2596,7 +2596,7 @@ ShallowWrapper {
 >
               false 
 </ErrorMessage__ErrorMessage>,
-            <HelperText__HelperText>
+            <span>
               <span>
                             This is a helper text
                              
@@ -2612,7 +2612,7 @@ ShallowWrapper {
                                           }
                             />
               </span>
-</HelperText__HelperText>,
+</span>,
           ],
         },
         "ref": null,
@@ -2632,7 +2632,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
               "children": <span>
                 This is a helper text
@@ -2696,10 +2696,10 @@ ShallowWrapper {
               ],
               "type": "span",
             },
-            "type": [Function],
+            "type": "span",
           },
         ],
-        "type": "div",
+        "type": [Function],
       },
     ],
     "type": [Function],
@@ -2737,13 +2737,13 @@ ShallowWrapper {
             type="dummy"
             value="The value"
 />,
-          <div>
+          <SubText__SubText>
             <ErrorMessage__ErrorMessage
                         showError={false}
             >
                         false 
             </ErrorMessage__ErrorMessage>
-            <HelperText__HelperText>
+            <span>
                         <span>
                                     This is a helper text
                                      
@@ -2759,8 +2759,8 @@ ShallowWrapper {
                                                 }
                                     />
                         </span>
-            </HelperText__HelperText>
-</div>,
+            </span>
+</SubText__SubText>,
         ],
       },
       "ref": null,
@@ -2855,7 +2855,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
               <ErrorMessage__ErrorMessage
@@ -2863,7 +2863,7 @@ ShallowWrapper {
 >
                 false 
 </ErrorMessage__ErrorMessage>,
-              <HelperText__HelperText>
+              <span>
                 <span>
                                 This is a helper text
                                  
@@ -2879,7 +2879,7 @@ ShallowWrapper {
                                                 }
                                 />
                 </span>
-</HelperText__HelperText>,
+</span>,
             ],
           },
           "ref": null,
@@ -2899,7 +2899,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "children": <span>
                   This is a helper text
@@ -2963,10 +2963,10 @@ ShallowWrapper {
                 ],
                 "type": "span",
               },
-              "type": [Function],
+              "type": "span",
             },
           ],
-          "type": "div",
+          "type": [Function],
         },
       ],
       "type": [Function],
@@ -3038,13 +3038,13 @@ ShallowWrapper {
           type="dummy"
           value="testing123"
 />,
-        <div>
+        <SubText__SubText>
           <ErrorMessage__ErrorMessage
                     showError={false}
           >
                     Error message. 
           </ErrorMessage__ErrorMessage>
-          <HelperText__HelperText>
+          <span>
                     <span>
                               This is a helper text
                                
@@ -3060,8 +3060,8 @@ ShallowWrapper {
                                         }
                               />
                     </span>
-          </HelperText__HelperText>
-</div>,
+          </span>
+</SubText__SubText>,
       ],
     },
     "ref": null,
@@ -3156,7 +3156,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             <ErrorMessage__ErrorMessage
@@ -3164,7 +3164,7 @@ ShallowWrapper {
 >
               Error message. 
 </ErrorMessage__ErrorMessage>,
-            <HelperText__HelperText>
+            <span>
               <span>
                             This is a helper text
                              
@@ -3180,7 +3180,7 @@ ShallowWrapper {
                                           }
                             />
               </span>
-</HelperText__HelperText>,
+</span>,
           ],
         },
         "ref": null,
@@ -3200,7 +3200,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
               "children": <span>
                 This is a helper text
@@ -3264,10 +3264,10 @@ ShallowWrapper {
               ],
               "type": "span",
             },
-            "type": [Function],
+            "type": "span",
           },
         ],
-        "type": "div",
+        "type": [Function],
       },
     ],
     "type": [Function],
@@ -3305,13 +3305,13 @@ ShallowWrapper {
             type="dummy"
             value="testing123"
 />,
-          <div>
+          <SubText__SubText>
             <ErrorMessage__ErrorMessage
                         showError={false}
             >
                         Error message. 
             </ErrorMessage__ErrorMessage>
-            <HelperText__HelperText>
+            <span>
                         <span>
                                     This is a helper text
                                      
@@ -3327,8 +3327,8 @@ ShallowWrapper {
                                                 }
                                     />
                         </span>
-            </HelperText__HelperText>
-</div>,
+            </span>
+</SubText__SubText>,
         ],
       },
       "ref": null,
@@ -3423,7 +3423,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
               <ErrorMessage__ErrorMessage
@@ -3431,7 +3431,7 @@ ShallowWrapper {
 >
                 Error message. 
 </ErrorMessage__ErrorMessage>,
-              <HelperText__HelperText>
+              <span>
                 <span>
                                 This is a helper text
                                  
@@ -3447,7 +3447,7 @@ ShallowWrapper {
                                                 }
                                 />
                 </span>
-</HelperText__HelperText>,
+</span>,
             ],
           },
           "ref": null,
@@ -3467,7 +3467,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "children": <span>
                   This is a helper text
@@ -3531,10 +3531,10 @@ ShallowWrapper {
                 ],
                 "type": "span",
               },
-              "type": [Function],
+              "type": "span",
             },
           ],
-          "type": "div",
+          "type": [Function],
         },
       ],
       "type": [Function],
@@ -3606,13 +3606,13 @@ ShallowWrapper {
           type="dummy"
           value="testing123"
 />,
-        <div>
+        <SubText__SubText>
           <ErrorMessage__ErrorMessage
                     showError={false}
           >
                     false 
           </ErrorMessage__ErrorMessage>
-          <HelperText__HelperText>
+          <span>
                     <span>
                               This is a helper text
                                
@@ -3628,8 +3628,8 @@ ShallowWrapper {
                                         }
                               />
                     </span>
-          </HelperText__HelperText>
-</div>,
+          </span>
+</SubText__SubText>,
       ],
     },
     "ref": null,
@@ -3724,7 +3724,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             <ErrorMessage__ErrorMessage
@@ -3732,7 +3732,7 @@ ShallowWrapper {
 >
               false 
 </ErrorMessage__ErrorMessage>,
-            <HelperText__HelperText>
+            <span>
               <span>
                             This is a helper text
                              
@@ -3748,7 +3748,7 @@ ShallowWrapper {
                                           }
                             />
               </span>
-</HelperText__HelperText>,
+</span>,
           ],
         },
         "ref": null,
@@ -3768,7 +3768,7 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
               "children": <span>
                 This is a helper text
@@ -3832,10 +3832,10 @@ ShallowWrapper {
               ],
               "type": "span",
             },
-            "type": [Function],
+            "type": "span",
           },
         ],
-        "type": "div",
+        "type": [Function],
       },
     ],
     "type": [Function],
@@ -3873,13 +3873,13 @@ ShallowWrapper {
             type="dummy"
             value="testing123"
 />,
-          <div>
+          <SubText__SubText>
             <ErrorMessage__ErrorMessage
                         showError={false}
             >
                         false 
             </ErrorMessage__ErrorMessage>
-            <HelperText__HelperText>
+            <span>
                         <span>
                                     This is a helper text
                                      
@@ -3895,8 +3895,8 @@ ShallowWrapper {
                                                 }
                                     />
                         </span>
-            </HelperText__HelperText>
-</div>,
+            </span>
+</SubText__SubText>,
         ],
       },
       "ref": null,
@@ -3991,7 +3991,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
               <ErrorMessage__ErrorMessage
@@ -3999,7 +3999,7 @@ ShallowWrapper {
 >
                 false 
 </ErrorMessage__ErrorMessage>,
-              <HelperText__HelperText>
+              <span>
                 <span>
                                 This is a helper text
                                  
@@ -4015,7 +4015,7 @@ ShallowWrapper {
                                                 }
                                 />
                 </span>
-</HelperText__HelperText>,
+</span>,
             ],
           },
           "ref": null,
@@ -4035,7 +4035,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "children": <span>
                   This is a helper text
@@ -4099,10 +4099,10 @@ ShallowWrapper {
                 ],
                 "type": "span",
               },
-              "type": [Function],
+              "type": "span",
             },
           ],
-          "type": "div",
+          "type": [Function],
         },
       ],
       "type": [Function],
@@ -4181,13 +4181,13 @@ testing
 testing
 123"
 />,
-        <div>
+        <SubText__SubText>
           <ErrorMessage__ErrorMessage
                     showError={false}
           >
                     Error message. 
           </ErrorMessage__ErrorMessage>
-          <HelperText__HelperText>
+          <span>
                     <span>
                               This is a helper text
                                
@@ -4203,8 +4203,8 @@ testing
                                         }
                               />
                     </span>
-          </HelperText__HelperText>
-</div>,
+          </span>
+</SubText__SubText>,
       ],
     },
     "ref": null,
@@ -4304,7 +4304,7 @@ testing
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             <ErrorMessage__ErrorMessage
@@ -4312,7 +4312,7 @@ testing
 >
               Error message. 
 </ErrorMessage__ErrorMessage>,
-            <HelperText__HelperText>
+            <span>
               <span>
                             This is a helper text
                              
@@ -4328,7 +4328,7 @@ testing
                                           }
                             />
               </span>
-</HelperText__HelperText>,
+</span>,
           ],
         },
         "ref": null,
@@ -4348,7 +4348,7 @@ testing
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
               "children": <span>
                 This is a helper text
@@ -4412,10 +4412,10 @@ testing
               ],
               "type": "span",
             },
-            "type": [Function],
+            "type": "span",
           },
         ],
-        "type": "div",
+        "type": [Function],
       },
     ],
     "type": [Function],
@@ -4460,13 +4460,13 @@ testing
 testing
 123"
 />,
-          <div>
+          <SubText__SubText>
             <ErrorMessage__ErrorMessage
                         showError={false}
             >
                         Error message. 
             </ErrorMessage__ErrorMessage>
-            <HelperText__HelperText>
+            <span>
                         <span>
                                     This is a helper text
                                      
@@ -4482,8 +4482,8 @@ testing
                                                 }
                                     />
                         </span>
-            </HelperText__HelperText>
-</div>,
+            </span>
+</SubText__SubText>,
         ],
       },
       "ref": null,
@@ -4583,7 +4583,7 @@ testing
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
               <ErrorMessage__ErrorMessage
@@ -4591,7 +4591,7 @@ testing
 >
                 Error message. 
 </ErrorMessage__ErrorMessage>,
-              <HelperText__HelperText>
+              <span>
                 <span>
                                 This is a helper text
                                  
@@ -4607,7 +4607,7 @@ testing
                                                 }
                                 />
                 </span>
-</HelperText__HelperText>,
+</span>,
             ],
           },
           "ref": null,
@@ -4627,7 +4627,7 @@ testing
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "children": <span>
                   This is a helper text
@@ -4691,10 +4691,10 @@ testing
                 ],
                 "type": "span",
               },
-              "type": [Function],
+              "type": "span",
             },
           ],
-          "type": "div",
+          "type": [Function],
         },
       ],
       "type": [Function],
@@ -4773,13 +4773,13 @@ testing
 testing
 123"
 />,
-        <div>
+        <SubText__SubText>
           <ErrorMessage__ErrorMessage
                     showError={false}
           >
                     false 
           </ErrorMessage__ErrorMessage>
-          <HelperText__HelperText>
+          <span>
                     <span>
                               This is a helper text
                                
@@ -4795,8 +4795,8 @@ testing
                                         }
                               />
                     </span>
-          </HelperText__HelperText>
-</div>,
+          </span>
+</SubText__SubText>,
       ],
     },
     "ref": null,
@@ -4896,7 +4896,7 @@ testing
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             <ErrorMessage__ErrorMessage
@@ -4904,7 +4904,7 @@ testing
 >
               false 
 </ErrorMessage__ErrorMessage>,
-            <HelperText__HelperText>
+            <span>
               <span>
                             This is a helper text
                              
@@ -4920,7 +4920,7 @@ testing
                                           }
                             />
               </span>
-</HelperText__HelperText>,
+</span>,
           ],
         },
         "ref": null,
@@ -4940,7 +4940,7 @@ testing
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "host",
             "props": Object {
               "children": <span>
                 This is a helper text
@@ -5004,10 +5004,10 @@ testing
               ],
               "type": "span",
             },
-            "type": [Function],
+            "type": "span",
           },
         ],
-        "type": "div",
+        "type": [Function],
       },
     ],
     "type": [Function],
@@ -5052,13 +5052,13 @@ testing
 testing
 123"
 />,
-          <div>
+          <SubText__SubText>
             <ErrorMessage__ErrorMessage
                         showError={false}
             >
                         false 
             </ErrorMessage__ErrorMessage>
-            <HelperText__HelperText>
+            <span>
                         <span>
                                     This is a helper text
                                      
@@ -5074,8 +5074,8 @@ testing
                                                 }
                                     />
                         </span>
-            </HelperText__HelperText>
-</div>,
+            </span>
+</SubText__SubText>,
         ],
       },
       "ref": null,
@@ -5175,7 +5175,7 @@ testing
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
               <ErrorMessage__ErrorMessage
@@ -5183,7 +5183,7 @@ testing
 >
                 false 
 </ErrorMessage__ErrorMessage>,
-              <HelperText__HelperText>
+              <span>
                 <span>
                                 This is a helper text
                                  
@@ -5199,7 +5199,7 @@ testing
                                                 }
                                 />
                 </span>
-</HelperText__HelperText>,
+</span>,
             ],
           },
           "ref": null,
@@ -5219,7 +5219,7 @@ testing
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "host",
               "props": Object {
                 "children": <span>
                   This is a helper text
@@ -5283,10 +5283,10 @@ testing
                 ],
                 "type": "span",
               },
-              "type": [Function],
+              "type": "span",
             },
           ],
-          "type": "div",
+          "type": [Function],
         },
       ],
       "type": [Function],

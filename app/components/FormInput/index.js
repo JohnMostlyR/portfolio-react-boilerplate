@@ -19,7 +19,7 @@ import Label from './Label';
 import Placeholder from './Placeholder';
 import LabelContent from './LabelContent';
 import ErrorMessage from './ErrorMessage';
-import HelperText from './HelperText';
+import SubText from './SubText';
 
 class FormInput extends React.Component {
   constructor(props) {
@@ -143,13 +143,13 @@ class FormInput extends React.Component {
           ><i>{this.props.placeholder}</i></Placeholder></LabelContent>
         </Label>
         {(this.props.isTextArea) ? renderTextArea() : renderInput()}
-        <div>
+        <SubText>
           <ErrorMessage
             showError={!!(!this.state._hasFocus &&
               this.state.error)}
           >{`${this.state.error} `}</ErrorMessage>
-          <HelperText>{renderHelperText()}</HelperText>
-        </div>
+          <span>{renderHelperText()}</span>
+        </SubText>
       </InputGroup>
     );
   }

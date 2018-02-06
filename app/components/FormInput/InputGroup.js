@@ -5,7 +5,6 @@ const InputGroup = styled.div`
   ${baseFontRegular};
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 1rem;
   overflow-x: hidden;
   position: relative;
   z-index: 1;

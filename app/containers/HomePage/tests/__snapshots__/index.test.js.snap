@@ -33,11 +33,12 @@ ShallowWrapper {
         <LocaleToggleWidget__LocaleToggleWidget>
           <Connect(LocaleToggle) />
 </LocaleToggleWidget__LocaleToggleWidget>,
-        <FullHeightRow__FullHeightRow
-          tagName="div"
+        <FlexRow__FlexRow
+          fullHeight={true}
 >
-          <FullHeightColumn__FullHeightColumn
+          <FlexColumn__FlexColumn
                     fluid={true}
+                    fullHeight={true}
           >
                     <IntroHeader__IntroHeader>
                               <h2
@@ -163,8 +164,8 @@ ShallowWrapper {
                                         </svg>
                               </SpeechBubble__SpeechBubble>
                     </IntroHeader__IntroHeader>
-          </FullHeightColumn__FullHeightColumn>
-</FullHeightRow__FullHeightRow>,
+          </FlexColumn__FlexColumn>
+</FlexRow__FlexRow>,
       ],
     },
     "ref": null,
@@ -238,8 +239,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <FullHeightColumn__FullHeightColumn
+          "children": <FlexColumn__FlexColumn
             fluid={true}
+            fullHeight={true}
 >
             <IntroHeader__IntroHeader>
                         <h2
@@ -365,8 +367,8 @@ ShallowWrapper {
                                     </svg>
                         </SpeechBubble__SpeechBubble>
             </IntroHeader__IntroHeader>
-</FullHeightColumn__FullHeightColumn>,
-          "tagName": "div",
+</FlexColumn__FlexColumn>,
+          "fullHeight": true,
         },
         "ref": null,
         "rendered": Object {
@@ -499,6 +501,7 @@ ShallowWrapper {
               </SpeechBubble__SpeechBubble>
 </IntroHeader__IntroHeader>,
             "fluid": true,
+            "fullHeight": true,
           },
           "ref": null,
           "rendered": Object {
@@ -1229,11 +1232,12 @@ ShallowWrapper {
           <LocaleToggleWidget__LocaleToggleWidget>
             <Connect(LocaleToggle) />
 </LocaleToggleWidget__LocaleToggleWidget>,
-          <FullHeightRow__FullHeightRow
-            tagName="div"
+          <FlexRow__FlexRow
+            fullHeight={true}
 >
-            <FullHeightColumn__FullHeightColumn
+            <FlexColumn__FlexColumn
                         fluid={true}
+                        fullHeight={true}
             >
                         <IntroHeader__IntroHeader>
                                     <h2
@@ -1359,8 +1363,8 @@ ShallowWrapper {
                                                 </svg>
                                     </SpeechBubble__SpeechBubble>
                         </IntroHeader__IntroHeader>
-            </FullHeightColumn__FullHeightColumn>
-</FullHeightRow__FullHeightRow>,
+            </FlexColumn__FlexColumn>
+</FlexRow__FlexRow>,
         ],
       },
       "ref": null,
@@ -1434,8 +1438,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <FullHeightColumn__FullHeightColumn
+            "children": <FlexColumn__FlexColumn
               fluid={true}
+              fullHeight={true}
 >
               <IntroHeader__IntroHeader>
                             <h2
@@ -1561,8 +1566,8 @@ ShallowWrapper {
                                           </svg>
                             </SpeechBubble__SpeechBubble>
               </IntroHeader__IntroHeader>
-</FullHeightColumn__FullHeightColumn>,
-            "tagName": "div",
+</FlexColumn__FlexColumn>,
+            "fullHeight": true,
           },
           "ref": null,
           "rendered": Object {
@@ -1695,6 +1700,7 @@ ShallowWrapper {
                 </SpeechBubble__SpeechBubble>
 </IntroHeader__IntroHeader>,
               "fluid": true,
+              "fullHeight": true,
             },
             "ref": null,
             "rendered": Object {
