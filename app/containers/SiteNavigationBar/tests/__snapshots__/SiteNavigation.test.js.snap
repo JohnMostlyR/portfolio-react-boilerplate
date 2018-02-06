@@ -1,47 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SiteNavigation /> should render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SiteNavigation__SiteNavigation />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "className": "SiteNavigation__SiteNavigation-hZVVtP czMuRh",
-    },
-    "ref": null,
-    "rendered": null,
-    "type": "nav",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "className": "SiteNavigation__SiteNavigation-hZVVtP czMuRh",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "nav",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
+.c0 {
+  width: 100%;
+  padding: 0.35rem 0;
+  position: unset;
+  top: 0;
+  z-index: 9999;
+  background-color: #575756;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.3);
 }
+
+@media (min-width:600px) {
+  .c0 {
+    left: 100%;
+    position: absolute;
+    top: 4.8125rem;
+    width: unset;
+    padding: 0 0.35rem;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    background-color: transparent;
+    border-bottom: none;
+    box-shadow: none;
+  }
+}
+
+<nav
+  className="c0"
+/>
 `;

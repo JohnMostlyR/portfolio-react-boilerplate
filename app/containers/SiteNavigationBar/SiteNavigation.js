@@ -9,6 +9,7 @@ const SiteNavigation = styled.nav`
   top: 0;
   z-index: 9999;
   background-color: #575756;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 
   @media (min-width: 600px) {
     left: 100%;
@@ -20,6 +21,7 @@ const SiteNavigation = styled.nav`
     transform-origin: top left;
     background-color: transparent;
     border-bottom: none;
+    box-shadow: none;
   }
 `;
 

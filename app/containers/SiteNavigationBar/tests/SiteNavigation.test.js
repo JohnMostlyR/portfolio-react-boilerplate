@@ -1,12 +1,14 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
+import 'jest-styled-components';
 
 import SiteNavigation from '../SiteNavigation';
 
 describe('<SiteNavigation />', () => {
   it('should render and match the snapshot', () => {
     const renderedComponent = shallow(<SiteNavigation />);
-    expect(renderedComponent).toMatchSnapshot();
+    expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   it('should adopt the "isAtScreenTop" prop', () => {
