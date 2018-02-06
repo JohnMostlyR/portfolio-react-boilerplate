@@ -10,8 +10,10 @@ import { connect } from 'react-redux';
 import { createSelector } from 'reselect';
 import { FormattedMessage } from 'react-intl';
 
-import Toggle from '../../components/Toggle';
 import messages from './messages';
+import Aside from './Aside';
+
+import Toggle from '../../components/Toggle';
 import { appLocales } from '../../i18n';
 import { changeLocale } from '../LanguageProvider/actions';
 import { makeSelectLocale } from '../LanguageProvider/selectors';
@@ -19,7 +21,7 @@ import { makeSelectLocale } from '../LanguageProvider/selectors';
 export class LocaleToggle extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <aside>
+      <Aside>
         <h2 hidden aria-hidden={false}><FormattedMessage {...messages.title} /></h2>
         <Toggle
           currentValue={this.props.locale}
@@ -27,7 +29,7 @@ export class LocaleToggle extends React.PureComponent { // eslint-disable-line r
           messages={messages}
           onToggle={this.props.onLocaleToggle}
         />
-      </aside>
+      </Aside>
     );
   }
 }
