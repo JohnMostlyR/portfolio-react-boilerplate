@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { rem } from 'polished';
 
 const SiteNavigation = styled.nav`
   width: 100%;
@@ -14,7 +13,7 @@ const SiteNavigation = styled.nav`
   @media (min-width: 600px) {
     left: 100%;
     position: ${(props) => props.isAtScreenTop ? 'fixed' : 'absolute'};
-    top: ${(props) => props.isAtScreenTop ? 0 : rem('77px')};
+    top: ${(props) => props.isAtScreenTop ? 0 : '5.5rem'};
     width: unset;
     padding: 0 0.35rem;
     transform: rotate(90deg);

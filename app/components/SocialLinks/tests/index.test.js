@@ -4,7 +4,6 @@ import { mount } from 'enzyme';
 import { IntlProvider } from 'react-intl';
 
 import SocialLinks from '../index';
-import Aside from '../Aside';
 import StyledUL from '../StyledUL';
 import StyledLI from '../StyledLI';
 
@@ -17,10 +16,6 @@ describe('SocialLinks', () => {
         <SocialLinks />
       </IntlProvider>,
     );
-  });
-
-  it('should have an `Aside` component', () => {
-    expect(wrapper.find(Aside)).toHaveLength(1);
   });
 
   it('should have an `StyledUL` component', () => {

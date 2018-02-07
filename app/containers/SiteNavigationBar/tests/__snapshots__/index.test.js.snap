@@ -2,7 +2,7 @@
 
 exports[`SiteNavigationBar should render and match the snapshot 1`] = `
 <nav
-  className="SiteNavigation__SiteNavigation-hZVVtP czMuRh"
+  className="SiteNavigation__SiteNavigation-hZVVtP bnlwyi"
 >
   <h2
     aria-hidden="false"
@@ -19,7 +19,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
       className="StyledLI__StyledLI-kuyQty fCxmtC"
     >
       <a
-        className="SiteNavigationLink__SiteNavigationLink-ceKnDH jJELoO"
+        className="SiteNavigationLink__SiteNavigationLink-ceKnDH HtkFG"
         data-isactive={true}
         href="/"
         onClick={[Function]}
@@ -41,7 +41,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
       className="StyledLI__StyledLI-kuyQty fCxmtC"
     >
       <a
-        className="SiteNavigationLink__SiteNavigationLink-ceKnDH iuprkt"
+        className="SiteNavigationLink__SiteNavigationLink-ceKnDH eTeCCY"
         data-isactive={false}
         href="/about"
         onClick={[Function]}
@@ -63,7 +63,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
       className="StyledLI__StyledLI-kuyQty fCxmtC"
     >
       <a
-        className="SiteNavigationLink__SiteNavigationLink-ceKnDH iuprkt"
+        className="SiteNavigationLink__SiteNavigationLink-ceKnDH eTeCCY"
         data-isactive={false}
         href="/skills"
         onClick={[Function]}
@@ -85,7 +85,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
       className="StyledLI__StyledLI-kuyQty fCxmtC"
     >
       <a
-        className="SiteNavigationLink__SiteNavigationLink-ceKnDH iuprkt"
+        className="SiteNavigationLink__SiteNavigationLink-ceKnDH eTeCCY"
         data-isactive={false}
         href="/projects"
         onClick={[Function]}
@@ -107,7 +107,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
       className="StyledLI__StyledLI-kuyQty fCxmtC"
     >
       <a
-        className="SiteNavigationLink__SiteNavigationLink-ceKnDH iuprkt"
+        className="SiteNavigationLink__SiteNavigationLink-ceKnDH eTeCCY"
         data-isactive={false}
         href="/contact"
         onClick={[Function]}

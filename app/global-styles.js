@@ -1,5 +1,5 @@
 import { injectGlobal } from 'styled-components';
-import { baseFontStackSansSerif } from './styles/templates/typography';
+import { baseFontRegular } from './styles/templates/typography';
 import backGround from './images/polka-dots.png';
 
 /* eslint no-unused-expressions: 0 */
@@ -79,7 +79,7 @@ injectGlobal`
   body {
     height: 100%;
     color: #575756;
-    font-family: ${baseFontStackSansSerif};
+    ${baseFontRegular};
   }
   
   body,

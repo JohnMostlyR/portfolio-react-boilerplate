@@ -16,9 +16,7 @@ import messages from './messages';
 import IntroHeader from './IntroHeader';
 import IntroPageArticle from './IntroPageArticle';
 import SpeechBubble from './SpeechBubble';
-import LocaleToggleWidget from './LocaleToggleWidget';
 import MyPicture from './itsme-trevi-rome.jpg';
-import LocaleToggle from '../../containers/LocaleToggle';
 import FlexRow from '../../components/FlexRow';
 import FlexColumn from '../../components/FlexColumn';
 
@@ -175,9 +173,6 @@ class HomePage extends React.Component { // eslint-disable-line react/prefer-sta
           <title>Welkom op Johan Meester zijn portfolio</title>
           <meta name="description" content="Intro pagina van Johan Meester zijn portfolio" />
         </Helmet>
-        <LocaleToggleWidget>
-          <LocaleToggle />
-        </LocaleToggleWidget>
         <FlexRow fullHeight>
           <FlexColumn fullHeight fluid>
             <IntroHeader>

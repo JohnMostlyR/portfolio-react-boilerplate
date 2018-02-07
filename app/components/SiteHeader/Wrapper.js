@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
-import { clearfix } from '../../styles/mixins';
-
 const Wrapper = styled.div`
+  display: flex;
+  width: 100%;
   border-bottom: 0.5vh solid #575756;
-  ${clearfix}
 `;
 
 export default Wrapper;

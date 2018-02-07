@@ -12,7 +12,7 @@ exports[`<Media /> should adopt children 1`] = `
     src="/tests.png"
   />
   <p
-    className="MediaBody__MediaBody-bQhINl ePGjIZ"
+    className="MediaBody__MediaBody-bQhINl gmCftp"
     spacing="0"
   >
     Child
@@ -32,7 +32,7 @@ exports[`<Media /> should render and match the snapshot 1`] = `
     src="/tests.png"
   />
   <p
-    className="MediaBody__MediaBody-bQhINl ePGjIZ"
+    className="MediaBody__MediaBody-bQhINl gmCftp"
     spacing="0"
   />
 </div>

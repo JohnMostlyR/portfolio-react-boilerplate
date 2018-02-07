@@ -3,7 +3,6 @@ import ReactTooltip from 'react-tooltip';
 import { FormattedMessage } from 'react-intl';
 
 import ExternalLink from './ExternalLink';
-import Aside from './Aside';
 import StyledUL from './StyledUL';
 import StyledLI from './StyledLI';
 import messages from './messages';
@@ -61,7 +60,7 @@ class SocialLinks extends Component {
     ];
 
     return (
-      <Aside>
+      <aside>
         <h2 hidden aria-hidden="false"><FormattedMessage {...messages.header} /></h2>
         <StyledUL
           innerRef={
@@ -86,7 +85,7 @@ class SocialLinks extends Component {
           }
         </StyledUL>
         <ReactTooltip />
-      </Aside>
+      </aside>
     );
   }
 }

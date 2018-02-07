@@ -2,16 +2,9 @@
 
 exports[`<Aside /> should render and match the snapshot 1`] = `
 .c0 {
-  box-shadow: 0 0 10px grey;
-  opacity: 0.9;
-  -webkit-transition: box-shadow 0.3s 0s ease-in-out,opacity 0.3s 0s ease-in-out;
-  transition: box-shadow 0.3s 0s ease-in-out,opacity 0.3s 0s ease-in-out;
-}
-
-.c0:focus,
-.c0:hover {
-  box-shadow: 0 0 5px lightgrey;
-  opacity: 1;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 <aside

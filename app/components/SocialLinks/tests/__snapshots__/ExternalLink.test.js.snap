@@ -2,7 +2,7 @@
 
 exports[`ExternalLink Should render and match the snapshot 1`] = `
 <a
-  className="StyledA__StyledA-iHqXXL bRsxAK"
+  className="StyledA__StyledA-iHqXXL dxSTxP"
   href="#"
   rel="noopener noreferrer"
   target="_blank"

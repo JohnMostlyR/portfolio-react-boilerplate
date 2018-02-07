@@ -7,7 +7,7 @@ const Icon = styled.div`
   display: flex;
   height: ${rem(24)};
   width: ${rem(36)};
-  border: 1px solid #fff;
+  border: 1px solid #575756;
 
   > img {
     filter: ${(props) => props.isChecked ? 'saturate(150%)' : 'saturate(50%)'};
