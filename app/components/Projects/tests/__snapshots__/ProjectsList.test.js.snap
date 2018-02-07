@@ -2,9 +2,6 @@
 
 exports[`<ProjectsList /> should render and match the snapshot 1`] = `
 .c0 {
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
   margin: 0 auto;
   list-style: none;
   padding-bottom: 9vmin;

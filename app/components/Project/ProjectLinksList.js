@@ -19,6 +19,7 @@ const StyledList = styled.ul`
 
 const Wrapper = styled.div`
   left: 50%;
+  overflow: hidden;
   position: absolute;
   top: 50%;
   transform: translate3d(-50%, -50%, 0);
