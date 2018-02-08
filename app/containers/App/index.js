@@ -31,9 +31,13 @@ import ContactPage from '../../containers/ContactPage/Loadable';
 import NotFoundPage from '../../containers/NotFoundPage/Loadable';
 
 class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
-  state = {
-    _isScrolling: 0,
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      _isScrolling: 0,
+    };
+  }
 
   componentDidMount() {
     this.wrapper.ownerDocument.addEventListener('scroll', this.handleScrollEvent);
@@ -78,7 +82,7 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
           fixedSiteNavOffset={this.props.siteNavigationOffsetHeight}
           siteNavIsFixed={this.props.siteNavigationIsAtScreenTop}
         >
-          <Switch>
+          <Switch location={this.props.location}>
             <Route exact path="/" component={HomePage} />
             <Route path="/about" component={AboutPage} />
             <Route path="/skills" component={SkillsPage} />
@@ -93,6 +97,7 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
 }
 
 App.propTypes = {
+  location: PropTypes.object,
   siteNavigationTopPosition: PropTypes.number,
   siteNavigationOffsetHeight: PropTypes.number,
   siteNavigationIsAtScreenTop: PropTypes.bool,
