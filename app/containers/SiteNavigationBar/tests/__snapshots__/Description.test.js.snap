@@ -1,47 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Description /> should render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Description__Description />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "className": "Description__Description-exBwFC jSiycK",
-    },
-    "ref": null,
-    "rendered": null,
-    "type": "span",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "className": "Description__Description-exBwFC jSiycK",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "span",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
+@media (min-width:600px) {
+  .c0 {
+    margin-left: 0.5rem;
+  }
 }
+
+@media all and (orientation:landscape) and (min-width:37.5em) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media all and (orientation:landscape) and (min-height:725px) {
+  .c0 {
+    display: inline;
+  }
+}
+
+<span
+  className="c0"
+/>
 `;

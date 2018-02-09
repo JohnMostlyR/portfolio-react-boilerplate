@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-import mq from '../../styles/templates/mediaQueries';
-
 const StyledLI = styled.li`
   font-size: 0.7rem;
   vertical-align: middle;
@@ -12,7 +10,9 @@ const StyledLI = styled.li`
   }
 
   &:not(:first-child) {
-    ${mq.m`margin-left: 1vh;`}
+    @media (min-width: 600px) {
+      margin-left: 1vh;
+    }
   }
 `;
 

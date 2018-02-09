@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { sizes } from '../../styles/templates/mediaQueries';
 
 const LocaleToggleWidget = styled.div`
   display: flex;
@@ -9,7 +8,7 @@ const LocaleToggleWidget = styled.div`
   top: 1rem;
   width: 100%;
 
-  @media (max-height: 400px) and (max-width: ${sizes.m}px) {
+  @media (max-height: 400px) and (max-width: 600px) {
     justify-content: flex-end;
     right: 1rem;
   }
