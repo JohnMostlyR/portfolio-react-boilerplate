@@ -28,6 +28,9 @@ ShallowWrapper {
             "messages": Object {
               "portfolio.components.FormInput.helperText.range": "Should be between {minLength, number} and {maxLength, number} characters. Is now: {count, number}",
               "portfolio.components.FormInput.helperText.valid": "Thanks!",
+              "portfolio.components.LoadingComponent.error": "Terribly sorry, but the page cannot be loaded at this time",
+              "portfolio.components.LoadingComponent.pastDelay": "The page is loading...",
+              "portfolio.components.LoadingComponent.timedOut": "The page is taking longer to load than expected",
               "portfolio.components.NotFoundPage.header": "This is NotFoundPage component!",
               "portfolio.components.SendButton.error": "Failed. Please try again",
               "portfolio.components.SendButton.idle": "Send",
@@ -1927,6 +1930,9 @@ ShallowWrapper {
         "messages": Object {
           "portfolio.components.FormInput.helperText.range": "Should be between {minLength, number} and {maxLength, number} characters. Is now: {count, number}",
           "portfolio.components.FormInput.helperText.valid": "Thanks!",
+          "portfolio.components.LoadingComponent.error": "Terribly sorry, but the page cannot be loaded at this time",
+          "portfolio.components.LoadingComponent.pastDelay": "The page is loading...",
+          "portfolio.components.LoadingComponent.timedOut": "The page is taking longer to load than expected",
           "portfolio.components.NotFoundPage.header": "This is NotFoundPage component!",
           "portfolio.components.SendButton.error": "Failed. Please try again",
           "portfolio.components.SendButton.idle": "Send",

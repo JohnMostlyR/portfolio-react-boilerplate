@@ -6,9 +6,9 @@
 
 import Loadable from 'react-loadable';
 
-import LoadingComponent from '../../components/LoadingComponent';
+import LoadingIndicator from '../../components/LoadingIndicator';
 
 export default Loadable({
   loader: () => import('./index'),
-  loading: LoadingComponent,
+  loading: LoadingIndicator,
 });
