@@ -6,22 +6,40 @@ exports[`<ProjectsListItem /> should render and match the snapshot 1`] = `
   position: relative;
   background-color: #f90;
   border-radius: 0.5rem;
-  -webkit-filter: drop-shadow(0 0 10px grey);
-  filter: drop-shadow(0 0 10px grey);
-  -webkit-transition: filter 0.2s ease-in-out;
-  transition: filter 0.2s ease-in-out;
+  box-shadow: 0 0 10px grey;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .c0:active,
 .c0:focus,
 .c0:hover {
-  -webkit-filter: drop-shadow(0 0 5px dimgrey);
-  filter: drop-shadow(0 0 5px dimgrey);
+  box-shadow: 0 0 5px dimgrey;
 }
 
 .c0:nth-child(odd) {
   background-color: #09f;
   color: #d0eb2a;
+}
+
+@media (min-width:900px) {
+  .c0:active,
+  .c0:focus,
+  .c0:hover {
+    box-shadow: none;
+    -webkit-filter: drop-shadow(0 0 1px dimgrey);
+    filter: drop-shadow(0 0 1px dimgrey);
+  }
+}
+
+@media (min-width:900px) {
+  .c0 {
+    box-shadow: none;
+    -webkit-filter: drop-shadow(0 0 5px grey);
+    filter: drop-shadow(0 0 5px grey);
+    -webkit-transition: filter 0.2s ease-in-out;
+    transition: filter 0.2s ease-in-out;
+  }
 }
 
 @media (min-width:900px) {

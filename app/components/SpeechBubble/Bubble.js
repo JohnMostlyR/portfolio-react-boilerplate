@@ -9,11 +9,14 @@ const Bubble = styled.div`
   border-radius: 0.5rem;
   font-family: ${baseFontStackSerif};
   padding: 0.5em;
+  box-shadow: 0 0 10px grey;
 
   @media (min-height: 750px) {
     margin-right: 0;
     border-bottom-left-radius: ${(props) => (props.isLeftHanded) ? 0 : '0.5rem'};
     border-bottom-right-radius: ${(props) => (props.isLeftHanded) ? '0.5rem' : 0};
+    box-shadow: none;
+    filter: drop-shadow(0 0 5px grey);
 
     &::after {
       content: "";

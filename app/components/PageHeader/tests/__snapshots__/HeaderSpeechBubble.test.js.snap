@@ -5,6 +5,7 @@ exports[`<HeaderSpeechBubble /> Should render and match the snapshot 1`] = `
   position: relative;
   background-color: #575756;
   border-radius: 0.5rem;
+  box-shadow: 0 0 10px grey;
   padding: 1rem;
 }
 
@@ -18,6 +19,9 @@ exports[`<HeaderSpeechBubble /> Should render and match the snapshot 1`] = `
     margin-right: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0.5rem;
+    box-shadow: none;
+    -webkit-filter: drop-shadow(0 0 5px grey);
+    filter: drop-shadow(0 0 5px grey);
   }
 
   .c0::after {

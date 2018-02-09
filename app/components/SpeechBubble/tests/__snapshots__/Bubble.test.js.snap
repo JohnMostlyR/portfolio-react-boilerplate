@@ -26,7 +26,7 @@ ShallowWrapper {
       "children": <div>
         children
 </div>,
-      "className": "Bubble__Bubble-kfMqWC jXfggt",
+      "className": "Bubble__Bubble-kfMqWC eHhJkd",
     },
     "ref": null,
     "rendered": Object {
@@ -51,7 +51,7 @@ ShallowWrapper {
         "children": <div>
           children
 </div>,
-        "className": "Bubble__Bubble-kfMqWC jXfggt",
+        "className": "Bubble__Bubble-kfMqWC eHhJkd",
       },
       "ref": null,
       "rendered": Object {
@@ -97,7 +97,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "className": "Bubble__Bubble-kfMqWC jXfggt",
+      "className": "Bubble__Bubble-kfMqWC eHhJkd",
     },
     "ref": null,
     "rendered": null,
@@ -109,7 +109,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "className": "Bubble__Bubble-kfMqWC jXfggt",
+        "className": "Bubble__Bubble-kfMqWC eHhJkd",
       },
       "ref": null,
       "rendered": null,

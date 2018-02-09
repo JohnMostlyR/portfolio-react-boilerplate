@@ -5,13 +5,24 @@ const ProjectsListItem = styled.li`
   position: relative;
   background-color: #f90;
   border-radius: 0.5rem;
-  filter: drop-shadow(0 0 10px grey);
-  transition: filter 0.2s ease-in-out;
+  box-shadow: 0 0 10px grey;
+  transition: box-shadow 0.2s ease-in-out;
 
   &:active,
   &:focus,
   &:hover {
-    filter: drop-shadow(0 0 5px dimgrey);
+    box-shadow: 0 0 5px dimgrey;
+
+    @media (min-width: 900px) {
+      box-shadow: none;
+      filter: drop-shadow(0 0 1px dimgrey);
+    }
+  }
+
+  @media (min-width: 900px) {
+    box-shadow: none;
+    filter: drop-shadow(0 0 5px grey);
+    transition: filter 0.2s ease-in-out;
   }
 
   &:nth-child(odd) {
