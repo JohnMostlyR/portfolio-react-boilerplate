@@ -16,7 +16,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
     className="StyledUL__StyledUL-hGhxpW exrwlO"
   >
     <li
-      className="StyledLI__StyledLI-kuyQty fCxmtC"
+      className="StyledLI__StyledLI-kuyQty WsgNC"
     >
       <a
         className="SiteNavigationLink__SiteNavigationLink-ceKnDH HtkFG"
@@ -29,7 +29,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
           className="fa fa-home fa-fw SiteNavigationIcon__SiteNavigationIcon-gFXsxd jnGacV"
         />
         <span
-          className="Description__Description-exBwFC jSiycK"
+          className="Description__Description-exBwFC hNJVsn"
         >
           <span>
             Intro
@@ -38,7 +38,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
       </a>
     </li>
     <li
-      className="StyledLI__StyledLI-kuyQty fCxmtC"
+      className="StyledLI__StyledLI-kuyQty WsgNC"
     >
       <a
         className="SiteNavigationLink__SiteNavigationLink-ceKnDH eTeCCY"
@@ -51,7 +51,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
           className="fa fa-address-card fa-fw SiteNavigationIcon__SiteNavigationIcon-gFXsxd jnGacV"
         />
         <span
-          className="Description__Description-exBwFC jSiycK"
+          className="Description__Description-exBwFC hNJVsn"
         >
           <span>
             About
@@ -60,7 +60,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
       </a>
     </li>
     <li
-      className="StyledLI__StyledLI-kuyQty fCxmtC"
+      className="StyledLI__StyledLI-kuyQty WsgNC"
     >
       <a
         className="SiteNavigationLink__SiteNavigationLink-ceKnDH eTeCCY"
@@ -73,7 +73,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
           className="fa fa-code fa-fw SiteNavigationIcon__SiteNavigationIcon-gFXsxd jnGacV"
         />
         <span
-          className="Description__Description-exBwFC jSiycK"
+          className="Description__Description-exBwFC hNJVsn"
         >
           <span>
             Skills
@@ -82,7 +82,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
       </a>
     </li>
     <li
-      className="StyledLI__StyledLI-kuyQty fCxmtC"
+      className="StyledLI__StyledLI-kuyQty WsgNC"
     >
       <a
         className="SiteNavigationLink__SiteNavigationLink-ceKnDH eTeCCY"
@@ -95,7 +95,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
           className="fa fa-list fa-fw SiteNavigationIcon__SiteNavigationIcon-gFXsxd jnGacV"
         />
         <span
-          className="Description__Description-exBwFC jSiycK"
+          className="Description__Description-exBwFC hNJVsn"
         >
           <span>
             Projects
@@ -104,7 +104,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
       </a>
     </li>
     <li
-      className="StyledLI__StyledLI-kuyQty fCxmtC"
+      className="StyledLI__StyledLI-kuyQty WsgNC"
     >
       <a
         className="SiteNavigationLink__SiteNavigationLink-ceKnDH eTeCCY"
@@ -117,7 +117,7 @@ exports[`SiteNavigationBar should render and match the snapshot 1`] = `
           className="fa fa-send fa-fw SiteNavigationIcon__SiteNavigationIcon-gFXsxd jnGacV"
         />
         <span
-          className="Description__Description-exBwFC jSiycK"
+          className="Description__Description-exBwFC hNJVsn"
         >
           <span>
             Contact
