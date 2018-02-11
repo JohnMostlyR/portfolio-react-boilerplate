@@ -21,7 +21,7 @@ import {
 } from './selectors';
 import { setSiteNavigationIsAtScreenTop } from './actions';
 
-import StyledMain from '../../components/StyledMain';
+import Main from '../../components/Main';
 import SiteHeader from '../../components/SiteHeader';
 import HomePage from '../../containers/HomePage/Loadable';
 import AboutPage from '../../containers/AboutPage/Loadable';
@@ -78,7 +78,7 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
       <Wrapper innerRef={(el) => this.wrapper = el}>
         <h1 hidden aria-hidden="false"><FormattedMessage {...messages.title} /></h1>
         <SiteHeader />
-        <StyledMain
+        <Main
           fixedSiteNavOffset={this.props.siteNavigationOffsetHeight}
           siteNavIsFixed={this.props.siteNavigationIsAtScreenTop}
         >
@@ -90,7 +90,7 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
             <Route path="/contact" component={ContactPage} />
             <Route component={NotFoundPage} />
           </Switch>
-        </StyledMain>
+        </Main>
       </Wrapper>
     );
   }
@@ -124,4 +124,3 @@ export default compose(
   withRouter,
   withConnect,
 )(App);
-// export default App;
