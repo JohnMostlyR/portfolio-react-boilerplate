@@ -30,7 +30,7 @@ import FormFooter from './FormFooter';
 
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
-import StyledArticle from '../../components/StyledArticle';
+import Article from '../../components/Article';
 import SpeechBubble from '../../components/SpeechBubble';
 import PageHeader from '../../components/PageHeader';
 import FormInfoItemsListItem from '../../components/FormInfoItemsListItem';
@@ -121,7 +121,7 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
     }[status]);
 
     return (
-      <StyledArticle>
+      <Article>
         <Helmet>
           <title>Contact pagina</title>
           <meta name="description" content="Contact pagina van Johan Meester zijn portfolio" />
@@ -208,7 +208,7 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
             </SpeechBubble>
           </FlexColumn>
         </FlexRow>
-      </StyledArticle>
+      </Article>
     );
   }
 }

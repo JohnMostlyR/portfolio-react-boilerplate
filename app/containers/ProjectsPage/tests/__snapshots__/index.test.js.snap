@@ -18,7 +18,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
         <HelmetWrapper
@@ -54,6 +54,7 @@ ShallowWrapper {
           </FlexColumn__FlexColumn>
 </FlexRow__FlexRow>,
       ],
+      "loadingContent": false,
     },
     "ref": null,
     "rendered": Array [
@@ -212,7 +213,7 @@ ShallowWrapper {
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
           <HelmetWrapper
@@ -248,6 +249,7 @@ ShallowWrapper {
             </FlexColumn__FlexColumn>
 </FlexRow__FlexRow>,
         ],
+        "loadingContent": false,
       },
       "ref": null,
       "rendered": Array [

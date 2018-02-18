@@ -1,10 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StyledArticle Should render and match the snapshot 1`] = `
+exports[`<StyledArticle /> should render and match the snapshot 1`] = `
 .c0 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding-right: 0;
   width: 100%;
 }

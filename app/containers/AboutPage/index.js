@@ -20,7 +20,7 @@ import { loadContent } from './actions';
 
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
-import StyledArticle from '../../components/StyledArticle';
+import Article from '../../components/Article';
 import SpeechBubble from '../../components/SpeechBubble';
 import PageHeader from '../../components/PageHeader';
 import FlexRow from '../../components/FlexRow';
@@ -33,7 +33,7 @@ export class AboutPage extends React.Component { // eslint-disable-line react/pr
 
   render() {
     return (
-      <StyledArticle>
+      <Article>
         <Helmet>
           <title>Over mij</title>
           <meta name="description" content="Over mij pagina van Johan Meester zijn portfolio" />
@@ -52,7 +52,7 @@ export class AboutPage extends React.Component { // eslint-disable-line react/pr
             </SpeechBubble>
           </FlexColumn>
         </FlexRow>
-      </StyledArticle>
+      </Article>
     );
   }
 }

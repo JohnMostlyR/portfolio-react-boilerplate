@@ -3,6 +3,8 @@ import { rem } from 'polished';
 
 const StyledArticle = styled.article`
   align-self: center;
+  display: flex;
+  flex-direction: column;
   padding-right: 0;
   width: 100%;
 
