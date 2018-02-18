@@ -3,7 +3,7 @@ import { shallow, mount } from 'enzyme';
 
 import StyledMain from '../index';
 
-describe('<StyledMain />', () => {
+describe('<Main />', () => {
   it('should render and match the snapshot', () => {
     const renderedComponent = shallow(<StyledMain />);
     expect(renderedComponent).toMatchSnapshot();

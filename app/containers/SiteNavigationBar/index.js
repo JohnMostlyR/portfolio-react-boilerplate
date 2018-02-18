@@ -41,12 +41,7 @@ class SiteNavigationBar extends Component {
     return (
       <SiteNavigation
         isAtScreenTop={this.props.isAtScreenTop || false}
-        innerRef={
-          (el) => {
-            this.siteNavigation = el;
-            return this.siteNavigation;
-          }
-        }
+        innerRef={(el) => { this.siteNavigation = el; }}
       >
         <h2 hidden aria-hidden="false"><FormattedMessage {...messages.header} /></h2>
         <StyledUL>

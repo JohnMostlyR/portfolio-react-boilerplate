@@ -20,20 +20,20 @@ import reducer from './reducer';
 
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
-import StyledArticle from '../../components/StyledArticle';
+import Article from '../../components/Article';
 import PageHeader from '../../components/PageHeader';
 import FlexRow from '../../components/FlexRow';
 import FlexColumn from '../../components/FlexColumn';
 import Projects from '../../components/Projects';
 
-export class ProjectsPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
-  componentDidMount() {
+export class ProjectsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  componentWillMount() {
     this.props.getContent();
   }
 
   render() {
     return (
-      <StyledArticle>
+      <Article>
         <Helmet>
           <title>Mijn projecten</title>
           <meta name="description" content="Mijn projecten pagina van Johan Meester zijn portfolio" />
@@ -50,7 +50,7 @@ export class ProjectsPage extends React.Component { // eslint-disable-line react
             <Projects projects={this.props.projects} />
           </FlexColumn>
         </FlexRow>
-      </StyledArticle>
+      </Article>
     );
   }
 }

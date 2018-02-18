@@ -20,20 +20,20 @@ import { loadContent } from './actions';
 
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
-import StyledArticle from '../../components/StyledArticle';
+import Article from '../../components/Article';
 import SpeechBubble from '../../components/SpeechBubble';
 import PageHeader from '../../components/PageHeader';
 import FlexRow from '../../components/FlexRow';
 import FlexColumn from '../../components/FlexColumn';
 
-export class AboutPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
-  componentDidMount() {
+export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  componentWillMount() {
     this.props.getContent();
   }
 
   render() {
     return (
-      <StyledArticle>
+      <Article>
         <Helmet>
           <title>Over mij</title>
           <meta name="description" content="Over mij pagina van Johan Meester zijn portfolio" />
@@ -47,12 +47,18 @@ export class AboutPage extends React.Component { // eslint-disable-line react/pr
         </FlexRow>
         <FlexRow>
           <FlexColumn>
-            <SpeechBubble>
+            <SpeechBubble
+              arrowHeight={'9vh'}
+              backgroundColor="#f90"
+              isLeftHanded={false}
+              maxWidth={'940px'}
+              showArrowBreakpoint="750px"
+            >
               {this.props.aboutMeText}
             </SpeechBubble>
           </FlexColumn>
         </FlexRow>
-      </StyledArticle>
+      </Article>
     );
   }
 }

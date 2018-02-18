@@ -20,7 +20,7 @@ import MyPicture from './itsme-trevi-rome.jpg';
 import FlexRow from '../../components/FlexRow';
 import FlexColumn from '../../components/FlexColumn';
 
-class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
+class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   componentDidMount() {
     this.animateSvg();
   }

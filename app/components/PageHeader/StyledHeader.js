@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-  float: left;
+  display: inline-block;
   padding: 5px;
 `;
 

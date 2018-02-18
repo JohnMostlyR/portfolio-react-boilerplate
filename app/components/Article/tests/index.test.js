@@ -3,11 +3,11 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import 'jest-styled-components';
 
-import StyledSection from '../index';
+import Article from '../index';
 
-describe('StyledArticle', () => {
+describe('<Article />', () => {
   it('Should render and match the snapshot', () => {
-    const wrapper = shallow(<StyledSection />);
+    const wrapper = shallow(<Article />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

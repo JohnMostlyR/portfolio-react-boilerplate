@@ -92,7 +92,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "function",
     "props": Object {
       "children": Array [
         <HelmetWrapper
@@ -122,7 +122,13 @@ ShallowWrapper {
 </FlexRow__FlexRow>,
         <FlexRow__FlexRow>
           <FlexColumn__FlexColumn>
-                    <SpeechBubble>
+                    <SpeechBubble
+                              arrowHeight="9vh"
+                              backgroundColor="#f90"
+                              isLeftHanded={false}
+                              maxWidth="940px"
+                              showArrowBreakpoint="750px"
+                    >
                               <Form__Form
                                         onSubmit={[Function]}
                               >
@@ -197,6 +203,7 @@ ShallowWrapper {
           </FlexColumn__FlexColumn>
 </FlexRow__FlexRow>,
       ],
+      "loadingContent": false,
     },
     "ref": null,
     "rendered": Array [
@@ -317,7 +324,13 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <FlexColumn__FlexColumn>
-            <SpeechBubble>
+            <SpeechBubble
+                        arrowHeight="9vh"
+                        backgroundColor="#f90"
+                        isLeftHanded={false}
+                        maxWidth="940px"
+                        showArrowBreakpoint="750px"
+            >
                         <Form__Form
                                     onSubmit={[Function]}
                         >
@@ -397,7 +410,13 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <SpeechBubble>
+            "children": <SpeechBubble
+              arrowHeight="9vh"
+              backgroundColor="#f90"
+              isLeftHanded={false}
+              maxWidth="940px"
+              showArrowBreakpoint="750px"
+>
               <Form__Form
                             onSubmit={[Function]}
               >
@@ -474,8 +493,10 @@ ShallowWrapper {
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
+              "arrowHeight": "9vh",
+              "backgroundColor": "#f90",
               "children": <Form__Form
                 onSubmit={[Function]}
 >
@@ -546,6 +567,9 @@ ShallowWrapper {
                                 </div>
                 </div>
 </Form__Form>,
+              "isLeftHanded": false,
+              "maxWidth": "940px",
+              "showArrowBreakpoint": "750px",
             },
             "ref": null,
             "rendered": Object {
@@ -998,7 +1022,7 @@ ShallowWrapper {
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
           <HelmetWrapper
@@ -1028,7 +1052,13 @@ ShallowWrapper {
 </FlexRow__FlexRow>,
           <FlexRow__FlexRow>
             <FlexColumn__FlexColumn>
-                        <SpeechBubble>
+                        <SpeechBubble
+                                    arrowHeight="9vh"
+                                    backgroundColor="#f90"
+                                    isLeftHanded={false}
+                                    maxWidth="940px"
+                                    showArrowBreakpoint="750px"
+                        >
                                     <Form__Form
                                                 onSubmit={[Function]}
                                     >
@@ -1103,6 +1133,7 @@ ShallowWrapper {
             </FlexColumn__FlexColumn>
 </FlexRow__FlexRow>,
         ],
+        "loadingContent": false,
       },
       "ref": null,
       "rendered": Array [
@@ -1223,7 +1254,13 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <FlexColumn__FlexColumn>
-              <SpeechBubble>
+              <SpeechBubble
+                            arrowHeight="9vh"
+                            backgroundColor="#f90"
+                            isLeftHanded={false}
+                            maxWidth="940px"
+                            showArrowBreakpoint="750px"
+              >
                             <Form__Form
                                           onSubmit={[Function]}
                             >
@@ -1303,7 +1340,13 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <SpeechBubble>
+              "children": <SpeechBubble
+                arrowHeight="9vh"
+                backgroundColor="#f90"
+                isLeftHanded={false}
+                maxWidth="940px"
+                showArrowBreakpoint="750px"
+>
                 <Form__Form
                                 onSubmit={[Function]}
                 >
@@ -1380,8 +1423,10 @@ ShallowWrapper {
             "rendered": Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "class",
               "props": Object {
+                "arrowHeight": "9vh",
+                "backgroundColor": "#f90",
                 "children": <Form__Form
                   onSubmit={[Function]}
 >
@@ -1452,6 +1497,9 @@ ShallowWrapper {
                                     </div>
                   </div>
 </Form__Form>,
+                "isLeftHanded": false,
+                "maxWidth": "940px",
+                "showArrowBreakpoint": "750px",
               },
               "ref": null,
               "rendered": Object {

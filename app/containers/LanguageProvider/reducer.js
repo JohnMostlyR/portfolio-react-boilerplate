@@ -13,8 +13,14 @@ import {
   DEFAULT_LOCALE,
 } from '../App/constants'; // eslint-disable-line
 
+let locale = DEFAULT_LOCALE;
+
+if (window.navigator.language === 'nl') {
+  locale = 'nl';
+}
+
 const initialState = fromJS({
-  locale: DEFAULT_LOCALE,
+  locale,
 });
 
 function languageProviderReducer(state = initialState, action) {

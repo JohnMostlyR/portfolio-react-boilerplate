@@ -21,7 +21,7 @@ import {
 } from './selectors';
 import { setSiteNavigationIsAtScreenTop } from './actions';
 
-import StyledMain from '../../components/StyledMain';
+import Main from '../../components/Main';
 import SiteHeader from '../../components/SiteHeader';
 import HomePage from '../../containers/HomePage/Loadable';
 import AboutPage from '../../containers/AboutPage/Loadable';
@@ -30,7 +30,7 @@ import ProjectsPage from '../../containers/ProjectsPage/Loadable';
 import ContactPage from '../../containers/ContactPage/Loadable';
 import NotFoundPage from '../../containers/NotFoundPage/Loadable';
 
-class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
+class App extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
 
@@ -74,11 +74,10 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
 
   render() {
     return (
-      // eslint-disable-next-line no-return-assign
-      <Wrapper innerRef={(el) => this.wrapper = el}>
+      <Wrapper innerRef={(el) => { this.wrapper = el; }}>
         <h1 hidden aria-hidden="false"><FormattedMessage {...messages.title} /></h1>
         <SiteHeader />
-        <StyledMain
+        <Main
           fixedSiteNavOffset={this.props.siteNavigationOffsetHeight}
           siteNavIsFixed={this.props.siteNavigationIsAtScreenTop}
         >
@@ -90,7 +89,7 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
             <Route path="/contact" component={ContactPage} />
             <Route component={NotFoundPage} />
           </Switch>
-        </StyledMain>
+        </Main>
       </Wrapper>
     );
   }
@@ -124,4 +123,3 @@ export default compose(
   withRouter,
   withConnect,
 )(App);
-// export default App;

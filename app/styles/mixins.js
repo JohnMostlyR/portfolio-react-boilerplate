@@ -1,5 +1,5 @@
 export const clearfix = `
-  &:after {
+  &::after {
     content: "" !important;
     display: block !important;
     clear: both !important;

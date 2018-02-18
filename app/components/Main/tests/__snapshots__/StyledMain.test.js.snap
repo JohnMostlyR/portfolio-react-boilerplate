@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StyledMain /> should adopt the "fixedSiteNavOffset" property 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  padding-top: 0;
+  position: relative;
+  background-attachment: fixed;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 59.5 196.3' preserveAspectRatio='xMaxYMid'%3E%3Cpath fill='%23AEE8FC' d='M41.88 103.97h16.64L50.2 89.55l-8.32-14.41-8.33 14.41-8.32 14.42z'/%3E%3Cpath fill='%2354D2FE' d='M11.44 56.67h11.44l-5.72-9.91-5.72-9.91-5.72 9.91L0 56.67z'/%3E%3Cpath fill='%23C9F0C4' d='M42.98 49.07h8.91l-4.46-7.72-4.45-7.71-4.45 7.71-4.46 7.72z'/%3E%3Cpath fill='%23D3EE32' d='M31.2 11.77h6.79l-3.4-5.88L31.2 0l-3.4 5.89-3.4 5.88z'/%3E%3Cpath fill='%235DD2F9' d='M47.83 153.64H59.5l-5.83-10.11-5.84-10.11L42 143.53l-5.84 10.11z'/%3E%3Cpath fill='%23C8F1FD' d='M33.72 196.3h4.63l-2.32-4.02-2.31-4.01-2.32 4.01-2.32 4.02z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 50%;
+}
+
+@media (min-width:600px) {
+  .c0 {
+    padding-top: 0;
+  }
+}
+
+<main
+  className="c0"
+/>
+`;
+
+exports[`<StyledMain /> should adopt the "siteNavIsFixed" property 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  padding-top: 0px;
+  position: relative;
+  background-attachment: fixed;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 59.5 196.3' preserveAspectRatio='xMaxYMid'%3E%3Cpath fill='%23AEE8FC' d='M41.88 103.97h16.64L50.2 89.55l-8.32-14.41-8.33 14.41-8.32 14.42z'/%3E%3Cpath fill='%2354D2FE' d='M11.44 56.67h11.44l-5.72-9.91-5.72-9.91-5.72 9.91L0 56.67z'/%3E%3Cpath fill='%23C9F0C4' d='M42.98 49.07h8.91l-4.46-7.72-4.45-7.71-4.45 7.71-4.46 7.72z'/%3E%3Cpath fill='%23D3EE32' d='M31.2 11.77h6.79l-3.4-5.88L31.2 0l-3.4 5.89-3.4 5.88z'/%3E%3Cpath fill='%235DD2F9' d='M47.83 153.64H59.5l-5.83-10.11-5.84-10.11L42 143.53l-5.84 10.11z'/%3E%3Cpath fill='%23C8F1FD' d='M33.72 196.3h4.63l-2.32-4.02-2.31-4.01-2.32 4.01-2.32 4.02z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 50%;
+}
+
+@media (min-width:600px) {
+  .c0 {
+    padding-top: 0;
+  }
+}
+
+<main
+  className="c0"
+/>
+`;
+
+exports[`<StyledMain /> should render and match the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  padding-top: 0;
+  position: relative;
+  background-attachment: fixed;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 59.5 196.3' preserveAspectRatio='xMaxYMid'%3E%3Cpath fill='%23AEE8FC' d='M41.88 103.97h16.64L50.2 89.55l-8.32-14.41-8.33 14.41-8.32 14.42z'/%3E%3Cpath fill='%2354D2FE' d='M11.44 56.67h11.44l-5.72-9.91-5.72-9.91-5.72 9.91L0 56.67z'/%3E%3Cpath fill='%23C9F0C4' d='M42.98 49.07h8.91l-4.46-7.72-4.45-7.71-4.45 7.71-4.46 7.72z'/%3E%3Cpath fill='%23D3EE32' d='M31.2 11.77h6.79l-3.4-5.88L31.2 0l-3.4 5.89-3.4 5.88z'/%3E%3Cpath fill='%235DD2F9' d='M47.83 153.64H59.5l-5.83-10.11-5.84-10.11L42 143.53l-5.84 10.11z'/%3E%3Cpath fill='%23C8F1FD' d='M33.72 196.3h4.63l-2.32-4.02-2.31-4.01-2.32 4.01-2.32 4.02z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 50%;
+}
+
+@media (min-width:600px) {
+  .c0 {
+    padding-top: 0;
+  }
+}
+
+<main
+  className="c0"
+/>
+`;

@@ -21,20 +21,20 @@ import { loadContent } from './actions';
 
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
-import StyledArticle from '../../components/StyledArticle';
+import Article from '../../components/Article';
 import SpeechBubble from '../../components/SpeechBubble';
 import PageHeader from '../../components/PageHeader';
 import FlexRow from '../../components/FlexRow';
 import FlexColumn from '../../components/FlexColumn';
 
-export class SkillsPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
-  componentDidMount() {
+export class SkillsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  componentWillMount() {
     this.props.getContent();
   }
 
   render() {
     return (
-      <StyledArticle>
+      <Article>
         <Helmet>
           <title>Mijn vaardigheden</title>
           <meta name="description" content="Mijn vaardigheden pagina van Johan Meester zijn portfolio" />
@@ -48,12 +48,18 @@ export class SkillsPage extends React.Component { // eslint-disable-line react/p
         </FlexRow>
         <FlexRow>
           <FlexColumn>
-            <SpeechBubble>
+            <SpeechBubble
+              arrowHeight={'9vh'}
+              backgroundColor="#f90"
+              isLeftHanded={false}
+              maxWidth={'940px'}
+              showArrowBreakpoint="750px"
+            >
               {this.props.skillsText}
             </SpeechBubble>
           </FlexColumn>
         </FlexRow>
-      </StyledArticle>
+      </Article>
     );
   }
 }
