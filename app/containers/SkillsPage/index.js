@@ -52,7 +52,7 @@ export class SkillsPage extends React.PureComponent { // eslint-disable-line rea
               arrowHeight={'9vh'}
               backgroundColor="#f90"
               isLeftHanded={false}
-              maxWidth={'1008px'}
+              maxWidth={'940px'}
               showArrowBreakpoint="750px"
             >
               {this.props.skillsText}

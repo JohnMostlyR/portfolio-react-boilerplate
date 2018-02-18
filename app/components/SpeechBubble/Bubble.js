@@ -5,7 +5,7 @@ const Bubble = styled.div`
   background-color: ${({ backgroundColor }) => backgroundColor || 'inherit'};
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;
-  padding: ${({ padding }) => padding || '1rem'};
+  padding: ${({ padding }) => padding || '1vw'};
 
   > p {
     &:not(:first-child) {

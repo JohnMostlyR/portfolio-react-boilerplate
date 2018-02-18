@@ -51,7 +51,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
               arrowHeight={'9vh'}
               backgroundColor="#f90"
               isLeftHanded={false}
-              maxWidth={'1008px'}
+              maxWidth={'940px'}
               showArrowBreakpoint="750px"
             >
               {this.props.aboutMeText}

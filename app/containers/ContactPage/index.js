@@ -139,7 +139,7 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
               arrowHeight={'9vh'}
               backgroundColor="#f90"
               isLeftHanded={false}
-              maxWidth={'1008px'}
+              maxWidth={'940px'}
               showArrowBreakpoint="750px"
             >
               <Form onSubmit={this.onFormSubmit}>

@@ -126,7 +126,7 @@ ShallowWrapper {
                               arrowHeight="9vh"
                               backgroundColor="#f90"
                               isLeftHanded={false}
-                              maxWidth="1008px"
+                              maxWidth="940px"
                               showArrowBreakpoint="750px"
                     >
                               <Form__Form
@@ -328,7 +328,7 @@ ShallowWrapper {
                         arrowHeight="9vh"
                         backgroundColor="#f90"
                         isLeftHanded={false}
-                        maxWidth="1008px"
+                        maxWidth="940px"
                         showArrowBreakpoint="750px"
             >
                         <Form__Form
@@ -414,7 +414,7 @@ ShallowWrapper {
               arrowHeight="9vh"
               backgroundColor="#f90"
               isLeftHanded={false}
-              maxWidth="1008px"
+              maxWidth="940px"
               showArrowBreakpoint="750px"
 >
               <Form__Form
@@ -568,7 +568,7 @@ ShallowWrapper {
                 </div>
 </Form__Form>,
               "isLeftHanded": false,
-              "maxWidth": "1008px",
+              "maxWidth": "940px",
               "showArrowBreakpoint": "750px",
             },
             "ref": null,
@@ -1056,7 +1056,7 @@ ShallowWrapper {
                                     arrowHeight="9vh"
                                     backgroundColor="#f90"
                                     isLeftHanded={false}
-                                    maxWidth="1008px"
+                                    maxWidth="940px"
                                     showArrowBreakpoint="750px"
                         >
                                     <Form__Form
@@ -1258,7 +1258,7 @@ ShallowWrapper {
                             arrowHeight="9vh"
                             backgroundColor="#f90"
                             isLeftHanded={false}
-                            maxWidth="1008px"
+                            maxWidth="940px"
                             showArrowBreakpoint="750px"
               >
                             <Form__Form
@@ -1344,7 +1344,7 @@ ShallowWrapper {
                 arrowHeight="9vh"
                 backgroundColor="#f90"
                 isLeftHanded={false}
-                maxWidth="1008px"
+                maxWidth="940px"
                 showArrowBreakpoint="750px"
 >
                 <Form__Form
@@ -1498,7 +1498,7 @@ ShallowWrapper {
                   </div>
 </Form__Form>,
                 "isLeftHanded": false,
-                "maxWidth": "1008px",
+                "maxWidth": "940px",
                 "showArrowBreakpoint": "750px",
               },
               "ref": null,

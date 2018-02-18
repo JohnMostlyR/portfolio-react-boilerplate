@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mediaQueries should have an "l" breakpoint 1`] = `
+@media (min-width:56.25em) {
+  .c0 {
+    content: "test";
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`mediaQueries should have an "m" breakpoint 1`] = `
+@media (min-width:37.5em) {
+  .c0 {
+    content: "test";
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`mediaQueries should have an "s" breakpoint 1`] = `
+@media (min-width:25em) {
+  .c0 {
+    content: "test";
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`mediaQueries should have an "xl" breakpoint 1`] = `
+@media (min-width:25em) {
+  .c0 {
+    content: "test";
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`mediaQueries should have an "xs" breakpoint 1`] = `
+@media (min-width:15em) {
+  .c0 {
+    content: "test";
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`mediaQueries should have an "xxl" breakpoint 1`] = `
+@media (min-width:25em) {
+  .c0 {
+    content: "test";
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
