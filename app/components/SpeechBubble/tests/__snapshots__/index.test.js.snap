@@ -1,11 +1,196 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SpeechBubble Should render and match the snapshot 1`] = `
-<div
-  className="Wrapper__Wrapper-fEDTQp dKhNgq"
->
-  <div
-    className="Bubble__Bubble-kfMqWC eHhJkd"
+exports[`<SpeechBubble /> should adopt any children 1`] = `
+<Container__Container>
+  <Bubble__Bubble
+    innerRef={[Function]}
+  >
+    <span>
+      A Child
+    </span>
+  </Bubble__Bubble>
+  <Arrow__Arrow>
+    <path
+      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      fill="inherit"
+      stroke="inherit"
+    />
+    <path
+      d="M175.1 493.6l-87.5 21.9v-54.8"
+    />
+    <path
+      d="M87.6 515.5l21.2 44.5v-49.8"
+      fill="inherit"
+    />
+  </Arrow__Arrow>
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> should adopt the "arrowHeight" prop 1`] = `
+<Container__Container>
+  <Bubble__Bubble
+    innerRef={[Function]}
   />
-</div>
+  <Arrow__Arrow
+    height="1vw"
+  >
+    <path
+      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      fill="inherit"
+      stroke="inherit"
+    />
+    <path
+      d="M175.1 493.6l-87.5 21.9v-54.8"
+    />
+    <path
+      d="M87.6 515.5l21.2 44.5v-49.8"
+      fill="inherit"
+    />
+  </Arrow__Arrow>
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> should adopt the "backgroundColor" prop 1`] = `
+<Container__Container>
+  <Bubble__Bubble
+    backgroundColor="#000"
+    innerRef={[Function]}
+  />
+  <Arrow__Arrow>
+    <path
+      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      fill="#1a1a1a"
+      stroke="#1a1a1a"
+    />
+    <path
+      d="M175.1 493.6l-87.5 21.9v-54.8"
+      fill="#000"
+    />
+    <path
+      d="M87.6 515.5l21.2 44.5v-49.8"
+      fill="#1a1a1a"
+    />
+  </Arrow__Arrow>
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> should adopt the "isLeftHanded" prop 1`] = `
+<Container__Container>
+  <Bubble__Bubble
+    innerRef={[Function]}
+    isLeftHanded={false}
+  />
+  <Arrow__Arrow
+    isLeftHanded={false}
+  >
+    <path
+      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      fill="inherit"
+      stroke="inherit"
+    />
+    <path
+      d="M175.1 493.6l-87.5 21.9v-54.8"
+    />
+    <path
+      d="M87.6 515.5l21.2 44.5v-49.8"
+      fill="inherit"
+    />
+  </Arrow__Arrow>
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> should adopt the "maxWidth" prop 1`] = `
+<Container__Container
+  maxWidth="10em"
+>
+  <Bubble__Bubble
+    innerRef={[Function]}
+  />
+  <Arrow__Arrow>
+    <path
+      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      fill="inherit"
+      stroke="inherit"
+    />
+    <path
+      d="M175.1 493.6l-87.5 21.9v-54.8"
+    />
+    <path
+      d="M87.6 515.5l21.2 44.5v-49.8"
+      fill="inherit"
+    />
+  </Arrow__Arrow>
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> should adopt the "padding" prop 1`] = `
+<Container__Container>
+  <Bubble__Bubble
+    innerRef={[Function]}
+    padding="0 0px"
+  />
+  <Arrow__Arrow>
+    <path
+      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      fill="inherit"
+      stroke="inherit"
+    />
+    <path
+      d="M175.1 493.6l-87.5 21.9v-54.8"
+    />
+    <path
+      d="M87.6 515.5l21.2 44.5v-49.8"
+      fill="inherit"
+    />
+  </Arrow__Arrow>
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> should adopt the "showArrowBreakpoint" prop 1`] = `
+<Container__Container
+  showArrowBreakpoint="100px"
+>
+  <Bubble__Bubble
+    innerRef={[Function]}
+    showArrowBreakpoint="100px"
+  />
+  <Arrow__Arrow
+    showBreakpoint="100px"
+  >
+    <path
+      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      fill="inherit"
+      stroke="inherit"
+    />
+    <path
+      d="M175.1 493.6l-87.5 21.9v-54.8"
+    />
+    <path
+      d="M87.6 515.5l21.2 44.5v-49.8"
+      fill="inherit"
+    />
+  </Arrow__Arrow>
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> should render and match the snapshot 1`] = `
+<Container__Container>
+  <Bubble__Bubble
+    innerRef={[Function]}
+  />
+  <Arrow__Arrow>
+    <path
+      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      fill="inherit"
+      stroke="inherit"
+    />
+    <path
+      d="M175.1 493.6l-87.5 21.9v-54.8"
+    />
+    <path
+      d="M87.6 515.5l21.2 44.5v-49.8"
+      fill="inherit"
+    />
+  </Arrow__Arrow>
+</Container__Container>
 `;

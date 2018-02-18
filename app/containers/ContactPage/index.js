@@ -135,7 +135,13 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
         </FlexRow>
         <FlexRow>
           <FlexColumn>
-            <SpeechBubble>
+            <SpeechBubble
+              arrowHeight={'9vh'}
+              backgroundColor="#f90"
+              isLeftHanded={false}
+              maxWidth={'1008px'}
+              showArrowBreakpoint="750px"
+            >
               <Form onSubmit={this.onFormSubmit}>
                 <div>
                   <div>

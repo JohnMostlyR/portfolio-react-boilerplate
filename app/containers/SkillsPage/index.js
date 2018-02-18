@@ -48,7 +48,13 @@ export class SkillsPage extends React.Component { // eslint-disable-line react/p
         </FlexRow>
         <FlexRow>
           <FlexColumn>
-            <SpeechBubble>
+            <SpeechBubble
+              arrowHeight={'9vh'}
+              backgroundColor="#f90"
+              isLeftHanded={false}
+              maxWidth={'1008px'}
+              showArrowBreakpoint="750px"
+            >
               {this.props.skillsText}
             </SpeechBubble>
           </FlexColumn>

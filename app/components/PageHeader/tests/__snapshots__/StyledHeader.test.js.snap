@@ -2,7 +2,7 @@
 
 exports[`<StyledHeader /> Should render and match the snapshot 1`] = `
 .c0 {
-  float: left;
+  display: inline-block;
   padding: 5px;
 }
 

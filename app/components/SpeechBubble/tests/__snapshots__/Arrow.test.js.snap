@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Arrow /> should adopt the "height" prop 1`] = `
+.c0 {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  height: 1px;
+  margin-top: -1px;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+
+@media (min-height:1em) {
+  .c0 {
+    height: 1em;
+  }
+}
+
+<svg
+  className="c0"
+  height="1em"
+  preserveAspectRatio="xMinYMid"
+  viewBox="0 427.9 175.1 132.1"
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`<Arrow /> should adopt the "isLeftHanded" prop 1`] = `
+.c0 {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  height: 1px;
+  margin-top: -1px;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+
+@media (min-height:) {
+  .c0 {
+    height: 100%;
+  }
+}
+
+<svg
+  className="c0"
+  preserveAspectRatio="xMinYMid"
+  viewBox="0 427.9 175.1 132.1"
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`<Arrow /> should adopt the "showBreakpoint" prop 1`] = `
+.c0 {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  height: 1px;
+  margin-top: -1px;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+
+@media (min-height:100px) {
+  .c0 {
+    height: 100%;
+  }
+}
+
+<svg
+  className="c0"
+  preserveAspectRatio="xMinYMid"
+  viewBox="0 427.9 175.1 132.1"
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;
+
+exports[`<Arrow /> should render and match the snapshot 1`] = `
+.c0 {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  height: 1px;
+  margin-top: -1px;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+
+@media (min-height:) {
+  .c0 {
+    height: 100%;
+  }
+}
+
+<svg
+  className="c0"
+  preserveAspectRatio="xMinYMid"
+  viewBox="0 427.9 175.1 132.1"
+  xmlns="http://www.w3.org/2000/svg"
+/>
+`;

@@ -23,15 +23,18 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <HeaderSpeechBubble__HeaderSpeechBubble
+      "children": <SpeechBubble
+        arrowHeight="4vh"
+        backgroundColor="#575756"
         isLeftHanded={true}
+        showArrowBreakpoint="750px"
 >
         <H2__H2>
                 <div>
                         children
                 </div>
         </H2__H2>
-</HeaderSpeechBubble__HeaderSpeechBubble>,
+</SpeechBubble>,
     },
     "ref": null,
     "rendered": Object {
@@ -39,12 +42,15 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "arrowHeight": "4vh",
+        "backgroundColor": "#575756",
         "children": <H2__H2>
           <div>
                     children
           </div>
 </H2__H2>,
         "isLeftHanded": true,
+        "showArrowBreakpoint": "750px",
       },
       "ref": null,
       "rendered": Object {
@@ -80,15 +86,18 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <HeaderSpeechBubble__HeaderSpeechBubble
+        "children": <SpeechBubble
+          arrowHeight="4vh"
+          backgroundColor="#575756"
           isLeftHanded={true}
+          showArrowBreakpoint="750px"
 >
           <H2__H2>
                     <div>
                               children
                     </div>
           </H2__H2>
-</HeaderSpeechBubble__HeaderSpeechBubble>,
+</SpeechBubble>,
       },
       "ref": null,
       "rendered": Object {
@@ -96,12 +105,15 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "arrowHeight": "4vh",
+          "backgroundColor": "#575756",
           "children": <H2__H2>
             <div>
                         children
             </div>
 </H2__H2>,
           "isLeftHanded": true,
+          "showArrowBreakpoint": "750px",
         },
         "ref": null,
         "rendered": Object {
@@ -161,11 +173,14 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <HeaderSpeechBubble__HeaderSpeechBubble
+      "children": <SpeechBubble
+        arrowHeight="4vh"
+        backgroundColor="#575756"
         isLeftHanded={true}
+        showArrowBreakpoint="750px"
 >
         <H2__H2 />
-</HeaderSpeechBubble__HeaderSpeechBubble>,
+</SpeechBubble>,
     },
     "ref": null,
     "rendered": Object {
@@ -173,8 +188,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "arrowHeight": "4vh",
+        "backgroundColor": "#575756",
         "children": <H2__H2 />,
         "isLeftHanded": true,
+        "showArrowBreakpoint": "750px",
       },
       "ref": null,
       "rendered": Object {
@@ -198,11 +216,14 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <HeaderSpeechBubble__HeaderSpeechBubble
+        "children": <SpeechBubble
+          arrowHeight="4vh"
+          backgroundColor="#575756"
           isLeftHanded={true}
+          showArrowBreakpoint="750px"
 >
           <H2__H2 />
-</HeaderSpeechBubble__HeaderSpeechBubble>,
+</SpeechBubble>,
       },
       "ref": null,
       "rendered": Object {
@@ -210,8 +231,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "arrowHeight": "4vh",
+          "backgroundColor": "#575756",
           "children": <H2__H2 />,
           "isLeftHanded": true,
+          "showArrowBreakpoint": "750px",
         },
         "ref": null,
         "rendered": Object {

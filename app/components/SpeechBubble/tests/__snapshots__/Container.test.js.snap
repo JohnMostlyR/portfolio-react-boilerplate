@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Container /> should adopt the "maxWidth" prop 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-filter: none;
+  filter: none;
+  max-width: 100px;
+}
+
+@media (min-height:100%) {
+  .c0 {
+    -webkit-filter: drop-shadow(0 0 5px grey);
+    filter: drop-shadow(0 0 5px grey);
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<Container /> should adopt the "showArrowBreakpoint" prop 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-filter: none;
+  filter: none;
+  max-width: unset;
+}
+
+@media (min-height:1rem) {
+  .c0 {
+    -webkit-filter: drop-shadow(0 0 5px grey);
+    filter: drop-shadow(0 0 5px grey);
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<Container /> should render and match the snapshot 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-filter: none;
+  filter: none;
+  max-width: unset;
+}
+
+@media (min-height:100%) {
+  .c0 {
+    -webkit-filter: drop-shadow(0 0 5px grey);
+    filter: drop-shadow(0 0 5px grey);
+  }
+}
+
+<div
+  className="c0"
+/>
+`;

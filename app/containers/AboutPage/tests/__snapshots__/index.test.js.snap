@@ -47,7 +47,13 @@ ShallowWrapper {
 </FlexRow__FlexRow>,
         <FlexRow__FlexRow>
           <FlexColumn__FlexColumn>
-                    <SpeechBubble />
+                    <SpeechBubble
+                              arrowHeight="9vh"
+                              backgroundColor="#f90"
+                              isLeftHanded={false}
+                              maxWidth="1008px"
+                              showArrowBreakpoint="750px"
+                    />
           </FlexColumn__FlexColumn>
 </FlexRow__FlexRow>,
       ],
@@ -172,7 +178,13 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <FlexColumn__FlexColumn>
-            <SpeechBubble />
+            <SpeechBubble
+                        arrowHeight="9vh"
+                        backgroundColor="#f90"
+                        isLeftHanded={false}
+                        maxWidth="1008px"
+                        showArrowBreakpoint="750px"
+            />
 </FlexColumn__FlexColumn>,
         },
         "ref": null,
@@ -181,15 +193,26 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <SpeechBubble />,
+            "children": <SpeechBubble
+              arrowHeight="9vh"
+              backgroundColor="#f90"
+              isLeftHanded={false}
+              maxWidth="1008px"
+              showArrowBreakpoint="750px"
+/>,
           },
           "ref": null,
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "class",
             "props": Object {
+              "arrowHeight": "9vh",
+              "backgroundColor": "#f90",
               "children": undefined,
+              "isLeftHanded": false,
+              "maxWidth": "1008px",
+              "showArrowBreakpoint": "750px",
             },
             "ref": null,
             "rendered": null,
@@ -236,7 +259,13 @@ ShallowWrapper {
 </FlexRow__FlexRow>,
           <FlexRow__FlexRow>
             <FlexColumn__FlexColumn>
-                        <SpeechBubble />
+                        <SpeechBubble
+                                    arrowHeight="9vh"
+                                    backgroundColor="#f90"
+                                    isLeftHanded={false}
+                                    maxWidth="1008px"
+                                    showArrowBreakpoint="750px"
+                        />
             </FlexColumn__FlexColumn>
 </FlexRow__FlexRow>,
         ],
@@ -361,7 +390,13 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <FlexColumn__FlexColumn>
-              <SpeechBubble />
+              <SpeechBubble
+                            arrowHeight="9vh"
+                            backgroundColor="#f90"
+                            isLeftHanded={false}
+                            maxWidth="1008px"
+                            showArrowBreakpoint="750px"
+              />
 </FlexColumn__FlexColumn>,
           },
           "ref": null,
@@ -370,15 +405,26 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <SpeechBubble />,
+              "children": <SpeechBubble
+                arrowHeight="9vh"
+                backgroundColor="#f90"
+                isLeftHanded={false}
+                maxWidth="1008px"
+                showArrowBreakpoint="750px"
+/>,
             },
             "ref": null,
             "rendered": Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "class",
               "props": Object {
+                "arrowHeight": "9vh",
+                "backgroundColor": "#f90",
                 "children": undefined,
+                "isLeftHanded": false,
+                "maxWidth": "1008px",
+                "showArrowBreakpoint": "750px",
               },
               "ref": null,
               "rendered": null,

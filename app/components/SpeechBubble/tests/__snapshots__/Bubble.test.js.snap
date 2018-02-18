@@ -1,127 +1,131 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Bubble /> should adopt any children 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Bubble__Bubble
-    isLeftHanded={false}
->
-    <div>
-        children
-    </div>
-</Bubble__Bubble>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": <div>
-        children
-</div>,
-      "className": "Bubble__Bubble-kfMqWC eHhJkd",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "children",
-      },
-      "ref": null,
-      "rendered": "children",
-      "type": "div",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <div>
-          children
-</div>,
-        "className": "Bubble__Bubble-kfMqWC eHhJkd",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "children",
-        },
-        "ref": null,
-        "rendered": "children",
-        "type": "div",
-      },
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
+exports[`<Bubble /> should adopt the "backgroundColor" prop 1`] = `
+.c0 {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px grey;
+  padding: 1rem;
 }
+
+.c0 > p:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+@media (min-height:100%) {
+  .c0 {
+    margin-right: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<Bubble /> should adopt the "isLeftHanded" prop 1`] = `
+.c0 {
+  background-color: inherit;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px grey;
+  padding: 1rem;
+}
+
+.c0 > p:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+@media (min-height:100%) {
+  .c0 {
+    margin-right: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<Bubble /> should adopt the "padding" prop 1`] = `
+.c0 {
+  background-color: inherit;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px grey;
+  padding: 0 1em;
+}
+
+.c0 > p:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+@media (min-height:100%) {
+  .c0 {
+    margin-right: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<Bubble /> should adopt the "showArrowBreakpoint" prop 1`] = `
+.c0 {
+  background-color: inherit;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px grey;
+  padding: 1rem;
+}
+
+.c0 > p:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+@media (min-height:10rem) {
+  .c0 {
+    margin-right: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+  }
+}
+
+<div
+  className="c0"
+/>
 `;
 
 exports[`<Bubble /> should render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Bubble__Bubble
-    isLeftHanded={false}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "className": "Bubble__Bubble-kfMqWC eHhJkd",
-    },
-    "ref": null,
-    "rendered": null,
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "className": "Bubble__Bubble-kfMqWC eHhJkd",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
+.c0 {
+  background-color: inherit;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px grey;
+  padding: 1rem;
 }
+
+.c0 > p:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+@media (min-height:100%) {
+  .c0 {
+    margin-right: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+  }
+}
+
+<div
+  className="c0"
+/>
 `;
