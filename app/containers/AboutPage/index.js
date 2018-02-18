@@ -26,8 +26,8 @@ import PageHeader from '../../components/PageHeader';
 import FlexRow from '../../components/FlexRow';
 import FlexColumn from '../../components/FlexColumn';
 
-export class AboutPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
-  componentDidMount() {
+export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  componentWillMount() {
     this.props.getContent();
   }
 

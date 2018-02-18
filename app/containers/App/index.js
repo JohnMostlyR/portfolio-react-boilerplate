@@ -30,7 +30,7 @@ import ProjectsPage from '../../containers/ProjectsPage/Loadable';
 import ContactPage from '../../containers/ContactPage/Loadable';
 import NotFoundPage from '../../containers/NotFoundPage/Loadable';
 
-class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
+class App extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
 
@@ -74,8 +74,7 @@ class App extends React.Component { // eslint-disable-line react/prefer-stateles
 
   render() {
     return (
-      // eslint-disable-next-line no-return-assign
-      <Wrapper innerRef={(el) => this.wrapper = el}>
+      <Wrapper innerRef={(el) => { this.wrapper = el; }}>
         <h1 hidden aria-hidden="false"><FormattedMessage {...messages.title} /></h1>
         <SiteHeader />
         <Main

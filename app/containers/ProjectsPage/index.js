@@ -26,8 +26,8 @@ import FlexRow from '../../components/FlexRow';
 import FlexColumn from '../../components/FlexColumn';
 import Projects from '../../components/Projects';
 
-export class ProjectsPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
-  componentDidMount() {
+export class ProjectsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  componentWillMount() {
     this.props.getContent();
   }
 
