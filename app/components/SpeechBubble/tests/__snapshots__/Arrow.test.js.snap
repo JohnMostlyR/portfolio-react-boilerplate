@@ -2,15 +2,19 @@
 
 exports[`<Arrow /> should adopt the "height" prop 1`] = `
 .c0 {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
+  float: right;
   height: 1px;
   margin-top: -1px;
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  z-index: -1;
+  z-index: 9;
+}
+
+.c0::after {
+  content: "" !important;
+  display: block !important;
+  clear: both !important;
 }
 
 @media (min-height:1em) {
@@ -30,15 +34,19 @@ exports[`<Arrow /> should adopt the "height" prop 1`] = `
 
 exports[`<Arrow /> should adopt the "isLeftHanded" prop 1`] = `
 .c0 {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
+  float: right;
   height: 1px;
   margin-top: -1px;
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  z-index: -1;
+  z-index: 9;
+}
+
+.c0::after {
+  content: "" !important;
+  display: block !important;
+  clear: both !important;
 }
 
 @media (min-height:) {
@@ -57,15 +65,19 @@ exports[`<Arrow /> should adopt the "isLeftHanded" prop 1`] = `
 
 exports[`<Arrow /> should adopt the "showBreakpoint" prop 1`] = `
 .c0 {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
+  float: right;
   height: 1px;
   margin-top: -1px;
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  z-index: -1;
+  z-index: 9;
+}
+
+.c0::after {
+  content: "" !important;
+  display: block !important;
+  clear: both !important;
 }
 
 @media (min-height:100px) {
@@ -84,15 +96,19 @@ exports[`<Arrow /> should adopt the "showBreakpoint" prop 1`] = `
 
 exports[`<Arrow /> should render and match the snapshot 1`] = `
 .c0 {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
+  float: right;
   height: 1px;
   margin-top: -1px;
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  z-index: -1;
+  z-index: 9;
+}
+
+.c0::after {
+  content: "" !important;
+  display: block !important;
+  clear: both !important;
 }
 
 @media (min-height:) {

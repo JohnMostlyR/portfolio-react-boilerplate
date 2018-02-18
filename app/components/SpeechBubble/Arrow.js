@@ -6,11 +6,17 @@ const Arrow = styled.svg.attrs({
   viewBox: '0 427.9 175.1 132.1',
   preserveAspectRatio: 'xMinYMid',
 })`
-  align-self: ${({ isLeftHanded }) => isLeftHanded ? 'flex-start' : 'flex-end'};
+  float: ${({ isLeftHanded }) => isLeftHanded ? 'left' : 'right'};
   height: 1px;
   margin-top: -1px;
   transform: rotateY(${({ isLeftHanded }) => isLeftHanded ? '0deg' : '180deg'});
-  z-index: -1;
+  z-index: 9;
+
+  &::after {
+    content: "" !important;
+    display: block !important;
+    clear: both !important;
+  }
 
   @media (min-height: ${({ showBreakpoint, height }) => showBreakpoint || height}) {
     height: ${({ height }) => height || '100%'};

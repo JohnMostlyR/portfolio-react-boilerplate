@@ -26,7 +26,6 @@ class SpeechBubble extends React.PureComponent {
           isLeftHanded={isLeftHanded}
           padding={padding}
           showArrowBreakpoint={showArrowBreakpoint}
-          innerRef={(el) => { this.bubble = el; }}
         >
           {children}
         </Bubble>

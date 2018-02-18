@@ -2,14 +2,15 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Container = styled.div`
-  align-items: center;
-  display: inline-flex;
-  flex-flow: column nowrap;
+  z-index: 10;
   filter: none;
-  max-width: ${({ maxWidth }) => maxWidth || 'unset'};
 
   @media (min-height: ${({ showArrowBreakpoint }) => showArrowBreakpoint || '100%'}) {
     filter: drop-shadow(0 0 5px grey);
+  }
+
+  @media (min-width: ${({ maxWidth }) => maxWidth || 'unset'}) {
+    width: ${({ maxWidth }) => maxWidth || 'unset'};
   }
 `;
 
