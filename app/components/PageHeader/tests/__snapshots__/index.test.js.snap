@@ -27,6 +27,7 @@ ShallowWrapper {
         arrowHeight="4vh"
         backgroundColor="#575756"
         isLeftHanded={true}
+        makeAppear={true}
         showArrowBreakpoint="750px"
 >
         <H2__H2>
@@ -50,6 +51,7 @@ ShallowWrapper {
           </div>
 </H2__H2>,
         "isLeftHanded": true,
+        "makeAppear": true,
         "showArrowBreakpoint": "750px",
       },
       "ref": null,
@@ -90,6 +92,7 @@ ShallowWrapper {
           arrowHeight="4vh"
           backgroundColor="#575756"
           isLeftHanded={true}
+          makeAppear={true}
           showArrowBreakpoint="750px"
 >
           <H2__H2>
@@ -113,6 +116,7 @@ ShallowWrapper {
             </div>
 </H2__H2>,
           "isLeftHanded": true,
+          "makeAppear": true,
           "showArrowBreakpoint": "750px",
         },
         "ref": null,
@@ -177,6 +181,7 @@ ShallowWrapper {
         arrowHeight="4vh"
         backgroundColor="#575756"
         isLeftHanded={true}
+        makeAppear={true}
         showArrowBreakpoint="750px"
 >
         <H2__H2 />
@@ -192,6 +197,7 @@ ShallowWrapper {
         "backgroundColor": "#575756",
         "children": <H2__H2 />,
         "isLeftHanded": true,
+        "makeAppear": true,
         "showArrowBreakpoint": "750px",
       },
       "ref": null,
@@ -220,6 +226,7 @@ ShallowWrapper {
           arrowHeight="4vh"
           backgroundColor="#575756"
           isLeftHanded={true}
+          makeAppear={true}
           showArrowBreakpoint="750px"
 >
           <H2__H2 />
@@ -235,6 +242,7 @@ ShallowWrapper {
           "backgroundColor": "#575756",
           "children": <H2__H2 />,
           "isLeftHanded": true,
+          "makeAppear": true,
           "showArrowBreakpoint": "750px",
         },
         "ref": null,

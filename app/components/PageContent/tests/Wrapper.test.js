@@ -10,4 +10,9 @@ describe('<Wrapper />', () => {
     const renderedComponent = shallow(<Wrapper />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
+
+  it('should adopt the "animate" property', () => {
+    const renderedComponent = shallow(<Wrapper animate={false} />);
+    expect(toJson(renderedComponent)).toMatchSnapshot();
+  });
 });

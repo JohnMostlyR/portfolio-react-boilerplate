@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContentLoadingIndicator /> Should adopt the "show" property 1`] = `
+<IntlProvider
+  locale="en"
+>
+  <ContentLoadingIndicator
+    show={true}
+  >
+    <ContentLoadingIndicator
+      show={true}
+    >
+      <Article__Article
+        show={true}
+      >
+        <article
+          className="Article__Article-fWCsyc gvdoiC"
+        >
+          <Header>
+            <header>
+              <SpeechBubble
+                arrowHeight="4vh"
+                backgroundColor="#575756"
+                isLeftHanded={false}
+                showArrowBreakpoint="750px"
+              >
+                <Container__Container
+                  showArrowBreakpoint="750px"
+                >
+                  <div
+                    className="Container__Container-duRnZL clqGHe"
+                  >
+                    <Bubble__Bubble
+                      backgroundColor="#575756"
+                      isLeftHanded={false}
+                      showArrowBreakpoint="750px"
+                    >
+                      <div
+                        className="Bubble__Bubble-kfMqWC eGwfKo"
+                      >
+                        <Content__Content>
+                          <div
+                            className="Content__Content-bIVvry htHIBE"
+                          >
+                            <H2__H2>
+                              <h2
+                                className="H2__H2-eTwhUa kvSWkO"
+                              >
+                                <FormattedMessage
+                                  defaultMessage="Loading content"
+                                  id="portfolio.containers.ContentLoadingIndicator.pastDelay"
+                                  values={Object {}}
+                                >
+                                  <span>
+                                    Loading content
+                                  </span>
+                                </FormattedMessage>
+                              </h2>
+                            </H2__H2>
+                            <FontAwesome
+                              name="spinner"
+                              pulse={true}
+                              size="2x"
+                            >
+                              <span
+                                aria-hidden={true}
+                                className="fa fa-spinner fa-2x fa-pulse"
+                              />
+                            </FontAwesome>
+                          </div>
+                        </Content__Content>
+                      </div>
+                    </Bubble__Bubble>
+                    <Arrow__Arrow
+                      height="4vh"
+                      isLeftHanded={false}
+                      showBreakpoint="750px"
+                    >
+                      <svg
+                        className="Arrow__Arrow-fPzAjH hweUFf"
+                        height="4vh"
+                        preserveAspectRatio="xMinYMid"
+                        viewBox="0 427.9 175.1 132.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 427.9l175.1 65.7-43.7-65.7z"
+                          fill="#71716f"
+                          stroke="#71716f"
+                        />
+                        <path
+                          d="M175.1 493.6l-87.5 21.9v-54.8"
+                          fill="#575756"
+                        />
+                        <path
+                          d="M87.6 515.5l21.2 44.5v-49.8"
+                          fill="#71716f"
+                        />
+                      </svg>
+                    </Arrow__Arrow>
+                  </div>
+                </Container__Container>
+              </SpeechBubble>
+            </header>
+          </Header>
+        </article>
+      </Article__Article>
+    </ContentLoadingIndicator>
+  </ContentLoadingIndicator>
+</IntlProvider>
+`;
+
+exports[`<ContentLoadingIndicator /> Should adopt the "showError" property 1`] = `
+<IntlProvider
+  locale="en"
+>
+  <ContentLoadingIndicator
+    showError={true}
+  >
+    <ContentLoadingIndicator
+      showError={true}
+    >
+      <Article__Article
+        show={true}
+      >
+        <article
+          className="Article__Article-fWCsyc gvdoiC"
+        >
+          <Header>
+            <header>
+              <SpeechBubble
+                arrowHeight="4vh"
+                backgroundColor="#575756"
+                isLeftHanded={false}
+                showArrowBreakpoint="750px"
+              >
+                <Container__Container
+                  showArrowBreakpoint="750px"
+                >
+                  <div
+                    className="Container__Container-duRnZL clqGHe"
+                  >
+                    <Bubble__Bubble
+                      backgroundColor="#575756"
+                      isLeftHanded={false}
+                      showArrowBreakpoint="750px"
+                    >
+                      <div
+                        className="Bubble__Bubble-kfMqWC eGwfKo"
+                      >
+                        <Content__Content>
+                          <div
+                            className="Content__Content-bIVvry htHIBE"
+                          >
+                            <H2__H2
+                              isError={true}
+                            >
+                              <h2
+                                className="H2__H2-eTwhUa jyWhhz"
+                              >
+                                <FormattedMessage
+                                  defaultMessage="Terribly sorry, but the page cannot be loaded at this time"
+                                  id="portfolio.containers.ContentLoadingIndicator.error"
+                                  values={Object {}}
+                                >
+                                  <span>
+                                    Terribly sorry, but the page cannot be loaded at this time
+                                  </span>
+                                </FormattedMessage>
+                              </h2>
+                            </H2__H2>
+                            <FontAwesome
+                              name="chain-broken"
+                              pulse={false}
+                              size="2x"
+                            >
+                              <span
+                                aria-hidden={true}
+                                className="fa fa-chain-broken fa-2x"
+                              />
+                            </FontAwesome>
+                          </div>
+                        </Content__Content>
+                      </div>
+                    </Bubble__Bubble>
+                    <Arrow__Arrow
+                      height="4vh"
+                      isLeftHanded={false}
+                      showBreakpoint="750px"
+                    >
+                      <svg
+                        className="Arrow__Arrow-fPzAjH hweUFf"
+                        height="4vh"
+                        preserveAspectRatio="xMinYMid"
+                        viewBox="0 427.9 175.1 132.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 427.9l175.1 65.7-43.7-65.7z"
+                          fill="#71716f"
+                          stroke="#71716f"
+                        />
+                        <path
+                          d="M175.1 493.6l-87.5 21.9v-54.8"
+                          fill="#575756"
+                        />
+                        <path
+                          d="M87.6 515.5l21.2 44.5v-49.8"
+                          fill="#71716f"
+                        />
+                      </svg>
+                    </Arrow__Arrow>
+                  </div>
+                </Container__Container>
+              </SpeechBubble>
+            </header>
+          </Header>
+        </article>
+      </Article__Article>
+    </ContentLoadingIndicator>
+  </ContentLoadingIndicator>
+</IntlProvider>
+`;
+
+exports[`<ContentLoadingIndicator /> Should render and match the snapshot 1`] = `
+<ContentLoadingIndicator>
+  <FormattedMessage
+    defaultMessage="Loading content"
+    id="portfolio.containers.ContentLoadingIndicator.pastDelay"
+    values={Object {}}
+  />
+</ContentLoadingIndicator>
+`;

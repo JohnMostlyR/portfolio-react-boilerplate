@@ -1,13 +1,13 @@
 import { fromJS } from 'immutable';
 
-import appReducer from '../reducer';
+import aboutPage from '../reducer';
 import {
   loadContent,
   contentLoaded,
   contentLoadingError,
 } from '../actions';
 
-describe('appReducer', () => {
+describe('aboutPage reducer', () => {
   let state;
   beforeEach(() => {
     state = fromJS({
@@ -20,7 +20,7 @@ describe('appReducer', () => {
 
   it('should return the initial state', () => {
     const expectedResult = state;
-    expect(appReducer(undefined, {})).toEqual(expectedResult);
+    expect(aboutPage(undefined, {})).toEqual(expectedResult);
   });
 
   it('should handle the loadContent action correctly', () => {
@@ -30,7 +30,7 @@ describe('appReducer', () => {
       .set('aboutMeText', '')
       .set('locale', '');
 
-    expect(appReducer(state, loadContent())).toEqual(expectedResult);
+    expect(aboutPage(state, loadContent())).toEqual(expectedResult);
   });
 
   it('should handle the contentLoaded action correctly', () => {
@@ -41,7 +41,7 @@ describe('appReducer', () => {
       .set('loading', false)
       .set('locale', locale);
 
-    expect(appReducer(state, contentLoaded(fixture, locale))).toEqual(expectedResult);
+    expect(aboutPage(state, contentLoaded(fixture, locale))).toEqual(expectedResult);
   });
 
   it('should handle the contentLoadingError action correctly', () => {
@@ -52,6 +52,6 @@ describe('appReducer', () => {
       .set('error', fixture)
       .set('loading', false);
 
-    expect(appReducer(state, contentLoadingError(fixture))).toEqual(expectedResult);
+    expect(aboutPage(state, contentLoadingError(fixture))).toEqual(expectedResult);
   });
 });

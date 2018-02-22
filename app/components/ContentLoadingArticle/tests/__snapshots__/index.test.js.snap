@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoadingComponent /> should adopt the "show" prop 1`] = `
+<Article__Article
+  show={true}
+>
+  <Header>
+    <Content__Content>
+      <H2__H2 />
+      <FontAwesome
+        name="spinner"
+        pulse={true}
+        size="2x"
+      />
+    </Content__Content>
+  </Header>
+</Article__Article>
+`;
+
+exports[`<LoadingComponent /> should adopt the "showError" prop 1`] = `
+<Article__Article
+  show={true}
+>
+  <Header>
+    <Content__Content>
+      <H2__H2
+        isError={true}
+      />
+      <FontAwesome
+        name="chain-broken"
+        pulse={false}
+        size="2x"
+      />
+    </Content__Content>
+  </Header>
+</Article__Article>
+`;
+
+exports[`<LoadingComponent /> should render and match the snapshot 1`] = `
+<Article__Article>
+  <Header>
+    <Content__Content>
+      <H2__H2 />
+      <FontAwesome
+        name="spinner"
+        pulse={true}
+        size="2x"
+      />
+    </Content__Content>
+  </Header>
+</Article__Article>
+`;

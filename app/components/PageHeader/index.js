@@ -12,6 +12,7 @@ const PageHeader = (props) => (
       arrowHeight={'4vh'}
       backgroundColor="#575756"
       isLeftHanded={props.isLeftHanded}
+      makeAppear
       showArrowBreakpoint="750px"
     >
       <H2>{props.children}</H2>

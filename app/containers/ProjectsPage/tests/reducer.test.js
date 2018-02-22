@@ -27,7 +27,6 @@ describe('projectsPageReducer', () => {
     const expectedResult = state
       .set('loading', true)
       .set('error', false)
-      .set('projects', [])
       .set('locale', '');
 
     expect(projectsPageReducer(state, loadContent())).toEqual(expectedResult);

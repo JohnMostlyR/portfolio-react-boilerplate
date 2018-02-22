@@ -24,7 +24,6 @@ function projectsPageReducer(state = initialState, action) {
       return state
         .set('loading', true)
         .set('error', false)
-        .set('projects', [])
         .set('locale', '');
     case LOAD_CONTENT_SUCCESS:
       return state

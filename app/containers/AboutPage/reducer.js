@@ -24,7 +24,6 @@ function aboutPageReducer(state = initialState, action) {
       return state
         .set('loading', true)
         .set('error', false)
-        .set('aboutMeText', '')
         .set('locale', '');
     case LOAD_CONTENT_SUCCESS:
       return state
