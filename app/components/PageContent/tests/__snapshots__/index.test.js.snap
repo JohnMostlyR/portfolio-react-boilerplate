@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PageContent /> Should adopt the "content" property 1`] = `
+<Wrapper__Wrapper
+  animate={true}
+>
+  <FlexRow__FlexRow>
+    <FlexColumn__FlexColumn>
+      <PageHeader
+        isLeftHanded={true}
+      />
+    </FlexColumn__FlexColumn>
+  </FlexRow__FlexRow>
+  <FlexRow__FlexRow>
+    <FlexColumn__FlexColumn>
+      <SpeechBubble
+        arrowHeight="9vh"
+        backgroundColor="#f90"
+        isLeftHanded={false}
+        makeAppear={false}
+        maxWidth="940px"
+        showArrowBreakpoint="750px"
+      >
+        Testing
+      </SpeechBubble>
+    </FlexColumn__FlexColumn>
+  </FlexRow__FlexRow>
+</Wrapper__Wrapper>
+`;
+
+exports[`<PageContent /> Should adopt the "noSpeechBubble" property 1`] = `
+<Wrapper__Wrapper
+  animate={true}
+>
+  <FlexRow__FlexRow>
+    <FlexColumn__FlexColumn>
+      <PageHeader
+        isLeftHanded={true}
+      />
+    </FlexColumn__FlexColumn>
+  </FlexRow__FlexRow>
+  <FlexRow__FlexRow>
+    <FlexColumn__FlexColumn>
+      Testing
+    </FlexColumn__FlexColumn>
+  </FlexRow__FlexRow>
+</Wrapper__Wrapper>
+`;
+
+exports[`<PageContent /> Should adopt the "title" property 1`] = `
+<Wrapper__Wrapper
+  animate={true}
+>
+  <FlexRow__FlexRow>
+    <FlexColumn__FlexColumn>
+      <PageHeader
+        isLeftHanded={true}
+      >
+        Testing
+      </PageHeader>
+    </FlexColumn__FlexColumn>
+  </FlexRow__FlexRow>
+  <FlexRow__FlexRow>
+    <FlexColumn__FlexColumn>
+      <SpeechBubble
+        arrowHeight="9vh"
+        backgroundColor="#f90"
+        isLeftHanded={false}
+        makeAppear={false}
+        maxWidth="940px"
+        showArrowBreakpoint="750px"
+      />
+    </FlexColumn__FlexColumn>
+  </FlexRow__FlexRow>
+</Wrapper__Wrapper>
+`;
+
+exports[`<PageContent /> Should render and match the snapshot 1`] = `
+<Wrapper__Wrapper
+  animate={true}
+>
+  <FlexRow__FlexRow>
+    <FlexColumn__FlexColumn>
+      <PageHeader
+        isLeftHanded={true}
+      />
+    </FlexColumn__FlexColumn>
+  </FlexRow__FlexRow>
+  <FlexRow__FlexRow>
+    <FlexColumn__FlexColumn>
+      <SpeechBubble
+        arrowHeight="9vh"
+        backgroundColor="#f90"
+        isLeftHanded={false}
+        makeAppear={false}
+        maxWidth="940px"
+        showArrowBreakpoint="750px"
+      />
+    </FlexColumn__FlexColumn>
+  </FlexRow__FlexRow>
+</Wrapper__Wrapper>
+`;

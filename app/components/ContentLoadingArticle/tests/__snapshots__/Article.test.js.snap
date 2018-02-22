@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Article /> should adopt the "show" property 1`] = `
+.c0 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: top 0.75s 0s cubic-bezier(0.32,1.5,0.29,1);
+  transition: top 0.75s 0s cubic-bezier(0.32,1.5,0.29,1);
+  -webkit-transform: translate3d(-50%,-50%,0);
+  -ms-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  z-index: 99;
+}
+
+<article
+  className="c0"
+/>
+`;
+
+exports[`<Article /> should render and match the snapshot 1`] = `
+.c0 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  left: 50%;
+  position: absolute;
+  top: 125%;
+  -webkit-transition: top 0.75s 0s cubic-bezier(0.32,1.5,0.29,1);
+  transition: top 0.75s 0s cubic-bezier(0.32,1.5,0.29,1);
+  -webkit-transform: translate3d(-50%,-50%,0);
+  -ms-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  z-index: 99;
+}
+
+<article
+  className="c0"
+/>
+`;

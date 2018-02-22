@@ -5,6 +5,19 @@ exports[`<Container /> should adopt the "maxWidth" prop 1`] = `
   z-index: 10;
   -webkit-filter: none;
   filter: none;
+  opacity: 1;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: none;
+  animation-name: none;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 @media (min-height:100%) {
@@ -30,6 +43,19 @@ exports[`<Container /> should adopt the "showArrowBreakpoint" prop 1`] = `
   z-index: 10;
   -webkit-filter: none;
   filter: none;
+  opacity: 1;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: none;
+  animation-name: none;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 @media (min-height:1rem) {
@@ -55,6 +81,19 @@ exports[`<Container /> should render and match the snapshot 1`] = `
   z-index: 10;
   -webkit-filter: none;
   filter: none;
+  opacity: 1;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: none;
+  animation-name: none;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 @media (min-height:100%) {

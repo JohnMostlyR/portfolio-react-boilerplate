@@ -24,7 +24,6 @@ function skillsPageReducer(state = initialState, action) {
       return state
         .set('loading', true)
         .set('error', false)
-        .set('skillsText', '')
         .set('locale', '');
     case LOAD_CONTENT_SUCCESS:
       return state

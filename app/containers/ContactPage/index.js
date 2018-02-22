@@ -31,13 +31,10 @@ import FormFooter from './FormFooter';
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
 import Article from '../../components/Article';
-import SpeechBubble from '../../components/SpeechBubble';
-import PageHeader from '../../components/PageHeader';
 import FormInfoItemsListItem from '../../components/FormInfoItemsListItem';
 import FormInput from '../../components/FormInput';
 import SendButton from '../../components/SendButton';
-import FlexRow from '../../components/FlexRow';
-import FlexColumn from '../../components/FlexColumn';
+import PageContent from '../../components/PageContent';
 
 export function validateForm(field, fieldError) {
   const errMessages = Object
@@ -126,94 +123,80 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
           <title>Contact pagina</title>
           <meta name="description" content="Contact pagina van Johan Meester zijn portfolio" />
         </Helmet>
-        <FlexRow>
-          <FlexColumn>
-            <PageHeader isLeftHanded>
-              <FormattedMessage {...messages.header} />
-            </PageHeader>
-          </FlexColumn>
-        </FlexRow>
-        <FlexRow>
-          <FlexColumn>
-            <SpeechBubble
-              arrowHeight={'9vh'}
-              backgroundColor="#f90"
-              isLeftHanded={false}
-              maxWidth={'940px'}
-              showArrowBreakpoint="750px"
-            >
-              <Form onSubmit={this.onFormSubmit}>
+        <PageContent
+          title={<FormattedMessage {...messages.header} />}
+          content={
+            <Form onSubmit={this.onFormSubmit}>
+              <div>
                 <div>
+                  <FormInfo>
+                    <FormInfoItemsList>
+                      <FormInfoItemsListItem>
+                        <FormattedMessage {...messages.requirementOne} />
+                      </FormInfoItemsListItem>
+                    </FormInfoItemsList>
+                  </FormInfo>
                   <div>
-                    <FormInfo>
-                      <FormInfoItemsList>
-                        <FormInfoItemsListItem>
-                          <FormattedMessage {...messages.requirementOne} />
-                        </FormInfoItemsListItem>
-                      </FormInfoItemsList>
-                    </FormInfo>
-                    <div>
-                      <FormInput
-                        helperText={this.props.intl.formatMessage(messages.subjectText)}
-                        label={this.props.intl.formatMessage(messages.subjectLabel)}
-                        maxLength={50}
-                        minLength={3}
-                        name="subject"
-                        onChange={this.onInputChange}
-                        validate={(val) => (isLength(val, { min: 3, max: 50 }))
-                          ? false
-                          : this.props.intl.formatMessage(messages.subjectError)}
-                        value={this.state.field.subject}
-                      />
-                      <FormInput
-                        helperText={this.props.intl.formatMessage(messages.yourMessageText)}
-                        label={this.props.intl.formatMessage(messages.yourMessageLabel)}
-                        maxLength={300}
-                        minLength={5}
-                        name="message"
-                        onChange={this.onInputChange}
-                        isTextArea
-                        validate={(val) => (isLength(val, { min: 5, max: 300 }))
-                          ? false
-                          : this.props.intl.formatMessage(messages.yourMessageError)}
-                        value={this.state.field.message}
-                      />
-                      <FormInput
-                        helperText={this.props.intl.formatMessage(messages.nameText)}
-                        label={this.props.intl.formatMessage(messages.nameLabel)}
-                        maxLength={50}
-                        minLength={2}
-                        name="name"
-                        placeholder={this.props.intl.formatMessage(messages.namePlaceholder)}
-                        onChange={this.onInputChange}
-                        validate={(val) => (isLength(val, { min: 2, max: 50 }))
-                          ? false
-                          : this.props.intl.formatMessage(messages.nameError)}
-                        value={this.state.field.name}
-                      />
-                      <FormInput
-                        helperText={this.props.intl.formatMessage(messages.emailText)}
-                        inputType="email"
-                        label={this.props.intl.formatMessage(messages.emailLabel)}
-                        name="email"
-                        placeholder={this.props.intl.formatMessage(messages.emailPlaceholder)}
-                        onChange={this.onInputChange}
-                        validate={(val) => (isEmail(val)) ? false : this.props.intl.formatMessage(
-                          messages.emailError)}
-                        value={this.state.field.email}
-                      />
-                    </div>
-                    <FormFooter>
-                      {
-                        renderSendButton()
-                      }
-                    </FormFooter>
+                    <FormInput
+                      helperText={this.props.intl.formatMessage(messages.subjectText)}
+                      label={this.props.intl.formatMessage(messages.subjectLabel)}
+                      maxLength={50}
+                      minLength={3}
+                      name="subject"
+                      onChange={this.onInputChange}
+                      validate={(val) => (isLength(val, { min: 3, max: 50 }))
+                        ? false
+                        : this.props.intl.formatMessage(messages.subjectError)}
+                      value={this.state.field.subject}
+                    />
+                    <FormInput
+                      helperText={this.props.intl.formatMessage(messages.yourMessageText)}
+                      label={this.props.intl.formatMessage(messages.yourMessageLabel)}
+                      maxLength={300}
+                      minLength={5}
+                      name="message"
+                      onChange={this.onInputChange}
+                      isTextArea
+                      validate={(val) => (isLength(val, { min: 5, max: 300 }))
+                        ? false
+                        : this.props.intl.formatMessage(messages.yourMessageError)}
+                      value={this.state.field.message}
+                    />
+                    <FormInput
+                      helperText={this.props.intl.formatMessage(messages.nameText)}
+                      label={this.props.intl.formatMessage(messages.nameLabel)}
+                      maxLength={50}
+                      minLength={2}
+                      name="name"
+                      placeholder={this.props.intl.formatMessage(messages.namePlaceholder)}
+                      onChange={this.onInputChange}
+                      validate={(val) => (isLength(val, { min: 2, max: 50 }))
+                        ? false
+                        : this.props.intl.formatMessage(messages.nameError)}
+                      value={this.state.field.name}
+                    />
+                    <FormInput
+                      helperText={this.props.intl.formatMessage(messages.emailText)}
+                      inputType="email"
+                      label={this.props.intl.formatMessage(messages.emailLabel)}
+                      name="email"
+                      placeholder={this.props.intl.formatMessage(messages.emailPlaceholder)}
+                      onChange={this.onInputChange}
+                      validate={(val) => (isEmail(val)) ? false : this.props.intl.formatMessage(
+                        messages.emailError)}
+                      value={this.state.field.email}
+                    />
                   </div>
+                  <FormFooter>
+                    {
+                      renderSendButton()
+                    }
+                  </FormFooter>
                 </div>
-              </Form>
-            </SpeechBubble>
-          </FlexColumn>
-        </FlexRow>
+              </div>
+            </Form>
+          }
+        />
       </Article>
     );
   }

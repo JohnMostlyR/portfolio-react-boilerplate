@@ -10,18 +10,13 @@ describe('<LoadingComponent />', () => {
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
-  it('should adopt the "error" prop', () => {
-    const renderedComponent = shallow(<LoadingComponent error />);
+  it('should adopt the "show" prop', () => {
+    const renderedComponent = shallow(<LoadingComponent show />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
-  it('should adopt the "timedOut" prop', () => {
-    const renderedComponent = shallow(<LoadingComponent timedOut />);
-    expect(toJson(renderedComponent)).toMatchSnapshot();
-  });
-
-  it('should adopt the "pastDelay" prop', () => {
-    const renderedComponent = shallow(<LoadingComponent pastDelay />);
+  it('should adopt the "showError" prop', () => {
+    const renderedComponent = shallow(<LoadingComponent showError />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 });

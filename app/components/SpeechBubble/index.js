@@ -13,6 +13,7 @@ class SpeechBubble extends React.PureComponent {
       backgroundColor,
       children,
       isLeftHanded,
+      makeAppear,
       maxWidth,
       padding,
       showArrowBreakpoint,
@@ -20,7 +21,11 @@ class SpeechBubble extends React.PureComponent {
     const lighterBackgroundColor = (backgroundColor && lighten(0.1, backgroundColor)) || 'inherit';
 
     return (
-      <Container showArrowBreakpoint={showArrowBreakpoint} maxWidth={maxWidth}>
+      <Container
+        showArrowBreakpoint={showArrowBreakpoint}
+        maxWidth={maxWidth}
+        makeAppear={makeAppear}
+      >
         <Bubble
           backgroundColor={backgroundColor}
           isLeftHanded={isLeftHanded}
@@ -61,6 +66,7 @@ SpeechBubble.propTypes = {
     PropTypes.node,
   ]),
   isLeftHanded: PropTypes.bool,
+  makeAppear: PropTypes.bool,
   maxWidth: PropTypes.string,
   padding: PropTypes.string,
   showArrowBreakpoint: PropTypes.string,
