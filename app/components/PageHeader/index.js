@@ -10,7 +10,7 @@ const PageHeader = (props) => (
   <StyledHeader>
     <SpeechBubble
       arrowHeight={'4vh'}
-      backgroundColor="#575756"
+      backgroundColor="#465a65"
       isLeftHanded={props.isLeftHanded}
       makeAppear
       showArrowBreakpoint="750px"

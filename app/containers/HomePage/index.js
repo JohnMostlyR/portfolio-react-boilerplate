@@ -193,15 +193,15 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                   <g id="g1">
                     <path
                       id="p1"
-                      fill="#212120"
+                      fill="#273238"
                       d="M-754.1,133.2v140.3l78.7,153.1h80.3L-754.1,133.2z"
                     />
-                    <path id="p2" fill="#818180" d="M159,733.2 v0 H78.700002 78.7z" />
-                    <path id="p3" fill="#414140" d="M52.5,790.4 v0 h75.8 v0z" />
-                    <path id="p4" fill="#818180" d="M5.3,702.1 v0 h73.9 v0z" />
+                    <path id="p2" fill="#465a65" d="M159,733.2 v0 H78.700002 78.7z" />
+                    <path id="p3" fill="#36474f" d="M52.5,790.4 v0 h75.8 v0z" />
+                    <path id="p4" fill="#465a65" d="M5.3,702.1 v0 h73.9 v0z" />
                     <path
                       id="p5"
-                      fill="#575756"
+                      fill="#556e78"
                       d="M-31.8,309.6c0-4.4-3.6-8.1-8.1-8.1h-401.2l-145.1,270.6h546.3 c4.4,0,8.1-3.6,8.1-8.1V309.6L-31.8,309.6z"
                       style={{ opacity: 0 }}
                     />
@@ -211,7 +211,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                     {
                       (message) => (
                         <text
-                          fill="#575756"
+                          fill="#556e78"
                           fontSize="65.685"
                           x="175"
                           y="500"

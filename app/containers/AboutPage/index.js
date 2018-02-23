@@ -64,7 +64,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
   render() {
     let showContent = <React.Fragment />;
 
-    if (Array.isArray(this.props.aboutMeText) && this.props.aboutMeText.length) {
+    if (this.props.aboutMeText) {
       showContent = <PageContent title={<FormattedMessage {...messages.title} />} content={this.props.aboutMeText} />;
     } else if (this.state.isLoading) { // FROM STATE!
       showContent = <ContentLoadingIndicator show showError={false} />;

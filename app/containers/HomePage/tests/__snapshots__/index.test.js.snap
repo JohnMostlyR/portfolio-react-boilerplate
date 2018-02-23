@@ -46,27 +46,27 @@ exports[`<HomePage /> should render the page message 1`] = `
             >
               <path
                 d="M-754.1,133.2v140.3l78.7,153.1h80.3L-754.1,133.2z"
-                fill="#212120"
+                fill="#273238"
                 id="p1"
               />
               <path
                 d="M159,733.2 v0 H78.700002 78.7z"
-                fill="#818180"
+                fill="#465a65"
                 id="p2"
               />
               <path
                 d="M52.5,790.4 v0 h75.8 v0z"
-                fill="#414140"
+                fill="#36474f"
                 id="p3"
               />
               <path
                 d="M5.3,702.1 v0 h73.9 v0z"
-                fill="#818180"
+                fill="#465a65"
                 id="p4"
               />
               <path
                 d="M-31.8,309.6c0-4.4-3.6-8.1-8.1-8.1h-401.2l-145.1,270.6h546.3 c4.4,0,8.1-3.6,8.1-8.1V309.6L-31.8,309.6z"
-                fill="#575756"
+                fill="#556e78"
                 id="p5"
                 style={
                   Object {

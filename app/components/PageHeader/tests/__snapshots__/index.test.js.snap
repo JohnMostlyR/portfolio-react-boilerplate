@@ -25,7 +25,7 @@ ShallowWrapper {
     "props": Object {
       "children": <SpeechBubble
         arrowHeight="4vh"
-        backgroundColor="#575756"
+        backgroundColor="#465a65"
         isLeftHanded={true}
         makeAppear={true}
         showArrowBreakpoint="750px"
@@ -44,7 +44,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "arrowHeight": "4vh",
-        "backgroundColor": "#575756",
+        "backgroundColor": "#465a65",
         "children": <H2__H2>
           <div>
                     children
@@ -90,7 +90,7 @@ ShallowWrapper {
       "props": Object {
         "children": <SpeechBubble
           arrowHeight="4vh"
-          backgroundColor="#575756"
+          backgroundColor="#465a65"
           isLeftHanded={true}
           makeAppear={true}
           showArrowBreakpoint="750px"
@@ -109,7 +109,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "arrowHeight": "4vh",
-          "backgroundColor": "#575756",
+          "backgroundColor": "#465a65",
           "children": <H2__H2>
             <div>
                         children
@@ -179,7 +179,7 @@ ShallowWrapper {
     "props": Object {
       "children": <SpeechBubble
         arrowHeight="4vh"
-        backgroundColor="#575756"
+        backgroundColor="#465a65"
         isLeftHanded={true}
         makeAppear={true}
         showArrowBreakpoint="750px"
@@ -194,7 +194,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "arrowHeight": "4vh",
-        "backgroundColor": "#575756",
+        "backgroundColor": "#465a65",
         "children": <H2__H2 />,
         "isLeftHanded": true,
         "makeAppear": true,
@@ -224,7 +224,7 @@ ShallowWrapper {
       "props": Object {
         "children": <SpeechBubble
           arrowHeight="4vh"
-          backgroundColor="#575756"
+          backgroundColor="#465a65"
           isLeftHanded={true}
           makeAppear={true}
           showArrowBreakpoint="750px"
@@ -239,7 +239,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "arrowHeight": "4vh",
-          "backgroundColor": "#575756",
+          "backgroundColor": "#465a65",
           "children": <H2__H2 />,
           "isLeftHanded": true,
           "makeAppear": true,

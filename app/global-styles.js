@@ -78,7 +78,7 @@ injectGlobal`
 
   body {
     height: 100%;
-    color: #575756;
+    color: #465a65;
     ${baseFontRegular};
   }
   

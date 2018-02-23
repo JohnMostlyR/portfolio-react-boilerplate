@@ -188,3 +188,729 @@ ShallowWrapper {
   },
 }
 `;
+
+exports[`<ProjectsPage /> should show an error message when content could not be loaded 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "injectedReducers": Object {},
+      "injectedSagas": Object {},
+      "replaceReducer": [Function],
+      "runSaga": [Function],
+      "subscribe": [Function],
+      Symbol(Symbol.observable): [Function],
+    }
+  }
+>
+  <IntlProvider
+    locale="en"
+  >
+    <ProjectsPage
+      error={true}
+      getContent={[Function]}
+      projects={Array []}
+    >
+      <Article
+        loadingContent={false}
+      >
+        <StyledArticle__StyledArticle
+          loadingContent={false}
+        >
+          <article
+            className="StyledArticle__StyledArticle-lfVOCZ bjDVJJ"
+          >
+            <HelmetWrapper
+              defer={true}
+              encodeSpecialCharacters={true}
+            >
+              <SideEffect(NullComponent)
+                defer={true}
+                encodeSpecialCharacters={true}
+                meta={
+                  Array [
+                    Object {
+                      "content": "Mijn projecten pagina van Johan Meester zijn portfolio",
+                      "name": "description",
+                    },
+                  ]
+                }
+                title="Mijn projecten"
+                titleAttributes={Object {}}
+              >
+                <NullComponent
+                  defer={true}
+                  encodeSpecialCharacters={true}
+                  meta={
+                    Array [
+                      Object {
+                        "content": "Mijn projecten pagina van Johan Meester zijn portfolio",
+                        "name": "description",
+                      },
+                    ]
+                  }
+                  title="Mijn projecten"
+                  titleAttributes={Object {}}
+                />
+              </SideEffect(NullComponent)>
+            </HelmetWrapper>
+            <ContentLoadingIndicator
+              show={true}
+              showError={true}
+            >
+              <ContentLoadingIndicator
+                show={true}
+                showError={true}
+              >
+                <Article__Article
+                  show={true}
+                >
+                  <article
+                    className="Article__Article-fWCsyc gvdoiC"
+                  >
+                    <Header>
+                      <header>
+                        <SpeechBubble
+                          arrowHeight="4vh"
+                          backgroundColor="#575756"
+                          isLeftHanded={false}
+                          showArrowBreakpoint="750px"
+                        >
+                          <Container__Container
+                            showArrowBreakpoint="750px"
+                          >
+                            <div
+                              className="Container__Container-duRnZL clqGHe"
+                            >
+                              <Bubble__Bubble
+                                backgroundColor="#575756"
+                                isLeftHanded={false}
+                                showArrowBreakpoint="750px"
+                              >
+                                <div
+                                  className="Bubble__Bubble-kfMqWC eGwfKo"
+                                >
+                                  <Content__Content>
+                                    <div
+                                      className="Content__Content-bIVvry htHIBE"
+                                    >
+                                      <H2__H2
+                                        isError={true}
+                                      >
+                                        <h2
+                                          className="H2__H2-eTwhUa jyWhhz"
+                                        >
+                                          <FormattedMessage
+                                            defaultMessage="Terribly sorry, but the page cannot be loaded at this time"
+                                            id="portfolio.containers.ContentLoadingIndicator.error"
+                                            values={Object {}}
+                                          >
+                                            <span>
+                                              Terribly sorry, but the page cannot be loaded at this time
+                                            </span>
+                                          </FormattedMessage>
+                                        </h2>
+                                      </H2__H2>
+                                      <FontAwesome
+                                        name="chain-broken"
+                                        pulse={false}
+                                        size="2x"
+                                      >
+                                        <span
+                                          aria-hidden={true}
+                                          className="fa fa-chain-broken fa-2x"
+                                        />
+                                      </FontAwesome>
+                                    </div>
+                                  </Content__Content>
+                                </div>
+                              </Bubble__Bubble>
+                              <Arrow__Arrow
+                                height="4vh"
+                                isLeftHanded={false}
+                                showBreakpoint="750px"
+                              >
+                                <svg
+                                  className="Arrow__Arrow-fPzAjH hweUFf"
+                                  height="4vh"
+                                  preserveAspectRatio="xMinYMid"
+                                  viewBox="0 427.9 175.1 132.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0 427.9l175.1 65.7-43.7-65.7z"
+                                    fill="#71716f"
+                                    stroke="#71716f"
+                                  />
+                                  <path
+                                    d="M175.1 493.6l-87.5 21.9v-54.8"
+                                    fill="#575756"
+                                  />
+                                  <path
+                                    d="M87.6 515.5l21.2 44.5v-49.8"
+                                    fill="#71716f"
+                                  />
+                                </svg>
+                              </Arrow__Arrow>
+                            </div>
+                          </Container__Container>
+                        </SpeechBubble>
+                      </header>
+                    </Header>
+                  </article>
+                </Article__Article>
+              </ContentLoadingIndicator>
+            </ContentLoadingIndicator>
+          </article>
+        </StyledArticle__StyledArticle>
+      </Article>
+    </ProjectsPage>
+  </IntlProvider>
+</Provider>
+`;
+
+exports[`<ProjectsPage /> should show the fetched content 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "injectedReducers": Object {},
+      "injectedSagas": Object {},
+      "replaceReducer": [Function],
+      "runSaga": [Function],
+      "subscribe": [Function],
+      Symbol(Symbol.observable): [Function],
+    }
+  }
+>
+  <IntlProvider
+    locale="en"
+  >
+    <ProjectsPage
+      error={false}
+      getContent={[Function]}
+      isLoading={false}
+      projects={
+        Array [
+          Object {
+            "date": "2017-10-22T00:00+02:00",
+            "description": "My portfolio website, now build with React",
+            "externalLinks": Array [
+              Object {
+                "faIcon": "github",
+                "name": "github",
+                "url": "https://github.com/Mensae/portfolio-react",
+              },
+              Object {
+                "faIcon": "globe",
+                "name": "world",
+                "url": "https://meester-johan.info/",
+              },
+            ],
+            "thumbnail": Object {
+              "contentType": "image/png",
+              "details": Object {
+                "image": Object {
+                  "height": 720,
+                  "width": 1280,
+                },
+                "size": 171379,
+              },
+              "fileName": "my-portfolio-16x9.png",
+              "url": "//images.contentful.com/1tymefars1bj/3X5e0G1CUwYSqKuqc6u8aq/a39b1b271c66573aef2abafbcc239125/my-portfolio-16x9.png",
+            },
+            "title": "My Portfolio",
+          },
+        ]
+      }
+    >
+      <Article
+        loadingContent={false}
+      >
+        <StyledArticle__StyledArticle
+          loadingContent={false}
+        >
+          <article
+            className="StyledArticle__StyledArticle-lfVOCZ bjDVJJ"
+          >
+            <HelmetWrapper
+              defer={true}
+              encodeSpecialCharacters={true}
+            >
+              <SideEffect(NullComponent)
+                defer={true}
+                encodeSpecialCharacters={true}
+                meta={
+                  Array [
+                    Object {
+                      "content": "Mijn projecten pagina van Johan Meester zijn portfolio",
+                      "name": "description",
+                    },
+                  ]
+                }
+                title="Mijn projecten"
+                titleAttributes={Object {}}
+              >
+                <NullComponent
+                  defer={true}
+                  encodeSpecialCharacters={true}
+                  meta={
+                    Array [
+                      Object {
+                        "content": "Mijn projecten pagina van Johan Meester zijn portfolio",
+                        "name": "description",
+                      },
+                    ]
+                  }
+                  title="Mijn projecten"
+                  titleAttributes={Object {}}
+                />
+              </SideEffect(NullComponent)>
+            </HelmetWrapper>
+            <PageContent
+              content={
+                <Projects
+                  projects={
+                    Array [
+                      Object {
+                        "date": "2017-10-22T00:00+02:00",
+                        "description": "My portfolio website, now build with React",
+                        "externalLinks": Array [
+                          Object {
+                            "faIcon": "github",
+                            "name": "github",
+                            "url": "https://github.com/Mensae/portfolio-react",
+                          },
+                          Object {
+                            "faIcon": "globe",
+                            "name": "world",
+                            "url": "https://meester-johan.info/",
+                          },
+                        ],
+                        "thumbnail": Object {
+                          "contentType": "image/png",
+                          "details": Object {
+                            "image": Object {
+                              "height": 720,
+                              "width": 1280,
+                            },
+                            "size": 171379,
+                          },
+                          "fileName": "my-portfolio-16x9.png",
+                          "url": "//images.contentful.com/1tymefars1bj/3X5e0G1CUwYSqKuqc6u8aq/a39b1b271c66573aef2abafbcc239125/my-portfolio-16x9.png",
+                        },
+                        "title": "My Portfolio",
+                      },
+                    ]
+                  }
+                />
+              }
+              noSpeechBubble={true}
+              title={
+                <FormattedMessage
+                  defaultMessage="MY PROJECTS"
+                  id="portfolio.page.projects.title"
+                  values={Object {}}
+                />
+              }
+            >
+              <Wrapper__Wrapper
+                animate={true}
+              >
+                <div
+                  className="Wrapper__Wrapper-fEDTQp jleZGF"
+                >
+                  <FlexRow__FlexRow>
+                    <div
+                      className="FlexRow__FlexRow-eMDfJs boglzG"
+                    >
+                      <FlexColumn__FlexColumn>
+                        <div
+                          className="FlexColumn__FlexColumn-hijLdf kQZWVb"
+                        >
+                          <PageHeader
+                            isLeftHanded={true}
+                          >
+                            <StyledHeader__StyledHeader>
+                              <header
+                                className="StyledHeader__StyledHeader-kHWYFT jdEqBZ"
+                              >
+                                <SpeechBubble
+                                  arrowHeight="4vh"
+                                  backgroundColor="#465a65"
+                                  isLeftHanded={true}
+                                  makeAppear={true}
+                                  showArrowBreakpoint="750px"
+                                >
+                                  <Container__Container
+                                    makeAppear={true}
+                                    showArrowBreakpoint="750px"
+                                  >
+                                    <div
+                                      className="Container__Container-duRnZL bvdzbA"
+                                    >
+                                      <Bubble__Bubble
+                                        backgroundColor="#465a65"
+                                        isLeftHanded={true}
+                                        showArrowBreakpoint="750px"
+                                      >
+                                        <div
+                                          className="Bubble__Bubble-kfMqWC imiJUC"
+                                        >
+                                          <H2__H2>
+                                            <h2
+                                              className="H2__H2-eTwhUa gXBZsx"
+                                            >
+                                              <FormattedMessage
+                                                defaultMessage="MY PROJECTS"
+                                                id="portfolio.page.projects.title"
+                                                values={Object {}}
+                                              >
+                                                <span>
+                                                  MY PROJECTS
+                                                </span>
+                                              </FormattedMessage>
+                                            </h2>
+                                          </H2__H2>
+                                        </div>
+                                      </Bubble__Bubble>
+                                      <Arrow__Arrow
+                                        height="4vh"
+                                        isLeftHanded={true}
+                                        showBreakpoint="750px"
+                                      >
+                                        <svg
+                                          className="Arrow__Arrow-fPzAjH iYMpKn"
+                                          height="4vh"
+                                          preserveAspectRatio="xMinYMid"
+                                          viewBox="0 427.9 175.1 132.1"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                          <path
+                                            d="M0 427.9l175.1 65.7-43.7-65.7z"
+                                            fill="#5b7583"
+                                            stroke="#5b7583"
+                                          />
+                                          <path
+                                            d="M175.1 493.6l-87.5 21.9v-54.8"
+                                            fill="#465a65"
+                                          />
+                                          <path
+                                            d="M87.6 515.5l21.2 44.5v-49.8"
+                                            fill="#5b7583"
+                                          />
+                                        </svg>
+                                      </Arrow__Arrow>
+                                    </div>
+                                  </Container__Container>
+                                </SpeechBubble>
+                              </header>
+                            </StyledHeader__StyledHeader>
+                          </PageHeader>
+                        </div>
+                      </FlexColumn__FlexColumn>
+                    </div>
+                  </FlexRow__FlexRow>
+                  <FlexRow__FlexRow>
+                    <div
+                      className="FlexRow__FlexRow-eMDfJs boglzG"
+                    >
+                      <FlexColumn__FlexColumn>
+                        <div
+                          className="FlexColumn__FlexColumn-hijLdf kQZWVb"
+                        >
+                          <Projects
+                            projects={
+                              Array [
+                                Object {
+                                  "date": "2017-10-22T00:00+02:00",
+                                  "description": "My portfolio website, now build with React",
+                                  "externalLinks": Array [
+                                    Object {
+                                      "faIcon": "github",
+                                      "name": "github",
+                                      "url": "https://github.com/Mensae/portfolio-react",
+                                    },
+                                    Object {
+                                      "faIcon": "globe",
+                                      "name": "world",
+                                      "url": "https://meester-johan.info/",
+                                    },
+                                  ],
+                                  "thumbnail": Object {
+                                    "contentType": "image/png",
+                                    "details": Object {
+                                      "image": Object {
+                                        "height": 720,
+                                        "width": 1280,
+                                      },
+                                      "size": 171379,
+                                    },
+                                    "fileName": "my-portfolio-16x9.png",
+                                    "url": "//images.contentful.com/1tymefars1bj/3X5e0G1CUwYSqKuqc6u8aq/a39b1b271c66573aef2abafbcc239125/my-portfolio-16x9.png",
+                                  },
+                                  "title": "My Portfolio",
+                                },
+                              ]
+                            }
+                          >
+                            <ProjectsList__ProjectsList>
+                              <ul
+                                className="ProjectsList__ProjectsList-gVAHIk hrYGLG"
+                              >
+                                <ProjectsListItem__ProjectsListItem
+                                  key="My Portfolio"
+                                  onFocus={[Function]}
+                                  onMouseOver={[Function]}
+                                >
+                                  <li
+                                    className="ProjectsListItem__ProjectsListItem-fgEBlw injCjl"
+                                    onFocus={[Function]}
+                                    onMouseOver={[Function]}
+                                  >
+                                    <Project
+                                      detailsBodyText="My portfolio website, now build with React"
+                                      hasFocus={false}
+                                      isOdd={true}
+                                      links={
+                                        Array [
+                                          Object {
+                                            "faIcon": "github",
+                                            "name": "github",
+                                            "url": "https://github.com/Mensae/portfolio-react",
+                                          },
+                                          Object {
+                                            "faIcon": "globe",
+                                            "name": "world",
+                                            "url": "https://meester-johan.info/",
+                                          },
+                                        ]
+                                      }
+                                      thumbnailUrl="//images.contentful.com/1tymefars1bj/3X5e0G1CUwYSqKuqc6u8aq/a39b1b271c66573aef2abafbcc239125/my-portfolio-16x9.png"
+                                      title="My Portfolio"
+                                    >
+                                      <Article__Article>
+                                        <article
+                                          className="Article__Article-fWCsyc kILysV"
+                                        >
+                                          <MediaAsset
+                                            imageSource="//images.contentful.com/1tymefars1bj/3X5e0G1CUwYSqKuqc6u8aq/a39b1b271c66573aef2abafbcc239125/my-portfolio-16x9.png"
+                                            isOdd={true}
+                                          >
+                                            <Figure__Figure
+                                              isOdd={true}
+                                            >
+                                              <figure
+                                                className="Figure__Figure-hrLwbz fRXoRS"
+                                              >
+                                                <Body__Body>
+                                                  <div
+                                                    className="Body__Body-dHKNqX jCIWtp"
+                                                  >
+                                                    <ResponsiveImage
+                                                      imageAlt="Project"
+                                                      imageSource="//images.contentful.com/1tymefars1bj/3X5e0G1CUwYSqKuqc6u8aq/a39b1b271c66573aef2abafbcc239125/my-portfolio-16x9.png"
+                                                      ratio="16by9"
+                                                    >
+                                                      <ResponsiveImage
+                                                        className="ResponsiveImage-eiJyBH dxdQpB"
+                                                        imageAlt="Project"
+                                                        imageSource="//images.contentful.com/1tymefars1bj/3X5e0G1CUwYSqKuqc6u8aq/a39b1b271c66573aef2abafbcc239125/my-portfolio-16x9.png"
+                                                        noPlaceholder={false}
+                                                        ratio="16by9"
+                                                      >
+                                                        <Wrapper__Wrapper
+                                                          className="ResponsiveImage-eiJyBH dxdQpB"
+                                                          imageAlt="Project"
+                                                          imageSource="//images.contentful.com/1tymefars1bj/3X5e0G1CUwYSqKuqc6u8aq/a39b1b271c66573aef2abafbcc239125/my-portfolio-16x9.png"
+                                                          noPlaceholder={false}
+                                                          ratio="16by9"
+                                                        >
+                                                          <div
+                                                            className="ResponsiveImage-eiJyBH dxdQpB Wrapper__Wrapper-fEDTQp hhJrQN"
+                                                          >
+                                                            <img
+                                                              alt="Project"
+                                                              src="//images.contentful.com/1tymefars1bj/3X5e0G1CUwYSqKuqc6u8aq/a39b1b271c66573aef2abafbcc239125/my-portfolio-16x9.png"
+                                                            />
+                                                          </div>
+                                                        </Wrapper__Wrapper>
+                                                      </ResponsiveImage>
+                                                    </ResponsiveImage>
+                                                  </div>
+                                                </Body__Body>
+                                              </figure>
+                                            </Figure__Figure>
+                                          </MediaAsset>
+                                          <ProjectBody__ProjectBody>
+                                            <div
+                                              className="ProjectBody__ProjectBody-etPNCI fDXmnW"
+                                            >
+                                              <div>
+                                                <ProjectHeader__ProjectHeader>
+                                                  <div
+                                                    className="ProjectHeader__ProjectHeader-ivXMIA kEoZuS"
+                                                  >
+                                                    <ProjectTitle__ProjectTitle>
+                                                      <h2
+                                                        className="ProjectTitle__ProjectTitle-VKSEx cagPmg"
+                                                      >
+                                                        My Portfolio
+                                                      </h2>
+                                                    </ProjectTitle__ProjectTitle>
+                                                  </div>
+                                                </ProjectHeader__ProjectHeader>
+                                              </div>
+                                              <ProjectDetailsBody__ProjectDetailsBody>
+                                                <p
+                                                  className="ProjectDetailsBody__ProjectDetailsBody-QYRBN dksTQt"
+                                                >
+                                                  My portfolio website, now build with React
+                                                </p>
+                                              </ProjectDetailsBody__ProjectDetailsBody>
+                                            </div>
+                                          </ProjectBody__ProjectBody>
+                                          <ProjectLinksList
+                                            hasFocus={false}
+                                            links={
+                                              Array [
+                                                Object {
+                                                  "faIcon": "github",
+                                                  "name": "github",
+                                                  "url": "https://github.com/Mensae/portfolio-react",
+                                                },
+                                                Object {
+                                                  "faIcon": "globe",
+                                                  "name": "world",
+                                                  "url": "https://meester-johan.info/",
+                                                },
+                                              ]
+                                            }
+                                          >
+                                            <ProjectLinksList__Wrapper
+                                              hasFocus={false}
+                                            >
+                                              <div
+                                                className="ProjectLinksList__Wrapper-ijYDMh kyFhFI"
+                                              >
+                                                <ProjectLinksList__StyledList>
+                                                  <ul
+                                                    className="ProjectLinksList__StyledList-jWUIiN iJDNPR"
+                                                  >
+                                                    <ProjectExternalLink
+                                                      faIcon="external-link"
+                                                      hasFocus={false}
+                                                      key="github"
+                                                      name="github"
+                                                      url="https://github.com/Mensae/portfolio-react"
+                                                    >
+                                                      <ProjectExternalLink__ListItem
+                                                        data-tip="github"
+                                                        hasFocus={false}
+                                                      >
+                                                        <li
+                                                          className="ProjectExternalLink__ListItem-nznle jNlQUv"
+                                                          data-tip="github"
+                                                        >
+                                                          <ProjectExternalLink__StyledA
+                                                            href="https://github.com/Mensae/portfolio-react"
+                                                            rel="noopener noreferrer"
+                                                            target="_blank"
+                                                          >
+                                                            <a
+                                                              className="ProjectExternalLink__StyledA-ggohNX deWBDJ"
+                                                              href="https://github.com/Mensae/portfolio-react"
+                                                              rel="noopener noreferrer"
+                                                              target="_blank"
+                                                            >
+                                                              <span>
+                                                                github
+                                                                 
+                                                                <FontAwesome
+                                                                  fixedWidth={true}
+                                                                  name="external-link"
+                                                                >
+                                                                  <span
+                                                                    aria-hidden={true}
+                                                                    className="fa fa-external-link fa-fw"
+                                                                  />
+                                                                </FontAwesome>
+                                                              </span>
+                                                            </a>
+                                                          </ProjectExternalLink__StyledA>
+                                                        </li>
+                                                      </ProjectExternalLink__ListItem>
+                                                    </ProjectExternalLink>
+                                                    <ProjectExternalLink
+                                                      faIcon="external-link"
+                                                      hasFocus={false}
+                                                      key="world"
+                                                      name="world"
+                                                      url="https://meester-johan.info/"
+                                                    >
+                                                      <ProjectExternalLink__ListItem
+                                                        data-tip="world"
+                                                        hasFocus={false}
+                                                      >
+                                                        <li
+                                                          className="ProjectExternalLink__ListItem-nznle jNlQUv"
+                                                          data-tip="world"
+                                                        >
+                                                          <ProjectExternalLink__StyledA
+                                                            href="https://meester-johan.info/"
+                                                            rel="noopener noreferrer"
+                                                            target="_blank"
+                                                          >
+                                                            <a
+                                                              className="ProjectExternalLink__StyledA-ggohNX deWBDJ"
+                                                              href="https://meester-johan.info/"
+                                                              rel="noopener noreferrer"
+                                                              target="_blank"
+                                                            >
+                                                              <span>
+                                                                world
+                                                                 
+                                                                <FontAwesome
+                                                                  fixedWidth={true}
+                                                                  name="external-link"
+                                                                >
+                                                                  <span
+                                                                    aria-hidden={true}
+                                                                    className="fa fa-external-link fa-fw"
+                                                                  />
+                                                                </FontAwesome>
+                                                              </span>
+                                                            </a>
+                                                          </ProjectExternalLink__StyledA>
+                                                        </li>
+                                                      </ProjectExternalLink__ListItem>
+                                                    </ProjectExternalLink>
+                                                  </ul>
+                                                </ProjectLinksList__StyledList>
+                                              </div>
+                                            </ProjectLinksList__Wrapper>
+                                          </ProjectLinksList>
+                                        </article>
+                                      </Article__Article>
+                                    </Project>
+                                  </li>
+                                </ProjectsListItem__ProjectsListItem>
+                              </ul>
+                            </ProjectsList__ProjectsList>
+                          </Projects>
+                        </div>
+                      </FlexColumn__FlexColumn>
+                    </div>
+                  </FlexRow__FlexRow>
+                </div>
+              </Wrapper__Wrapper>
+            </PageContent>
+          </article>
+        </StyledArticle__StyledArticle>
+      </Article>
+    </ProjectsPage>
+  </IntlProvider>
+</Provider>
+`;
