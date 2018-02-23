@@ -4,6 +4,33 @@ exports[`<Projects /> should render and match the snapshot 1`] = `
 <React.Fragment>
   <ProjectsList__ProjectsList>
     <ProjectsListItem__ProjectsListItem
+      key="My Portfolio"
+      onFocus={[Function]}
+      onMouseOver={[Function]}
+    >
+      <Project
+        detailsBodyText="My portfolio website, now build with React"
+        hasFocus={false}
+        isOdd={true}
+        links={
+          Array [
+            Object {
+              "faIcon": "github",
+              "name": "github",
+              "url": "https://github.com/Mensae/portfolio-react",
+            },
+            Object {
+              "faIcon": "globe",
+              "name": "world",
+              "url": "https://meester-johan.info/",
+            },
+          ]
+        }
+        thumbnailUrl="/my-portfolio-16x9.png"
+        title="My Portfolio"
+      />
+    </ProjectsListItem__ProjectsListItem>
+    <ProjectsListItem__ProjectsListItem
       key="In progress..."
       onFocus={[Function]}
       onMouseOver={[Function]}
@@ -12,7 +39,7 @@ exports[`<Projects /> should render and match the snapshot 1`] = `
         detailsBodyText="Busy creating some new awesomeness."
         detailsTitle="More to come!"
         hasFocus={false}
-        isOdd={true}
+        isOdd={false}
         links={Array []}
         thumbnailUrl="#"
         title="In progress..."

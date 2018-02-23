@@ -11,7 +11,7 @@ class Projects extends React.Component {
     super(props);
 
     this.state = {
-      itemHasFocus: -1,
+      itemHasFocus: '',
     };
   }
 
