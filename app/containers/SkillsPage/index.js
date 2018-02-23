@@ -29,6 +29,12 @@ import Article from '../../components/Article';
 import PageContent from '../../components/PageContent';
 import ContentLoadingIndicator from '../../components/ContentLoadingIndicator';
 
+export function delayTimer(isLoading, callback) {
+  return setTimeout(() => {
+    callback && callback(); // eslint-disable-line no-unused-expressions
+  }, 200);
+}
+
 export class SkillsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
@@ -38,6 +44,8 @@ export class SkillsPage extends React.PureComponent { // eslint-disable-line rea
     };
 
     this.timerId = -1;
+    this.handleIsLoading = this.handleIsLoading.bind(this);
+    this.setIsLoading = this.setIsLoading.bind(this);
   }
 
   componentWillMount() {
@@ -46,19 +54,23 @@ export class SkillsPage extends React.PureComponent { // eslint-disable-line rea
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.isLoading !== this.props.isLoading) {
-      if (nextProps.isLoading) {
-        clearTimeout(this.timerId);
-        this.timerId = setTimeout(() => {
-          this.setState({
-            isLoading: true,
-          });
-        }, 200);
-      } else {
-        clearTimeout(this.timerId);
-        this.setState({
-          isLoading: false,
-        });
-      }
+      this.handleIsLoading(nextProps.isLoading);
+    }
+  }
+
+  setIsLoading() {
+    this.setState({ isLoading: true });
+  }
+
+  handleIsLoading(isLoading) {
+    clearTimeout(this.timerId);
+
+    if (isLoading) {
+      this.timerId = delayTimer(isLoading, this.setIsLoading);
+    } else {
+      this.setState({
+        isLoading: false,
+      });
     }
   }
 

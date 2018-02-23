@@ -46,18 +46,72 @@ describe('<ProjectsPage />', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
-  it('should not show a loading message when content is loaded within 200ms', () => {
-    const history = createHistory();
-    const store = configureStore({}, history);
+  it('should set the "isLoading" state when the "isLoading" prop is true for more than 200ms', () => {
+    const spy = jest.spyOn(ProjectsPage.prototype, 'componentWillReceiveProps');
+    const isLoadingHandlerSpy = jest.spyOn(ProjectsPage.prototype, 'handleIsLoading');
+    const setIsLoadingSpy = jest.spyOn(ProjectsPage.prototype, 'setIsLoading');
     const getContent = jest.fn();
-    mount(
-      <Provider store={store}>
-        <IntlProvider locale={'en'}>
-          <ProjectsPage getContent={getContent} error={false} isLoading />
-        </IntlProvider>
-      </Provider>
-    );
-    expect(setTimeout).toHaveBeenCalledTimes(1);
+    let isLoadingProp = false;
+    const wrapper = shallow(<ProjectsPage getContent={getContent} isLoading={isLoadingProp} />);
+
+    expect(spy).toHaveBeenCalledTimes(0);
+    expect(isLoadingHandlerSpy).toHaveBeenCalledTimes(0);
+    expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+
+    isLoadingProp = true;
+
+    wrapper.setProps({ isLoading: isLoadingProp });
+
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(isLoadingHandlerSpy).toHaveBeenCalledTimes(1);
+    expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+    expect(wrapper.state().isLoading).toBe(false);
+
+    jest.runTimersToTime(300);
+
+    expect(setIsLoadingSpy).toHaveBeenCalledTimes(1);
+    expect(wrapper.state().isLoading).toBe(true);
+
+    spy.mockReset();
+    spy.mockRestore();
+    isLoadingHandlerSpy.mockReset();
+    isLoadingHandlerSpy.mockRestore();
+    setIsLoadingSpy.mockReset();
+    setIsLoadingSpy.mockRestore();
+  });
+
+  it('should not set the "isLoading" state when the "isLoading" prop is true for less than 200ms', () => {
+    const spy = jest.spyOn(ProjectsPage.prototype, 'componentWillReceiveProps');
+    const isLoadingHandlerSpy = jest.spyOn(ProjectsPage.prototype, 'handleIsLoading');
+    const setIsLoadingSpy = jest.spyOn(ProjectsPage.prototype, 'setIsLoading');
+    const getContent = jest.fn();
+    let isLoadingProp = false;
+    const wrapper = shallow(<ProjectsPage getContent={getContent} isLoading={isLoadingProp} />);
+
+    expect(spy).toHaveBeenCalledTimes(0);
+    expect(isLoadingHandlerSpy).toHaveBeenCalledTimes(0);
+    expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+
+    isLoadingProp = true;
+
+    wrapper.setProps({ isLoading: isLoadingProp });
+
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(isLoadingHandlerSpy).toHaveBeenCalledTimes(1);
+    expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+    expect(wrapper.state().isLoading).toBe(false);
+
+    jest.runTimersToTime(100);
+
+    expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+    expect(wrapper.state().isLoading).toBe(false);
+
+    spy.mockReset();
+    spy.mockRestore();
+    isLoadingHandlerSpy.mockReset();
+    isLoadingHandlerSpy.mockRestore();
+    setIsLoadingSpy.mockReset();
+    setIsLoadingSpy.mockRestore();
   });
 
   it('should show the fetched content', () => {

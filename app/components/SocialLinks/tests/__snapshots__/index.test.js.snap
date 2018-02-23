@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SocialLinks /> should render and match the snapshot 1`] = `
+<IntlProvider
+  locale="en"
+>
+  <SocialLinks>
+    <aside>
+      <h2
+        aria-hidden="false"
+        hidden={true}
+      >
+        <FormattedMessage
+          defaultMessage="Also find me on:"
+          id="portfolio.social_links.header"
+          values={Object {}}
+        >
+          <span>
+            Also find me on:
+          </span>
+        </FormattedMessage>
+      </h2>
+      <StyledUL__StyledUL
+        innerRef={[Function]}
+      >
+        <ul
+          className="StyledUL__StyledUL-hGhxpW feEjHg"
+        >
+          <StyledLI__StyledLI
+            data-tip="freeCodeCamp"
+            key="https://www.freecodecamp.org/mensae"
+          >
+            <li
+              className="StyledLI__StyledLI-kuyQty ejrFaw"
+              data-tip="freeCodeCamp"
+            >
+              <ExternalLink
+                description="freeCodeCamp"
+                faIcon="free-code-camp"
+                href="https://www.freecodecamp.org/mensae"
+              >
+                <StyledA__StyledA
+                  href="https://www.freecodecamp.org/mensae"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <a
+                    className="StyledA__StyledA-iHqXXL gDDdGe"
+                    href="https://www.freecodecamp.org/mensae"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <FontAwesome
+                      name="free-code-camp"
+                    >
+                      <span
+                        aria-hidden={true}
+                        className="fa fa-free-code-camp"
+                      />
+                    </FontAwesome>
+                    <span
+                      aria-hidden="false"
+                      hidden={true}
+                    >
+                      freeCodeCamp
+                    </span>
+                  </a>
+                </StyledA__StyledA>
+              </ExternalLink>
+            </li>
+          </StyledLI__StyledLI>
+          <StyledLI__StyledLI
+            data-tip="GitHub"
+            key="https://github.com/Mensae"
+          >
+            <li
+              className="StyledLI__StyledLI-kuyQty ejrFaw"
+              data-tip="GitHub"
+            >
+              <ExternalLink
+                description="GitHub"
+                faIcon="github"
+                href="https://github.com/Mensae"
+              >
+                <StyledA__StyledA
+                  href="https://github.com/Mensae"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <a
+                    className="StyledA__StyledA-iHqXXL gDDdGe"
+                    href="https://github.com/Mensae"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <FontAwesome
+                      name="github"
+                    >
+                      <span
+                        aria-hidden={true}
+                        className="fa fa-github"
+                      />
+                    </FontAwesome>
+                    <span
+                      aria-hidden="false"
+                      hidden={true}
+                    >
+                      GitHub
+                    </span>
+                  </a>
+                </StyledA__StyledA>
+              </ExternalLink>
+            </li>
+          </StyledLI__StyledLI>
+          <StyledLI__StyledLI
+            data-tip="LinkedIn"
+            key="https://nl.linkedin.com/in/jmeester"
+          >
+            <li
+              className="StyledLI__StyledLI-kuyQty ejrFaw"
+              data-tip="LinkedIn"
+            >
+              <ExternalLink
+                description="LinkedIn"
+                faIcon="linkedin-square"
+                href="https://nl.linkedin.com/in/jmeester"
+              >
+                <StyledA__StyledA
+                  href="https://nl.linkedin.com/in/jmeester"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <a
+                    className="StyledA__StyledA-iHqXXL gDDdGe"
+                    href="https://nl.linkedin.com/in/jmeester"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <FontAwesome
+                      name="linkedin-square"
+                    >
+                      <span
+                        aria-hidden={true}
+                        className="fa fa-linkedin-square"
+                      />
+                    </FontAwesome>
+                    <span
+                      aria-hidden="false"
+                      hidden={true}
+                    >
+                      LinkedIn
+                    </span>
+                  </a>
+                </StyledA__StyledA>
+              </ExternalLink>
+            </li>
+          </StyledLI__StyledLI>
+          <StyledLI__StyledLI
+            data-tip="Codepen"
+            key="https://codepen.io/jmeester"
+          >
+            <li
+              className="StyledLI__StyledLI-kuyQty ejrFaw"
+              data-tip="Codepen"
+            >
+              <ExternalLink
+                description="Codepen"
+                faIcon="codepen"
+                href="https://codepen.io/jmeester"
+              >
+                <StyledA__StyledA
+                  href="https://codepen.io/jmeester"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <a
+                    className="StyledA__StyledA-iHqXXL gDDdGe"
+                    href="https://codepen.io/jmeester"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <FontAwesome
+                      name="codepen"
+                    >
+                      <span
+                        aria-hidden={true}
+                        className="fa fa-codepen"
+                      />
+                    </FontAwesome>
+                    <span
+                      aria-hidden="false"
+                      hidden={true}
+                    >
+                      Codepen
+                    </span>
+                  </a>
+                </StyledA__StyledA>
+              </ExternalLink>
+            </li>
+          </StyledLI__StyledLI>
+        </ul>
+      </StyledUL__StyledUL>
+      <ReactTooltip
+        insecure={true}
+        resizeHide={true}
+        wrapper="div"
+      >
+        <div
+          className="__react_component_tooltip place-top type-dark "
+          data-id="tooltip"
+        />
+      </ReactTooltip>
+    </aside>
+  </SocialLinks>
+</IntlProvider>
+`;
