@@ -2,7 +2,7 @@
 
 exports[`SiteNavigationBar should render and match the snapshot 1`] = `
 <nav
-  className="SiteNavigation__SiteNavigation-hZVVtP bnlwyi"
+  className="SiteNavigation__SiteNavigation-hZVVtP fReOXz"
 >
   <h2
     aria-hidden="false"
