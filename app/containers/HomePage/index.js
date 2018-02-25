@@ -8,8 +8,11 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import { Helmet } from 'react-helmet';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import messages from './messages';
 
@@ -19,6 +22,7 @@ import SpeechBubble from './SpeechBubble';
 import MyPicture from './itsme-trevi-rome.jpg';
 import FlexRow from '../../components/FlexRow';
 import FlexColumn from '../../components/FlexColumn';
+import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
 
 class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   componentDidMount() {
@@ -213,7 +217,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                         <text
                           fill="#556e78"
                           fontSize="65.685"
-                          x="175"
+                          x={this.props.locale === 'nl' ? '159' : '175'}
                           y="500"
                         >{message}</text>
                       )
@@ -225,7 +229,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                         <text
                           fill="#95C11F"
                           fontSize="65.685"
-                          x="172"
+                          x={this.props.locale === 'nl' ? '156' : '172'}
                           y="496"
                         >{message}</text>
                       )
@@ -240,7 +244,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                             fill="#FFF"
                             fontSize="47"
                             textAnchor="end"
-                            x="571"
+                            x={this.props.locale === 'nl' ? '580' : '568'}
                             y="545"
                           >{message}</text>
                         )
@@ -269,7 +273,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                           id="t3"
                           style={{ fontSize: '20px', textAnchor: 'end', opacity: 0 }}
                           fill="#FFF"
-                          x="571"
+                          x={this.props.locale === 'nl' ? '580' : '568'}
                           y="580"
                         >{message}</text>
                       )
@@ -285,4 +289,18 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
   }
 }
 
-export default HomePage;
+HomePage.propTypes = {
+  locale: PropTypes.string,
+};
+
+const mapStateToProps = createStructuredSelector({
+  locale: makeSelectLocale(),
+});
+
+export function mapDispatchToProps(dispatch) {
+  return {
+    dispatch,
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
