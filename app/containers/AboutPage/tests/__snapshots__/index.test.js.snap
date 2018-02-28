@@ -217,7 +217,7 @@ exports[`<AboutPage /> should show an error message when content could not be lo
           loadingContent={false}
         >
           <article
-            className="StyledArticle__StyledArticle-lfVOCZ bjDVJJ"
+            className="StyledArticle__StyledArticle-lfVOCZ eanIvZ"
           >
             <HelmetWrapper
               defer={true}
@@ -400,7 +400,7 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
           loadingContent={false}
         >
           <article
-            className="StyledArticle__StyledArticle-lfVOCZ bjDVJJ"
+            className="StyledArticle__StyledArticle-lfVOCZ eanIvZ"
           >
             <HelmetWrapper
               defer={true}
@@ -557,16 +557,14 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
                             backgroundColor="#f90"
                             isLeftHanded={false}
                             makeAppear={false}
-                            maxWidth="940px"
                             showArrowBreakpoint="750px"
                           >
                             <Container__Container
                               makeAppear={false}
-                              maxWidth="940px"
                               showArrowBreakpoint="750px"
                             >
                               <div
-                                className="Container__Container-duRnZL fKOTCV"
+                                className="Container__Container-duRnZL clqGHe"
                               >
                                 <Bubble__Bubble
                                   backgroundColor="#f90"

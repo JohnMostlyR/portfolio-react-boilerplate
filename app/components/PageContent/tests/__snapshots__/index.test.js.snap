@@ -18,7 +18,6 @@ exports[`<PageContent /> Should adopt the "content" property 1`] = `
         backgroundColor="#f90"
         isLeftHanded={false}
         makeAppear={false}
-        maxWidth="940px"
         showArrowBreakpoint="750px"
       >
         Testing
@@ -67,7 +66,6 @@ exports[`<PageContent /> Should adopt the "title" property 1`] = `
         backgroundColor="#f90"
         isLeftHanded={false}
         makeAppear={false}
-        maxWidth="940px"
         showArrowBreakpoint="750px"
       />
     </FlexColumn__FlexColumn>
@@ -93,7 +91,6 @@ exports[`<PageContent /> Should render and match the snapshot 1`] = `
         backgroundColor="#f90"
         isLeftHanded={false}
         makeAppear={false}
-        maxWidth="940px"
         showArrowBreakpoint="750px"
       />
     </FlexColumn__FlexColumn>

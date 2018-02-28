@@ -5,10 +5,11 @@ const StyledArticle = styled.article`
   align-self: center;
   display: flex;
   flex-direction: column;
-  padding-right: 0;
+  padding: 0;
   width: 100%;
 
   @media (min-width: 600px) {
+    padding-left: 2vw;
     padding-right: ${rem('114px')};
   }
 

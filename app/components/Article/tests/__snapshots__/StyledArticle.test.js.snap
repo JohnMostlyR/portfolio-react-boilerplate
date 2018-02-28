@@ -12,12 +12,13 @@ exports[`<StyledArticle /> should render and match the snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-right: 0;
+  padding: 0;
   width: 100%;
 }
 
 @media (min-width:600px) {
   .c0 {
+    padding-left: 2vw;
     padding-right: 7.125rem;
   }
 }

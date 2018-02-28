@@ -28,7 +28,7 @@ exports[`<HomePage /> should render the page message 1`] = `
           "entries": Array [
             Object {
               "hash": "",
-              "key": "qw872l",
+              "key": "1oibyb",
               "pathname": "/",
               "search": "",
               "state": undefined,
@@ -42,7 +42,7 @@ exports[`<HomePage /> should render the page message 1`] = `
           "listen": [Function],
           "location": Object {
             "hash": "",
-            "key": "qw872l",
+            "key": "1oibyb",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -62,7 +62,7 @@ exports[`<HomePage /> should render the page message 1`] = `
             "entries": Array [
               Object {
                 "hash": "",
-                "key": "qw872l",
+                "key": "1oibyb",
                 "pathname": "/",
                 "search": "",
                 "state": undefined,
@@ -76,7 +76,7 @@ exports[`<HomePage /> should render the page message 1`] = `
             "listen": [Function],
             "location": Object {
               "hash": "",
-              "key": "qw872l",
+              "key": "1oibyb",
               "pathname": "/",
               "search": "",
               "state": undefined,

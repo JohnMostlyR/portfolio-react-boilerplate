@@ -219,7 +219,7 @@ exports[`<ProjectsPage /> should show an error message when content could not be
           loadingContent={false}
         >
           <article
-            className="StyledArticle__StyledArticle-lfVOCZ bjDVJJ"
+            className="StyledArticle__StyledArticle-lfVOCZ eanIvZ"
           >
             <HelmetWrapper
               defer={true}
@@ -433,7 +433,7 @@ exports[`<ProjectsPage /> should show the fetched content 1`] = `
           loadingContent={false}
         >
           <article
-            className="StyledArticle__StyledArticle-lfVOCZ bjDVJJ"
+            className="StyledArticle__StyledArticle-lfVOCZ eanIvZ"
           >
             <HelmetWrapper
               defer={true}

@@ -21,7 +21,6 @@ function PageContent(props) {
       backgroundColor="#f90"
       isLeftHanded={false}
       makeAppear={false}
-      maxWidth={'940px'}
       showArrowBreakpoint="750px"
     >
       {props.content}

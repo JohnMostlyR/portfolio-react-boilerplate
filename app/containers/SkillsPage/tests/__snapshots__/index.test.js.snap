@@ -217,7 +217,7 @@ exports[`<SkillsPage /> should show an error message when content could not be l
           loadingContent={false}
         >
           <article
-            className="StyledArticle__StyledArticle-lfVOCZ bjDVJJ"
+            className="StyledArticle__StyledArticle-lfVOCZ eanIvZ"
           >
             <HelmetWrapper
               defer={true}
@@ -400,7 +400,7 @@ exports[`<SkillsPage /> should show the fetched content 1`] = `
           loadingContent={false}
         >
           <article
-            className="StyledArticle__StyledArticle-lfVOCZ bjDVJJ"
+            className="StyledArticle__StyledArticle-lfVOCZ eanIvZ"
           >
             <HelmetWrapper
               defer={true}
