@@ -4,6 +4,7 @@ import toJson from 'enzyme-to-json';
 import { Provider } from 'react-redux';
 import { IntlProvider } from 'react-intl';
 import createHistory from 'history/createMemoryHistory';
+import { ConnectedRouter } from 'react-router-redux';
 
 import HomePage from '../index';
 import configureStore from '../../../configureStore';
@@ -15,7 +16,9 @@ describe('<HomePage />', () => {
     const wrapper = mount(
       <Provider store={store}>
         <IntlProvider locale={'en'}>
-          <HomePage />
+          <ConnectedRouter history={history}>
+            <HomePage />
+          </ConnectedRouter>
         </IntlProvider>
       </Provider>
     );

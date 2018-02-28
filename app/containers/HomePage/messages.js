@@ -22,4 +22,12 @@ export default defineMessages({
     id: 'portfolio.page.index.header.trade',
     defaultMessage: 'FRONT-END DEVELOPER',
   },
+  look: {
+    id: 'portfolio.page.index.header.look',
+    defaultMessage: 'HAVE A LOOK AROUND',
+  },
+  callToAction: {
+    id: 'portfolio.page.index.header.callToAction',
+    defaultMessage: 'CONTACT ME',
+  },
 });
