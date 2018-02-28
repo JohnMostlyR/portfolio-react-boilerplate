@@ -25,7 +25,44 @@ import FlexRow from '../../components/FlexRow';
 import FlexColumn from '../../components/FlexColumn';
 import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
 
+export function runAnimation({ snapSVGElement, timeline, startFrame = 0 }) {
+  let animationTimer = setTimeout(
+    function doAnimate(_timeline, currentFrameIndex) {
+      const currentFrame = _timeline[currentFrameIndex];
+
+      snapSVGElement
+        .select(`#${currentFrame.elementId}`)
+        .animate(
+          currentFrame.animationAttributes,
+          currentFrame.animationDuration,
+          currentFrame.animationTimingFunction,
+        );
+
+      if (currentFrameIndex < timeline.length - 1) {
+        /* eslint no-param-reassign: "off" */
+        animationTimer = setTimeout(
+          doAnimate,
+          _timeline[currentFrameIndex + 1].animationDelay,
+          timeline,
+          (currentFrameIndex += 1),
+        );
+      } else {
+        clearTimeout(animationTimer);
+      }
+    },
+    timeline[startFrame].animationDelay,
+    timeline,
+    startFrame,
+  );
+}
+
 class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+  constructor(props) {
+    super(props);
+
+    this.animateSvg = this.animateSvg.bind(this);
+  }
+
   componentDidMount() {
     this.animateSvg();
   }
@@ -166,33 +203,11 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
 
         const START_FRAME = 0; // 0 is the first frame
 
-        let animationTimer = setTimeout(
-          function animate(_timeline, currentFrameIndex) {
-            const currentFrame = _timeline[currentFrameIndex];
-            const element = SVG_EL.select(`#${currentFrame.elementId}`);
-
-            element.animate(
-              currentFrame.animationAttributes,
-              currentFrame.animationDuration,
-              currentFrame.animationTimingFunction,
-            );
-
-            if (currentFrameIndex < INFOPAGE_BALLOON_ANIMATION_TIMELINE.length - 1) {
-              /* eslint no-param-reassign: "off" */
-              animationTimer = setTimeout(
-                animate,
-                _timeline[currentFrameIndex + 1].animationDelay,
-                INFOPAGE_BALLOON_ANIMATION_TIMELINE,
-                (currentFrameIndex += 1),
-              );
-            } else {
-              clearTimeout(animationTimer);
-            }
-          },
-          INFOPAGE_BALLOON_ANIMATION_TIMELINE[START_FRAME].animationDelay,
-          INFOPAGE_BALLOON_ANIMATION_TIMELINE,
-          START_FRAME,
-        );
+        runAnimation({
+          snapSVGElement: SVG_EL,
+          timeline: INFOPAGE_BALLOON_ANIMATION_TIMELINE,
+          startFrame: START_FRAME,
+        });
       });
   }
 
