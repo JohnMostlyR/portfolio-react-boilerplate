@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
@@ -22,7 +22,7 @@ import {
 } from '../../containers/App/actions';
 import getElementTop from '../../utils/getElementTop';
 
-class SiteNavigationBar extends Component {
+class SiteNavigationBar extends React.PureComponent {
   componentDidMount() {
     const myTopPosition = getElementTop(this.siteNavigation) || 0;
     const myOffsetHeight = (this.siteNavigation) ? this.siteNavigation.offsetHeight : 0;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactTooltip from 'react-tooltip';
 import { FormattedMessage } from 'react-intl';
 
@@ -7,33 +7,33 @@ import StyledUL from './StyledUL';
 import StyledLI from './StyledLI';
 import messages from './messages';
 
-class SocialLinks extends Component {
+export function playAnimation(links) {
+  const INDEX = 0; // starting node index
+  const START_DELAY = 3100; // milliseconds;
+  const DELAY = 100; // milliseconds;
+
+  /* eslint no-param-reassign: "off" */
+  setTimeout(function a(nodes, idx) {
+    nodes[idx].style.transform = 'scale(1.5)';
+
+    /* eslint consistent-return: "off" */
+    setTimeout(() => {
+      nodes[idx].style.removeProperty('transform');
+      if (idx < nodes.length - 1) {
+        setTimeout(a, DELAY, nodes, idx += 1);
+      } else {
+        return true;
+      }
+    }, DELAY);
+  }, START_DELAY, links, INDEX);
+}
+
+class SocialLinks extends React.PureComponent {
   componentDidMount() {
     if (this.list.children.length) {
-      this.playAnimation(this.list.children);
+      playAnimation(this.list.children);
     }
   }
-
-  playAnimation = (links) => {
-    const INDEX = 0; // starting node index
-    const START_DELAY = 3000; // milliseconds;
-    const DELAY = 100; // milliseconds;
-
-    /* eslint no-param-reassign: "off" */
-    setTimeout(function a(nodes, idx) {
-      nodes[idx].style.transform = 'scale(1.5)';
-
-      /* eslint consistent-return: "off" */
-      setTimeout(() => {
-        nodes[idx].style.removeProperty('transform');
-        if (idx < nodes.length - 1) {
-          setTimeout(a, DELAY, nodes, idx += 1);
-        } else {
-          return true;
-        }
-      }, DELAY);
-    }, START_DELAY, links, INDEX);
-  };
 
   render() {
     const externalLinks = [
