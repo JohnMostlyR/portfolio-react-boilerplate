@@ -26,24 +26,17 @@ Using:
 
 And on the back-end:
 
-- [nginx](https://nginx.org/) As front-facing server.
-- [ExpressJS](https://expressjs.com/)
+- [nginx](https://nginx.org/).
 
 ### Content Management
 
-As CMS I use [contentful](https://www.contentful.com/)
+Content Management Service: [contentful](https://www.contentful.com/)
 
 ### Inspiration:
 
 - [Annual report brochure on geometric and spots background](http://all-free-download.com/free-vector/download/annual-report-brochure-on-geometric-and-spots-background_6823285.html)
 - [Flyer template design with modern style](http://all-free-download.com/free-vector/download/flyer_template_design_with_modern_style_6824365.html)
 - [Inspiration for Button Styles and Effects](https://tympanus.net/codrops/2015/02/26/inspiration-button-styles-effects/)
-
-### Other
-
-To be able to use Snap.svg, I had to eject from Create React App as the timing function used by Snap.svg, mina, needs to
- be globally loaded. Therefore a webpack modification is needed.
-Still, Snap.svg is the best free package for this task, especially for morphing as this is quite a complex task.
 
 ### Reads
 
