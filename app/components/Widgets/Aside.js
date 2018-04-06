@@ -5,10 +5,10 @@ const Aside = styled.aside`
   display: flex;
   margin-left: auto;
   background-color: #fff;
-  color: #575756;
+  color: #465a65;
 
   > aside:not(:last-of-type) {
-    border-right: 1px solid #575756;
+    border-right: 1px solid #465a65;
   }
 
   @media (min-width: 480px) {

@@ -11,11 +11,11 @@ exports[`<Aside /> should render and match the snapshot 1`] = `
   display: flex;
   margin-left: auto;
   background-color: #fff;
-  color: #575756;
+  color: #465a65;
 }
 
 .c0 > aside:not(:last-of-type) {
-  border-right: 1px solid #575756;
+  border-right: 1px solid #465a65;
 }
 
 @media (min-width:480px) {
