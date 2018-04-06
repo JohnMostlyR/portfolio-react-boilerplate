@@ -54,7 +54,7 @@ class App extends React.PureComponent { // eslint-disable-line react/prefer-stat
     }
 
     if (ev.target && 'scrollingElement' in ev.target) {
-      const debounce = setTimeout(() => {
+      const debounce = requestAnimationFrame(() => {
         const isAtScreenTop = (ev.target.scrollingElement.scrollTop >=
           this.props.siteNavigationTopPosition);
 
@@ -63,7 +63,7 @@ class App extends React.PureComponent { // eslint-disable-line react/prefer-stat
         });
 
         this.props.setSiteNavigationIsAtScreenTop(isAtScreenTop);
-      }, 0);
+      });
 
       this.setState({
         _isScrolling: debounce,

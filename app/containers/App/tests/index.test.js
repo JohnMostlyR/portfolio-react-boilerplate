@@ -43,23 +43,6 @@ describe('<App />', () => {
     expect(outerWrapper.prop('innerRef')).toBeInstanceOf(Function);
   });
 
-  // it('should have a "handleScrollEvent" method', () => {
-  //   const renderedComponent = mount(
-  //     <Provider store={store}>
-  //       <IntlProvider locale={'en'}>
-  //         <ConnectedRouter history={history}>
-  //           <App />
-  //         </ConnectedRouter>
-  //       </IntlProvider>
-  //     </Provider>
-  //   );
-  //   // console.log(renderedComponent.debug());
-  //   const instance = renderedComponent.instance();
-  //   console.log(instance);
-  //   const handleScrollEvent = instance.handleScrollEvent();
-  //   expect(handleScrollEvent).toHaveBeenCalled();
-  // });
-
   it('should render some routes', () => {
     const renderedComponent = shallow(
       <App />
