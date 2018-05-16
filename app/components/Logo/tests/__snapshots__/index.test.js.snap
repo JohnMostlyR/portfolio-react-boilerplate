@@ -5,6 +5,7 @@ exports[`<Logo /> should adopt the "fontFamily" property 1`] = `
   aria-hidden="true"
   focusable="false"
   height="100%"
+  preserveAspectRatio="xMinYMid meet"
   viewBox="0 0 1130 580"
   xmlns="http://www.w3.org/2000/svg"
 >
@@ -72,6 +73,7 @@ exports[`<Logo /> should adopt the "showNameBreakpoint" property 1`] = `
   aria-hidden="true"
   focusable="false"
   height="100%"
+  preserveAspectRatio="xMinYMid meet"
   viewBox="0 0 1130 580"
   xmlns="http://www.w3.org/2000/svg"
 >
@@ -148,6 +150,7 @@ exports[`<Logo /> should render and match the snapshot 1`] = `
   aria-hidden="true"
   focusable="false"
   height="100%"
+  preserveAspectRatio="xMinYMid meet"
   viewBox="0 0 1130 580"
   xmlns="http://www.w3.org/2000/svg"
 >

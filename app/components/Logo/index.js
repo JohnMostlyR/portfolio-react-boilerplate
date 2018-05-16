@@ -26,7 +26,7 @@ const NameGroup = styled.g`
   font-size: 109.202px;
 
   @media (min-width: ${({ showNameBreakpoint }) => showNameBreakpoint}) {
-    display: unset;
+    display: block;
   }
 `;
 
@@ -38,6 +38,7 @@ function Logo(props) {
       aria-hidden="true"
       focusable="false"
       height="100%"
+      preserveAspectRatio="xMinYMid meet"
     >
       <defs>
         <clipPath id="a">
