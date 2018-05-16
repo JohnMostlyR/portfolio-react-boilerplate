@@ -24,13 +24,11 @@ import saga from './saga';
 import messages from './messages';
 import { sendForm } from './actions';
 import Form from './Form';
-import FormInfo from './FormInfo';
 import FormInfoItemsList from './FormInfoItemsList';
 import FormFooter from './FormFooter';
 
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
-import Article from '../../components/Article';
 import FormInfoItemsListItem from '../../components/FormInfoItemsListItem';
 import FormInput from '../../components/FormInput';
 import SendButton from '../../components/SendButton';
@@ -118,7 +116,7 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
     }[status]);
 
     return (
-      <Article>
+      <React.Fragment>
         <Helmet>
           <title>Contact pagina</title>
           <meta name="description" content="Contact pagina van Johan Meester zijn portfolio" />
@@ -129,13 +127,13 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
             <Form onSubmit={this.onFormSubmit}>
               <div>
                 <div>
-                  <FormInfo>
+                  <div>
                     <FormInfoItemsList>
                       <FormInfoItemsListItem>
                         <FormattedMessage {...messages.requirementOne} />
                       </FormInfoItemsListItem>
                     </FormInfoItemsList>
-                  </FormInfo>
+                  </div>
                   <div>
                     <FormInput
                       helperText={this.props.intl.formatMessage(messages.subjectText)}
@@ -197,7 +195,7 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
             </Form>
           }
         />
-      </Article>
+      </React.Fragment>
     );
   }
 }

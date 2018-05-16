@@ -21,16 +21,20 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <span>
-        <ButtonIcon__ButtonIcon
-                name="paper-plane"
-        />
-        <span>
+        <SVGIcon__SVGIcon
+                viewBox="0 0 512 512"
+        >
+                <path
+                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+                />
+        </SVGIcon__SVGIcon>
+        <Label__Label>
                 <FormattedMessage
                         defaultMessage="Send"
                         id="portfolio.components.SendButton.idle"
                         values={Object {}}
                 />
-        </span>
+        </Label__Label>
 </span>,
       "disabled": true,
     },
@@ -41,16 +45,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <ButtonIcon__ButtonIcon
-            name="paper-plane"
-/>,
-          <span>
+          <SVGIcon__SVGIcon
+            viewBox="0 0 512 512"
+>
+            <path
+                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+            />
+</SVGIcon__SVGIcon>,
+          <Label__Label>
             <FormattedMessage
                         defaultMessage="Send"
                         id="portfolio.components.SendButton.idle"
                         values={Object {}}
             />
-</span>,
+</Label__Label>,
         ],
       },
       "ref": null,
@@ -60,16 +68,29 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "name": "paper-plane",
+            "children": <path
+              d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+/>,
+            "viewBox": "0 0 512 512",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "d": "M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "path",
+          },
           "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": <FormattedMessage
               defaultMessage="Send"
@@ -91,7 +112,7 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
-          "type": "span",
+          "type": [Function],
         },
       ],
       "type": "span",
@@ -105,16 +126,20 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <span>
-          <ButtonIcon__ButtonIcon
-                    name="paper-plane"
-          />
-          <span>
+          <SVGIcon__SVGIcon
+                    viewBox="0 0 512 512"
+          >
+                    <path
+                              d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+                    />
+          </SVGIcon__SVGIcon>
+          <Label__Label>
                     <FormattedMessage
                               defaultMessage="Send"
                               id="portfolio.components.SendButton.idle"
                               values={Object {}}
                     />
-          </span>
+          </Label__Label>
 </span>,
         "disabled": true,
       },
@@ -125,16 +150,20 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <ButtonIcon__ButtonIcon
-              name="paper-plane"
-/>,
-            <span>
+            <SVGIcon__SVGIcon
+              viewBox="0 0 512 512"
+>
+              <path
+                            d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+              />
+</SVGIcon__SVGIcon>,
+            <Label__Label>
               <FormattedMessage
                             defaultMessage="Send"
                             id="portfolio.components.SendButton.idle"
                             values={Object {}}
               />
-</span>,
+</Label__Label>,
           ],
         },
         "ref": null,
@@ -144,16 +173,29 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "paper-plane",
+              "children": <path
+                d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+/>,
+              "viewBox": "0 0 512 512",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "d": "M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "path",
+            },
             "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "children": <FormattedMessage
                 defaultMessage="Send"
@@ -175,7 +217,7 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
-            "type": "span",
+            "type": [Function],
           },
         ],
         "type": "span",
@@ -214,16 +256,20 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <span>
-        <ButtonIcon__ButtonIcon
-                name="paper-plane"
-        />
-        <span>
+        <SVGIcon__SVGIcon
+                viewBox="0 0 512 512"
+        >
+                <path
+                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+                />
+        </SVGIcon__SVGIcon>
+        <Label__Label>
                 <FormattedMessage
                         defaultMessage="Send"
                         id="portfolio.components.SendButton.idle"
                         values={Object {}}
                 />
-        </span>
+        </Label__Label>
 </span>,
       "disabled": false,
     },
@@ -234,16 +280,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <ButtonIcon__ButtonIcon
-            name="paper-plane"
-/>,
-          <span>
+          <SVGIcon__SVGIcon
+            viewBox="0 0 512 512"
+>
+            <path
+                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+            />
+</SVGIcon__SVGIcon>,
+          <Label__Label>
             <FormattedMessage
                         defaultMessage="Send"
                         id="portfolio.components.SendButton.idle"
                         values={Object {}}
             />
-</span>,
+</Label__Label>,
         ],
       },
       "ref": null,
@@ -253,16 +303,29 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "name": "paper-plane",
+            "children": <path
+              d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+/>,
+            "viewBox": "0 0 512 512",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "d": "M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "path",
+          },
           "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": <FormattedMessage
               defaultMessage="Send"
@@ -284,7 +347,7 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
-          "type": "span",
+          "type": [Function],
         },
       ],
       "type": "span",
@@ -298,16 +361,20 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <span>
-          <ButtonIcon__ButtonIcon
-                    name="paper-plane"
-          />
-          <span>
+          <SVGIcon__SVGIcon
+                    viewBox="0 0 512 512"
+          >
+                    <path
+                              d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+                    />
+          </SVGIcon__SVGIcon>
+          <Label__Label>
                     <FormattedMessage
                               defaultMessage="Send"
                               id="portfolio.components.SendButton.idle"
                               values={Object {}}
                     />
-          </span>
+          </Label__Label>
 </span>,
         "disabled": false,
       },
@@ -318,16 +385,20 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <ButtonIcon__ButtonIcon
-              name="paper-plane"
-/>,
-            <span>
+            <SVGIcon__SVGIcon
+              viewBox="0 0 512 512"
+>
+              <path
+                            d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+              />
+</SVGIcon__SVGIcon>,
+            <Label__Label>
               <FormattedMessage
                             defaultMessage="Send"
                             id="portfolio.components.SendButton.idle"
                             values={Object {}}
               />
-</span>,
+</Label__Label>,
           ],
         },
         "ref": null,
@@ -337,16 +408,29 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "paper-plane",
+              "children": <path
+                d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+/>,
+              "viewBox": "0 0 512 512",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "d": "M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "path",
+            },
             "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "children": <FormattedMessage
                 defaultMessage="Send"
@@ -368,7 +452,7 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
-            "type": "span",
+            "type": [Function],
           },
         ],
         "type": "span",
@@ -407,16 +491,20 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <span>
-        <ButtonIcon__ButtonIcon
-                name="paper-plane"
-        />
-        <span>
+        <SVGIcon__SVGIcon
+                viewBox="0 0 512 512"
+        >
+                <path
+                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+                />
+        </SVGIcon__SVGIcon>
+        <Label__Label>
                 <FormattedMessage
                         defaultMessage="Failed. Please try again"
                         id="portfolio.components.SendButton.error"
                         values={Object {}}
                 />
-        </span>
+        </Label__Label>
 </span>,
       "disabled": false,
     },
@@ -427,16 +515,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <ButtonIcon__ButtonIcon
-            name="paper-plane"
-/>,
-          <span>
+          <SVGIcon__SVGIcon
+            viewBox="0 0 512 512"
+>
+            <path
+                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+            />
+</SVGIcon__SVGIcon>,
+          <Label__Label>
             <FormattedMessage
                         defaultMessage="Failed. Please try again"
                         id="portfolio.components.SendButton.error"
                         values={Object {}}
             />
-</span>,
+</Label__Label>,
         ],
       },
       "ref": null,
@@ -446,16 +538,29 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "name": "paper-plane",
+            "children": <path
+              d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+/>,
+            "viewBox": "0 0 512 512",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "d": "M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "path",
+          },
           "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": <FormattedMessage
               defaultMessage="Failed. Please try again"
@@ -477,7 +582,7 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
-          "type": "span",
+          "type": [Function],
         },
       ],
       "type": "span",
@@ -491,16 +596,20 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <span>
-          <ButtonIcon__ButtonIcon
-                    name="paper-plane"
-          />
-          <span>
+          <SVGIcon__SVGIcon
+                    viewBox="0 0 512 512"
+          >
+                    <path
+                              d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+                    />
+          </SVGIcon__SVGIcon>
+          <Label__Label>
                     <FormattedMessage
                               defaultMessage="Failed. Please try again"
                               id="portfolio.components.SendButton.error"
                               values={Object {}}
                     />
-          </span>
+          </Label__Label>
 </span>,
         "disabled": false,
       },
@@ -511,16 +620,20 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <ButtonIcon__ButtonIcon
-              name="paper-plane"
-/>,
-            <span>
+            <SVGIcon__SVGIcon
+              viewBox="0 0 512 512"
+>
+              <path
+                            d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+              />
+</SVGIcon__SVGIcon>,
+            <Label__Label>
               <FormattedMessage
                             defaultMessage="Failed. Please try again"
                             id="portfolio.components.SendButton.error"
                             values={Object {}}
               />
-</span>,
+</Label__Label>,
           ],
         },
         "ref": null,
@@ -530,16 +643,29 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "paper-plane",
+              "children": <path
+                d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+/>,
+              "viewBox": "0 0 512 512",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "d": "M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "path",
+            },
             "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "children": <FormattedMessage
                 defaultMessage="Failed. Please try again"
@@ -561,7 +687,7 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
-            "type": "span",
+            "type": [Function],
           },
         ],
         "type": "span",
@@ -600,16 +726,20 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <span>
-        <ButtonIcon__ButtonIcon
-                name="paper-plane"
-        />
-        <span>
+        <SVGIcon__SVGIcon
+                viewBox="0 0 512 512"
+        >
+                <path
+                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+                />
+        </SVGIcon__SVGIcon>
+        <Label__Label>
                 <FormattedMessage
                         defaultMessage="Sending..."
                         id="portfolio.components.SendButton.sending"
                         values={Object {}}
                 />
-        </span>
+        </Label__Label>
 </span>,
       "disabled": false,
     },
@@ -620,16 +750,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <ButtonIcon__ButtonIcon
-            name="paper-plane"
-/>,
-          <span>
+          <SVGIcon__SVGIcon
+            viewBox="0 0 512 512"
+>
+            <path
+                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+            />
+</SVGIcon__SVGIcon>,
+          <Label__Label>
             <FormattedMessage
                         defaultMessage="Sending..."
                         id="portfolio.components.SendButton.sending"
                         values={Object {}}
             />
-</span>,
+</Label__Label>,
         ],
       },
       "ref": null,
@@ -639,16 +773,29 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "name": "paper-plane",
+            "children": <path
+              d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+/>,
+            "viewBox": "0 0 512 512",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "d": "M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "path",
+          },
           "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": <FormattedMessage
               defaultMessage="Sending..."
@@ -670,7 +817,7 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
-          "type": "span",
+          "type": [Function],
         },
       ],
       "type": "span",
@@ -684,16 +831,20 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <span>
-          <ButtonIcon__ButtonIcon
-                    name="paper-plane"
-          />
-          <span>
+          <SVGIcon__SVGIcon
+                    viewBox="0 0 512 512"
+          >
+                    <path
+                              d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+                    />
+          </SVGIcon__SVGIcon>
+          <Label__Label>
                     <FormattedMessage
                               defaultMessage="Sending..."
                               id="portfolio.components.SendButton.sending"
                               values={Object {}}
                     />
-          </span>
+          </Label__Label>
 </span>,
         "disabled": false,
       },
@@ -704,16 +855,20 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <ButtonIcon__ButtonIcon
-              name="paper-plane"
-/>,
-            <span>
+            <SVGIcon__SVGIcon
+              viewBox="0 0 512 512"
+>
+              <path
+                            d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+              />
+</SVGIcon__SVGIcon>,
+            <Label__Label>
               <FormattedMessage
                             defaultMessage="Sending..."
                             id="portfolio.components.SendButton.sending"
                             values={Object {}}
               />
-</span>,
+</Label__Label>,
           ],
         },
         "ref": null,
@@ -723,16 +878,29 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "paper-plane",
+              "children": <path
+                d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+/>,
+              "viewBox": "0 0 512 512",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "d": "M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "path",
+            },
             "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "children": <FormattedMessage
                 defaultMessage="Sending..."
@@ -754,7 +922,7 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
-            "type": "span",
+            "type": [Function],
           },
         ],
         "type": "span",
@@ -793,16 +961,20 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": <span>
-        <ButtonIcon__ButtonIcon
-                name="paper-plane"
-        />
-        <span>
+        <SVGIcon__SVGIcon
+                viewBox="0 0 512 512"
+        >
+                <path
+                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+                />
+        </SVGIcon__SVGIcon>
+        <Label__Label>
                 <FormattedMessage
                         defaultMessage="Sent! I'll respond as soon as possible"
                         id="portfolio.components.SendButton.success"
                         values={Object {}}
                 />
-        </span>
+        </Label__Label>
 </span>,
       "disabled": false,
     },
@@ -813,16 +985,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <ButtonIcon__ButtonIcon
-            name="paper-plane"
-/>,
-          <span>
+          <SVGIcon__SVGIcon
+            viewBox="0 0 512 512"
+>
+            <path
+                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+            />
+</SVGIcon__SVGIcon>,
+          <Label__Label>
             <FormattedMessage
                         defaultMessage="Sent! I'll respond as soon as possible"
                         id="portfolio.components.SendButton.success"
                         values={Object {}}
             />
-</span>,
+</Label__Label>,
         ],
       },
       "ref": null,
@@ -832,16 +1008,29 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "name": "paper-plane",
+            "children": <path
+              d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+/>,
+            "viewBox": "0 0 512 512",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "d": "M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "path",
+          },
           "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": <FormattedMessage
               defaultMessage="Sent! I'll respond as soon as possible"
@@ -863,7 +1052,7 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
-          "type": "span",
+          "type": [Function],
         },
       ],
       "type": "span",
@@ -877,16 +1066,20 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": <span>
-          <ButtonIcon__ButtonIcon
-                    name="paper-plane"
-          />
-          <span>
+          <SVGIcon__SVGIcon
+                    viewBox="0 0 512 512"
+          >
+                    <path
+                              d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+                    />
+          </SVGIcon__SVGIcon>
+          <Label__Label>
                     <FormattedMessage
                               defaultMessage="Sent! I'll respond as soon as possible"
                               id="portfolio.components.SendButton.success"
                               values={Object {}}
                     />
-          </span>
+          </Label__Label>
 </span>,
         "disabled": false,
       },
@@ -897,16 +1090,20 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <ButtonIcon__ButtonIcon
-              name="paper-plane"
-/>,
-            <span>
+            <SVGIcon__SVGIcon
+              viewBox="0 0 512 512"
+>
+              <path
+                            d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+              />
+</SVGIcon__SVGIcon>,
+            <Label__Label>
               <FormattedMessage
                             defaultMessage="Sent! I'll respond as soon as possible"
                             id="portfolio.components.SendButton.success"
                             values={Object {}}
               />
-</span>,
+</Label__Label>,
           ],
         },
         "ref": null,
@@ -916,16 +1113,29 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "name": "paper-plane",
+              "children": <path
+                d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+/>,
+              "viewBox": "0 0 512 512",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "d": "M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "path",
+            },
             "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "children": <FormattedMessage
                 defaultMessage="Sent! I'll respond as soon as possible"
@@ -947,7 +1157,7 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
-            "type": "span",
+            "type": [Function],
           },
         ],
         "type": "span",

@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 const Arrow = styled.svg.attrs({
   xmlns: 'http://www.w3.org/2000/svg',
-  viewBox: '0 427.9 175.1 132.1',
+  viewBox: '0 0 848 640',
   preserveAspectRatio: 'xMinYMid',
 })`
   float: ${({ isLeftHanded }) => isLeftHanded ? 'left' : 'right'};
   height: 1px;
-  margin-top: -1px;
+  margin: -1px 0 0 0 !important;
   transform: rotateY(${({ isLeftHanded }) => isLeftHanded ? '0deg' : '180deg'});
   z-index: 9;
 

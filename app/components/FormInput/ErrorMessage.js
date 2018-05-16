@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { theme } from '../../styles/theme';
 
 const ErrorMessage = styled.span`
   display: ${(props) => props.showError ? 'inline' : 'none'};
-  color: red;
+  color: ${theme.form.errorMessageColor};
 `;
 
 ErrorMessage.propTypes = {

@@ -25,7 +25,6 @@ import { loadContent } from './actions';
 
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
-import Article from '../../components/Article';
 import PageContent from '../../components/PageContent';
 import ContentLoadingIndicator from '../../components/ContentLoadingIndicator';
 
@@ -86,13 +85,13 @@ export class SkillsPage extends React.PureComponent { // eslint-disable-line rea
     }
 
     return (
-      <Article>
+      <React.Fragment>
         <Helmet>
           <title>Mijn vaardigheden</title>
           <meta name="description" content="Mijn vaardigheden pagina van Johan Meester zijn portfolio" />
         </Helmet>
         {showContent}
-      </Article>
+      </React.Fragment>
     );
   }
 }

@@ -6,21 +6,25 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { theme } from '../../styles/theme';
 
 import Wrapper from './Wrapper';
+import ContentWrapper from './ContentWrapper';
 
 import SpeechBubble from '../../components/SpeechBubble';
 import PageHeader from '../../components/PageHeader';
-import FlexRow from '../../components/FlexRow';
-import FlexColumn from '../../components/FlexColumn';
+import { BASE_LINE_HEIGHT } from '../../styles/typography';
 
 function PageContent(props) {
   let renderThis = (
     <SpeechBubble
-      arrowHeight={'9vh'}
-      backgroundColor="#f90"
+      arrowHeight="9vh"
+      backgroundColor={theme.speechBubble.backgroundColor}
+      color={theme.speechBubble.color}
       isLeftHanded={false}
       makeAppear={false}
+      maxWidth="30em"
+      padding={`${BASE_LINE_HEIGHT}rem`}
       showArrowBreakpoint="750px"
     >
       {props.content}
@@ -33,18 +37,12 @@ function PageContent(props) {
 
   return (
     <Wrapper>
-      <FlexRow>
-        <FlexColumn>
-          <PageHeader isLeftHanded>
-            {props.title}
-          </PageHeader>
-        </FlexColumn>
-      </FlexRow>
-      <FlexRow>
-        <FlexColumn>
-          {renderThis}
-        </FlexColumn>
-      </FlexRow>
+      <PageHeader isLeftHanded>
+        {props.title}
+      </PageHeader>
+      <ContentWrapper>
+        {renderThis}
+      </ContentWrapper>
     </Wrapper>
   );
 }

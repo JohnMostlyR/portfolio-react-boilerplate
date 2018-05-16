@@ -2,8 +2,7 @@
 
 exports[`<StyledA> Should render and match the snapshot 1`] = `
 .c0 {
-  color: #465a65;
-  font-size: 1.4rem;
+  color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
 }

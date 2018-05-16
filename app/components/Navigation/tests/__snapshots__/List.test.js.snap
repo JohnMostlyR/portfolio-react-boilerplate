@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List /> should adopt the "isExpanded" property 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  list-style: none;
+  margin: 0;
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 2;
+  border: 0.2rem solid #f63;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0;
+  background-color: rgba(0,0,0,0.8);
+  padding: 1.5rem;
+  padding-left: 3rem;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  -webkit-transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+}
+
+.c0 li:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width:0px) {
+  .c0::before {
+    position: absolute;
+    content: "";
+    height: 1.5rem;
+    left: 0;
+    right: 0;
+    top: -0.15rem;
+    -webkit-transform: translateX(0.2rem) translateY(-100%);
+    -ms-transform: translateX(0.2rem) translateY(-100%);
+    transform: translateX(0.2rem) translateY(-100%);
+    z-index: -1;
+    background-image: url("data:image/svg+xml;charset=utf-8,  %3Csvg    xmlns='http://www.w3.org/2000/svg'    viewBox='0 0 848 640'    preserveAspectRatio='xMinYMid'    %3E    %3Cpath stroke='%23f63' fill='%23f63' d='M423.8,215.6L321.1,0v241.3' /%3E    %3Cpath fill='%23ff8c66' d='M0,321.7l423.8-106.1v265.5' /%3E    %3Cpath fill='%23f63' d='M848,640L0,321.7L211.6,640H848z' /%3E  %3C/svg%3E");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: inherit;
+  }
+}
+
+@media (min-width:1px) {
+  .c0 {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+<ul
+  className="c0"
+  hidden="\\"false\\""
+/>
+`;
+
+exports[`<List /> should render and match the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  list-style: none;
+  margin: 0;
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 2;
+  border: 0.2rem solid #f63;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0;
+  background-color: rgba(0,0,0,0.8);
+  padding: 1.5rem;
+  padding-left: 3rem;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  -webkit-transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+}
+
+.c0 li:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width:999px) {
+  .c0::before {
+    position: absolute;
+    content: "";
+    height: 1.5rem;
+    left: 0;
+    right: 0;
+    top: -0.15rem;
+    -webkit-transform: translateX(0.2rem) translateY(-100%);
+    -ms-transform: translateX(0.2rem) translateY(-100%);
+    transform: translateX(0.2rem) translateY(-100%);
+    z-index: -1;
+    background-image: url("data:image/svg+xml;charset=utf-8,  %3Csvg    xmlns='http://www.w3.org/2000/svg'    viewBox='0 0 848 640'    preserveAspectRatio='xMinYMid'    %3E    %3Cpath stroke='%23f63' fill='%23f63' d='M423.8,215.6L321.1,0v241.3' /%3E    %3Cpath fill='%23ff8c66' d='M0,321.7l423.8-106.1v265.5' /%3E    %3Cpath fill='%23f63' d='M848,640L0,321.7L211.6,640H848z' /%3E  %3C/svg%3E");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: inherit;
+  }
+}
+
+@media (min-width:1000px) {
+  .c0 {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+<ul
+  className="c0"
+  hidden="\\"true\\""
+/>
+`;

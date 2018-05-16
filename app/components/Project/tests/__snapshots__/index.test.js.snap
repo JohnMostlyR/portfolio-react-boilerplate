@@ -43,12 +43,12 @@ ShallowWrapper {
         <ProjectBody__ProjectBody>
           <div>
                     <ProjectHeader__ProjectHeader>
-                              <ProjectTitle__ProjectTitle>
+                              <H3__H3>
                                         New Project
-                              </ProjectTitle__ProjectTitle>
+                              </H3__H3>
                     </ProjectHeader__ProjectHeader>
           </div>
-          <ProjectDetailsBody__ProjectDetailsBody />
+          <P__P />
 </ProjectBody__ProjectBody>,
         <ProjectLinksList
           hasFocus={false}
@@ -91,12 +91,12 @@ ShallowWrapper {
           "children": Array [
             <div>
               <ProjectHeader__ProjectHeader>
-                            <ProjectTitle__ProjectTitle>
+                            <H3__H3>
                                           New Project
-                            </ProjectTitle__ProjectTitle>
+                            </H3__H3>
               </ProjectHeader__ProjectHeader>
 </div>,
-            <ProjectDetailsBody__ProjectDetailsBody />,
+            <P__P />,
           ],
         },
         "ref": null,
@@ -107,9 +107,9 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <ProjectHeader__ProjectHeader>
-                <ProjectTitle__ProjectTitle>
+                <H3__H3>
                                 New Project
-                </ProjectTitle__ProjectTitle>
+                </H3__H3>
 </ProjectHeader__ProjectHeader>,
             },
             "ref": null,
@@ -118,9 +118,9 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": <ProjectTitle__ProjectTitle>
+                "children": <H3__H3>
                   New Project
-</ProjectTitle__ProjectTitle>,
+</H3__H3>,
               },
               "ref": null,
               "rendered": Object {
@@ -192,12 +192,12 @@ ShallowWrapper {
           <ProjectBody__ProjectBody>
             <div>
                         <ProjectHeader__ProjectHeader>
-                                    <ProjectTitle__ProjectTitle>
+                                    <H3__H3>
                                                 New Project
-                                    </ProjectTitle__ProjectTitle>
+                                    </H3__H3>
                         </ProjectHeader__ProjectHeader>
             </div>
-            <ProjectDetailsBody__ProjectDetailsBody />
+            <P__P />
 </ProjectBody__ProjectBody>,
           <ProjectLinksList
             hasFocus={false}
@@ -240,12 +240,12 @@ ShallowWrapper {
             "children": Array [
               <div>
                 <ProjectHeader__ProjectHeader>
-                                <ProjectTitle__ProjectTitle>
+                                <H3__H3>
                                                 New Project
-                                </ProjectTitle__ProjectTitle>
+                                </H3__H3>
                 </ProjectHeader__ProjectHeader>
 </div>,
-              <ProjectDetailsBody__ProjectDetailsBody />,
+              <P__P />,
             ],
           },
           "ref": null,
@@ -256,9 +256,9 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": <ProjectHeader__ProjectHeader>
-                  <ProjectTitle__ProjectTitle>
+                  <H3__H3>
                                     New Project
-                  </ProjectTitle__ProjectTitle>
+                  </H3__H3>
 </ProjectHeader__ProjectHeader>,
               },
               "ref": null,
@@ -267,9 +267,9 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": <ProjectTitle__ProjectTitle>
+                  "children": <H3__H3>
                     New Project
-</ProjectTitle__ProjectTitle>,
+</H3__H3>,
                 },
                 "ref": null,
                 "rendered": Object {

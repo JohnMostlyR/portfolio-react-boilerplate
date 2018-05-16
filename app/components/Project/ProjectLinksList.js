@@ -5,20 +5,22 @@ import styled from 'styled-components';
 import ProjectExternalLink from './ProjectExternalLink';
 
 const StyledList = styled.ul`
-  display: inline-grid;
-  grid-gap: 0.5rem;
+  display: flex;
+  flex-flow: column nowrap;
   padding: 1rem;
   list-style: none;
   text-align: center;
 
-  @media (min-width: 600px) {
+  @media (min-width: 660px) {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
   }
 `;
 
 const Wrapper = styled.div`
   left: 50%;
+  margin: 0 !important;
   overflow: hidden;
   position: absolute;
   top: 50%;
@@ -30,27 +32,28 @@ const Wrapper = styled.div`
   opacity: ${(props) => props.hasFocus ? 1 : 0};
   text-align: center;
   transition: opacity 0.3s 0s ease-in-out;
-  visibility: ${(props) => props.hasFocus ? 'visible' : 'hidden'};
 `;
 
-const ProjectLinksList = (props) => (
-  <Wrapper hasFocus={props.hasFocus}>
-    <StyledList>
-      {
+function ProjectLinksList(props) {
+  return (
+    <Wrapper hasFocus={props.hasFocus}>
+      <StyledList>
+        {
           props.links.map(
-              ({ name, url /* , faIcon */ }) => (
-                <ProjectExternalLink
-                  key={name}
-                  name={name}
-                  url={url}
-                  hasFocus={props.hasFocus}
-                />
-              )
+            ({ name, url /* , faIcon */ }) => (
+              <ProjectExternalLink
+                key={name}
+                name={name}
+                url={url}
+                hasFocus={props.hasFocus}
+              />
+            )
           )
         }
-    </StyledList>
-  </Wrapper>
-);
+      </StyledList>
+    </Wrapper>
+  );
+}
 
 ProjectLinksList.propTypes = {
   links: PropTypes.array.isRequired,

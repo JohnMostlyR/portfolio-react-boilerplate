@@ -2,6 +2,7 @@
 
 exports[`<Container /> should adopt the "maxWidth" prop 1`] = `
 .c0 {
+  display: inline-block;
   z-index: 10;
   -webkit-filter: none;
   filter: none;
@@ -40,6 +41,7 @@ exports[`<Container /> should adopt the "maxWidth" prop 1`] = `
 
 exports[`<Container /> should adopt the "showArrowBreakpoint" prop 1`] = `
 .c0 {
+  display: inline-block;
   z-index: 10;
   -webkit-filter: none;
   filter: none;
@@ -78,6 +80,7 @@ exports[`<Container /> should adopt the "showArrowBreakpoint" prop 1`] = `
 
 exports[`<Container /> should render and match the snapshot 1`] = `
 .c0 {
+  display: inline-block;
   z-index: 10;
   -webkit-filter: none;
   filter: none;

@@ -19,7 +19,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "className": "MediaWrapper__MediaWrapper-hXAHqV gNFhJR",
+      "className": "MediaWrapper__MediaWrapper-hXAHqV hnlXtD",
       "spacing": "10px",
     },
     "ref": null,
@@ -32,7 +32,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "className": "MediaWrapper__MediaWrapper-hXAHqV gNFhJR",
+        "className": "MediaWrapper__MediaWrapper-hXAHqV hnlXtD",
         "spacing": "10px",
       },
       "ref": null,
@@ -69,7 +69,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "className": "MediaWrapper__MediaWrapper-hXAHqV dZuwsg",
+      "className": "MediaWrapper__MediaWrapper-hXAHqV hVOEbI",
       "spacing": "0",
     },
     "ref": null,
@@ -82,7 +82,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "className": "MediaWrapper__MediaWrapper-hXAHqV dZuwsg",
+        "className": "MediaWrapper__MediaWrapper-hXAHqV hVOEbI",
         "spacing": "0",
       },
       "ref": null,

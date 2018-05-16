@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> should adopt the "isExpanded" property 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  left: -50%;
+  margin: 0.5rem 0 0 0.25rem;
+  position: absolute;
+  z-index: 9999;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 15px grey;
+  list-style: none;
+  padding: 0;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: 1.5rem top;
+  -ms-transform-origin: 1.5rem top;
+  transform-origin: 1.5rem top;
+  -webkit-transition: -webkit-transform 0.2s 0s ease-in-out;
+  -webkit-transition: transform 0.2s 0s ease-in-out;
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    left: 0;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+  }
+}
+
+<div
+  className="c0"
+  role="menu"
+/>
+`;
+
+exports[`<Menu /> should render and match the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  left: -50%;
+  margin: 0.5rem 0 0 0.25rem;
+  position: absolute;
+  z-index: 9999;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 15px grey;
+  list-style: none;
+  padding: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 1.5rem top;
+  -ms-transform-origin: 1.5rem top;
+  transform-origin: 1.5rem top;
+  -webkit-transition: -webkit-transform 0.2s 0s ease-in-out;
+  -webkit-transition: transform 0.2s 0s ease-in-out;
+  transition: transform 0.2s 0s ease-in-out;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    left: 0;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+  }
+}
+
+<div
+  className="c0"
+  role="menu"
+/>
+`;

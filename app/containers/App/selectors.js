@@ -20,6 +20,11 @@ const makeSelectError = () => createSelector(
   (globalState) => globalState.get('error')
 );
 
+const makeSelectSiteWidth = () => createSelector(
+  selectGlobal,
+  (globalState) => globalState.get('siteWidth')
+);
+
 const makeSelectSiteNavigationTopPosition = () => createSelector(
   selectGlobalSiteNavigation,
   (siteNavigationState) => siteNavigationState.get('topPosition')
@@ -48,4 +53,5 @@ export {
   makeSelectSiteNavigationIsAtScreenTop,
   makeSelectSiteNavigationOffsetHeight,
   makeSelectSiteNavigationTopPosition,
+  makeSelectSiteWidth,
 };

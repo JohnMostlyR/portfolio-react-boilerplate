@@ -7,15 +7,15 @@ import { defineMessages } from 'react-intl';
 
 export default defineMessages({
   error: {
-    id: 'portfolio.containers.ContentLoadingIndicator.error',
-    defaultMessage: 'Terribly sorry, but the page cannot be loaded at this time',
+    id: 'portfolio.component.ContentLoadingIndicator.error',
+    defaultMessage: 'Terribly sorry, but the content cannot be loaded at this time',
   },
   timedOut: {
-    id: 'portfolio.containers.ContentLoadingIndicator.timedOut',
+    id: 'portfolio.component.ContentLoadingIndicator.timedOut',
     defaultMessage: 'Loading is taking longer than expected',
   },
   pastDelay: {
-    id: 'portfolio.containers.ContentLoadingIndicator.pastDelay',
+    id: 'portfolio.component.ContentLoadingIndicator.pastDelay',
     defaultMessage: 'Loading content',
   },
 });

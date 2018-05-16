@@ -11,6 +11,7 @@ class SpeechBubble extends React.PureComponent {
     const {
       arrowHeight,
       backgroundColor,
+      color,
       children,
       isLeftHanded,
       makeAppear,
@@ -28,6 +29,7 @@ class SpeechBubble extends React.PureComponent {
       >
         <Bubble
           backgroundColor={backgroundColor}
+          color={color}
           isLeftHanded={isLeftHanded}
           padding={padding}
           showArrowBreakpoint={showArrowBreakpoint}
@@ -42,15 +44,15 @@ class SpeechBubble extends React.PureComponent {
           <path
             stroke={lighterBackgroundColor}
             fill={lighterBackgroundColor}
-            d="M0 427.9l175.1 65.7-43.7-65.7z"
+            d="M424.2 424.4L526.9 640V398.7"
           />
           <path
             fill={backgroundColor}
-            d="M175.1 493.6l-87.5 21.9v-54.8"
+            d="M848 318.3L424.2 424.4V158.9"
           />
           <path
             fill={lighterBackgroundColor}
-            d="M87.6 515.5l21.2 44.5v-49.8"
+            d="M0 0l848 318.3L636.4 0H0z"
           />
         </Arrow>
       </Container>
@@ -61,6 +63,7 @@ class SpeechBubble extends React.PureComponent {
 SpeechBubble.propTypes = {
   arrowHeight: PropTypes.string,
   backgroundColor: PropTypes.string,
+  color: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,

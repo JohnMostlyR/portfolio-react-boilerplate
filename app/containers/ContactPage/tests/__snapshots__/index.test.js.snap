@@ -191,7 +191,6 @@ ShallowWrapper {
           }
 />,
       ],
-      "loadingContent": false,
     },
     "ref": null,
     "rendered": Array [
@@ -326,7 +325,7 @@ ShallowWrapper {
         "type": [Function],
       },
     ],
-    "type": [Function],
+    "type": Symbol(react.fragment),
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -429,7 +428,6 @@ ShallowWrapper {
             }
 />,
         ],
-        "loadingContent": false,
       },
       "ref": null,
       "rendered": Array [
@@ -564,7 +562,7 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
-      "type": [Function],
+      "type": Symbol(react.fragment),
     },
   ],
   Symbol(enzyme.__options__): Object {

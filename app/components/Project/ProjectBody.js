@@ -1,18 +1,14 @@
 import styled from 'styled-components';
 
+import { BASE_LINE_HEIGHT } from '../../styles/typography';
+
 const ProjectBody = styled.div`
   flex: 1 0 50%;
+  padding: 0 ${BASE_LINE_HEIGHT}rem;
   order: 2;
-  padding-bottom: 2vw;
-  padding-left: 2.5vw;
-  padding-right: 2.5vw;
-  padding-top: 3vw;
 
-  @media (min-width: 600px) {
+  @media (min-width: 660px) {
     order: 1;
-    padding-bottom: 1vw;
-    padding-left: 3vw;
-    padding-top: 1vw;
   }
 `;
 

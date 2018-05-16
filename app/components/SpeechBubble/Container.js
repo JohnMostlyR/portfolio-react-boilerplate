@@ -12,6 +12,7 @@ const fadeIn = keyframes`
 `;
 
 const Container = styled.div`
+  display: inline-block;
   z-index: 10;
   filter: none;
   opacity: ${({ makeAppear }) => makeAppear ? 0 : 1};

@@ -6,14 +6,12 @@ exports[`ProjectLinksList should render and match the snapshot 1`] = `
 >
   <ProjectLinksList__StyledList>
     <ProjectExternalLink
-      faIcon="external-link"
       hasFocus={false}
       key="github"
       name="github"
       url="https://github.com/"
     />
     <ProjectExternalLink
-      faIcon="external-link"
       hasFocus={false}
       key="codepen"
       name="codepen"

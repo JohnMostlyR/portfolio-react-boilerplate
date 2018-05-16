@@ -2,9 +2,10 @@
 
 exports[`<SubText /> should render and match the snapshot 1`] = `
 .c0 {
-  padding: 8px 0;
-  font-size: 12px;
-  line-height: 1.2;
+  margin: 0 !important;
+  padding: 0.5em 0 0 0;
+  font-size: 0.8333333333333334rem;
+  line-height: 1.5;
 }
 
 <div

@@ -5,16 +5,15 @@ import {
   setSiteNavigationIsAtScreenTop,
   setSiteNavigationOffsetHeight,
   setSiteNavigationTopPosition,
+  setSiteWidth,
 } from '../actions';
 
-describe('siteNavigationBarReducer', () => {
+describe('App Reducer', () => {
   let state;
 
   beforeEach(() => {
     state = fromJS({
-      loading: false,
-      error: false,
-      currentUser: false,
+      siteWidth: 0,
       siteNavigation: {
         isAtScreenTop: false,
         offsetHeight: 0,
@@ -47,5 +46,12 @@ describe('siteNavigationBarReducer', () => {
     const expectedResult = state.setIn(['siteNavigation', 'isAtScreenTop'], fixture);
 
     expect(appReducer(state, setSiteNavigationIsAtScreenTop(fixture))).toEqual(expectedResult);
+  });
+
+  it('should handle the setSiteWidth action correctly', () => {
+    const fixture = 1000;
+    const expectedResult = state.set('siteWidth', fixture);
+
+    expect(appReducer(state, setSiteWidth(fixture))).toEqual(expectedResult);
   });
 });

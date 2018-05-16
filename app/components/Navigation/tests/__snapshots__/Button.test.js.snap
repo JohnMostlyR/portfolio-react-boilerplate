@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should adopt the "label" property 1`] = `
+<Button__StyledButton
+  aria-expanded={false}
+  bigScreenBreakpoint={1000}
+  innerRef={[Function]}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+>
+  <Button__SVGIcon>
+    <Button__SVGPathOne
+      isExpanded={false}
+    />
+    <Button__SVGPathTwo
+      isExpanded={false}
+    />
+    <Button__SVGPathThree
+      isExpanded={false}
+    />
+  </Button__SVGIcon>
+  <Button__Label>
+    Test
+  </Button__Label>
+</Button__StyledButton>
+`;
+
+exports[`<Button /> should render and match the snapshot 1`] = `
+<Button__StyledButton
+  aria-expanded={false}
+  bigScreenBreakpoint={1000}
+  innerRef={[Function]}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+>
+  <Button__SVGIcon>
+    <Button__SVGPathOne
+      isExpanded={false}
+    />
+    <Button__SVGPathTwo
+      isExpanded={false}
+    />
+    <Button__SVGPathThree
+      isExpanded={false}
+    />
+  </Button__SVGIcon>
+  <Button__Label>
+    Label
+  </Button__Label>
+</Button__StyledButton>
+`;

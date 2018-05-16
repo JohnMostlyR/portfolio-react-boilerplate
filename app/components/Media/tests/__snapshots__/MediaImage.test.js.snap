@@ -381,7 +381,7 @@ ShallowWrapper {
 exports[`<MediaImage /> should render and match the snapshot 1`] = `
 <img
   alt="test"
-  className="MediaImage__StyledImg-eVnySD iiHwov"
+  className="MediaImage__StyledImg-eVnySD xBBKk"
   src="/test.png"
 />
 `;

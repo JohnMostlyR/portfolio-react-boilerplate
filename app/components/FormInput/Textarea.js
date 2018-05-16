@@ -1,8 +1,8 @@
 import Input from './Input';
-import { baseFontRegular } from '../../styles/templates/typography';
+import { BASE_FONT_REGULAR } from '../../styles/typography';
 
 export const Textarea = Input.withComponent('textarea').extend`
-  ${baseFontRegular}
+  ${BASE_FONT_REGULAR}
   appearance: none;
   height: 2em;
   overflow: hidden;

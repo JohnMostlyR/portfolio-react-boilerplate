@@ -9,15 +9,15 @@ exports[`<SpeechBubble /> should adopt any children 1`] = `
   </Bubble__Bubble>
   <Arrow__Arrow>
     <path
-      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      d="M424.2 424.4L526.9 640V398.7"
       fill="inherit"
       stroke="inherit"
     />
     <path
-      d="M175.1 493.6l-87.5 21.9v-54.8"
+      d="M848 318.3L424.2 424.4V158.9"
     />
     <path
-      d="M87.6 515.5l21.2 44.5v-49.8"
+      d="M0 0l848 318.3L636.4 0H0z"
       fill="inherit"
     />
   </Arrow__Arrow>
@@ -31,15 +31,15 @@ exports[`<SpeechBubble /> should adopt the "arrowHeight" prop 1`] = `
     height="1vw"
   >
     <path
-      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      d="M424.2 424.4L526.9 640V398.7"
       fill="inherit"
       stroke="inherit"
     />
     <path
-      d="M175.1 493.6l-87.5 21.9v-54.8"
+      d="M848 318.3L424.2 424.4V158.9"
     />
     <path
-      d="M87.6 515.5l21.2 44.5v-49.8"
+      d="M0 0l848 318.3L636.4 0H0z"
       fill="inherit"
     />
   </Arrow__Arrow>
@@ -53,16 +53,16 @@ exports[`<SpeechBubble /> should adopt the "backgroundColor" prop 1`] = `
   />
   <Arrow__Arrow>
     <path
-      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      d="M424.2 424.4L526.9 640V398.7"
       fill="#1a1a1a"
       stroke="#1a1a1a"
     />
     <path
-      d="M175.1 493.6l-87.5 21.9v-54.8"
+      d="M848 318.3L424.2 424.4V158.9"
       fill="#000"
     />
     <path
-      d="M87.6 515.5l21.2 44.5v-49.8"
+      d="M0 0l848 318.3L636.4 0H0z"
       fill="#1a1a1a"
     />
   </Arrow__Arrow>
@@ -78,15 +78,15 @@ exports[`<SpeechBubble /> should adopt the "isLeftHanded" prop 1`] = `
     isLeftHanded={false}
   >
     <path
-      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      d="M424.2 424.4L526.9 640V398.7"
       fill="inherit"
       stroke="inherit"
     />
     <path
-      d="M175.1 493.6l-87.5 21.9v-54.8"
+      d="M848 318.3L424.2 424.4V158.9"
     />
     <path
-      d="M87.6 515.5l21.2 44.5v-49.8"
+      d="M0 0l848 318.3L636.4 0H0z"
       fill="inherit"
     />
   </Arrow__Arrow>
@@ -100,15 +100,15 @@ exports[`<SpeechBubble /> should adopt the "maxWidth" prop 1`] = `
   <Bubble__Bubble />
   <Arrow__Arrow>
     <path
-      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      d="M424.2 424.4L526.9 640V398.7"
       fill="inherit"
       stroke="inherit"
     />
     <path
-      d="M175.1 493.6l-87.5 21.9v-54.8"
+      d="M848 318.3L424.2 424.4V158.9"
     />
     <path
-      d="M87.6 515.5l21.2 44.5v-49.8"
+      d="M0 0l848 318.3L636.4 0H0z"
       fill="inherit"
     />
   </Arrow__Arrow>
@@ -122,15 +122,15 @@ exports[`<SpeechBubble /> should adopt the "padding" prop 1`] = `
   />
   <Arrow__Arrow>
     <path
-      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      d="M424.2 424.4L526.9 640V398.7"
       fill="inherit"
       stroke="inherit"
     />
     <path
-      d="M175.1 493.6l-87.5 21.9v-54.8"
+      d="M848 318.3L424.2 424.4V158.9"
     />
     <path
-      d="M87.6 515.5l21.2 44.5v-49.8"
+      d="M0 0l848 318.3L636.4 0H0z"
       fill="inherit"
     />
   </Arrow__Arrow>
@@ -148,15 +148,15 @@ exports[`<SpeechBubble /> should adopt the "showArrowBreakpoint" prop 1`] = `
     showBreakpoint="100px"
   >
     <path
-      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      d="M424.2 424.4L526.9 640V398.7"
       fill="inherit"
       stroke="inherit"
     />
     <path
-      d="M175.1 493.6l-87.5 21.9v-54.8"
+      d="M848 318.3L424.2 424.4V158.9"
     />
     <path
-      d="M87.6 515.5l21.2 44.5v-49.8"
+      d="M0 0l848 318.3L636.4 0H0z"
       fill="inherit"
     />
   </Arrow__Arrow>
@@ -168,15 +168,15 @@ exports[`<SpeechBubble /> should render and match the snapshot 1`] = `
   <Bubble__Bubble />
   <Arrow__Arrow>
     <path
-      d="M0 427.9l175.1 65.7-43.7-65.7z"
+      d="M424.2 424.4L526.9 640V398.7"
       fill="inherit"
       stroke="inherit"
     />
     <path
-      d="M175.1 493.6l-87.5 21.9v-54.8"
+      d="M848 318.3L424.2 424.4V158.9"
     />
     <path
-      d="M87.6 515.5l21.2 44.5v-49.8"
+      d="M0 0l848 318.3L636.4 0H0z"
       fill="inherit"
     />
   </Arrow__Arrow>

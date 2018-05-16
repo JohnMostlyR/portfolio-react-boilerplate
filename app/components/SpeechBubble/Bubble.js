@@ -5,13 +5,8 @@ const Bubble = styled.div`
   background-color: ${({ backgroundColor }) => backgroundColor || 'inherit'};
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;
-  padding: ${({ padding }) => padding || '1vw'};
-
-  > p {
-    &:not(:first-child) {
-      margin-top: 1.5rem;
-    }
-  }
+  color: ${({ color }) => color || 'inherit'};
+  padding: ${({ padding }) => padding || 0};
 
   @media (min-height: ${({ showArrowBreakpoint }) => showArrowBreakpoint || '100%'}) {
     margin-right: 0;
@@ -23,6 +18,7 @@ const Bubble = styled.div`
 
 Bubble.propTypes = {
   backgroundColor: PropTypes.string,
+  color: PropTypes.string,
   isLeftHanded: PropTypes.bool,
   padding: PropTypes.string,
   showArrowBreakpoint: PropTypes.string,

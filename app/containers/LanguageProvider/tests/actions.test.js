@@ -1,19 +1,19 @@
 import {
-  changeLocale,
+  changeLanguage,
 } from '../actions';
 
 import {
-  CHANGE_LOCALE,
+  CHANGE_LANGUAGE,
 } from '../constants';
 
 describe('LanguageProvider actions', () => {
   describe('Change Local Action', () => {
-    it('has a type of CHANGE_LOCALE', () => {
+    it('has a type of CHANGE_LANGUAGE', () => {
       const expected = {
-        type: CHANGE_LOCALE,
+        type: CHANGE_LANGUAGE,
         locale: 'nl',
       };
-      expect(changeLocale('nl')).toEqual(expected);
+      expect(changeLanguage('nl')).toEqual(expected);
     });
   });
 });

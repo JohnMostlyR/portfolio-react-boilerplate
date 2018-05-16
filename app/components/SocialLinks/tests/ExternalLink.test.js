@@ -1,76 +1,39 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { mount } from 'enzyme';
-import FontAwesome from 'react-fontawesome';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 
-import ExternalLink from '../ExternalLink';
-import StyledA from '../StyledA';
+import ExternalLink, { VALID_ICONS } from '../ExternalLink';
 
-describe('ExternalLink', () => {
-  const DESCRIPTION = 'Follow me';
-  const EXTERNAL_LINK = 'https://some-site.com';
-  const ICON = 'check-square-o';
-
-  let wrapper;
-
-  beforeEach(() => {
-    wrapper = mount(
-      <ExternalLink
-        faIcon={ICON}
-        description={DESCRIPTION}
-        href={EXTERNAL_LINK}
-      />,
-    );
+describe('<ExternalLink>', () => {
+  it('should render and match the snapshot', () => {
+    const wrapper = shallow(<ExternalLink />);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 
-  it('Should render and match the snapshot', () => {
-    const tree = renderer.create(<ExternalLink />).toJSON();
-    expect(tree).toMatchSnapshot();
+  it('should adopt the "href" property', () => {
+    const EXTERNAL_LINK = 'https://some-site.com';
+    const wrapper = shallow(<ExternalLink href={EXTERNAL_LINK} />);
+    expect(wrapper.prop('href')).toBe(EXTERNAL_LINK);
   });
 
-  it('Should have a `styled.a` component', () => {
-    expect(
-      wrapper.find(StyledA),
-    ).toHaveLength(1);
+  it('should adopt the "description" property', () => {
+    const DESCRIPTION = 'Follow me';
+    const wrapper = shallow(<ExternalLink description={DESCRIPTION} />);
+    expect(wrapper.find('span[hidden]').childAt(0).text()).toBe(DESCRIPTION);
   });
 
-  it('Should have a `FontAwesome` component', () => {
-    expect(
-      wrapper.find(FontAwesome),
-    ).toHaveLength(1);
+  it('should adopt the "color" property', () => {
+    const COLOR = '#bada55';
+    const wrapper = shallow(<ExternalLink color={COLOR} />);
+    expect(wrapper.prop('color')).toBe(COLOR);
   });
 
-  describe('Anker element', () => {
-    beforeEach(() => {
-      wrapper = mount(
-        <ExternalLink
-          faIcon={ICON}
-          description={DESCRIPTION}
-          href={EXTERNAL_LINK}
-        />,
-      );
-    });
-
-    it('Should have an `href` property', () => {
-      const A = wrapper.find(`a[href="${EXTERNAL_LINK}"]`);
-      expect(A).toHaveLength(1);
-    });
-
-    it('Should have a `target` property set to `_blank`', () => {
-      const A = wrapper.find(`a[href="${EXTERNAL_LINK}"]`);
-      expect(A.props().target).toBe('_blank');
-    });
-
-    it('Should have a `rel` property set to `noopener noreferrer`', () => {
-      const A = wrapper.find(`a[href="${EXTERNAL_LINK}"]`);
-      expect(A.props().rel).toBe('noopener noreferrer');
-    });
-  });
-
-  describe('FontAwesome component', () => {
-    it('Should get the `name` property', () => {
-      const FONT_AWESOME = wrapper.find(FontAwesome);
-      expect(FONT_AWESOME.props().name).toBe(ICON);
+  describe('with a given "faIcon" property', () => {
+    VALID_ICONS.forEach((icon) => {
+      it(`should render with a "${icon}" icon`, () => {
+        const wrapper = shallow(<ExternalLink faIcon={icon} />);
+        expect(toJson(wrapper)).toMatchSnapshot();
+      });
     });
   });
 });

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Label /> should render and match the snapshot 1`] = `
+.c0 {
+  margin-left: 0.5rem;
+}
+
+<span
+  className="c0"
+/>
+`;

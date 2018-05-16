@@ -2,7 +2,7 @@ import { fromJS } from 'immutable';
 
 import languageProviderReducer from '../reducer';
 import {
-  CHANGE_LOCALE,
+  CHANGE_LANGUAGE,
 } from '../constants';
 
 describe('languageProviderReducer', () => {
@@ -13,7 +13,7 @@ describe('languageProviderReducer', () => {
   });
 
   it('changes the locale', () => {
-    expect(languageProviderReducer(undefined, { type: CHANGE_LOCALE, locale: 'nl' }).toJS()).toEqual({
+    expect(languageProviderReducer(undefined, { type: CHANGE_LANGUAGE, locale: 'nl' }).toJS()).toEqual({
       locale: 'nl',
     });
   });

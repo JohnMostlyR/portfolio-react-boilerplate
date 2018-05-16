@@ -20,7 +20,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "className": "ResponsiveImage-eiJyBH dxdQpB",
+      "className": "ResponsiveImage-eiJyBH euxNao",
       "imageAlt": "Test",
       "imageSource": "./test.png",
       "noPlaceholder": false,
@@ -35,7 +35,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "className": "ResponsiveImage-eiJyBH dxdQpB",
+        "className": "ResponsiveImage-eiJyBH euxNao",
         "imageAlt": "Test",
         "imageSource": "./test.png",
         "noPlaceholder": false,

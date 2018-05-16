@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Body = styled.div`
-  padding: 1vw;
+  padding: 1rem;
 `;
 
 export default Body;

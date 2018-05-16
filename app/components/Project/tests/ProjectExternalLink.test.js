@@ -11,11 +11,6 @@ describe('<ProjectExternalLink />', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should adopt the faIcon property', () => {
-    const wrapper = toJson(shallow(<ProjectExternalLink faIcon="meh-o" />));
-    expect(wrapper).toMatchSnapshot();
-  });
-
   it('should adopt the name property', () => {
     const wrapper = toJson(shallow(<ProjectExternalLink name="Testing" />));
     expect(wrapper).toMatchSnapshot();

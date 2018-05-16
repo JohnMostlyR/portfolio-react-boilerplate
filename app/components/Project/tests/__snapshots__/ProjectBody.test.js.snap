@@ -5,23 +5,17 @@ exports[`<ProjectBody /> should render and match the snapshot 1`] = `
   -webkit-flex: 1 0 50%;
   -ms-flex: 1 0 50%;
   flex: 1 0 50%;
+  padding: 0 1.5rem;
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
-  padding-bottom: 2vw;
-  padding-left: 2.5vw;
-  padding-right: 2.5vw;
-  padding-top: 3vw;
 }
 
-@media (min-width:600px) {
+@media (min-width:660px) {
   .c0 {
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
-    padding-bottom: 1vw;
-    padding-left: 3vw;
-    padding-top: 1vw;
   }
 }
 

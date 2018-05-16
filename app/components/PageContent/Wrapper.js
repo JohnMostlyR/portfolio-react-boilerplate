@@ -19,6 +19,14 @@ const Wrapper = styled.div`
   animation-fill-mode: both;
   animation-name: ${({ animate }) => animate ? fadeIn : 'none'};
   animation-timing-function: ease-in-out;
+
+  @supports (display: grid) {
+    display: grid;
+    grid-area: mainContent;
+    grid-template-areas:
+      "pageHeader"
+      "pageContent";
+  }
 `;
 
 Wrapper.propTypes = {

@@ -5,11 +5,8 @@ exports[`<Bubble /> should adopt the "backgroundColor" prop 1`] = `
   background-color: white;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;
-  padding: 1vw;
-}
-
-.c0 > p:not(:first-child) {
-  margin-top: 1.5rem;
+  color: inherit;
+  padding: 0;
 }
 
 @media (min-height:100%) {
@@ -31,11 +28,8 @@ exports[`<Bubble /> should adopt the "isLeftHanded" prop 1`] = `
   background-color: inherit;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;
-  padding: 1vw;
-}
-
-.c0 > p:not(:first-child) {
-  margin-top: 1.5rem;
+  color: inherit;
+  padding: 0;
 }
 
 @media (min-height:100%) {
@@ -57,11 +51,8 @@ exports[`<Bubble /> should adopt the "padding" prop 1`] = `
   background-color: inherit;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;
+  color: inherit;
   padding: 0 1em;
-}
-
-.c0 > p:not(:first-child) {
-  margin-top: 1.5rem;
 }
 
 @media (min-height:100%) {
@@ -83,11 +74,8 @@ exports[`<Bubble /> should adopt the "showArrowBreakpoint" prop 1`] = `
   background-color: inherit;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;
-  padding: 1vw;
-}
-
-.c0 > p:not(:first-child) {
-  margin-top: 1.5rem;
+  color: inherit;
+  padding: 0;
 }
 
 @media (min-height:10rem) {
@@ -109,11 +97,8 @@ exports[`<Bubble /> should render and match the snapshot 1`] = `
   background-color: inherit;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;
-  padding: 1vw;
-}
-
-.c0 > p:not(:first-child) {
-  margin-top: 1.5rem;
+  color: inherit;
+  padding: 0;
 }
 
 @media (min-height:100%) {

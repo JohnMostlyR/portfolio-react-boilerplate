@@ -1,21 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ExternalLink Should render and match the snapshot 1`] = `
-<a
-  className="StyledA__StyledA-iHqXXL gDDdGe"
+exports[`<ExternalLink> should render and match the snapshot 1`] = `
+<StyledA__StyledA
+  color="inherit"
   href="#"
   rel="noopener noreferrer"
   target="_blank"
 >
-  <span
-    aria-hidden={true}
-    className="fa fa-meh-o"
-  />
+  <span />
   <span
     aria-hidden="false"
     hidden={true}
   >
     ExternalLink to
   </span>
-</a>
+</StyledA__StyledA>
+`;
+
+exports[`<ExternalLink> with a given "faIcon" property should render with a "codepen" icon 1`] = `
+<StyledA__StyledA
+  color="inherit"
+  href="#"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <IconCodepen />
+  <span
+    aria-hidden="false"
+    hidden={true}
+  >
+    ExternalLink to
+  </span>
+</StyledA__StyledA>
+`;
+
+exports[`<ExternalLink> with a given "faIcon" property should render with a "free-code-camp" icon 1`] = `
+<StyledA__StyledA
+  color="inherit"
+  href="#"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <IconFreeCodeCamp />
+  <span
+    aria-hidden="false"
+    hidden={true}
+  >
+    ExternalLink to
+  </span>
+</StyledA__StyledA>
+`;
+
+exports[`<ExternalLink> with a given "faIcon" property should render with a "github" icon 1`] = `
+<StyledA__StyledA
+  color="inherit"
+  href="#"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <IconGithub />
+  <span
+    aria-hidden="false"
+    hidden={true}
+  >
+    ExternalLink to
+  </span>
+</StyledA__StyledA>
+`;
+
+exports[`<ExternalLink> with a given "faIcon" property should render with a "linkedin" icon 1`] = `
+<StyledA__StyledA
+  color="inherit"
+  href="#"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <IconLinkedin />
+  <span
+    aria-hidden="false"
+    hidden={true}
+  >
+    ExternalLink to
+  </span>
+</StyledA__StyledA>
+`;
+
+exports[`<ExternalLink> with a given "faIcon" property should render with a "linkedin-square" icon 1`] = `
+<StyledA__StyledA
+  color="inherit"
+  href="#"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <IconLinkedin />
+  <span
+    aria-hidden="false"
+    hidden={true}
+  >
+    ExternalLink to
+  </span>
+</StyledA__StyledA>
 `;

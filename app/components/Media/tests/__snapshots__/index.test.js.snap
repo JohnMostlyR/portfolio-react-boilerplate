@@ -2,17 +2,17 @@
 
 exports[`<Media /> should adopt children 1`] = `
 <div
-  className="MediaWrapper__MediaWrapper-hXAHqV dZuwsg"
+  className="MediaWrapper__MediaWrapper-hXAHqV hVOEbI"
   spacing="0"
 >
   <img
     alt="test"
-    className="MediaImage__StyledImg-eVnySD iiHwov"
+    className="MediaImage__StyledImg-eVnySD xBBKk"
     spacing="0"
     src="/tests.png"
   />
   <p
-    className="MediaBody__MediaBody-bQhINl gmCftp"
+    className="MediaBody__MediaBody-bQhINl cAgxoD"
     spacing="0"
   >
     Child
@@ -22,17 +22,17 @@ exports[`<Media /> should adopt children 1`] = `
 
 exports[`<Media /> should render and match the snapshot 1`] = `
 <div
-  className="MediaWrapper__MediaWrapper-hXAHqV dZuwsg"
+  className="MediaWrapper__MediaWrapper-hXAHqV hVOEbI"
   spacing="0"
 >
   <img
     alt="test"
-    className="MediaImage__StyledImg-eVnySD iiHwov"
+    className="MediaImage__StyledImg-eVnySD xBBKk"
     spacing="0"
     src="/tests.png"
   />
   <p
-    className="MediaBody__MediaBody-bQhINl gmCftp"
+    className="MediaBody__MediaBody-bQhINl cAgxoD"
     spacing="0"
   />
 </div>

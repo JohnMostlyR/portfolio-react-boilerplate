@@ -5,11 +5,12 @@
  */
 
 import styled from 'styled-components';
-import { baseFontRegular } from '../../styles/templates/typography';
+import { BASE_FONT_REGULAR } from '../../styles/typography';
 
 const FormInfoItemsList = styled.ul`
   list-style: none;
-  ${baseFontRegular}
+  padding: 0;
+  ${BASE_FONT_REGULAR}
 `;
 
 export default FormInfoItemsList;

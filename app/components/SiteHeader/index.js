@@ -4,16 +4,17 @@ import Header from './Header';
 import Wrapper from './Wrapper';
 
 import Brand from '../Brand';
-import Widgets from '../Widgets';
-import SiteNavigationBar from '../../containers/SiteNavigationBar';
+import HeaderMenu from '../HeaderMenu';
+import { theme } from '../../styles/theme';
+
+const { backgroundColor } = theme.siteHeader;
 
 const SiteHeader = () => (
-  <Header role="banner">
-    <Wrapper>
+  <Header backgroundColor={backgroundColor}>
+    <Wrapper borderColor={backgroundColor}>
       <Brand />
-      <Widgets />
+      <HeaderMenu />
     </Wrapper>
-    <SiteNavigationBar />
   </Header>
 );
 

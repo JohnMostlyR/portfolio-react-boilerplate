@@ -1,9 +1,13 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledA = styled.a`
-  color: #465a65;
-  font-size: 1.4rem;
+  color: ${({ color }) => color || 'inherit'};
   text-decoration: none;
 `;
+
+StyledA.propTypes = {
+  color: PropTypes.string,
+};
 
 export default StyledA;

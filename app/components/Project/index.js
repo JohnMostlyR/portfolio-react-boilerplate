@@ -5,25 +5,27 @@ import Article from './Article';
 import ProjectLinksList from './ProjectLinksList';
 import ProjectBody from './ProjectBody';
 import ProjectHeader from './ProjectHeader';
-import ProjectTitle from './ProjectTitle';
-import ProjectDetailsBody from './ProjectDetailsBody';
 
 import MediaAsset from '../MediaAsset';
+import H3 from '../H3';
+import P from '../P';
 
-const Project = (props) => (
-  <Article>
-    <MediaAsset imageSource={props.thumbnailUrl} isOdd={props.isOdd} />
-    <ProjectBody>
-      <div>
-        <ProjectHeader>
-          <ProjectTitle>{props.title}</ProjectTitle>
-        </ProjectHeader>
-      </div>
-      <ProjectDetailsBody>{props.detailsBodyText}</ProjectDetailsBody>
-    </ProjectBody>
-    <ProjectLinksList links={props.links} hasFocus={props.hasFocus} />
-  </Article>
-);
+function Project(props) {
+  return (
+    <Article>
+      <MediaAsset imageSource={props.thumbnailUrl} isOdd={props.isOdd} />
+      <ProjectBody>
+        <div>
+          <ProjectHeader>
+            <H3>{props.title}</H3>
+          </ProjectHeader>
+        </div>
+        <P>{props.detailsBodyText}</P>
+      </ProjectBody>
+      <ProjectLinksList links={props.links} hasFocus={props.hasFocus} />
+    </Article>
+  );
+}
 
 Project.propTypes = {
   detailsBodyText: PropTypes.string,

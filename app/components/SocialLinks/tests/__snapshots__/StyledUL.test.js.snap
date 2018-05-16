@@ -1,7 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StyledUL Should render and match the snapshot 1`] = `
+exports[`<StyledUL> Should render and match the snapshot 1`] = `
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c0 li:not(:first-child) {
+  margin-left: 1rem;
+}
+
 <ul
-  className="StyledUL__StyledUL-hGhxpW feEjHg"
+  className="c0"
 />
 `;
