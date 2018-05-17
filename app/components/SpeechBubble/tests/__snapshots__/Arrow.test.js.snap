@@ -2,7 +2,10 @@
 
 exports[`<Arrow /> should adopt the "height" prop 1`] = `
 .c0 {
-  float: right;
+  display: inline-block;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   height: 1px;
   margin: -1px 0 0 0 !important;
   -webkit-transform: rotateY(180deg);
@@ -35,7 +38,10 @@ exports[`<Arrow /> should adopt the "height" prop 1`] = `
 
 exports[`<Arrow /> should adopt the "isLeftHanded" prop 1`] = `
 .c0 {
-  float: right;
+  display: inline-block;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   height: 1px;
   margin: -1px 0 0 0 !important;
   -webkit-transform: rotateY(180deg);
@@ -67,7 +73,10 @@ exports[`<Arrow /> should adopt the "isLeftHanded" prop 1`] = `
 
 exports[`<Arrow /> should adopt the "showBreakpoint" prop 1`] = `
 .c0 {
-  float: right;
+  display: inline-block;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   height: 1px;
   margin: -1px 0 0 0 !important;
   -webkit-transform: rotateY(180deg);
@@ -99,7 +108,10 @@ exports[`<Arrow /> should adopt the "showBreakpoint" prop 1`] = `
 
 exports[`<Arrow /> should render and match the snapshot 1`] = `
 .c0 {
-  float: right;
+  display: inline-block;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   height: 1px;
   margin: -1px 0 0 0 !important;
   -webkit-transform: rotateY(180deg);

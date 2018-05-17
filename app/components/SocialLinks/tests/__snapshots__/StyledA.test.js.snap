@@ -7,6 +7,19 @@ exports[`<StyledA> Should render and match the snapshot 1`] = `
   text-decoration: none;
 }
 
+@supports (display:-webkit-box) or (display:-webkit-flex) or (display:-ms-flexbox) or (display:flex) {
+  .c0 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 <a
   className="c0"
 />

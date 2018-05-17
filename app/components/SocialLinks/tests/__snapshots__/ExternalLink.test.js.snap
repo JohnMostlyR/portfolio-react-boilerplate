@@ -7,13 +7,10 @@ exports[`<ExternalLink> should render and match the snapshot 1`] = `
   rel="noopener noreferrer"
   target="_blank"
 >
-  <span />
-  <span
-    aria-hidden="false"
-    hidden={true}
-  >
+  <IconExternalLink />
+  <Description__Description>
     ExternalLink to
-  </span>
+  </Description__Description>
 </StyledA__StyledA>
 `;
 
@@ -25,12 +22,9 @@ exports[`<ExternalLink> with a given "faIcon" property should render with a "cod
   target="_blank"
 >
   <IconCodepen />
-  <span
-    aria-hidden="false"
-    hidden={true}
-  >
+  <Description__Description>
     ExternalLink to
-  </span>
+  </Description__Description>
 </StyledA__StyledA>
 `;
 
@@ -42,12 +36,9 @@ exports[`<ExternalLink> with a given "faIcon" property should render with a "fre
   target="_blank"
 >
   <IconFreeCodeCamp />
-  <span
-    aria-hidden="false"
-    hidden={true}
-  >
+  <Description__Description>
     ExternalLink to
-  </span>
+  </Description__Description>
 </StyledA__StyledA>
 `;
 
@@ -59,12 +50,9 @@ exports[`<ExternalLink> with a given "faIcon" property should render with a "git
   target="_blank"
 >
   <IconGithub />
-  <span
-    aria-hidden="false"
-    hidden={true}
-  >
+  <Description__Description>
     ExternalLink to
-  </span>
+  </Description__Description>
 </StyledA__StyledA>
 `;
 
@@ -76,12 +64,9 @@ exports[`<ExternalLink> with a given "faIcon" property should render with a "lin
   target="_blank"
 >
   <IconLinkedin />
-  <span
-    aria-hidden="false"
-    hidden={true}
-  >
+  <Description__Description>
     ExternalLink to
-  </span>
+  </Description__Description>
 </StyledA__StyledA>
 `;
 
@@ -93,11 +78,8 @@ exports[`<ExternalLink> with a given "faIcon" property should render with a "lin
   target="_blank"
 >
   <IconLinkedin />
-  <span
-    aria-hidden="false"
-    hidden={true}
-  >
+  <Description__Description>
     ExternalLink to
-  </span>
+  </Description__Description>
 </StyledA__StyledA>
 `;

@@ -2,6 +2,7 @@
 
 exports[`<H2 /> Should render and match the snapshot 1`] = `
 .c0 {
+  display: inline-block;
   margin: 0;
   padding: 1.2em;
   color: unset;

@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import ExternalLink, { VALID_ICONS } from '../ExternalLink';
+import Description from '../Description';
 
 describe('<ExternalLink>', () => {
   it('should render and match the snapshot', () => {
@@ -17,9 +18,9 @@ describe('<ExternalLink>', () => {
   });
 
   it('should adopt the "description" property', () => {
-    const DESCRIPTION = 'Follow me';
-    const wrapper = shallow(<ExternalLink description={DESCRIPTION} />);
-    expect(wrapper.find('span[hidden]').childAt(0).text()).toBe(DESCRIPTION);
+    const VALUE = 'Follow me';
+    const wrapper = shallow(<ExternalLink description={VALUE} />);
+    expect(wrapper.find(Description).childAt(0).text()).toBe(VALUE);
   });
 
   it('should adopt the "color" property', () => {

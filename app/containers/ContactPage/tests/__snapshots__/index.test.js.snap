@@ -116,7 +116,7 @@ ShallowWrapper {
                     >
                               <div>
                                         <div>
-                                                  <FormInfo__FormInfo>
+                                                  <div>
                                                             <FormInfoItemsList__FormInfoItemsList>
                                                                       <FormInfoItemsListItem>
                                                                                 <FormattedMessage
@@ -126,7 +126,7 @@ ShallowWrapper {
                                                                                 />
                                                                       </FormInfoItemsListItem>
                                                             </FormInfoItemsList__FormInfoItemsList>
-                                                  </FormInfo__FormInfo>
+                                                  </div>
                                                   <div>
                                                             <FormInput
                                                                       helperText="Please provide a subject for your message."
@@ -249,7 +249,7 @@ ShallowWrapper {
 >
             <div>
                         <div>
-                                    <FormInfo__FormInfo>
+                                    <div>
                                                 <FormInfoItemsList__FormInfoItemsList>
                                                             <FormInfoItemsListItem>
                                                                         <FormattedMessage
@@ -259,7 +259,7 @@ ShallowWrapper {
                                                                         />
                                                             </FormInfoItemsListItem>
                                                 </FormInfoItemsList__FormInfoItemsList>
-                                    </FormInfo__FormInfo>
+                                    </div>
                                     <div>
                                                 <FormInput
                                                             helperText="Please provide a subject for your message."
@@ -353,7 +353,7 @@ ShallowWrapper {
                         >
                                     <div>
                                                 <div>
-                                                            <FormInfo__FormInfo>
+                                                            <div>
                                                                         <FormInfoItemsList__FormInfoItemsList>
                                                                                     <FormInfoItemsListItem>
                                                                                                 <FormattedMessage
@@ -363,7 +363,7 @@ ShallowWrapper {
                                                                                                 />
                                                                                     </FormInfoItemsListItem>
                                                                         </FormInfoItemsList__FormInfoItemsList>
-                                                            </FormInfo__FormInfo>
+                                                            </div>
                                                             <div>
                                                                         <FormInput
                                                                                     helperText="Please provide a subject for your message."
@@ -486,7 +486,7 @@ ShallowWrapper {
 >
               <div>
                             <div>
-                                          <FormInfo__FormInfo>
+                                          <div>
                                                         <FormInfoItemsList__FormInfoItemsList>
                                                                       <FormInfoItemsListItem>
                                                                                     <FormattedMessage
@@ -496,7 +496,7 @@ ShallowWrapper {
                                                                                     />
                                                                       </FormInfoItemsListItem>
                                                         </FormInfoItemsList__FormInfoItemsList>
-                                          </FormInfo__FormInfo>
+                                          </div>
                                           <div>
                                                         <FormInput
                                                                       helperText="Please provide a subject for your message."

@@ -265,7 +265,7 @@ exports[`<AboutPage /> should show an error message when content could not be lo
                     showArrowBreakpoint="750px"
                   >
                     <div
-                      className="Container__Container-duRnZL dKXLtT"
+                      className="Container__Container-duRnZL hevIvZ"
                     >
                       <Bubble__Bubble
                         backgroundColor="#465a65"
@@ -274,7 +274,7 @@ exports[`<AboutPage /> should show an error message when content could not be lo
                         showArrowBreakpoint="750px"
                       >
                         <div
-                          className="Bubble__Bubble-kfMqWC kPGjGI"
+                          className="Bubble__Bubble-kfMqWC ksvwdo"
                         >
                           <Content__Content>
                             <div
@@ -326,9 +326,10 @@ exports[`<AboutPage /> should show an error message when content could not be lo
                         showBreakpoint="750px"
                       >
                         <svg
-                          className="Arrow__Arrow-fPzAjH bTVIwe"
+                          className="Arrow__Arrow-fPzAjH bwGcyK"
+                          focusable="false"
                           height="4vh"
-                          preserveAspectRatio="xMinYMid"
+                          preserveAspectRatio="xMinYMid meet"
                           viewBox="0 0 848 640"
                           xmlns="http://www.w3.org/2000/svg"
                         >
@@ -434,14 +435,14 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
           animate={true}
         >
           <div
-            className="Wrapper__Wrapper-fEDTQp chHuHX"
+            className="Wrapper__Wrapper-fEDTQp jgxDLY"
           >
             <PageHeader
               isLeftHanded={true}
             >
               <StyledHeader__StyledHeader>
                 <header
-                  className="StyledHeader__StyledHeader-kHWYFT farUsi"
+                  className="StyledHeader__StyledHeader-kHWYFT brSWxw"
                 >
                   <SpeechBubble
                     arrowHeight="4vh"
@@ -455,7 +456,7 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
                       showArrowBreakpoint="750px"
                     >
                       <div
-                        className="Container__Container-duRnZL dIZEaU"
+                        className="Container__Container-duRnZL gAUglN"
                       >
                         <Bubble__Bubble
                           backgroundColor="#465a65"
@@ -463,13 +464,13 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
                           showArrowBreakpoint="750px"
                         >
                           <div
-                            className="Bubble__Bubble-kfMqWC fSOQhH"
+                            className="Bubble__Bubble-kfMqWC fYyIab"
                           >
                             <H2__H2
                               color="#aedd2c"
                             >
                               <h2
-                                className="H2__H2-eTwhUa SaKVw"
+                                className="H2__H2-eTwhUa iVVlVj"
                                 color="#aedd2c"
                               >
                                 <FormattedMessage
@@ -491,9 +492,10 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
                           showBreakpoint="750px"
                         >
                           <svg
-                            className="Arrow__Arrow-fPzAjH hoOJhg"
+                            className="Arrow__Arrow-fPzAjH jaPxIQ"
+                            focusable="false"
                             height="4vh"
-                            preserveAspectRatio="xMinYMid"
+                            preserveAspectRatio="xMinYMid meet"
                             viewBox="0 0 848 640"
                             xmlns="http://www.w3.org/2000/svg"
                           >
@@ -520,7 +522,7 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
             </PageHeader>
             <ContentWrapper__ContentWrapper>
               <div
-                className="ContentWrapper__ContentWrapper-lSlQT dgZnYv"
+                className="ContentWrapper__ContentWrapper-lSlQT busshj"
               >
                 <SpeechBubble
                   arrowHeight="9vh"
@@ -538,7 +540,7 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
                     showArrowBreakpoint="750px"
                   >
                     <div
-                      className="Container__Container-duRnZL gXiNEE"
+                      className="Container__Container-duRnZL czakBm"
                     >
                       <Bubble__Bubble
                         backgroundColor="#aedd2c"
@@ -548,7 +550,7 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
                         showArrowBreakpoint="750px"
                       >
                         <div
-                          className="Bubble__Bubble-kfMqWC euOpCO"
+                          className="Bubble__Bubble-kfMqWC kqCXAa"
                           color="#000"
                         >
                           &lt;p&gt;Test Content&lt;br&gt;New Line&lt;/p&gt;
@@ -561,9 +563,10 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
                         showBreakpoint="750px"
                       >
                         <svg
-                          className="Arrow__Arrow-fPzAjH fKFQGI"
+                          className="Arrow__Arrow-fPzAjH bLlnaE"
+                          focusable="false"
                           height="9vh"
-                          preserveAspectRatio="xMinYMid"
+                          preserveAspectRatio="xMinYMid meet"
                           viewBox="0 0 848 640"
                           xmlns="http://www.w3.org/2000/svg"
                         >

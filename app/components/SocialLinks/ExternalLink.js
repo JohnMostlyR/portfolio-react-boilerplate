@@ -2,11 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import StyledA from './StyledA';
+import Description from './Description';
 
 import IconCodepen from '../../components/IconCodepen';
 import IconFreeCodeCamp from '../../components/IconFreeCodeCamp';
 import IconGithub from '../../components/IconGithub';
 import IconLinkedin from '../../components/IconLinkedin';
+import IconExternalLink from '../../components/IconExternalLink';
 
 export const VALID_ICONS = [
   'free-code-camp',
@@ -34,13 +36,13 @@ function ExternalLink({ color, description, href, faIcon }) {
       renderThis = <IconCodepen />;
       break;
     default:
-      renderThis = <span />;
+      renderThis = <IconExternalLink />;
   }
 
   return (
     <StyledA href={href} target="_blank" rel="noopener noreferrer" color={color}>
       {renderThis}
-      <span hidden aria-hidden="false">{description}</span>
+      <Description>{description}</Description>
     </StyledA>
   );
 }

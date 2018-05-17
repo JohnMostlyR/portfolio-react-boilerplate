@@ -13,39 +13,45 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
       Site navigation
     </span>
   </h2>
-  <button
-    aria-expanded={false}
-    className="Button__StyledButton-jJDkJK ioWhwd"
-    onClick={[Function]}
-    onKeyDown={[Function]}
+  <span
+    className="Navigation__ButtonBlock-iRVxLc bimdhQ"
   >
-    <svg
-      className="Button__SVGIcon-gssMt hXaaUK"
-      focusable="false"
-      viewBox="0 0 100 100"
-      xmlns="http://www.w3.org/2000/svg"
+    <button
+      aria-expanded={false}
+      className="Button__StyledButton-jJDkJK ioWhwd"
+      onClick={[Function]}
+      onKeyDown={[Function]}
     >
-      <path
-        className="Button__SVGPathOne-dHFIeU inCbZZ Button__SVGPath-iyhhJy bxCsOF"
-        d="M5 13h90v14H5z"
-      />
-      <path
-        className="Button__SVGPathTwo-icbvyX iHOhEn Button__SVGPath-iyhhJy bxCsOF"
-        d="M5 43h90v14H5z"
-      />
-      <path
-        className="Button__SVGPathThree-jYZjTT dfvwlN Button__SVGPath-iyhhJy bxCsOF"
-        d="M5 73h90v14H5z"
-      />
-    </svg>
-    <span
-      className="Button__Label-eTZejp dShXxF"
-    >
-      MENU
-    </span>
-  </button>
+      <svg
+        className="Button__SVGIcon-gssMt dzZZcq"
+        focusable="false"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="Button__SVGPathOne-dHFIeU gpkZwW Button__SVGPath-iyhhJy bxCsOF"
+          d="M5 13h141v14H5z"
+          transform="rotate(0) translate(0)"
+        />
+        <path
+          className="Button__SVGPathTwo-icbvyX iHOhEn Button__SVGPath-iyhhJy bxCsOF"
+          d="M5 43h90v14H5z"
+        />
+        <path
+          className="Button__SVGPathThree-jYZjTT eJBgnp Button__SVGPath-iyhhJy bxCsOF"
+          d="M5 73h141v14H5z"
+          transform="rotate(0) translate(0)"
+        />
+      </svg>
+      <span
+        className="Button__Label-eTZejp dShXxF"
+      >
+        MENU
+      </span>
+    </button>
+  </span>
   <ul
-    className="List__List-bdFvnP dceYDl"
+    className="List__List-bdFvnP emqgX"
     hidden={true}
     onKeyDown={[Function]}
   >
@@ -54,7 +60,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
     >
       <a
         aria-current={false}
-        className="Link__Link-fWcsEQ hJcjny"
+        className="Link__Link-fWcsEQ bwCENz"
         data-hasfocus="false"
         href="/introduction"
         onClick={[Function]}
@@ -85,7 +91,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
     >
       <a
         aria-current={false}
-        className="Link__Link-fWcsEQ hJcjny"
+        className="Link__Link-fWcsEQ bwCENz"
         data-hasfocus="false"
         href="/about"
         onClick={[Function]}
@@ -116,7 +122,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
     >
       <a
         aria-current={false}
-        className="Link__Link-fWcsEQ hJcjny"
+        className="Link__Link-fWcsEQ bwCENz"
         data-hasfocus="false"
         href="/skills"
         onClick={[Function]}
@@ -147,7 +153,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
     >
       <a
         aria-current={false}
-        className="Link__Link-fWcsEQ hJcjny"
+        className="Link__Link-fWcsEQ bwCENz"
         data-hasfocus="false"
         href="/projects"
         onClick={[Function]}
@@ -178,7 +184,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
     >
       <a
         aria-current={false}
-        className="Link__Link-fWcsEQ hJcjny"
+        className="Link__Link-fWcsEQ bwCENz"
         data-hasfocus="false"
         href="/contact"
         onClick={[Function]}

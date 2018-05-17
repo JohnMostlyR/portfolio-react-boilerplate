@@ -2,7 +2,13 @@
 
 exports[`<Container /> should adopt the "maxWidth" prop 1`] = `
 .c0 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
   z-index: 10;
   -webkit-filter: none;
   filter: none;
@@ -41,7 +47,13 @@ exports[`<Container /> should adopt the "maxWidth" prop 1`] = `
 
 exports[`<Container /> should adopt the "showArrowBreakpoint" prop 1`] = `
 .c0 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
   z-index: 10;
   -webkit-filter: none;
   filter: none;
@@ -80,7 +92,13 @@ exports[`<Container /> should adopt the "showArrowBreakpoint" prop 1`] = `
 
 exports[`<Container /> should render and match the snapshot 1`] = `
 .c0 {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
   z-index: 10;
   -webkit-filter: none;
   filter: none;

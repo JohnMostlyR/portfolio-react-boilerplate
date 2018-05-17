@@ -2,6 +2,7 @@
 
 exports[`<Bubble /> should adopt the "backgroundColor" prop 1`] = `
 .c0 {
+  display: inline-block;
   background-color: white;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;
@@ -25,6 +26,7 @@ exports[`<Bubble /> should adopt the "backgroundColor" prop 1`] = `
 
 exports[`<Bubble /> should adopt the "isLeftHanded" prop 1`] = `
 .c0 {
+  display: inline-block;
   background-color: inherit;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;
@@ -48,6 +50,7 @@ exports[`<Bubble /> should adopt the "isLeftHanded" prop 1`] = `
 
 exports[`<Bubble /> should adopt the "padding" prop 1`] = `
 .c0 {
+  display: inline-block;
   background-color: inherit;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;
@@ -71,6 +74,7 @@ exports[`<Bubble /> should adopt the "padding" prop 1`] = `
 
 exports[`<Bubble /> should adopt the "showArrowBreakpoint" prop 1`] = `
 .c0 {
+  display: inline-block;
   background-color: inherit;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;
@@ -94,6 +98,7 @@ exports[`<Bubble /> should adopt the "showArrowBreakpoint" prop 1`] = `
 
 exports[`<Bubble /> should render and match the snapshot 1`] = `
 .c0 {
+  display: inline-block;
   background-color: inherit;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;

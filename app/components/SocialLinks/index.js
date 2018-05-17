@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
 import { FormattedMessage } from 'react-intl';
+import styled from 'styled-components';
 
 import ExternalLink from './ExternalLink';
 import StyledUL from './StyledUL';
@@ -30,13 +31,14 @@ export function playAnimation(links) {
   }, START_DELAY, links, INDEX);
 }
 
-class SocialLinks extends React.PureComponent {
-  componentDidMount() {
-    if (this.list.children.length) {
-      playAnimation(this.list.children);
-    }
+const Nav = styled.nav`
+  @supports (display: flex) {
+    align-items: center;
+    display: flex;
   }
+`;
 
+class SocialLinks extends React.PureComponent {
   render() {
     const externalLinks = [
       {
@@ -62,7 +64,7 @@ class SocialLinks extends React.PureComponent {
     ];
 
     return (
-      <nav aria-labelledby="SocialLinks-title">
+      <Nav aria-labelledby="SocialLinks-title">
         <FormattedMessage {...messages.header}>
           {
             (message) => <h1 id="SocialLinks-title" hidden aria-hidden="false">{message}</h1>
@@ -96,7 +98,7 @@ class SocialLinks extends React.PureComponent {
           }
         </StyledUL>
         <ReactTooltip />
-      </nav>
+      </Nav>
     );
   }
 }

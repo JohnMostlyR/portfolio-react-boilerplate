@@ -24,6 +24,10 @@ const Container = styled.div`
     background-image: linear-gradient(45deg, transparent 15%, ${({ color }) => color || 'inherit'} 15%);
     background-position-x: 0.5rem;
   }
+
+  @media (min-width: 1280px) {
+    padding: 0.5rem 1rem 0.5rem 8rem;
+  }
 `;
 
 Container.propTypes = {

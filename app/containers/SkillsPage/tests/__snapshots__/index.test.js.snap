@@ -265,7 +265,7 @@ exports[`<SkillsPage /> should show an error message when content could not be l
                     showArrowBreakpoint="750px"
                   >
                     <div
-                      className="Container__Container-duRnZL dKXLtT"
+                      className="Container__Container-duRnZL hevIvZ"
                     >
                       <Bubble__Bubble
                         backgroundColor="#465a65"
@@ -274,7 +274,7 @@ exports[`<SkillsPage /> should show an error message when content could not be l
                         showArrowBreakpoint="750px"
                       >
                         <div
-                          className="Bubble__Bubble-kfMqWC kPGjGI"
+                          className="Bubble__Bubble-kfMqWC ksvwdo"
                         >
                           <Content__Content>
                             <div
@@ -326,9 +326,10 @@ exports[`<SkillsPage /> should show an error message when content could not be l
                         showBreakpoint="750px"
                       >
                         <svg
-                          className="Arrow__Arrow-fPzAjH bTVIwe"
+                          className="Arrow__Arrow-fPzAjH bwGcyK"
+                          focusable="false"
                           height="4vh"
-                          preserveAspectRatio="xMinYMid"
+                          preserveAspectRatio="xMinYMid meet"
                           viewBox="0 0 848 640"
                           xmlns="http://www.w3.org/2000/svg"
                         >
