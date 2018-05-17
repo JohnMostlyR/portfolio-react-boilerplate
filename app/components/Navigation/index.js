@@ -29,6 +29,11 @@ const Nav = styled.nav.attrs({
   }
 `;
 
+const ButtonBlock = styled.span`
+  display: inline-block;
+  text-align: right;
+`;
+
 class Navigation extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -154,19 +159,21 @@ class Navigation extends React.PureComponent {
         innerRef={navigationRef}
       >
         <h2 hidden aria-hidden="false"><FormattedMessage {...messages.header} /></h2>
-        <FormattedMessage {...messages.showMenuButton}>
-          {
-            (message) => (
-              <Button
-                bigScreenBreakpoint={bigScreenBreakpoint}
-                buttonRef={(el) => { this.button = el; }}
-                isExpanded={isExpanded}
-                label={message}
-                toggleMenu={toggleMenu}
-              />
-            )
-          }
-        </FormattedMessage>
+        <ButtonBlock>
+          <FormattedMessage {...messages.showMenuButton}>
+            {
+              (message) => (
+                <Button
+                  bigScreenBreakpoint={bigScreenBreakpoint}
+                  buttonRef={(el) => { this.button = el; }}
+                  isExpanded={isExpanded}
+                  label={message}
+                  toggleMenu={toggleMenu}
+                />
+              )
+            }
+          </FormattedMessage>
+        </ButtonBlock>
         <List
           bigScreenBreakpoint={bigScreenBreakpoint}
           hidden={!isExpanded}

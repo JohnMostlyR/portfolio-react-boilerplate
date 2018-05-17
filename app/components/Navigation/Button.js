@@ -38,9 +38,9 @@ const SVGIcon = styled.svg.attrs({
   viewBox: '0 0 100 100',
   focusable: 'false',
 })`
-  height: 1em;
+  height: 16px;
   position: relative;
-  width: 1em;
+  width: 16px;
   fill: currentColor;
 `;
 
@@ -52,15 +52,12 @@ const SVGPath = styled.path`
 `;
 
 const SVGPathOne = styled(SVGPath).attrs({
-  d: 'M5 13h90v14H5z',
-})`
-  transform:
-    rotate(${({ isExpanded }) => isExpanded ? '45deg' : '0'})
-    translate3d(${({ isExpanded }) => isExpanded ? '1em' : 0}, ${({ isExpanded }) => isExpanded ? '-1em' : 0}, 0);
-  transform-origin:
-    top
-    left;
-`;
+  d: 'M5 13h141v14H5z',
+  transform: ({ isExpanded }) => (
+    isExpanded
+    ? 'translate(16 -16) rotate(45 0 0)' : 'rotate(0) translate(0)'
+  ),
+})``; /* stylelint-disable-line block-no-empty */
 
 const SVGPathTwo = styled(SVGPath).attrs({
   d: 'M5 43h90v14H5z',
@@ -69,15 +66,12 @@ const SVGPathTwo = styled(SVGPath).attrs({
 `;
 
 const SVGPathThree = styled(SVGPath).attrs({
-  d: 'M5 73h90v14H5z',
-})`
-  transform:
-    rotate(${({ isExpanded }) => isExpanded ? '-45deg' : '0'})
-    translate3d(${({ isExpanded }) => isExpanded ? '1em' : 0}, ${({ isExpanded }) => isExpanded ? '1em' : 0}, 0);
-  transform-origin:
-    bottom
-    left;
-`;
+  d: 'M5 73h141v14H5z',
+  transform: ({ isExpanded }) => (
+    isExpanded
+      ? 'translate(16, 16) rotate(-45 0 100)' : 'rotate(0) translate(0)'
+  ),
+})``; /* stylelint-disable-line block-no-empty */
 
 const Label = styled.span`
   margin-left: 0.5em;

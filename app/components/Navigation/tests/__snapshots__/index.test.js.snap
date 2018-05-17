@@ -14,11 +14,13 @@ exports[`<Navigation /> should render and match the snapshot 1`] = `
       values={Object {}}
     />
   </h2>
-  <FormattedMessage
-    defaultMessage="MENU"
-    id="portfolio.nav.showMenuButton"
-    values={Object {}}
-  />
+  <Navigation__ButtonBlock>
+    <FormattedMessage
+      defaultMessage="MENU"
+      id="portfolio.nav.showMenuButton"
+      values={Object {}}
+    />
+  </Navigation__ButtonBlock>
   <List__List
     bigScreenBreakpoint={1000}
     hidden={true}

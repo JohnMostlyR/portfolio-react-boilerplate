@@ -12,7 +12,7 @@ const arrowSVG = `
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 848 640"
-    preserveAspectRatio="xMinYMid"
+    preserveAspectRatio="xMaxYMax meet"
     >
     <path stroke="${borderColor}" fill="${borderColor}" d="M423.8,215.6L321.1,0v241.3" />
     <path fill="${lighterBorderColor}" d="M0,321.7l423.8-106.1v265.5" />
@@ -46,9 +46,9 @@ const List = styled.ul.attrs({
       content: "";
       height: ${BASE_LINE_HEIGHT}rem;
       left: 0;
-      right: 0;
       top: -0.15rem;
-      transform: translateX(0.2rem) translateY(-100%);
+      transform: translateY(-100%);
+      width: 100%;
       z-index: -1;
       background-image: ${() => `url(${svgToURL(arrowSVG)})`};
       background-position: right center;
