@@ -32,9 +32,13 @@ const Label = styled.p`
   clip: rect(0 0 0 0);
 
   @media (min-width: 768px) {
-    all: unset;
     display: inline-block;
-    margin-left: 0.5em;
+    height: auto;
+    margin: 0 0 0 0.5em;
+    overflow: visible;
+    position: relative;
+    width: auto;
+    clip: initial;
     font-size: 1rem;
   }
 `;
