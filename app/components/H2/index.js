@@ -6,6 +6,7 @@ import { BASE_FONT_BOLD, MODULAR_SCALE_FACTOR } from '../../styles/typography';
 const LINE_HEIGHT = 1.2;
 
 const H2 = styled.h2`
+  display: inline-block;
   margin: 0;
   padding: ${() => `${LINE_HEIGHT}em`};
   color: ${({ color }) => color || 'unset'};

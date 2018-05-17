@@ -25,8 +25,9 @@ exports[`<Arrow /> should adopt the "height" prop 1`] = `
 
 <svg
   className="c0"
+  focusable="false"
   height="1em"
-  preserveAspectRatio="xMinYMid"
+  preserveAspectRatio="xMinYMid meet"
   viewBox="0 0 848 640"
   xmlns="http://www.w3.org/2000/svg"
 />
@@ -57,7 +58,8 @@ exports[`<Arrow /> should adopt the "isLeftHanded" prop 1`] = `
 
 <svg
   className="c0"
-  preserveAspectRatio="xMinYMid"
+  focusable="false"
+  preserveAspectRatio="xMinYMid meet"
   viewBox="0 0 848 640"
   xmlns="http://www.w3.org/2000/svg"
 />
@@ -88,7 +90,8 @@ exports[`<Arrow /> should adopt the "showBreakpoint" prop 1`] = `
 
 <svg
   className="c0"
-  preserveAspectRatio="xMinYMid"
+  focusable="false"
+  preserveAspectRatio="xMinYMid meet"
   viewBox="0 0 848 640"
   xmlns="http://www.w3.org/2000/svg"
 />
@@ -119,7 +122,8 @@ exports[`<Arrow /> should render and match the snapshot 1`] = `
 
 <svg
   className="c0"
-  preserveAspectRatio="xMinYMid"
+  focusable="false"
+  preserveAspectRatio="xMinYMid meet"
   viewBox="0 0 848 640"
   xmlns="http://www.w3.org/2000/svg"
 />

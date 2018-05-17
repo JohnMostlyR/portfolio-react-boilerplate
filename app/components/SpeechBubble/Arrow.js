@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 const Arrow = styled.svg.attrs({
   xmlns: 'http://www.w3.org/2000/svg',
   viewBox: '0 0 848 640',
-  preserveAspectRatio: 'xMinYMid',
+  preserveAspectRatio: 'xMinYMid meet',
+  focusable: 'false',
 })`
-  float: ${({ isLeftHanded }) => isLeftHanded ? 'left' : 'right'};
+  display: inline-block;
+  align-self: ${({ isLeftHanded }) => isLeftHanded ? 'flex-start' : 'flex-end'};
   height: 1px;
   margin: -1px 0 0 0 !important;
   transform: rotateY(${({ isLeftHanded }) => isLeftHanded ? '0deg' : '180deg'});

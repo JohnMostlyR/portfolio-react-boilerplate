@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Bubble = styled.div`
+  display: inline-block;
   background-color: ${({ backgroundColor }) => backgroundColor || 'inherit'};
   border-radius: 0.5rem;
   box-shadow: 0 0 10px grey;

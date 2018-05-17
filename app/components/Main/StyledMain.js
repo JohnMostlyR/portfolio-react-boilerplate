@@ -27,20 +27,29 @@ const StyledMain = styled.main.attrs({
     margin-top: ${BASE_LINE_HEIGHT}em;
   }
 
+  align-self: center;
+  display: flex;
+  flex: 1 0 auto;
+  flex-flow: column nowrap;
+  max-width: 1280px;
   overflow: hidden;
   padding: 0 ${BASE_LINE_HEIGHT}rem;
-  background-attachment: fixed;
-  background-image: ${() => `url(${SVG})`};
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 100% 50%;
+  width: 100%;
 
   @supports (display: grid) {
+    align-self: unset;
     display: grid;
     grid-area: main;
     grid-template-areas: "mainContent";
     grid-template-rows: 1fr;
     justify-content: center;
+    margin: 0;
+    max-width: unset;
+    background-attachment: fixed;
+    background-image: ${() => `url(${SVG})`};
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 50%;
   }
 `;
 
