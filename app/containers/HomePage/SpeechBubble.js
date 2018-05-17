@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const SpeechBubble = styled.div`
   align-items: center;
   display: flex;
-  height: 100%;
+  width: 100%;
   filter: drop-shadow(0 0 10px grey);
   justify-content: center;
   max-width: 84vmin;

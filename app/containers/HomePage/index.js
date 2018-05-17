@@ -226,10 +226,8 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              style={{ isolation: 'isolate' }}
               viewBox="0 0 891 635"
               width="100%"
-              height="100%"
               preserveAspectRatio="xMinYMid"
             >
               <Link to={'/contact'} style={{ cursor: 'pointer' }}>

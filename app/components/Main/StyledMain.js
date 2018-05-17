@@ -45,6 +45,7 @@ const StyledMain = styled.main.attrs({
     justify-content: center;
     margin: 0;
     max-width: unset;
+    width: unset;
     background-attachment: fixed;
     background-image: ${() => `url(${SVG})`};
     background-repeat: no-repeat;
