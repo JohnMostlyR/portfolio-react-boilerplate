@@ -21,6 +21,13 @@ describe('<LanguageMenuItem />', () => {
     expect(preventDefault).toHaveBeenCalledTimes(1);
     expect(onClickHandler).toHaveBeenCalledTimes(1);
     expect(onClickHandler).toHaveBeenCalledWith('en');
+
+    jest.clearAllMocks();
+
+    renderedComponent.simulate('KeyDown', { preventDefault, keyCode: 13 });
+    expect(preventDefault).toHaveBeenCalledTimes(1);
+    expect(onClickHandler).toHaveBeenCalledTimes(1);
+    expect(onClickHandler).toHaveBeenCalledWith('en');
   });
 
   it('should adopt the "isSelected" property', () => {

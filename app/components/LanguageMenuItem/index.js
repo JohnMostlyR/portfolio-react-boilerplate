@@ -27,6 +27,13 @@ function LanguageMenuItem({ value, onClickHandler, isSelected }) {
     onClickHandler(lang);
   }
 
+  function handleKeyDown(lang, ev) {
+    if (ev.keyCode === 13) { // Enter
+      ev.preventDefault();
+      onClickHandler(lang);
+    }
+  }
+
   const labels = {
     nl: (
       <Button
@@ -37,6 +44,7 @@ function LanguageMenuItem({ value, onClickHandler, isSelected }) {
         lang="nl"
         data-hasfocus="false"
         onClick={(el) => handleClick('nl', el)}
+        onKeyDown={(el) => handleKeyDown('nl', el)}
       >
         <IconNL isSelected={isSelected} /><Label isSelected={isSelected}>Nederlands</Label>
       </Button>
@@ -50,6 +58,7 @@ function LanguageMenuItem({ value, onClickHandler, isSelected }) {
         lang="en"
         data-hasfocus="false"
         onClick={(el) => handleClick('en', el)}
+        onKeyDown={(el) => handleKeyDown('en', el)}
       >
         <IconEN isSelected={isSelected} /><Label isSelected={isSelected}>English</Label>
       </Button>

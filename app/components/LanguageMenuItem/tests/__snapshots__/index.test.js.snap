@@ -7,6 +7,7 @@ exports[`<LanguageMenuItem /> should adopt the "isSelected" property 1`] = `
   disabled={true}
   lang="nl"
   onClick={[Function]}
+  onKeyDown={[Function]}
   role="menuitemradio"
   tabIndex="-1"
 >
@@ -28,6 +29,7 @@ exports[`<LanguageMenuItem /> should render and match the snapshot 1`] = `
   disabled={false}
   lang="nl"
   onClick={[Function]}
+  onKeyDown={[Function]}
   role="menuitemradio"
   tabIndex="-1"
 >
