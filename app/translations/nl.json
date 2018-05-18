@@ -12,7 +12,7 @@
   "portfolio.components.SendButton.error": "Niet gelukt. Probeer het alstublieft nogmaals",
   "portfolio.components.SendButton.idle": "Verzend",
   "portfolio.components.SendButton.sending": "Verzenden...",
-  "portfolio.components.SendButton.success": "Verzonden! Ik reageren zo spoedig mogelijk.",
+  "portfolio.components.SendButton.success": "Verzonden! Ik reageer zo spoedig mogelijk.",
   "portfolio.containers.ContactPage.emailError": "U dient uw email adres in te vullen.",
   "portfolio.containers.ContactPage.emailLabel": "Uw email adres",
   "portfolio.containers.ContactPage.emailPlaceholder": "(b.v. mijn@email.com)",
