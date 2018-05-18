@@ -15,6 +15,7 @@ import { createStructuredSelector } from 'reselect';
 import messages from './messages';
 import Wrapper from './Wrapper';
 import {
+  makeSelectLocation,
   makeSelectSiteNavigationIsAtScreenTop,
   makeSelectSiteNavigationTopPosition,
   makeSelectSiteNavigationOffsetHeight,
@@ -144,6 +145,7 @@ export function mapDispatchToProps(dispatch) {
 }
 
 const mapStateToProps = createStructuredSelector({
+  location: makeSelectLocation(),
   siteNavigationTopPosition: makeSelectSiteNavigationTopPosition(),
   siteNavigationIsAtScreenTop: makeSelectSiteNavigationIsAtScreenTop(),
   siteNavigationOffsetHeight: makeSelectSiteNavigationOffsetHeight(),
