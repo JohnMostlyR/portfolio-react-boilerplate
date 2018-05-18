@@ -86,6 +86,7 @@ function Button({ bigScreenBreakpoint, isExpanded, label, toggleMenu, buttonRef 
       case 13:  // Enter
       case 32:  // Space
       case 40:  // Arrow Down
+        evt.stopPropagation();
         evt.preventDefault();
         toggleMenu();
         break;
@@ -94,12 +95,18 @@ function Button({ bigScreenBreakpoint, isExpanded, label, toggleMenu, buttonRef 
     }
   }
 
+  function handleClick(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+    toggleMenu();
+  }
+
   return (
     <StyledButton
       aria-expanded={isExpanded}
       bigScreenBreakpoint={bigScreenBreakpoint}
       innerRef={buttonRef}
-      onClick={toggleMenu}
+      onClick={handleClick}
       onKeyDown={handleKeyDown}
     >
       <SVGIcon>

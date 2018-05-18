@@ -29,7 +29,9 @@ class SiteNavigation extends React.PureComponent {
     };
 
     this.siteNavigation = React.createRef();
+    this.closeMenu = this.closeMenu.bind(this);
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.handleOutsideClickEvent = this.handleOutsideClickEvent.bind(this);
   }
 
   componentDidMount() {
@@ -37,6 +39,7 @@ class SiteNavigation extends React.PureComponent {
     const myOffsetHeight = (this.siteNavigation) ? this.siteNavigation.offsetHeight : 0;
     this.props.setTopPosition(myTopPosition);
     this.props.setOffsetHeight(myOffsetHeight);
+    window.addEventListener('click', this.handleOutsideClickEvent);
   }
 
   componentDidUpdate(prevProps) {
@@ -52,6 +55,17 @@ class SiteNavigation extends React.PureComponent {
   componentWillUnmount() {
     this.props.setTopPosition(0);
     this.props.setOffsetHeight(0);
+    window.removeEventListener('click', this.handleOutsideClickEvent);
+  }
+
+  handleOutsideClickEvent() {
+    this.closeMenu();
+  }
+
+  closeMenu() {
+    this.setState({
+      isExpanded: false,
+    });
   }
 
   toggleMenu() {

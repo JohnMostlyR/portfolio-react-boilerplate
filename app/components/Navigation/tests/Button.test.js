@@ -51,6 +51,7 @@ describe('<Button />', () => {
   });
 
   describe('The "toggleMenu" property', () => {
+    const stopPropagation = jest.fn();
     const preventDefault = jest.fn();
     const toggleMenu = jest.fn();
     let renderedComponent = null;
@@ -65,39 +66,75 @@ describe('<Button />', () => {
     });
 
     afterEach(() => {
+      stopPropagation.mockClear();
       preventDefault.mockClear();
       toggleMenu.mockClear();
     });
 
     it('should get called on a click event', () => {
-      renderedComponent.simulate('click');
+      renderedComponent.simulate(
+        'click',
+        {
+          stopPropagation,
+          preventDefault,
+        });
+      expect(stopPropagation).toHaveBeenCalledTimes(1);
+      expect(preventDefault).toHaveBeenCalledTimes(1);
       expect(toggleMenu).toHaveBeenCalledTimes(1);
     });
 
     it('should get called when the "Enter" key is pressed', () => {
       const KEY_CODE = 13;
-      renderedComponent.simulate('KeyDown', { preventDefault, keyCode: KEY_CODE });
+      renderedComponent.simulate(
+        'KeyDown',
+        {
+          stopPropagation,
+          preventDefault,
+          keyCode: KEY_CODE,
+        });
+      expect(stopPropagation).toHaveBeenCalledTimes(1);
       expect(preventDefault).toHaveBeenCalledTimes(1);
       expect(toggleMenu).toHaveBeenCalledTimes(1);
     });
 
     it('should get called when the "Space" key is pressed', () => {
       const KEY_CODE = 32;
-      renderedComponent.simulate('KeyDown', { preventDefault, keyCode: KEY_CODE });
+      renderedComponent.simulate(
+        'KeyDown',
+        {
+          stopPropagation,
+          preventDefault,
+          keyCode: KEY_CODE,
+        });
+      expect(stopPropagation).toHaveBeenCalledTimes(1);
       expect(preventDefault).toHaveBeenCalledTimes(1);
       expect(toggleMenu).toHaveBeenCalledTimes(1);
     });
 
     it('should get called when the "Arrow Down" key is pressed', () => {
       const KEY_CODE = 40;
-      renderedComponent.simulate('KeyDown', { preventDefault, keyCode: KEY_CODE });
+      renderedComponent.simulate(
+        'KeyDown',
+        {
+          stopPropagation,
+          preventDefault,
+          keyCode: KEY_CODE,
+        });
+      expect(stopPropagation).toHaveBeenCalledTimes(1);
       expect(preventDefault).toHaveBeenCalledTimes(1);
       expect(toggleMenu).toHaveBeenCalledTimes(1);
     });
 
     it('should NOT get called when any other key is pressed', () => {
       const KEY_CODE = 0;
-      renderedComponent.simulate('KeyDown', { preventDefault, keyCode: KEY_CODE });
+      renderedComponent.simulate(
+        'KeyDown',
+        {
+          stopPropagation,
+          preventDefault,
+          keyCode: KEY_CODE,
+        });
+      expect(stopPropagation).toHaveBeenCalledTimes(0);
       expect(preventDefault).toHaveBeenCalledTimes(0);
       expect(toggleMenu).toHaveBeenCalledTimes(0);
     });
