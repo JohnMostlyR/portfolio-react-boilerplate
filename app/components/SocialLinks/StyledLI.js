@@ -6,6 +6,12 @@ const StyledLI = styled.li`
   &:hover {
     transform: scale(1.5);
   }
+
+  @media (min-width: 1280px) {
+    &:hover {
+      transform: none;
+    }
+  }
 `;
 
 export default StyledLI;
