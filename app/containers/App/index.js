@@ -129,8 +129,6 @@ App.propTypes = {
   location: PropTypes.object,
   setSiteWidth: PropTypes.func,
   siteNavigationTopPosition: PropTypes.number,
-  // siteNavigationOffsetHeight: PropTypes.number,
-  // siteNavigationIsAtScreenTop: PropTypes.bool,
   setSiteNavigationIsAtScreenTop: PropTypes.func.isRequired,
 };
 
