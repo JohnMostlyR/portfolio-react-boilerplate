@@ -14,6 +14,10 @@ import styled from 'styled-components';
 import SVGIcon from '../SVGIcon';
 
 const StyledButton = styled.button`
+  &:hover {
+    cursor: pointer;
+  }
+
   @supports (display: flex) {
     align-items: center;
     display: flex;
