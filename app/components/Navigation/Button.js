@@ -7,7 +7,9 @@ import { BASE_FONT_REGULAR, BASE_LINE_HEIGHT } from '../../styles/typography';
 
 const { backgroundColor, color } = theme.site.navigation.link;
 
-const StyledButton = styled.button`
+const StyledButton = styled.button.attrs({
+  type: 'button',
+})`
   display: inline-block;
   margin-left: auto;
   background-color: ${backgroundColor};
