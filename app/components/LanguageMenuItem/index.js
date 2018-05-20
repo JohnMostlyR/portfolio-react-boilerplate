@@ -14,7 +14,9 @@ import Label from './Label';
 
 export const AVAILABLE_ICONS = ['en', 'nl'];
 
-const Button = styled.button`
+const Button = styled.button.attrs({
+  type: 'button',
+})`
   align-items: center;
   display: flex;
   padding: 1rem;

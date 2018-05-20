@@ -13,7 +13,9 @@ import styled from 'styled-components';
 
 import SVGIcon from '../SVGIcon';
 
-const StyledButton = styled.button`
+const StyledButton = styled.button.attrs({
+  type: 'button',
+})`
   &:hover {
     cursor: pointer;
   }
