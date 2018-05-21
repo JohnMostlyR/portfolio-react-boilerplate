@@ -14,7 +14,7 @@ import {
 const initialState = fromJS({
   loading: false,
   error: {},
-  sendStatus: 'IDLE',
+  sendStatus: 'idle',
   field: {
     subject: '',
     message: '',

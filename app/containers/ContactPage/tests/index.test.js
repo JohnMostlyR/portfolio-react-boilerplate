@@ -1,16 +1,18 @@
 import React from 'react';
+import toJson from 'enzyme-to-json';
 
-import { ContactPage, mapDispatchToProps, validateForm } from '../index';
+import { ContactPage, mapDispatchToProps } from '../index';
 import { sendForm } from '../actions';
 
 import { shallowWithIntl, mountWithIntl } from '../../../helpers/intl-enzyme-test-helper';
 
 describe('<ContactPage />', () => {
   it('should render and match the snapshot', () => {
-    const wrapper = shallowWithIntl(
+    const wrapper = mountWithIntl(
       <ContactPage />
     );
-    expect(wrapper).toMatchSnapshot();
+
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   describe('mapDispatchToProps', () => {
@@ -34,7 +36,7 @@ describe('<ContactPage />', () => {
     });
   });
 
-  describe('onInputChange', () => {
+  describe('handleChange', () => {
     it('should update "state" when called', () => {
       const stateAfterChange = {
         field: {
@@ -59,58 +61,8 @@ describe('<ContactPage />', () => {
       );
 
       const instance = wrapper.instance();
-      instance.onInputChange(argument);
+      instance.handleChange(argument);
       expect(wrapper.state()).toEqual(stateAfterChange);
-    });
-  });
-
-  describe('validateForm', () => {
-    let initialState = {};
-
-    beforeEach(() => {
-      initialState = {
-        field: {
-          subject: 'A subject',
-          message: 'A message',
-          name: 'A name',
-          email: 'An email',
-        },
-        fieldError: {},
-      };
-    });
-
-    it('should return "true" when there is no "subject"', () => {
-      const field = Object.assign(initialState.field, { ...field, subject: '' });
-      initialState = { ...initialState, field };
-      expect(validateForm(initialState.field, initialState.fieldError)).toBe(true);
-    });
-
-    it('should return "true" when there is no "message"', () => {
-      const field = Object.assign(initialState.field, { ...field, message: '' });
-      initialState = { ...initialState, field };
-      expect(validateForm(initialState.field, initialState.fieldError)).toBe(true);
-    });
-
-    it('should return "true" when there is no "name"', () => {
-      const field = Object.assign(initialState.field, { ...field, name: '' });
-      initialState = { ...initialState, field };
-      expect(validateForm(initialState.field, initialState.fieldError)).toBe(true);
-    });
-
-    it('should return "true" when there is no "email"', () => {
-      const field = Object.assign(initialState.field, { ...field, email: '' });
-      initialState = { ...initialState, field };
-      expect(validateForm(initialState.field, initialState.fieldError)).toBe(true);
-    });
-
-    it('should return "true" when there are any errors', () => {
-      const fieldError = Object.assign(initialState.fieldError, { ...fieldError, email: 'Error' });
-      initialState = { ...initialState, fieldError };
-      expect(validateForm(initialState.field, initialState.fieldError)).toBe(true);
-    });
-
-    it('should return "false" when all fields are correctly filled', () => {
-      expect(validateForm(initialState.field, initialState.fieldError)).toBe(false);
     });
   });
 

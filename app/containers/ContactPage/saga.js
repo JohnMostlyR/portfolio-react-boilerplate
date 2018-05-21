@@ -25,7 +25,7 @@ export function* sendForm(action) {
       yield put(sendFormError(result.error));
     }
   } catch (error) {
-    yield put(sendFormError([{ error }]));
+    yield put(sendFormError({ network: error.message }));
   }
 }
 

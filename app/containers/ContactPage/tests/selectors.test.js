@@ -19,7 +19,7 @@ describe('selectContactPageDomain', () => {
 describe('makeSelectSendStatus', () => {
   const sendStatusSelector = makeSelectSendStatus();
   it('should select the current sendStatus', () => {
-    const sendStatusState = 'SENDING';
+    const sendStatusState = 'sending';
     const mockedState = fromJS({
       contactPage: {
         sendStatus: sendStatusState,

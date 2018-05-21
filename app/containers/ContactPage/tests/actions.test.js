@@ -16,7 +16,7 @@ describe('ContactPage actions', () => {
     it('has a type of SEND_FORM', () => {
       const expected = {
         type: SEND_FORM,
-        status: 'SENDING',
+        status: 'sending',
       };
       expect(sendForm()).toEqual(expected);
     });
@@ -26,7 +26,7 @@ describe('ContactPage actions', () => {
     it('has a type of SEND_FORM_SUCCESS', () => {
       const expected = {
         type: SEND_FORM_SUCCESS,
-        status: 'SUCCESS',
+        status: 'success',
       };
       expect(sendFormSuccess()).toEqual(expected);
     });
@@ -37,7 +37,7 @@ describe('ContactPage actions', () => {
       const error = 'Me Error';
       const expected = {
         type: SEND_FORM_ERROR,
-        status: 'ERROR',
+        status: 'error',
         error,
       };
       expect(sendFormError(error)).toEqual(expected);

@@ -1,654 +1,919 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ContactPage /> should render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ContactPage
-    intl={
-        Object {
-            "defaultFormats": Object {},
-            "defaultLocale": "en",
-            "formatDate": [Function],
-            "formatHTMLMessage": [Function],
-            "formatMessage": [Function],
-            "formatNumber": [Function],
-            "formatPlural": [Function],
-            "formatRelative": [Function],
-            "formatTime": [Function],
-            "formats": Object {},
-            "formatters": Object {
-              "getDateTimeFormat": [Function],
-              "getMessageFormat": [Function],
-              "getNumberFormat": [Function],
-              "getPluralFormat": [Function],
-              "getRelativeFormat": [Function],
-            },
-            "locale": "en",
-            "messages": Object {
-              "portfolio.component.BrandLink.title": "← Back to the homepage",
-              "portfolio.component.ContentLoadingIndicator.error": "Terribly sorry, but the content cannot be loaded at this time",
-              "portfolio.component.ContentLoadingIndicator.pastDelay": "Loading content",
-              "portfolio.component.ContentLoadingIndicator.timedOut": "Loading is taking longer than expected",
-              "portfolio.components.FormInput.helperText.range": "Should be between {minLength, number} and {maxLength, number} characters. Is now: {count, number}",
-              "portfolio.components.FormInput.helperText.valid": "Thanks!",
-              "portfolio.components.LanguageMenu.buttonLabel": "Language",
-              "portfolio.components.LanguageMenu.label": "Choose a Language",
-              "portfolio.components.LanguageMenu.title": "Language menu",
-              "portfolio.components.NotFoundPage.header": "This is NotFoundPage component!",
-              "portfolio.components.SendButton.error": "Failed. Please try again",
-              "portfolio.components.SendButton.idle": "Send",
-              "portfolio.components.SendButton.sending": "Sending...",
-              "portfolio.components.SendButton.success": "Sent! I'll respond as soon as possible",
-              "portfolio.containers.ContactPage.emailError": "Your email address is required.",
-              "portfolio.containers.ContactPage.emailLabel": "Your email address",
-              "portfolio.containers.ContactPage.emailPlaceholder": "(e.g. my@email.com)",
-              "portfolio.containers.ContactPage.emailText": "Please add your email address here.",
-              "portfolio.containers.ContactPage.header": "CONTACT ME",
-              "portfolio.containers.ContactPage.nameError": "Your name is required.",
-              "portfolio.containers.ContactPage.nameLabel": "Your name",
-              "portfolio.containers.ContactPage.namePlaceholder": "(e.g. John Doo)",
-              "portfolio.containers.ContactPage.nameText": "Please add your name here.",
-              "portfolio.containers.ContactPage.requirementOne": "Please fill in all fields",
-              "portfolio.containers.ContactPage.subjectError": "A subject is required.",
-              "portfolio.containers.ContactPage.subjectLabel": "Subject",
-              "portfolio.containers.ContactPage.subjectText": "Please provide a subject for your message.",
-              "portfolio.containers.ContactPage.yourMessageError": "A message is required.",
-              "portfolio.containers.ContactPage.yourMessageLabel": "Your message",
-              "portfolio.containers.ContactPage.yourMessageText": "Please add your message here.",
-              "portfolio.nav.about": "About",
-              "portfolio.nav.contact": "Contact",
-              "portfolio.nav.header": "Site navigation",
-              "portfolio.nav.home": "Intro",
-              "portfolio.nav.projects": "Projects",
-              "portfolio.nav.showMenuButton": "MENU",
-              "portfolio.nav.skills": "Skills",
-              "portfolio.page.AboutPage.pageDescription": "A short description about me.",
-              "portfolio.page.AboutPage.pageTitle": "About me : Johan Meester's portfolio",
-              "portfolio.page.AboutPage.title": "ABOUT ME",
-              "portfolio.page.SkillsPage.pageDescription": "Some of my skills.",
-              "portfolio.page.SkillsPage.pageTitle": "My Skills : Johan Meester's portfolio",
-              "portfolio.page.SkillsPage.title": "MY SKILLS",
-              "portfolio.page.index.header.callToAction": "CONTACT ME",
-              "portfolio.page.index.header.greeting": "WELCOME",
-              "portfolio.page.index.header.intro": "I am {name}",
-              "portfolio.page.index.header.look": "HAVE A LOOK AROUND",
-              "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
-              "portfolio.page.index.title": "Introduction",
-              "portfolio.page.projects.title": "MY PROJECTS",
-              "portfolio.social_links.header": "Also find me on:",
-              "portfolio.title": "Welcome to my portfolio",
-            },
-            "now": [Function],
-            "textComponent": "span",
-          }
+<ContactPage
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {
+        "portfolio.component.BrandLink.title": "← Back to the homepage",
+        "portfolio.component.ContentLoadingIndicator.error": "Terribly sorry, but the content cannot be loaded at this time",
+        "portfolio.component.ContentLoadingIndicator.pastDelay": "Loading content",
+        "portfolio.component.ContentLoadingIndicator.timedOut": "Loading is taking longer than expected",
+        "portfolio.components.FormInput.helperText.range": "Should be between {minLength, number} and {maxLength, number} characters. Is now: {count, number}",
+        "portfolio.components.FormInput.helperText.valid": "Thanks!",
+        "portfolio.components.LanguageMenu.buttonLabel": "Language",
+        "portfolio.components.LanguageMenu.label": "Choose a Language",
+        "portfolio.components.LanguageMenu.title": "Language menu",
+        "portfolio.components.NotFoundPage.header": "This is NotFoundPage component!",
+        "portfolio.components.SendButton.error": "Failed. Please try again",
+        "portfolio.components.SendButton.idle": "Send",
+        "portfolio.components.SendButton.sending": "Sending...",
+        "portfolio.components.SendButton.success": "Sent! I'll respond as soon as possible",
+        "portfolio.containers.ContactPage.emailError": "Your email address is required.",
+        "portfolio.containers.ContactPage.emailLabel": "Your email address",
+        "portfolio.containers.ContactPage.emailPlaceholder": "(e.g. my@email.com)",
+        "portfolio.containers.ContactPage.emailText": "Please add your email address here.",
+        "portfolio.containers.ContactPage.header": "CONTACT ME",
+        "portfolio.containers.ContactPage.nameError": "Your name is required.",
+        "portfolio.containers.ContactPage.nameLabel": "Your name",
+        "portfolio.containers.ContactPage.namePlaceholder": "(e.g. John Doo)",
+        "portfolio.containers.ContactPage.nameText": "Please add your name here.",
+        "portfolio.containers.ContactPage.requirementOne": "Please fill in all fields",
+        "portfolio.containers.ContactPage.subjectError": "A subject is required.",
+        "portfolio.containers.ContactPage.subjectLabel": "Subject",
+        "portfolio.containers.ContactPage.subjectText": "Please provide a subject for your message.",
+        "portfolio.containers.ContactPage.yourMessageError": "A message is required.",
+        "portfolio.containers.ContactPage.yourMessageLabel": "Your message",
+        "portfolio.containers.ContactPage.yourMessageText": "Please add your message here.",
+        "portfolio.nav.about": "About",
+        "portfolio.nav.contact": "Contact",
+        "portfolio.nav.header": "Site navigation",
+        "portfolio.nav.home": "Intro",
+        "portfolio.nav.projects": "Projects",
+        "portfolio.nav.showMenuButton": "MENU",
+        "portfolio.nav.skills": "Skills",
+        "portfolio.page.AboutPage.pageDescription": "A short description about me.",
+        "portfolio.page.AboutPage.pageTitle": "About me : Johan Meester's portfolio",
+        "portfolio.page.AboutPage.title": "ABOUT ME",
+        "portfolio.page.SkillsPage.pageDescription": "Some of my skills.",
+        "portfolio.page.SkillsPage.pageTitle": "My Skills : Johan Meester's portfolio",
+        "portfolio.page.SkillsPage.title": "MY SKILLS",
+        "portfolio.page.index.header.callToAction": "CONTACT ME",
+        "portfolio.page.index.header.greeting": "WELCOME",
+        "portfolio.page.index.header.intro": "I am {name}",
+        "portfolio.page.index.header.look": "HAVE A LOOK AROUND",
+        "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
+        "portfolio.page.index.title": "Introduction",
+        "portfolio.page.projects.title": "MY PROJECTS",
+        "portfolio.social_links.header": "Also find me on:",
+        "portfolio.title": "Welcome to my portfolio",
+      },
+      "now": [Function],
+      "textComponent": "span",
     }
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "children": Array [
-        <HelmetWrapper
-          defer={true}
-          encodeSpecialCharacters={true}
+  }
 >
-          <title>
-                    Contact pagina
-          </title>
-          <meta
-                    content="Contact pagina van Johan Meester zijn portfolio"
-                    name="description"
-          />
-</HelmetWrapper>,
-        <PageContent
-          content={
-                    <Form__Form
-                              onSubmit={[Function]}
-                    >
-                              <div>
-                                        <div>
-                                                  <div>
-                                                            <FormInfoItemsList__FormInfoItemsList>
-                                                                      <FormInfoItemsListItem>
-                                                                                <FormattedMessage
-                                                                                          defaultMessage="Please fill in all fields"
-                                                                                          id="portfolio.containers.ContactPage.requirementOne"
-                                                                                          values={Object {}}
-                                                                                />
-                                                                      </FormInfoItemsListItem>
-                                                            </FormInfoItemsList__FormInfoItemsList>
-                                                  </div>
-                                                  <div>
-                                                            <FormInput
-                                                                      helperText="Please provide a subject for your message."
-                                                                      inputType="text"
-                                                                      isTextArea={false}
-                                                                      label="Subject"
-                                                                      maxLength={50}
-                                                                      minLength={3}
-                                                                      name="subject"
-                                                                      onChange={[Function]}
-                                                                      validate={[Function]}
-                                                                      value=""
-                                                            />
-                                                            <FormInput
-                                                                      helperText="Please add your message here."
-                                                                      inputType="text"
-                                                                      isTextArea={true}
-                                                                      label="Your message"
-                                                                      maxLength={300}
-                                                                      minLength={5}
-                                                                      name="message"
-                                                                      onChange={[Function]}
-                                                                      validate={[Function]}
-                                                                      value=""
-                                                            />
-                                                            <FormInput
-                                                                      helperText="Please add your name here."
-                                                                      inputType="text"
-                                                                      isTextArea={false}
-                                                                      label="Your name"
-                                                                      maxLength={50}
-                                                                      minLength={2}
-                                                                      name="name"
-                                                                      onChange={[Function]}
-                                                                      placeholder="(e.g. John Doo)"
-                                                                      validate={[Function]}
-                                                                      value=""
-                                                            />
-                                                            <FormInput
-                                                                      helperText="Please add your email address here."
-                                                                      inputType="email"
-                                                                      isTextArea={false}
-                                                                      label="Your email address"
-                                                                      name="email"
-                                                                      onChange={[Function]}
-                                                                      placeholder="(e.g. my@email.com)"
-                                                                      validate={[Function]}
-                                                                      value=""
-                                                            />
-                                                  </div>
-                                                  <FormFooter__FormFooter />
-                                        </div>
-                              </div>
-                    </Form__Form>
-          }
-          title={
-                    <FormattedMessage
-                              defaultMessage="CONTACT ME"
-                              id="portfolio.containers.ContactPage.header"
-                              values={Object {}}
-                    />
-          }
-/>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <title>
-              Contact pagina
-</title>,
-            <meta
-              content="Contact pagina van Johan Meester zijn portfolio"
-              name="description"
-/>,
-          ],
-          "defer": true,
-          "encodeSpecialCharacters": true,
-        },
-        "ref": null,
-        "rendered": Array [
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <SideEffect(NullComponent)
+      defer={true}
+      encodeSpecialCharacters={true}
+      meta={
+        Array [
           Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Contact pagina",
-            },
-            "ref": null,
-            "rendered": "Contact pagina",
-            "type": "title",
+            "content": "Contact pagina van Johan Meester zijn portfolio",
+            "name": "description",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
+        ]
+      }
+      title="Contact pagina"
+      titleAttributes={Object {}}
+    >
+      <NullComponent
+        defer={true}
+        encodeSpecialCharacters={true}
+        meta={
+          Array [
+            Object {
               "content": "Contact pagina van Johan Meester zijn portfolio",
               "name": "description",
             },
-            "ref": null,
-            "rendered": null,
-            "type": "meta",
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "content": <Form__Form
-            onSubmit={[Function]}
->
-            <div>
-                        <div>
-                                    <div>
-                                                <FormInfoItemsList__FormInfoItemsList>
-                                                            <FormInfoItemsListItem>
-                                                                        <FormattedMessage
-                                                                                    defaultMessage="Please fill in all fields"
-                                                                                    id="portfolio.containers.ContactPage.requirementOne"
-                                                                                    values={Object {}}
-                                                                        />
-                                                            </FormInfoItemsListItem>
-                                                </FormInfoItemsList__FormInfoItemsList>
-                                    </div>
-                                    <div>
-                                                <FormInput
-                                                            helperText="Please provide a subject for your message."
-                                                            inputType="text"
-                                                            isTextArea={false}
-                                                            label="Subject"
-                                                            maxLength={50}
-                                                            minLength={3}
-                                                            name="subject"
-                                                            onChange={[Function]}
-                                                            validate={[Function]}
-                                                            value=""
-                                                />
-                                                <FormInput
-                                                            helperText="Please add your message here."
-                                                            inputType="text"
-                                                            isTextArea={true}
-                                                            label="Your message"
-                                                            maxLength={300}
-                                                            minLength={5}
-                                                            name="message"
-                                                            onChange={[Function]}
-                                                            validate={[Function]}
-                                                            value=""
-                                                />
-                                                <FormInput
-                                                            helperText="Please add your name here."
-                                                            inputType="text"
-                                                            isTextArea={false}
-                                                            label="Your name"
-                                                            maxLength={50}
-                                                            minLength={2}
-                                                            name="name"
-                                                            onChange={[Function]}
-                                                            placeholder="(e.g. John Doo)"
-                                                            validate={[Function]}
-                                                            value=""
-                                                />
-                                                <FormInput
-                                                            helperText="Please add your email address here."
-                                                            inputType="email"
-                                                            isTextArea={false}
-                                                            label="Your email address"
-                                                            name="email"
-                                                            onChange={[Function]}
-                                                            placeholder="(e.g. my@email.com)"
-                                                            validate={[Function]}
-                                                            value=""
-                                                />
-                                    </div>
-                                    <FormFooter__FormFooter />
-                        </div>
-            </div>
-</Form__Form>,
-          "title": <FormattedMessage
-            defaultMessage="CONTACT ME"
-            id="portfolio.containers.ContactPage.header"
-            values={Object {}}
-/>,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <HelmetWrapper
-            defer={true}
-            encodeSpecialCharacters={true}
->
-            <title>
-                        Contact pagina
-            </title>
-            <meta
-                        content="Contact pagina van Johan Meester zijn portfolio"
-                        name="description"
-            />
-</HelmetWrapper>,
-          <PageContent
-            content={
-                        <Form__Form
-                                    onSubmit={[Function]}
+          ]
+        }
+        title="Contact pagina"
+        titleAttributes={Object {}}
+      />
+    </SideEffect(NullComponent)>
+  </HelmetWrapper>
+  <PageContent
+    content={
+      <InjectIntl(ContactForm)
+        changeHandler={[Function]}
+        field={
+          Object {
+            "email": "",
+            "message": "",
+            "name": "",
+            "subject": "",
+          }
+        }
+        fieldError={Object {}}
+        onSubmitHandler={[Function]}
+        sendStatus={undefined}
+      />
+    }
+    title={
+      <FormattedMessage
+        defaultMessage="CONTACT ME"
+        id="portfolio.containers.ContactPage.header"
+        values={Object {}}
+      />
+    }
+  >
+    <Wrapper__Wrapper
+      animate={true}
+    >
+      <div
+        className="Wrapper__Wrapper-fEDTQp jgxDLY"
+      >
+        <PageHeader
+          isLeftHanded={true}
+        >
+          <StyledHeader__StyledHeader>
+            <header
+              className="StyledHeader__StyledHeader-kHWYFT brSWxw"
+            >
+              <SpeechBubble
+                arrowHeight="4vh"
+                backgroundColor="#465a65"
+                isLeftHanded={true}
+                makeAppear={true}
+                showArrowBreakpoint="750px"
+              >
+                <Container__Container
+                  makeAppear={true}
+                  showArrowBreakpoint="750px"
+                >
+                  <div
+                    className="Container__Container-duRnZL gAUglN"
+                  >
+                    <Bubble__Bubble
+                      backgroundColor="#465a65"
+                      isLeftHanded={true}
+                      showArrowBreakpoint="750px"
+                    >
+                      <div
+                        className="Bubble__Bubble-kfMqWC fYyIab"
+                      >
+                        <H2__H2
+                          color="#aedd2c"
                         >
-                                    <div>
-                                                <div>
-                                                            <div>
-                                                                        <FormInfoItemsList__FormInfoItemsList>
-                                                                                    <FormInfoItemsListItem>
-                                                                                                <FormattedMessage
-                                                                                                            defaultMessage="Please fill in all fields"
-                                                                                                            id="portfolio.containers.ContactPage.requirementOne"
-                                                                                                            values={Object {}}
-                                                                                                />
-                                                                                    </FormInfoItemsListItem>
-                                                                        </FormInfoItemsList__FormInfoItemsList>
-                                                            </div>
-                                                            <div>
-                                                                        <FormInput
-                                                                                    helperText="Please provide a subject for your message."
-                                                                                    inputType="text"
-                                                                                    isTextArea={false}
-                                                                                    label="Subject"
-                                                                                    maxLength={50}
-                                                                                    minLength={3}
-                                                                                    name="subject"
-                                                                                    onChange={[Function]}
-                                                                                    validate={[Function]}
-                                                                                    value=""
-                                                                        />
-                                                                        <FormInput
-                                                                                    helperText="Please add your message here."
-                                                                                    inputType="text"
-                                                                                    isTextArea={true}
-                                                                                    label="Your message"
-                                                                                    maxLength={300}
-                                                                                    minLength={5}
-                                                                                    name="message"
-                                                                                    onChange={[Function]}
-                                                                                    validate={[Function]}
-                                                                                    value=""
-                                                                        />
-                                                                        <FormInput
-                                                                                    helperText="Please add your name here."
-                                                                                    inputType="text"
-                                                                                    isTextArea={false}
-                                                                                    label="Your name"
-                                                                                    maxLength={50}
-                                                                                    minLength={2}
-                                                                                    name="name"
-                                                                                    onChange={[Function]}
-                                                                                    placeholder="(e.g. John Doo)"
-                                                                                    validate={[Function]}
-                                                                                    value=""
-                                                                        />
-                                                                        <FormInput
-                                                                                    helperText="Please add your email address here."
-                                                                                    inputType="email"
-                                                                                    isTextArea={false}
-                                                                                    label="Your email address"
-                                                                                    name="email"
-                                                                                    onChange={[Function]}
-                                                                                    placeholder="(e.g. my@email.com)"
-                                                                                    validate={[Function]}
-                                                                                    value=""
-                                                                        />
-                                                            </div>
-                                                            <FormFooter__FormFooter />
-                                                </div>
-                                    </div>
-                        </Form__Form>
-            }
-            title={
-                        <FormattedMessage
-                                    defaultMessage="CONTACT ME"
-                                    id="portfolio.containers.ContactPage.header"
-                                    values={Object {}}
+                          <h2
+                            className="H2__H2-eTwhUa iVVlVj"
+                            color="#aedd2c"
+                          >
+                            <FormattedMessage
+                              defaultMessage="CONTACT ME"
+                              id="portfolio.containers.ContactPage.header"
+                              values={Object {}}
+                            >
+                              <span>
+                                CONTACT ME
+                              </span>
+                            </FormattedMessage>
+                          </h2>
+                        </H2__H2>
+                      </div>
+                    </Bubble__Bubble>
+                    <Arrow__Arrow
+                      height="4vh"
+                      isLeftHanded={true}
+                      showBreakpoint="750px"
+                    >
+                      <svg
+                        className="Arrow__Arrow-fPzAjH jaPxIQ"
+                        focusable="false"
+                        height="4vh"
+                        preserveAspectRatio="xMinYMid meet"
+                        viewBox="0 0 848 640"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M424.2 424.4L526.9 640V398.7"
+                          fill="#5b7583"
+                          stroke="#5b7583"
                         />
-            }
-/>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <title>
-                Contact pagina
-</title>,
-              <meta
-                content="Contact pagina van Johan Meester zijn portfolio"
-                name="description"
-/>,
-            ],
-            "defer": true,
-            "encodeSpecialCharacters": true,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Contact pagina",
-              },
-              "ref": null,
-              "rendered": "Contact pagina",
-              "type": "title",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "content": "Contact pagina van Johan Meester zijn portfolio",
-                "name": "description",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "meta",
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "content": <Form__Form
-              onSubmit={[Function]}
->
-              <div>
-                            <div>
-                                          <div>
-                                                        <FormInfoItemsList__FormInfoItemsList>
-                                                                      <FormInfoItemsListItem>
-                                                                                    <FormattedMessage
-                                                                                                  defaultMessage="Please fill in all fields"
-                                                                                                  id="portfolio.containers.ContactPage.requirementOne"
-                                                                                                  values={Object {}}
-                                                                                    />
-                                                                      </FormInfoItemsListItem>
-                                                        </FormInfoItemsList__FormInfoItemsList>
-                                          </div>
-                                          <div>
-                                                        <FormInput
-                                                                      helperText="Please provide a subject for your message."
-                                                                      inputType="text"
-                                                                      isTextArea={false}
-                                                                      label="Subject"
-                                                                      maxLength={50}
-                                                                      minLength={3}
-                                                                      name="subject"
-                                                                      onChange={[Function]}
-                                                                      validate={[Function]}
-                                                                      value=""
-                                                        />
-                                                        <FormInput
-                                                                      helperText="Please add your message here."
-                                                                      inputType="text"
-                                                                      isTextArea={true}
-                                                                      label="Your message"
-                                                                      maxLength={300}
-                                                                      minLength={5}
-                                                                      name="message"
-                                                                      onChange={[Function]}
-                                                                      validate={[Function]}
-                                                                      value=""
-                                                        />
-                                                        <FormInput
-                                                                      helperText="Please add your name here."
-                                                                      inputType="text"
-                                                                      isTextArea={false}
-                                                                      label="Your name"
-                                                                      maxLength={50}
-                                                                      minLength={2}
-                                                                      name="name"
-                                                                      onChange={[Function]}
-                                                                      placeholder="(e.g. John Doo)"
-                                                                      validate={[Function]}
-                                                                      value=""
-                                                        />
-                                                        <FormInput
-                                                                      helperText="Please add your email address here."
-                                                                      inputType="email"
-                                                                      isTextArea={false}
-                                                                      label="Your email address"
-                                                                      name="email"
-                                                                      onChange={[Function]}
-                                                                      placeholder="(e.g. my@email.com)"
-                                                                      validate={[Function]}
-                                                                      value=""
-                                                        />
-                                          </div>
-                                          <FormFooter__FormFooter />
-                            </div>
-              </div>
-</Form__Form>,
-            "title": <FormattedMessage
-              defaultMessage="CONTACT ME"
-              id="portfolio.containers.ContactPage.header"
-              values={Object {}}
-/>,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": Symbol(react.fragment),
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-    "context": Object {
-      "intl": Object {
-        "defaultFormats": Object {},
-        "defaultLocale": "en",
-        "formatDate": [Function],
-        "formatHTMLMessage": [Function],
-        "formatMessage": [Function],
-        "formatNumber": [Function],
-        "formatPlural": [Function],
-        "formatRelative": [Function],
-        "formatTime": [Function],
-        "formats": Object {},
-        "formatters": Object {
-          "getDateTimeFormat": [Function],
-          "getMessageFormat": [Function],
-          "getNumberFormat": [Function],
-          "getPluralFormat": [Function],
-          "getRelativeFormat": [Function],
-        },
-        "locale": "en",
-        "messages": Object {
-          "portfolio.component.BrandLink.title": "← Back to the homepage",
-          "portfolio.component.ContentLoadingIndicator.error": "Terribly sorry, but the content cannot be loaded at this time",
-          "portfolio.component.ContentLoadingIndicator.pastDelay": "Loading content",
-          "portfolio.component.ContentLoadingIndicator.timedOut": "Loading is taking longer than expected",
-          "portfolio.components.FormInput.helperText.range": "Should be between {minLength, number} and {maxLength, number} characters. Is now: {count, number}",
-          "portfolio.components.FormInput.helperText.valid": "Thanks!",
-          "portfolio.components.LanguageMenu.buttonLabel": "Language",
-          "portfolio.components.LanguageMenu.label": "Choose a Language",
-          "portfolio.components.LanguageMenu.title": "Language menu",
-          "portfolio.components.NotFoundPage.header": "This is NotFoundPage component!",
-          "portfolio.components.SendButton.error": "Failed. Please try again",
-          "portfolio.components.SendButton.idle": "Send",
-          "portfolio.components.SendButton.sending": "Sending...",
-          "portfolio.components.SendButton.success": "Sent! I'll respond as soon as possible",
-          "portfolio.containers.ContactPage.emailError": "Your email address is required.",
-          "portfolio.containers.ContactPage.emailLabel": "Your email address",
-          "portfolio.containers.ContactPage.emailPlaceholder": "(e.g. my@email.com)",
-          "portfolio.containers.ContactPage.emailText": "Please add your email address here.",
-          "portfolio.containers.ContactPage.header": "CONTACT ME",
-          "portfolio.containers.ContactPage.nameError": "Your name is required.",
-          "portfolio.containers.ContactPage.nameLabel": "Your name",
-          "portfolio.containers.ContactPage.namePlaceholder": "(e.g. John Doo)",
-          "portfolio.containers.ContactPage.nameText": "Please add your name here.",
-          "portfolio.containers.ContactPage.requirementOne": "Please fill in all fields",
-          "portfolio.containers.ContactPage.subjectError": "A subject is required.",
-          "portfolio.containers.ContactPage.subjectLabel": "Subject",
-          "portfolio.containers.ContactPage.subjectText": "Please provide a subject for your message.",
-          "portfolio.containers.ContactPage.yourMessageError": "A message is required.",
-          "portfolio.containers.ContactPage.yourMessageLabel": "Your message",
-          "portfolio.containers.ContactPage.yourMessageText": "Please add your message here.",
-          "portfolio.nav.about": "About",
-          "portfolio.nav.contact": "Contact",
-          "portfolio.nav.header": "Site navigation",
-          "portfolio.nav.home": "Intro",
-          "portfolio.nav.projects": "Projects",
-          "portfolio.nav.showMenuButton": "MENU",
-          "portfolio.nav.skills": "Skills",
-          "portfolio.page.AboutPage.pageDescription": "A short description about me.",
-          "portfolio.page.AboutPage.pageTitle": "About me : Johan Meester's portfolio",
-          "portfolio.page.AboutPage.title": "ABOUT ME",
-          "portfolio.page.SkillsPage.pageDescription": "Some of my skills.",
-          "portfolio.page.SkillsPage.pageTitle": "My Skills : Johan Meester's portfolio",
-          "portfolio.page.SkillsPage.title": "MY SKILLS",
-          "portfolio.page.index.header.callToAction": "CONTACT ME",
-          "portfolio.page.index.header.greeting": "WELCOME",
-          "portfolio.page.index.header.intro": "I am {name}",
-          "portfolio.page.index.header.look": "HAVE A LOOK AROUND",
-          "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
-          "portfolio.page.index.title": "Introduction",
-          "portfolio.page.projects.title": "MY PROJECTS",
-          "portfolio.social_links.header": "Also find me on:",
-          "portfolio.title": "Welcome to my portfolio",
-        },
-        "now": [Function],
-        "textComponent": "span",
-      },
-    },
-  },
-}
+                        <path
+                          d="M848 318.3L424.2 424.4V158.9"
+                          fill="#465a65"
+                        />
+                        <path
+                          d="M0 0l848 318.3L636.4 0H0z"
+                          fill="#5b7583"
+                        />
+                      </svg>
+                    </Arrow__Arrow>
+                  </div>
+                </Container__Container>
+              </SpeechBubble>
+            </header>
+          </StyledHeader__StyledHeader>
+        </PageHeader>
+        <ContentWrapper__ContentWrapper>
+          <div
+            className="ContentWrapper__ContentWrapper-lSlQT busshj"
+          >
+            <SpeechBubble
+              arrowHeight="9vh"
+              backgroundColor="#aedd2c"
+              color="#000"
+              isLeftHanded={false}
+              makeAppear={false}
+              maxWidth="30em"
+              padding="1.5rem"
+              showArrowBreakpoint="750px"
+            >
+              <Container__Container
+                makeAppear={false}
+                maxWidth="30em"
+                showArrowBreakpoint="750px"
+              >
+                <div
+                  className="Container__Container-duRnZL czakBm"
+                >
+                  <Bubble__Bubble
+                    backgroundColor="#aedd2c"
+                    color="#000"
+                    isLeftHanded={false}
+                    padding="1.5rem"
+                    showArrowBreakpoint="750px"
+                  >
+                    <div
+                      className="Bubble__Bubble-kfMqWC kqCXAa"
+                      color="#000"
+                    >
+                      <InjectIntl(ContactForm)
+                        changeHandler={[Function]}
+                        field={
+                          Object {
+                            "email": "",
+                            "message": "",
+                            "name": "",
+                            "subject": "",
+                          }
+                        }
+                        fieldError={Object {}}
+                        onSubmitHandler={[Function]}
+                      >
+                        <ContactForm
+                          changeHandler={[Function]}
+                          field={
+                            Object {
+                              "email": "",
+                              "message": "",
+                              "name": "",
+                              "subject": "",
+                            }
+                          }
+                          fieldError={Object {}}
+                          intl={
+                            Object {
+                              "defaultFormats": Object {},
+                              "defaultLocale": "en",
+                              "formatDate": [Function],
+                              "formatHTMLMessage": [Function],
+                              "formatMessage": [Function],
+                              "formatNumber": [Function],
+                              "formatPlural": [Function],
+                              "formatRelative": [Function],
+                              "formatTime": [Function],
+                              "formats": Object {},
+                              "formatters": Object {
+                                "getDateTimeFormat": [Function],
+                                "getMessageFormat": [Function],
+                                "getNumberFormat": [Function],
+                                "getPluralFormat": [Function],
+                                "getRelativeFormat": [Function],
+                              },
+                              "locale": "en",
+                              "messages": Object {
+                                "portfolio.component.BrandLink.title": "← Back to the homepage",
+                                "portfolio.component.ContentLoadingIndicator.error": "Terribly sorry, but the content cannot be loaded at this time",
+                                "portfolio.component.ContentLoadingIndicator.pastDelay": "Loading content",
+                                "portfolio.component.ContentLoadingIndicator.timedOut": "Loading is taking longer than expected",
+                                "portfolio.components.FormInput.helperText.range": "Should be between {minLength, number} and {maxLength, number} characters. Is now: {count, number}",
+                                "portfolio.components.FormInput.helperText.valid": "Thanks!",
+                                "portfolio.components.LanguageMenu.buttonLabel": "Language",
+                                "portfolio.components.LanguageMenu.label": "Choose a Language",
+                                "portfolio.components.LanguageMenu.title": "Language menu",
+                                "portfolio.components.NotFoundPage.header": "This is NotFoundPage component!",
+                                "portfolio.components.SendButton.error": "Failed. Please try again",
+                                "portfolio.components.SendButton.idle": "Send",
+                                "portfolio.components.SendButton.sending": "Sending...",
+                                "portfolio.components.SendButton.success": "Sent! I'll respond as soon as possible",
+                                "portfolio.containers.ContactPage.emailError": "Your email address is required.",
+                                "portfolio.containers.ContactPage.emailLabel": "Your email address",
+                                "portfolio.containers.ContactPage.emailPlaceholder": "(e.g. my@email.com)",
+                                "portfolio.containers.ContactPage.emailText": "Please add your email address here.",
+                                "portfolio.containers.ContactPage.header": "CONTACT ME",
+                                "portfolio.containers.ContactPage.nameError": "Your name is required.",
+                                "portfolio.containers.ContactPage.nameLabel": "Your name",
+                                "portfolio.containers.ContactPage.namePlaceholder": "(e.g. John Doo)",
+                                "portfolio.containers.ContactPage.nameText": "Please add your name here.",
+                                "portfolio.containers.ContactPage.requirementOne": "Please fill in all fields",
+                                "portfolio.containers.ContactPage.subjectError": "A subject is required.",
+                                "portfolio.containers.ContactPage.subjectLabel": "Subject",
+                                "portfolio.containers.ContactPage.subjectText": "Please provide a subject for your message.",
+                                "portfolio.containers.ContactPage.yourMessageError": "A message is required.",
+                                "portfolio.containers.ContactPage.yourMessageLabel": "Your message",
+                                "portfolio.containers.ContactPage.yourMessageText": "Please add your message here.",
+                                "portfolio.nav.about": "About",
+                                "portfolio.nav.contact": "Contact",
+                                "portfolio.nav.header": "Site navigation",
+                                "portfolio.nav.home": "Intro",
+                                "portfolio.nav.projects": "Projects",
+                                "portfolio.nav.showMenuButton": "MENU",
+                                "portfolio.nav.skills": "Skills",
+                                "portfolio.page.AboutPage.pageDescription": "A short description about me.",
+                                "portfolio.page.AboutPage.pageTitle": "About me : Johan Meester's portfolio",
+                                "portfolio.page.AboutPage.title": "ABOUT ME",
+                                "portfolio.page.SkillsPage.pageDescription": "Some of my skills.",
+                                "portfolio.page.SkillsPage.pageTitle": "My Skills : Johan Meester's portfolio",
+                                "portfolio.page.SkillsPage.title": "MY SKILLS",
+                                "portfolio.page.index.header.callToAction": "CONTACT ME",
+                                "portfolio.page.index.header.greeting": "WELCOME",
+                                "portfolio.page.index.header.intro": "I am {name}",
+                                "portfolio.page.index.header.look": "HAVE A LOOK AROUND",
+                                "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
+                                "portfolio.page.index.title": "Introduction",
+                                "portfolio.page.projects.title": "MY PROJECTS",
+                                "portfolio.social_links.header": "Also find me on:",
+                                "portfolio.title": "Welcome to my portfolio",
+                              },
+                              "now": [Function],
+                              "textComponent": "span",
+                            }
+                          }
+                          onSubmitHandler={[Function]}
+                        >
+                          <Form__Form
+                            onChange={[Function]}
+                            onSubmit={[Function]}
+                          >
+                            <form
+                              className="Form__Form-crBJLB FqFPw"
+                              onChange={[Function]}
+                              onSubmit={[Function]}
+                            >
+                              <div>
+                                <div>
+                                  <div>
+                                    <InfoList__InfoList>
+                                      <ul
+                                        className="InfoList__InfoList-hUVVIf hfoUNU"
+                                      >
+                                        <InfoListItem>
+                                          <InfoListItem__Li>
+                                            <li
+                                              className="InfoListItem__Li-fMSWPj hCpuSE"
+                                            >
+                                              <SVGIcon__SVGIcon
+                                                viewBox="0 0 512 512"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="SVGIcon__SVGIcon-dvbyrX kfpRMj"
+                                                  focusable="false"
+                                                  viewBox="0 0 512 512"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                                                  />
+                                                </svg>
+                                              </SVGIcon__SVGIcon>
+                                              <InfoListItem__Span>
+                                                <span
+                                                  className="InfoListItem__Span-iuvfSH gxPpOU"
+                                                >
+                                                  <FormattedMessage
+                                                    defaultMessage="Please fill in all fields"
+                                                    id="portfolio.containers.ContactPage.requirementOne"
+                                                    values={Object {}}
+                                                  >
+                                                    <span>
+                                                      Please fill in all fields
+                                                    </span>
+                                                  </FormattedMessage>
+                                                </span>
+                                              </InfoListItem__Span>
+                                            </li>
+                                          </InfoListItem__Li>
+                                        </InfoListItem>
+                                      </ul>
+                                    </InfoList__InfoList>
+                                  </div>
+                                  <div>
+                                    <Input
+                                      changeHandler={[Function]}
+                                      helperText="Please provide a subject for your message."
+                                      inputType="text"
+                                      label="Subject"
+                                      maxLength={50}
+                                      minLength={3}
+                                      name="subject"
+                                      validate={[Function]}
+                                      value=""
+                                    >
+                                      <InputGroup__InputGroup>
+                                        <div
+                                          className="InputGroup__InputGroup-hfyRbs frNIVi"
+                                        >
+                                          <Label__Label
+                                            htmlFor="name"
+                                            onClick={[Function]}
+                                          >
+                                            <label
+                                              className="Label__Label-bOFUbQ kfTVjW"
+                                              htmlFor="name"
+                                              onClick={[Function]}
+                                            >
+                                              <LabelContent__LabelContent
+                                                hasFocus={false}
+                                              >
+                                                <span
+                                                  className="LabelContent__LabelContent-cHoOPw bljbwa"
+                                                >
+                                                  Subject
+                                                  <Placeholder__Placeholder
+                                                    hasFocus={false}
+                                                  >
+                                                    <span
+                                                      className="Placeholder__Placeholder-iEQfbz guEAFF"
+                                                    >
+                                                      <i />
+                                                    </span>
+                                                  </Placeholder__Placeholder>
+                                                </span>
+                                              </LabelContent__LabelContent>
+                                            </label>
+                                          </Label__Label>
+                                          <StyledInput__StyledInput
+                                            innerRef={[Function]}
+                                            name="subject"
+                                            onBlur={[Function]}
+                                            onChange={[Function]}
+                                            onFocus={[Function]}
+                                            type="text"
+                                            value=""
+                                          >
+                                            <input
+                                              className="StyledInput__StyledInput-bMAqWh roHke"
+                                              name="subject"
+                                              onBlur={[Function]}
+                                              onChange={[Function]}
+                                              onFocus={[Function]}
+                                              type="text"
+                                              value=""
+                                            />
+                                          </StyledInput__StyledInput>
+                                          <SubText__SubText>
+                                            <div
+                                              className="SubText__SubText-hjYciJ jOknOk"
+                                            >
+                                              <ErrorMessage__ErrorMessage
+                                                showError={false}
+                                              >
+                                                <span
+                                                  className="ErrorMessage__ErrorMessage-iBtNde fAAdxe"
+                                                >
+                                                  false 
+                                                </span>
+                                              </ErrorMessage__ErrorMessage>
+                                              <span>
+                                                <span>
+                                                  Please provide a subject for your message.
+                                                   
+                                                  <FormattedMessage
+                                                    defaultMessage="Should be between {minLength, number} and {maxLength, number} characters. Is now: {count, number}"
+                                                    id="portfolio.components.Form.helperText.range"
+                                                    values={
+                                                      Object {
+                                                        "count": 0,
+                                                        "maxLength": 50,
+                                                        "minLength": 3,
+                                                      }
+                                                    }
+                                                  >
+                                                    <span>
+                                                      Should be between 3 and 50 characters. Is now: 0
+                                                    </span>
+                                                  </FormattedMessage>
+                                                </span>
+                                              </span>
+                                            </div>
+                                          </SubText__SubText>
+                                        </div>
+                                      </InputGroup__InputGroup>
+                                    </Input>
+                                    <TextArea
+                                      changeHandler={[Function]}
+                                      helperText="Please add your message here."
+                                      label="Your message"
+                                      maxLength={300}
+                                      minLength={5}
+                                      name="message"
+                                      validate={[Function]}
+                                      value=""
+                                    >
+                                      <InputGroup__InputGroup>
+                                        <div
+                                          className="InputGroup__InputGroup-hfyRbs frNIVi"
+                                        >
+                                          <Label__Label
+                                            htmlFor="name"
+                                            onClick={[Function]}
+                                          >
+                                            <label
+                                              className="Label__Label-bOFUbQ kfTVjW"
+                                              htmlFor="name"
+                                              onClick={[Function]}
+                                            >
+                                              <LabelContent__LabelContent
+                                                hasFocus={false}
+                                              >
+                                                <span
+                                                  className="LabelContent__LabelContent-cHoOPw bljbwa"
+                                                >
+                                                  Your message
+                                                  <Placeholder__Placeholder
+                                                    hasFocus={false}
+                                                  >
+                                                    <span
+                                                      className="Placeholder__Placeholder-iEQfbz guEAFF"
+                                                    >
+                                                      <i />
+                                                    </span>
+                                                  </Placeholder__Placeholder>
+                                                </span>
+                                              </LabelContent__LabelContent>
+                                            </label>
+                                          </Label__Label>
+                                          <StyledTextArea__StyledTextArea
+                                            innerRef={[Function]}
+                                            myHeight={0}
+                                            name="message"
+                                            onBlur={[Function]}
+                                            onChange={[Function]}
+                                            onFocus={[Function]}
+                                            value=""
+                                          >
+                                            <textarea
+                                              className="StyledTextArea__StyledTextArea-ivhKvX cTkwFs"
+                                              name="message"
+                                              onBlur={[Function]}
+                                              onChange={[Function]}
+                                              onFocus={[Function]}
+                                              value=""
+                                            />
+                                          </StyledTextArea__StyledTextArea>
+                                          <SubText__SubText>
+                                            <div
+                                              className="SubText__SubText-hjYciJ jOknOk"
+                                            >
+                                              <ErrorMessage__ErrorMessage
+                                                showError={false}
+                                              >
+                                                <span
+                                                  className="ErrorMessage__ErrorMessage-iBtNde fAAdxe"
+                                                >
+                                                  false 
+                                                </span>
+                                              </ErrorMessage__ErrorMessage>
+                                              <span>
+                                                <span>
+                                                  Please add your message here.
+                                                   
+                                                  <FormattedMessage
+                                                    defaultMessage="Should be between {minLength, number} and {maxLength, number} characters. Is now: {count, number}"
+                                                    id="portfolio.components.Form.helperText.range"
+                                                    values={
+                                                      Object {
+                                                        "count": 0,
+                                                        "maxLength": 300,
+                                                        "minLength": 5,
+                                                      }
+                                                    }
+                                                  >
+                                                    <span>
+                                                      Should be between 5 and 300 characters. Is now: 0
+                                                    </span>
+                                                  </FormattedMessage>
+                                                </span>
+                                              </span>
+                                            </div>
+                                          </SubText__SubText>
+                                        </div>
+                                      </InputGroup__InputGroup>
+                                    </TextArea>
+                                    <Input
+                                      changeHandler={[Function]}
+                                      helperText="Please add your name here."
+                                      inputType="text"
+                                      label="Your name"
+                                      maxLength={50}
+                                      minLength={2}
+                                      name="name"
+                                      placeholder="(e.g. John Doo)"
+                                      validate={[Function]}
+                                      value=""
+                                    >
+                                      <InputGroup__InputGroup>
+                                        <div
+                                          className="InputGroup__InputGroup-hfyRbs frNIVi"
+                                        >
+                                          <Label__Label
+                                            htmlFor="name"
+                                            onClick={[Function]}
+                                          >
+                                            <label
+                                              className="Label__Label-bOFUbQ kfTVjW"
+                                              htmlFor="name"
+                                              onClick={[Function]}
+                                            >
+                                              <LabelContent__LabelContent
+                                                hasFocus={false}
+                                              >
+                                                <span
+                                                  className="LabelContent__LabelContent-cHoOPw bljbwa"
+                                                >
+                                                  Your name
+                                                  <Placeholder__Placeholder
+                                                    hasFocus={false}
+                                                  >
+                                                    <span
+                                                      className="Placeholder__Placeholder-iEQfbz guEAFF"
+                                                    >
+                                                      <i>
+                                                        (e.g. John Doo)
+                                                      </i>
+                                                    </span>
+                                                  </Placeholder__Placeholder>
+                                                </span>
+                                              </LabelContent__LabelContent>
+                                            </label>
+                                          </Label__Label>
+                                          <StyledInput__StyledInput
+                                            innerRef={[Function]}
+                                            name="name"
+                                            onBlur={[Function]}
+                                            onChange={[Function]}
+                                            onFocus={[Function]}
+                                            type="text"
+                                            value=""
+                                          >
+                                            <input
+                                              className="StyledInput__StyledInput-bMAqWh roHke"
+                                              name="name"
+                                              onBlur={[Function]}
+                                              onChange={[Function]}
+                                              onFocus={[Function]}
+                                              type="text"
+                                              value=""
+                                            />
+                                          </StyledInput__StyledInput>
+                                          <SubText__SubText>
+                                            <div
+                                              className="SubText__SubText-hjYciJ jOknOk"
+                                            >
+                                              <ErrorMessage__ErrorMessage
+                                                showError={false}
+                                              >
+                                                <span
+                                                  className="ErrorMessage__ErrorMessage-iBtNde fAAdxe"
+                                                >
+                                                  false 
+                                                </span>
+                                              </ErrorMessage__ErrorMessage>
+                                              <span>
+                                                <span>
+                                                  Please add your name here.
+                                                   
+                                                  <FormattedMessage
+                                                    defaultMessage="Should be between {minLength, number} and {maxLength, number} characters. Is now: {count, number}"
+                                                    id="portfolio.components.Form.helperText.range"
+                                                    values={
+                                                      Object {
+                                                        "count": 0,
+                                                        "maxLength": 50,
+                                                        "minLength": 2,
+                                                      }
+                                                    }
+                                                  >
+                                                    <span>
+                                                      Should be between 2 and 50 characters. Is now: 0
+                                                    </span>
+                                                  </FormattedMessage>
+                                                </span>
+                                              </span>
+                                            </div>
+                                          </SubText__SubText>
+                                        </div>
+                                      </InputGroup__InputGroup>
+                                    </Input>
+                                    <Input
+                                      changeHandler={[Function]}
+                                      helperText="Please add your email address here."
+                                      inputType="email"
+                                      label="Your email address"
+                                      name="email"
+                                      placeholder="(e.g. my@email.com)"
+                                      validate={[Function]}
+                                      value=""
+                                    >
+                                      <InputGroup__InputGroup>
+                                        <div
+                                          className="InputGroup__InputGroup-hfyRbs frNIVi"
+                                        >
+                                          <Label__Label
+                                            htmlFor="name"
+                                            onClick={[Function]}
+                                          >
+                                            <label
+                                              className="Label__Label-bOFUbQ kfTVjW"
+                                              htmlFor="name"
+                                              onClick={[Function]}
+                                            >
+                                              <LabelContent__LabelContent
+                                                hasFocus={false}
+                                              >
+                                                <span
+                                                  className="LabelContent__LabelContent-cHoOPw bljbwa"
+                                                >
+                                                  Your email address
+                                                  <Placeholder__Placeholder
+                                                    hasFocus={false}
+                                                  >
+                                                    <span
+                                                      className="Placeholder__Placeholder-iEQfbz guEAFF"
+                                                    >
+                                                      <i>
+                                                        (e.g. my@email.com)
+                                                      </i>
+                                                    </span>
+                                                  </Placeholder__Placeholder>
+                                                </span>
+                                              </LabelContent__LabelContent>
+                                            </label>
+                                          </Label__Label>
+                                          <StyledInput__StyledInput
+                                            innerRef={[Function]}
+                                            name="email"
+                                            onBlur={[Function]}
+                                            onChange={[Function]}
+                                            onFocus={[Function]}
+                                            type="email"
+                                            value=""
+                                          >
+                                            <input
+                                              className="StyledInput__StyledInput-bMAqWh roHke"
+                                              name="email"
+                                              onBlur={[Function]}
+                                              onChange={[Function]}
+                                              onFocus={[Function]}
+                                              type="email"
+                                              value=""
+                                            />
+                                          </StyledInput__StyledInput>
+                                          <SubText__SubText>
+                                            <div
+                                              className="SubText__SubText-hjYciJ jOknOk"
+                                            >
+                                              <ErrorMessage__ErrorMessage
+                                                showError={false}
+                                              >
+                                                <span
+                                                  className="ErrorMessage__ErrorMessage-iBtNde fAAdxe"
+                                                >
+                                                  false 
+                                                </span>
+                                              </ErrorMessage__ErrorMessage>
+                                              <span>
+                                                <span>
+                                                  Please add your email address here.
+                                                   
+                                                </span>
+                                              </span>
+                                            </div>
+                                          </SubText__SubText>
+                                        </div>
+                                      </InputGroup__InputGroup>
+                                    </Input>
+                                  </div>
+                                  <Footer__Footer>
+                                    <div
+                                      className="Footer__Footer-kpTuka ejWOEo"
+                                    >
+                                      <SubmitButton
+                                        buttonState="idle"
+                                        formIsValid={false}
+                                      >
+                                        <Button__Button
+                                          isEnabled={false}
+                                        >
+                                          <button
+                                            className="Button__Button-eELvBW hVcFSv"
+                                          >
+                                            <span>
+                                              <SVGIcon__SVGIcon
+                                                viewBox="0 0 512 512"
+                                              >
+                                                <svg
+                                                  aria-hidden="true"
+                                                  className="SVGIcon__SVGIcon-dvbyrX kfpRMj"
+                                                  focusable="false"
+                                                  viewBox="0 0 512 512"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+                                                  />
+                                                </svg>
+                                              </SVGIcon__SVGIcon>
+                                              <Label__Label>
+                                                <span
+                                                  className="Label__Label-bOFUbQ iQUJld"
+                                                >
+                                                  <FormattedMessage
+                                                    defaultMessage="Send"
+                                                    id="portfolio.components.SubmitButton.idle"
+                                                    values={Object {}}
+                                                  >
+                                                    <span>
+                                                      Send
+                                                    </span>
+                                                  </FormattedMessage>
+                                                </span>
+                                              </Label__Label>
+                                            </span>
+                                          </button>
+                                        </Button__Button>
+                                      </SubmitButton>
+                                    </div>
+                                  </Footer__Footer>
+                                </div>
+                              </div>
+                            </form>
+                          </Form__Form>
+                        </ContactForm>
+                      </InjectIntl(ContactForm)>
+                    </div>
+                  </Bubble__Bubble>
+                  <Arrow__Arrow
+                    height="9vh"
+                    isLeftHanded={false}
+                    showBreakpoint="750px"
+                  >
+                    <svg
+                      className="Arrow__Arrow-fPzAjH bLlnaE"
+                      focusable="false"
+                      height="9vh"
+                      preserveAspectRatio="xMinYMid meet"
+                      viewBox="0 0 848 640"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M424.2 424.4L526.9 640V398.7"
+                        fill="#bfe458"
+                        stroke="#bfe458"
+                      />
+                      <path
+                        d="M848 318.3L424.2 424.4V158.9"
+                        fill="#aedd2c"
+                      />
+                      <path
+                        d="M0 0l848 318.3L636.4 0H0z"
+                        fill="#bfe458"
+                      />
+                    </svg>
+                  </Arrow__Arrow>
+                </div>
+              </Container__Container>
+            </SpeechBubble>
+          </div>
+        </ContentWrapper__ContentWrapper>
+      </div>
+    </Wrapper__Wrapper>
+  </PageContent>
+</ContactPage>
 `;
