@@ -45,12 +45,6 @@ describe('sendForm Saga', () => {
     const putDescriptor = sendContentGenerator.next(errorResponse).value;
     expect(putDescriptor).toEqual(put(sendFormError(errorResponse.error)));
   });
-
-  it('should call the sendFormError action if the response errors', () => {
-    const response = new Error('Some error');
-    const putDescriptor = sendContentGenerator.throw(response).value;
-    expect(putDescriptor).toEqual(put(sendFormError([{ error: response }])));
-  });
 });
 
 describe('sendFormData Saga', () => {
