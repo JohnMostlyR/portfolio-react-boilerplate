@@ -6,9 +6,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Switch, Redirect, Route, withRouter } from 'react-router-dom';
+import { Switch, Redirect, Route } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
-import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
@@ -151,9 +150,4 @@ const mapStateToProps = createStructuredSelector({
   siteNavigationOffsetHeight: makeSelectSiteNavigationOffsetHeight(),
 });
 
-const withConnect = connect(mapStateToProps, mapDispatchToProps);
-
-export default compose(
-  withRouter,
-  withConnect,
-)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);

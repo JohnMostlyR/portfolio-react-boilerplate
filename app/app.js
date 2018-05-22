@@ -70,11 +70,11 @@ const render = (messages) => {
   ReactDOM.render(
     <Provider store={store}>
       <LanguageProvider messages={messages}>
-        <ConnectedRouter history={history}>
-          <ThemeContext.Provider value={theme}>
+        <ThemeContext.Provider value={theme}>
+          <ConnectedRouter history={history}>
             <App />
-          </ThemeContext.Provider>
-        </ConnectedRouter>
+          </ConnectedRouter>
+        </ThemeContext.Provider>
       </LanguageProvider>
     </Provider>,
     MOUNT_NODE,

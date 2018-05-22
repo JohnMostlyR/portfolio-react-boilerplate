@@ -75,14 +75,18 @@ class SiteNavigation extends React.PureComponent {
   }
 
   render() {
+    const { bigScreenBreakpoint, isAtScreenTop, siteWidth, location } = this.props;
+    const { isBigScreen, isExpanded } = this.state;
+
     return (
       <Navigation
-        bigScreenBreakpoint={this.props.bigScreenBreakpoint}
-        isAtScreenTop={this.props.isAtScreenTop || false}
+        bigScreenBreakpoint={bigScreenBreakpoint}
+        isAtScreenTop={isAtScreenTop || false}
+        isBigScreen={isBigScreen}
+        isExpanded={isExpanded}
+        location={location}
         navigationRef={(el) => { this.siteNavigation = el; }}
-        isBigScreen={this.state.isBigScreen}
-        isExpanded={this.state.isExpanded}
-        siteWidth={this.props.siteWidth}
+        siteWidth={siteWidth}
         toggleMenu={this.toggleMenu}
       />
     );
@@ -90,6 +94,7 @@ class SiteNavigation extends React.PureComponent {
 }
 
 SiteNavigation.propTypes = {
+  location: PropTypes.object,
   bigScreenBreakpoint: PropTypes.number, // PIXELS!
   setTopPosition: PropTypes.func.isRequired,
   setOffsetHeight: PropTypes.func.isRequired,
