@@ -87,19 +87,13 @@ function Button({ label, isExpanded, toggleMenuHandler, buttonRef }) {
 Button.propTypes = {
   label: PropTypes.string,
   isExpanded: PropTypes.bool,
-  toggleMenuHandler: PropTypes.func,
-  buttonRef: PropTypes.func,
+  toggleMenuHandler: PropTypes.func.isRequired,
+  buttonRef: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
   label: 'Label',
   isExpanded: false,
-  toggleMenuHandler: () => (
-    console.log('Implement a toggleMenuHandler function')
-  ),
-  buttonRef: (el) => (
-    console.debug(el)
-  ),
 };
 
 export default Button;

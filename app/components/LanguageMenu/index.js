@@ -30,7 +30,7 @@ class LanguageMenu extends React.PureComponent {
 
   componentDidUpdate() {
     if (this.props.isExpanded) {
-      const firstAvailableOption = this.getMenuItems()
+      const firstAvailableOption = this.getMenuItems(this.menu)
         .filter((child) => (
           !child.disabled
         ))
@@ -43,9 +43,7 @@ class LanguageMenu extends React.PureComponent {
     }
   }
 
-  getMenuItems() {
-    const { children } = this.menu;
-
+  getMenuItems({ children }) {
     if (typeof children === 'undefined') {
       return [];
     }
@@ -53,15 +51,25 @@ class LanguageMenu extends React.PureComponent {
     return Array.from(children);
   }
 
-  getFocusedMenuItem() {
-    return this.getMenuItems().find((menuItem) => (
-      menuItem.dataset.hasfocus === 'true'
-    ));
+  getFocusedMenuItem(menuItems) {
+    return menuItems.find((menuItem) => {
+      const { dataset = { hasfocus: false } } = menuItem;
+      return dataset.hasfocus === 'true';
+    });
   }
 
-  handleExpandedState(keyCode) {
+  handleExpandedState({ menu = {}, keyCode = -1 }) {
     const { toggleMenuHandler } = this.props;
-    const FOCUSED_MENU_ITEM = this.getFocusedMenuItem();
+    const { children = [] } = menu;
+    const menuItems = Array.from(children);
+    const FOCUSED_MENU_ITEM = this.getFocusedMenuItem(menuItems);
+
+    // ESC key
+    if (keyCode === 27) {
+      this.button.focus();
+      toggleMenuHandler();
+      return;
+    }
 
     if (!FOCUSED_MENU_ITEM) {
       this.button.focus();
@@ -69,18 +77,12 @@ class LanguageMenu extends React.PureComponent {
       return;
     }
 
-    // ESC key
-    if (keyCode === 27) {
-      this.button.focus();
-      toggleMenuHandler();
-    }
-
     // Arrow Up key
     if (keyCode === 38) {
       if (FOCUSED_MENU_ITEM.previousElementSibling) {
         this.moveFocus(FOCUSED_MENU_ITEM, FOCUSED_MENU_ITEM.previousElementSibling);
       } else {
-        this.moveFocus(FOCUSED_MENU_ITEM, this.menu.lastChild);
+        this.moveFocus(FOCUSED_MENU_ITEM, menu.lastChild);
       }
     }
 
@@ -89,18 +91,18 @@ class LanguageMenu extends React.PureComponent {
       if (FOCUSED_MENU_ITEM.nextElementSibling) {
         this.moveFocus(FOCUSED_MENU_ITEM, FOCUSED_MENU_ITEM.nextElementSibling);
       } else {
-        this.moveFocus(FOCUSED_MENU_ITEM, this.menu.firstChild);
+        this.moveFocus(FOCUSED_MENU_ITEM, menu.firstChild);
       }
     }
   }
 
   handleKeyDownOnMenu(evt) {
+    const { currentTarget, keyCode } = evt;
     const { isExpanded } = this.props;
-    const { keyCode } = evt;
 
     if (isExpanded) {
       evt.preventDefault();
-      this.handleExpandedState(keyCode);
+      this.handleExpandedState({ menu: currentTarget, keyCode });
     }
   }
 
@@ -169,21 +171,15 @@ class LanguageMenu extends React.PureComponent {
 }
 
 LanguageMenu.propTypes = {
-  changeLanguageHandler: PropTypes.func,
+  changeLanguageHandler: PropTypes.func.isRequired,
   locales: PropTypes.array,
   currentLocale: PropTypes.string,
   isExpanded: PropTypes.bool,
-  toggleMenuHandler: PropTypes.func,
+  toggleMenuHandler: PropTypes.func.isRequired,
 };
 
 LanguageMenu.defaultProps = {
-  changeLanguageHandler: () => {
-    console.log('Implement a "changeLanguageHandler"');
-  },
   locales: [],
-  toggleMenuHandler: () => {
-    console.log('Implement a "toggleMenuHandler"');
-  },
 };
 
 LanguageMenu.prototype.moveFocus = (fromElement, toElement) => {

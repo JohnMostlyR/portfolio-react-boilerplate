@@ -1,102 +1,339 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<LanguageMenu /> should contain default text 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <IntlProvider
-    locale="en"
+exports[`<LanguageMenu /> should have one, default, language selected 1`] = `
+<IntlProvider
+  locale="en"
 >
-    <LanguageMenu
-        changeLanguageHandler={[Function]}
-        locales={
-            Array [
-                "en",
-                "nl",
-              ]
-        }
-        messages={
-            Object {
-                "en": Object {
-                  "defaultMessage": "someContent",
-                  "id": "boilerplate.containers.LocaleToggle.en",
-                },
-                "nl": Object {
-                  "defaultMessage": "someOtherContent",
-                  "id": "boilerplate.containers.LocaleToggle.en",
-                },
-              }
-        }
-        toggleMenuHandler={[Function]}
-    />
-</IntlProvider>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "changeLanguageHandler": [Function],
-      "locales": Array [
+  <LanguageMenu
+    changeLanguageHandler={[Function]}
+    currentLocale="en"
+    locales={
+      Array [
         "en",
         "nl",
-      ],
-      "messages": Object {
+      ]
+    }
+    messages={
+      Object {
         "en": Object {
           "defaultMessage": "someContent",
-          "id": "boilerplate.containers.LocaleToggle.en",
+          "id": "portfolio.components.LanguageMenu.en",
         },
         "nl": Object {
           "defaultMessage": "someOtherContent",
-          "id": "boilerplate.containers.LocaleToggle.en",
+          "id": "portfolio.components.LanguageMenu.nl",
         },
-      },
-      "toggleMenuHandler": [Function],
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "changeLanguageHandler": [Function],
-        "locales": Array [
-          "en",
-          "nl",
-        ],
-        "messages": Object {
-          "en": Object {
-            "defaultMessage": "someContent",
-            "id": "boilerplate.containers.LocaleToggle.en",
-          },
-          "nl": Object {
-            "defaultMessage": "someOtherContent",
-            "id": "boilerplate.containers.LocaleToggle.en",
-          },
+      }
+    }
+    toggleMenuHandler={[Function]}
+  >
+    <Wrapper__Wrapper
+      aria-labelledby="LanguageSelector-title"
+      role="region"
+    >
+      <div
+        aria-labelledby="LanguageSelector-title"
+        className="Wrapper__Wrapper-fEDTQp bcdgNM"
+        role="region"
+      >
+        <FormattedMessage
+          defaultMessage="Language menu"
+          id="portfolio.components.LanguageMenu.title"
+          values={Object {}}
+        >
+          <span
+            aria-hidden="false"
+            hidden={true}
+            id="LanguageSelector-title"
+          >
+            Language menu
+          </span>
+        </FormattedMessage>
+        <FormattedMessage
+          defaultMessage="Language"
+          id="portfolio.components.LanguageMenu.buttonLabel"
+          values={Object {}}
+        >
+          <Button
+            buttonRef={[Function]}
+            isExpanded={false}
+            label="Language"
+            tabindex="0"
+            toggleMenuHandler={[Function]}
+          >
+            <Button__StyledButton
+              aria-expanded={false}
+              aria-haspopup="true"
+              innerRef={[Function]}
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <button
+                aria-expanded={false}
+                aria-haspopup="true"
+                className="Button__StyledButton-jJDkJK iFzxea"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                type="button"
+              >
+                <SVGIcon__SVGIcon
+                  viewBox="0 0 15.304 15.304"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="SVGIcon__SVGIcon-dvbyrX kfpRMj"
+                    focusable="false"
+                    viewBox="0 0 15.304 15.304"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <path
+                        d="M5.734 8.248v-.631a5.587 5.587 0 0 1-.992-.863 12.413 12.413 0 0 1-1.836 1.464l-.081.05-.49-.783.08-.051c.01-.007.876-.556 1.751-1.413a8.345 8.345 0 0 1-1.124-2.402l-.023-.09.895-.23.022.091c.002.01.257.954.877 1.926.613-.745.97-1.463 1.061-2.14H2.115V2.171h2.072v-.559h.966v.558h2.072v1.006h-.417c-.097.941-.575 1.916-1.424 2.901.114.128.231.245.35.357v-.473c0-.336.272-.608.608-.608h2.705V.569a.151.151 0 0 0-.152-.152H.152A.152.152 0 0 0 0 .569v8.742c0 .085.068.152.152.152h5.582V8.248zm4.994.267h-.017c-.084.333-.166.755-.258 1.078l-.332 1.187h1.236l-.347-1.187c-.1-.332-.2-.746-.282-1.078z"
+                      />
+                      <path
+                        d="M15.152 5.841H6.41a.152.152 0 0 0-.152.152v8.743c0 .084.068.151.152.151h8.742a.15.15 0 0 0 .152-.151V5.993a.152.152 0 0 0-.152-.152zm-3.18 7.319l-.431-1.436H9.94l-.399 1.436h-1.31L9.94 7.57h1.658l1.733 5.59h-1.359zM3.935 9.846H2.72v2.02l1.006.996h2.26v-1.215H3.935z"
+                      />
+                    </g>
+                  </svg>
+                </SVGIcon__SVGIcon>
+                <Button__Label>
+                  <p
+                    className="Button__Label-eTZejp goVkPO"
+                  >
+                    Language
+                  </p>
+                </Button__Label>
+              </button>
+            </Button__StyledButton>
+          </Button>
+        </FormattedMessage>
+        <Menu__Menu
+          hidden={true}
+          innerRef={[Function]}
+          isExpanded={false}
+          onKeyDown={[Function]}
+        >
+          <div
+            className="Menu__Menu-bAlrPT cuAyrl"
+            hidden={true}
+            onKeyDown={[Function]}
+            role="menu"
+          >
+            <LanguageMenuItem
+              isSelected={true}
+              key="en"
+              onClickHandler={[Function]}
+              value="en"
+            >
+              <LanguageMenuItem__Button
+                aria-checked={true}
+                data-hasfocus="false"
+                disabled={true}
+                lang="en"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="menuitemradio"
+                tabIndex="-1"
+              >
+                <button
+                  aria-checked={true}
+                  className="LanguageMenuItem__Button-kxxyQY ckaZYK"
+                  data-hasfocus="false"
+                  disabled={true}
+                  lang="en"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  role="menuitemradio"
+                  tabIndex="-1"
+                  type="button"
+                >
+                  <IconEN
+                    isSelected={true}
+                  >
+                    <SVGIcon__SVGIcon
+                      isSelected={true}
+                      viewBox="0 0 60 30"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="SVGIcon__SVGIcon-dvbyrX kfpRMj"
+                        focusable="false"
+                        viewBox="0 0 60 30"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <clipPath
+                          id="t"
+                        >
+                          <path
+                            d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"
+                          />
+                        </clipPath>
+                        <filter
+                          id="icon-en-saturate"
+                        >
+                          <feColorMatrix
+                            in="SourceGraphic"
+                            type="saturate"
+                            values="1.5"
+                          />
+                        </filter>
+                        <g
+                          filter="url(#icon-en-saturate)"
+                        >
+                          <path
+                            d="M0,0 v30 h60 v-30 z"
+                            fill="#00247d"
+                          />
+                          <path
+                            d="M0,0 L60,30 M60,0 L0,30"
+                            stroke="#fff"
+                            strokeWidth="6"
+                          />
+                          <path
+                            clipPath="url(#t)"
+                            d="M0,0 L60,30 M60,0 L0,30"
+                            stroke="#cf142b"
+                            strokeWidth="4"
+                          />
+                          <path
+                            d="M30,0 v30 M0,15 h60"
+                            stroke="#fff"
+                            strokeWidth="10"
+                          />
+                          <path
+                            d="M30,0 v30 M0,15 h60"
+                            stroke="#cf142b"
+                            strokeWidth="6"
+                          />
+                        </g>
+                      </svg>
+                    </SVGIcon__SVGIcon>
+                  </IconEN>
+                  <Label__Label
+                    isSelected={true}
+                  >
+                    <span
+                      className="Label__Label-bOFUbQ jzfEha"
+                    >
+                      English
+                    </span>
+                  </Label__Label>
+                </button>
+              </LanguageMenuItem__Button>
+            </LanguageMenuItem>
+            <LanguageMenuItem
+              isSelected={false}
+              key="nl"
+              onClickHandler={[Function]}
+              value="nl"
+            >
+              <LanguageMenuItem__Button
+                aria-checked={false}
+                data-hasfocus="false"
+                disabled={false}
+                lang="nl"
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="menuitemradio"
+                tabIndex="-1"
+              >
+                <button
+                  aria-checked={false}
+                  className="LanguageMenuItem__Button-kxxyQY ckaZYK"
+                  data-hasfocus="false"
+                  disabled={false}
+                  lang="nl"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  role="menuitemradio"
+                  tabIndex="-1"
+                  type="button"
+                >
+                  <IconNL
+                    isSelected={false}
+                  >
+                    <SVGIcon__SVGIcon
+                      isSelected={false}
+                      viewBox="0 0 9 6"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        className="SVGIcon__SVGIcon-dvbyrX kfpRMj"
+                        focusable="false"
+                        viewBox="0 0 9 6"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <filter
+                          id="icon-nl-saturate"
+                        >
+                          <feColorMatrix
+                            in="SourceGraphic"
+                            type="saturate"
+                            values="0.5"
+                          />
+                        </filter>
+                        <g
+                          filter="url(#icon-nl-saturate)"
+                        >
+                          <rect
+                            fill="#21468b"
+                            height="6"
+                            width="9"
+                          />
+                          <rect
+                            fill="#fff"
+                            height="4"
+                            width="9"
+                          />
+                          <rect
+                            fill="#ae1c28"
+                            height="2"
+                            width="9"
+                          />
+                        </g>
+                      </svg>
+                    </SVGIcon__SVGIcon>
+                  </IconNL>
+                  <Label__Label
+                    isSelected={false}
+                  >
+                    <span
+                      className="Label__Label-bOFUbQ hDphhn"
+                    >
+                      Nederlands
+                    </span>
+                  </Label__Label>
+                </button>
+              </LanguageMenuItem__Button>
+            </LanguageMenuItem>
+          </div>
+        </Menu__Menu>
+      </div>
+    </Wrapper__Wrapper>
+  </LanguageMenu>
+</IntlProvider>
+`;
+
+exports[`<LanguageMenu /> should render with only required arguments 1`] = `
+<IntlProvider
+  locale="en"
+>
+  <LanguageMenu
+    changeLanguageHandler={[Function]}
+    locales={Array []}
+    messages={
+      Object {
+        "en": Object {
+          "defaultMessage": "someContent",
+          "id": "portfolio.components.LanguageMenu.en",
         },
-        "toggleMenuHandler": [Function],
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+        "nl": Object {
+          "defaultMessage": "someOtherContent",
+          "id": "portfolio.components.LanguageMenu.nl",
+        },
+      }
+    }
+    toggleMenuHandler={[Function]}
+  />
+</IntlProvider>
 `;
