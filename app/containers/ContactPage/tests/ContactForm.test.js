@@ -3,7 +3,7 @@ import toJson from 'enzyme-to-json';
 
 import ContactForm from '../ContactForm';
 // import validateForm from '../ValidateForm';
-import Form from '../../../components/Form';
+// import Form from '../../../components/Form';
 
 import { shallowWithIntl } from '../../../helpers/intl-enzyme-test-helper';
 
@@ -34,8 +34,8 @@ describe('<ContactForm />', () => {
       />
     );
 
-    console.log(wrapper.debug());
-    console.log(wrapper.dive().find(Form));
+    // console.log(wrapper.debug());
+    // console.log(wrapper.dive().find(Form));
     wrapper.simulate('onChange', { target: { value: true } });
     // expect(validateForm).toHaveBeenCalledTimes(1);
   });

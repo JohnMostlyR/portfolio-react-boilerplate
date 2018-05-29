@@ -76,16 +76,12 @@ function LanguageMenuItem({ value, onClickHandler, isSelected }) {
 
 LanguageMenuItem.propTypes = {
   isSelected: PropTypes.bool,
-  onClickHandler: PropTypes.func,
+  onClickHandler: PropTypes.func.isRequired,
   value: PropTypes.oneOf(AVAILABLE_ICONS).isRequired,
 };
 
 LanguageMenuItem.defaultProps = {
   isSelected: false,
-  onClickHandler: (lang) => {
-    console.info('Pass a "onClickHandler" to "LanguageMenuItem"');
-    console.info('Called with: ', lang);
-  },
 };
 
 export default LanguageMenuItem;

@@ -40,7 +40,7 @@ class Input extends React.Component {
   }
 
   setFocus() {
-    if (this.inputElement) {
+    if (this.inputElement && 'focus' in this.inputElement) {
       this.inputElement.focus();
     }
   }

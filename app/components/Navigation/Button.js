@@ -125,17 +125,13 @@ Button.propTypes = {
   bigScreenBreakpoint: PropTypes.number.isRequired,
   isExpanded: PropTypes.bool,
   label: PropTypes.string,
-  toggleMenu: PropTypes.func,
-  buttonRef: PropTypes.func,
+  toggleMenu: PropTypes.func.isRequired,
+  buttonRef: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
   label: 'Label',
   isExpanded: false,
-  toggleMenu: () => { console.log('Default onClick handler'); },
-  buttonRef: (el) => (
-    console.debug(el)
-  ),
 };
 
 export default Button;

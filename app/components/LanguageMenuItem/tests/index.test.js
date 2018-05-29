@@ -5,14 +5,17 @@ import toJson from 'enzyme-to-json';
 import LanguageMenuItem from '../index';
 
 describe('<LanguageMenuItem />', () => {
+  const onClickHandler = jest.fn();
+
   it('should render and match the snapshot', () => {
-    const renderedComponent = shallow(<LanguageMenuItem value={'nl'} />);
+    const renderedComponent = shallow(
+      <LanguageMenuItem value={'nl'} onClickHandler={onClickHandler} />
+    );
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   it('should adopt the "onClickHandler" property', () => {
     const preventDefault = jest.fn();
-    const onClickHandler = jest.fn();
     const renderedComponent = shallow(
       <LanguageMenuItem value={'en'} onClickHandler={onClickHandler} />
     );
@@ -32,7 +35,13 @@ describe('<LanguageMenuItem />', () => {
 
   it('should adopt the "isSelected" property', () => {
     const PROPERTY_VALUE = true;
-    const renderedComponent = shallow(<LanguageMenuItem value={'nl'} isSelected={PROPERTY_VALUE} />);
+    const renderedComponent = shallow(
+      <LanguageMenuItem
+        value={'nl'}
+        onClickHandler={onClickHandler}
+        isSelected={PROPERTY_VALUE}
+      />
+    );
 
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });

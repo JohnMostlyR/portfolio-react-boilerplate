@@ -16,42 +16,12 @@ import { createStructuredSelector } from 'reselect';
 import { Link } from 'react-router-dom';
 
 import messages from './messages';
+import runAnimation from './runAnimation';
 
 import IntroHeader from './IntroHeader';
 import SpeechBubble from './SpeechBubble';
 import MyPicture from './itsme-trevi-rome.jpg';
 import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
-
-export function runAnimation({ snapSVGElement, timeline, startFrame = 0 }) {
-  let animationTimer = setTimeout(
-    function doAnimate(_timeline, currentFrameIndex) {
-      const currentFrame = _timeline[currentFrameIndex];
-
-      snapSVGElement
-        .select(`#${currentFrame.elementId}`)
-        .animate(
-          currentFrame.animationAttributes,
-          currentFrame.animationDuration,
-          currentFrame.animationTimingFunction,
-        );
-
-      if (currentFrameIndex < timeline.length - 1) {
-        /* eslint no-param-reassign: "off" */
-        animationTimer = setTimeout(
-          doAnimate,
-          _timeline[currentFrameIndex + 1].animationDelay,
-          timeline,
-          (currentFrameIndex += 1),
-        );
-      } else {
-        clearTimeout(animationTimer);
-      }
-    },
-    timeline[startFrame].animationDelay,
-    timeline,
-    startFrame,
-  );
-}
 
 class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {

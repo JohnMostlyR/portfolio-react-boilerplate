@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { browserHistory } from 'react-router-dom';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
 import SelectLocale, { mapDispatchToProps } from '../index';
 import { changeLanguage } from '../../LanguageProvider/actions';
@@ -18,7 +18,7 @@ describe('<SelectLocale />', () => {
   });
 
   it('should render the default language messages', () => {
-    const renderedComponent = shallow(
+    const renderedComponent = mount(
       <Provider store={store}>
         <LanguageProvider messages={translationMessages}>
           <SelectLocale />

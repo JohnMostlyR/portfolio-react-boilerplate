@@ -1,14 +1,19 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 import Button from '../Button';
 
 describe('<Button />', () => {
+  const toggleMenu = jest.fn();
+  const buttonRef = jest.fn();
+
   it('should render and match the snapshot', () => {
     const renderedComponent = shallow(
       <Button
         bigScreenBreakpoint={1000}
+        buttonRef={buttonRef}
+        toggleMenu={toggleMenu}
       />
     );
     expect(toJson(renderedComponent)).toMatchSnapshot();
@@ -19,6 +24,8 @@ describe('<Button />', () => {
     const renderedComponent = shallow(
       <Button
         bigScreenBreakpoint={1000}
+        buttonRef={buttonRef}
+        toggleMenu={toggleMenu}
         label={PROPERTY_VALUE}
       />
     );
@@ -31,35 +38,25 @@ describe('<Button />', () => {
     const renderedComponent = shallow(
       <Button
         bigScreenBreakpoint={1000}
+        buttonRef={buttonRef}
         isExpanded={PROPERTY_VALUE}
+        toggleMenu={toggleMenu}
       />
     );
 
     expect(renderedComponent.prop('aria-expanded')).toBe(PROPERTY_VALUE);
   });
 
-  it('should adopt the "buttonRef" property', () => {
-    const PROPERTY_VALUE = jest.fn();
-    mount(
-      <Button
-        bigScreenBreakpoint={1000}
-        buttonRef={PROPERTY_VALUE}
-      />
-    );
-
-    expect(PROPERTY_VALUE).toHaveBeenCalledTimes(1);
-  });
-
   describe('The "toggleMenu" property', () => {
     const stopPropagation = jest.fn();
     const preventDefault = jest.fn();
-    const toggleMenu = jest.fn();
     let renderedComponent = null;
 
     beforeEach(() => {
       renderedComponent = shallow(
         <Button
           bigScreenBreakpoint={1000}
+          buttonRef={buttonRef}
           toggleMenu={toggleMenu}
         />
       );

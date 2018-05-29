@@ -4,6 +4,7 @@ import toJson from 'enzyme-to-json';
 
 import Input from '../index';
 import StyledInput from '../StyledInput';
+import Label from '../../Label';
 
 /* eslint no-underscore-dangle: "off" */
 describe('<Input />', () => {
@@ -30,6 +31,21 @@ describe('<Input />', () => {
     );
 
     expect(toJson(wrapper)).toMatchSnapshot();
+  });
+
+  it('should set focus on <input/> when clicked on <label/>', () => {
+    const setFocus = jest.spyOn(Input.prototype, 'setFocus');
+    const wrapper = shallow(
+      <Input
+        name={props.name}
+        label={props.label}
+        changeHandler={props.changeHandler}
+      />
+    );
+
+    const label = wrapper.find(Label);
+    label.simulate('click');
+    expect(setFocus).toHaveBeenCalledTimes(1);
   });
 
   it('should receive all properties', () => {

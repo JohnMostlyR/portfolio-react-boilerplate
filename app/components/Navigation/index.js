@@ -50,7 +50,7 @@ class Navigation extends React.PureComponent {
 
   componentDidUpdate() {
     if (this.props.isExpanded) {
-      const firstAvailableOption = this.getLinksFromListItems()
+      const firstAvailableOption = this.getLinksFromListItems(this.list)
         .filter((child) => (
           child.getAttribute('aria-current') === 'false'
         ))
@@ -63,21 +63,21 @@ class Navigation extends React.PureComponent {
     }
   }
 
-  getLinksFromListItems() {
-    const listItems = this.getListItems();
+  getLinksFromListItems(list = {}) {
+    const listItems = this.getListItems(list);
 
-    return listItems.reduce((collected, item) => {
+    const links = listItems.reduce((collected, item) => {
       if (item.firstChild && item.firstChild.tagName === 'A') {
         return collected.concat([], item.firstChild);
       }
 
       return collected;
     }, []);
+
+    return links || [];
   }
 
-  getListItems() {
-    const { children } = this.list;
-
+  getListItems({ children }) {
     if (typeof children === 'undefined') {
       return [];
     }
@@ -85,26 +85,30 @@ class Navigation extends React.PureComponent {
     return Array.from(children);
   }
 
-  getFocusedLink() {
-    return this.getLinksFromListItems().find((link) => (
-      link.dataset.hasfocus === 'true'
-    ));
+  getFocusedLink(list) {
+    const links = this.getLinksFromListItems(list) || [];
+    return links.find((link) => {
+      const { dataset = { hasfocus: false } } = link;
+      return dataset.hasfocus === 'true';
+    });
   }
 
-  handleExpandedState(keyCode) {
+  handleExpandedState({ list = {}, keyCode = -1 }) {
     const { toggleMenu } = this.props;
-    const FOCUSED_LINK = this.getFocusedLink();
-
-    if (!FOCUSED_LINK) {
-      this.button.focus();
-      toggleMenu();
-      return;
-    }
 
     // ESC key
     if (keyCode === 27) {
       this.button.focus();
       toggleMenu();
+      return;
+    }
+
+    const FOCUSED_LINK = this.getFocusedLink(list);
+
+    if (!FOCUSED_LINK) {
+      this.button.focus();
+      toggleMenu();
+      return;
     }
 
     const { parentElement } = FOCUSED_LINK;
@@ -133,12 +137,12 @@ class Navigation extends React.PureComponent {
   }
 
   handleKeyDownOnList(evt) {
+    const { currentTarget, keyCode } = evt;
     const { isExpanded } = this.props;
-    const { keyCode } = evt;
 
     if (isExpanded && [27, 38, 40].indexOf(keyCode) >= 0) {
       evt.preventDefault();
-      this.handleExpandedState(keyCode);
+      this.handleExpandedState({ list: currentTarget, keyCode });
     }
   }
 
@@ -249,13 +253,13 @@ class Navigation extends React.PureComponent {
 }
 
 Navigation.propTypes = {
-  bigScreenBreakpoint: PropTypes.number,
+  bigScreenBreakpoint: PropTypes.number.isRequired,
   isAtScreenTop: PropTypes.bool,
   isBigScreen: PropTypes.bool,
   isExpanded: PropTypes.bool,
   location: PropTypes.object,
   navigationRef: PropTypes.func,
-  toggleMenu: PropTypes.func,
+  toggleMenu: PropTypes.func.isRequired,
 };
 
 Navigation.prototype.moveFocus = (fromElement, toElement) => {
