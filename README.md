@@ -7,7 +7,7 @@
 <h1 align="center">My Portfolio Website build with React Boilerplate</h1>
 
 <div align="center">
-	<p><strong>My [original](https://github.com/Mensae/portfolio-react) portfolio website rebuild with React</strong></p>
+  <p><strong>My <a href="https://github.com/Mensae/portfolio-react">original</a> portfolio website rebuild with React</strong></p>
   <!-- Build Status -->
   <a href="https://travis-ci.org/Mensae/portfolio-react-boilerplate">
     <img src="https://travis-ci.org/Mensae/portfolio-react-boilerplate.svg" alt="Build Status" />
@@ -27,7 +27,7 @@
 
 - Boilerplate by [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate)
 - Icons by [Font Awesome](https://fontawesome.com/)
-- Style by [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
+- Styled with [![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 - [Snap.svg](http://snapsvg.io/)
 - Content Management Service by [contentful](https://www.contentful.com/)
 
