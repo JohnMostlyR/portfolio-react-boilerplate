@@ -4,7 +4,6 @@ import {
   selectGlobal,
   makeSelectLoading,
   makeSelectError,
-  makeSelectLocation,
   makeSelectSiteNavigationTopPosition,
   makeSelectSiteNavigationOffsetHeight,
   makeSelectSiteNavigationIsAtScreenTop,
@@ -43,19 +42,6 @@ describe('makeSelectError', () => {
       },
     });
     expect(errorSelector(mockedState)).toEqual(error);
-  });
-});
-
-describe('makeSelectLocation', () => {
-  const locationStateSelector = makeSelectLocation();
-  it('should select the location', () => {
-    const route = fromJS({
-      location: { pathname: '/foo' },
-    });
-    const mockedState = fromJS({
-      route,
-    });
-    expect(locationStateSelector(mockedState)).toEqual(route.get('location').toJS());
   });
 });
 

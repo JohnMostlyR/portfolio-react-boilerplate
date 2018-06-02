@@ -13,7 +13,7 @@ import {
 export function sendForm(field) {
   return {
     type: SEND_FORM,
-    status: 'SENDING',
+    status: 'sending',
     field,
   };
 }
@@ -21,14 +21,14 @@ export function sendForm(field) {
 export function sendFormSuccess() {
   return {
     type: SEND_FORM_SUCCESS,
-    status: 'SUCCESS',
+    status: 'success',
   };
 }
 
 export function sendFormError(error) {
   return {
     type: SEND_FORM_ERROR,
-    status: 'ERROR',
+    status: 'error',
     error,
   };
 }

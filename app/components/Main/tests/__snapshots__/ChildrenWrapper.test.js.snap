@@ -2,16 +2,28 @@
 
 exports[`<ChildrenWrapper /> should render and match the snapshot 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
   height: 100%;
-  position: relative;
   width: 100%;
+}
+
+.c0 * + * {
+  margin-top: 1.5rem;
+}
+
+.c0 * + *:not(p) {
+  margin: 3rem 0;
+}
+
+.c0 * + h2,
+.c0 * + h3 {
+  margin-top: 1.5em;
+}
+
+@supports (display:grid) {
+  .c0 {
+    display: grid;
+    grid-area: content;
+  }
 }
 
 <div

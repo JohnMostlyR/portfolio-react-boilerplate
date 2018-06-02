@@ -1,36 +1,41 @@
+/**
+ * Brand Component
+ * @param {string} [href='/']
+ * @param {string} [showNameBreakpoint='375px']
+ * @returns {*}
+ * @constructor
+ */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 
+import messages from './messages';
 import Wrapper from './Wrapper';
 import BrandLink from './BrandLink';
-import Media from '../Media/index';
-import MyLogo from '../../images/my-logo.svg';
+import Logo from '../../components/Logo';
 
-const Brand = ({ href, imageSource, text }) => (
+const Brand = ({ href, showNameBreakpoint }) => (
   <Wrapper>
-    <BrandLink href={href}>
-      <Media
-        bodyAlign="middle"
-        imageSource={imageSource}
-        imageAlt="logo"
-        imageAlign="middle"
-        imageHeight="45px"
-        imageWidth="45px"
-      >{text}</Media>
-    </BrandLink>
+    <FormattedMessage {...messages.title}>
+      {
+        (message) => (
+          <BrandLink href={href} showNameBreakpoint={showNameBreakpoint} title={message}>
+            <Logo showNameBreakpoint={showNameBreakpoint} />
+          </BrandLink>
+        )
+      }
+    </FormattedMessage>
   </Wrapper>
 );
 
 Brand.propTypes = {
   href: PropTypes.string,
-  imageSource: PropTypes.string,
-  text: PropTypes.string,
+  showNameBreakpoint: PropTypes.string,
 };
 
 Brand.defaultProps = {
   href: '/',
-  imageSource: MyLogo,
-  text: 'JOHAN MEESTER',
+  showNameBreakpoint: '375px',
 };
 
 export default Brand;

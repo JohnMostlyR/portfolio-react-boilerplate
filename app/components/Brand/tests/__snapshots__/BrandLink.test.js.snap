@@ -1,49 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BrandLink /> should render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <BrandLink__BrandLink />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "className": "BrandLink__BrandLink-fgOeRi eifUsn",
-      "href": "#",
-    },
-    "ref": null,
-    "rendered": null,
-    "type": "a",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "className": "BrandLink__BrandLink-fgOeRi eifUsn",
-        "href": "#",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "a",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
+exports[`<BrandLink /> should adopt the "showNameBreakpoint" prop 1`] = `
+.c0 {
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #fff;
+  overflow: hidden;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
+
+@media (min-width:100px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+<a
+  className="c0"
+  href="/"
+  title="← Back to the homepage"
+/>
+`;
+
+exports[`<BrandLink /> should render and match the snapshot 1`] = `
+.c0 {
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #fff;
+  overflow: hidden;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media (min-width:) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+<a
+  className="c0"
+  href="/"
+  title="← Back to the homepage"
+/>
 `;

@@ -1,21 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ExternalLink Should render and match the snapshot 1`] = `
-<a
-  className="StyledA__StyledA-iHqXXL gDDdGe"
+exports[`<ExternalLink> should render and match the snapshot 1`] = `
+<StyledA__StyledA
+  color="inherit"
   href="#"
   rel="noopener noreferrer"
   target="_blank"
 >
-  <span
-    aria-hidden={true}
-    className="fa fa-meh-o"
-  />
-  <span
-    aria-hidden="false"
-    hidden={true}
-  >
+  <IconExternalLink />
+  <Description__Description>
     ExternalLink to
-  </span>
-</a>
+  </Description__Description>
+</StyledA__StyledA>
+`;
+
+exports[`<ExternalLink> with a given "faIcon" property should render with a "codepen" icon 1`] = `
+<StyledA__StyledA
+  color="inherit"
+  href="#"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <IconCodepen />
+  <Description__Description>
+    ExternalLink to
+  </Description__Description>
+</StyledA__StyledA>
+`;
+
+exports[`<ExternalLink> with a given "faIcon" property should render with a "free-code-camp" icon 1`] = `
+<StyledA__StyledA
+  color="inherit"
+  href="#"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <IconFreeCodeCamp />
+  <Description__Description>
+    ExternalLink to
+  </Description__Description>
+</StyledA__StyledA>
+`;
+
+exports[`<ExternalLink> with a given "faIcon" property should render with a "github" icon 1`] = `
+<StyledA__StyledA
+  color="inherit"
+  href="#"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <IconGithub />
+  <Description__Description>
+    ExternalLink to
+  </Description__Description>
+</StyledA__StyledA>
+`;
+
+exports[`<ExternalLink> with a given "faIcon" property should render with a "linkedin" icon 1`] = `
+<StyledA__StyledA
+  color="inherit"
+  href="#"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <IconLinkedin />
+  <Description__Description>
+    ExternalLink to
+  </Description__Description>
+</StyledA__StyledA>
+`;
+
+exports[`<ExternalLink> with a given "faIcon" property should render with a "linkedin-square" icon 1`] = `
+<StyledA__StyledA
+  color="inherit"
+  href="#"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <IconLinkedin />
+  <Description__Description>
+    ExternalLink to
+  </Description__Description>
+</StyledA__StyledA>
 `;

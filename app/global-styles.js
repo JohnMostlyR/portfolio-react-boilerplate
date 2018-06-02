@@ -1,93 +1,109 @@
 import { injectGlobal } from 'styled-components';
-import { baseFontRegular } from './styles/templates/typography';
-import backGround from './images/polka-dots.png';
+import { theme } from './styles/theme';
+import {
+  BASE_FONT_REGULAR,
+  BASE_FONT_SIZE,
+  BASE_LETTER_SPACING,
+  BASE_LINE_HEIGHT,
+  FONT_STACK_SANS_SERIF,
+} from './styles/typography';
+
+/**
+ * Global Styles
+ *
+ * 1. Make everything scale incrementally and proportionately relative to the viewport
+ * 2. Be very careful about performance!
+ *    @see {@link https://css-tricks.com/almanac/properties/t/text-rendering/#article-header-id-2|Performance}
+ * 3. Hide elements that are irrelevant for print
+ * 4. Visually hide an element by adding the -hidden- and -aria-hidden- attribute and setting
+ *    the latter to -false-
+ */
 
 /* eslint no-unused-expressions: 0 */
 injectGlobal`
-  * {
-    -webkit-font-smoothing: subpixel-antialiased;
-  }
+  *:focus {
+    outline: #f90 dotted 2px;
 
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  blockquote,
-  pre,
-  dl,
-  dd,
-  ol,
-  ul,
-  form,
-  fieldset,
-  legend,
-  figure,
-  table,
-  th,
-  td,
-  caption,
-  hr {
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: normal;
-  }
-  
-  abbr[title],
-  dfn[title] {
-    cursor: help;
-  }
-  
-  u,
-  ins {
-    text-decoration: none;
-  }
-  
-  ins {
-    border-bottom: 1px solid;
+    @media (min-width: 1024px) {
+      outline: #f90 dotted 4px;
+    }
   }
 
   html {
-    line-height: 1.5;
     overflow-x: hidden;
+    overflow-y: scroll;
     height: 100%;
     background-attachment: fixed;
-    background-color: #fff;
+    background-color: ${theme.site.background.color};
     background-image:
-      url(${backGround}),
-      linear-gradient(-120deg, #fff, #d7f1ff);
-    background-size: 100px, contain;
-    background-repeat: repeat, no-repeat;
+      url(${theme.site.background.image}),
+      ${theme.site.background.gradient};
+    background-size: ${theme.site.background.size.join(',')};
+    background-repeat: ${theme.site.background.repeat.join(',')};
+
+    @media (min-width: 600px) {
+      font-size: 112%;
+    }
   }
 
   body {
     height: 100%;
-    color: #465a65;
-    ${baseFontRegular};
-  }
-  
-  body,
-  p {
-    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: ${theme.primaryColor};
+    font-size: ${BASE_FONT_SIZE};
+    letter-spacing: ${BASE_LETTER_SPACING};
+    line-height: ${BASE_LINE_HEIGHT};
+    text-rendering: optimizeLegibility; /* [2] */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%; /* stylelint-disable-line property-no-vendor-prefix */
+    ${BASE_FONT_REGULAR};
   }
 
-  [hidden][aria-hidden="false"] {
+  @media print { /* [3] */
+    body > *:not(main) {
+      display: none;
+    }
+  }
+
+  body.fontLoaded {
+    font-family: ${['"Noto Sans"'].concat(FONT_STACK_SANS_SERIF).join(',')};
+
+    & input,
+    & textarea,
+    & select,
+    & button {
+      font-family: ${['"Noto Sans"'].concat(FONT_STACK_SANS_SERIF).join(',')};
+    }
+  }
+
+  li,
+  dt,
+  dd,
+  br,
+  th,
+  td {
+    margin-top: 0;
+  }
+
+  [href="#main"] {
+    display: inline-block;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    z-index: 99999;
+    background-color: ${theme.site.background.color};
+    color: inherit;
+    padding: 0.25rem;
+  }
+  
+  [href="#main"]:focus {
+    right: auto;
+  }
+
+  [hidden][aria-hidden="false"] { /* [4] */
+    display: inherit !important;
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;

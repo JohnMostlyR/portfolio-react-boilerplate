@@ -7,11 +7,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
-import isEmail from 'validator/lib/isEmail';
-import isLength from 'validator/lib/isLength';
 import { Helmet } from 'react-helmet';
 
 import {
@@ -23,46 +21,12 @@ import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
 import { sendForm } from './actions';
-import Form from './Form';
-import FormInfo from './FormInfo';
-import FormInfoItemsList from './FormInfoItemsList';
-import FormFooter from './FormFooter';
+import ContactForm from './ContactForm';
+import validateForm from './ValidateForm';
 
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
-import Article from '../../components/Article';
-import FormInfoItemsListItem from '../../components/FormInfoItemsListItem';
-import FormInput from '../../components/FormInput';
-import SendButton from '../../components/SendButton';
 import PageContent from '../../components/PageContent';
-
-export function validateForm(field, fieldError) {
-  const errMessages = Object
-    .keys(fieldError)
-    .filter((key) => fieldError[key]);
-
-  if (!field.email) {
-    return true;
-  }
-
-  if (!field.message) {
-    return true;
-  }
-
-  if (!field.name) {
-    return true;
-  }
-
-  if (!field.subject) {
-    return true;
-  }
-
-  if (errMessages.length) {
-    return true;
-  }
-
-  return false;
-}
 
 export class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
@@ -77,48 +41,48 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
       },
       fieldError: this.props.error || {},
     };
+
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   componentWillReceiveProps(update) {
+    const { field, error } = update;
+
     this.setState({
-      field: update.field,
-      fieldError: update.error,
+      field,
+      fieldError: error,
     });
   }
 
-  onInputChange = ({ name, value, error }) => {
-    const field = this.state.field;
-    const fieldError = this.state.fieldError;
+  handleFormSubmit(evt) {
+    evt.preventDefault();
+
+    if (validateForm(this.state)) {
+      return;
+    }
+
+    this.props.onSubmit(this.state.field);
+  }
+
+  handleChange({ name, value, error }) {
+    const { field, fieldError } = this.state;
 
     field[name] = value;
     fieldError[name] = error;
 
-    this.setState({ field, fieldError });
-  };
-
-  onFormSubmit = (ev) => {
-    ev.preventDefault();
-
-    if (validateForm(this.state.field, this.state.fieldError)) {
-      return;
-    }
-
-    const field = this.state.field;
-    this.props.onSubmit(field);
-  };
+    this.setState({
+      field,
+      fieldError,
+    });
+  }
 
   render() {
-    const status = this.props.sendStatus;
-
-    const renderSendButton = () => ({
-      IDLE: <SendButton buttonState={'idle'} disabled={validateForm(this.state.field, this.state.fieldError)} />,
-      SENDING: <SendButton buttonState={'sending'} disabled />,
-      SUCCESS: <SendButton buttonState={'success'} disabled />,
-      ERROR: <SendButton buttonState={'error'} disabled={validateForm(this.state.field, this.state.fieldError)} />,
-    }[status]);
+    const { sendStatus } = this.props;
+    const { field, fieldError } = this.state;
 
     return (
-      <Article>
+      <React.Fragment>
         <Helmet>
           <title>Contact pagina</title>
           <meta name="description" content="Contact pagina van Johan Meester zijn portfolio" />
@@ -126,78 +90,16 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
         <PageContent
           title={<FormattedMessage {...messages.header} />}
           content={
-            <Form onSubmit={this.onFormSubmit}>
-              <div>
-                <div>
-                  <FormInfo>
-                    <FormInfoItemsList>
-                      <FormInfoItemsListItem>
-                        <FormattedMessage {...messages.requirementOne} />
-                      </FormInfoItemsListItem>
-                    </FormInfoItemsList>
-                  </FormInfo>
-                  <div>
-                    <FormInput
-                      helperText={this.props.intl.formatMessage(messages.subjectText)}
-                      label={this.props.intl.formatMessage(messages.subjectLabel)}
-                      maxLength={50}
-                      minLength={3}
-                      name="subject"
-                      onChange={this.onInputChange}
-                      validate={(val) => (isLength(val, { min: 3, max: 50 }))
-                        ? false
-                        : this.props.intl.formatMessage(messages.subjectError)}
-                      value={this.state.field.subject}
-                    />
-                    <FormInput
-                      helperText={this.props.intl.formatMessage(messages.yourMessageText)}
-                      label={this.props.intl.formatMessage(messages.yourMessageLabel)}
-                      maxLength={300}
-                      minLength={5}
-                      name="message"
-                      onChange={this.onInputChange}
-                      isTextArea
-                      validate={(val) => (isLength(val, { min: 5, max: 300 }))
-                        ? false
-                        : this.props.intl.formatMessage(messages.yourMessageError)}
-                      value={this.state.field.message}
-                    />
-                    <FormInput
-                      helperText={this.props.intl.formatMessage(messages.nameText)}
-                      label={this.props.intl.formatMessage(messages.nameLabel)}
-                      maxLength={50}
-                      minLength={2}
-                      name="name"
-                      placeholder={this.props.intl.formatMessage(messages.namePlaceholder)}
-                      onChange={this.onInputChange}
-                      validate={(val) => (isLength(val, { min: 2, max: 50 }))
-                        ? false
-                        : this.props.intl.formatMessage(messages.nameError)}
-                      value={this.state.field.name}
-                    />
-                    <FormInput
-                      helperText={this.props.intl.formatMessage(messages.emailText)}
-                      inputType="email"
-                      label={this.props.intl.formatMessage(messages.emailLabel)}
-                      name="email"
-                      placeholder={this.props.intl.formatMessage(messages.emailPlaceholder)}
-                      onChange={this.onInputChange}
-                      validate={(val) => (isEmail(val)) ? false : this.props.intl.formatMessage(
-                        messages.emailError)}
-                      value={this.state.field.email}
-                    />
-                  </div>
-                  <FormFooter>
-                    {
-                      renderSendButton()
-                    }
-                  </FormFooter>
-                </div>
-              </div>
-            </Form>
+            <ContactForm
+              field={field}
+              fieldError={fieldError}
+              changeHandler={this.handleChange}
+              onSubmitHandler={this.handleFormSubmit}
+              sendStatus={sendStatus}
+            />
           }
         />
-      </Article>
+      </React.Fragment>
     );
   }
 }
@@ -205,9 +107,8 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
 ContactPage.propTypes = {
   error: PropTypes.object,
   field: PropTypes.object,
-  intl: intlShape,
   onSubmit: PropTypes.func,
-  sendStatus: PropTypes.oneOf(['IDLE', 'SENDING', 'SUCCESS', 'ERROR']),
+  sendStatus: PropTypes.oneOf(['idle', 'sending', 'success', 'error']),
 };
 
 const mapStateToProps = createStructuredSelector({
@@ -232,4 +133,4 @@ export default compose(
   withReducer,
   withSaga,
   withConnect,
-)(injectIntl(ContactPage));
+)(ContactPage);

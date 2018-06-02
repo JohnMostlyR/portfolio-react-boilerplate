@@ -8,4 +8,10 @@ describe('<Wrapper />', () => {
     const renderedComponent = shallow(<Wrapper />);
     expect(renderedComponent).toMatchSnapshot();
   });
+
+  it('should adopt the "backgroundColor" property', () => {
+    const color = '#bada55';
+    const renderedComponent = shallow(<Wrapper borderColor={color} />);
+    expect(renderedComponent).toMatchSnapshot();
+  });
 });

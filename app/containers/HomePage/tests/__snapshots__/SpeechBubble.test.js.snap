@@ -10,20 +10,15 @@ exports[`<SpeechBubble /> should render and match the snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  width: 100%;
   -webkit-filter: drop-shadow(0 0 10px grey);
   filter: drop-shadow(0 0 10px grey);
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  max-width: 84vmin;
   padding: 10px 10px 10px 0;
-}
-
-@media (min-width:600px) {
-  .c0 {
-    padding-right: 7.125rem;
-  }
 }
 
 <div

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const ProjectsList = styled.ul`
   margin: 0 auto;
   list-style: none;
-  padding-bottom: 9vmin;
+  padding: 0 0 9vmin 0;
 `;
 
 export default ProjectsList;

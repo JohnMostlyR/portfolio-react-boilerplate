@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NameGroup /> should adopt the "fontFamily" property 1`] = `
+.c0 {
+  display: none;
+  fill: currentColor;
+  font-family: Arialsans-serif;
+  font-size: 120px;
+  -webkit-letter-spacing: 12px;
+  -moz-letter-spacing: 12px;
+  -ms-letter-spacing: 12px;
+  letter-spacing: 12px;
+}
+
+@media (min-width:320px) {
+  .c0 {
+    display: block;
+  }
+}
+
+<g
+  className="c0"
+  fontFamily={
+    Array [
+      "Arial",
+      "sans-serif",
+    ]
+  }
+/>
+`;
+
+exports[`<NameGroup /> should adopt the "showNameBreakpoint" property 1`] = `
+.c0 {
+  display: none;
+  fill: currentColor;
+  font-family: -apple-systemBlinkMacSystemFont"Segoe UI"RobotoOxygenUbuntuCantarell"Fira Sans""Droid Sans""Helvetica Neue"sans-serif;
+  font-size: 120px;
+  -webkit-letter-spacing: 12px;
+  -moz-letter-spacing: 12px;
+  -ms-letter-spacing: 12px;
+  letter-spacing: 12px;
+}
+
+@media (min-width:10px) {
+  .c0 {
+    display: block;
+  }
+}
+
+<g
+  className="c0"
+  fontFamily={
+    Array [
+      "-apple-system",
+      "BlinkMacSystemFont",
+      "\\"Segoe UI\\"",
+      "Roboto",
+      "Oxygen",
+      "Ubuntu",
+      "Cantarell",
+      "\\"Fira Sans\\"",
+      "\\"Droid Sans\\"",
+      "\\"Helvetica Neue\\"",
+      "sans-serif",
+    ]
+  }
+/>
+`;
+
+exports[`<NameGroup /> should render and match the snapshot 1`] = `
+.c0 {
+  display: none;
+  fill: currentColor;
+  font-family: -apple-systemBlinkMacSystemFont"Segoe UI"RobotoOxygenUbuntuCantarell"Fira Sans""Droid Sans""Helvetica Neue"sans-serif;
+  font-size: 120px;
+  -webkit-letter-spacing: 12px;
+  -moz-letter-spacing: 12px;
+  -ms-letter-spacing: 12px;
+  letter-spacing: 12px;
+}
+
+@media (min-width:320px) {
+  .c0 {
+    display: block;
+  }
+}
+
+<g
+  className="c0"
+  fontFamily={
+    Array [
+      "-apple-system",
+      "BlinkMacSystemFont",
+      "\\"Segoe UI\\"",
+      "Roboto",
+      "Oxygen",
+      "Ubuntu",
+      "Cantarell",
+      "\\"Fira Sans\\"",
+      "\\"Droid Sans\\"",
+      "\\"Helvetica Neue\\"",
+      "sans-serif",
+    ]
+  }
+/>
+`;

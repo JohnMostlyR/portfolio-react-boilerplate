@@ -2,30 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import StyledMain from './StyledMain';
-import ChildrenWrapper from './ChildrenWrapper';
 
-function Main({ fixedSiteNavOffset, siteNavIsFixed, children }) {
+function Main({ children, mainRef }) {
   return (
-    <StyledMain
-      fixedSiteNavOffset={fixedSiteNavOffset}
-      siteNavIsFixed={siteNavIsFixed}
-    >
-      <ChildrenWrapper>
-        {children}
-      </ChildrenWrapper>
+    <StyledMain innerRef={mainRef}>
+      {children}
     </StyledMain>
   );
 }
 
 Main.propTypes = {
   children: PropTypes.any,
-  fixedSiteNavOffset: PropTypes.number,
-  siteNavIsFixed: PropTypes.bool,
-};
-
-Main.defaultProps = {
-  fixedSiteNavOffset: 0,
-  siteNavIsFixed: false,
+  mainRef: PropTypes.func,
 };
 
 export default Main;

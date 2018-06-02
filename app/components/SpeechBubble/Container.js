@@ -12,6 +12,8 @@ const fadeIn = keyframes`
 `;
 
 const Container = styled.div`
+  display: inline-flex;
+  flex-flow: column nowrap;
   z-index: 10;
   filter: none;
   opacity: ${({ makeAppear }) => makeAppear ? 0 : 1};

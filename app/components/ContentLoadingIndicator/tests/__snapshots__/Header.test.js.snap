@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should adopt children 1`] = `
+<header>
+  <SpeechBubble
+    arrowHeight="4vh"
+    backgroundColor="#465a65"
+    isLeftHanded={false}
+    padding="1.5rem"
+    showArrowBreakpoint="750px"
+  >
+    Child
+  </SpeechBubble>
+</header>
+`;
+
+exports[`<Header /> should render and match the snapshot 1`] = `
+<header>
+  <SpeechBubble
+    arrowHeight="4vh"
+    backgroundColor="#465a65"
+    isLeftHanded={false}
+    padding="1.5rem"
+    showArrowBreakpoint="750px"
+  />
+</header>
+`;

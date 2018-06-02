@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SVGIcon> Should adopt the "animate" property 1`] = `
+.c0 {
+  display: inline-block;
+  height: 1em;
+  margin: 0;
+  position: relative;
+  width: 1em;
+  -webkit-animation: iVXCSc 2s linear infinite;
+  animation: iVXCSc 2s linear infinite;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+<svg
+  aria-hidden="true"
+  className="c0"
+  focusable="false"
+  viewBox="0 0 512 512"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <text
+    x="0"
+    y="15"
+  >
+    TEST
+  </text>
+</svg>
+`;
+
+exports[`<SVGIcon> Should adopt the "color" property 1`] = `
+.c0 {
+  display: inline-block;
+  height: 1em;
+  margin: 0;
+  position: relative;
+  width: 1em;
+  -webkit-animation: none;
+  animation: none;
+  fill: #bada55;
+  vertical-align: middle;
+}
+
+<svg
+  aria-hidden="true"
+  className="c0"
+  color="#bada55"
+  focusable="false"
+  viewBox="0 0 512 512"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <text
+    x="0"
+    y="15"
+  >
+    TEST
+  </text>
+</svg>
+`;
+
+exports[`<SVGIcon> Should adopt the "height" property 1`] = `
+.c0 {
+  display: inline-block;
+  height: 9999px;
+  margin: 0;
+  position: relative;
+  width: 1em;
+  -webkit-animation: none;
+  animation: none;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+<svg
+  aria-hidden="true"
+  className="c0"
+  focusable="false"
+  height="9999px"
+  viewBox="0 0 512 512"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <text
+    x="0"
+    y="15"
+  >
+    TEST
+  </text>
+</svg>
+`;
+
+exports[`<SVGIcon> Should adopt the "width" property 1`] = `
+.c0 {
+  display: inline-block;
+  height: 1em;
+  margin: 0;
+  position: relative;
+  width: 9999px;
+  -webkit-animation: none;
+  animation: none;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+<svg
+  aria-hidden="true"
+  className="c0"
+  focusable="false"
+  viewBox="0 0 512 512"
+  width="9999px"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <text
+    x="0"
+    y="15"
+  >
+    TEST
+  </text>
+</svg>
+`;
+
+exports[`<SVGIcon> Should render and match the snapshot 1`] = `
+.c0 {
+  display: inline-block;
+  height: 1em;
+  margin: 0;
+  position: relative;
+  width: 1em;
+  -webkit-animation: none;
+  animation: none;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+<svg
+  aria-hidden="true"
+  className="c0"
+  focusable="false"
+  viewBox="0 0 512 512"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <text
+    x="0"
+    y="15"
+  >
+    TEST
+  </text>
+</svg>
+`;

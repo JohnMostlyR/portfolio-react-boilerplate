@@ -4,26 +4,23 @@ exports[`<PageContent /> Should adopt the "content" property 1`] = `
 <Wrapper__Wrapper
   animate={true}
 >
-  <FlexRow__FlexRow>
-    <FlexColumn__FlexColumn>
-      <PageHeader
-        isLeftHanded={true}
-      />
-    </FlexColumn__FlexColumn>
-  </FlexRow__FlexRow>
-  <FlexRow__FlexRow>
-    <FlexColumn__FlexColumn>
-      <SpeechBubble
-        arrowHeight="9vh"
-        backgroundColor="#f90"
-        isLeftHanded={false}
-        makeAppear={false}
-        showArrowBreakpoint="750px"
-      >
-        Testing
-      </SpeechBubble>
-    </FlexColumn__FlexColumn>
-  </FlexRow__FlexRow>
+  <PageHeader
+    isLeftHanded={true}
+  />
+  <ContentWrapper__ContentWrapper>
+    <SpeechBubble
+      arrowHeight="9vh"
+      backgroundColor="#aedd2c"
+      color="#000"
+      isLeftHanded={false}
+      makeAppear={false}
+      maxWidth="30em"
+      padding="1.5rem"
+      showArrowBreakpoint="750px"
+    >
+      Testing
+    </SpeechBubble>
+  </ContentWrapper__ContentWrapper>
 </Wrapper__Wrapper>
 `;
 
@@ -31,18 +28,12 @@ exports[`<PageContent /> Should adopt the "noSpeechBubble" property 1`] = `
 <Wrapper__Wrapper
   animate={true}
 >
-  <FlexRow__FlexRow>
-    <FlexColumn__FlexColumn>
-      <PageHeader
-        isLeftHanded={true}
-      />
-    </FlexColumn__FlexColumn>
-  </FlexRow__FlexRow>
-  <FlexRow__FlexRow>
-    <FlexColumn__FlexColumn>
-      Testing
-    </FlexColumn__FlexColumn>
-  </FlexRow__FlexRow>
+  <PageHeader
+    isLeftHanded={true}
+  />
+  <ContentWrapper__ContentWrapper>
+    Testing
+  </ContentWrapper__ContentWrapper>
 </Wrapper__Wrapper>
 `;
 
@@ -50,26 +41,23 @@ exports[`<PageContent /> Should adopt the "title" property 1`] = `
 <Wrapper__Wrapper
   animate={true}
 >
-  <FlexRow__FlexRow>
-    <FlexColumn__FlexColumn>
-      <PageHeader
-        isLeftHanded={true}
-      >
-        Testing
-      </PageHeader>
-    </FlexColumn__FlexColumn>
-  </FlexRow__FlexRow>
-  <FlexRow__FlexRow>
-    <FlexColumn__FlexColumn>
-      <SpeechBubble
-        arrowHeight="9vh"
-        backgroundColor="#f90"
-        isLeftHanded={false}
-        makeAppear={false}
-        showArrowBreakpoint="750px"
-      />
-    </FlexColumn__FlexColumn>
-  </FlexRow__FlexRow>
+  <PageHeader
+    isLeftHanded={true}
+  >
+    Testing
+  </PageHeader>
+  <ContentWrapper__ContentWrapper>
+    <SpeechBubble
+      arrowHeight="9vh"
+      backgroundColor="#aedd2c"
+      color="#000"
+      isLeftHanded={false}
+      makeAppear={false}
+      maxWidth="30em"
+      padding="1.5rem"
+      showArrowBreakpoint="750px"
+    />
+  </ContentWrapper__ContentWrapper>
 </Wrapper__Wrapper>
 `;
 
@@ -77,23 +65,20 @@ exports[`<PageContent /> Should render and match the snapshot 1`] = `
 <Wrapper__Wrapper
   animate={true}
 >
-  <FlexRow__FlexRow>
-    <FlexColumn__FlexColumn>
-      <PageHeader
-        isLeftHanded={true}
-      />
-    </FlexColumn__FlexColumn>
-  </FlexRow__FlexRow>
-  <FlexRow__FlexRow>
-    <FlexColumn__FlexColumn>
-      <SpeechBubble
-        arrowHeight="9vh"
-        backgroundColor="#f90"
-        isLeftHanded={false}
-        makeAppear={false}
-        showArrowBreakpoint="750px"
-      />
-    </FlexColumn__FlexColumn>
-  </FlexRow__FlexRow>
+  <PageHeader
+    isLeftHanded={true}
+  />
+  <ContentWrapper__ContentWrapper>
+    <SpeechBubble
+      arrowHeight="9vh"
+      backgroundColor="#aedd2c"
+      color="#000"
+      isLeftHanded={false}
+      makeAppear={false}
+      maxWidth="30em"
+      padding="1.5rem"
+      showArrowBreakpoint="750px"
+    />
+  </ContentWrapper__ContentWrapper>
 </Wrapper__Wrapper>
 `;

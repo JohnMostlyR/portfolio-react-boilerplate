@@ -1,42 +1,51 @@
-/**
- *
- * ContentLoadingIndicator
- *
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
 import messages from './messages';
+import Article from './Article';
+import Header from './Header';
+import H2 from './H2';
+import Content from './Content';
 
-import ContentLoadingArticle from '../ContentLoadingArticle/index';
+import SVGIcon from '../../components/SVGIcon';
 
-export class ContentLoadingIndicator extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
-  render() {
-    const { showError, show } = this.props;
-    let renderThis = <React.Fragment />;
+const SPINNER_ICON = (
+  <SVGIcon viewBox="0 0 512 512" height="2em" width="2em" animate="rotate">
+    <path d="M444.788 291.1l42.616 24.599c4.867 2.809 7.126 8.618 5.459 13.985-11.07 35.642-29.97 67.842-54.689 94.586a12.016 12.016 0 0 1-14.832 2.254l-42.584-24.595a191.577 191.577 0 0 1-60.759 35.13v49.182a12.01 12.01 0 0 1-9.377 11.718c-34.956 7.85-72.499 8.256-109.219.007-5.49-1.233-9.403-6.096-9.403-11.723v-49.184a191.555 191.555 0 0 1-60.759-35.13l-42.584 24.595a12.016 12.016 0 0 1-14.832-2.254c-24.718-26.744-43.619-58.944-54.689-94.586-1.667-5.366.592-11.175 5.459-13.985L67.212 291.1a193.48 193.48 0 0 1 0-70.199l-42.616-24.599c-4.867-2.809-7.126-8.618-5.459-13.985 11.07-35.642 29.97-67.842 54.689-94.586a12.016 12.016 0 0 1 14.832-2.254l42.584 24.595a191.577 191.577 0 0 1 60.759-35.13V25.759a12.01 12.01 0 0 1 9.377-11.718c34.956-7.85 72.499-8.256 109.219-.007 5.49 1.233 9.403 6.096 9.403 11.723v49.184a191.555 191.555 0 0 1 60.759 35.13l42.584-24.595a12.016 12.016 0 0 1 14.832 2.254c24.718 26.744 43.619 58.944 54.689 94.586 1.667 5.366-.592 11.175-5.459 13.985L444.788 220.9a193.485 193.485 0 0 1 0 70.2zM336 256c0-44.112-35.888-80-80-80s-80 35.888-80 80 35.888 80 80 80 80-35.888 80-80z" />
+  </SVGIcon>
+);
 
-    if (showError) {
-      renderThis = <FormattedMessage {...messages.error} />;
-    } else {
-      renderThis = <FormattedMessage {...messages.pastDelay} />;
-    }
+const ERROR_ICON = (
+  <SVGIcon viewBox="0 0 512 512" height="2em" width="2em">
+    <path d="M304.083 405.907c4.686 4.686 4.686 12.284 0 16.971l-44.674 44.674c-59.263 59.262-155.693 59.266-214.961 0-59.264-59.265-59.264-155.696 0-214.96l44.675-44.675c4.686-4.686 12.284-4.686 16.971 0l39.598 39.598c4.686 4.686 4.686 12.284 0 16.971l-44.675 44.674c-28.072 28.073-28.072 73.75 0 101.823 28.072 28.072 73.75 28.073 101.824 0l44.674-44.674c4.686-4.686 12.284-4.686 16.971 0l39.597 39.598zm-56.568-260.216c4.686 4.686 12.284 4.686 16.971 0l44.674-44.674c28.072-28.075 73.75-28.073 101.824 0 28.072 28.073 28.072 73.75 0 101.823l-44.675 44.674c-4.686 4.686-4.686 12.284 0 16.971l39.598 39.598c4.686 4.686 12.284 4.686 16.971 0l44.675-44.675c59.265-59.265 59.265-155.695 0-214.96-59.266-59.264-155.695-59.264-214.961 0l-44.674 44.674c-4.686 4.686-4.686 12.284 0 16.971l39.597 39.598zm234.828 359.28l22.627-22.627c9.373-9.373 9.373-24.569 0-33.941L63.598 7.029c-9.373-9.373-24.569-9.373-33.941 0L7.029 29.657c-9.373 9.373-9.373 24.569 0 33.941l441.373 441.373c9.373 9.372 24.569 9.372 33.941 0z" />
+  </SVGIcon>
+);
 
-    return (
-      <ContentLoadingArticle
-        showError={showError}
-        show={show}
-      >
-        {renderThis}
-      </ContentLoadingArticle>
-    );
+function ContentLoadingIndicator({ show, showError }) {
+  let renderThisMessage = <React.Fragment />;
+
+  if (showError) {
+    renderThisMessage = <FormattedMessage {...messages.error} />;
+  } else {
+    renderThisMessage = <FormattedMessage {...messages.pastDelay} />;
   }
+
+  return (
+    <Article show={show || showError}>
+      <Header>
+        <Content>
+          <H2 isError={showError}>{renderThisMessage}</H2>
+          {showError ? ERROR_ICON : SPINNER_ICON}
+        </Content>
+      </Header>
+    </Article>
+  );
 }
 
 ContentLoadingIndicator.propTypes = {
-  show: PropTypes.bool,
   showError: PropTypes.bool,
+  show: PropTypes.bool,
 };
 
 export default ContentLoadingIndicator;

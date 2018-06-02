@@ -30,7 +30,9 @@ ShallowWrapper {
         makeAppear={true}
         showArrowBreakpoint="750px"
 >
-        <H2__H2>
+        <H2__H2
+                color="#aedd2c"
+        >
                 <div>
                         children
                 </div>
@@ -45,7 +47,9 @@ ShallowWrapper {
       "props": Object {
         "arrowHeight": "4vh",
         "backgroundColor": "#465a65",
-        "children": <H2__H2>
+        "children": <H2__H2
+          color="#aedd2c"
+>
           <div>
                     children
           </div>
@@ -63,6 +67,7 @@ ShallowWrapper {
           "children": <div>
             children
 </div>,
+          "color": "#aedd2c",
         },
         "ref": null,
         "rendered": Object {
@@ -95,7 +100,9 @@ ShallowWrapper {
           makeAppear={true}
           showArrowBreakpoint="750px"
 >
-          <H2__H2>
+          <H2__H2
+                    color="#aedd2c"
+          >
                     <div>
                               children
                     </div>
@@ -110,7 +117,9 @@ ShallowWrapper {
         "props": Object {
           "arrowHeight": "4vh",
           "backgroundColor": "#465a65",
-          "children": <H2__H2>
+          "children": <H2__H2
+            color="#aedd2c"
+>
             <div>
                         children
             </div>
@@ -128,6 +137,7 @@ ShallowWrapper {
             "children": <div>
               children
 </div>,
+            "color": "#aedd2c",
           },
           "ref": null,
           "rendered": Object {
@@ -184,7 +194,9 @@ ShallowWrapper {
         makeAppear={true}
         showArrowBreakpoint="750px"
 >
-        <H2__H2 />
+        <H2__H2
+                color="#aedd2c"
+        />
 </SpeechBubble>,
     },
     "ref": null,
@@ -195,7 +207,9 @@ ShallowWrapper {
       "props": Object {
         "arrowHeight": "4vh",
         "backgroundColor": "#465a65",
-        "children": <H2__H2 />,
+        "children": <H2__H2
+          color="#aedd2c"
+/>,
         "isLeftHanded": true,
         "makeAppear": true,
         "showArrowBreakpoint": "750px",
@@ -207,6 +221,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": undefined,
+          "color": "#aedd2c",
         },
         "ref": null,
         "rendered": null,
@@ -229,7 +244,9 @@ ShallowWrapper {
           makeAppear={true}
           showArrowBreakpoint="750px"
 >
-          <H2__H2 />
+          <H2__H2
+                    color="#aedd2c"
+          />
 </SpeechBubble>,
       },
       "ref": null,
@@ -240,7 +257,9 @@ ShallowWrapper {
         "props": Object {
           "arrowHeight": "4vh",
           "backgroundColor": "#465a65",
-          "children": <H2__H2 />,
+          "children": <H2__H2
+            color="#aedd2c"
+/>,
           "isLeftHanded": true,
           "makeAppear": true,
           "showArrowBreakpoint": "750px",
@@ -252,6 +271,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": undefined,
+            "color": "#aedd2c",
           },
           "ref": null,
           "rendered": null,

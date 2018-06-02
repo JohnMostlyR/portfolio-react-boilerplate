@@ -2,9 +2,12 @@
 
 exports[`<Arrow /> should adopt the "height" prop 1`] = `
 .c0 {
-  float: right;
+  display: inline-block;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   height: 1px;
-  margin-top: -1px;
+  margin: -1px 0 0 0 !important;
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -25,18 +28,22 @@ exports[`<Arrow /> should adopt the "height" prop 1`] = `
 
 <svg
   className="c0"
+  focusable="false"
   height="1em"
-  preserveAspectRatio="xMinYMid"
-  viewBox="0 427.9 175.1 132.1"
+  preserveAspectRatio="xMinYMid meet"
+  viewBox="0 0 848 640"
   xmlns="http://www.w3.org/2000/svg"
 />
 `;
 
 exports[`<Arrow /> should adopt the "isLeftHanded" prop 1`] = `
 .c0 {
-  float: right;
+  display: inline-block;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   height: 1px;
-  margin-top: -1px;
+  margin: -1px 0 0 0 !important;
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -57,17 +64,21 @@ exports[`<Arrow /> should adopt the "isLeftHanded" prop 1`] = `
 
 <svg
   className="c0"
-  preserveAspectRatio="xMinYMid"
-  viewBox="0 427.9 175.1 132.1"
+  focusable="false"
+  preserveAspectRatio="xMinYMid meet"
+  viewBox="0 0 848 640"
   xmlns="http://www.w3.org/2000/svg"
 />
 `;
 
 exports[`<Arrow /> should adopt the "showBreakpoint" prop 1`] = `
 .c0 {
-  float: right;
+  display: inline-block;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   height: 1px;
-  margin-top: -1px;
+  margin: -1px 0 0 0 !important;
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -88,17 +99,21 @@ exports[`<Arrow /> should adopt the "showBreakpoint" prop 1`] = `
 
 <svg
   className="c0"
-  preserveAspectRatio="xMinYMid"
-  viewBox="0 427.9 175.1 132.1"
+  focusable="false"
+  preserveAspectRatio="xMinYMid meet"
+  viewBox="0 0 848 640"
   xmlns="http://www.w3.org/2000/svg"
 />
 `;
 
 exports[`<Arrow /> should render and match the snapshot 1`] = `
 .c0 {
-  float: right;
+  display: inline-block;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
   height: 1px;
-  margin-top: -1px;
+  margin: -1px 0 0 0 !important;
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -119,8 +134,9 @@ exports[`<Arrow /> should render and match the snapshot 1`] = `
 
 <svg
   className="c0"
-  preserveAspectRatio="xMinYMid"
-  viewBox="0 427.9 175.1 132.1"
+  focusable="false"
+  preserveAspectRatio="xMinYMid meet"
+  viewBox="0 0 848 640"
   xmlns="http://www.w3.org/2000/svg"
 />
 `;

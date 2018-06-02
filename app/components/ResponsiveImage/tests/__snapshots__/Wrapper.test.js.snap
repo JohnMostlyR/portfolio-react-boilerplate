@@ -2,6 +2,6 @@
 
 exports[`<Wrapper /> should render and match the snapshot 1`] = `
 <div
-  className="Wrapper__Wrapper-fEDTQp dBQcuH"
+  className="Wrapper__Wrapper-fEDTQp fthMqu"
 />
 `;

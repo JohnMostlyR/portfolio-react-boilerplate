@@ -13,7 +13,7 @@ describe('contactPageReducer', () => {
     state = fromJS({
       loading: false,
       error: {},
-      sendStatus: 'IDLE',
+      sendStatus: 'idle',
       field: {
         subject: '',
         message: '',
@@ -38,7 +38,7 @@ describe('contactPageReducer', () => {
     const expectedResult = state
       .set('error', {})
       .set('field', fixture)
-      .set('sendStatus', 'SENDING');
+      .set('sendStatus', 'sending');
 
     expect(contactPageReducer(state, sendForm(fixture))).toEqual(expectedResult);
   });
@@ -51,7 +51,7 @@ describe('contactPageReducer', () => {
       email: '',
     };
     const expectedResult = state
-      .set('sendStatus', 'SUCCESS')
+      .set('sendStatus', 'success')
       .set('field', fixture);
 
     expect(contactPageReducer(state, sendFormSuccess())).toEqual(fromJS(expectedResult));

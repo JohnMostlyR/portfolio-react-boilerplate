@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IconNL /> should adopt the "isSelected" property 1`] = `
+<SVGIcon__SVGIcon
+  isSelected={true}
+  viewBox="0 0 9 6"
+>
+  <filter
+    id="icon-nl-saturate"
+  >
+    <feColorMatrix
+      in="SourceGraphic"
+      type="saturate"
+      values="1.5"
+    />
+  </filter>
+  <g
+    filter="url(#icon-nl-saturate)"
+  >
+    <rect
+      fill="#21468b"
+      height="6"
+      width="9"
+    />
+    <rect
+      fill="#fff"
+      height="4"
+      width="9"
+    />
+    <rect
+      fill="#ae1c28"
+      height="2"
+      width="9"
+    />
+  </g>
+</SVGIcon__SVGIcon>
+`;
+
+exports[`<IconNL /> should render and match the snapshot 1`] = `
+<SVGIcon__SVGIcon
+  viewBox="0 0 9 6"
+>
+  <filter
+    id="icon-nl-saturate"
+  >
+    <feColorMatrix
+      in="SourceGraphic"
+      type="saturate"
+      values="0.5"
+    />
+  </filter>
+  <g
+    filter="url(#icon-nl-saturate)"
+  >
+    <rect
+      fill="#21468b"
+      height="6"
+      width="9"
+    />
+    <rect
+      fill="#fff"
+      height="4"
+      width="9"
+    />
+    <rect
+      fill="#ae1c28"
+      height="2"
+      width="9"
+    />
+  </g>
+</SVGIcon__SVGIcon>
+`;

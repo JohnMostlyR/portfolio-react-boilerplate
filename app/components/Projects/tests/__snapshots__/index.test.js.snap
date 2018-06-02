@@ -5,7 +5,9 @@ exports[`<Projects /> should render and match the snapshot 1`] = `
   <ProjectsList__ProjectsList>
     <ProjectsListItem__ProjectsListItem
       key="My Portfolio"
+      onBlur={[Function]}
       onFocus={[Function]}
+      onMouseOut={[Function]}
       onMouseOver={[Function]}
     >
       <Project
@@ -32,7 +34,9 @@ exports[`<Projects /> should render and match the snapshot 1`] = `
     </ProjectsListItem__ProjectsListItem>
     <ProjectsListItem__ProjectsListItem
       key="In progress..."
+      onBlur={[Function]}
       onFocus={[Function]}
+      onMouseOut={[Function]}
       onMouseOver={[Function]}
     >
       <Project

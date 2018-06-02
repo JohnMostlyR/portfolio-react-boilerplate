@@ -1,31 +1,22 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import { IntlProvider } from 'react-intl';
 
-import { ContentLoadingIndicator } from '../index';
+import ContentLoadingIndicator from '../index';
 
 describe('<ContentLoadingIndicator />', () => {
-  it('Should render and match the snapshot', () => {
-    const wrapper = shallow(<ContentLoadingIndicator />);
-    expect(toJson(wrapper)).toMatchSnapshot();
+  it('should render and match the snapshot', () => {
+    const renderedComponent = shallow(<ContentLoadingIndicator />);
+    expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
-  it('Should adopt the "show" property', () => {
-    const wrapper = mount(
-      <IntlProvider locale={'en'}>
-        <ContentLoadingIndicator show />
-      </IntlProvider>
-    );
-    expect(toJson(wrapper)).toMatchSnapshot();
+  it('should adopt the "show" prop', () => {
+    const renderedComponent = shallow(<ContentLoadingIndicator show />);
+    expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
-  it('Should adopt the "showError" property', () => {
-    const wrapper = mount(
-      <IntlProvider locale={'en'}>
-        <ContentLoadingIndicator showError />
-      </IntlProvider>
-    );
-    expect(toJson(wrapper)).toMatchSnapshot();
+  it('should adopt the "showError" prop', () => {
+    const renderedComponent = shallow(<ContentLoadingIndicator showError />);
+    expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 });

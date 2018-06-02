@@ -5,12 +5,12 @@
  */
 
 import {
-  CHANGE_LOCALE,
+  CHANGE_LANGUAGE,
 } from './constants';
 
-export function changeLocale(languageLocale) {
+export function changeLanguage(languageLocale) {
   return {
-    type: CHANGE_LOCALE,
+    type: CHANGE_LANGUAGE,
     locale: languageLocale,
   };
 }

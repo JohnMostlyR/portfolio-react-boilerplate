@@ -24,7 +24,6 @@ import reducer from './reducer';
 
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
-import Article from '../../components/Article';
 import Projects from '../../components/Projects';
 import PageContent from '../../components/PageContent';
 import ContentLoadingIndicator from '../../components/ContentLoadingIndicator';
@@ -92,13 +91,13 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
     }
 
     return (
-      <Article>
+      <React.Fragment>
         <Helmet>
           <title>Mijn projecten</title>
           <meta name="description" content="Mijn projecten pagina van Johan Meester zijn portfolio" />
         </Helmet>
         {showContent}
-      </Article>
+      </React.Fragment>
     );
   }
 }

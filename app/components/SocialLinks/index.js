@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
 import { FormattedMessage } from 'react-intl';
+import styled from 'styled-components';
 
 import ExternalLink from './ExternalLink';
 import StyledUL from './StyledUL';
 import StyledLI from './StyledLI';
 import messages from './messages';
+
+import ThemeContext from '../../styles/theme';
 
 export function playAnimation(links) {
   const INDEX = 0; // starting node index
@@ -28,13 +31,14 @@ export function playAnimation(links) {
   }, START_DELAY, links, INDEX);
 }
 
-class SocialLinks extends React.PureComponent {
-  componentDidMount() {
-    if (this.list.children.length) {
-      playAnimation(this.list.children);
-    }
+const Nav = styled.nav`
+  @supports (display: flex) {
+    align-items: center;
+    display: flex;
   }
+`;
 
+class SocialLinks extends React.PureComponent {
   render() {
     const externalLinks = [
       {
@@ -48,7 +52,7 @@ class SocialLinks extends React.PureComponent {
         url: 'https://github.com/Mensae',
       },
       {
-        icon: 'linkedin-square',
+        icon: 'linkedin',
         name: 'LinkedIn',
         url: 'https://nl.linkedin.com/in/jmeester',
       },
@@ -60,8 +64,12 @@ class SocialLinks extends React.PureComponent {
     ];
 
     return (
-      <aside>
-        <h2 hidden aria-hidden="false"><FormattedMessage {...messages.header} /></h2>
+      <Nav aria-labelledby="SocialLinks-title">
+        <FormattedMessage {...messages.header}>
+          {
+            (message) => <h1 id="SocialLinks-title" hidden aria-hidden="false">{message}</h1>
+          }
+        </FormattedMessage>
         <StyledUL
           innerRef={
             (e) => {
@@ -75,17 +83,22 @@ class SocialLinks extends React.PureComponent {
                 key={externalLink.url}
                 data-tip={externalLink.name}
               >
-                <ExternalLink
-                  href={externalLink.url}
-                  faIcon={externalLink.icon}
-                  description={externalLink.name}
-                />
+                <ThemeContext.Consumer>
+                  {
+                    ({ pageHeader }) => (<ExternalLink
+                      href={externalLink.url}
+                      faIcon={externalLink.icon}
+                      description={externalLink.name}
+                      color={pageHeader.backgroundColor}
+                    />)
+                  }
+                </ThemeContext.Consumer>
               </StyledLI>
             ))
           }
         </StyledUL>
         <ReactTooltip />
-      </aside>
+      </Nav>
     );
   }
 }

@@ -5,13 +5,15 @@ import Figure from './Figure';
 import Body from './Body';
 import ImageWrapper from './ImageWrapper';
 
-const MediaAsset = (props) => (
-  <Figure isOdd={props.isOdd}>
-    <Body>
-      <ImageWrapper imageSource={props.imageSource} imageAlt="Project" ratio="16by9" />
-    </Body>
-  </Figure>
-);
+function MediaAsset(props) {
+  return (
+    <Figure isOdd={props.isOdd}>
+      <Body>
+        <ImageWrapper imageSource={props.imageSource} imageAlt="Project" ratio="16by9" />
+      </Body>
+    </Figure>
+  );
+}
 
 MediaAsset.propTypes = {
   imageSource: PropTypes.string.isRequired,

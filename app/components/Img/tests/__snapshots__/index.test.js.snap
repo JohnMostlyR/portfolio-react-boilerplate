@@ -17,7 +17,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "className": "Img__Img-eVCnLo vQDkP",
+      "className": "Img__Img-eVCnLo lbtpog",
     },
     "ref": null,
     "rendered": null,
@@ -29,7 +29,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "className": "Img__Img-eVCnLo vQDkP",
+        "className": "Img__Img-eVCnLo lbtpog",
       },
       "ref": null,
       "rendered": null,

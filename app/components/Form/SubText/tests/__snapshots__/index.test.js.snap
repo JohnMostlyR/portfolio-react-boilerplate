@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SubText /> should render and match the snapshot 1`] = `
+.c0 {
+  margin: 0 !important;
+  padding: 0.5em 0 0 0;
+  font-size: 0.8333333333333334rem;
+  line-height: 1.5;
+}
+
+<div
+  className="c0"
+/>
+`;

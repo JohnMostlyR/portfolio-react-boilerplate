@@ -3,7 +3,16 @@
 exports[`<StyledHeader /> Should render and match the snapshot 1`] = `
 .c0 {
   display: inline-block;
-  padding: 5px;
+  margin-top: 4.5rem;
+}
+
+@supports (display:grid) {
+  .c0 {
+    -webkit-align-self: end;
+    -ms-flex-item-align: end;
+    align-self: end;
+    grid-area: pageHeader;
+  }
 }
 
 <header

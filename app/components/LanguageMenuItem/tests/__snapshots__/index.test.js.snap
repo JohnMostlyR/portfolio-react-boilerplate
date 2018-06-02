@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LanguageMenuItem /> should adopt the "isSelected" property 1`] = `
+<LanguageMenuItem__Button
+  aria-checked={true}
+  data-hasfocus="false"
+  disabled={true}
+  lang="nl"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="menuitemradio"
+  tabIndex="-1"
+>
+  <IconNL
+    isSelected={true}
+  />
+  <Label__Label
+    isSelected={true}
+  >
+    Nederlands
+  </Label__Label>
+</LanguageMenuItem__Button>
+`;
+
+exports[`<LanguageMenuItem /> should render and match the snapshot 1`] = `
+<LanguageMenuItem__Button
+  aria-checked={false}
+  data-hasfocus="false"
+  disabled={false}
+  lang="nl"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="menuitemradio"
+  tabIndex="-1"
+>
+  <IconNL
+    isSelected={false}
+  />
+  <Label__Label
+    isSelected={false}
+  >
+    Nederlands
+  </Label__Label>
+</LanguageMenuItem__Button>
+`;

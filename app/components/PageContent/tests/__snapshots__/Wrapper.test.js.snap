@@ -17,6 +17,14 @@ exports[`<Wrapper /> should adopt the "animate" property 1`] = `
   animation-timing-function: ease-in-out;
 }
 
+@supports (display:grid) {
+  .c0 {
+    display: grid;
+    grid-area: mainContent;
+    grid-template-areas: "pageHeader" "pageContent";
+  }
+}
+
 <div
   className="c0"
 />
@@ -37,6 +45,14 @@ exports[`<Wrapper /> should render and match the snapshot 1`] = `
   animation-name: bcCCNc;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+}
+
+@supports (display:grid) {
+  .c0 {
+    display: grid;
+    grid-area: mainContent;
+    grid-template-areas: "pageHeader" "pageContent";
+  }
 }
 
 <div

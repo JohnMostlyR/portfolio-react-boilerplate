@@ -5,7 +5,7 @@ import 'jest-styled-components';
 
 import StyledLI from '../StyledUL';
 
-describe('StyledLI', () => {
+describe('<StyledLI>', () => {
   it('Should render and match the snapshot', () => {
     const wrapper = shallow(<StyledLI />);
     expect(toJson(wrapper)).toMatchSnapshot();
