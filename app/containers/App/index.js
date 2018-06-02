@@ -30,6 +30,7 @@ import SkillsPage from '../../containers/SkillsPage/Loadable';
 import ProjectsPage from '../../containers/ProjectsPage/Loadable';
 import ContactPage from '../../containers/ContactPage/Loadable';
 import NotFoundPage from '../../containers/NotFoundPage/Loadable';
+import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
 
 class App extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
@@ -105,7 +106,7 @@ class App extends React.PureComponent { // eslint-disable-line react/prefer-stat
 
   render() {
     return (
-      <Wrapper innerRef={(el) => { this.wrapper = el; }}>
+      <Wrapper innerRef={(el) => { this.wrapper = el; }} lang={this.props.locale}>
         <h1 hidden aria-hidden="false"><FormattedMessage {...messages.title} /></h1>
         <SiteHeader />
         <SiteNavigation />
@@ -126,6 +127,7 @@ class App extends React.PureComponent { // eslint-disable-line react/prefer-stat
 }
 
 App.propTypes = {
+  locale: PropTypes.string,
   location: PropTypes.object,
   setSiteWidth: PropTypes.func,
   siteNavigationTopPosition: PropTypes.number,
@@ -144,6 +146,7 @@ export function mapDispatchToProps(dispatch) {
 }
 
 const mapStateToProps = createStructuredSelector({
+  locale: makeSelectLocale(),
   location: makeSelectLocation(),
   siteNavigationTopPosition: makeSelectSiteNavigationTopPosition(),
   siteNavigationIsAtScreenTop: makeSelectSiteNavigationIsAtScreenTop(),
