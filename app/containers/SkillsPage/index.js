@@ -74,13 +74,15 @@ export class SkillsPage extends React.PureComponent { // eslint-disable-line rea
   }
 
   render() {
+    const { error, skillsText } = this.props;
+    const { isLoading } = this.state;
     let showContent = <React.Fragment />;
 
-    if (Array.isArray(this.props.skillsText) && this.props.skillsText.length) {
-      showContent = <PageContent title={<FormattedMessage {...messages.title} />} content={this.props.skillsText} />;
-    } else if (this.state.isLoading) { // FROM STATE!
+    if (Array.isArray(skillsText) && skillsText.length) {
+      showContent = <PageContent title={<FormattedMessage {...messages.title} />} content={skillsText} />;
+    } else if (isLoading) { // FROM STATE!
       showContent = <ContentLoadingIndicator show showError={false} />;
-    } else if (!!this.props.error !== false) {
+    } else if (!!error !== false) {
       showContent = <ContentLoadingIndicator show showError />;
     }
 

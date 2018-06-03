@@ -74,19 +74,21 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
   }
 
   render() {
+    const { error, projects } = this.props;
+    const { isLoading } = this.state;
     let showContent = <React.Fragment />;
 
-    if (this.props.projects.length) {
+    if (Array.isArray(projects) && projects.length) {
       showContent = (
         <PageContent
           title={<FormattedMessage {...messages.title} />}
-          content={<Projects projects={this.props.projects} />}
+          content={<Projects projects={projects} />}
           noSpeechBubble
         />
       );
-    } else if (this.state.isLoading) { // FROM STATE!
+    } else if (isLoading) { // FROM STATE!
       showContent = <ContentLoadingIndicator show showError={false} />;
-    } else if (!!this.props.error !== false) {
+    } else if (!!error !== false) {
       showContent = <ContentLoadingIndicator show showError />;
     }
 

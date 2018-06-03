@@ -6,8 +6,30 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  header: {
-    id: 'portfolio.components.NotFoundPage.header',
-    defaultMessage: 'This is NotFoundPage component!',
+  pageTitle: {
+    id: 'portfolio.page.NotFoundPage.pageTitle',
+    defaultMessage: 'Not found : Johan Meester\'s portfolio',
+  },
+  pageDescription: {
+    id: 'portfolio.page.NotFoundPage.pageDescription',
+    defaultMessage: 'Page not found.',
+  },
+  title: {
+    id: 'portfolio.page.NotFoundPage.title',
+    defaultMessage: 'NOT FOUND',
+  },
+  content: {
+    id: 'portfolio.page.NotFoundPage.content',
+    defaultMessage:
+      `I am sorry, but the page you requested does not exist or has been removed.
+      Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.`,
+  },
+  home: {
+    id: 'portfolio.page.NotFoundPage.home',
+    defaultMessage: 'start',
+  },
+  contact: {
+    id: 'portfolio.page.NotFoundPage.contact',
+    defaultMessage: 'contact',
   },
 });
