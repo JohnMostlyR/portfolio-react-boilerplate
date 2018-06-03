@@ -8,24 +8,33 @@ import { css } from 'styled-components';
 
 function svgToURL(svg) {
   const svgURL = svg.replace(/["%#}{><]/g, (match) => {
+    let replacement = match;
+
+    /* eslint-disable default-case */
     switch (match) {
       case '"':
-        return '\'';
+        replacement = '\'';
+        break;
       case '%':
-        return '%25';
+        replacement = '%25';
+        break;
       case '#':
-        return '%23';
+        replacement = '%23';
+        break;
       case '{':
-        return '%7B';
+        replacement = '%7B';
+        break;
       case '}':
-        return '%7D';
+        replacement = '%7D';
+        break;
       case '<':
-        return '%3C';
+        replacement = '%3C';
+        break;
       case '>':
-        return '%3E';
-      default:
-        return match;
+        replacement = '%3E';
     }
+
+    return replacement;
   });
 
   return `"data:image/svg+xml;charset=utf-8,${svgURL}"`;
