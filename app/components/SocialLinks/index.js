@@ -10,27 +10,6 @@ import messages from './messages';
 
 import ThemeContext from '../../styles/theme';
 
-export function playAnimation(links) {
-  const INDEX = 0; // starting node index
-  const START_DELAY = 3100; // milliseconds;
-  const DELAY = 100; // milliseconds;
-
-  /* eslint no-param-reassign: "off" */
-  setTimeout(function a(nodes, idx) {
-    nodes[idx].style.transform = 'scale(1.5)';
-
-    /* eslint consistent-return: "off" */
-    setTimeout(() => {
-      nodes[idx].style.removeProperty('transform');
-      if (idx < nodes.length - 1) {
-        setTimeout(a, DELAY, nodes, idx += 1);
-      } else {
-        return true;
-      }
-    }, DELAY);
-  }, START_DELAY, links, INDEX);
-}
-
 const Nav = styled.nav`
   @supports (display: flex) {
     align-items: center;

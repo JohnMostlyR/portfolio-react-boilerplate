@@ -8,11 +8,7 @@ import SocialLinks from '../index';
 import ThemeContext, { theme } from '../../../styles/theme';
 
 describe('<SocialLinks />', () => {
-  /**
-   * TODO; Waiting for Enzyme to resolve issues with testing with the Context API
-   * @link https://github.com/airbnb/enzyme/issues/1553
-   */
-  it.skip('should render and match the snapshot', () => {
+  it('should render and match the snapshot', () => {
     const wrapper = mount(
       <IntlProvider locale={'en'}>
         <ThemeContext.Provider value={theme}>
