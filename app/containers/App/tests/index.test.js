@@ -1,59 +1,52 @@
 import React from 'react';
 import { IntlProvider } from 'react-intl';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
 import { Route } from 'react-router-dom';
 import { ConnectedRouter } from 'react-router-redux';
 import createHistory from 'history/createMemoryHistory';
 
 import App, { mapDispatchToProps } from '../index';
-import { setSiteNavigationIsAtScreenTop } from '../actions';
+import { setSiteNavigationIsAtScreenTop, setSiteWidth } from '../actions';
 import Wrapper from '../Wrapper';
 
 import configureStore from '../../../configureStore';
 import ThemeContext, { theme } from '../../../styles/theme';
 
-describe.skip('<App />', () => {
+describe('<App />', () => {
   const initialState = {};
   const history = createHistory();
   const store = configureStore(initialState, history);
+  const componentDidMount = jest.spyOn(App.prototype, 'componentDidMount');
+  const componentWillUnmount = jest.spyOn(App.prototype, 'componentWillUnmount');
+  const renderedComponent = mount(
+    <Provider store={store}>
+      <IntlProvider locale={'en'}>
+        <ConnectedRouter history={history}>
+          <ThemeContext.Provider value={theme}>
+            <App />
+          </ThemeContext.Provider>
+        </ConnectedRouter>
+      </IntlProvider>
+    </Provider>
+  );
 
   afterEach(() => {
     jest.clearAllMocks();
   });
 
-  it('should render and match the snapshot', () => {
-    const renderedComponent = shallow(
-      <App />
-    );
-    expect(renderedComponent).toMatchSnapshot();
+  it('should call "componentDidMount"', () => {
+    expect(componentDidMount).toHaveBeenCalledTimes(1);
   });
 
-  /**
-   * TODO; Waiting for Enzyme to resolve issues with testing with the Context API
-   * @link https://github.com/airbnb/enzyme/issues/1553
-   */
-  it.skip('should have an outer <Wrapper /> component', () => {
-    const renderedComponent = mount(
-      <Provider store={store}>
-        <IntlProvider locale={'en'}>
-          <ConnectedRouter history={history}>
-            <ThemeContext.Provider value={theme}>
-              <App />
-            </ThemeContext.Provider>
-          </ConnectedRouter>
-        </IntlProvider>
-      </Provider>
-    );
+  it('should have an outer <Wrapper /> component', () => {
     const outerWrapper = renderedComponent.find(Wrapper);
     expect(outerWrapper.length).toBe(1);
     expect(outerWrapper.prop('innerRef')).toBeInstanceOf(Function);
+    expect(outerWrapper.prop('lang')).toBe('en');
   });
 
   it('should render some routes', () => {
-    const renderedComponent = shallow(
-      <App />
-    );
     expect(renderedComponent.find(Route).length).not.toBe(0);
   });
 
@@ -73,5 +66,26 @@ describe.skip('<App />', () => {
         expect(dispatch).toHaveBeenCalledWith(setSiteNavigationIsAtScreenTop(isAtScreenTop));
       });
     });
+
+    describe('setSiteWidth', () => {
+      it('should have been mapped', () => {
+        const dispatch = jest.fn();
+        const props = mapDispatchToProps(dispatch);
+        expect(props.setSiteWidth).toBeDefined();
+      });
+
+      it('should dispatch setSiteWidth when called', () => {
+        const dispatch = jest.fn();
+        const width = 320;
+        const props = mapDispatchToProps(dispatch);
+        props.setSiteWidth(width);
+        expect(dispatch).toHaveBeenCalledWith(setSiteWidth(width));
+      });
+    });
+  });
+
+  it('should call "componentWillUnmount"', () => {
+    renderedComponent.unmount();
+    expect(componentWillUnmount).toHaveBeenCalledTimes(1);
   });
 });
