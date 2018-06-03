@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InlineLink /> Should render and match the snapshot 1`] = `
+.c0 {
+  background-color: transparent;
+  background-image: linear-gradient(currentColor,currentColor);
+  background-origin: padding-box;
+  background-position: center bottom 10%;
+  background-repeat: no-repeat;
+  background-size: 100% 1.5px;
+  color: #00599e;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-shadow: 3px 0 #fff,2px 0 #fff,1px 0 #fff,-1px 0 #fff,-2px 0 #fff,-3px 0 #fff;
+  touch-action: manipulation;
+  -webkit-transition: color 0.1s ease-out;
+  transition: color 0.1s ease-out;
+}
+
+@supports (-webkit-text-decoration-skip-ink:auto) or (text-decoration-skip-ink:auto) {
+  .c0 {
+    background: none;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    -webkit-text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
+    text-shadow: none;
+  }
+}
+
+<Link
+  className="c0"
+  replace={false}
+  to="/"
+/>
+`;

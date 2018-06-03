@@ -17,6 +17,10 @@ export const theme = Object.freeze({
     errorMessageColor: 'red',
     iconColor: '#f63',
   },
+  inlineLink: {
+    color: '#00599e',
+    textShadowColor: '#fff',
+  },
   loader: {
     backgroundColor: '#465a65',
     color: '#aedd2c',
