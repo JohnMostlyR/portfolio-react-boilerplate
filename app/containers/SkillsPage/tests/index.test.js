@@ -5,10 +5,12 @@ import { Provider } from 'react-redux';
 import { IntlProvider } from 'react-intl';
 import createHistory from 'history/createMemoryHistory';
 import marked from 'marked';
+import Parser from 'html-react-parser';
 
 import { SkillsPage, mapDispatchToProps } from '../index';
-import configureStore from '../../../configureStore';
 import { loadContent } from '../actions';
+import configureStore from '../../../configureStore';
+import PageContent from '../../../components/PageContent';
 
 // enable fake timers
 jest.useFakeTimers();
@@ -144,6 +146,7 @@ describe('<SkillsPage />', () => {
     });
 
     it('should show the fetched content', () => {
+      const fixture = String.raw`Test Content\nNew Line`;
       wrapper = mount(
         <Provider store={store}>
           <IntlProvider locale={'en'}>
@@ -151,12 +154,13 @@ describe('<SkillsPage />', () => {
               getContent={getContent}
               isLoading={false}
               error={false}
-              skillsText={marked('Test Content\nNew Line')}
+              skillsText={Parser(marked(fixture))}
             />
           </IntlProvider>
         </Provider>
       );
 
+      expect(wrapper.contains(PageContent)).toEqual(true);
       expect(toJson(wrapper)).toMatchSnapshot();
     });
   });
