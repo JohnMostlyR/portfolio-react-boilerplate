@@ -1,193 +1,88 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProjectsPage /> Expect to render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ProjectsPage
-    getContent={[Function]}
-    projects={Array []}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "children": Array [
-        <HelmetWrapper
+<React.Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      Mijn projecten
+    </title>
+    <meta
+      content="Mijn projecten pagina van Johan Meester zijn portfolio"
+      name="description"
+    />
+  </HelmetWrapper>
+  <React.Fragment />
+</React.Fragment>
+`;
+
+exports[`<ProjectsPage /> fetching content from external source should handle case where invalid content is received without any error 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "injectedReducers": Object {},
+      "injectedSagas": Object {},
+      "replaceReducer": [Function],
+      "runSaga": [Function],
+      "subscribe": [Function],
+      Symbol(Symbol.observable): [Function],
+    }
+  }
+>
+  <IntlProvider
+    locale="en"
+  >
+    <ProjectsPage
+      error={false}
+      getContent={[Function]}
+      isLoading={false}
+      projects={Array []}
+      skillsText={Array []}
+    >
+      <HelmetWrapper
+        defer={true}
+        encodeSpecialCharacters={true}
+      >
+        <SideEffect(NullComponent)
           defer={true}
           encodeSpecialCharacters={true}
->
-          <title>
-                    Mijn projecten
-          </title>
-          <meta
-                    content="Mijn projecten pagina van Johan Meester zijn portfolio"
-                    name="description"
-          />
-</HelmetWrapper>,
-        <Unknown />,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <title>
-              Mijn projecten
-</title>,
-            <meta
-              content="Mijn projecten pagina van Johan Meester zijn portfolio"
-              name="description"
-/>,
-          ],
-          "defer": true,
-          "encodeSpecialCharacters": true,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Mijn projecten",
-            },
-            "ref": null,
-            "rendered": "Mijn projecten",
-            "type": "title",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "content": "Mijn projecten pagina van Johan Meester zijn portfolio",
-              "name": "description",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "meta",
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": Symbol(react.fragment),
-      },
-    ],
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <HelmetWrapper
-            defer={true}
-            encodeSpecialCharacters={true}
->
-            <title>
-                        Mijn projecten
-            </title>
-            <meta
-                        content="Mijn projecten pagina van Johan Meester zijn portfolio"
-                        name="description"
-            />
-</HelmetWrapper>,
-          <Unknown />,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <title>
-                Mijn projecten
-</title>,
-              <meta
-                content="Mijn projecten pagina van Johan Meester zijn portfolio"
-                name="description"
-/>,
-            ],
-            "defer": true,
-            "encodeSpecialCharacters": true,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Mijn projecten",
-              },
-              "ref": null,
-              "rendered": "Mijn projecten",
-              "type": "title",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
+          meta={
+            Array [
+              Object {
                 "content": "Mijn projecten pagina van Johan Meester zijn portfolio",
                 "name": "description",
               },
-              "ref": null,
-              "rendered": null,
-              "type": "meta",
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": Symbol(react.fragment),
-        },
-      ],
-      "type": Symbol(react.fragment),
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+            ]
+          }
+          title="Mijn projecten"
+          titleAttributes={Object {}}
+        >
+          <NullComponent
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "Mijn projecten pagina van Johan Meester zijn portfolio",
+                  "name": "description",
+                },
+              ]
+            }
+            title="Mijn projecten"
+            titleAttributes={Object {}}
+          />
+        </SideEffect(NullComponent)>
+      </HelmetWrapper>
+    </ProjectsPage>
+  </IntlProvider>
+</Provider>
 `;
 
-exports[`<ProjectsPage /> should show an error message when content could not be loaded 1`] = `
+exports[`<ProjectsPage /> fetching content from external source should show an error message when content could not be loaded 1`] = `
 <Provider
   store={
     Object {
@@ -363,7 +258,7 @@ exports[`<ProjectsPage /> should show an error message when content could not be
 </Provider>
 `;
 
-exports[`<ProjectsPage /> should show the fetched content 1`] = `
+exports[`<ProjectsPage /> fetching content from external source should show the fetched content 1`] = `
 <Provider
   store={
     Object {

@@ -1,192 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SkillsPage /> should render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SkillsPage
-    getContent={[Function]}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "children": Array [
-        <HelmetWrapper
+exports[`<SkillsPage /> fetching content from external source should handle case where invalid content is received without any error 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "injectedReducers": Object {},
+      "injectedSagas": Object {},
+      "replaceReducer": [Function],
+      "runSaga": [Function],
+      "subscribe": [Function],
+      Symbol(Symbol.observable): [Function],
+    }
+  }
+>
+  <IntlProvider
+    locale="en"
+  >
+    <SkillsPage
+      error={false}
+      getContent={[Function]}
+      isLoading={false}
+      skillsText={Array []}
+    >
+      <HelmetWrapper
+        defer={true}
+        encodeSpecialCharacters={true}
+      >
+        <SideEffect(NullComponent)
           defer={true}
           encodeSpecialCharacters={true}
->
-          <title>
-                    Mijn vaardigheden
-          </title>
-          <meta
-                    content="Mijn vaardigheden pagina van Johan Meester zijn portfolio"
-                    name="description"
-          />
-</HelmetWrapper>,
-        <Unknown />,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <title>
-              Mijn vaardigheden
-</title>,
-            <meta
-              content="Mijn vaardigheden pagina van Johan Meester zijn portfolio"
-              name="description"
-/>,
-          ],
-          "defer": true,
-          "encodeSpecialCharacters": true,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Mijn vaardigheden",
-            },
-            "ref": null,
-            "rendered": "Mijn vaardigheden",
-            "type": "title",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "content": "Mijn vaardigheden pagina van Johan Meester zijn portfolio",
-              "name": "description",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "meta",
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": Symbol(react.fragment),
-      },
-    ],
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <HelmetWrapper
-            defer={true}
-            encodeSpecialCharacters={true}
->
-            <title>
-                        Mijn vaardigheden
-            </title>
-            <meta
-                        content="Mijn vaardigheden pagina van Johan Meester zijn portfolio"
-                        name="description"
-            />
-</HelmetWrapper>,
-          <Unknown />,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <title>
-                Mijn vaardigheden
-</title>,
-              <meta
-                content="Mijn vaardigheden pagina van Johan Meester zijn portfolio"
-                name="description"
-/>,
-            ],
-            "defer": true,
-            "encodeSpecialCharacters": true,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Mijn vaardigheden",
-              },
-              "ref": null,
-              "rendered": "Mijn vaardigheden",
-              "type": "title",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
+          meta={
+            Array [
+              Object {
                 "content": "Mijn vaardigheden pagina van Johan Meester zijn portfolio",
                 "name": "description",
               },
-              "ref": null,
-              "rendered": null,
-              "type": "meta",
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": Symbol(react.fragment),
-        },
-      ],
-      "type": Symbol(react.fragment),
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+            ]
+          }
+          title="Mijn vaardigheden"
+          titleAttributes={Object {}}
+        >
+          <NullComponent
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "Mijn vaardigheden pagina van Johan Meester zijn portfolio",
+                  "name": "description",
+                },
+              ]
+            }
+            title="Mijn vaardigheden"
+            titleAttributes={Object {}}
+          />
+        </SideEffect(NullComponent)>
+      </HelmetWrapper>
+    </SkillsPage>
+  </IntlProvider>
+</Provider>
 `;
 
-exports[`<SkillsPage /> should show an error message when content could not be loaded 1`] = `
+exports[`<SkillsPage /> fetching content from external source should show an error message when content could not be loaded 1`] = `
 <Provider
   store={
     Object {
@@ -361,7 +238,7 @@ exports[`<SkillsPage /> should show an error message when content could not be l
 </Provider>
 `;
 
-exports[`<SkillsPage /> should show the fetched content 1`] = `
+exports[`<SkillsPage /> fetching content from external source should show the fetched content 1`] = `
 <Provider
   store={
     Object {
@@ -383,8 +260,15 @@ exports[`<SkillsPage /> should show the fetched content 1`] = `
       error={false}
       getContent={[Function]}
       isLoading={false}
-      skillsText="<p>Test Content<br>New Line</p>
-    "
+      skillsText={
+        Array [
+          <p>
+            Test Content\\nNew Line
+        </p>,
+          "
+        ",
+        ]
+      }
     >
       <HelmetWrapper
         defer={true}
@@ -420,7 +304,210 @@ exports[`<SkillsPage /> should show the fetched content 1`] = `
           />
         </SideEffect(NullComponent)>
       </HelmetWrapper>
+      <PageContent
+        content={
+          Array [
+            <p>
+              Test Content\\nNew Line
+          </p>,
+            "
+          ",
+          ]
+        }
+        title={
+          <FormattedMessage
+            defaultMessage="MY SKILLS"
+            id="portfolio.page.SkillsPage.title"
+            values={Object {}}
+          />
+        }
+      >
+        <Wrapper__Wrapper
+          animate={true}
+        >
+          <div
+            className="Wrapper__Wrapper-fEDTQp jgxDLY"
+          >
+            <PageHeader
+              isLeftHanded={true}
+            >
+              <StyledHeader__StyledHeader>
+                <header
+                  className="StyledHeader__StyledHeader-kHWYFT brSWxw"
+                >
+                  <SpeechBubble
+                    arrowHeight="4vh"
+                    backgroundColor="#465a65"
+                    isLeftHanded={true}
+                    makeAppear={true}
+                    showArrowBreakpoint="750px"
+                  >
+                    <Container__Container
+                      makeAppear={true}
+                      showArrowBreakpoint="750px"
+                    >
+                      <div
+                        className="Container__Container-duRnZL gAUglN"
+                      >
+                        <Bubble__Bubble
+                          backgroundColor="#465a65"
+                          isLeftHanded={true}
+                          showArrowBreakpoint="750px"
+                        >
+                          <div
+                            className="Bubble__Bubble-kfMqWC fYyIab"
+                          >
+                            <H2__H2
+                              color="#aedd2c"
+                            >
+                              <h2
+                                className="H2__H2-eTwhUa iVVlVj"
+                                color="#aedd2c"
+                              >
+                                <FormattedMessage
+                                  defaultMessage="MY SKILLS"
+                                  id="portfolio.page.SkillsPage.title"
+                                  values={Object {}}
+                                >
+                                  <span>
+                                    MY SKILLS
+                                  </span>
+                                </FormattedMessage>
+                              </h2>
+                            </H2__H2>
+                          </div>
+                        </Bubble__Bubble>
+                        <Arrow__Arrow
+                          height="4vh"
+                          isLeftHanded={true}
+                          showBreakpoint="750px"
+                        >
+                          <svg
+                            className="Arrow__Arrow-fPzAjH jaPxIQ"
+                            focusable="false"
+                            height="4vh"
+                            preserveAspectRatio="xMinYMid meet"
+                            viewBox="0 0 848 640"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M424.2 424.4L526.9 640V398.7"
+                              fill="#5b7583"
+                              stroke="#5b7583"
+                            />
+                            <path
+                              d="M848 318.3L424.2 424.4V158.9"
+                              fill="#465a65"
+                            />
+                            <path
+                              d="M0 0l848 318.3L636.4 0H0z"
+                              fill="#5b7583"
+                            />
+                          </svg>
+                        </Arrow__Arrow>
+                      </div>
+                    </Container__Container>
+                  </SpeechBubble>
+                </header>
+              </StyledHeader__StyledHeader>
+            </PageHeader>
+            <ContentWrapper__ContentWrapper>
+              <div
+                className="ContentWrapper__ContentWrapper-lSlQT busshj"
+              >
+                <SpeechBubble
+                  arrowHeight="9vh"
+                  backgroundColor="#aedd2c"
+                  color="#000"
+                  isLeftHanded={false}
+                  makeAppear={false}
+                  maxWidth="30em"
+                  padding="1.5rem"
+                  showArrowBreakpoint="750px"
+                >
+                  <Container__Container
+                    makeAppear={false}
+                    maxWidth="30em"
+                    showArrowBreakpoint="750px"
+                  >
+                    <div
+                      className="Container__Container-duRnZL czakBm"
+                    >
+                      <Bubble__Bubble
+                        backgroundColor="#aedd2c"
+                        color="#000"
+                        isLeftHanded={false}
+                        padding="1.5rem"
+                        showArrowBreakpoint="750px"
+                      >
+                        <div
+                          className="Bubble__Bubble-kfMqWC kqCXAa"
+                          color="#000"
+                        >
+                          <p
+                            key="0"
+                          >
+                            Test Content\\nNew Line
+                          </p>
+                          
+                          
+                        </div>
+                      </Bubble__Bubble>
+                      <Arrow__Arrow
+                        height="9vh"
+                        isLeftHanded={false}
+                        showBreakpoint="750px"
+                      >
+                        <svg
+                          className="Arrow__Arrow-fPzAjH bLlnaE"
+                          focusable="false"
+                          height="9vh"
+                          preserveAspectRatio="xMinYMid meet"
+                          viewBox="0 0 848 640"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M424.2 424.4L526.9 640V398.7"
+                            fill="#bfe458"
+                            stroke="#bfe458"
+                          />
+                          <path
+                            d="M848 318.3L424.2 424.4V158.9"
+                            fill="#aedd2c"
+                          />
+                          <path
+                            d="M0 0l848 318.3L636.4 0H0z"
+                            fill="#bfe458"
+                          />
+                        </svg>
+                      </Arrow__Arrow>
+                    </div>
+                  </Container__Container>
+                </SpeechBubble>
+              </div>
+            </ContentWrapper__ContentWrapper>
+          </div>
+        </Wrapper__Wrapper>
+      </PageContent>
     </SkillsPage>
   </IntlProvider>
 </Provider>
+`;
+
+exports[`<SkillsPage /> should render and match the snapshot 1`] = `
+<React.Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      Mijn vaardigheden
+    </title>
+    <meta
+      content="Mijn vaardigheden pagina van Johan Meester zijn portfolio"
+      name="description"
+    />
+  </HelmetWrapper>
+  <React.Fragment />
+</React.Fragment>
 `;

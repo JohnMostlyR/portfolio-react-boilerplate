@@ -1,192 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<AboutPage /> should render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <AboutPage
-    getContent={[Function]}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "children": Array [
-        <HelmetWrapper
+exports[`<AboutPage /> fetching content from external source should handle case where invalid content is received without any error 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "injectedReducers": Object {},
+      "injectedSagas": Object {},
+      "replaceReducer": [Function],
+      "runSaga": [Function],
+      "subscribe": [Function],
+      Symbol(Symbol.observable): [Function],
+    }
+  }
+>
+  <IntlProvider
+    locale="en"
+  >
+    <AboutPage
+      error={false}
+      getContent={[Function]}
+      isLoading={false}
+      skillsText={Array []}
+    >
+      <HelmetWrapper
+        defer={true}
+        encodeSpecialCharacters={true}
+      >
+        <SideEffect(NullComponent)
           defer={true}
           encodeSpecialCharacters={true}
->
-          <title>
-                    Over mij
-          </title>
-          <meta
-                    content="Over mij pagina van Johan Meester zijn portfolio"
-                    name="description"
-          />
-</HelmetWrapper>,
-        <Unknown />,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <title>
-              Over mij
-</title>,
-            <meta
-              content="Over mij pagina van Johan Meester zijn portfolio"
-              name="description"
-/>,
-          ],
-          "defer": true,
-          "encodeSpecialCharacters": true,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Over mij",
-            },
-            "ref": null,
-            "rendered": "Over mij",
-            "type": "title",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "content": "Over mij pagina van Johan Meester zijn portfolio",
-              "name": "description",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "meta",
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": Symbol(react.fragment),
-      },
-    ],
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <HelmetWrapper
-            defer={true}
-            encodeSpecialCharacters={true}
->
-            <title>
-                        Over mij
-            </title>
-            <meta
-                        content="Over mij pagina van Johan Meester zijn portfolio"
-                        name="description"
-            />
-</HelmetWrapper>,
-          <Unknown />,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <title>
-                Over mij
-</title>,
-              <meta
-                content="Over mij pagina van Johan Meester zijn portfolio"
-                name="description"
-/>,
-            ],
-            "defer": true,
-            "encodeSpecialCharacters": true,
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Over mij",
-              },
-              "ref": null,
-              "rendered": "Over mij",
-              "type": "title",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
+          meta={
+            Array [
+              Object {
                 "content": "Over mij pagina van Johan Meester zijn portfolio",
                 "name": "description",
               },
-              "ref": null,
-              "rendered": null,
-              "type": "meta",
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": Symbol(react.fragment),
-        },
-      ],
-      "type": Symbol(react.fragment),
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+            ]
+          }
+          title="Over mij"
+          titleAttributes={Object {}}
+        >
+          <NullComponent
+            defer={true}
+            encodeSpecialCharacters={true}
+            meta={
+              Array [
+                Object {
+                  "content": "Over mij pagina van Johan Meester zijn portfolio",
+                  "name": "description",
+                },
+              ]
+            }
+            title="Over mij"
+            titleAttributes={Object {}}
+          />
+        </SideEffect(NullComponent)>
+      </HelmetWrapper>
+    </AboutPage>
+  </IntlProvider>
+</Provider>
 `;
 
-exports[`<AboutPage /> should show an error message when content could not be loaded 1`] = `
+exports[`<AboutPage /> fetching content from external source should show an error message when content could not be loaded 1`] = `
 <Provider
   store={
     Object {
@@ -361,7 +238,7 @@ exports[`<AboutPage /> should show an error message when content could not be lo
 </Provider>
 `;
 
-exports[`<AboutPage /> should show the fetched content 1`] = `
+exports[`<AboutPage /> fetching content from external source should show the fetched content 1`] = `
 <Provider
   store={
     Object {
@@ -380,8 +257,15 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
     locale="en"
   >
     <AboutPage
-      aboutMeText="<p>Test Content<br>New Line</p>
-    "
+      aboutMeText={
+        Array [
+          <p>
+            Test Content\\nNew Line
+        </p>,
+          "
+        ",
+        ]
+      }
       error={false}
       getContent={[Function]}
       isLoading={false}
@@ -421,8 +305,15 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
         </SideEffect(NullComponent)>
       </HelmetWrapper>
       <PageContent
-        content="<p>Test Content<br>New Line</p>
-      "
+        content={
+          Array [
+            <p>
+              Test Content\\nNew Line
+          </p>,
+            "
+          ",
+          ]
+        }
         title={
           <FormattedMessage
             defaultMessage="ABOUT ME"
@@ -553,7 +444,12 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
                           className="Bubble__Bubble-kfMqWC kqCXAa"
                           color="#000"
                         >
-                          &lt;p&gt;Test Content&lt;br&gt;New Line&lt;/p&gt;
+                          <p
+                            key="0"
+                          >
+                            Test Content\\nNew Line
+                          </p>
+                          
                           
                         </div>
                       </Bubble__Bubble>
@@ -596,4 +492,22 @@ exports[`<AboutPage /> should show the fetched content 1`] = `
     </AboutPage>
   </IntlProvider>
 </Provider>
+`;
+
+exports[`<AboutPage /> should render and match the snapshot 1`] = `
+<React.Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      Over mij
+    </title>
+    <meta
+      content="Over mij pagina van Johan Meester zijn portfolio"
+      name="description"
+    />
+  </HelmetWrapper>
+  <React.Fragment />
+</React.Fragment>
 `;
