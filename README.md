@@ -13,8 +13,8 @@
     <img src="https://travis-ci.org/Mensae/portfolio-react-boilerplate.svg" alt="Build Status" />
   </a>
   <!-- Test Coverage -->
-  <a href="https://coveralls.io/github/Mensae/portfolio-react-boilerplate?branch=master">
-    <img src="https://coveralls.io/repos/github/Mensae/portfolio-react-boilerplate/badge.svg?branch=master" alt="Test Coverage" />
+  <a href='https://coveralls.io/github/Mensae/portfolio-react-boilerplate?branch=master'>
+    <img src='https://coveralls.io/repos/github/Mensae/portfolio-react-boilerplate/badge.svg?branch=master' alt='Coverage Status' />
   </a>
 </div>
 
