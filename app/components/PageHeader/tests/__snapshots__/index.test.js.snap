@@ -4,9 +4,7 @@ exports[`<PageHeader /> should adopt any children 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PageHeader
-    isLeftHanded={true}
->
+  Symbol(enzyme.__unrendered__): <PageHeader>
     <div>
         children
     </div>
@@ -25,8 +23,9 @@ ShallowWrapper {
     "props": Object {
       "children": <SpeechBubble
         arrowHeight="4vh"
+        arrowPosition="bottom-left"
         backgroundColor="#465a65"
-        isLeftHanded={true}
+        isGhost={false}
         makeAppear={true}
         showArrowBreakpoint="750px"
 >
@@ -46,6 +45,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "arrowHeight": "4vh",
+        "arrowPosition": "bottom-left",
         "backgroundColor": "#465a65",
         "children": <H2__H2
           color="#aedd2c"
@@ -54,7 +54,7 @@ ShallowWrapper {
                     children
           </div>
 </H2__H2>,
-        "isLeftHanded": true,
+        "isGhost": false,
         "makeAppear": true,
         "showArrowBreakpoint": "750px",
       },
@@ -95,8 +95,9 @@ ShallowWrapper {
       "props": Object {
         "children": <SpeechBubble
           arrowHeight="4vh"
+          arrowPosition="bottom-left"
           backgroundColor="#465a65"
-          isLeftHanded={true}
+          isGhost={false}
           makeAppear={true}
           showArrowBreakpoint="750px"
 >
@@ -116,6 +117,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "arrowHeight": "4vh",
+          "arrowPosition": "bottom-left",
           "backgroundColor": "#465a65",
           "children": <H2__H2
             color="#aedd2c"
@@ -124,7 +126,7 @@ ShallowWrapper {
                         children
             </div>
 </H2__H2>,
-          "isLeftHanded": true,
+          "isGhost": false,
           "makeAppear": true,
           "showArrowBreakpoint": "750px",
         },
@@ -172,9 +174,7 @@ exports[`<PageHeader /> should render and match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PageHeader
-    isLeftHanded={true}
-/>,
+  Symbol(enzyme.__unrendered__): <PageHeader />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -189,8 +189,9 @@ ShallowWrapper {
     "props": Object {
       "children": <SpeechBubble
         arrowHeight="4vh"
+        arrowPosition="bottom-left"
         backgroundColor="#465a65"
-        isLeftHanded={true}
+        isGhost={false}
         makeAppear={true}
         showArrowBreakpoint="750px"
 >
@@ -206,11 +207,12 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "arrowHeight": "4vh",
+        "arrowPosition": "bottom-left",
         "backgroundColor": "#465a65",
         "children": <H2__H2
           color="#aedd2c"
 />,
-        "isLeftHanded": true,
+        "isGhost": false,
         "makeAppear": true,
         "showArrowBreakpoint": "750px",
       },
@@ -239,8 +241,9 @@ ShallowWrapper {
       "props": Object {
         "children": <SpeechBubble
           arrowHeight="4vh"
+          arrowPosition="bottom-left"
           backgroundColor="#465a65"
-          isLeftHanded={true}
+          isGhost={false}
           makeAppear={true}
           showArrowBreakpoint="750px"
 >
@@ -256,11 +259,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "arrowHeight": "4vh",
+          "arrowPosition": "bottom-left",
           "backgroundColor": "#465a65",
           "children": <H2__H2
             color="#aedd2c"
 />,
-          "isLeftHanded": true,
+          "isGhost": false,
           "makeAppear": true,
           "showArrowBreakpoint": "750px",
         },

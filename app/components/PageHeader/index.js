@@ -6,16 +6,18 @@ import H2 from '../H2';
 import SpeechBubble from '../SpeechBubble';
 import { theme } from '../../styles/theme';
 
-const PageHeader = (props) => (
+const { pageHeader: { backgroundColor, color } } = theme;
+
+const PageHeader = ({ arrowPosition, children }) => (
   <StyledHeader>
     <SpeechBubble
       arrowHeight={'4vh'}
-      backgroundColor={theme.pageHeader.backgroundColor}
-      isLeftHanded={props.isLeftHanded}
+      arrowPosition={arrowPosition}
+      backgroundColor={backgroundColor}
       makeAppear
       showArrowBreakpoint="750px"
     >
-      <H2 color={theme.pageHeader.color}>{props.children}</H2>
+      <H2 color={color}>{children}</H2>
     </SpeechBubble>
   </StyledHeader>
 );
@@ -25,11 +27,7 @@ PageHeader.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-  isLeftHanded: PropTypes.bool,
-};
-
-PageHeader.defaultProps = {
-  isLeftHanded: true,
+  arrowPosition: PropTypes.oneOf(['bottom-left', 'bottom-right', 'top-left', 'top-right']),
 };
 
 export default PageHeader;

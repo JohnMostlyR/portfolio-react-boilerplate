@@ -2,94 +2,61 @@
 
 exports[`<SpeechBubble /> should adopt any children 1`] = `
 <Container__Container>
-  <Bubble__Bubble>
+  <Bubble__Bubble
+    arrowPosition="bottom-left"
+    isGhost={false}
+  >
     <span>
       A Child
     </span>
   </Bubble__Bubble>
-  <Arrow__Arrow>
-    <path
-      d="M424.2 424.4L526.9 640V398.7"
-      fill="inherit"
-      stroke="inherit"
-    />
-    <path
-      d="M848 318.3L424.2 424.4V158.9"
-    />
-    <path
-      d="M0 0l848 318.3L636.4 0H0z"
-      fill="inherit"
-    />
-  </Arrow__Arrow>
+  <Arrow
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
 </Container__Container>
 `;
 
 exports[`<SpeechBubble /> should adopt the "arrowHeight" prop 1`] = `
 <Container__Container>
-  <Bubble__Bubble />
-  <Arrow__Arrow
+  <Bubble__Bubble
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
+  <Arrow
+    arrowPosition="bottom-left"
     height="1vw"
-  >
-    <path
-      d="M424.2 424.4L526.9 640V398.7"
-      fill="inherit"
-      stroke="inherit"
-    />
-    <path
-      d="M848 318.3L424.2 424.4V158.9"
-    />
-    <path
-      d="M0 0l848 318.3L636.4 0H0z"
-      fill="inherit"
-    />
-  </Arrow__Arrow>
+    isGhost={false}
+  />
 </Container__Container>
 `;
 
 exports[`<SpeechBubble /> should adopt the "backgroundColor" prop 1`] = `
 <Container__Container>
   <Bubble__Bubble
+    arrowPosition="bottom-left"
     backgroundColor="#000"
+    isGhost={false}
   />
-  <Arrow__Arrow>
-    <path
-      d="M424.2 424.4L526.9 640V398.7"
-      fill="#1a1a1a"
-      stroke="#1a1a1a"
-    />
-    <path
-      d="M848 318.3L424.2 424.4V158.9"
-      fill="#000"
-    />
-    <path
-      d="M0 0l848 318.3L636.4 0H0z"
-      fill="#1a1a1a"
-    />
-  </Arrow__Arrow>
+  <Arrow
+    arrowPosition="bottom-left"
+    backgroundColor="#000"
+    isGhost={false}
+  />
 </Container__Container>
 `;
 
-exports[`<SpeechBubble /> should adopt the "isLeftHanded" prop 1`] = `
+exports[`<SpeechBubble /> should adopt the "color" prop 1`] = `
 <Container__Container>
   <Bubble__Bubble
-    isLeftHanded={false}
+    arrowPosition="bottom-left"
+    color="#fff"
+    isGhost={false}
   />
-  <Arrow__Arrow
-    isLeftHanded={false}
-  >
-    <path
-      d="M424.2 424.4L526.9 640V398.7"
-      fill="inherit"
-      stroke="inherit"
-    />
-    <path
-      d="M848 318.3L424.2 424.4V158.9"
-    />
-    <path
-      d="M0 0l848 318.3L636.4 0H0z"
-      fill="inherit"
-    />
-  </Arrow__Arrow>
+  <Arrow
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
 </Container__Container>
 `;
 
@@ -97,43 +64,28 @@ exports[`<SpeechBubble /> should adopt the "maxWidth" prop 1`] = `
 <Container__Container
   maxWidth="10em"
 >
-  <Bubble__Bubble />
-  <Arrow__Arrow>
-    <path
-      d="M424.2 424.4L526.9 640V398.7"
-      fill="inherit"
-      stroke="inherit"
-    />
-    <path
-      d="M848 318.3L424.2 424.4V158.9"
-    />
-    <path
-      d="M0 0l848 318.3L636.4 0H0z"
-      fill="inherit"
-    />
-  </Arrow__Arrow>
+  <Bubble__Bubble
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
+  <Arrow
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
 </Container__Container>
 `;
 
 exports[`<SpeechBubble /> should adopt the "padding" prop 1`] = `
 <Container__Container>
   <Bubble__Bubble
+    arrowPosition="bottom-left"
+    isGhost={false}
     padding="0 0px"
   />
-  <Arrow__Arrow>
-    <path
-      d="M424.2 424.4L526.9 640V398.7"
-      fill="inherit"
-      stroke="inherit"
-    />
-    <path
-      d="M848 318.3L424.2 424.4V158.9"
-    />
-    <path
-      d="M0 0l848 318.3L636.4 0H0z"
-      fill="inherit"
-    />
-  </Arrow__Arrow>
+  <Arrow
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
 </Container__Container>
 `;
 
@@ -142,43 +94,135 @@ exports[`<SpeechBubble /> should adopt the "showArrowBreakpoint" prop 1`] = `
   showArrowBreakpoint="100px"
 >
   <Bubble__Bubble
+    arrowPosition="bottom-left"
+    isGhost={false}
     showArrowBreakpoint="100px"
   />
-  <Arrow__Arrow
+  <Arrow
+    arrowPosition="bottom-left"
+    isGhost={false}
     showBreakpoint="100px"
-  >
-    <path
-      d="M424.2 424.4L526.9 640V398.7"
-      fill="inherit"
-      stroke="inherit"
-    />
-    <path
-      d="M848 318.3L424.2 424.4V158.9"
-    />
-    <path
-      d="M0 0l848 318.3L636.4 0H0z"
-      fill="inherit"
-    />
-  </Arrow__Arrow>
+  />
 </Container__Container>
 `;
 
 exports[`<SpeechBubble /> should render and match the snapshot 1`] = `
 <Container__Container>
-  <Bubble__Bubble />
-  <Arrow__Arrow>
-    <path
-      d="M424.2 424.4L526.9 640V398.7"
-      fill="inherit"
-      stroke="inherit"
-    />
-    <path
-      d="M848 318.3L424.2 424.4V158.9"
-    />
-    <path
-      d="M0 0l848 318.3L636.4 0H0z"
-      fill="inherit"
-    />
-  </Arrow__Arrow>
+  <Bubble__Bubble
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
+  <Arrow
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> the "isGhost" property should accept boolean "false" as value 1`] = `
+<Container__Container>
+  <Bubble__Bubble
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
+  <Arrow
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> the "isGhost" property should accept boolean "true" as value 1`] = `
+<Container__Container>
+  <Bubble__Bubble
+    arrowPosition="bottom-left"
+    isGhost={true}
+  />
+  <Arrow
+    arrowPosition="bottom-left"
+    isGhost={true}
+  />
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> the "makeAppear" property should accept boolean "false" as value 1`] = `
+<Container__Container
+  makeAppear={false}
+>
+  <Bubble__Bubble
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
+  <Arrow
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> the "makeAppear" property should accept boolean "true" as value 1`] = `
+<Container__Container
+  makeAppear={true}
+>
+  <Bubble__Bubble
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
+  <Arrow
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> the arrowPosition property should accept "bottom-left" as value 1`] = `
+<Container__Container>
+  <Bubble__Bubble
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
+  <Arrow
+    arrowPosition="bottom-left"
+    isGhost={false}
+  />
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> the arrowPosition property should accept "bottom-right" as value 1`] = `
+<Container__Container>
+  <Bubble__Bubble
+    arrowPosition="bottom-right"
+    isGhost={false}
+  />
+  <Arrow
+    arrowPosition="bottom-right"
+    isGhost={false}
+  />
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> the arrowPosition property should accept "top-left" as value 1`] = `
+<Container__Container>
+  <Arrow
+    arrowPosition="top-left"
+    isGhost={false}
+  />
+  <Bubble__Bubble
+    arrowPosition="top-left"
+    isGhost={false}
+  />
+</Container__Container>
+`;
+
+exports[`<SpeechBubble /> the arrowPosition property should accept "top-right" as value 1`] = `
+<Container__Container>
+  <Arrow
+    arrowPosition="top-right"
+    isGhost={false}
+  />
+  <Bubble__Bubble
+    arrowPosition="top-right"
+    isGhost={false}
+  />
 </Container__Container>
 `;

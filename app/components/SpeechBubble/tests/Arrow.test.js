@@ -11,13 +11,46 @@ describe('<Arrow />', () => {
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
+  describe('arrowPosition property', () => {
+    const renderedComponent = shallow(<Arrow />);
+
+    it('should accept "top-left" as value', () => {
+      const fixture = 'top-left';
+      renderedComponent.setProps({ arrowPosition: fixture });
+      expect(renderedComponent.prop('arrowPosition')).toBe(fixture);
+    });
+
+    it('should accept "top-right" as value', () => {
+      const fixture = 'top-right';
+      renderedComponent.setProps({ arrowPosition: fixture });
+      expect(renderedComponent.prop('arrowPosition')).toBe(fixture);
+    });
+
+    it('should accept "bottom-right" as value', () => {
+      const fixture = 'bottom-right';
+      renderedComponent.setProps({ arrowPosition: fixture });
+      expect(renderedComponent.prop('arrowPosition')).toBe(fixture);
+    });
+
+    it('should accept "bottom-left" as value', () => {
+      const fixture = 'bottom-left';
+      renderedComponent.setProps({ arrowPosition: fixture });
+      expect(renderedComponent.prop('arrowPosition')).toBe(fixture);
+    });
+  });
+
+  it('should adopt the "backgroundColor" prop', () => {
+    const renderedComponent = shallow(<Arrow backgroundColor="#bada55" />);
+    expect(toJson(renderedComponent)).toMatchSnapshot();
+  });
+
   it('should adopt the "height" prop', () => {
     const renderedComponent = shallow(<Arrow height={'1em'} />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
-  it('should adopt the "isLeftHanded" prop', () => {
-    const renderedComponent = shallow(<Arrow isLeftHanded={false} />);
+  it('should adopt the "isGhost" prop', () => {
+    const renderedComponent = shallow(<Arrow isGhost />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 

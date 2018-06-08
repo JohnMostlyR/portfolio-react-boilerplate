@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { lighten } from 'polished';
 
 import Arrow from './Arrow';
 import Bubble from './Bubble';
@@ -10,16 +9,16 @@ class SpeechBubble extends React.PureComponent {
   render() {
     const {
       arrowHeight,
+      arrowPosition,
       backgroundColor,
       color,
       children,
-      isLeftHanded,
+      isGhost,
       makeAppear,
       maxWidth,
       padding,
       showArrowBreakpoint,
     } = this.props;
-    const lighterBackgroundColor = (backgroundColor && lighten(0.1, backgroundColor)) || 'inherit';
 
     return (
       <Container
@@ -27,34 +26,38 @@ class SpeechBubble extends React.PureComponent {
         maxWidth={maxWidth}
         makeAppear={makeAppear}
       >
+        {
+          arrowPosition.startsWith('top-') && (
+            <Arrow
+              arrowPosition={arrowPosition}
+              backgroundColor={backgroundColor}
+              height={arrowHeight}
+              isGhost={isGhost}
+              showBreakpoint={showArrowBreakpoint}
+            />
+          )
+        }
         <Bubble
+          arrowPosition={arrowPosition}
           backgroundColor={backgroundColor}
           color={color}
-          isLeftHanded={isLeftHanded}
+          isGhost={isGhost}
           padding={padding}
           showArrowBreakpoint={showArrowBreakpoint}
         >
           {children}
         </Bubble>
-        <Arrow
-          isLeftHanded={isLeftHanded}
-          height={arrowHeight}
-          showBreakpoint={showArrowBreakpoint}
-        >
-          <path
-            stroke={lighterBackgroundColor}
-            fill={lighterBackgroundColor}
-            d="M424.2 424.4L526.9 640V398.7"
-          />
-          <path
-            fill={backgroundColor}
-            d="M848 318.3L424.2 424.4V158.9"
-          />
-          <path
-            fill={lighterBackgroundColor}
-            d="M0 0l848 318.3L636.4 0H0z"
-          />
-        </Arrow>
+        {
+          arrowPosition.startsWith('bottom-') && (
+            <Arrow
+              arrowPosition={arrowPosition}
+              backgroundColor={backgroundColor}
+              height={arrowHeight}
+              isGhost={isGhost}
+              showBreakpoint={showArrowBreakpoint}
+            />
+          )
+        }
       </Container>
     );
   }
@@ -62,17 +65,23 @@ class SpeechBubble extends React.PureComponent {
 
 SpeechBubble.propTypes = {
   arrowHeight: PropTypes.string,
+  arrowPosition: PropTypes.oneOf(['bottom-left', 'bottom-right', 'top-left', 'top-right']),
   backgroundColor: PropTypes.string,
   color: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-  isLeftHanded: PropTypes.bool,
+  isGhost: PropTypes.bool,
   makeAppear: PropTypes.bool,
   maxWidth: PropTypes.string,
   padding: PropTypes.string,
   showArrowBreakpoint: PropTypes.string,
+};
+
+SpeechBubble.defaultProps = {
+  arrowPosition: 'bottom-left',
+  isGhost: false,
 };
 
 export default SpeechBubble;
