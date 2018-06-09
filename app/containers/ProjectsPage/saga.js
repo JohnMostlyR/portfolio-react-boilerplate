@@ -17,9 +17,9 @@ export function parseContent(data) {
   let projects = [];
 
   try {
-    const entries = data
-      .includes
-      .Entry
+    const { includes: { Asset = [] }, items } = data;
+
+    const ASSETS = Asset
       .reduce((acc, curr) => {
         const obj = {};
         obj[curr.sys.id] = curr.fields;
@@ -27,18 +27,8 @@ export function parseContent(data) {
       }, {},
       );
 
-    const assets = data
-      .includes
-      .Asset
-      .reduce((acc, curr) => {
-        const obj = {};
-        obj[curr.sys.id] = curr.fields;
-        return Object.assign(acc, obj);
-      }, {},
-      );
-
-    projects = data
-      .items
+    // Latest to oldest
+    const ITEMS_SORTED = items
       .reduce((acc, curr) => acc.concat(curr.fields), [])
       .sort((a, b) => {
         const dateA = new Date(a.date);
@@ -50,10 +40,12 @@ export function parseContent(data) {
           return -1;
         }
         return 0;
-      })
+      });
+
+    projects = ITEMS_SORTED
       .reduce((acc, curr) => {
         if (curr.thumbnail) {
-          curr.thumbnail = assets[curr.thumbnail.sys.id].file;
+          curr.thumbnail = ASSETS[curr.thumbnail.sys.id].file;
         } else {
           curr.thumbnail = { url: '#' };
         }
@@ -61,22 +53,15 @@ export function parseContent(data) {
         return acc.concat(curr);
       }, [])
       .reduce((acc, curr) => {
-        if (curr.externalLinks && Array.isArray(curr.externalLinks)) {
-          const links = [];
-          curr.externalLinks.forEach((link) => {
-            const entry = entries[link.sys.id];
-            if (entry) {
-              links.push({
-                faIcon: entry.icon,
-                name: entry.destination,
-                url: entry.url,
-              });
-            }
+        if (curr.images && Array.isArray(curr.images)) {
+          const images = [];
+          curr.images.forEach((image) => {
+            images.push(ASSETS[image.sys.id]);
           });
 
-          curr.externalLinks = links;
+          curr.images = images;
         } else {
-          curr.externalLinks = [];
+          curr.images = [];
         }
 
         return acc.concat(curr);

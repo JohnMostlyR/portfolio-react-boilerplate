@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Image /> should render and match the snapshot 1`] = `
+<ImageWrapper__ImageWrapper>
+  <Image__StyledPicture>
+    <source
+      media="(max-width: 424px)"
+      srcSet="/test-s.png"
+    />
+    <source
+      media="(max-width: 767px)"
+      srcSet="/test-m.png"
+    />
+    <source
+      media="(max-width: 949px)"
+      srcSet="/test-l.png"
+    />
+    <source
+      media="(min-width: 950px)"
+      srcSet="/test-xl.png"
+    />
+    <img
+      alt="Test image"
+      src="/test-xl.png"
+    />
+  </Image__StyledPicture>
+</ImageWrapper__ImageWrapper>
+`;

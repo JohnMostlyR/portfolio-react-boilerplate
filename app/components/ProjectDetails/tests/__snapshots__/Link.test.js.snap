@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Link /> should adopt the "color" property 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+  color: #bada55;
+  cursor: pointer;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  padding: 0.5rem;
+  text-align: left;
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+<Link
+  className="c0"
+  color="#bada55"
+  replace={false}
+  to="/"
+/>
+`;
+
+exports[`<Link /> should render and match the snapshot 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+  color: inherit;
+  cursor: pointer;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  padding: 0.5rem;
+  text-align: left;
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+<Link
+  className="c0"
+  replace={false}
+  to="/"
+/>
+`;
