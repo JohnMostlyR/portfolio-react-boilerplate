@@ -10,4 +10,8 @@ export default defineMessages({
     id: 'portfolio.title',
     defaultMessage: 'Welcome to my portfolio',
   },
+  skipLink: {
+    id: 'portfolio.skiplink',
+    defaultMessage: 'skip to main content',
+  },
 });

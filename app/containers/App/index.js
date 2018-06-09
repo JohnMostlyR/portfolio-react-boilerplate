@@ -107,6 +107,11 @@ class App extends React.PureComponent { // eslint-disable-line react/prefer-stat
   render() {
     return (
       <Wrapper innerRef={(el) => { this.wrapper = el; }} lang={this.props.locale}>
+        <FormattedMessage {...messages.skipLink}>
+          {
+            (message) => <a href="#main" lang="en">{message}</a>
+          }
+        </FormattedMessage>
         <h1 hidden aria-hidden="false"><FormattedMessage {...messages.title} /></h1>
         <SiteHeader />
         <SiteNavigation />

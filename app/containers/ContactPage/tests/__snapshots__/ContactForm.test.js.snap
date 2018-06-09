@@ -83,6 +83,7 @@ exports[`<ContactForm /> should render and match the snapshot 1`] = `
         "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
         "portfolio.page.index.title": "Introduction",
         "portfolio.page.projects.title": "MY PROJECTS",
+        "portfolio.skiplink": "skip to main content",
         "portfolio.social_links.header": "Also find me on:",
         "portfolio.title": "Welcome to my portfolio",
       },
