@@ -162,21 +162,9 @@ exports[`<ProjectDetails /> Should render without any given properties 1`] = `
       padding="1.5rem 1rem"
       showArrowBreakpoint="750px"
     >
-      <h1>
-        Title
-      </h1>
-      <div>
-        Description
-      </div>
-      <Article__Article>
-        <p
-          key="0"
-        >
-          Article
-        </p>
-        
-        
-      </Article__Article>
+      <h1 />
+      <div />
+      <Article__Article />
     </SpeechBubble>
     <BackLink
       position="bottom"

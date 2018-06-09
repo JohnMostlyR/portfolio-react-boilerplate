@@ -19,10 +19,10 @@ marked.options({
 
 function ProjectDetails({ project = {} }) {
   const {
-    article = 'Article',
-    description = 'Description',
+    article = '',
+    description = '',
     images,
-    title = 'Title',
+    title = '',
   } = project;
   const htmlFromMD = marked(article);
   const parsedArticle = htmlFromMD
