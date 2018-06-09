@@ -17,7 +17,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "className": "ContentWrapper__ContentWrapper-lSlQT hkcLGb",
+      "className": "ContentWrapper__ContentWrapper-lSlQT fvDaiB",
     },
     "ref": null,
     "rendered": null,
@@ -29,7 +29,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "className": "ContentWrapper__ContentWrapper-lSlQT hkcLGb",
+        "className": "ContentWrapper__ContentWrapper-lSlQT fvDaiB",
       },
       "ref": null,
       "rendered": null,
