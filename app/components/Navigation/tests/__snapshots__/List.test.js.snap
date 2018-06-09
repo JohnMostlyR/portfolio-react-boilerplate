@@ -9,10 +9,12 @@ exports[`<List /> should adopt the "isExpanded" property 1`] = `
   -webkit-flex-flow: column nowrap;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  height: auto;
   list-style: none;
   margin: 0;
   margin-top: 1.5rem;
   position: relative;
+  width: auto;
   z-index: 2;
   border: 0.2rem solid #f63;
   border-radius: 0.5rem;
@@ -80,10 +82,12 @@ exports[`<List /> should render and match the snapshot 1`] = `
   -webkit-flex-flow: column nowrap;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  height: 0;
   list-style: none;
   margin: 0;
   margin-top: 1.5rem;
   position: relative;
+  width: 0;
   z-index: 2;
   border: 0.2rem solid #f63;
   border-radius: 0.5rem;

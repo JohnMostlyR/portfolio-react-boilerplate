@@ -25,10 +25,12 @@ const List = styled.ul.attrs({
 })`
   display: flex;
   flex-flow: column nowrap;
+  height: ${({ isExpanded }) => isExpanded ? 'auto' : 0};
   list-style: none;
   margin: 0;
   margin-top: ${BASE_LINE_HEIGHT}rem;
   position: relative;
+  width: ${({ isExpanded }) => isExpanded ? 'auto' : 0};
   z-index: 2;
   border: 0.2rem solid ${borderColor};
   border-radius: 0.5rem;
