@@ -27,24 +27,29 @@ function transformImagesArray(images) {
 }
 
 function getImageDescription(images) {
-  const [{ title }] = images.slice(-1);
+  const [{ title = '' } = {}] = images.slice(-1);
   return title;
 }
 
-function Image({ images }) {
+function Image({ images = [] }) {
   const { s, m, l, xl } = transformImagesArray(images);
   const altText = getImageDescription(images);
-  return (
-    <ImageWrapper>
-      <StyledPicture>
-        <source media="(max-width: 424px)" srcSet={s} />
-        <source media="(max-width: 767px)" srcSet={m} />
-        <source media="(max-width: 949px)" srcSet={l} />
-        <source media="(min-width: 950px)" srcSet={xl} />
-        <img src={xl} alt={altText} />
-      </StyledPicture>
-    </ImageWrapper>
-  );
+
+  if (s && m && l && xl) {
+    return (
+      <ImageWrapper>
+        <StyledPicture>
+          <source media="(max-width: 424px)" srcSet={s} />
+          <source media="(max-width: 767px)" srcSet={m} />
+          <source media="(max-width: 949px)" srcSet={l} />
+          <source media="(min-width: 950px)" srcSet={xl} />
+          <img src={xl} alt={altText} />
+        </StyledPicture>
+      </ImageWrapper>
+    );
+  }
+
+  return <div />;
 }
 
 Image.propTypes = {

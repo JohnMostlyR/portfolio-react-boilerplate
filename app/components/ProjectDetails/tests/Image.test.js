@@ -16,4 +16,9 @@ describe('<Image />', () => {
     const renderedComponent = shallow(<Image images={images} />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
+
+  it('should render when no images are provided', () => {
+    const renderedComponent = shallow(<Image images={[]} />);
+    expect(toJson(renderedComponent)).toMatchSnapshot();
+  });
 });

@@ -26,3 +26,5 @@ exports[`<Image /> should render and match the snapshot 1`] = `
   </Image__StyledPicture>
 </ImageWrapper__ImageWrapper>
 `;
+
+exports[`<Image /> should render when no images are provided 1`] = `<div />`;
