@@ -3,11 +3,11 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import 'jest-styled-components';
 
-import ProjectTitle from '../ProjectTitle';
+import Article from '../Article';
 
-describe('<ProjectTitle />', () => {
+describe('<Article />', () => {
   it('should render and match the snapshot', () => {
-    const wrapper = shallow(<ProjectTitle />);
-    expect(toJson(wrapper)).toMatchSnapshot();
+    const renderedComponent = shallow(<Article />);
+    expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 });

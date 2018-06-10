@@ -1,28 +1,41 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 
+import messages from './messages';
 import Article from './Article';
-import ProjectLinksList from './ProjectLinksList';
 import ProjectBody from './ProjectBody';
 import ProjectHeader from './ProjectHeader';
 
 import MediaAsset from '../MediaAsset';
 import H3 from '../H3';
 import P from '../P';
+import Link from '../Link';
 
-function Project(props) {
+function Project({ detailsBodyText, isOdd, thumbnailUrl, title }) {
   return (
     <Article>
-      <MediaAsset imageSource={props.thumbnailUrl} isOdd={props.isOdd} />
+      <MediaAsset imageSource={thumbnailUrl} isOdd={isOdd} />
       <ProjectBody>
         <div>
           <ProjectHeader>
-            <H3>{props.title}</H3>
+            <H3>{title}</H3>
           </ProjectHeader>
         </div>
-        <P>{props.detailsBodyText}</P>
+        <P>{detailsBodyText}</P>
+        <P textAlign="right">
+          <FormattedMessage {...messages.detailsLink}>
+            {
+              (message) => (
+                <Link
+                  to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}
+                  odd={`${isOdd}`}
+                >{message}</Link>
+              )
+            }
+          </FormattedMessage>
+        </P>
       </ProjectBody>
-      <ProjectLinksList links={props.links} hasFocus={props.hasFocus} />
     </Article>
   );
 }
@@ -30,15 +43,12 @@ function Project(props) {
 Project.propTypes = {
   detailsBodyText: PropTypes.string,
   isOdd: PropTypes.bool,
-  links: PropTypes.array,
   thumbnailUrl: PropTypes.string,
   title: PropTypes.string,
-  hasFocus: PropTypes.bool,
 };
 
 Project.defaultProps = {
   title: 'New Project',
-  hasFocus: false,
 };
 
 export default Project;

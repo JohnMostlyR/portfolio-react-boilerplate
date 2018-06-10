@@ -21,6 +21,16 @@ export const theme = Object.freeze({
     color: '#00599e',
     textShadowColor: '#fff',
   },
+  link: {
+    borderColor: {
+      odd: '#00599e',
+      even: '#09310b',
+    },
+    color: {
+      odd: '#00599e',
+      even: '#09310b',
+    },
+  },
   loader: {
     backgroundColor: '#465a65',
     color: '#aedd2c',

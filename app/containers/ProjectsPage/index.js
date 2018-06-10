@@ -22,10 +22,14 @@ import {
 } from './selectors';
 import reducer from './reducer';
 
+import {
+  makeSelectLocation,
+} from '../../containers/App/selectors';
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
 import Projects from '../../components/Projects';
 import PageContent from '../../components/PageContent';
+import ProjectDetails from '../../components/ProjectDetails';
 import ContentLoadingIndicator from '../../components/ContentLoadingIndicator';
 
 export function delayTimer(isLoading, callback) {
@@ -74,11 +78,11 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
   }
 
   render() {
-    const { error, projects } = this.props;
+    const { error, location: { pathname }, projects } = this.props;
     const { isLoading } = this.state;
     let showContent = <React.Fragment />;
 
-    if (Array.isArray(projects) && projects.length) {
+    if (projects.length) {
       showContent = (
         <PageContent
           title={<FormattedMessage {...messages.title} />}
@@ -86,6 +90,20 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
           noSpeechBubble
         />
       );
+
+      const regexp = RegExp('/projects/(.+)');
+
+      if (regexp.test(pathname)) {
+        const [, subpath] = regexp.exec(pathname);
+        const project = projects.find((_project) => {
+          const { title } = _project;
+          return (subpath === title.toLowerCase().replace(/\s/g, '-'));
+        });
+
+        if (project) {
+          showContent = <ProjectDetails project={project} />;
+        }
+      }
     } else if (isLoading) { // FROM STATE!
       showContent = <ContentLoadingIndicator show showError={false} />;
     } else if (!!error !== false) {
@@ -109,6 +127,7 @@ ProjectsPage.propTypes = {
   projects: PropTypes.array,
   isLoading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
+  location: PropTypes.object,
 };
 
 ProjectsPage.defaultProps = {
@@ -116,6 +135,7 @@ ProjectsPage.defaultProps = {
 };
 
 const mapStateToProps = createStructuredSelector({
+  location: makeSelectLocation(),
   projects: makeSelectProjectsPageProjects(),
   isLoading: makeSelectLoading(),
   error: makeSelectError(),

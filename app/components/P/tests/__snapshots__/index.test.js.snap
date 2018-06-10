@@ -4,7 +4,9 @@ exports[`<P /> Should render and match the snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <P__P />,
+  Symbol(enzyme.__unrendered__): <P__P
+    textAlign="left"
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,7 +19,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "className": "P__P-grILes TsMNY",
+      "className": "P__P-grILes hcHKIi",
     },
     "ref": null,
     "rendered": null,
@@ -29,7 +31,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "className": "P__P-grILes TsMNY",
+        "className": "P__P-grILes hcHKIi",
       },
       "ref": null,
       "rendered": null,

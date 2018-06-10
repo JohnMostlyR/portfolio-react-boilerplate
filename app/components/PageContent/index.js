@@ -19,9 +19,9 @@ function PageContent(props) {
   let renderThis = (
     <SpeechBubble
       arrowHeight="9vh"
+      arrowPosition="bottom-right"
       backgroundColor={theme.speechBubble.backgroundColor}
       color={theme.speechBubble.color}
-      isLeftHanded={false}
       makeAppear={false}
       maxWidth="30em"
       padding={`${BASE_LINE_HEIGHT}rem`}
@@ -37,7 +37,7 @@ function PageContent(props) {
 
   return (
     <Wrapper>
-      <PageHeader isLeftHanded>
+      <PageHeader arrowPosition={'bottom-left'}>
         {props.title}
       </PageHeader>
       <ContentWrapper>

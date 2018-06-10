@@ -5,14 +5,15 @@ exports[`<PageContent /> Should adopt the "content" property 1`] = `
   animate={true}
 >
   <PageHeader
-    isLeftHanded={true}
+    arrowPosition="bottom-left"
   />
   <ContentWrapper__ContentWrapper>
     <SpeechBubble
       arrowHeight="9vh"
+      arrowPosition="bottom-right"
       backgroundColor="#aedd2c"
       color="#000"
-      isLeftHanded={false}
+      isGhost={false}
       makeAppear={false}
       maxWidth="30em"
       padding="1.5rem"
@@ -29,7 +30,7 @@ exports[`<PageContent /> Should adopt the "noSpeechBubble" property 1`] = `
   animate={true}
 >
   <PageHeader
-    isLeftHanded={true}
+    arrowPosition="bottom-left"
   />
   <ContentWrapper__ContentWrapper>
     Testing
@@ -42,16 +43,17 @@ exports[`<PageContent /> Should adopt the "title" property 1`] = `
   animate={true}
 >
   <PageHeader
-    isLeftHanded={true}
+    arrowPosition="bottom-left"
   >
     Testing
   </PageHeader>
   <ContentWrapper__ContentWrapper>
     <SpeechBubble
       arrowHeight="9vh"
+      arrowPosition="bottom-right"
       backgroundColor="#aedd2c"
       color="#000"
-      isLeftHanded={false}
+      isGhost={false}
       makeAppear={false}
       maxWidth="30em"
       padding="1.5rem"
@@ -66,14 +68,15 @@ exports[`<PageContent /> Should render and match the snapshot 1`] = `
   animate={true}
 >
   <PageHeader
-    isLeftHanded={true}
+    arrowPosition="bottom-left"
   />
   <ContentWrapper__ContentWrapper>
     <SpeechBubble
       arrowHeight="9vh"
+      arrowPosition="bottom-right"
       backgroundColor="#aedd2c"
       color="#000"
-      isLeftHanded={false}
+      isGhost={false}
       makeAppear={false}
       maxWidth="30em"
       padding="1.5rem"

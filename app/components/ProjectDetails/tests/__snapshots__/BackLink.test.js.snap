@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BackLink /> should render and match the snapshot 1`] = `
+<BackLink__Wrapper
+  position="top"
+>
+  <SpeechBubble
+    arrowHeight="2vh"
+    arrowPosition="bottom-right"
+    backgroundColor="#00599e"
+    color="#00599e"
+    isGhost={true}
+    makeAppear={true}
+    showArrowBreakpoint="750px"
+  >
+    <FormattedMessage
+      defaultMessage="← Back to Projects"
+      id="portfolio.components.ProjectDetails.backLink"
+      values={Object {}}
+    />
+  </SpeechBubble>
+</BackLink__Wrapper>
+`;
+
+exports[`<BackLink /> the "position" property should accept "bottom" as value 1`] = `
+<BackLink__Wrapper
+  position="bottom"
+>
+  <SpeechBubble
+    arrowHeight="2vh"
+    arrowPosition="top-right"
+    backgroundColor="#00599e"
+    color="#00599e"
+    isGhost={true}
+    makeAppear={true}
+    showArrowBreakpoint="750px"
+  >
+    <FormattedMessage
+      defaultMessage="← Back to Projects"
+      id="portfolio.components.ProjectDetails.backLink"
+      values={Object {}}
+    />
+  </SpeechBubble>
+</BackLink__Wrapper>
+`;
+
+exports[`<BackLink /> the "position" property should accept "top" as value 1`] = `
+<BackLink__Wrapper
+  position="top"
+>
+  <SpeechBubble
+    arrowHeight="2vh"
+    arrowPosition="bottom-right"
+    backgroundColor="#00599e"
+    color="#00599e"
+    isGhost={true}
+    makeAppear={true}
+    showArrowBreakpoint="750px"
+  >
+    <FormattedMessage
+      defaultMessage="← Back to Projects"
+      id="portfolio.components.ProjectDetails.backLink"
+      values={Object {}}
+    />
+  </SpeechBubble>
+</BackLink__Wrapper>
+`;

@@ -4,8 +4,9 @@ exports[`<Header /> should adopt children 1`] = `
 <header>
   <SpeechBubble
     arrowHeight="4vh"
+    arrowPosition="bottom-right"
     backgroundColor="#465a65"
-    isLeftHanded={false}
+    isGhost={false}
     padding="1.5rem"
     showArrowBreakpoint="750px"
   >
@@ -18,8 +19,9 @@ exports[`<Header /> should render and match the snapshot 1`] = `
 <header>
   <SpeechBubble
     arrowHeight="4vh"
+    arrowPosition="bottom-right"
     backgroundColor="#465a65"
-    isLeftHanded={false}
+    isGhost={false}
     padding="1.5rem"
     showArrowBreakpoint="750px"
   />

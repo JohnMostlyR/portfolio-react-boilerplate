@@ -1,142 +1,114 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Arrow /> should adopt the "height" prop 1`] = `
-.c0 {
-  display: inline-block;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  height: 1px;
-  margin: -1px 0 0 0 !important;
-  -webkit-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  z-index: 9;
-}
-
-.c0::after {
-  content: "" !important;
-  display: block !important;
-  clear: both !important;
-}
-
-@media (min-height:1em) {
-  .c0 {
-    height: 1em;
-  }
-}
-
-<svg
-  className="c0"
-  focusable="false"
-  height="1em"
-  preserveAspectRatio="xMinYMid meet"
-  viewBox="0 0 848 640"
-  xmlns="http://www.w3.org/2000/svg"
-/>
+exports[`<Arrow /> should adopt the "backgroundColor" prop 1`] = `
+<Arrow__SVG>
+  <path
+    d="M424.2 424.4L526.9 640V398.7"
+    fill="#cbe37f"
+    stroke="none"
+    strokeWidth="24"
+  />
+  <path
+    d="M848 318.3L424.2 424.4V158.9"
+    fill="#bada55"
+    stroke="none"
+    strokeWidth="24"
+  />
+  <path
+    d="M0 0l848 318.3L636.4 0H0z"
+    fill="#cbe37f"
+    stroke="none"
+    strokeWidth="24"
+  />
+</Arrow__SVG>
 `;
 
-exports[`<Arrow /> should adopt the "isLeftHanded" prop 1`] = `
-.c0 {
-  display: inline-block;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  height: 1px;
-  margin: -1px 0 0 0 !important;
-  -webkit-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  z-index: 9;
-}
+exports[`<Arrow /> should adopt the "height" prop 1`] = `
+<Arrow__SVG
+  height="1em"
+>
+  <path
+    d="M424.2 424.4L526.9 640V398.7"
+    fill="inherit"
+    stroke="none"
+    strokeWidth="24"
+  />
+  <path
+    d="M848 318.3L424.2 424.4V158.9"
+    stroke="none"
+    strokeWidth="24"
+  />
+  <path
+    d="M0 0l848 318.3L636.4 0H0z"
+    fill="inherit"
+    stroke="none"
+    strokeWidth="24"
+  />
+</Arrow__SVG>
+`;
 
-.c0::after {
-  content: "" !important;
-  display: block !important;
-  clear: both !important;
-}
-
-@media (min-height:) {
-  .c0 {
-    height: 100%;
-  }
-}
-
-<svg
-  className="c0"
-  focusable="false"
-  preserveAspectRatio="xMinYMid meet"
-  viewBox="0 0 848 640"
-  xmlns="http://www.w3.org/2000/svg"
-/>
+exports[`<Arrow /> should adopt the "isGhost" prop 1`] = `
+<Arrow__SVG>
+  <path
+    d="M424.2 424.4L526.9 640V398.7"
+    fill="transparent"
+    strokeWidth="24"
+  />
+  <path
+    d="M848 318.3L424.2 424.4V158.9"
+    fill="transparent"
+    strokeWidth="24"
+  />
+  <path
+    d="M0 0l848 318.3L636.4 0H0z"
+    fill="transparent"
+    strokeWidth="24"
+  />
+</Arrow__SVG>
 `;
 
 exports[`<Arrow /> should adopt the "showBreakpoint" prop 1`] = `
-.c0 {
-  display: inline-block;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  height: 1px;
-  margin: -1px 0 0 0 !important;
-  -webkit-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  z-index: 9;
-}
-
-.c0::after {
-  content: "" !important;
-  display: block !important;
-  clear: both !important;
-}
-
-@media (min-height:100px) {
-  .c0 {
-    height: 100%;
-  }
-}
-
-<svg
-  className="c0"
-  focusable="false"
-  preserveAspectRatio="xMinYMid meet"
-  viewBox="0 0 848 640"
-  xmlns="http://www.w3.org/2000/svg"
-/>
+<Arrow__SVG
+  showBreakpoint="100px"
+>
+  <path
+    d="M424.2 424.4L526.9 640V398.7"
+    fill="inherit"
+    stroke="none"
+    strokeWidth="24"
+  />
+  <path
+    d="M848 318.3L424.2 424.4V158.9"
+    stroke="none"
+    strokeWidth="24"
+  />
+  <path
+    d="M0 0l848 318.3L636.4 0H0z"
+    fill="inherit"
+    stroke="none"
+    strokeWidth="24"
+  />
+</Arrow__SVG>
 `;
 
 exports[`<Arrow /> should render and match the snapshot 1`] = `
-.c0 {
-  display: inline-block;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  height: 1px;
-  margin: -1px 0 0 0 !important;
-  -webkit-transform: rotateY(180deg);
-  -ms-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  z-index: 9;
-}
-
-.c0::after {
-  content: "" !important;
-  display: block !important;
-  clear: both !important;
-}
-
-@media (min-height:) {
-  .c0 {
-    height: 100%;
-  }
-}
-
-<svg
-  className="c0"
-  focusable="false"
-  preserveAspectRatio="xMinYMid meet"
-  viewBox="0 0 848 640"
-  xmlns="http://www.w3.org/2000/svg"
-/>
+<Arrow__SVG>
+  <path
+    d="M424.2 424.4L526.9 640V398.7"
+    fill="inherit"
+    stroke="none"
+    strokeWidth="24"
+  />
+  <path
+    d="M848 318.3L424.2 424.4V158.9"
+    stroke="none"
+    strokeWidth="24"
+  />
+  <path
+    d="M0 0l848 318.3L636.4 0H0z"
+    fill="inherit"
+    stroke="none"
+    strokeWidth="24"
+  />
+</Arrow__SVG>
 `;

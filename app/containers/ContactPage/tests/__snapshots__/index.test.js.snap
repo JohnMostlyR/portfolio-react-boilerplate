@@ -32,6 +32,8 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
         "portfolio.components.LanguageMenu.buttonLabel": "Language",
         "portfolio.components.LanguageMenu.label": "Choose a Language",
         "portfolio.components.LanguageMenu.title": "Language menu",
+        "portfolio.components.Project.detailsLink": "More details →",
+        "portfolio.components.ProjectDetails.backLink": "← Back to Projects",
         "portfolio.components.SubmitButton.error": "Failed. Please try again",
         "portfolio.components.SubmitButton.idle": "Send",
         "portfolio.components.SubmitButton.sending": "Sending...",
@@ -62,9 +64,11 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
         "portfolio.page.AboutPage.pageDescription": "A short description about me.",
         "portfolio.page.AboutPage.pageTitle": "About me : Johan Meester's portfolio",
         "portfolio.page.AboutPage.title": "ABOUT ME",
+        "portfolio.page.NotFoundPage.contact": "contact",
         "portfolio.page.NotFoundPage.content": "I am sorry, but the page you requested does not exist or has been removed.
     
     Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
+        "portfolio.page.NotFoundPage.home": "start",
         "portfolio.page.NotFoundPage.pageDescription": "Page not found.",
         "portfolio.page.NotFoundPage.pageTitle": "Not found : Johan Meester's portfolio",
         "portfolio.page.NotFoundPage.title": "NOT FOUND",
@@ -78,6 +82,7 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
         "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
         "portfolio.page.index.title": "Introduction",
         "portfolio.page.projects.title": "MY PROJECTS",
+        "portfolio.skiplink": "skip to main content",
         "portfolio.social_links.header": "Also find me on:",
         "portfolio.title": "Welcome to my portfolio",
       },
@@ -152,7 +157,7 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
         className="Wrapper__Wrapper-fEDTQp jgxDLY"
       >
         <PageHeader
-          isLeftHanded={true}
+          arrowPosition="bottom-left"
         >
           <StyledHeader__StyledHeader>
             <header
@@ -160,8 +165,9 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
             >
               <SpeechBubble
                 arrowHeight="4vh"
+                arrowPosition="bottom-left"
                 backgroundColor="#465a65"
-                isLeftHanded={true}
+                isGhost={false}
                 makeAppear={true}
                 showArrowBreakpoint="750px"
               >
@@ -173,12 +179,13 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                     className="Container__Container-duRnZL gAUglN"
                   >
                     <Bubble__Bubble
+                      arrowPosition="bottom-left"
                       backgroundColor="#465a65"
-                      isLeftHanded={true}
+                      isGhost={false}
                       showArrowBreakpoint="750px"
                     >
                       <div
-                        className="Bubble__Bubble-kfMqWC fYyIab"
+                        className="Bubble__Bubble-kfMqWC hrEoVL"
                       >
                         <H2__H2
                           color="#aedd2c"
@@ -200,34 +207,47 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                         </H2__H2>
                       </div>
                     </Bubble__Bubble>
-                    <Arrow__Arrow
+                    <Arrow
+                      arrowPosition="bottom-left"
+                      backgroundColor="#465a65"
                       height="4vh"
-                      isLeftHanded={true}
+                      isGhost={false}
                       showBreakpoint="750px"
                     >
-                      <svg
-                        className="Arrow__Arrow-fPzAjH jaPxIQ"
-                        focusable="false"
+                      <Arrow__SVG
+                        arrowPosition="bottom-left"
                         height="4vh"
-                        preserveAspectRatio="xMinYMid meet"
-                        viewBox="0 0 848 640"
-                        xmlns="http://www.w3.org/2000/svg"
+                        showBreakpoint="750px"
                       >
-                        <path
-                          d="M424.2 424.4L526.9 640V398.7"
-                          fill="#5b7583"
-                          stroke="#5b7583"
-                        />
-                        <path
-                          d="M848 318.3L424.2 424.4V158.9"
-                          fill="#465a65"
-                        />
-                        <path
-                          d="M0 0l848 318.3L636.4 0H0z"
-                          fill="#5b7583"
-                        />
-                      </svg>
-                    </Arrow__Arrow>
+                        <svg
+                          className="Arrow__SVG-iWxuxU ejSVef"
+                          focusable="false"
+                          height="4vh"
+                          preserveAspectRatio="xMinYMid meet"
+                          viewBox="0 0 848 640"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M424.2 424.4L526.9 640V398.7"
+                            fill="#5b7583"
+                            stroke="none"
+                            strokeWidth="24"
+                          />
+                          <path
+                            d="M848 318.3L424.2 424.4V158.9"
+                            fill="#465a65"
+                            stroke="none"
+                            strokeWidth="24"
+                          />
+                          <path
+                            d="M0 0l848 318.3L636.4 0H0z"
+                            fill="#5b7583"
+                            stroke="none"
+                            strokeWidth="24"
+                          />
+                        </svg>
+                      </Arrow__SVG>
+                    </Arrow>
                   </div>
                 </Container__Container>
               </SpeechBubble>
@@ -240,9 +260,10 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
           >
             <SpeechBubble
               arrowHeight="9vh"
+              arrowPosition="bottom-right"
               backgroundColor="#aedd2c"
               color="#000"
-              isLeftHanded={false}
+              isGhost={false}
               makeAppear={false}
               maxWidth="30em"
               padding="1.5rem"
@@ -257,14 +278,15 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                   className="Container__Container-duRnZL czakBm"
                 >
                   <Bubble__Bubble
+                    arrowPosition="bottom-right"
                     backgroundColor="#aedd2c"
                     color="#000"
-                    isLeftHanded={false}
+                    isGhost={false}
                     padding="1.5rem"
                     showArrowBreakpoint="750px"
                   >
                     <div
-                      className="Bubble__Bubble-kfMqWC kqCXAa"
+                      className="Bubble__Bubble-kfMqWC kjxAdG"
                       color="#000"
                     >
                       <InjectIntl(ContactForm)
@@ -321,6 +343,8 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                 "portfolio.components.LanguageMenu.buttonLabel": "Language",
                                 "portfolio.components.LanguageMenu.label": "Choose a Language",
                                 "portfolio.components.LanguageMenu.title": "Language menu",
+                                "portfolio.components.Project.detailsLink": "More details →",
+                                "portfolio.components.ProjectDetails.backLink": "← Back to Projects",
                                 "portfolio.components.SubmitButton.error": "Failed. Please try again",
                                 "portfolio.components.SubmitButton.idle": "Send",
                                 "portfolio.components.SubmitButton.sending": "Sending...",
@@ -351,9 +375,11 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                 "portfolio.page.AboutPage.pageDescription": "A short description about me.",
                                 "portfolio.page.AboutPage.pageTitle": "About me : Johan Meester's portfolio",
                                 "portfolio.page.AboutPage.title": "ABOUT ME",
+                                "portfolio.page.NotFoundPage.contact": "contact",
                                 "portfolio.page.NotFoundPage.content": "I am sorry, but the page you requested does not exist or has been removed.
                             
                             Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
+                                "portfolio.page.NotFoundPage.home": "start",
                                 "portfolio.page.NotFoundPage.pageDescription": "Page not found.",
                                 "portfolio.page.NotFoundPage.pageTitle": "Not found : Johan Meester's portfolio",
                                 "portfolio.page.NotFoundPage.title": "NOT FOUND",
@@ -367,6 +393,7 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                 "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
                                 "portfolio.page.index.title": "Introduction",
                                 "portfolio.page.projects.title": "MY PROJECTS",
+                                "portfolio.skiplink": "skip to main content",
                                 "portfolio.social_links.header": "Also find me on:",
                                 "portfolio.title": "Welcome to my portfolio",
                               },
@@ -889,34 +916,47 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                       </InjectIntl(ContactForm)>
                     </div>
                   </Bubble__Bubble>
-                  <Arrow__Arrow
+                  <Arrow
+                    arrowPosition="bottom-right"
+                    backgroundColor="#aedd2c"
                     height="9vh"
-                    isLeftHanded={false}
+                    isGhost={false}
                     showBreakpoint="750px"
                   >
-                    <svg
-                      className="Arrow__Arrow-fPzAjH bLlnaE"
-                      focusable="false"
+                    <Arrow__SVG
+                      arrowPosition="bottom-right"
                       height="9vh"
-                      preserveAspectRatio="xMinYMid meet"
-                      viewBox="0 0 848 640"
-                      xmlns="http://www.w3.org/2000/svg"
+                      showBreakpoint="750px"
                     >
-                      <path
-                        d="M424.2 424.4L526.9 640V398.7"
-                        fill="#bfe458"
-                        stroke="#bfe458"
-                      />
-                      <path
-                        d="M848 318.3L424.2 424.4V158.9"
-                        fill="#aedd2c"
-                      />
-                      <path
-                        d="M0 0l848 318.3L636.4 0H0z"
-                        fill="#bfe458"
-                      />
-                    </svg>
-                  </Arrow__Arrow>
+                      <svg
+                        className="Arrow__SVG-iWxuxU eUZiEN"
+                        focusable="false"
+                        height="9vh"
+                        preserveAspectRatio="xMinYMid meet"
+                        viewBox="0 0 848 640"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M424.2 424.4L526.9 640V398.7"
+                          fill="#bfe458"
+                          stroke="none"
+                          strokeWidth="24"
+                        />
+                        <path
+                          d="M848 318.3L424.2 424.4V158.9"
+                          fill="#aedd2c"
+                          stroke="none"
+                          strokeWidth="24"
+                        />
+                        <path
+                          d="M0 0l848 318.3L636.4 0H0z"
+                          fill="#bfe458"
+                          stroke="none"
+                          strokeWidth="24"
+                        />
+                      </svg>
+                    </Arrow__SVG>
+                  </Arrow>
                 </div>
               </Container__Container>
             </SpeechBubble>

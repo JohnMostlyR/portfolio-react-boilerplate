@@ -33,6 +33,8 @@ exports[`<ContactForm /> should render and match the snapshot 1`] = `
         "portfolio.components.LanguageMenu.buttonLabel": "Language",
         "portfolio.components.LanguageMenu.label": "Choose a Language",
         "portfolio.components.LanguageMenu.title": "Language menu",
+        "portfolio.components.Project.detailsLink": "More details →",
+        "portfolio.components.ProjectDetails.backLink": "← Back to Projects",
         "portfolio.components.SubmitButton.error": "Failed. Please try again",
         "portfolio.components.SubmitButton.idle": "Send",
         "portfolio.components.SubmitButton.sending": "Sending...",
@@ -63,9 +65,11 @@ exports[`<ContactForm /> should render and match the snapshot 1`] = `
         "portfolio.page.AboutPage.pageDescription": "A short description about me.",
         "portfolio.page.AboutPage.pageTitle": "About me : Johan Meester's portfolio",
         "portfolio.page.AboutPage.title": "ABOUT ME",
+        "portfolio.page.NotFoundPage.contact": "contact",
         "portfolio.page.NotFoundPage.content": "I am sorry, but the page you requested does not exist or has been removed.
     
     Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
+        "portfolio.page.NotFoundPage.home": "start",
         "portfolio.page.NotFoundPage.pageDescription": "Page not found.",
         "portfolio.page.NotFoundPage.pageTitle": "Not found : Johan Meester's portfolio",
         "portfolio.page.NotFoundPage.title": "NOT FOUND",
@@ -79,6 +83,7 @@ exports[`<ContactForm /> should render and match the snapshot 1`] = `
         "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
         "portfolio.page.index.title": "Introduction",
         "portfolio.page.projects.title": "MY PROJECTS",
+        "portfolio.skiplink": "skip to main content",
         "portfolio.social_links.header": "Also find me on:",
         "portfolio.title": "Welcome to my portfolio",
       },
