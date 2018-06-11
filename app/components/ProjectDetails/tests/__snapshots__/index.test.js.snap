@@ -21,9 +21,9 @@ exports[`<ProjectDetails /> Should adopt the "project" property 1`] = `
       <h1>
         Title for test case
       </h1>
-      <div>
+      <Description__Description>
         Description for test case
-      </div>
+      </Description__Description>
       <Image
         images={
           Array [
@@ -110,9 +110,9 @@ exports[`<ProjectDetails /> Should handle case where "images" is not an Array 1`
       <h1>
         Title for test case
       </h1>
-      <div>
+      <Description__Description>
         Description for test case
-      </div>
+      </Description__Description>
       <Article__Article>
         <h1
           id="article-for-test-case"
@@ -163,7 +163,7 @@ exports[`<ProjectDetails /> Should render without any given properties 1`] = `
       showArrowBreakpoint="750px"
     >
       <h1 />
-      <div />
+      <Description__Description />
       <Article__Article />
     </SpeechBubble>
     <BackLink

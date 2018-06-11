@@ -8,6 +8,7 @@ import ContentWrapper from './ContentWrapper';
 import BackLink from './BackLink';
 import Article from './Article';
 import Image from './Image';
+import Description from './Description';
 
 import SpeechBubble from '../../components/SpeechBubble';
 import { BASE_LINE_HEIGHT } from '../../styles/typography';
@@ -48,7 +49,7 @@ function ProjectDetails({ project = {} }) {
           showArrowBreakpoint="750px"
         >
           <h1>{title}</h1>
-          <div>{description}</div>
+          <Description>{description}</Description>
           {
             (images && Array.isArray(images)) && <Image images={images} />
           }
