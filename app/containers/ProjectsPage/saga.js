@@ -45,9 +45,9 @@ export function parseContent(data) {
     projects = ITEMS_SORTED
       .reduce((acc, curr) => {
         if (curr.thumbnail) {
-          curr.thumbnail = ASSETS[curr.thumbnail.sys.id].file;
+          curr.thumbnail = ASSETS[curr.thumbnail.sys.id];
         } else {
-          curr.thumbnail = { url: '#' };
+          curr.thumbnail = {};
         }
 
         return acc.concat(curr);

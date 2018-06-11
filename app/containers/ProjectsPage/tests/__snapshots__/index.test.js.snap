@@ -55,6 +55,21 @@ exports[`<ProjectsPage /> Expect to render and match the snapshot 1`] = `
                   "title": "Test image",
                 },
               ],
+              "thumbnail": Object {
+                "file": Object {
+                  "contentType": "image/png",
+                  "details": Object {
+                    "image": Object {
+                      "height": 230,
+                      "width": 345,
+                    },
+                    "size": 22495,
+                  },
+                  "fileName": "test-m.png",
+                  "url": "/test-m.png",
+                },
+                "title": "Test image",
+              },
               "title": "Title for test case",
             },
           ]
@@ -128,6 +143,21 @@ exports[`<ProjectsPage /> details page Should handle case where a non existent d
                   "title": "Test image",
                 },
               ],
+              "thumbnail": Object {
+                "file": Object {
+                  "contentType": "image/png",
+                  "details": Object {
+                    "image": Object {
+                      "height": 230,
+                      "width": 345,
+                    },
+                    "size": 22495,
+                  },
+                  "fileName": "test-m.png",
+                  "url": "/test-m.png",
+                },
+                "title": "Test image",
+              },
               "title": "Title for test case",
             },
           ]
@@ -198,6 +228,21 @@ exports[`<ProjectsPage /> details page Should render the details page when reque
             "title": "Test image",
           },
         ],
+        "thumbnail": Object {
+          "file": Object {
+            "contentType": "image/png",
+            "details": Object {
+              "image": Object {
+                "height": 230,
+                "width": 345,
+              },
+              "size": 22495,
+            },
+            "fileName": "test-m.png",
+            "url": "/test-m.png",
+          },
+          "title": "Test image",
+        },
         "title": "Title for test case",
       }
     }

@@ -12,10 +12,10 @@ import H3 from '../H3';
 import P from '../P';
 import Link from '../Link';
 
-function Project({ detailsBodyText, isOdd, thumbnailUrl, title }) {
+function Project({ detailsBodyText, isOdd, thumbnail, title }) {
   return (
     <Article>
-      <MediaAsset imageSource={thumbnailUrl} isOdd={isOdd} />
+      <MediaAsset imageSource={thumbnail} isOdd={isOdd} />
       <ProjectBody>
         <div>
           <ProjectHeader>
@@ -43,12 +43,20 @@ function Project({ detailsBodyText, isOdd, thumbnailUrl, title }) {
 Project.propTypes = {
   detailsBodyText: PropTypes.string,
   isOdd: PropTypes.bool,
-  thumbnailUrl: PropTypes.string,
-  title: PropTypes.string,
-};
-
-Project.defaultProps = {
-  title: 'New Project',
+  thumbnail: PropTypes.shape({
+    file: PropTypes.shape({
+      details: PropTypes.shape({
+        image: PropTypes.shape({
+          height: PropTypes.number,
+          width: PropTypes.number,
+        }),
+      }),
+      fileName: PropTypes.string,
+      url: PropTypes.string,
+    }),
+    title: PropTypes.string,
+  }).isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Project;

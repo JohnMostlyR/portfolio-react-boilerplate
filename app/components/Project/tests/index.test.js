@@ -1,61 +1,49 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 
 import Project from '../index';
 
 describe('Project', () => {
-  const THUMB = '/test.png';
+  const thumbnail = {
+    file: {
+      contentType: 'image/png',
+      details: {
+        image: {
+          height: 230,
+          width: 345,
+        },
+        size: 22495,
+      },
+      fileName: 'medium-m.png',
+      url: '/medium-m.png',
+    },
+    title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+  };
+  const title = 'This is the title field for Project 1';
+  const description = 'This is the description field Project 1';
 
   it('should render and match the snapshot', () => {
-    const wrapper = shallow(<Project thumbnailUrl={THUMB} />);
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should adopt the "title" prop', () => {
-    const PROP = 'Hi Title';
     const wrapper = shallow(
       <Project
-        thumbnailUrl={THUMB}
-        title={PROP}
+        thumbnail={thumbnail}
+        title={title}
+        detailsBodyText={description}
+        isOdd
       />
     );
-
-    expect(wrapper).toMatchSnapshot();
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 
-  it('should adopt the "detailsTitle" prop', () => {
-    const PROP = 'Hi Details Title';
+  it('should adopt the "isOdd" property', () => {
     const wrapper = shallow(
       <Project
-        thumbnailUrl={THUMB}
-        detailsTitle={PROP}
+        thumbnail={thumbnail}
+        title={title}
+        detailsBodyText={description}
+        isOdd={false}
       />
     );
-
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should adopt the "detailsBodyText" prop', () => {
-    const PROP = 'Hi body text';
-    const wrapper = shallow(
-      <Project
-        thumbnailUrl={THUMB}
-        detailsBodyText={PROP}
-      />
-    );
-
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('should adopt the "isOdd" prop', () => {
-    const PROP = false;
-    const wrapper = shallow(
-      <Project
-        thumbnailUrl={THUMB}
-        isOdd={PROP}
-      />
-    );
-
-    expect(wrapper).toMatchSnapshot();
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

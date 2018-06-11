@@ -5,18 +5,33 @@ import Figure from './Figure';
 import Body from './Body';
 import ImageWrapper from './ImageWrapper';
 
-function MediaAsset(props) {
+function MediaAsset({ imageSource = {}, isOdd }) {
+  const { file: { details: { image }, url }, title = '' } = imageSource;
   return (
-    <Figure isOdd={props.isOdd}>
+    <Figure isOdd={isOdd}>
       <Body>
-        <ImageWrapper imageSource={props.imageSource} imageAlt="Project" ratio="16by9" />
+        <ImageWrapper imageDimensions={image}>
+          <img src={url} alt={title} />
+        </ImageWrapper>
       </Body>
     </Figure>
   );
 }
 
 MediaAsset.propTypes = {
-  imageSource: PropTypes.string.isRequired,
+  imageSource: PropTypes.shape({
+    file: PropTypes.shape({
+      details: PropTypes.shape({
+        image: PropTypes.shape({
+          height: PropTypes.number,
+          width: PropTypes.number,
+        }),
+      }),
+      fileName: PropTypes.string,
+      url: PropTypes.string,
+    }),
+    title: PropTypes.string,
+  }).isRequired,
   isOdd: PropTypes.bool,
 };
 
