@@ -1,21 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Image /> should render and match the snapshot 1`] = `
-<ImageWrapper__ImageWrapper>
+<ImageWrapper__ImageWrapper
+  breakpoints={
+    Array [
+      Object {
+        "media": Object {
+          "breakpoint": "max-width",
+          "size": "424px",
+        },
+        "srcSet": "/test-s.png",
+      },
+      Object {
+        "media": Object {
+          "breakpoint": "max-width",
+          "size": "767px",
+        },
+        "srcSet": "/test-m.png",
+      },
+      Object {
+        "media": Object {
+          "breakpoint": "max-width",
+          "size": "949px",
+        },
+        "srcSet": "/test-l.png",
+      },
+      Object {
+        "media": Object {
+          "breakpoint": "min-width",
+          "size": "950px",
+        },
+        "srcSet": "/test-xl.png",
+      },
+    ]
+  }
+  imageDimensions={
+    Array [
+      Object {
+        "height": 10,
+        "width": 20,
+      },
+      Object {
+        "height": 20,
+        "width": 30,
+      },
+      Object {
+        "height": 30,
+        "width": 40,
+      },
+      Object {
+        "height": 50,
+        "width": 60,
+      },
+    ]
+  }
+>
   <Image__StyledPicture>
     <source
+      key="424px"
       media="(max-width: 424px)"
       srcSet="/test-s.png"
     />
     <source
+      key="767px"
       media="(max-width: 767px)"
       srcSet="/test-m.png"
     />
     <source
+      key="949px"
       media="(max-width: 949px)"
       srcSet="/test-l.png"
     />
     <source
+      key="950px"
       media="(min-width: 950px)"
       srcSet="/test-xl.png"
     />
