@@ -14,6 +14,8 @@ import SpeechBubble from '../../components/SpeechBubble';
 import { BASE_LINE_HEIGHT } from '../../styles/typography';
 import { theme } from '../../styles/theme';
 
+const { backgroundColor, color } = theme.projectDetails;
+
 marked.options({
   breaks: true,
 });
@@ -42,8 +44,8 @@ function ProjectDetails({ project = {} }) {
         <SpeechBubble
           arrowHeight="9vh"
           arrowPosition={'bottom-right'}
-          backgroundColor={theme.speechBubble.backgroundColor}
-          color={theme.speechBubble.color}
+          backgroundColor={backgroundColor}
+          color={color}
           makeAppear={false}
           padding={`${BASE_LINE_HEIGHT}rem 1rem`}
           showArrowBreakpoint="750px"

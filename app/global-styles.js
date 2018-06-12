@@ -42,7 +42,7 @@ injectGlobal`
     background-repeat: ${theme.site.background.repeat.join(',')};
 
     @media (min-width: 600px) {
-      font-size: 112%;
+      font-size: 120%;
     }
   }
 
