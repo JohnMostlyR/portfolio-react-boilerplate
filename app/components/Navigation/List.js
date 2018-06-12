@@ -30,44 +30,59 @@ const List = styled.ul.attrs({
   margin: 0;
   margin-top: ${BASE_LINE_HEIGHT}rem;
   position: relative;
-  width: ${({ isExpanded }) => isExpanded ? 'auto' : 0};
   z-index: 2;
   border: 0.2rem solid ${borderColor};
   border-radius: 0.5rem;
   border-top-right-radius: 0;
   background-color: ${backgroundColor};
-  padding: ${BASE_LINE_HEIGHT}rem;
-  padding-left: ${BASE_LINE_HEIGHT * 2}rem;
+  padding: ${
+    ({ isExpanded }) => (
+      isExpanded
+        ? `${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT * 2}rem`
+        : 0
+    )
+  };
   transform: scale(${({ isExpanded }) => isExpanded ? 1 : 0});
   transform-origin: right top;
-  transition: transform 0.1s ease-in-out;
+  transition: transform, padding, height;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
 
-  @media (max-width: ${({ bigScreenBreakpoint }) => `${bigScreenBreakpoint - 1}px`}) {
-    &::before {
-      position: absolute;
-      content: "";
-      height: ${BASE_LINE_HEIGHT}rem;
-      left: 0;
-      top: -0.15rem;
-      transform: translateY(-100%);
-      width: 100%;
-      z-index: -1;
-      background-image: ${() => `url(${svgToURL(arrowSVG)})`};
-      background-position: right center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      color: inherit;
-    }
+  &::before {
+    position: absolute;
+    content: "";
+    height: ${BASE_LINE_HEIGHT}rem;
+    left: 0;
+    top: -0.15rem;
+    transform: translateY(-100%);
+    width: 100%;
+    z-index: -1;
+    background-image: ${() => `url(${svgToURL(arrowSVG)})`};
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: inherit;
   }
 
   & li:not(:last-child) {
     margin-bottom: ${BASE_LINE_HEIGHT}rem;
   }
 
+  & li {
+    display: ${({ isExpanded }) => isExpanded ? 'inline-block' : 'none'};
+  }
+
   @media (min-width: ${({ bigScreenBreakpoint }) => `${bigScreenBreakpoint}px`}) {
+    height: auto;
+    padding: ${`${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT *
+2}rem`};
     transform: scale(1);
+    width: auto;
     background-color: transparent;
-    border: 0;
+
+    & li {
+      display: inline-block;
+    }
   }
 `;
 

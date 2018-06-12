@@ -52,8 +52,8 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
     </button>
   </span>
   <ul
-    className="List__List-bdFvnP jUERGC"
-    hidden={true}
+    className="List__List-bdFvnP dxPQqe"
+    hidden="\\"true\\""
     onKeyDown={[Function]}
   >
     <li
@@ -79,7 +79,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
           />
         </svg>
         <span
-          className="Label__Label-bOFUbQ cRWsGF"
+          className="Label__Label-bOFUbQ gkbbBV"
         >
           <span>
             Intro
@@ -110,7 +110,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
           />
         </svg>
         <span
-          className="Label__Label-bOFUbQ cRWsGF"
+          className="Label__Label-bOFUbQ gkbbBV"
         >
           <span>
             About
@@ -141,7 +141,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
           />
         </svg>
         <span
-          className="Label__Label-bOFUbQ cRWsGF"
+          className="Label__Label-bOFUbQ gkbbBV"
         >
           <span>
             Skills
@@ -172,7 +172,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
           />
         </svg>
         <span
-          className="Label__Label-bOFUbQ cRWsGF"
+          className="Label__Label-bOFUbQ gkbbBV"
         >
           <span>
             Projects
@@ -203,7 +203,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
           />
         </svg>
         <span
-          className="Label__Label-bOFUbQ cRWsGF"
+          className="Label__Label-bOFUbQ gkbbBV"
         >
           <span>
             Contact
