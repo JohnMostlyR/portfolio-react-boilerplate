@@ -7,11 +7,11 @@ import ImageWrapper, { renderMediaBreakpoints } from '../ImageWrapper';
 
 const breakpoints = [
   {
-    media: { breakpoint: 'max-width', size: '424px' },
+    media: { breakpoint: 'max-width', size: 424 },
     srcSet: '/source1.png',
   },
   {
-    media: { breakpoint: 'max-width', size: '767px' },
+    media: { breakpoint: 'max-width', size: 767 },
     srcSet: '/source2.jpeg',
   },
 ];

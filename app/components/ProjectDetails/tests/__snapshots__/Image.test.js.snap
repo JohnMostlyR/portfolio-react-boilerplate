@@ -7,32 +7,38 @@ exports[`<Image /> should render and match the snapshot 1`] = `
       Object {
         "media": Object {
           "breakpoint": "max-width",
-          "size": "424px",
+          "size": 424,
         },
         "srcSet": "/test-s.png",
       },
       Object {
         "media": Object {
           "breakpoint": "max-width",
-          "size": "767px",
+          "size": 767,
         },
         "srcSet": "/test-m.png",
       },
       Object {
         "media": Object {
           "breakpoint": "max-width",
-          "size": "949px",
+          "size": 949,
         },
         "srcSet": "/test-l.png",
       },
       Object {
         "media": Object {
           "breakpoint": "min-width",
-          "size": "950px",
+          "size": 950,
         },
         "srcSet": "/test-xl.png",
       },
     ]
+  }
+  defaultImage={
+    Object {
+      "height": 10,
+      "width": 20,
+    }
   }
   imageDimensions={
     Array [
@@ -57,22 +63,22 @@ exports[`<Image /> should render and match the snapshot 1`] = `
 >
   <Image__StyledPicture>
     <source
-      key="424px"
+      key="424"
       media="(max-width: 424px)"
       srcSet="/test-s.png"
     />
     <source
-      key="767px"
+      key="767"
       media="(max-width: 767px)"
       srcSet="/test-m.png"
     />
     <source
-      key="949px"
+      key="949"
       media="(max-width: 949px)"
       srcSet="/test-l.png"
     />
     <source
-      key="950px"
+      key="950"
       media="(min-width: 950px)"
       srcSet="/test-xl.png"
     />

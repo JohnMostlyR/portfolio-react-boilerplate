@@ -2,21 +2,15 @@
 
 exports[`<ImageWrapper /> should render and match the snapshot 1`] = `
 .c0 {
+  height: 90px;
   margin: 4.5rem 0;
+  width: 100%;
   text-align: center;
 }
 
-@media (max-width:424px) {
-  .c0 {
-    height: 90px;
-    width: 160px;
-  }
-}
-
-@media (max-width:767px) {
+@media (min-width:425px) {
   .c0 {
     height: 900px;
-    width: 1600px;
   }
 }
 
@@ -27,7 +21,9 @@ exports[`<ImageWrapper /> should render and match the snapshot 1`] = `
 
 exports[`<ImageWrapper /> should render without any props given 1`] = `
 .c0 {
+  height: auto;
   margin: 4.5rem 0;
+  width: 100%;
   text-align: center;
 }
 

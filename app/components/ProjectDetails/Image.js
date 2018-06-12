@@ -16,7 +16,7 @@ function transformImagesArray(images) {
   images.forEach((_image) => {
     const { file: { details: { image: { height, width } }, fileName, url } } = _image;
     const [relativeSizeIndication] = fileName
-      .replace(/\.(png|jpeg)/i, '')
+      .replace(/\.(png|jpe?g)/i, '')
       .trim()
       .split('-')
       .slice(-1);
@@ -41,7 +41,7 @@ function composeSourceElements(sources) {
   return sources.map((source) => {
     const { media: { breakpoint, size }, srcSet } = source;
 
-    return (<source key={size} media={`(${breakpoint}: ${size})`} srcSet={srcSet} />);
+    return (<source key={size} media={`(${breakpoint}: ${size}px)`} srcSet={srcSet} />);
   });
 }
 
@@ -54,57 +54,53 @@ function Image({ images = [] }) {
   const altText = getImageDescription(images);
   const breakpoints = [
     {
-      media: { breakpoint: 'max-width', size: '424px' },
+      media: { breakpoint: 'max-width', size: 424 },
       srcSet: s.url,
     },
     {
-      media: { breakpoint: 'max-width', size: '767px' },
+      media: { breakpoint: 'max-width', size: 767 },
       srcSet: m.url,
     },
     {
-      media: { breakpoint: 'max-width', size: '949px' },
+      media: { breakpoint: 'max-width', size: 949 },
       srcSet: l.url,
     },
     {
-      media: { breakpoint: 'min-width', size: '950px' },
+      media: { breakpoint: 'min-width', size: 950 },
       srcSet: xl.url,
     },
   ];
   const imageDimensions = [s.dimensions, m.dimensions, l.dimensions, xl.dimensions];
 
-  if (s.url && m.url && l.url && xl.url) {
-    return (
-      <ImageWrapper
-        breakpoints={breakpoints}
-        imageDimensions={imageDimensions}
-      >
-        <StyledPicture>
-          {
-            composeSourceElements(breakpoints)
-          }
-          <img src={xl.url} alt={altText} />
-        </StyledPicture>
-      </ImageWrapper>
-    );
-  }
-
-  return <div />;
+  return (
+    <ImageWrapper
+      breakpoints={breakpoints}
+      imageDimensions={imageDimensions}
+      defaultImage={s.dimensions}
+    >
+      <StyledPicture>
+        {
+          composeSourceElements(breakpoints)
+        }
+        <img src={xl.url} alt={altText} />
+      </StyledPicture>
+    </ImageWrapper>
+  );
 }
-
 Image.propTypes = {
   images: PropTypes.arrayOf(
     PropTypes.shape({
       file: PropTypes.shape({
         details: PropTypes.shape({
           image: PropTypes.shape({
-            height: PropTypes.number,
-            width: PropTypes.number,
-          }),
-        }),
-        fileName: PropTypes.string,
-        url: PropTypes.string,
-      }),
-      title: PropTypes.string,
+            height: PropTypes.number.isRequired,
+            width: PropTypes.number.isRequired,
+          }).isRequired,
+        }).isRequired,
+        fileName: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired,
+      }).isRequired,
+      title: PropTypes.string.isRequired,
     })
   ),
 };
