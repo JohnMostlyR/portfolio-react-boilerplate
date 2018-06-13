@@ -6,10 +6,58 @@ import Image from '../Image';
 
 describe('<Image />', () => {
   const images = [
-    { file: { fileName: 'test-s.png', url: '/test-s.png' }, title: 'Test image' },
-    { file: { fileName: 'test-m.png', url: '/test-m.png' }, title: 'Test image' },
-    { file: { fileName: 'test-l.png', url: '/test-l.png' }, title: 'Test image' },
-    { file: { fileName: 'test-xl.png', url: '/test-xl.png' }, title: 'Test image' },
+    {
+      file: {
+        details: {
+          image: {
+            height: 10,
+            width: 20,
+          },
+        },
+        fileName: 'test-s.png',
+        url: '/test-s.png',
+      },
+      title: 'Test image',
+    },
+    {
+      file: {
+        details: {
+          image: {
+            height: 20,
+            width: 30,
+          },
+        },
+        fileName: 'test-m.png',
+        url: '/test-m.png',
+      },
+      title: 'Test image',
+    },
+    {
+      file: {
+        details: {
+          image: {
+            height: 30,
+            width: 40,
+          },
+        },
+        fileName: 'test-l.png',
+        url: '/test-l.png',
+      },
+      title: 'Test image',
+    },
+    {
+      file: {
+        details: {
+          image: {
+            height: 50,
+            width: 60,
+          },
+        },
+        fileName: 'test-xl.png',
+        url: '/test-xl.png',
+      },
+      title: 'Test image',
+    },
   ];
 
   it('should render and match the snapshot', () => {

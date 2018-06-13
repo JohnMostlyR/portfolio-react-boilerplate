@@ -12,43 +12,59 @@ import H3 from '../H3';
 import P from '../P';
 import Link from '../Link';
 
-function Project({ detailsBodyText, isOdd, thumbnailUrl, title }) {
-  return (
-    <Article>
-      <MediaAsset imageSource={thumbnailUrl} isOdd={isOdd} />
-      <ProjectBody>
-        <div>
-          <ProjectHeader>
-            <H3>{title}</H3>
-          </ProjectHeader>
-        </div>
-        <P>{detailsBodyText}</P>
-        <P textAlign="right">
-          <FormattedMessage {...messages.detailsLink}>
-            {
-              (message) => (
-                <Link
-                  to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}
-                  odd={`${isOdd}`}
-                >{message}</Link>
-              )
-            }
-          </FormattedMessage>
-        </P>
-      </ProjectBody>
-    </Article>
-  );
+class Project extends React.PureComponent {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
+  render() {
+    const { detailsBodyText, isOdd, thumbnail, title } = this.props;
+
+    return (
+      <Article>
+        <MediaAsset imageSource={thumbnail} isOdd={isOdd} />
+        <ProjectBody>
+          <div>
+            <ProjectHeader>
+              <H3>{title}</H3>
+            </ProjectHeader>
+          </div>
+          <P>{detailsBodyText}</P>
+          <P textAlign="right">
+            <FormattedMessage {...messages.detailsLink}>
+              {
+                (message) => (
+                  <Link
+                    to={`/projects/${title.toLowerCase().replace(/\W+/g, '-')}`}
+                    odd={`${isOdd}`}
+                  >{message}</Link>
+                )
+              }
+            </FormattedMessage>
+          </P>
+        </ProjectBody>
+      </Article>
+    );
+  }
 }
 
 Project.propTypes = {
   detailsBodyText: PropTypes.string,
   isOdd: PropTypes.bool,
-  thumbnailUrl: PropTypes.string,
-  title: PropTypes.string,
-};
-
-Project.defaultProps = {
-  title: 'New Project',
+  thumbnail: PropTypes.shape({
+    file: PropTypes.shape({
+      details: PropTypes.shape({
+        image: PropTypes.shape({
+          height: PropTypes.number,
+          width: PropTypes.number,
+        }),
+      }),
+      fileName: PropTypes.string,
+      url: PropTypes.string,
+    }),
+    title: PropTypes.string,
+  }).isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default Project;

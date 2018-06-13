@@ -56,6 +56,14 @@ export const theme = Object.freeze({
       },
     },
   },
+  projectDetails: {
+    backgroundColor: '#aedd2c',
+    color: '#000',
+    inlineLink: {
+      color: '#00599e',
+      textShadowColor: '#aedd2c',
+    },
+  },
   site: {
     background: {
       color: '#fff',

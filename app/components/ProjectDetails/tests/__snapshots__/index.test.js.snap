@@ -21,14 +21,20 @@ exports[`<ProjectDetails /> Should adopt the "project" property 1`] = `
       <h1>
         Title for test case
       </h1>
-      <div>
+      <Description__Description>
         Description for test case
-      </div>
+      </Description__Description>
       <Image
         images={
           Array [
             Object {
               "file": Object {
+                "details": Object {
+                  "image": Object {
+                    "height": 10,
+                    "width": 20,
+                  },
+                },
                 "fileName": "test-s.png",
                 "url": "/test-s.png",
               },
@@ -36,6 +42,12 @@ exports[`<ProjectDetails /> Should adopt the "project" property 1`] = `
             },
             Object {
               "file": Object {
+                "details": Object {
+                  "image": Object {
+                    "height": 20,
+                    "width": 30,
+                  },
+                },
                 "fileName": "test-m.png",
                 "url": "/test-m.png",
               },
@@ -43,6 +55,12 @@ exports[`<ProjectDetails /> Should adopt the "project" property 1`] = `
             },
             Object {
               "file": Object {
+                "details": Object {
+                  "image": Object {
+                    "height": 30,
+                    "width": 40,
+                  },
+                },
                 "fileName": "test-l.png",
                 "url": "/test-l.png",
               },
@@ -50,6 +68,12 @@ exports[`<ProjectDetails /> Should adopt the "project" property 1`] = `
             },
             Object {
               "file": Object {
+                "details": Object {
+                  "image": Object {
+                    "height": 50,
+                    "width": 60,
+                  },
+                },
                 "fileName": "test-xl.png",
                 "url": "/test-xl.png",
               },
@@ -89,7 +113,7 @@ exports[`<ProjectDetails /> Should adopt the "project" property 1`] = `
 </Wrapper__Wrapper>
 `;
 
-exports[`<ProjectDetails /> Should handle case where "images" is not an Array 1`] = `
+exports[`<ProjectDetails /> Should handle case where "images" is not provided 1`] = `
 <Wrapper__Wrapper
   animate={true}
 >
@@ -110,9 +134,12 @@ exports[`<ProjectDetails /> Should handle case where "images" is not an Array 1`
       <h1>
         Title for test case
       </h1>
-      <div>
+      <Description__Description>
         Description for test case
-      </div>
+      </Description__Description>
+      <Image
+        images={Array []}
+      />
       <Article__Article>
         <h1
           id="article-for-test-case"
@@ -136,35 +163,6 @@ exports[`<ProjectDetails /> Should handle case where "images" is not an Array 1`
         
         
       </Article__Article>
-    </SpeechBubble>
-    <BackLink
-      position="bottom"
-    />
-  </ContentWrapper__ContentWrapper>
-</Wrapper__Wrapper>
-`;
-
-exports[`<ProjectDetails /> Should render without any given properties 1`] = `
-<Wrapper__Wrapper
-  animate={true}
->
-  <ContentWrapper__ContentWrapper>
-    <BackLink
-      position="top"
-    />
-    <SpeechBubble
-      arrowHeight="9vh"
-      arrowPosition="bottom-right"
-      backgroundColor="#aedd2c"
-      color="#000"
-      isGhost={false}
-      makeAppear={false}
-      padding="1.5rem 1rem"
-      showArrowBreakpoint="750px"
-    >
-      <h1 />
-      <div />
-      <Article__Article />
     </SpeechBubble>
     <BackLink
       position="bottom"

@@ -66,16 +66,19 @@ export const parsedContentfulData = [
       },
     ],
     thumbnail: {
-      contentType: 'image/png',
-      details: {
-        image: {
-          height: 230,
-          width: 345,
+      file: {
+        contentType: 'image/png',
+        details: {
+          image: {
+            height: 230,
+            width: 345,
+          },
+          size: 22495,
         },
-        size: 22495,
+        fileName: 'medium-m.png',
+        url: '/medium-m.png',
       },
-      fileName: 'medium-m.png',
-      url: '/medium-m.png',
+      title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
     },
     title: 'This is the title field for Project 1',
   },
@@ -146,16 +149,19 @@ export const parsedContentfulData = [
       },
     ],
     thumbnail: {
-      contentType: 'image/png',
-      details: {
-        image: {
-          height: 230,
-          width: 345,
+      file: {
+        contentType: 'image/png',
+        details: {
+          image: {
+            height: 230,
+            width: 345,
+          },
+          size: 22495,
         },
-        size: 22495,
+        fileName: 'medium-m.png',
+        url: '/medium-m.png',
       },
-      fileName: 'medium-m.png',
-      url: '/medium-m.png',
+      title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
     },
     title: 'This is the title field for Project 2',
   },

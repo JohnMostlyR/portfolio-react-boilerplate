@@ -14,13 +14,19 @@ function transformImagesArray(images) {
   const srcSet = {};
 
   images.forEach((_image) => {
-    const { file: { fileName, url } } = _image;
+    const { file: { details: { image: { height, width } }, fileName, url } } = _image;
     const [relativeSizeIndication] = fileName
-      .replace(/\.(png|jpeg)/i, '')
+      .replace(/\.(png|jpe?g)/i, '')
       .trim()
       .split('-')
       .slice(-1);
-    srcSet[relativeSizeIndication] = url;
+    srcSet[relativeSizeIndication] = {
+      dimensions: {
+        height,
+        width,
+      },
+      url,
+    };
   });
 
   return srcSet;
@@ -31,29 +37,72 @@ function getImageDescription(images) {
   return title;
 }
 
-function Image({ images = [] }) {
-  const { s, m, l, xl } = transformImagesArray(images);
-  const altText = getImageDescription(images);
+function composeSourceElements(sources) {
+  return sources.map((source) => {
+    const { media: { breakpoint, size }, srcSet } = source;
 
-  if (s && m && l && xl) {
-    return (
-      <ImageWrapper>
-        <StyledPicture>
-          <source media="(max-width: 424px)" srcSet={s} />
-          <source media="(max-width: 767px)" srcSet={m} />
-          <source media="(max-width: 949px)" srcSet={l} />
-          <source media="(min-width: 950px)" srcSet={xl} />
-          <img src={xl} alt={altText} />
-        </StyledPicture>
-      </ImageWrapper>
-    );
-  }
-
-  return <div />;
+    return (<source key={size} media={`(${breakpoint}: ${size}px)`} srcSet={srcSet} />);
+  });
 }
 
+function Image({ images = [] }) {
+  if (images.length === 0) {
+    return <div />;
+  }
+
+  const { s, m, l, xl } = transformImagesArray(images);
+  const altText = getImageDescription(images);
+  const breakpoints = [
+    {
+      media: { breakpoint: 'max-width', size: 424 },
+      srcSet: s.url,
+    },
+    {
+      media: { breakpoint: 'max-width', size: 767 },
+      srcSet: m.url,
+    },
+    {
+      media: { breakpoint: 'max-width', size: 949 },
+      srcSet: l.url,
+    },
+    {
+      media: { breakpoint: 'min-width', size: 950 },
+      srcSet: xl.url,
+    },
+  ];
+  const imageDimensions = [s.dimensions, m.dimensions, l.dimensions, xl.dimensions];
+
+  return (
+    <ImageWrapper
+      breakpoints={breakpoints}
+      imageDimensions={imageDimensions}
+      defaultImage={s.dimensions}
+    >
+      <StyledPicture>
+        {
+          composeSourceElements(breakpoints)
+        }
+        <img src={xl.url} alt={altText} />
+      </StyledPicture>
+    </ImageWrapper>
+  );
+}
 Image.propTypes = {
-  images: PropTypes.array.isRequired,
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      file: PropTypes.shape({
+        details: PropTypes.shape({
+          image: PropTypes.shape({
+            height: PropTypes.number.isRequired,
+            width: PropTypes.number.isRequired,
+          }).isRequired,
+        }).isRequired,
+        fileName: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired,
+      }).isRequired,
+      title: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 export default Image;

@@ -8,7 +8,7 @@ import {
 import { theme } from '../../styles/theme';
 import { SVGBackgroundImage } from '../../styles/tools';
 
-const { color, textShadowColor } = theme.inlineLink;
+const { inlineLink: { color, textShadowColor } } = theme.projectDetails;
 const H2_LINE_HEIGHT = 1.2;
 const EXTERNAL_LINK_ICON =
   SVGBackgroundImage(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" aria-hidden="true">
@@ -86,12 +86,8 @@ const Article = styled.article`
     margin: 0 !important;
 
     li {
-      line-height: ${BASE_LINE_HEIGHT};
+      line-height: ${BASE_LINE_HEIGHT * 1.2};
       margin-top: 0 !important;
-
-      @media(min-width: 950px) {
-        line-height: ${BASE_LINE_HEIGHT * 1.1};
-      }
     }
   }
 `;

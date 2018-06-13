@@ -9,16 +9,14 @@ import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
 
 // Individual exports for testing
 
-export function parseContent(data) {
-  if (String(data.sys.type).toLowerCase() !== 'array') {
+export function parseContent({ sys: { type } = {}, includes: { Asset = [] } = {}, items } = {}) {
+  if (String(type).toLowerCase() !== 'array') {
     return [];
   }
 
   let projects = [];
 
   try {
-    const { includes: { Asset = [] }, items } = data;
-
     const ASSETS = Asset
       .reduce((acc, curr) => {
         const obj = {};
@@ -45,9 +43,9 @@ export function parseContent(data) {
     projects = ITEMS_SORTED
       .reduce((acc, curr) => {
         if (curr.thumbnail) {
-          curr.thumbnail = ASSETS[curr.thumbnail.sys.id].file;
+          curr.thumbnail = ASSETS[curr.thumbnail.sys.id];
         } else {
-          curr.thumbnail = { url: '#' };
+          curr.thumbnail = {};
         }
 
         return acc.concat(curr);

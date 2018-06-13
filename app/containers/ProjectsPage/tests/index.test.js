@@ -18,6 +18,21 @@ const project = Object.freeze({
     { file: { fileName: 'test-l.png', url: '/test-l.png' }, title: 'Test image' },
     { file: { fileName: 'test-xl.png', url: '/test-xl.png' }, title: 'Test image' },
   ],
+  thumbnail: {
+    file: {
+      contentType: 'image/png',
+      details: {
+        image: {
+          height: 230,
+          width: 345,
+        },
+        size: 22495,
+      },
+      fileName: 'test-m.png',
+      url: '/test-m.png',
+    },
+    title: 'Test image',
+  },
   title: 'Title for test case',
 });
 

@@ -17,7 +17,7 @@ exports[`<Article /> should render and match the snapshot 1`] = `
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-  text-shadow: 3px 0 #fff,2px 0 #fff,1px 0 #fff,-1px 0 #fff,-2px 0 #fff,-3px 0 #fff;
+  text-shadow: 3px 0 #aedd2c,2px 0 #aedd2c,1px 0 #aedd2c,-1px 0 #aedd2c,-2px 0 #aedd2c,-3px 0 #aedd2c;
   touch-action: manipulation;
   -webkit-transition: color 0.1s ease-out;
   transition: color 0.1s ease-out;
@@ -60,7 +60,7 @@ exports[`<Article /> should render and match the snapshot 1`] = `
 }
 
 .c0 ul li {
-  line-height: 1.5;
+  line-height: 1.7999999999999998;
   margin-top: 0 !important;
 }
 
@@ -77,12 +77,6 @@ exports[`<Article /> should render and match the snapshot 1`] = `
 
 @media (min-width:950px) {
   .c0 > p {
-    line-height: 1.6500000000000001;
-  }
-}
-
-@media (min-width:950px) {
-  .c0 ul li {
     line-height: 1.6500000000000001;
   }
 }

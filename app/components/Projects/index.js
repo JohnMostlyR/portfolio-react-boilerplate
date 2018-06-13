@@ -11,12 +11,12 @@ function Projects({ projects }) {
     <React.Fragment>
       <ProjectsList>
         {
-          projects.map(({ title, description, thumbnail: { url } }, idx) => (
+          projects.map(({ title, description, thumbnail }, idx) => (
             <ProjectsListItem key={title}>
               <Project
                 detailsBodyText={description}
                 isOdd={!(idx % 2)}
-                thumbnailUrl={url}
+                thumbnail={thumbnail}
                 title={title}
               />
             </ProjectsListItem>

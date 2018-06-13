@@ -2,6 +2,7 @@
 
 exports[`<Label /> should render and match the snapshot 1`] = `
 .c0 {
+  display: inline-block;
   margin-left: 0.5rem;
 }
 

@@ -23,7 +23,6 @@ exports[`<Navigation /> should render and match the snapshot 1`] = `
   </Navigation__ButtonBlock>
   <List__List
     bigScreenBreakpoint={1000}
-    hidden={true}
     innerRef={[Function]}
     onKeyDown={[Function]}
   >

@@ -97,7 +97,7 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
         const [, subpath] = regexp.exec(pathname);
         const project = projects.find((_project) => {
           const { title } = _project;
-          return (subpath === title.toLowerCase().replace(/\s/g, '-'));
+          return (subpath === title.toLowerCase().replace(/\W+/g, '-'));
         });
 
         if (project) {

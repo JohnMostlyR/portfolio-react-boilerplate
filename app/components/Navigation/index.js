@@ -181,7 +181,6 @@ class Navigation extends React.PureComponent {
         </ButtonBlock>
         <List
           bigScreenBreakpoint={bigScreenBreakpoint}
-          hidden={!isExpanded}
           innerRef={(el) => { this.list = el; }}
           isExpanded={isExpanded}
           onKeyDown={this.handleKeyDownOnList}
