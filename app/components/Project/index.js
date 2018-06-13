@@ -35,7 +35,7 @@ class Project extends React.PureComponent {
               {
                 (message) => (
                   <Link
-                    to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}
+                    to={`/projects/${title.toLowerCase().replace(/\W+/g, '-')}`}
                     odd={`${isOdd}`}
                   >{message}</Link>
                 )
