@@ -12,32 +12,40 @@ import H3 from '../H3';
 import P from '../P';
 import Link from '../Link';
 
-function Project({ detailsBodyText, isOdd, thumbnail, title }) {
-  return (
-    <Article>
-      <MediaAsset imageSource={thumbnail} isOdd={isOdd} />
-      <ProjectBody>
-        <div>
-          <ProjectHeader>
-            <H3>{title}</H3>
-          </ProjectHeader>
-        </div>
-        <P>{detailsBodyText}</P>
-        <P textAlign="right">
-          <FormattedMessage {...messages.detailsLink}>
-            {
-              (message) => (
-                <Link
-                  to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}
-                  odd={`${isOdd}`}
-                >{message}</Link>
-              )
-            }
-          </FormattedMessage>
-        </P>
-      </ProjectBody>
-    </Article>
-  );
+class Project extends React.PureComponent {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
+  render() {
+    const { detailsBodyText, isOdd, thumbnail, title } = this.props;
+
+    return (
+      <Article>
+        <MediaAsset imageSource={thumbnail} isOdd={isOdd} />
+        <ProjectBody>
+          <div>
+            <ProjectHeader>
+              <H3>{title}</H3>
+            </ProjectHeader>
+          </div>
+          <P>{detailsBodyText}</P>
+          <P textAlign="right">
+            <FormattedMessage {...messages.detailsLink}>
+              {
+                (message) => (
+                  <Link
+                    to={`/projects/${title.toLowerCase().replace(/\s+/g, '-')}`}
+                    odd={`${isOdd}`}
+                  >{message}</Link>
+                )
+              }
+            </FormattedMessage>
+          </P>
+        </ProjectBody>
+      </Article>
+    );
+  }
 }
 
 Project.propTypes = {
