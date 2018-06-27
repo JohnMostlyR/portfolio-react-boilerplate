@@ -8,7 +8,8 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   title: {
     id: 'portfolio.containers.ContactPage.title',
-    defaultMessage: 'Johan Meester : Portfolio : Front-End Developer : {pageTitle}',
+    defaultMessage:
+      'Johan Meester : Portfolio : Front-End Developer : {pageTitle}',
   },
   pageTitle: {
     id: 'portfolio.containers.ContactPage.pageTitle',
@@ -16,7 +17,8 @@ export default defineMessages({
   },
   metaDescription: {
     id: 'portfolio.containers.ContactPage.meta.description',
-    defaultMessage: 'For contacting me, please fill in this form. I will respond as soon as' +
+    defaultMessage:
+      'For contacting me, please fill in this form. I will respond as soon as' +
       ' possible',
   },
   requirementOne: {

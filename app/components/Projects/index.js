@@ -10,19 +10,17 @@ function Projects({ projects, search }) {
   return (
     <React.Fragment>
       <ProjectsList>
-        {
-          projects.map(({ title, description, thumbnail }, idx) => (
-            <ProjectsListItem key={title}>
-              <Project
-                detailsBodyText={description}
-                isOdd={!(idx % 2)}
-                search={search}
-                thumbnail={thumbnail}
-                title={title}
-              />
-            </ProjectsListItem>
-          ))
-        }
+        {projects.map(({ title, description, thumbnail }, idx) => (
+          <ProjectsListItem key={title}>
+            <Project
+              detailsBodyText={description}
+              isOdd={!(idx % 2)}
+              search={search}
+              thumbnail={thumbnail}
+              title={title}
+            />
+          </ProjectsListItem>
+        ))}
       </ProjectsList>
     </React.Fragment>
   );

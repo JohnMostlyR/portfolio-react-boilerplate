@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
 import 'jest-styled-components';
 
 import BrandLink from '../BrandLink';
@@ -8,7 +7,7 @@ import BrandLink from '../BrandLink';
 describe('<BrandLink />', () => {
   it('should render and match the snapshot', () => {
     const renderedComponent = shallow(<BrandLink />);
-    expect(toJson(renderedComponent)).toMatchSnapshot();
+    expect(renderedComponent).toMatchSnapshot();
   });
 
   it('should adopt the "href" prop', () => {
@@ -20,10 +19,10 @@ describe('<BrandLink />', () => {
   it('should adopt the "showNameBreakpoint" prop', () => {
     const showNameBreakpoint = '100px';
     const renderedComponent = shallow(
-      <BrandLink href="/" showNameBreakpoint={showNameBreakpoint} />
+      <BrandLink href="/" showNameBreakpoint={showNameBreakpoint} />,
     );
 
-    expect(toJson(renderedComponent)).toMatchSnapshot();
+    expect(renderedComponent).toMatchSnapshot();
   });
 
   it('should adopt the "title" prop', () => {

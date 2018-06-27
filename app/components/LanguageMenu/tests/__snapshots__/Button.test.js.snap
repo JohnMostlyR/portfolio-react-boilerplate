@@ -4,11 +4,11 @@ exports[`<Button /> should adopt the "label" property 1`] = `
 <Button__StyledButton
   aria-expanded={false}
   aria-haspopup="true"
-  innerRef={[Function]}
-  onClick={[Function]}
+  innerRef={[MockFunction]}
+  onClick={[MockFunction]}
   onKeyDown={[Function]}
 >
-  <SVGIcon__SVGIcon
+  <SVGIcon
     viewBox="0 0 15.304 15.304"
   >
     <g>
@@ -19,7 +19,7 @@ exports[`<Button /> should adopt the "label" property 1`] = `
         d="M15.152 5.841H6.41a.152.152 0 0 0-.152.152v8.743c0 .084.068.151.152.151h8.742a.15.15 0 0 0 .152-.151V5.993a.152.152 0 0 0-.152-.152zm-3.18 7.319l-.431-1.436H9.94l-.399 1.436h-1.31L9.94 7.57h1.658l1.733 5.59h-1.359zM3.935 9.846H2.72v2.02l1.006.996h2.26v-1.215H3.935z"
       />
     </g>
-  </SVGIcon__SVGIcon>
+  </SVGIcon>
   <Button__Label>
     Test
   </Button__Label>
@@ -30,11 +30,11 @@ exports[`<Button /> should render and match the snapshot 1`] = `
 <Button__StyledButton
   aria-expanded={false}
   aria-haspopup="true"
-  innerRef={[Function]}
-  onClick={[Function]}
+  innerRef={[MockFunction]}
+  onClick={[MockFunction]}
   onKeyDown={[Function]}
 >
-  <SVGIcon__SVGIcon
+  <SVGIcon
     viewBox="0 0 15.304 15.304"
   >
     <g>
@@ -45,7 +45,7 @@ exports[`<Button /> should render and match the snapshot 1`] = `
         d="M15.152 5.841H6.41a.152.152 0 0 0-.152.152v8.743c0 .084.068.151.152.151h8.742a.15.15 0 0 0 .152-.151V5.993a.152.152 0 0 0-.152-.152zm-3.18 7.319l-.431-1.436H9.94l-.399 1.436h-1.31L9.94 7.57h1.658l1.733 5.59h-1.359zM3.935 9.846H2.72v2.02l1.006.996h2.26v-1.215H3.935z"
       />
     </g>
-  </SVGIcon__SVGIcon>
+  </SVGIcon>
   <Button__Label>
     Label
   </Button__Label>

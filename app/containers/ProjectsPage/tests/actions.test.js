@@ -4,11 +4,7 @@ import {
   LOAD_CONTENT_SUCCESS,
 } from '../constants';
 
-import {
-  loadContent,
-  contentLoadingError,
-  contentLoaded,
-} from '../actions';
+import { loadContent, contentLoadingError, contentLoaded } from '../actions';
 
 describe('ProjectsPage Actions', () => {
   describe('loadContent', () => {

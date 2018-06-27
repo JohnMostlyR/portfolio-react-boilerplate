@@ -4,9 +4,7 @@
  *
  */
 
-import {
-  CHANGE_LANGUAGE,
-} from './constants';
+import { CHANGE_LANGUAGE } from './constants';
 
 export function changeLanguage(languageLocale) {
   return {

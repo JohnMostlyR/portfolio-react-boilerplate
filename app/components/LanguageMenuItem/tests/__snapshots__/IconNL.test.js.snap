@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<IconNL /> should adopt the "isSelected" property 1`] = `
-<SVGIcon__SVGIcon
+<SVGIcon
   isSelected={true}
   viewBox="0 0 9 6"
 >
@@ -33,11 +33,11 @@ exports[`<IconNL /> should adopt the "isSelected" property 1`] = `
       width="9"
     />
   </g>
-</SVGIcon__SVGIcon>
+</SVGIcon>
 `;
 
 exports[`<IconNL /> should render and match the snapshot 1`] = `
-<SVGIcon__SVGIcon
+<SVGIcon
   viewBox="0 0 9 6"
 >
   <filter
@@ -68,5 +68,5 @@ exports[`<IconNL /> should render and match the snapshot 1`] = `
       width="9"
     />
   </g>
-</SVGIcon__SVGIcon>
+</SVGIcon>
 `;

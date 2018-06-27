@@ -20,9 +20,11 @@ describe('selectProjectsPageDomain', () => {
 describe('makeSelectProjectsPageProjects', () => {
   const projectsSelector = makeSelectProjectsPageProjects();
   it('should select the current projects', () => {
-    const projects = [{
-      title: 'Test',
-    }];
+    const projects = [
+      {
+        title: 'Test',
+      },
+    ];
     const mockedState = fromJS({
       projectsPage: {
         projects,

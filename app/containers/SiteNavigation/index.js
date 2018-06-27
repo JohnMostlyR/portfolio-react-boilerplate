@@ -20,7 +20,8 @@ class SiteNavigation extends React.PureComponent {
   constructor(props) {
     super(props);
 
-    const IS_BIG_SCREEN = (this.props.siteWidth >= this.props.bigScreenBreakpoint);
+    const IS_BIG_SCREEN =
+      this.props.siteWidth >= this.props.bigScreenBreakpoint;
 
     this.state = {
       isBigScreen: IS_BIG_SCREEN,
@@ -35,7 +36,9 @@ class SiteNavigation extends React.PureComponent {
 
   componentDidMount() {
     const myTopPosition = getElementTop(this.siteNavigation) || 0;
-    const myOffsetHeight = (this.siteNavigation) ? this.siteNavigation.offsetHeight : 0;
+    const myOffsetHeight = this.siteNavigation
+      ? this.siteNavigation.offsetHeight
+      : 0;
     this.props.setTopPosition(myTopPosition);
     this.props.setOffsetHeight(myOffsetHeight);
     window.addEventListener('click', this.handleOutsideClickEvent);
@@ -43,8 +46,9 @@ class SiteNavigation extends React.PureComponent {
 
   componentDidUpdate(prevProps) {
     if (this.props.siteWidth !== prevProps.siteWidth) {
-      const IS_BIG_SCREEN = (this.props.siteWidth >= this.props.bigScreenBreakpoint);
-      this.setState({ // eslint-disable-line react/no-did-update-set-state
+      const IS_BIG_SCREEN =
+        this.props.siteWidth >= this.props.bigScreenBreakpoint;
+      this.setState({ // eslint-disable-line
         isBigScreen: IS_BIG_SCREEN,
         isExpanded: IS_BIG_SCREEN,
       });
@@ -68,13 +72,19 @@ class SiteNavigation extends React.PureComponent {
   }
 
   toggleMenu() {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       isExpanded: !prevState.isExpanded,
     }));
   }
 
   render() {
-    const { bigScreenBreakpoint, isAtScreenTop, siteWidth, locale, location } = this.props;
+    const {
+      bigScreenBreakpoint,
+      isAtScreenTop,
+      siteWidth,
+      locale,
+      location,
+    } = this.props;
     const { isBigScreen, isExpanded } = this.state;
 
     return (
@@ -85,7 +95,9 @@ class SiteNavigation extends React.PureComponent {
         isExpanded={isExpanded}
         locale={locale}
         location={location}
-        navigationRef={(el) => { this.siteNavigation = el; }}
+        navigationRef={el => {
+          this.siteNavigation = el;
+        }}
         siteWidth={siteWidth}
         toggleMenu={this.toggleMenu}
       />
@@ -109,8 +121,10 @@ SiteNavigation.defaultProps = {
 
 export function mapDispatchToProps(dispatch) {
   return {
-    setTopPosition: (topPosition) => (dispatch(setSiteNavigationTopPosition(topPosition))),
-    setOffsetHeight: (offsetHeight) => (dispatch(setSiteNavigationOffsetHeight(offsetHeight))),
+    setTopPosition: topPosition =>
+      dispatch(setSiteNavigationTopPosition(topPosition)),
+    setOffsetHeight: offsetHeight =>
+      dispatch(setSiteNavigationOffsetHeight(offsetHeight)),
   };
 }
 
@@ -121,4 +135,7 @@ const mapStateToProps = createStructuredSelector({
   siteWidth: makeSelectSiteWidth(),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(SiteNavigation);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(SiteNavigation);

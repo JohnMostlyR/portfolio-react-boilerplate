@@ -27,7 +27,7 @@ describe('<Input />', () => {
         name={props.name}
         label={props.label}
         changeHandler={props.changeHandler}
-      />
+      />,
     );
 
     expect(toJson(wrapper)).toMatchSnapshot();
@@ -40,7 +40,7 @@ describe('<Input />', () => {
         name={props.name}
         label={props.label}
         changeHandler={props.changeHandler}
-      />
+      />,
     );
 
     const label = wrapper.find(Label);

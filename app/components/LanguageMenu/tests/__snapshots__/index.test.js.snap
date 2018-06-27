@@ -5,7 +5,7 @@ exports[`<LanguageMenu /> should have one, default, language selected 1`] = `
   locale="en"
 >
   <LanguageMenu
-    changeLanguageHandler={[Function]}
+    changeLanguageHandler={[MockFunction]}
     currentLocale="en"
     locales={
       Array [
@@ -25,15 +25,15 @@ exports[`<LanguageMenu /> should have one, default, language selected 1`] = `
         },
       }
     }
-    toggleMenuHandler={[Function]}
+    toggleMenuHandler={[MockFunction]}
   >
-    <Wrapper__Wrapper
+    <Wrapper
       aria-labelledby="LanguageSelector-title"
       role="region"
     >
       <div
         aria-labelledby="LanguageSelector-title"
-        className="Wrapper__Wrapper-fEDTQp bcdgNM"
+        className="Wrapper-ThVjl hWKByU"
         role="region"
       >
         <FormattedMessage
@@ -59,29 +59,29 @@ exports[`<LanguageMenu /> should have one, default, language selected 1`] = `
             isExpanded={false}
             label="Language"
             tabindex="0"
-            toggleMenuHandler={[Function]}
+            toggleMenuHandler={[MockFunction]}
           >
             <Button__StyledButton
               aria-expanded={false}
               aria-haspopup="true"
               innerRef={[Function]}
-              onClick={[Function]}
+              onClick={[MockFunction]}
               onKeyDown={[Function]}
             >
               <button
                 aria-expanded={false}
                 aria-haspopup="true"
                 className="Button__StyledButton-jJDkJK iFzxea"
-                onClick={[Function]}
+                onClick={[MockFunction]}
                 onKeyDown={[Function]}
                 type="button"
               >
-                <SVGIcon__SVGIcon
+                <SVGIcon
                   viewBox="0 0 15.304 15.304"
                 >
                   <svg
                     aria-hidden="true"
-                    className="SVGIcon__SVGIcon-dvbyrX kfpRMj"
+                    className="SVGIcon-ixpDyI gIDnTS"
                     focusable="false"
                     viewBox="0 0 15.304 15.304"
                     xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ exports[`<LanguageMenu /> should have one, default, language selected 1`] = `
                       />
                     </g>
                   </svg>
-                </SVGIcon__SVGIcon>
+                </SVGIcon>
                 <Button__Label>
                   <p
                     className="Button__Label-eTZejp goVkPO"
@@ -107,14 +107,14 @@ exports[`<LanguageMenu /> should have one, default, language selected 1`] = `
             </Button__StyledButton>
           </Button>
         </FormattedMessage>
-        <Menu__Menu
+        <Menu
           hidden={true}
           innerRef={[Function]}
           isExpanded={false}
           onKeyDown={[Function]}
         >
           <div
-            className="Menu__Menu-bAlrPT cuAyrl"
+            className="Menu-iTwxfD fsJKcK"
             hidden={true}
             onKeyDown={[Function]}
             role="menu"
@@ -122,7 +122,7 @@ exports[`<LanguageMenu /> should have one, default, language selected 1`] = `
             <LanguageMenuItem
               isSelected={true}
               key="en"
-              onClickHandler={[Function]}
+              onClickHandler={[MockFunction]}
               value="en"
             >
               <LanguageMenuItem__Button
@@ -150,13 +150,13 @@ exports[`<LanguageMenu /> should have one, default, language selected 1`] = `
                   <IconEN
                     isSelected={true}
                   >
-                    <SVGIcon__SVGIcon
+                    <SVGIcon
                       isSelected={true}
                       viewBox="0 0 60 30"
                     >
                       <svg
                         aria-hidden="true"
-                        className="SVGIcon__SVGIcon-dvbyrX kfpRMj"
+                        className="SVGIcon-ixpDyI gIDnTS"
                         focusable="false"
                         viewBox="0 0 60 30"
                         xmlns="http://www.w3.org/2000/svg"
@@ -207,24 +207,24 @@ exports[`<LanguageMenu /> should have one, default, language selected 1`] = `
                           />
                         </g>
                       </svg>
-                    </SVGIcon__SVGIcon>
+                    </SVGIcon>
                   </IconEN>
-                  <Label__Label
+                  <Label
                     isSelected={true}
                   >
                     <span
-                      className="Label__Label-bOFUbQ jzfEha"
+                      className="Label-bxMjsr loWJCg"
                     >
                       English
                     </span>
-                  </Label__Label>
+                  </Label>
                 </button>
               </LanguageMenuItem__Button>
             </LanguageMenuItem>
             <LanguageMenuItem
               isSelected={false}
               key="nl"
-              onClickHandler={[Function]}
+              onClickHandler={[MockFunction]}
               value="nl"
             >
               <LanguageMenuItem__Button
@@ -252,13 +252,13 @@ exports[`<LanguageMenu /> should have one, default, language selected 1`] = `
                   <IconNL
                     isSelected={false}
                   >
-                    <SVGIcon__SVGIcon
+                    <SVGIcon
                       isSelected={false}
                       viewBox="0 0 9 6"
                     >
                       <svg
                         aria-hidden="true"
-                        className="SVGIcon__SVGIcon-dvbyrX kfpRMj"
+                        className="SVGIcon-ixpDyI gIDnTS"
                         focusable="false"
                         viewBox="0 0 9 6"
                         xmlns="http://www.w3.org/2000/svg"
@@ -292,24 +292,24 @@ exports[`<LanguageMenu /> should have one, default, language selected 1`] = `
                           />
                         </g>
                       </svg>
-                    </SVGIcon__SVGIcon>
+                    </SVGIcon>
                   </IconNL>
-                  <Label__Label
+                  <Label
                     isSelected={false}
                   >
                     <span
-                      className="Label__Label-bOFUbQ hDphhn"
+                      className="Label-bxMjsr jUdOdw"
                     >
                       Nederlands
                     </span>
-                  </Label__Label>
+                  </Label>
                 </button>
               </LanguageMenuItem__Button>
             </LanguageMenuItem>
           </div>
-        </Menu__Menu>
+        </Menu>
       </div>
-    </Wrapper__Wrapper>
+    </Wrapper>
   </LanguageMenu>
 </IntlProvider>
 `;
@@ -319,7 +319,7 @@ exports[`<LanguageMenu /> should render with only required arguments 1`] = `
   locale="en"
 >
   <LanguageMenu
-    changeLanguageHandler={[Function]}
+    changeLanguageHandler={[MockFunction]}
     locales={Array []}
     messages={
       Object {
@@ -333,7 +333,7 @@ exports[`<LanguageMenu /> should render with only required arguments 1`] = `
         },
       }
     }
-    toggleMenuHandler={[Function]}
+    toggleMenuHandler={[MockFunction]}
   />
 </IntlProvider>
 `;

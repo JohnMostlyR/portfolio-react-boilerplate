@@ -11,9 +11,7 @@ describe('<ImageWrapper />', () => {
       height: 10,
       width: 100,
     };
-    const wrapper = shallow(
-      <ImageWrapper imageDimensions={fixture} />
-    );
+    const wrapper = shallow(<ImageWrapper imageDimensions={fixture} />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 

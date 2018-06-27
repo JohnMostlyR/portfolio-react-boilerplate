@@ -4,46 +4,41 @@
 
 import { createSelector } from 'reselect';
 
-const selectGlobal = (state) => state.get('global');
+import { initialState } from './reducer';
 
-const selectGlobalSiteNavigation = (state) => state.getIn(['global', 'siteNavigation']);
+const selectGlobal = state => state.get('global', initialState);
 
-const selectRoute = (state) => state.get('route');
+const selectGlobalSiteNavigation = state =>
+  state.getIn(['global', 'siteNavigation']);
 
-const makeSelectLoading = () => createSelector(
-  selectGlobal,
-  (globalState) => globalState.get('loading')
-);
+const selectRoute = state => state.get('route');
 
-const makeSelectError = () => createSelector(
-  selectGlobal,
-  (globalState) => globalState.get('error')
-);
+const makeSelectLoading = () =>
+  createSelector(selectGlobal, globalState => globalState.get('loading'));
 
-const makeSelectSiteWidth = () => createSelector(
-  selectGlobal,
-  (globalState) => globalState.get('siteWidth')
-);
+const makeSelectError = () =>
+  createSelector(selectGlobal, globalState => globalState.get('error'));
 
-const makeSelectSiteNavigationTopPosition = () => createSelector(
-  selectGlobalSiteNavigation,
-  (siteNavigationState) => siteNavigationState.get('topPosition')
-);
+const makeSelectSiteWidth = () =>
+  createSelector(selectGlobal, globalState => globalState.get('siteWidth'));
 
-const makeSelectSiteNavigationOffsetHeight = () => createSelector(
-  selectGlobalSiteNavigation,
-  (siteNavigationState) => siteNavigationState.get('offsetHeight')
-);
+const makeSelectSiteNavigationTopPosition = () =>
+  createSelector(selectGlobalSiteNavigation, siteNavigationState =>
+    siteNavigationState.get('topPosition'),
+  );
 
-const makeSelectSiteNavigationIsAtScreenTop = () => createSelector(
-  selectGlobalSiteNavigation,
-  (siteNavigationState) => siteNavigationState.get('isAtScreenTop')
-);
+const makeSelectSiteNavigationOffsetHeight = () =>
+  createSelector(selectGlobalSiteNavigation, siteNavigationState =>
+    siteNavigationState.get('offsetHeight'),
+  );
 
-const makeSelectLocation = () => createSelector(
-  selectRoute,
-  (routeState) => routeState.get('location').toJS()
-);
+const makeSelectSiteNavigationIsAtScreenTop = () =>
+  createSelector(selectGlobalSiteNavigation, siteNavigationState =>
+    siteNavigationState.get('isAtScreenTop'),
+  );
+
+const makeSelectLocation = () =>
+  createSelector(selectRoute, routeState => routeState.get('location').toJS());
 
 export {
   selectGlobal,

@@ -1,8 +1,8 @@
 /**
-*
-* BigHeadGear
-*
-*/
+ *
+ * BigHeadGear
+ *
+ */
 
 import React from 'react';
 import Helmet from 'react-helmet';
@@ -12,7 +12,8 @@ import messages from './messages';
 
 import { config } from '../../config';
 
-const { /* eslint-disable no-unused-vars */
+/* eslint-disable no-unused-vars */
+const {
   verification: {
     bing: { siteAuth },
     facebook: { facebookAppID, facebookPagesID },
@@ -20,12 +21,7 @@ const { /* eslint-disable no-unused-vars */
   },
   defaultLocale,
   locales,
-  seo: {
-    baseURL,
-    description,
-    openGraph,
-    twitter,
-  },
+  seo: { baseURL, description, openGraph, twitter },
 } = config;
 
 function constructLinks() {
@@ -42,15 +38,13 @@ function constructLinks() {
   ];
 
   const alternateLanguages = locales
-    .map((locale) => locale.toLowerCase())
-    .filter((locale) => locale !== defaultLocale.toLowerCase())
-    .map((locale) => (
-      {
-        rel: 'alternate',
-        href: `${baseURL}${locale}/`,
-        hreflang: locale,
-      }
-    ));
+    .map(locale => locale.toLowerCase())
+    .filter(locale => locale !== defaultLocale.toLowerCase())
+    .map(locale => ({
+      rel: 'alternate',
+      href: `${baseURL}${locale}/`,
+      hreflang: locale,
+    }));
 
   return basic.concat(alternateLanguages);
 }
@@ -62,20 +56,21 @@ function constructLinks() {
 function constructOpenGraphMetaTags({ formatMessage }) {
   if (openGraph) {
     return Object.entries(openGraph)
-      .filter(([, { content }]) => (
-        content
-      ))
+      .filter(([, { content }]) => content)
       .reduce((previous, [property, { content, isMessageId }]) => {
         if (property.toLowerCase() === 'image' && typeof content === 'object') {
-          const IMG = Object
-              .entries(content)
-              .map(([imageTag, imageTagValue]) => {
-                if (imageTag.toLowerCase() === 'url') {
-                  return { property: 'og:image', content: imageTagValue };
-                }
+          const IMG = Object.entries(content).map(
+            ([imageTag, imageTagValue]) => {
+              if (imageTag.toLowerCase() === 'url') {
+                return { property: 'og:image', content: imageTagValue };
+              }
 
-                return { property: `og:image:${imageTag}`, content: imageTagValue };
-              });
+              return {
+                property: `og:image:${imageTag}`,
+                content: imageTagValue,
+              };
+            },
+          );
 
           return previous.concat(...IMG);
         }
@@ -100,9 +95,7 @@ function constructOpenGraphMetaTags({ formatMessage }) {
 function constructTwitterMetaTags({ formatMessage }) {
   if (twitter) {
     return Object.entries(twitter)
-      .filter(([, { content }]) => (
-        content
-      ))
+      .filter(([, { content }]) => content)
       .map(([property, { content, isMessageId }]) => {
         if (isMessageId) {
           return {
@@ -130,42 +123,38 @@ function constructBasicMetaTags({ formatMessage }) {
     ];
   }
 
-  return [{
-    name: 'description',
-    content,
-  }];
+  return [
+    {
+      name: 'description',
+      content,
+    },
+  ];
 }
 
 function constructMetaTags({ formatMessage }) {
   const facebookTags = [];
 
   if (facebookAppID) {
-    facebookTags.push(
-      {
-        property: 'fb:app_id',
-        content: facebookAppID,
-      },
-    );
+    facebookTags.push({
+      property: 'fb:app_id',
+      content: facebookAppID,
+    });
   }
 
   return [].concat(
     constructBasicMetaTags({ formatMessage }),
     constructOpenGraphMetaTags({ formatMessage }),
     constructTwitterMetaTags({ formatMessage }),
-    facebookTags
+    facebookTags,
   );
 }
 
-function BigHeadGear(
-  {
-    intl: { locale, formatMessage },
-  }) {
+function BigHeadGear({ intl: { locale, formatMessage } }) {
   return (
     <Helmet
       htmlAttributes={{ lang: locale }}
       title={formatMessage({ ...messages.title })}
       meta={constructMetaTags({ formatMessage })}
-      onChangeClientState={(newState, addedTags, removedTags) => console.log(newState, addedTags, removedTags)}
     >
       <script>{`
         !function(e, t, a, n, g) {e[n] = e[n] || [], e[n].push({'gtm.start': (new Date).getTime(), event: 'gtm.js'});var m = t.getElementsByTagName(a)[0], r = t.createElement(a);r.async = !0, r.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-PLVWW9F', m.parentNode.insertBefore(r, m);}(window, document, 'script', 'dataLayer');

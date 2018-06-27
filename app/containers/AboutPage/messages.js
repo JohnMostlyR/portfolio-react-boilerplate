@@ -8,7 +8,8 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   title: {
     id: 'portfolio.page.AboutPage.title',
-    defaultMessage: 'Johan Meester : Portfolio : Front-End Developer : {pageTitle}',
+    defaultMessage:
+      'Johan Meester : Portfolio : Front-End Developer : {pageTitle}',
   },
   pageTitle: {
     id: 'portfolio.page.AboutPage.pageTitle',

@@ -2,7 +2,7 @@
 
 exports[`<ContactForm /> should render and match the snapshot 1`] = `
 <ContactForm
-  changeHandler={[Function]}
+  changeHandler={[MockFunction]}
   intl={
     Object {
       "defaultFormats": Object {},
@@ -72,8 +72,8 @@ exports[`<ContactForm /> should render and match the snapshot 1`] = `
         "portfolio.page.AboutPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
         "portfolio.page.NotFoundPage.contact": "contact",
         "portfolio.page.NotFoundPage.content": "I am sorry, but the page you requested does not exist or has been removed.
-    
-    Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
+
+Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
         "portfolio.page.NotFoundPage.home": "start",
         "portfolio.page.NotFoundPage.pageDescription": "The page you requested does not exist or has been removed. Sorry about that",
         "portfolio.page.NotFoundPage.pageTitle": "NOT FOUND",
@@ -100,6 +100,6 @@ exports[`<ContactForm /> should render and match the snapshot 1`] = `
       "textComponent": "span",
     }
   }
-  onSubmitHandler={[Function]}
+  onSubmitHandler={[MockFunction]}
 />
 `;

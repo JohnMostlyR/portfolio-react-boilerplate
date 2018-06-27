@@ -16,7 +16,8 @@ export default defineMessages({
   },
   metaDescription: {
     id: 'portfolio.meta.description',
-    defaultMessage: 'This is the portfolio website of Johan Meester. An Amsterdam based Front-End' +
+    defaultMessage:
+      'This is the portfolio website of Johan Meester. An Amsterdam based Front-End' +
       ' Developer specialized in React JS',
   },
   metaSiteName: {
@@ -25,7 +26,8 @@ export default defineMessages({
   },
   noScript: {
     id: 'portfolio.noscript',
-    defaultMessage: 'If you are seeing this message, that means that JavaScript has been disabled' +
+    defaultMessage:
+      'If you are seeing this message, that means that JavaScript has been disabled' +
       ' on your browser. Please enable JavaScript to make this app work.',
   },
 });

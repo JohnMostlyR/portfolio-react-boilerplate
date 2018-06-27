@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Project should adopt the "isOdd" property 1`] = `
-<Article__Article>
+<Article>
   <MediaAsset
     imageSource={
       Object {
@@ -22,20 +22,20 @@ exports[`Project should adopt the "isOdd" property 1`] = `
     }
     isOdd={false}
   />
-  <ProjectBody__ProjectBody>
+  <ProjectBody>
     <div>
-      <ProjectHeader__ProjectHeader>
-        <H3__H3>
+      <ProjectHeader>
+        <H3>
           This is the title field for Project 1
-        </H3__H3>
-      </ProjectHeader__ProjectHeader>
+        </H3>
+      </ProjectHeader>
     </div>
-    <P__P
+    <P
       textAlign="left"
     >
       This is the description field Project 1
-    </P__P>
-    <P__P
+    </P>
+    <P
       textAlign="right"
     >
       <FormattedMessage
@@ -43,13 +43,13 @@ exports[`Project should adopt the "isOdd" property 1`] = `
         id="portfolio.components.Project.detailsLink"
         values={Object {}}
       />
-    </P__P>
-  </ProjectBody__ProjectBody>
-</Article__Article>
+    </P>
+  </ProjectBody>
+</Article>
 `;
 
 exports[`Project should render and match the snapshot 1`] = `
-<Article__Article>
+<Article>
   <MediaAsset
     imageSource={
       Object {
@@ -70,20 +70,20 @@ exports[`Project should render and match the snapshot 1`] = `
     }
     isOdd={true}
   />
-  <ProjectBody__ProjectBody>
+  <ProjectBody>
     <div>
-      <ProjectHeader__ProjectHeader>
-        <H3__H3>
+      <ProjectHeader>
+        <H3>
           This is the title field for Project 1
-        </H3__H3>
-      </ProjectHeader__ProjectHeader>
+        </H3>
+      </ProjectHeader>
     </div>
-    <P__P
+    <P
       textAlign="left"
     >
       This is the description field Project 1
-    </P__P>
-    <P__P
+    </P>
+    <P
       textAlign="right"
     >
       <FormattedMessage
@@ -91,7 +91,7 @@ exports[`Project should render and match the snapshot 1`] = `
         id="portfolio.components.Project.detailsLink"
         values={Object {}}
       />
-    </P__P>
-  </ProjectBody__ProjectBody>
-</Article__Article>
+    </P>
+  </ProjectBody>
+</Article>
 `;

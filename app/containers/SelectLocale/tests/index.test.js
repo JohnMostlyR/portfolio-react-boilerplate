@@ -23,7 +23,7 @@ describe('<SelectLocale />', () => {
         <LanguageProvider messages={translationMessages}>
           <SelectLocale />
         </LanguageProvider>
-      </Provider>
+      </Provider>,
     );
     expect(renderedComponent.contains(<SelectLocale />)).toBe(true);
   });

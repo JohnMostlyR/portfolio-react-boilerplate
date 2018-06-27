@@ -28,21 +28,14 @@ class ProjectDetails extends React.PureComponent {
   render() {
     const {
       backlink,
-      project: {
-        article,
-        description,
-        images,
-        title,
-      },
+      project: { article, description, images, title },
     } = this.props;
     const htmlFromMD = marked(article);
-    const parsedArticle = htmlFromMD
-      .replace(
-        /(<a\s+href="(https?:\/\/.+)"[^>]*>)/ig,
-        (match, p1, p2) => (
-          `<a href="${p2}" rel="noopener noreferrer" target="_blank">`
-        )
-      );
+    const parsedArticle = htmlFromMD.replace(
+      /(<a\s+href="(https?:\/\/.+)"[^>]*>)/gi,
+      (match, p1, p2) =>
+        `<a href="${p2}" rel="noopener noreferrer" target="_blank">`,
+    );
     const reactElementsFromHTML = Parser(parsedArticle);
 
     return (
@@ -51,7 +44,7 @@ class ProjectDetails extends React.PureComponent {
           <BackLink linkTo={backlink} />
           <SpeechBubble
             arrowHeight="9vh"
-            arrowPosition={'bottom-right'}
+            arrowPosition="bottom-right"
             backgroundColor={backgroundColor}
             color={color}
             makeAppear={false}
@@ -60,12 +53,10 @@ class ProjectDetails extends React.PureComponent {
           >
             <h1>{title}</h1>
             <Description>{description}</Description>
-            {
-              (images && Array.isArray(images)) && <Image images={images} />
-            }
+            {images && Array.isArray(images) && <Image images={images} />}
             <Article>{reactElementsFromHTML}</Article>
           </SpeechBubble>
-          <BackLink linkTo={backlink} position={'bottom'} />
+          <BackLink linkTo={backlink} position="bottom" />
         </ContentWrapper>
       </Wrapper>
     );

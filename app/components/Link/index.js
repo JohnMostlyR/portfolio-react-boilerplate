@@ -1,8 +1,8 @@
 /**
-*
-* Link
-*
-*/
+ *
+ * Link
+ *
+ */
 
 import styled from 'styled-components';
 import { Link as RouterLink } from 'react-router-dom';
@@ -17,9 +17,10 @@ const { odd: oddColor, even: evenColor } = color;
 const Link = styled(RouterLink)`
   display: inline-block;
   position: relative;
-  border: 2px solid ${({ odd }) => odd === 'true' ? oddBorderColor : evenBorderColor};
+  border: 2px solid
+    ${({ odd }) => (odd === 'true' ? oddBorderColor : evenBorderColor)};
   border-radius: 0.25rem;
-  color: ${({ odd }) => odd === 'true' ? oddColor : evenColor};
+  color: ${({ odd }) => (odd === 'true' ? oddColor : evenColor)};
   cursor: pointer;
   letter-spacing: 1px;
   padding: 0.5rem;

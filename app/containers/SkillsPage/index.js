@@ -34,7 +34,8 @@ export function delayTimer(isLoading, callback) {
   }, 200);
 }
 
-export class SkillsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export class SkillsPage extends React.PureComponent {
+  // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
 
@@ -79,8 +80,14 @@ export class SkillsPage extends React.PureComponent { // eslint-disable-line rea
     let showContent = <React.Fragment />;
 
     if (Array.isArray(skillsText) && skillsText.length) {
-      showContent = <PageContent title={<FormattedMessage {...messages.pageTitle} />} content={skillsText} />;
-    } else if (isLoading) { // FROM STATE!
+      showContent = (
+        <PageContent
+          title={<FormattedMessage {...messages.pageTitle} />}
+          content={skillsText}
+        />
+      );
+    } else if (isLoading) {
+      // FROM STATE!
       showContent = <ContentLoadingIndicator show showError={false} />;
     } else if (!!error !== false) {
       showContent = <ContentLoadingIndicator show showError />;
@@ -88,7 +95,7 @@ export class SkillsPage extends React.PureComponent { // eslint-disable-line rea
 
     return (
       <React.Fragment>
-        <HeadGear messages={messages} path={'/skills'} />
+        <HeadGear messages={messages} path="/skills" />
         {showContent}
       </React.Fragment>
     );
@@ -117,7 +124,10 @@ export function mapDispatchToProps(dispatch) {
   };
 }
 
-const withConnect = connect(mapStateToProps, mapDispatchToProps);
+const withConnect = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+);
 
 const withReducer = injectReducer({ key: 'skillsPage', reducer });
 const withSaga = injectSaga({ key: 'skillsPage', saga });

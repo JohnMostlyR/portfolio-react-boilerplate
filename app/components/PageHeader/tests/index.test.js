@@ -16,7 +16,11 @@ describe('<PageHeader />', () => {
   });
 
   it('should adopt any children', () => {
-    const wrapper = shallow(<PageHeader><div>children</div></PageHeader>);
+    const wrapper = shallow(
+      <PageHeader>
+        <div>children</div>
+      </PageHeader>,
+    );
     expect(wrapper).toMatchSnapshot();
   });
 });

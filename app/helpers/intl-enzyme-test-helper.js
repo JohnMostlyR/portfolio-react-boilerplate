@@ -24,20 +24,18 @@ function nodeWithIntlProp(node) {
 }
 
 export function shallowWithIntl(node, { context } = {}) {
-  return shallow(
-    nodeWithIntlProp(node),
-    {
-      context: Object.assign({}, context, { intl }),
-    },
-  );
+  return shallow(nodeWithIntlProp(node), {
+    context: Object.assign({}, context, { intl }),
+  });
 }
 
 export function mountWithIntl(node, { context, childContextTypes } = {}) {
-  return mount(
-    nodeWithIntlProp(node),
-    {
-      context: Object.assign({}, context, { intl }),
-      childContextTypes: Object.assign({}, { intl: intlShape }, childContextTypes),
-    },
-  );
+  return mount(nodeWithIntlProp(node), {
+    context: Object.assign({}, context, { intl }),
+    childContextTypes: Object.assign(
+      {},
+      { intl: intlShape },
+      childContextTypes,
+    ),
+  });
 }

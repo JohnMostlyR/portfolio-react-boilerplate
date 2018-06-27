@@ -7,6 +7,7 @@ import { BASE_FONT_REGULAR, BASE_LINE_HEIGHT } from '../../styles/typography';
 
 const { backgroundColor, color } = theme.site.navigation.link;
 
+/* eslint-disable indent */
 const StyledButton = styled.button.attrs({
   type: 'button',
 })`
@@ -24,13 +25,12 @@ const StyledButton = styled.button.attrs({
   white-space: nowrap;
   word-break: keep-all;
   line-height: ${BASE_LINE_HEIGHT};
-  ${BASE_FONT_REGULAR}
-
-  &:hover {
+  ${BASE_FONT_REGULAR} &:hover {
     box-shadow: 0 0 1px gray;
   }
 
-  @media (min-width: ${({ bigScreenBreakpoint }) => `${bigScreenBreakpoint}px`}) {
+  @media (min-width: ${({ bigScreenBreakpoint }) =>
+      `${bigScreenBreakpoint}px`}) {
     display: none;
   }
 `;
@@ -48,31 +48,27 @@ const SVGIcon = styled.svg.attrs({
 
 const SVGPath = styled.path`
   opacity: 1;
-  transition:
-    transform 0.3s ease-in-out,
-    opacity 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
 `;
 
 const SVGPathOne = styled(SVGPath).attrs({
   d: 'M5 13h141v14H5z',
-  transform: ({ isExpanded }) => (
-    isExpanded
-    ? 'translate(16 -16) rotate(45 0 0)' : 'rotate(0) translate(0)'
-  ),
+  transform: ({ isExpanded }) =>
+    isExpanded ? 'translate(16 -16) rotate(45 0 0)' : 'rotate(0) translate(0)',
 })``; /* stylelint-disable-line block-no-empty */
 
 const SVGPathTwo = styled(SVGPath).attrs({
   d: 'M5 43h90v14H5z',
 })`
-  opacity: ${({ isExpanded }) => isExpanded ? 0 : 1};
+  opacity: ${({ isExpanded }) => (isExpanded ? 0 : 1)};
 `;
 
 const SVGPathThree = styled(SVGPath).attrs({
   d: 'M5 73h141v14H5z',
-  transform: ({ isExpanded }) => (
+  transform: ({ isExpanded }) =>
     isExpanded
-      ? 'translate(16, 16) rotate(-45 0 100)' : 'rotate(0) translate(0)'
-  ),
+      ? 'translate(16, 16) rotate(-45 0 100)'
+      : 'rotate(0) translate(0)',
 })``; /* stylelint-disable-line block-no-empty */
 
 const Label = styled.span`
@@ -80,14 +76,20 @@ const Label = styled.span`
   vertical-align: middle;
 `;
 
-function Button({ bigScreenBreakpoint, isExpanded, label, toggleMenu, buttonRef }) {
+function Button({
+  bigScreenBreakpoint,
+  isExpanded,
+  label,
+  toggleMenu,
+  buttonRef,
+}) {
   function handleKeyDown(evt) {
     const { keyCode } = evt;
 
     switch (keyCode) {
-      case 13:  // Enter
-      case 32:  // Space
-      case 40:  // Arrow Down
+      case 13: // Enter
+      case 32: // Space
+      case 40: // Arrow Down
         evt.stopPropagation();
         evt.preventDefault();
         toggleMenu();
@@ -116,7 +118,7 @@ function Button({ bigScreenBreakpoint, isExpanded, label, toggleMenu, buttonRef 
         <SVGPathTwo isExpanded={isExpanded} />
         <SVGPathThree isExpanded={isExpanded} />
       </SVGIcon>
-      <Label>{ label }</Label>
+      <Label>{label}</Label>
     </StyledButton>
   );
 }

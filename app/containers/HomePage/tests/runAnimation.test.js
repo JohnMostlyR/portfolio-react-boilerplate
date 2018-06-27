@@ -52,7 +52,7 @@ describe('runAnimation', () => {
     expect(animate).lastCalledWith(
       timeline[1].animationAttributes,
       timeline[1].animationDuration,
-      timeline[1].animationTimingFunction
+      timeline[1].animationTimingFunction,
     );
   });
 });

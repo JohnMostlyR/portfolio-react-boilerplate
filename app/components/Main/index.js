@@ -4,11 +4,7 @@ import PropTypes from 'prop-types';
 import StyledMain from './StyledMain';
 
 function Main({ children, mainRef }) {
-  return (
-    <StyledMain innerRef={mainRef}>
-      {children}
-    </StyledMain>
-  );
+  return <StyledMain innerRef={mainRef}>{children}</StyledMain>;
 }
 
 Main.propTypes = {

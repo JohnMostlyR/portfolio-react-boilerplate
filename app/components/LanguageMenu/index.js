@@ -1,8 +1,8 @@
 /**
-*
-* LanguageMenu
-*
-*/
+ *
+ * LanguageMenu
+ *
+ */
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -31,9 +31,7 @@ class LanguageMenu extends React.PureComponent {
   componentDidUpdate() {
     if (this.props.isExpanded) {
       const firstAvailableOption = this.getMenuItems(this.menu)
-        .filter((child) => (
-          !child.disabled
-        ))
+        .filter(child => !child.disabled)
         .slice(0, 1);
 
       if (Array.isArray(firstAvailableOption) && firstAvailableOption.length) {
@@ -52,7 +50,7 @@ class LanguageMenu extends React.PureComponent {
   }
 
   getFocusedMenuItem(menuItems) {
-    return menuItems.find((menuItem) => {
+    return menuItems.find(menuItem => {
       const { dataset = { hasfocus: false } } = menuItem;
       return dataset.hasfocus === 'true';
     });
@@ -80,7 +78,10 @@ class LanguageMenu extends React.PureComponent {
     // Arrow Up key
     if (keyCode === 38) {
       if (FOCUSED_MENU_ITEM.previousElementSibling) {
-        this.moveFocus(FOCUSED_MENU_ITEM, FOCUSED_MENU_ITEM.previousElementSibling);
+        this.moveFocus(
+          FOCUSED_MENU_ITEM,
+          FOCUSED_MENU_ITEM.previousElementSibling,
+        );
       } else {
         this.moveFocus(FOCUSED_MENU_ITEM, menu.lastChild);
       }
@@ -119,7 +120,7 @@ class LanguageMenu extends React.PureComponent {
       return null;
     }
 
-    const content = locales.map((locale) => (
+    const content = locales.map(locale => (
       <LanguageMenuItem
         key={locale}
         value={locale}
@@ -129,38 +130,33 @@ class LanguageMenu extends React.PureComponent {
     ));
 
     return (
-      <Wrapper
-        role="region"
-        aria-labelledby="LanguageSelector-title"
-      >
+      <Wrapper role="region" aria-labelledby="LanguageSelector-title">
         <FormattedMessage {...messages.title}>
-          {
-            (message) => (
-              <span
-                id="LanguageSelector-title"
-                hidden
-                aria-hidden="false"
-              >{message}</span>
-            )
-          }
+          {message => (
+            <span id="LanguageSelector-title" hidden aria-hidden="false">
+              {message}
+            </span>
+          )}
         </FormattedMessage>
         <FormattedMessage {...messages.buttonLabel}>
-          {
-            (message) => (
-              <Button
-                label={message}
-                isExpanded={isExpanded}
-                toggleMenuHandler={toggleMenuHandler}
-                tabindex="0"
-                buttonRef={(el) => { this.button = el; }}
-              />
-            )
-          }
+          {message => (
+            <Button
+              label={message}
+              isExpanded={isExpanded}
+              toggleMenuHandler={toggleMenuHandler}
+              tabindex="0"
+              buttonRef={el => {
+                this.button = el;
+              }}
+            />
+          )}
         </FormattedMessage>
         <Menu
           hidden={!isExpanded}
           isExpanded={isExpanded}
-          innerRef={(el) => { this.menu = el; }}
+          innerRef={el => {
+            this.menu = el;
+          }}
           onKeyDown={this.handleKeyDownOnMenu}
         >
           {content}

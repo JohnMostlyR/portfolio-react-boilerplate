@@ -8,7 +8,7 @@ const Label = styled.span`
   white-space: nowrap;
 
   &::after {
-    content: ${({ isSelected }) => isSelected ? '"\u2713"' : '""'};
+    content: ${({ isSelected }) => (isSelected ? '"\u2713"' : '""')};
     margin-left: 0.5em;
   }
 `;

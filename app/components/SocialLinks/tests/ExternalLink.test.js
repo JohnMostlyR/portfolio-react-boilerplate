@@ -20,7 +20,12 @@ describe('<ExternalLink>', () => {
   it('should adopt the "description" property', () => {
     const VALUE = 'Follow me';
     const wrapper = shallow(<ExternalLink description={VALUE} />);
-    expect(wrapper.find(Description).childAt(0).text()).toBe(VALUE);
+    expect(
+      wrapper
+        .find(Description)
+        .childAt(0)
+        .text(),
+    ).toBe(VALUE);
   });
 
   it('should adopt the "color" property', () => {
@@ -30,7 +35,7 @@ describe('<ExternalLink>', () => {
   });
 
   describe('with a given "faIcon" property', () => {
-    VALID_ICONS.forEach((icon) => {
+    VALID_ICONS.forEach(icon => {
       it(`should render with a "${icon}" icon`, () => {
         const wrapper = shallow(<ExternalLink faIcon={icon} />);
         expect(toJson(wrapper)).toMatchSnapshot();

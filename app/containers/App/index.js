@@ -33,7 +33,8 @@ import ContactPage from '../../containers/ContactPage/Loadable';
 import NotFoundPage from '../../containers/NotFoundPage/Loadable';
 import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
 
-class App extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+class App extends React.PureComponent {
+  // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
 
@@ -50,12 +51,18 @@ class App extends React.PureComponent { // eslint-disable-line react/prefer-stat
   componentDidMount() {
     this.props.setSiteWidth(window.document.body.clientWidth);
     window.addEventListener('resize', this.handleResizeEvent);
-    this.wrapper.ownerDocument.addEventListener('scroll', this.handleScrollEvent);
+    this.wrapper.ownerDocument.addEventListener(
+      'scroll',
+      this.handleScrollEvent,
+    );
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleResizeEvent);
-    this.wrapper.ownerDocument.removeEventListener('scroll', this.handleScrollEvent);
+    this.wrapper.ownerDocument.removeEventListener(
+      'scroll',
+      this.handleScrollEvent,
+    );
   }
 
   /* eslint-disable no-underscore-dangle */
@@ -88,8 +95,9 @@ class App extends React.PureComponent { // eslint-disable-line react/prefer-stat
 
     if (target && 'scrollingElement' in target) {
       const debounce = requestAnimationFrame(() => {
-        const isAtScreenTop = (target.scrollingElement.scrollTop >=
-          this.props.siteNavigationTopPosition);
+        const isAtScreenTop =
+          target.scrollingElement.scrollTop >=
+          this.props.siteNavigationTopPosition;
 
         this.setState({
           _isScrolling: 0,
@@ -110,23 +118,36 @@ class App extends React.PureComponent { // eslint-disable-line react/prefer-stat
     return (
       <React.Fragment>
         <BigHeadGear />
-        <Wrapper innerRef={(el) => { this.wrapper = el; }} lang={locale}>
+        <Wrapper
+          innerRef={el => {
+            this.wrapper = el;
+          }}
+          lang={locale}
+        >
           <FormattedMessage {...messages.skipLink}>
-            {
-              (message) => <a href="#main">{message}</a>
-            }
+            {message => <a href="#main">{message}</a>}
           </FormattedMessage>
-          <h1 hidden aria-hidden="false"><FormattedMessage {...messages.title} /></h1>
+          <h1 hidden aria-hidden="false">
+            <FormattedMessage {...messages.title} />
+          </h1>
           <SiteHeader />
           <SiteNavigation />
-          <Main mainRef={(el) => { this.main = el; }}>
+          <Main
+            mainRef={el => {
+              this.main = el;
+            }}
+          >
             <Switch location={location}>
               <Route path="/introduction" component={HomePage} />
               <Route path="/about" component={AboutPage} />
               <Route path="/skills" component={SkillsPage} />
               <Route path="/projects" component={ProjectsPage} />
               <Route path="/contact" component={ContactPage} />
-              <Route exact path="/" render={() => <Redirect to="/introduction" />} />
+              <Route
+                exact
+                path="/"
+                render={() => <Redirect to="/introduction" />}
+              />
               <Route component={NotFoundPage} />
             </Switch>
           </Main>
@@ -146,12 +167,9 @@ App.propTypes = {
 
 export function mapDispatchToProps(dispatch) {
   return {
-    setSiteNavigationIsAtScreenTop: (isAtScreenTop) => (
-      dispatch(setSiteNavigationIsAtScreenTop(isAtScreenTop))
-    ),
-    setSiteWidth: (width) => (
-      dispatch(setSiteWidth(width))
-    ),
+    setSiteNavigationIsAtScreenTop: isAtScreenTop =>
+      dispatch(setSiteNavigationIsAtScreenTop(isAtScreenTop)),
+    setSiteWidth: width => dispatch(setSiteWidth(width)),
   };
 }
 
@@ -163,4 +181,7 @@ const mapStateToProps = createStructuredSelector({
   siteNavigationOffsetHeight: makeSelectSiteNavigationOffsetHeight(),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(App);

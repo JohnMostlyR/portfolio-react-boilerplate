@@ -54,9 +54,9 @@ function Button({ label, isExpanded, toggleMenuHandler, buttonRef }) {
     const { keyCode } = evt;
 
     switch (keyCode) {
-      case 13:  // Enter
-      case 32:  // Space
-      case 40:  // Arrow Down
+      case 13: // Enter
+      case 32: // Space
+      case 40: // Arrow Down
         evt.preventDefault();
         toggleMenuHandler();
         break;

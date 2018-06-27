@@ -1,4 +1,3 @@
-
 import {
   setSiteNavigationIsAtScreenTop,
   setSiteNavigationOffsetHeight,

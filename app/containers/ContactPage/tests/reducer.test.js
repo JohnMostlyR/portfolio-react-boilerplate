@@ -1,10 +1,6 @@
-
 import { fromJS } from 'immutable';
 import contactPageReducer from '../reducer';
-import {
-  sendForm,
-  sendFormSuccess,
-} from '../actions';
+import { sendForm, sendFormSuccess } from '../actions';
 
 describe('contactPageReducer', () => {
   let state;
@@ -40,7 +36,9 @@ describe('contactPageReducer', () => {
       .set('field', fixture)
       .set('sendStatus', 'sending');
 
-    expect(contactPageReducer(state, sendForm(fixture))).toEqual(expectedResult);
+    expect(contactPageReducer(state, sendForm(fixture))).toEqual(
+      expectedResult,
+    );
   });
 
   it('should handle the sendFormSuccess action correctly', () => {
@@ -54,6 +52,8 @@ describe('contactPageReducer', () => {
       .set('sendStatus', 'success')
       .set('field', fixture);
 
-    expect(contactPageReducer(state, sendFormSuccess())).toEqual(fromJS(expectedResult));
+    expect(contactPageReducer(state, sendFormSuccess())).toEqual(
+      fromJS(expectedResult),
+    );
   });
 });

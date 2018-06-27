@@ -28,7 +28,8 @@ import injectReducer from '../../utils/injectReducer';
 import PageContent from '../../components/PageContent';
 import HeadGear from '../../components/HeadGear';
 
-export class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export class ContactPage extends React.Component {
+  // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
 
@@ -83,7 +84,7 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
 
     return (
       <React.Fragment>
-        <HeadGear messages={messages} path={'/contact'} />
+        <HeadGear messages={messages} path="/contact" />
         <PageContent
           title={<FormattedMessage {...messages.pageTitle} />}
           content={
@@ -116,12 +117,15 @@ const mapStateToProps = createStructuredSelector({
 
 export function mapDispatchToProps(dispatch) {
   return {
-    onSubmit: (field) => dispatch(sendForm(field)),
+    onSubmit: field => dispatch(sendForm(field)),
     dispatch,
   };
 }
 
-const withConnect = connect(mapStateToProps, mapDispatchToProps);
+const withConnect = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+);
 
 const withReducer = injectReducer({ key: 'contactPage', reducer });
 const withSaga = injectSaga({ key: 'contactPage', saga });

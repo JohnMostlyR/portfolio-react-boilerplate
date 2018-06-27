@@ -16,13 +16,9 @@ const InlineLink = styled(Link)`
   color: ${color};
   cursor: pointer;
   text-decoration: none;
-  text-shadow:
-    3px 0 ${textShadowColor},
-    2px 0 ${textShadowColor},
-    1px 0 ${textShadowColor},
-    -1px 0 ${textShadowColor},
-    -2px 0 ${textShadowColor},
-    -3px 0 ${textShadowColor};
+  text-shadow: 3px 0 ${textShadowColor}, 2px 0 ${textShadowColor},
+    1px 0 ${textShadowColor}, -1px 0 ${textShadowColor},
+    -2px 0 ${textShadowColor}, -3px 0 ${textShadowColor};
   touch-action: manipulation;
   transition: color 0.1s ease-out;
 

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Image /> should render and match the snapshot 1`] = `
-<ImageWrapper__ImageWrapper
+<ImageWrapper
   breakpoints={
     Array [
       Object {
@@ -87,7 +87,7 @@ exports[`<Image /> should render and match the snapshot 1`] = `
       src="/test-xl.png"
     />
   </Image__StyledPicture>
-</ImageWrapper__ImageWrapper>
+</ImageWrapper>
 `;
 
 exports[`<Image /> should render when no images are provided 1`] = `<div />`;

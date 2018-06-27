@@ -12,20 +12,20 @@ const fadeIn = keyframes`
 `;
 
 const Wrapper = styled.div`
-  opacity: ${({ animate }) => animate ? 0 : 1};
+  opacity: ${({ animate }) => (animate ? 0 : 1)};
   animation-delay: 0ms;
   animation-direction: normal;
   animation-duration: 1s;
   animation-fill-mode: both;
-  animation-name: ${({ animate }) => animate ? fadeIn : 'none'};
+  animation-name: ${({ animate }) => (animate ? fadeIn : 'none')};
   animation-timing-function: ease-in-out;
 
   @supports (display: grid) {
     display: grid;
     grid-area: mainContent;
     grid-template-areas:
-      "pageHeader"
-      "pageContent";
+      'pageHeader'
+      'pageContent';
   }
 `;
 

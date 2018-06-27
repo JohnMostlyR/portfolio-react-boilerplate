@@ -8,7 +8,8 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   title: {
     id: 'portfolio.page.ProjectsPage.title',
-    defaultMessage: 'Johan Meester : Portfolio : Front-End Developer : {pageTitle}',
+    defaultMessage:
+      'Johan Meester : Portfolio : Front-End Developer : {pageTitle}',
   },
   pageTitle: {
     id: 'portfolio.page.ProjectsPage.pageTitle',
@@ -16,7 +17,8 @@ export default defineMessages({
   },
   metaDescription: {
     id: 'portfolio.page.ProjectsPage.meta.description',
-    defaultMessage: 'This is an overview of my projects. Projects are sorted by date with the' +
+    defaultMessage:
+      'This is an overview of my projects. Projects are sorted by date with the' +
       ' most recent on top',
   },
 });

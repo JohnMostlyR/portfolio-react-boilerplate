@@ -11,7 +11,11 @@ marked.options({
   breaks: true,
 });
 
-const { api: { contentful: { endpoint, access_token } } } = config;
+const {
+  api: {
+    contentful: { endpoint, access_token }, // eslint-disable-line
+  },
+} = config;
 
 // Individual exports for testing
 
@@ -20,7 +24,7 @@ const { api: { contentful: { endpoint, access_token } } } = config;
  */
 export function* getContent() {
   const LOCALE = yield select(makeSelectLocale());
-  const localeForContentful = (LOCALE === 'en') ? 'en-US' : LOCALE;
+  const localeForContentful = LOCALE === 'en' ? 'en-US' : LOCALE;
   const queryParam = {
     access_token,
     content_type: 'about',
@@ -29,8 +33,11 @@ export function* getContent() {
   };
 
   const query = Object.keys(queryParam)
-    .reduce((accumulator, currentValue) => accumulator.concat(
-      `${currentValue}=${queryParam[currentValue]}`), [])
+    .reduce(
+      (accumulator, currentValue) =>
+        accumulator.concat(`${currentValue}=${queryParam[currentValue]}`),
+      [],
+    )
     .join('&');
 
   const requestURL = `${endpoint}${query}`;

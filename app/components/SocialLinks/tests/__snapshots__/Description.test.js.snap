@@ -1,47 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Description /> should render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Description__Description />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "className": "Description__Description-exBwFC giBOwA",
-    },
-    "ref": null,
-    "rendered": null,
-    "type": "span",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "className": "Description__Description-exBwFC giBOwA",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "span",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
+.c0 {
+  display: inherit;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
 }
+
+@media (min-width:1280px) {
+  .c0 {
+    display: inline-block;
+    height: auto;
+    margin: 0 0 0 0.5em;
+    overflow: visible;
+    position: relative;
+    width: auto;
+    -webkit-clip: initial;
+    clip: initial;
+    font-size: 1rem;
+  }
+}
+
+<span
+  className="c0"
+/>
 `;

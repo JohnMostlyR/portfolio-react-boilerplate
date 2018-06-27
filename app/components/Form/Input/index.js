@@ -36,7 +36,7 @@ class Input extends React.Component {
   }
 
   componentWillReceiveProps(update) {
-    this.setState({ value: update.value });
+    this.setState({ _value: update.value });
   }
 
   setFocus() {
@@ -86,11 +86,7 @@ class Input extends React.Component {
       placeholder,
     } = this.props;
 
-    const {
-      _error,
-      _hasFocus,
-      _value,
-    } = this.state;
+    const { _error, _hasFocus, _value } = this.state;
 
     const renderHelperText = () => {
       if (!helperText) return '';
@@ -98,41 +94,42 @@ class Input extends React.Component {
       let helperTextRange = '';
 
       if (minLength || maxLength) {
-        helperTextRange =
-          (<FormattedMessage
+        helperTextRange = (
+          <FormattedMessage
             {...messages.range}
             values={{
               minLength,
               maxLength,
               count: _value.length,
             }}
-          />);
+          />
+        );
       }
 
       if (_hasFocus || _error || !_value) {
-        return (<span>{helperText}&nbsp;{helperTextRange}</span>);
-      } else if (!_error) {
         return (
-          <FormattedMessage {...messages.valid} />
+          <span>
+            {helperText}&nbsp;{helperTextRange}
+          </span>
         );
+      } else if (!_error) {
+        return <FormattedMessage {...messages.valid} />;
       }
 
       return '';
     };
 
-    const hasFocusOrValue = (_hasFocus || !!_value);
+    const hasFocusOrValue = _hasFocus || !!_value;
 
     return (
       <InputGroup>
-        <Label
-          htmlFor="name"
-          onClick={this.setFocus}
-        >
-          <LabelContent
-            hasFocus={hasFocusOrValue}
-          >{label}<Placeholder
-            hasFocus={hasFocusOrValue}
-          ><i>{placeholder}</i></Placeholder></LabelContent>
+        <Label htmlFor="name" onClick={this.setFocus}>
+          <LabelContent hasFocus={hasFocusOrValue}>
+            {label}
+            <Placeholder hasFocus={hasFocusOrValue}>
+              <i>{placeholder}</i>
+            </Placeholder>
+          </LabelContent>
         </Label>
         <StyledInput
           type={inputType}
@@ -141,12 +138,13 @@ class Input extends React.Component {
           onFocus={this.handleFocusEvent}
           onBlur={this.handleBlurEvent}
           value={_value}
-          innerRef={(el) => { this.inputElement = el; }}
+          innerRef={el => {
+            this.inputElement = el;
+          }}
         />
         <SubText>
           <ErrorMessage
-            showError={!!(!_hasFocus &&
-              _error)}
+            showError={!!(!_hasFocus && _error)}
           >{`${_error} `}</ErrorMessage>
           <span>{renderHelperText()}</span>
         </SubText>

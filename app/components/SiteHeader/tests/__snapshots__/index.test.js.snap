@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SiteHeader /> should render and match the snapshot 1`] = `
-<Header__Header
+<Header
   backgroundColor="#465a65"
 >
-  <Wrapper__Wrapper
+  <Wrapper
     borderColor="#465a65"
   >
     <Brand
@@ -12,6 +12,6 @@ exports[`<SiteHeader /> should render and match the snapshot 1`] = `
       showNameBreakpoint="375px"
     />
     <HeaderMenu />
-  </Wrapper__Wrapper>
-</Header__Header>
+  </Wrapper>
+</Header>
 `;

@@ -18,7 +18,8 @@ describe('Project', () => {
       fileName: 'medium-m.png',
       url: '/medium-m.png',
     },
-    title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+    title:
+      'Presentation showing how this project looks on mobile, tablet and desktop screens',
   };
   const title = 'This is the title field for Project 1';
   const description = 'This is the description field Project 1';
@@ -30,7 +31,7 @@ describe('Project', () => {
         title={title}
         detailsBodyText={description}
         isOdd
-      />
+      />,
     );
     expect(toJson(wrapper)).toMatchSnapshot();
   });
@@ -42,7 +43,7 @@ describe('Project', () => {
         title={title}
         detailsBodyText={description}
         isOdd={false}
-      />
+      />,
     );
     expect(toJson(wrapper)).toMatchSnapshot();
   });

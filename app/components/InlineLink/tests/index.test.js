@@ -7,7 +7,7 @@ import InlineLink from '../index';
 
 describe('<InlineLink />', () => {
   it('Should render and match the snapshot', () => {
-    const renderedComponent = shallow(<InlineLink to={'/'} />);
+    const renderedComponent = shallow(<InlineLink to="/" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 });

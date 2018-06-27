@@ -26,12 +26,12 @@ describe('<HomePage />', () => {
   it('should render and match the snapshot', () => {
     mount(
       <Provider store={store}>
-        <IntlProvider locale={'en'}>
+        <IntlProvider locale="en">
           <ConnectedRouter history={history}>
             <HomePage />
           </ConnectedRouter>
         </IntlProvider>
-      </Provider>
+      </Provider>,
     );
     expect(componentDidMount).toHaveBeenCalledTimes(1);
   });

@@ -8,7 +8,9 @@ describe('<Media />', () => {
   const IMAGE_ALT = 'test';
 
   it('should render and match the snapshot', () => {
-    const wrapper = renderer.create(<Media imageAlt={IMAGE_ALT} imageSource={IMAGE_SOURCE} />);
+    const wrapper = renderer.create(
+      <Media imageAlt={IMAGE_ALT} imageSource={IMAGE_SOURCE} />,
+    );
     expect(wrapper.toJSON()).toMatchSnapshot();
   });
 
@@ -16,7 +18,7 @@ describe('<Media />', () => {
     const wrapper = renderer.create(
       <Media imageAlt={IMAGE_ALT} imageSource={IMAGE_SOURCE}>
         {'Child'}
-      </Media>
+      </Media>,
     );
     expect(wrapper.toJSON()).toMatchSnapshot();
   });

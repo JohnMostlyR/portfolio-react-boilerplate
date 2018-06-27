@@ -13,6 +13,7 @@ import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { Link } from 'react-router-dom';
+import Snap from 'snapsvg';
 
 import messages from './messages';
 import runAnimation from './runAnimation';
@@ -23,7 +24,9 @@ import MyPicture from './itsme-trevi-rome.jpg';
 import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
 import HeadGear from '../../components/HeadGear';
 
-class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+/* eslint-disable jsx-a11y/anchor-is-valid */
+class HomePage extends React.PureComponent {
+  // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
 
@@ -37,159 +40,160 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
   animateSvg() {
     if (!window) return;
 
-    import('snapsvg')
-      .then((Snap) => {
-        const SVG_EL = Snap(this.svgDiv);
-        const TIMING = window.mina;
-        const ANIMATION_DURATION = 200; // milliseconds
-        const ANIMATION_DELAY = 200; // milliseconds
+    const SVG_EL = Snap(this.svgDiv);
+    const TIMING = window.mina;
+    const ANIMATION_DURATION = 200; // milliseconds
+    const ANIMATION_DELAY = 200; // milliseconds
 
-        const INFOPAGE_BALLOON_ANIMATION_TIMELINE = [
-          {
-            elementId: 'g_big_bubble__p1',
-            animationAttributes: {
-              d: 'M 0 111.6 L 0 321.1 L 117.7 549.6 L 237.7 549.6 L 0 111.6 L 0 111.6 Z',
-            },
-            animationDuration: ANIMATION_DURATION / 2,
-            animationDelay: 1,
-            animationTimingFunction: TIMING.linear,
-            dFrom: 'M 0 111.6 L 0 321.1 L 0 321.1 L 0 108 L 0 111.6 L 0 111.6 Z',
-            dTo: '',
-          },
-          {
-            elementId: 'g_big_bubble__p2',
-            animationAttributes: {
-              d: 'M 191.8 635 L 237.7 549.5 L 117.7 549.5 L 78.6 635 L 191.8 635 Z',
-            },
-            animationDelay: ANIMATION_DELAY / 2,
-            animationDuration: ANIMATION_DURATION / 2,
-            animationTimingFunction: TIMING.linear,
-            dFrom: 'M 237.8 549.5 L 237.8 549.5 L 117.8 549.5 L 117.8 549.5',
-            dTo: '',
-          },
-          {
-            elementId: 'g_big_bubble__p3',
-            animationAttributes: {
-              d: 'M 8 503.2 L 78.6 635 L 191.9 635 L 118.5 503.2 L 8 503.2 Z',
-            },
-            animationDelay: ANIMATION_DELAY,
-            animationDuration: ANIMATION_DURATION,
-            animationTimingFunction: TIMING.linear,
-            dFrom: 'M 78.6 635 L 78.6 635 L 191.9 635 L 191.9 635',
-            dTo: '',
-          },
-          {
-            elementId: 'g_big_bubble__p4',
-            animationAttributes: {
-              d: 'M 8 503.2 L 278.2 0 L 383.2 0 L 118.5 503.2',
-            },
-            animationDelay: ANIMATION_DELAY,
-            animationDuration: ANIMATION_DURATION,
-            animationTimingFunction: TIMING.linear,
-            dFrom: 'M 8 503.2 L 8 503.2 L 118.5 503.2 L 118.5 503.2',
-            dTo: '',
-          },
-          {
-            elementId: 'g_big_bubble__p5',
-            animationAttributes: {
-              d: 'M 891 12.1 C 891 5.5 885.6 0 878.9 0 L 278.4 0 L 227 96.6 L 878.9 96.6 C 885.5 96.6 891 91.2 891 84.5 L 891 12.1 L 891 12.1 L 891 12.1 Z',
-            },
-            animationDelay: ANIMATION_DELAY,
-            animationDuration: ANIMATION_DURATION,
-            animationTimingFunction: TIMING.linear,
-            dFrom: 'M 278.4 0 L 278.4 0 L 226.4 96.7 L 226.4 96.7 L 278.4 0 Z',
-            dTo: '',
-          },
-          {
-            elementId: 'g_big_bubble__p6',
-            animationAttributes: {
-              d: 'M 891 12.1 C 891 5.5 885.6 0 878.9 0 L 278.4 0 L 61.2 404.6 L 878.8 404.6 C 885.4 404.6 890.9 399.2 890.9 392.5 L 890.9 12.1 L 891 12.1 L 891 12.1 Z',
-              opacity: 1,
-            },
-            animationDelay: ANIMATION_DELAY,
-            animationDuration: ANIMATION_DURATION,
-            animationTimingFunction: TIMING.linear,
-            dFrom: 'M 891 12.1 C 891 5.5 885.6 0 878.9 0 L 278.4 0 L 227 96.6 L 878.9 96.6 C 885.5 96.6 891 91.2 891 84.5 L 891 12.1 L 891 12.1 L 891 12.1 Z',
-            dTo: '',
-          },
-          {
-            elementId: 'g_name',
-            animationAttributes: {
-              opacity: 1,
-            },
-            animationDelay: ANIMATION_DELAY,
-            animationDuration: ANIMATION_DURATION,
-            animationTimingFunction: TIMING.linear,
-          },
-          {
-            elementId: 't_occupation',
-            animationAttributes: {
-              opacity: 1,
-            },
-            animationDelay: ANIMATION_DELAY,
-            animationDuration: 1,
-            animationTimingFunction: TIMING.linear,
-          },
-          {
-            elementId: 't_occupation',
-            animationAttributes: {
-              'font-size': '40px',
-            },
-            animationDelay: ANIMATION_DELAY,
-            animationDuration: ANIMATION_DURATION,
-            animationTimingFunction: TIMING.linear,
-          },
-          {
-            elementId: 't_occupation',
-            animationAttributes: {
-              'font-size': '29px',
-            },
-            animationDelay: ANIMATION_DELAY,
-            animationDuration: ANIMATION_DURATION,
-            animationTimingFunction: TIMING.bounce,
-          },
-          {
-            elementId: 'g_look',
-            animationAttributes: {
-              opacity: 1,
-            },
-            animationDelay: ANIMATION_DELAY,
-            animationDuration: ANIMATION_DURATION * 5,
-            animationTimingFunction: TIMING.linear,
-          },
-          {
-            elementId: 'g_contact',
-            animationAttributes: {
-              opacity: 1,
-            },
-            animationDelay: ANIMATION_DELAY,
-            animationDuration: ANIMATION_DURATION * 5,
-            animationTimingFunction: TIMING.linear,
-          },
-        ];
+    const INFOPAGE_BALLOON_ANIMATION_TIMELINE = [
+      {
+        elementId: 'g_big_bubble__p1',
+        animationAttributes: {
+          d:
+            'M 0 111.6 L 0 321.1 L 117.7 549.6 L 237.7 549.6 L 0 111.6 L 0 111.6 Z',
+        },
+        animationDuration: ANIMATION_DURATION / 2,
+        animationDelay: 1,
+        animationTimingFunction: TIMING.linear,
+        dFrom: 'M 0 111.6 L 0 321.1 L 0 321.1 L 0 108 L 0 111.6 L 0 111.6 Z',
+        dTo: '',
+      },
+      {
+        elementId: 'g_big_bubble__p2',
+        animationAttributes: {
+          d: 'M 191.8 635 L 237.7 549.5 L 117.7 549.5 L 78.6 635 L 191.8 635 Z',
+        },
+        animationDelay: ANIMATION_DELAY / 2,
+        animationDuration: ANIMATION_DURATION / 2,
+        animationTimingFunction: TIMING.linear,
+        dFrom: 'M 237.8 549.5 L 237.8 549.5 L 117.8 549.5 L 117.8 549.5',
+        dTo: '',
+      },
+      {
+        elementId: 'g_big_bubble__p3',
+        animationAttributes: {
+          d: 'M 8 503.2 L 78.6 635 L 191.9 635 L 118.5 503.2 L 8 503.2 Z',
+        },
+        animationDelay: ANIMATION_DELAY,
+        animationDuration: ANIMATION_DURATION,
+        animationTimingFunction: TIMING.linear,
+        dFrom: 'M 78.6 635 L 78.6 635 L 191.9 635 L 191.9 635',
+        dTo: '',
+      },
+      {
+        elementId: 'g_big_bubble__p4',
+        animationAttributes: {
+          d: 'M 8 503.2 L 278.2 0 L 383.2 0 L 118.5 503.2',
+        },
+        animationDelay: ANIMATION_DELAY,
+        animationDuration: ANIMATION_DURATION,
+        animationTimingFunction: TIMING.linear,
+        dFrom: 'M 8 503.2 L 8 503.2 L 118.5 503.2 L 118.5 503.2',
+        dTo: '',
+      },
+      {
+        elementId: 'g_big_bubble__p5',
+        animationAttributes: {
+          d:
+            'M 891 12.1 C 891 5.5 885.6 0 878.9 0 L 278.4 0 L 227 96.6 L 878.9 96.6 C 885.5 96.6 891 91.2 891 84.5 L 891 12.1 L 891 12.1 L 891 12.1 Z',
+        },
+        animationDelay: ANIMATION_DELAY,
+        animationDuration: ANIMATION_DURATION,
+        animationTimingFunction: TIMING.linear,
+        dFrom: 'M 278.4 0 L 278.4 0 L 226.4 96.7 L 226.4 96.7 L 278.4 0 Z',
+        dTo: '',
+      },
+      {
+        elementId: 'g_big_bubble__p6',
+        animationAttributes: {
+          d:
+            'M 891 12.1 C 891 5.5 885.6 0 878.9 0 L 278.4 0 L 61.2 404.6 L 878.8 404.6 C 885.4 404.6 890.9 399.2 890.9 392.5 L 890.9 12.1 L 891 12.1 L 891 12.1 Z',
+          opacity: 1,
+        },
+        animationDelay: ANIMATION_DELAY,
+        animationDuration: ANIMATION_DURATION,
+        animationTimingFunction: TIMING.linear,
+        dFrom:
+          'M 891 12.1 C 891 5.5 885.6 0 878.9 0 L 278.4 0 L 227 96.6 L 878.9 96.6 C 885.5 96.6 891 91.2 891 84.5 L 891 12.1 L 891 12.1 L 891 12.1 Z',
+        dTo: '',
+      },
+      {
+        elementId: 'g_name',
+        animationAttributes: {
+          opacity: 1,
+        },
+        animationDelay: ANIMATION_DELAY,
+        animationDuration: ANIMATION_DURATION,
+        animationTimingFunction: TIMING.linear,
+      },
+      {
+        elementId: 't_occupation',
+        animationAttributes: {
+          opacity: 1,
+        },
+        animationDelay: ANIMATION_DELAY,
+        animationDuration: 1,
+        animationTimingFunction: TIMING.linear,
+      },
+      {
+        elementId: 't_occupation',
+        animationAttributes: {
+          'font-size': '40px',
+        },
+        animationDelay: ANIMATION_DELAY,
+        animationDuration: ANIMATION_DURATION,
+        animationTimingFunction: TIMING.linear,
+      },
+      {
+        elementId: 't_occupation',
+        animationAttributes: {
+          'font-size': '29px',
+        },
+        animationDelay: ANIMATION_DELAY,
+        animationDuration: ANIMATION_DURATION,
+        animationTimingFunction: TIMING.bounce,
+      },
+      {
+        elementId: 'g_look',
+        animationAttributes: {
+          opacity: 1,
+        },
+        animationDelay: ANIMATION_DELAY,
+        animationDuration: ANIMATION_DURATION * 5,
+        animationTimingFunction: TIMING.linear,
+      },
+      {
+        elementId: 'g_contact',
+        animationAttributes: {
+          opacity: 1,
+        },
+        animationDelay: ANIMATION_DELAY,
+        animationDuration: ANIMATION_DURATION * 5,
+        animationTimingFunction: TIMING.linear,
+      },
+    ];
 
-        const START_FRAME = 0; // 0 is the first frame
+    const START_FRAME = 0; // 0 is the first frame
 
-        runAnimation({
-          snapSVGElement: SVG_EL,
-          timeline: INFOPAGE_BALLOON_ANIMATION_TIMELINE,
-          startFrame: START_FRAME,
-        });
-      });
+    runAnimation({
+      snapSVGElement: SVG_EL,
+      timeline: INFOPAGE_BALLOON_ANIMATION_TIMELINE,
+      startFrame: START_FRAME,
+    });
   }
 
   render() {
     return (
       <React.Fragment>
-        <HeadGear messages={messages} path={'/introduction'} />
+        <HeadGear messages={messages} path="/introduction" />
         <IntroHeader>
-          <h2 hidden aria-hidden="false"><FormattedMessage {...messages.pageTitle} /></h2>
+          <h2 hidden aria-hidden="false">
+            <FormattedMessage {...messages.pageTitle} />
+          </h2>
           <SpeechBubble
-            innerRef={
-              (d) => {
-                this.svgDiv = d;
-              }
-            }
+            innerRef={d => {
+              this.svgDiv = d;
+            }}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +201,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
               width="100%"
               preserveAspectRatio="xMinYMid"
             >
-              <Link to={'/contact'} style={{ cursor: 'pointer' }}>
+              <Link to="/contact" style={{ cursor: 'pointer' }}>
                 <g id="g_contact" style={{ opacity: 0 }}>
                   <g id="g_contact__arrow">
                     <path
@@ -219,7 +223,7 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                       fill="#556E78"
                     />
                     <FormattedMessage {...messages.callToAction}>
-                      {(message) => (
+                      {message => (
                         <text
                           transform="translate(544 593.37)"
                           fontFamily="Open Sans"
@@ -266,20 +270,18 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                     fill="#556E78"
                   />
                   <FormattedMessage {...messages.look}>
-                    {
-                      (message) => (
-                        <text
-                          transform="translate(559 488.55)"
-                          fontFamily="Open Sans"
-                          fontWeight="400"
-                          fontSize="23"
-                          fill="#fff"
-                          textAnchor="middle"
-                        >
-                          {message}
-                        </text>
-                      )
-                    }
+                    {message => (
+                      <text
+                        transform="translate(559 488.55)"
+                        fontFamily="Open Sans"
+                        fontWeight="400"
+                        fontSize="23"
+                        fill="#fff"
+                        textAnchor="middle"
+                      >
+                        {message}
+                      </text>
+                    )}
                   </FormattedMessage>
                 </g>
               </g>
@@ -318,56 +320,61 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
               </g>
               <g
                 id="g_welcome"
-                transform={this.props.locale === 'nl' ? 'translate(0 0)' : 'translate(30 0)'}
+                transform={
+                  this.props.locale === 'nl'
+                    ? 'translate(0 0)'
+                    : 'translate(30 0)'
+                }
               >
                 <FormattedMessage {...messages.greeting}>
-                  {
-                    (message) => (
-                      <text
-                        transform="translate(235.72 201.41)"
-                        fontFamily="Open Sans"
-                        fontWeight="400"
-                        fontSize="98"
-                        fill="#556e78"
-                      >
-                        {message}
-                      </text>
-                    )
-                  }
+                  {message => (
+                    <text
+                      transform="translate(235.72 201.41)"
+                      fontFamily="Open Sans"
+                      fontWeight="400"
+                      fontSize="98"
+                      fill="#556e78"
+                    >
+                      {message}
+                    </text>
+                  )}
                 </FormattedMessage>
                 <FormattedMessage {...messages.greeting}>
-                  {
-                    (message) => (
-                      <text
-                        transform="translate(231.23 195.44)"
-                        fontFamily="Open Sans"
-                        fontWeight="400"
-                        fontSize="98"
-                        fill="#95c11f"
-                      >
-                        {message}
-                      </text>
-                    )
-                  }
+                  {message => (
+                    <text
+                      transform="translate(231.23 195.44)"
+                      fontFamily="Open Sans"
+                      fontWeight="400"
+                      fontSize="98"
+                      fill="#95c11f"
+                    >
+                      {message}
+                    </text>
+                  )}
                 </FormattedMessage>
               </g>
               <g id="g_name" style={{ opacity: 0 }}>
-                <FormattedMessage {...messages.intro} values={{ name: 'Johan Meester' }}>
-                  {
-                    (message) => (
-                      <text
-                        id="g_name__text"
-                        transform={this.props.locale === 'nl' ? 'translate(870 270.6)' : 'translate(840 270.6)'}
-                        fontFamily="Open Sans"
-                        fontWeight="400"
-                        fontSize="70"
-                        fill="#fff"
-                        textAnchor="end"
-                      >
-                        {message}
-                      </text>
-                    )
-                  }
+                <FormattedMessage
+                  {...messages.intro}
+                  values={{ name: 'Johan Meester' }}
+                >
+                  {message => (
+                    <text
+                      id="g_name__text"
+                      transform={
+                        this.props.locale === 'nl'
+                          ? 'translate(870 270.6)'
+                          : 'translate(840 270.6)'
+                      }
+                      fontFamily="Open Sans"
+                      fontWeight="400"
+                      fontSize="70"
+                      fill="#fff"
+                      textAnchor="end"
+                    >
+                      {message}
+                    </text>
+                  )}
                 </FormattedMessage>
                 <defs>
                   <mask id="g_name__mask">
@@ -386,24 +393,26 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
                 />
               </g>
               <FormattedMessage {...messages.trade}>
-                {
-                  (message) => (
-                    <text
-                      id="t_occupation"
-                      transform={this.props.locale === 'nl' ? 'translate(870 321)' : 'translate(840 321)'}
-                      fill="#fff"
-                      style={{
-                        fontFamily: 'Open Sans',
-                        fontSize: '29px',
-                        fontWeight: 400,
-                        opacity: 0,
-                      }}
-                      textAnchor="end"
-                    >
-                      {message}
-                    </text>
-                  )
-                }
+                {message => (
+                  <text
+                    id="t_occupation"
+                    transform={
+                      this.props.locale === 'nl'
+                        ? 'translate(870 321)'
+                        : 'translate(840 321)'
+                    }
+                    fill="#fff"
+                    style={{
+                      fontFamily: 'Open Sans',
+                      fontSize: '29px',
+                      fontWeight: 400,
+                      opacity: 0,
+                    }}
+                    textAnchor="end"
+                  >
+                    {message}
+                  </text>
+                )}
               </FormattedMessage>
             </svg>
           </SpeechBubble>
@@ -427,4 +436,7 @@ export function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(HomePage);

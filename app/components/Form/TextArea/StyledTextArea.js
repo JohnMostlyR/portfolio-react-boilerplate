@@ -6,7 +6,7 @@ import { iconUrl } from '../HandIcon';
 import { BASE_FONT_REGULAR } from '../typography';
 
 export const StyledTextArea = styled.textarea`
-  height: ${({ myHeight }) => myHeight ? `${myHeight}px` : '2em'};
+  height: ${({ myHeight }) => (myHeight ? `${myHeight}px` : '2em')};
   margin: 0 !important;
   width: 100%;
   appearance: none;
@@ -19,9 +19,7 @@ export const StyledTextArea = styled.textarea`
   overflow: hidden;
   padding: 0.5rem 1.5rem 0.5rem 0;
   resize: none;
-  ${BASE_FONT_REGULAR}
-
-  @media (min-width: 600px) {
+  ${BASE_FONT_REGULAR} @media (min-width: 600px) {
     background-image: ${() => `url(${iconUrl})`};
     background-position: calc(100% + 1.5em) 50%;
     background-repeat: no-repeat;

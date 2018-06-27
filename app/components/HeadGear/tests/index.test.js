@@ -22,7 +22,9 @@ const messages = {
 
 describe('<HeadGear />', () => {
   it('should render and match the snapshot', () => {
-    const renderedComponent = mountWithIntl(<HeadGear messages={messages} path="/test" />);
+    const renderedComponent = mountWithIntl(
+      <HeadGear messages={messages} path="/test" />,
+    );
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 });

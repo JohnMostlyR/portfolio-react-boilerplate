@@ -13,13 +13,20 @@ describe('validateForm', () => {
   });
 
   it('should return "false" when fieldError has any entry without an error message', () => {
-    const _fieldError = Object.assign({ ...fieldError }, { falseValue: false, emptyValue: '' });
+    const _fieldError = Object.assign(
+      { ...fieldError },
+      { falseValue: false, emptyValue: '' },
+    );
     expect(validateForm({ field, fieldError: _fieldError })).toBe(false);
   });
 
   it('should return "false" on network errors', () => {
-    const _fieldError = Object.assign({ ...fieldError }, {
-      network: 'This is a network error' });
+    const _fieldError = Object.assign(
+      { ...fieldError },
+      {
+        network: 'This is a network error',
+      },
+    );
     expect(validateForm({ field, fieldError: _fieldError })).toBe(false);
   });
 
@@ -30,7 +37,10 @@ describe('validateForm', () => {
     });
 
     it('should return "true" when a String field has an entry in "fieldError"', () => {
-      const _fieldError = Object.assign({ ...fieldError }, { aString: 'Some error' });
+      const _fieldError = Object.assign(
+        { ...fieldError },
+        { aString: 'Some error' },
+      );
       expect(validateForm({ field, fieldError: _fieldError })).toBe(true);
     });
   });
@@ -42,7 +52,10 @@ describe('validateForm', () => {
     });
 
     it('should return "true" when a Number field has an entry in "fieldError"', () => {
-      const _fieldError = Object.assign({ ...fieldError }, { aNumber: 'Some error' });
+      const _fieldError = Object.assign(
+        { ...fieldError },
+        { aNumber: 'Some error' },
+      );
       expect(validateForm({ field, fieldError: _fieldError })).toBe(true);
     });
   });

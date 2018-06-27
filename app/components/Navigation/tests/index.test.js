@@ -31,7 +31,7 @@ describe('<Navigation />', () => {
 
   it('should render and match the snapshot', () => {
     const renderedComponent = shallow(
-      <Navigation bigScreenBreakpoint={1000} toggleMenu={toggleMenu} />
+      <Navigation bigScreenBreakpoint={1000} toggleMenu={toggleMenu} />,
     );
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
@@ -43,7 +43,7 @@ describe('<Navigation />', () => {
         bigScreenBreakpoint={1000}
         isAtScreenTop={isAtScreenTop}
         toggleMenu={toggleMenu}
-      />
+      />,
     );
 
     expect(renderedComponent.prop('isAtScreenTop')).toBe(isAtScreenTop);
@@ -54,7 +54,7 @@ describe('<Navigation />', () => {
         bigScreenBreakpoint={1000}
         isAtScreenTop={isAtScreenTop}
         toggleMenu={toggleMenu}
-      />
+      />,
     );
 
     expect(renderedComponent.prop('isAtScreenTop')).toBe(isAtScreenTop);
@@ -71,7 +71,7 @@ describe('<Navigation />', () => {
       const getFocusedLink = jest.spyOn(Navigation.prototype, 'getFocusedLink');
       const renderedComponent = mount(
         <Provider store={store}>
-          <IntlProvider locale={'en'}>
+          <IntlProvider locale="en">
             <ConnectedRouter history={history}>
               <Navigation
                 bigScreenBreakpoint={1000}
@@ -80,10 +80,13 @@ describe('<Navigation />', () => {
               />
             </ConnectedRouter>
           </IntlProvider>
-        </Provider>
+        </Provider>,
       );
       const foundList = renderedComponent.find(List);
-      foundList.simulate('keyDown', { preventDefault: PREVENT_DEFAULT, keyCode: 27 });
+      foundList.simulate('keyDown', {
+        preventDefault: PREVENT_DEFAULT,
+        keyCode: 27,
+      });
       expect(PREVENT_DEFAULT).toHaveBeenCalledTimes(1);
       expect(getFocusedLink).not.toHaveBeenCalled();
       expect(toggleMenu).toHaveBeenCalledTimes(1);
@@ -92,7 +95,7 @@ describe('<Navigation />', () => {
     it('should close/collapse the menu when the menu button is clicked', () => {
       const renderedComponent = mount(
         <Provider store={store}>
-          <IntlProvider locale={'en'}>
+          <IntlProvider locale="en">
             <ConnectedRouter history={history}>
               <Navigation
                 bigScreenBreakpoint={1000}
@@ -101,20 +104,29 @@ describe('<Navigation />', () => {
               />
             </ConnectedRouter>
           </IntlProvider>
-        </Provider>
+        </Provider>,
       );
       renderedComponent.find(Button).simulate('click');
       expect(toggleMenu).toHaveBeenCalledTimes(1);
     });
 
     it('should otherwise look for the link that currently holds focus', () => {
-      const handleExpandedState = jest.spyOn(Navigation.prototype, 'handleExpandedState');
-      const getLinksFromListItems = jest.spyOn(Navigation.prototype, 'getLinksFromListItems');
-      const getListItems = jest.spyOn(Navigation.prototype, 'getLinksFromListItems');
+      const handleExpandedState = jest.spyOn(
+        Navigation.prototype,
+        'handleExpandedState',
+      );
+      const getLinksFromListItems = jest.spyOn(
+        Navigation.prototype,
+        'getLinksFromListItems',
+      );
+      const getListItems = jest.spyOn(
+        Navigation.prototype,
+        'getLinksFromListItems',
+      );
       const getFocusedLink = jest.spyOn(Navigation.prototype, 'getFocusedLink');
       const renderedComponent = mount(
         <Provider store={store}>
-          <IntlProvider locale={'en'}>
+          <IntlProvider locale="en">
             <ConnectedRouter history={history}>
               <Navigation
                 bigScreenBreakpoint={1000}
@@ -123,7 +135,7 @@ describe('<Navigation />', () => {
               />
             </ConnectedRouter>
           </IntlProvider>
-        </Provider>
+        </Provider>,
       );
       const foundList = renderedComponent.find(List);
       const currentTarget = foundList.render()['0'];
@@ -147,7 +159,7 @@ describe('<Navigation />', () => {
         .mockImplementation(() => false);
       const renderedComponent = mount(
         <Provider store={store}>
-          <IntlProvider locale={'en'}>
+          <IntlProvider locale="en">
             <ConnectedRouter history={history}>
               <Navigation
                 bigScreenBreakpoint={1000}
@@ -156,7 +168,7 @@ describe('<Navigation />', () => {
               />
             </ConnectedRouter>
           </IntlProvider>
-        </Provider>
+        </Provider>,
       );
       const foundList = renderedComponent.find(List);
       const currentTarget = foundList.render()['0'];
@@ -182,7 +194,7 @@ describe('<Navigation />', () => {
       beforeEach(() => {
         renderedComponent = mount(
           <Provider store={store}>
-            <IntlProvider locale={'en'}>
+            <IntlProvider locale="en">
               <ConnectedRouter history={history}>
                 <Navigation
                   bigScreenBreakpoint={1000}
@@ -191,7 +203,7 @@ describe('<Navigation />', () => {
                 />
               </ConnectedRouter>
             </IntlProvider>
-          </Provider>
+          </Provider>,
         );
 
         foundList = renderedComponent.find(List);

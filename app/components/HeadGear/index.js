@@ -1,8 +1,8 @@
 /**
-*
-* HeadGear
-*
-*/
+ *
+ * HeadGear
+ *
+ */
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -12,7 +12,9 @@ import { intlShape, injectIntl } from 'react-intl';
 import { config } from '../../config';
 import { buildCanonicalURL } from '../../utils/urlUtils';
 
-const { seo: { baseURL, openGraph, twitter } } = config;
+const {
+  seo: { baseURL, openGraph, twitter },
+} = config;
 
 function constructLinks({ path }) {
   const basic = [
@@ -28,7 +30,7 @@ function constructLinks({ path }) {
   ];
 
   return basic;
-/*
+  /*
   const alternateLanguages = locales
     .map((locale) => (
       {
@@ -52,32 +54,26 @@ function constructOpenGraphMetaTags({ formatMessage, messages, path }) {
 
   if (openGraph) {
     if (metaDescription) {
-      collected.push(
-        {
-          property: 'og:description',
-          content: formatMessage({ ...metaDescription }),
-        },
-      );
+      collected.push({
+        property: 'og:description',
+        content: formatMessage({ ...metaDescription }),
+      });
     }
 
     if (title) {
-      collected.push(
-        {
-          property: 'og:title',
-          content: formatMessage(
-            { ...title },
-            { pageTitle: formatMessage({ ...pageTitle }) },
-          ),
-        },
-      );
+      collected.push({
+        property: 'og:title',
+        content: formatMessage(
+          { ...title },
+          { pageTitle: formatMessage({ ...pageTitle }) },
+        ),
+      });
     }
 
-    collected.push(
-      {
-        property: 'og.url',
-        content: buildCanonicalURL({ url: baseURL, path }),
-      },
-    );
+    collected.push({
+      property: 'og.url',
+      content: buildCanonicalURL({ url: baseURL, path }),
+    });
   }
 
   return collected;
@@ -92,24 +88,20 @@ function constructTwitterMetaTags({ formatMessage, messages }) {
 
   if (twitter) {
     if (metaDescription) {
-      collected.push(
-        {
-          property: 'twitter:description',
-          content: formatMessage({ ...metaDescription }),
-        },
-      );
+      collected.push({
+        property: 'twitter:description',
+        content: formatMessage({ ...metaDescription }),
+      });
     }
 
     if (title) {
-      collected.push(
-        {
-          property: 'twitter:title',
-          content: formatMessage(
-            { ...title },
-            { pageTitle: formatMessage({ ...pageTitle }) },
-          ),
-        },
-      );
+      collected.push({
+        property: 'twitter:title',
+        content: formatMessage(
+          { ...title },
+          { pageTitle: formatMessage({ ...pageTitle }) },
+        ),
+      });
     }
   }
 
@@ -124,7 +116,8 @@ function constructBasicMetaTags({ formatMessage, messages }) {
       {
         name: 'description',
         content: formatMessage({ ...metaDescription }),
-      }];
+      },
+    ];
   }
 
   return [];
@@ -138,12 +131,7 @@ function constructMetaTags({ formatMessage, messages, path }) {
   );
 }
 
-function HeadGear(
-  {
-    intl: { formatMessage },
-    messages,
-    path,
-  }) {
+function HeadGear({ intl: { formatMessage }, messages, path }) {
   const { pageTitle = '', title } = messages;
   return (
     <Helmet

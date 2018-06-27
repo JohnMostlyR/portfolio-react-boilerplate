@@ -12,12 +12,12 @@ describe('<Container />', () => {
   });
 
   it('should adopt the "maxWidth" prop', () => {
-    const renderedComponent = shallow(<Container maxWidth={'100px'} />);
+    const renderedComponent = shallow(<Container maxWidth="100px" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   it('should adopt the "showArrowBreakpoint" prop', () => {
-    const renderedComponent = shallow(<Container showArrowBreakpoint={'1rem'} />);
+    const renderedComponent = shallow(<Container showArrowBreakpoint="1rem" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 });

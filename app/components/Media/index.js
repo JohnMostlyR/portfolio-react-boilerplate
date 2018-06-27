@@ -5,7 +5,7 @@ import MediaImage from './MediaImage';
 import MediaBody from './MediaBody';
 import MediaWrapper from './MediaWrapper';
 
-const Media = (props) => (
+const Media = props => (
   <MediaWrapper>
     <MediaImage
       imageAlign={props.imageAlign}

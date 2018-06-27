@@ -37,7 +37,7 @@ exports[`<StyledMain /> should adopt the "fixedSiteNavOffset" property 1`] = `
     align-self: unset;
     display: grid;
     grid-area: main;
-    grid-template-areas: "mainContent";
+    grid-template-areas: 'mainContent';
     grid-template-rows: 1fr;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -97,7 +97,7 @@ exports[`<StyledMain /> should adopt the "siteNavIsFixed" property 1`] = `
     align-self: unset;
     display: grid;
     grid-area: main;
-    grid-template-areas: "mainContent";
+    grid-template-areas: 'mainContent';
     grid-template-rows: 1fr;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -157,7 +157,7 @@ exports[`<StyledMain /> should render and match the snapshot 1`] = `
     align-self: unset;
     display: grid;
     grid-area: main;
-    grid-template-areas: "mainContent";
+    grid-template-areas: 'mainContent';
     grid-template-rows: 1fr;
     -webkit-box-pack: center;
     -webkit-justify-content: center;

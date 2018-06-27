@@ -90,7 +90,7 @@ exports[`<Link /> should render and match the snapshot 1`] = `
 
 <NavLink
   activeClassName="nav-item-active"
-  ariaCurrent="true"
+  aria-current="page"
   className="c0"
   data-hasfocus="false"
   to="/"

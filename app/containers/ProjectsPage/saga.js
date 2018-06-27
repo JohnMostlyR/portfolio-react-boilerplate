@@ -7,11 +7,19 @@ import request from '../../utils/request';
 
 import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
 
-const { api: { contentful: { endpoint, access_token } } } = config;
+const {
+  api: {
+    contentful: { endpoint, access_token }, // eslint-disable-line
+  },
+} = config;
 
 // Individual exports for testing
 
-export function parseContent({ sys: { type } = {}, includes: { Asset = [] } = {}, items } = {}) {
+export function parseContent({
+  sys: { type } = {},
+  includes: { Asset = [] } = {},
+  items,
+} = {}) {
   if (String(type).toLowerCase() !== 'array') {
     return [];
   }
@@ -19,13 +27,11 @@ export function parseContent({ sys: { type } = {}, includes: { Asset = [] } = {}
   let projects = [];
 
   try {
-    const ASSETS = Asset
-      .reduce((acc, curr) => {
-        const obj = {};
-        obj[curr.sys.id] = curr.fields;
-        return Object.assign(acc, obj);
-      }, {},
-      );
+    const ASSETS = Asset.reduce((acc, curr) => {
+      const obj = {};
+      obj[curr.sys.id] = curr.fields;
+      return Object.assign(acc, obj);
+    }, {});
 
     // Latest to oldest
     const ITEMS_SORTED = items
@@ -42,30 +48,28 @@ export function parseContent({ sys: { type } = {}, includes: { Asset = [] } = {}
         return 0;
       });
 
-    projects = ITEMS_SORTED
-      .reduce((acc, curr) => {
-        if (curr.thumbnail) {
-          curr.thumbnail = ASSETS[curr.thumbnail.sys.id];
-        } else {
-          curr.thumbnail = {};
-        }
+    projects = ITEMS_SORTED.reduce((acc, curr) => {
+      if (curr.thumbnail) {
+        curr.thumbnail = ASSETS[curr.thumbnail.sys.id];
+      } else {
+        curr.thumbnail = {};
+      }
 
-        return acc.concat(curr);
-      }, [])
-      .reduce((acc, curr) => {
-        if (curr.images && Array.isArray(curr.images)) {
-          const images = [];
-          curr.images.forEach((image) => {
-            images.push(ASSETS[image.sys.id]);
-          });
+      return acc.concat(curr);
+    }, []).reduce((acc, curr) => {
+      if (curr.images && Array.isArray(curr.images)) {
+        const images = [];
+        curr.images.forEach(image => {
+          images.push(ASSETS[image.sys.id]);
+        });
 
-          curr.images = images;
-        } else {
-          curr.images = [];
-        }
+        curr.images = images;
+      } else {
+        curr.images = [];
+      }
 
-        return acc.concat(curr);
-      }, []);
+      return acc.concat(curr);
+    }, []);
   } catch (err) {
     throw new Error(err);
   }
@@ -79,7 +83,7 @@ export function parseContent({ sys: { type } = {}, includes: { Asset = [] } = {}
  */
 export function* getContent() {
   const LOCALE = yield select(makeSelectLocale());
-  const localeForContentful = (LOCALE === 'en') ? 'en-US' : LOCALE;
+  const localeForContentful = LOCALE === 'en' ? 'en-US' : LOCALE;
   const queryParam = {
     access_token,
     content_type: 'projects',
@@ -88,8 +92,11 @@ export function* getContent() {
   };
 
   const query = Object.keys(queryParam)
-    .reduce((accumulator, currentValue) => accumulator.concat(
-      `${currentValue}=${queryParam[currentValue]}`), [])
+    .reduce(
+      (accumulator, currentValue) =>
+        accumulator.concat(`${currentValue}=${queryParam[currentValue]}`),
+      [],
+    )
     .join('&');
 
   const requestURL = `${endpoint}${query}`;

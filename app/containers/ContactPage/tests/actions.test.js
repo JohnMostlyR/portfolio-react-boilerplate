@@ -1,15 +1,6 @@
+import { SEND_FORM, SEND_FORM_SUCCESS, SEND_FORM_ERROR } from '../constants';
 
-import {
-  SEND_FORM,
-  SEND_FORM_SUCCESS,
-  SEND_FORM_ERROR,
-} from '../constants';
-
-import {
-  sendForm,
-  sendFormSuccess,
-  sendFormError,
-} from '../actions';
+import { sendForm, sendFormSuccess, sendFormError } from '../actions';
 
 describe('ContactPage actions', () => {
   describe('sendForm', () => {

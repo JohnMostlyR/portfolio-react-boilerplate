@@ -17,9 +17,7 @@ describe('<NotFoundPage />', () => {
   const store = configureStore(initialState, history);
 
   it('should render and match the snapshot', () => {
-    const renderedComponent = shallow(
-      <NotFoundPage />
-    );
+    const renderedComponent = shallow(<NotFoundPage />);
 
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
@@ -27,15 +25,15 @@ describe('<NotFoundPage />', () => {
   it('should have a link to the home page', () => {
     const renderedComponent = mount(
       <Provider store={store}>
-        <IntlProvider locale={'en'}>
+        <IntlProvider locale="en">
           <ConnectedRouter history={history}>
             <NotFoundPage />
           </ConnectedRouter>
         </IntlProvider>
-      </Provider>
+      </Provider>,
     );
 
-    const linkToHomePage = renderedComponent.find(<InlineLink to={'/'} />);
+    const linkToHomePage = renderedComponent.find(<InlineLink to="/" />);
     expect(renderedComponent.contains(InlineLink)).toEqual(true);
     expect(linkToHomePage).toBeDefined();
   });
@@ -43,15 +41,15 @@ describe('<NotFoundPage />', () => {
   it('should have a link to the contact page', () => {
     const renderedComponent = mount(
       <Provider store={store}>
-        <IntlProvider locale={'en'}>
+        <IntlProvider locale="en">
           <ConnectedRouter history={history}>
             <NotFoundPage />
           </ConnectedRouter>
         </IntlProvider>
-      </Provider>
+      </Provider>,
     );
 
-    const linkToHomePage = renderedComponent.find(<InlineLink to={'/contact'} />);
+    const linkToHomePage = renderedComponent.find(<InlineLink to="/contact" />);
     expect(renderedComponent.contains(InlineLink)).toEqual(true);
     expect(linkToHomePage).toBeDefined();
   });

@@ -3,37 +3,49 @@
  *
  * This will setup the i18n language files and locale data for your app.
  *
+ *   IMPORTANT: This file is used by the internal build
+ *   script `extract-intl`, and must use CommonJS module syntax
+ *   You CANNOT use import/export in this file.
  */
-import { addLocaleData } from 'react-intl';
-import enLocaleData from 'react-intl/locale-data/en';
-import nlLocaleData from 'react-intl/locale-data/nl';
+const addLocaleData = require('react-intl').addLocaleData; //eslint-disable-line
+const enLocaleData = require('react-intl/locale-data/en');
+const nlLocaleData = require('react-intl/locale-data/nl');
 
-import { DEFAULT_LOCALE } from './containers/App/constants'; // eslint-disable-line
-import enTranslationMessages from './translations/en.json';
-import nlTranslationMessages from './translations/nl.json';
-
-export const appLocales = [
-  'en',
-  'nl',
-];
+const enTranslationMessages = require('./translations/en.json');
+const nlTranslationMessages = require('./translations/nl.json');
 
 addLocaleData(enLocaleData);
 addLocaleData(nlLocaleData);
 
-export const formatTranslationMessages = (locale, messages) => {
-  const defaultFormattedMessages = locale !== DEFAULT_LOCALE
-    ? formatTranslationMessages(DEFAULT_LOCALE, enTranslationMessages)
-    : {};
-  return Object.keys(messages).reduce((formattedMessages, key) => {
-    let message = messages[key];
-    if (!message && locale !== DEFAULT_LOCALE) {
-      message = defaultFormattedMessages[key];
-    }
-    return Object.assign(formattedMessages, { [key]: message });
-  }, {});
+const DEFAULT_LOCALE = 'en';
+
+// prettier-ignore
+const appLocales = [
+  'en',
+  'nl',
+];
+
+const formatTranslationMessages = (locale, messages) => {
+  const defaultFormattedMessages =
+    locale !== DEFAULT_LOCALE
+      ? formatTranslationMessages(DEFAULT_LOCALE, enTranslationMessages)
+      : {};
+  const flattenFormattedMessages = (formattedMessages, key) => {
+    const formattedMessage =
+      !messages[key] && locale !== DEFAULT_LOCALE
+        ? defaultFormattedMessages[key]
+        : messages[key];
+    return Object.assign(formattedMessages, { [key]: formattedMessage });
+  };
+  return Object.keys(messages).reduce(flattenFormattedMessages, {});
 };
 
-export const translationMessages = {
+const translationMessages = {
   en: formatTranslationMessages('en', enTranslationMessages),
   nl: formatTranslationMessages('nl', nlTranslationMessages),
 };
+
+exports.appLocales = appLocales;
+exports.formatTranslationMessages = formatTranslationMessages;
+exports.translationMessages = translationMessages;
+exports.DEFAULT_LOCALE = DEFAULT_LOCALE;

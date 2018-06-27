@@ -16,7 +16,8 @@ import messages from './messages';
 import PageContent from '../../components/PageContent';
 import InlineLink from '../../components/InlineLink';
 
-export default class NotFound extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class NotFound extends React.PureComponent { // eslint-disable-line
+  // react/prefer-stateless-function
   render() {
     return (
       <React.Fragment>
@@ -28,16 +29,14 @@ export default class NotFound extends React.PureComponent { // eslint-disable-li
               values={{
                 home: (
                   <FormattedMessage {...messages.home}>
-                    {
-                      (message) => <InlineLink to={'/'}>{message}</InlineLink>
-                    }
+                    {message => <InlineLink to="/">{message}</InlineLink>}
                   </FormattedMessage>
                 ),
                 contact: (
                   <FormattedMessage {...messages.contact}>
-                    {
-                      (message) => <InlineLink to={'/contact'}>{message}</InlineLink>
-                    }
+                    {message => (
+                      <InlineLink to="/contact">{message}</InlineLink>
+                    )}
                   </FormattedMessage>
                 ),
               }}

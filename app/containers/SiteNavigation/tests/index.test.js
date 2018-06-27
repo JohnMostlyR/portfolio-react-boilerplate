@@ -28,12 +28,12 @@ describe('SiteNavigation', () => {
   it('should render and match the snapshot', () => {
     const component = renderer.create(
       <Provider store={store}>
-        <IntlProvider locale={'en'}>
+        <IntlProvider locale="en">
           <ConnectedRouter history={history}>
             <SiteNavigation />
           </ConnectedRouter>
         </IntlProvider>
-      </Provider>
+      </Provider>,
     );
 
     const tree = component.toJSON();
@@ -43,7 +43,7 @@ describe('SiteNavigation', () => {
   it('should get its own top position on the screen', () => {
     const wrapper = mount(
       <Provider store={store}>
-        <IntlProvider locale={'en'}>
+        <IntlProvider locale="en">
           <ConnectedRouter history={history}>
             <SiteNavigation />
           </ConnectedRouter>
@@ -68,7 +68,9 @@ describe('SiteNavigation', () => {
         const topPosition = 10;
         const props = mapDispatchToProps(dispatch);
         props.setTopPosition(topPosition);
-        expect(dispatch).toHaveBeenCalledWith(setSiteNavigationTopPosition(topPosition));
+        expect(dispatch).toHaveBeenCalledWith(
+          setSiteNavigationTopPosition(topPosition),
+        );
       });
     });
 
@@ -84,7 +86,9 @@ describe('SiteNavigation', () => {
         const offsetHeight = 100;
         const props = mapDispatchToProps(dispatch);
         props.setOffsetHeight(offsetHeight);
-        expect(dispatch).toHaveBeenCalledWith(setSiteNavigationOffsetHeight(offsetHeight));
+        expect(dispatch).toHaveBeenCalledWith(
+          setSiteNavigationOffsetHeight(offsetHeight),
+        );
       });
     });
   });

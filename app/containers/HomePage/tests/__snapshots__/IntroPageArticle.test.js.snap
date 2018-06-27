@@ -1,47 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<IntroPageArticle /> should render and match the snapshot 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <IntroPageArticle__IntroPageArticle />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "className": "IntroPageArticle__IntroPageArticle-iUZdmt juXIhC",
-    },
-    "ref": null,
-    "rendered": null,
-    "type": "article",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "className": "IntroPageArticle__IntroPageArticle-iUZdmt juXIhC",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "article",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+<article
+  className="IntroPageArticle-dHlzbf kYshAN"
+/>
 `;

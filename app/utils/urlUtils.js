@@ -22,7 +22,7 @@ export function normalizeURL(url) {
 export function normalizePath(path = '') {
   let _path = (path.endsWith('/')) ? path.slice(0, -1) : path; // eslint-disable-line
   // no-underscore-dangling
-  _path = (_path.startsWith('/')) ? _path.slice(1) : _path;
+  _path = _path.startsWith('/') ? _path.slice(1) : _path;
 
   return _path;
 }
@@ -36,6 +36,6 @@ export function normalizePath(path = '') {
  */
 export function buildCanonicalURL({ url, locale, path }) {
   return `${[normalizeURL(url), locale, normalizePath(path)]
-    .filter((item) => !!item)
+    .filter(item => !!item)
     .join('/')}/`;
 }

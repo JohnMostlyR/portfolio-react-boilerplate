@@ -32,17 +32,19 @@ class Project extends React.PureComponent {
           <P>{detailsBodyText}</P>
           <P textAlign="right">
             <FormattedMessage {...messages.detailsLink}>
-              {
-                (message) => (
-                  <Link
-                    to={{
-                      pathname: `/projects/${title.toLowerCase().replace(/\W+/g, '-')}/`,
-                      search,
-                    }}
-                    odd={`${isOdd}`}
-                  >{message}</Link>
-                )
-              }
+              {message => (
+                <Link // eslint-disable-line jsx-a11y/anchor-is-valid
+                  to={{
+                    pathname: `/projects/${title
+                      .toLowerCase()
+                      .replace(/\W+/g, '-')}/`,
+                    search,
+                  }}
+                  odd={`${isOdd}`}
+                >
+                  {message}
+                </Link>
+              )}
             </FormattedMessage>
           </P>
         </ProjectBody>

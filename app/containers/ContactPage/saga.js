@@ -11,14 +11,18 @@ import request from '../../utils/request';
 export function* sendForm(action) {
   try {
     // Call our request helper (see 'utils/request')
-    const result = yield call(request, 'https://meester-johan.info/contact-request', {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
+    const result = yield call(
+      request,
+      'https://meester-johan.info/contact-request',
+      {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(action.field),
       },
-      body: JSON.stringify(action.field),
-    });
+    );
     if (result.success) {
       yield put(sendFormSuccess());
     } else {

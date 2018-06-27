@@ -15,13 +15,18 @@ const Container = styled.div`
   > *:not(:last-child) {
     margin-right: 1rem;
     padding-right: 1rem;
-    border-right: 1px solid ${({ backgroundColor }) => backgroundColor || 'inherit'};
+    border-right: 1px solid
+      ${({ backgroundColor }) => backgroundColor || 'inherit'};
   }
 
   @media (min-width: 480px) {
     padding: 0.5rem 1rem 0.5rem 4rem;
     background-color: transparent;
-    background-image: linear-gradient(45deg, transparent 15%, ${({ color }) => color || 'inherit'} 15%);
+    background-image: linear-gradient(
+      45deg,
+      transparent 15%,
+      ${({ color }) => color || 'inherit'} 15%
+    );
     background-position-x: 0.5rem;
   }
 

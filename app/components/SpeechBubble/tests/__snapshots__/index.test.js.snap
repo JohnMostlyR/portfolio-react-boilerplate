@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SpeechBubble /> should adopt any children 1`] = `
-<Container__Container>
-  <Bubble__Bubble
+<Container>
+  <Bubble
     arrowPosition="bottom-left"
     isGhost={false}
   >
     <span>
       A Child
     </span>
-  </Bubble__Bubble>
+  </Bubble>
   <Arrow
     arrowPosition="bottom-left"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> should adopt the "arrowHeight" prop 1`] = `
-<Container__Container>
-  <Bubble__Bubble
+<Container>
+  <Bubble
     arrowPosition="bottom-left"
     isGhost={false}
   />
@@ -28,12 +28,12 @@ exports[`<SpeechBubble /> should adopt the "arrowHeight" prop 1`] = `
     height="1vw"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> should adopt the "backgroundColor" prop 1`] = `
-<Container__Container>
-  <Bubble__Bubble
+<Container>
+  <Bubble
     arrowPosition="bottom-left"
     backgroundColor="#000"
     isGhost={false}
@@ -43,12 +43,12 @@ exports[`<SpeechBubble /> should adopt the "backgroundColor" prop 1`] = `
     backgroundColor="#000"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> should adopt the "color" prop 1`] = `
-<Container__Container>
-  <Bubble__Bubble
+<Container>
+  <Bubble
     arrowPosition="bottom-left"
     color="#fff"
     isGhost={false}
@@ -57,14 +57,14 @@ exports[`<SpeechBubble /> should adopt the "color" prop 1`] = `
     arrowPosition="bottom-left"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> should adopt the "maxWidth" prop 1`] = `
-<Container__Container
+<Container
   maxWidth="10em"
 >
-  <Bubble__Bubble
+  <Bubble
     arrowPosition="bottom-left"
     isGhost={false}
   />
@@ -72,12 +72,12 @@ exports[`<SpeechBubble /> should adopt the "maxWidth" prop 1`] = `
     arrowPosition="bottom-left"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> should adopt the "padding" prop 1`] = `
-<Container__Container>
-  <Bubble__Bubble
+<Container>
+  <Bubble
     arrowPosition="bottom-left"
     isGhost={false}
     padding="0 0px"
@@ -86,14 +86,14 @@ exports[`<SpeechBubble /> should adopt the "padding" prop 1`] = `
     arrowPosition="bottom-left"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> should adopt the "showArrowBreakpoint" prop 1`] = `
-<Container__Container
+<Container
   showArrowBreakpoint="100px"
 >
-  <Bubble__Bubble
+  <Bubble
     arrowPosition="bottom-left"
     isGhost={false}
     showArrowBreakpoint="100px"
@@ -103,12 +103,12 @@ exports[`<SpeechBubble /> should adopt the "showArrowBreakpoint" prop 1`] = `
     isGhost={false}
     showBreakpoint="100px"
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> should render and match the snapshot 1`] = `
-<Container__Container>
-  <Bubble__Bubble
+<Container>
+  <Bubble
     arrowPosition="bottom-left"
     isGhost={false}
   />
@@ -116,12 +116,12 @@ exports[`<SpeechBubble /> should render and match the snapshot 1`] = `
     arrowPosition="bottom-left"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> the "isGhost" property should accept boolean "false" as value 1`] = `
-<Container__Container>
-  <Bubble__Bubble
+<Container>
+  <Bubble
     arrowPosition="bottom-left"
     isGhost={false}
   />
@@ -129,12 +129,12 @@ exports[`<SpeechBubble /> the "isGhost" property should accept boolean "false" a
     arrowPosition="bottom-left"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> the "isGhost" property should accept boolean "true" as value 1`] = `
-<Container__Container>
-  <Bubble__Bubble
+<Container>
+  <Bubble
     arrowPosition="bottom-left"
     isGhost={true}
   />
@@ -142,14 +142,14 @@ exports[`<SpeechBubble /> the "isGhost" property should accept boolean "true" as
     arrowPosition="bottom-left"
     isGhost={true}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> the "makeAppear" property should accept boolean "false" as value 1`] = `
-<Container__Container
+<Container
   makeAppear={false}
 >
-  <Bubble__Bubble
+  <Bubble
     arrowPosition="bottom-left"
     isGhost={false}
   />
@@ -157,14 +157,14 @@ exports[`<SpeechBubble /> the "makeAppear" property should accept boolean "false
     arrowPosition="bottom-left"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> the "makeAppear" property should accept boolean "true" as value 1`] = `
-<Container__Container
+<Container
   makeAppear={true}
 >
-  <Bubble__Bubble
+  <Bubble
     arrowPosition="bottom-left"
     isGhost={false}
   />
@@ -172,12 +172,12 @@ exports[`<SpeechBubble /> the "makeAppear" property should accept boolean "true"
     arrowPosition="bottom-left"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> the arrowPosition property should accept "bottom-left" as value 1`] = `
-<Container__Container>
-  <Bubble__Bubble
+<Container>
+  <Bubble
     arrowPosition="bottom-left"
     isGhost={false}
   />
@@ -185,12 +185,12 @@ exports[`<SpeechBubble /> the arrowPosition property should accept "bottom-left"
     arrowPosition="bottom-left"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> the arrowPosition property should accept "bottom-right" as value 1`] = `
-<Container__Container>
-  <Bubble__Bubble
+<Container>
+  <Bubble
     arrowPosition="bottom-right"
     isGhost={false}
   />
@@ -198,31 +198,31 @@ exports[`<SpeechBubble /> the arrowPosition property should accept "bottom-right
     arrowPosition="bottom-right"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> the arrowPosition property should accept "top-left" as value 1`] = `
-<Container__Container>
+<Container>
   <Arrow
     arrowPosition="top-left"
     isGhost={false}
   />
-  <Bubble__Bubble
+  <Bubble
     arrowPosition="top-left"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;
 
 exports[`<SpeechBubble /> the arrowPosition property should accept "top-right" as value 1`] = `
-<Container__Container>
+<Container>
   <Arrow
     arrowPosition="top-right"
     isGhost={false}
   />
-  <Bubble__Bubble
+  <Bubble
     arrowPosition="top-right"
     isGhost={false}
   />
-</Container__Container>
+</Container>
 `;

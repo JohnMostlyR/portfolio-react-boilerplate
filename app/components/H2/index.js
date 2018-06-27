@@ -12,7 +12,7 @@ const H2 = styled.h2`
   color: ${({ color }) => color || 'unset'};
   font-size: ${MODULAR_SCALE_FACTOR ** 3}rem;
   line-height: ${() => LINE_HEIGHT};
-  ${BASE_FONT_BOLD}
+  ${BASE_FONT_BOLD};
 `;
 
 H2.propTypes = {

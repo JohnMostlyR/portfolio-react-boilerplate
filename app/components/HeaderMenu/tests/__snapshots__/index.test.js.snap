@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<HeaderMenu> Should render and match the snapshot 1`] = `
-<Container__Container
+<Container
   backgroundColor="#465a65"
   color="#fff"
 >
@@ -9,5 +9,5 @@ exports[`<HeaderMenu> Should render and match the snapshot 1`] = `
   <SocialLinks
     color="#465a65"
   />
-</Container__Container>
+</Container>
 `;

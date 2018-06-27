@@ -2,8 +2,8 @@
 
 exports[`<Projects /> should render and match the snapshot 1`] = `
 <React.Fragment>
-  <ProjectsList__ProjectsList>
-    <ProjectsListItem__ProjectsListItem
+  <ProjectsList>
+    <ProjectsListItem
       key="This is the title field for Project 1"
     >
       <Project
@@ -28,8 +28,8 @@ exports[`<Projects /> should render and match the snapshot 1`] = `
         }
         title="This is the title field for Project 1"
       />
-    </ProjectsListItem__ProjectsListItem>
-    <ProjectsListItem__ProjectsListItem
+    </ProjectsListItem>
+    <ProjectsListItem
       key="This is the title field for Project 2"
     >
       <Project
@@ -54,7 +54,7 @@ exports[`<Projects /> should render and match the snapshot 1`] = `
         }
         title="This is the title field for Project 2"
       />
-    </ProjectsListItem__ProjectsListItem>
-  </ProjectsList__ProjectsList>
+    </ProjectsListItem>
+  </ProjectsList>
 </React.Fragment>
 `;

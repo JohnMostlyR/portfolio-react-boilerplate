@@ -19,7 +19,9 @@ describe('<NameGroup />', () => {
 
   it('should adopt the "showNameBreakpoint" property', () => {
     const fixture = '10px';
-    const renderedComponent = shallow(<NameGroup showNameBreakpoint={fixture} />);
+    const renderedComponent = shallow(
+      <NameGroup showNameBreakpoint={fixture} />,
+    );
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 });

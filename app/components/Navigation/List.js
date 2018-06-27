@@ -7,7 +7,8 @@ import { theme } from '../../styles/theme';
 import { svgToURL } from '../../styles/tools';
 
 const { backgroundColor, borderColor } = theme.site.navigation;
-const lighterBorderColor = (borderColor && lighten(0.1, borderColor)) || 'inherit';
+const lighterBorderColor =
+  (borderColor && lighten(0.1, borderColor)) || 'inherit';
 const arrowSVG = `
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -20,12 +21,13 @@ const arrowSVG = `
   </svg>
 `;
 
+/* eslint-disable indent */
 const List = styled.ul.attrs({
-  hidden: ({ isExpanded }) => isExpanded ? '"false"' : '"true"',
+  hidden: ({ isExpanded }) => (isExpanded ? '"false"' : '"true"'),
 })`
   display: flex;
   flex-flow: column nowrap;
-  height: ${({ isExpanded }) => isExpanded ? 'auto' : 0};
+  height: ${({ isExpanded }) => (isExpanded ? 'auto' : 0)};
   list-style: none;
   margin: 0;
   margin-top: ${BASE_LINE_HEIGHT}rem;
@@ -35,14 +37,12 @@ const List = styled.ul.attrs({
   border-radius: 0.5rem;
   border-top-right-radius: 0;
   background-color: ${backgroundColor};
-  padding: ${
-    ({ isExpanded }) => (
-      isExpanded
-        ? `${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT * 2}rem`
-        : 0
-    )
-  };
-  transform: scale(${({ isExpanded }) => isExpanded ? 1 : 0});
+  padding: ${({ isExpanded }) =>
+    isExpanded
+      ? `${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT *
+          2}rem`
+      : 0};
+  transform: scale(${({ isExpanded }) => (isExpanded ? 1 : 0)});
   transform-origin: right top;
   transition: transform, padding, height;
   transition-duration: 0.1s;
@@ -50,7 +50,7 @@ const List = styled.ul.attrs({
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     height: ${BASE_LINE_HEIGHT}rem;
     left: 0;
     top: -0.15rem;
@@ -69,13 +69,14 @@ const List = styled.ul.attrs({
   }
 
   & li {
-    display: ${({ isExpanded }) => isExpanded ? 'inline-block' : 'none'};
+    display: ${({ isExpanded }) => (isExpanded ? 'inline-block' : 'none')};
   }
 
-  @media (min-width: ${({ bigScreenBreakpoint }) => `${bigScreenBreakpoint}px`}) {
+  @media (min-width: ${({ bigScreenBreakpoint }) =>
+      `${bigScreenBreakpoint}px`}) {
     height: auto;
     padding: ${`${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT}rem ${BASE_LINE_HEIGHT *
-2}rem`};
+      2}rem`};
     transform: scale(1);
     width: auto;
     background-color: transparent;

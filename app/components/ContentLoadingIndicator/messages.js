@@ -8,7 +8,8 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   error: {
     id: 'portfolio.component.ContentLoadingIndicator.error',
-    defaultMessage: 'Terribly sorry, but the content cannot be loaded at this time',
+    defaultMessage:
+      'Terribly sorry, but the content cannot be loaded at this time',
   },
   timedOut: {
     id: 'portfolio.component.ContentLoadingIndicator.timedOut',

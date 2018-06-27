@@ -17,7 +17,7 @@ describe('<ContactForm />', () => {
       <ContactForm
         changeHandler={changeHandler}
         onSubmitHandler={onSubmitHandler}
-      />
+      />,
     );
 
     expect(toJson(wrapper)).toMatchSnapshot();
@@ -31,7 +31,7 @@ describe('<ContactForm />', () => {
       <ContactForm
         changeHandler={changeHandler}
         onSubmitHandler={onSubmitHandler}
-      />
+      />,
     );
 
     // console.log(wrapper.debug());

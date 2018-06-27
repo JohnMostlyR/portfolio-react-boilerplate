@@ -12,16 +12,17 @@ export default defineMessages({
   },
   pageDescription: {
     id: 'portfolio.page.NotFoundPage.pageDescription',
-    defaultMessage: 'The page you requested does not exist or has been removed. Sorry about that',
+    defaultMessage:
+      'The page you requested does not exist or has been removed. Sorry about that',
   },
   title: {
     id: 'portfolio.page.NotFoundPage.title',
-    defaultMessage: 'Johan Meester : Portfolio : Front-End Developer : {pageTitle}',
+    defaultMessage:
+      'Johan Meester : Portfolio : Front-End Developer : {pageTitle}',
   },
   content: {
     id: 'portfolio.page.NotFoundPage.content',
-    defaultMessage:
-      `I am sorry, but the page you requested does not exist or has been removed.
+    defaultMessage: `I am sorry, but the page you requested does not exist or has been removed.
       Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.`,
   },
   home: {

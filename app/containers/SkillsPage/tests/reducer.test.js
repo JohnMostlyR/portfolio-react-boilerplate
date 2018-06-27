@@ -1,11 +1,7 @@
 import { fromJS } from 'immutable';
 
 import skillsPageReducer from '../reducer';
-import {
-  loadContent,
-  contentLoaded,
-  contentLoadingError,
-} from '../actions';
+import { loadContent, contentLoaded, contentLoadingError } from '../actions';
 
 describe('skillsPageReducer', () => {
   let state;
@@ -41,17 +37,19 @@ describe('skillsPageReducer', () => {
       .set('loading', false)
       .set('locale', locale);
 
-    expect(skillsPageReducer(state, contentLoaded(fixture, locale))).toEqual(expectedResult);
+    expect(skillsPageReducer(state, contentLoaded(fixture, locale))).toEqual(
+      expectedResult,
+    );
   });
 
   it('should handle the contentLoadingError action correctly', () => {
     const fixture = {
       msg: 'Not found',
     };
-    const expectedResult = state
-      .set('error', fixture)
-      .set('loading', false);
+    const expectedResult = state.set('error', fixture).set('loading', false);
 
-    expect(skillsPageReducer(state, contentLoadingError(fixture))).toEqual(expectedResult);
+    expect(skillsPageReducer(state, contentLoadingError(fixture))).toEqual(
+      expectedResult,
+    );
   });
 });

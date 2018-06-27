@@ -7,22 +7,20 @@
  */
 
 export default function validateForm({ field, fieldError }) {
-  const EMPTY_VALUES = Object
-    .keys(field)
-    .some((key) => (
-      typeof field[key] === 'undefined'
-      || field[key] === null
-      || field[key].length === 0
-    ));
+  const EMPTY_VALUES = Object.keys(field).some(
+    key =>
+      typeof field[key] === 'undefined' ||
+      field[key] === null ||
+      field[key].length === 0,
+  );
 
   if (EMPTY_VALUES) {
     return true;
   }
 
-  const ERROR_MESSAGES = Object
-    .keys(fieldError)
-    .filter((key) => key !== 'network')
-    .some((key) => fieldError[key]);
+  const ERROR_MESSAGES = Object.keys(fieldError)
+    .filter(key => key !== 'network')
+    .some(key => fieldError[key]);
 
   if (ERROR_MESSAGES) {
     return true;

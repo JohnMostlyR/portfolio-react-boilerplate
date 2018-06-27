@@ -21,9 +21,7 @@ import {
 } from './selectors';
 import reducer from './reducer';
 
-import {
-  makeSelectLocation,
-} from '../../containers/App/selectors';
+import { makeSelectLocation } from '../../containers/App/selectors';
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
 import Projects from '../../components/Projects';
@@ -38,7 +36,8 @@ export function delayTimer(isLoading, callback) {
   }, 200);
 }
 
-export class ProjectsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export class ProjectsPage extends React.PureComponent {
+  // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
 
@@ -78,7 +77,11 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
   }
 
   render() {
-    const { error, location: { pathname, search }, projects } = this.props;
+    const {
+      error,
+      location: { pathname, search },
+      projects,
+    } = this.props;
     const { isLoading } = this.state;
     let showContent = <React.Fragment />;
 
@@ -95,16 +98,22 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
 
       if (regexp.test(pathname)) {
         const [, subpath] = regexp.exec(pathname);
-        const project = projects.find((_project) => {
+        const project = projects.find(_project => {
           const { title } = _project;
-          return (subpath === title.toLowerCase().replace(/\W+/g, '-'));
+          return subpath === title.toLowerCase().replace(/\W+/g, '-');
         });
 
         if (project) {
-          showContent = <ProjectDetails project={project} backlink={`/projects/${search}`} />;
+          showContent = (
+            <ProjectDetails
+              project={project}
+              backlink={`/projects/${search}`}
+            />
+          );
         }
       }
-    } else if (isLoading) { // FROM STATE!
+    } else if (isLoading) {
+      // FROM STATE!
       showContent = <ContentLoadingIndicator show showError={false} />;
     } else if (!!error !== false) {
       showContent = <ContentLoadingIndicator show showError />;
@@ -147,7 +156,10 @@ export function mapDispatchToProps(dispatch) {
   };
 }
 
-const withConnect = connect(mapStateToProps, mapDispatchToProps);
+const withConnect = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+);
 
 const withReducer = injectReducer({ key: 'projectsPage', reducer });
 const withSaga = injectSaga({ key: 'projectsPage', saga });

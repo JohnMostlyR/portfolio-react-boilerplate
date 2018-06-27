@@ -11,17 +11,17 @@ describe('<PageContent />', () => {
   });
 
   it('Should adopt the "title" property', () => {
-    const wrapper = shallow(<PageContent title={'Testing'} />);
+    const wrapper = shallow(<PageContent title="Testing" />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   it('Should adopt the "content" property', () => {
-    const wrapper = shallow(<PageContent content={'Testing'} />);
+    const wrapper = shallow(<PageContent content="Testing" />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   it('Should adopt the "noSpeechBubble" property', () => {
-    const wrapper = shallow(<PageContent content={'Testing'} noSpeechBubble />);
+    const wrapper = shallow(<PageContent content="Testing" noSpeechBubble />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

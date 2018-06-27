@@ -23,22 +23,9 @@ import App from 'containers/App';
 // Import Language Provider
 import LanguageProvider from 'containers/LanguageProvider';
 
-// Load the favicon, the manifest.json file and the .htaccess file
-/* eslint-disable import/no-webpack-loader-syntax */
+// Load the favicon and the .htaccess file
 import '!file-loader?name=[name].[ext]!./images/favicon.ico';
-import '!file-loader?name=[name].[ext]!./images/favicon-16x16.png';
-import '!file-loader?name=[name].[ext]!./images/favicon-32x32.png';
-import '!file-loader?name=[name].[ext]!./images/android-chrome-192x192.png';
-import '!file-loader?name=[name].[ext]!./images/android-chrome-512x512.png';
-import '!file-loader?name=[name].[ext]!./images/apple-touch-icon.png';
-import '!file-loader?name=[name].[ext]!./images/mstile-144x144.png';
-import '!file-loader?name=[name].[ext]!./images/mstile-150x150.png';
-import '!file-loader?name=[name].[ext]!./images/mstile-310x150.png';
-import '!file-loader?name=[name].[ext]!./images/mstile-310x310.png';
-import '!file-loader?name=[name].[ext]!./images/logo-600x600.png';
-import '!file-loader?name=[name].[ext]!./manifest.json';
 import 'file-loader?name=[name].[ext]!./.htaccess'; // eslint-disable-line import/extensions
-/* eslint-enable import/no-webpack-loader-syntax */
 
 import configureStore from './configureStore';
 
@@ -57,8 +44,6 @@ const webFontObserver = new FontFaceObserver('Noto Sans', {});
 // When Noto Sans is loaded, add a font-family using Noto Sans to the body
 webFontObserver.load().then(() => {
   document.body.classList.add('fontLoaded');
-}, () => {
-  document.body.classList.remove('fontLoaded');
 });
 
 // Create redux store with history
@@ -67,7 +52,7 @@ const history = createHistory();
 const store = configureStore(initialState, history);
 const MOUNT_NODE = document.getElementById('app');
 
-const render = (messages) => {
+const render = messages => {
   ReactDOM.render(
     <Provider store={store}>
       <LanguageProvider messages={messages}>
@@ -94,15 +79,17 @@ if (module.hot) {
 
 // Chunked polyfill for browsers without Intl support
 if (!window.Intl) {
-  (new Promise((resolve) => {
+  new Promise(resolve => {
     resolve(import('intl'));
-  }))
-    .then(() => Promise.all([
-      import('intl/locale-data/jsonp/en.js'),
-      import('intl/locale-data/jsonp/nl.js'),
-    ]))
+  })
+    .then(() =>
+      Promise.all([
+        import('intl/locale-data/jsonp/en.js'),
+        import('intl/locale-data/jsonp/nl.js'),
+      ]),
+    )
     .then(() => render(translationMessages))
-    .catch((err) => {
+    .catch(err => {
       throw err;
     });
 } else {

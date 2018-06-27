@@ -16,7 +16,7 @@ export default defineMessages({
   },
   success: {
     id: 'portfolio.components.SubmitButton.success',
-    defaultMessage: 'Sent! I\'ll respond as soon as possible',
+    defaultMessage: "Sent! I'll respond as soon as possible",
   },
   error: {
     id: 'portfolio.components.SubmitButton.error',

@@ -13,7 +13,7 @@ import {
 } from './constants';
 
 // The initial state of the App
-const initialState = fromJS({
+export const initialState = fromJS({
   siteWidth: 0,
   siteNavigation: {
     isAtScreenTop: false,
@@ -25,17 +25,19 @@ const initialState = fromJS({
 function appReducer(state = initialState, action) {
   switch (action.type) {
     case SET_SITE_NAVIGATION_TOP_POSITION:
-      return state
-        .setIn(['siteNavigation', 'topPosition'], action.topPosition);
+      return state.setIn(['siteNavigation', 'topPosition'], action.topPosition);
     case SET_SITE_NAVIGATION_OFFSET_HEIGHT:
-      return state
-        .setIn(['siteNavigation', 'offsetHeight'], action.offsetHeight);
+      return state.setIn(
+        ['siteNavigation', 'offsetHeight'],
+        action.offsetHeight,
+      );
     case SET_SITE_NAVIGATION_IS_AT_SCREEN_TOP:
-      return state
-        .setIn(['siteNavigation', 'isAtScreenTop'], action.isAtScreenTop);
+      return state.setIn(
+        ['siteNavigation', 'isAtScreenTop'],
+        action.isAtScreenTop,
+      );
     case SET_SITE_WIDTH:
-      return state
-        .set('siteWidth', action.width);
+      return state.set('siteWidth', action.width);
     default:
       return state;
   }

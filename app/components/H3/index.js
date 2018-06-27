@@ -13,7 +13,7 @@ const H3 = styled.h3`
   word-wrap: break-word;
   -ms-word-break: break-all;
   word-break: break-word;
-  ${BASE_FONT_BOLD}
+  ${BASE_FONT_BOLD};
 `;
 
 H3.propTypes = {

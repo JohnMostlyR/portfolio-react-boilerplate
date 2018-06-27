@@ -19,7 +19,12 @@ function IconEN(props) {
       <g filter="url(#icon-en-saturate)">
         <path d="M0,0 v30 h60 v-30 z" fill="#00247d" />
         <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6" />
-        <path d="M0,0 L60,30 M60,0 L0,30" clipPath="url(#t)" stroke="#cf142b" strokeWidth="4" />
+        <path
+          d="M0,0 L60,30 M60,0 L0,30"
+          clipPath="url(#t)"
+          stroke="#cf142b"
+          strokeWidth="4"
+        />
         <path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth="10" />
         <path d="M30,0 v30 M0,15 h60" stroke="#cf142b" strokeWidth="6" />
       </g>

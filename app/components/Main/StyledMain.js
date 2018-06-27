@@ -40,7 +40,7 @@ const StyledMain = styled.main.attrs({
     align-self: unset;
     display: grid;
     grid-area: main;
-    grid-template-areas: "mainContent";
+    grid-template-areas: 'mainContent';
     grid-template-rows: 1fr;
     justify-content: center;
     margin: 0;

@@ -36,16 +36,18 @@ describe('<LanguageMenu />', () => {
           changeLanguageHandler={changeLanguageHandler}
           toggleMenuHandler={toggleMenuHandler}
         />
-      </IntlProvider>
+      </IntlProvider>,
     );
 
-    expect(renderedComponent.contains(
-      <LanguageMenu
-        messages={messages}
-        changeLanguageHandler={changeLanguageHandler}
-        toggleMenuHandler={toggleMenuHandler}
-      />
-    )).toBe(true);
+    expect(
+      renderedComponent.contains(
+        <LanguageMenu
+          messages={messages}
+          changeLanguageHandler={changeLanguageHandler}
+          toggleMenuHandler={toggleMenuHandler}
+        />,
+      ),
+    ).toBe(true);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
@@ -59,26 +61,34 @@ describe('<LanguageMenu />', () => {
           changeLanguageHandler={changeLanguageHandler}
           toggleMenuHandler={toggleMenuHandler}
         />
-      </IntlProvider>
+      </IntlProvider>,
     );
 
-    expect(renderedComponent.contains(
-      <LanguageMenu
-        locales={['en', 'nl']}
-        messages={messages}
-        currentLocale="en"
-        changeLanguageHandler={changeLanguageHandler}
-        toggleMenuHandler={toggleMenuHandler}
-      />
-    )).toBe(true);
+    expect(
+      renderedComponent.contains(
+        <LanguageMenu
+          locales={['en', 'nl']}
+          messages={messages}
+          currentLocale="en"
+          changeLanguageHandler={changeLanguageHandler}
+          toggleMenuHandler={toggleMenuHandler}
+        />,
+      ),
+    ).toBe(true);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   describe('expanded state', () => {
     const PREVENT_DEFAULT = jest.fn();
-    const handleExpandedState = jest.spyOn(LanguageMenu.prototype, 'handleExpandedState');
+    const handleExpandedState = jest.spyOn(
+      LanguageMenu.prototype,
+      'handleExpandedState',
+    );
     const moveFocus = jest.spyOn(LanguageMenu.prototype, 'moveFocus');
-    let getFocusedMenuItem = jest.spyOn(LanguageMenu.prototype, 'getFocusedMenuItem');
+    let getFocusedMenuItem = jest.spyOn(
+      LanguageMenu.prototype,
+      'getFocusedMenuItem',
+    );
 
     describe('without focus on any menu item', () => {
       const renderedComponent = mountWithIntl(
@@ -89,12 +99,15 @@ describe('<LanguageMenu />', () => {
           messages={messages}
           changeLanguageHandler={changeLanguageHandler}
           toggleMenuHandler={toggleMenuHandler}
-        />
+        />,
       );
 
       it('should close/collapse the menu and set focus back to the open/close button', () => {
         const foundMenu = renderedComponent.find(Menu);
-        foundMenu.simulate('keyDown', { preventDefault: PREVENT_DEFAULT, keyCode: 27 });
+        foundMenu.simulate('keyDown', {
+          preventDefault: PREVENT_DEFAULT,
+          keyCode: 27,
+        });
         expect(PREVENT_DEFAULT).toHaveBeenCalledTimes(1);
         expect(getFocusedMenuItem).toHaveBeenCalledTimes(1);
         expect(toggleMenuHandler).toHaveBeenCalledTimes(1);
@@ -104,7 +117,7 @@ describe('<LanguageMenu />', () => {
     describe('with focus on one menu item', () => {
       getFocusedMenuItem = jest
         .spyOn(LanguageMenu.prototype, 'getFocusedMenuItem')
-        .mockImplementation((menuItems) => menuItems[0]);
+        .mockImplementation(menuItems => menuItems[0]);
 
       const renderedComponent = mountWithIntl(
         <LanguageMenu
@@ -114,7 +127,7 @@ describe('<LanguageMenu />', () => {
           messages={messages}
           changeLanguageHandler={changeLanguageHandler}
           toggleMenuHandler={toggleMenuHandler}
-        />
+        />,
       );
 
       beforeEach(() => {
@@ -128,7 +141,10 @@ describe('<LanguageMenu />', () => {
 
       it('should close/collapse the menu when the ESC key is pressed', () => {
         const foundMenu = renderedComponent.find(Menu);
-        foundMenu.simulate('keyDown', { preventDefault: PREVENT_DEFAULT, keyCode: 27 });
+        foundMenu.simulate('keyDown', {
+          preventDefault: PREVENT_DEFAULT,
+          keyCode: 27,
+        });
         expect(toggleMenuHandler).toHaveBeenCalledTimes(1);
       });
 

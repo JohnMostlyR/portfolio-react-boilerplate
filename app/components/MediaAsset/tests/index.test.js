@@ -26,9 +26,7 @@ describe('MediaAsset', () => {
 
   it('should adopt the "idOdd" prop', () => {
     const isOdd = false;
-    const wrapper = shallow(
-      <MediaAsset imageSource={fixture} isOdd={isOdd} />
-    );
+    const wrapper = shallow(<MediaAsset imageSource={fixture} isOdd={isOdd} />);
     expect(wrapper.prop('isOdd')).toBe(isOdd);
   });
 });

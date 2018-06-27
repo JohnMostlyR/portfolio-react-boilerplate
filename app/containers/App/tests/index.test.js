@@ -18,17 +18,20 @@ describe('<App />', () => {
   const history = createHistory();
   const store = configureStore(initialState, history);
   const componentDidMount = jest.spyOn(App.prototype, 'componentDidMount');
-  const componentWillUnmount = jest.spyOn(App.prototype, 'componentWillUnmount');
+  const componentWillUnmount = jest.spyOn(
+    App.prototype,
+    'componentWillUnmount',
+  );
   const renderedComponent = mount(
     <Provider store={store}>
-      <IntlProvider locale={'en'}>
+      <IntlProvider locale="en">
         <ConnectedRouter history={history}>
           <ThemeContext.Provider value={theme}>
             <App />
           </ThemeContext.Provider>
         </ConnectedRouter>
       </IntlProvider>
-    </Provider>
+    </Provider>,
   );
 
   afterEach(() => {
@@ -63,7 +66,9 @@ describe('<App />', () => {
         const isAtScreenTop = true;
         const props = mapDispatchToProps(dispatch);
         props.setSiteNavigationIsAtScreenTop(isAtScreenTop);
-        expect(dispatch).toHaveBeenCalledWith(setSiteNavigationIsAtScreenTop(isAtScreenTop));
+        expect(dispatch).toHaveBeenCalledWith(
+          setSiteNavigationIsAtScreenTop(isAtScreenTop),
+        );
       });
     });
 

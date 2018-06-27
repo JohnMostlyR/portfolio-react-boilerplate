@@ -2,16 +2,25 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { BASE_LINE_HEIGHT } from '../../styles/typography';
 
-export function renderMediaBreakpoints({ breakpoints = [], imageDimensions = [] }) {
+export function renderMediaBreakpoints({
+  breakpoints = [],
+  imageDimensions = [],
+}) {
   if (breakpoints.length !== imageDimensions.length) {
-    throw new Error(`Mismatch between the length of the breakpoints array, ${breakpoints.length} items, and the imageDimensions array, ${imageDimensions.length} items)`);
+    throw new Error(
+      `Mismatch between the length of the breakpoints array, ${
+        breakpoints.length
+      } items, and the imageDimensions array, ${imageDimensions.length} items)`,
+    );
   }
 
   const sliceOfBreakpoints = breakpoints.slice(0, -1);
   const sliceOfImageDimensions = imageDimensions.slice(1);
 
   return sliceOfBreakpoints.map((_breakpoint, idx) => {
-    const { media: { size } } = _breakpoint;
+    const {
+      media: { size },
+    } = _breakpoint;
     const { height } = sliceOfImageDimensions[idx];
 
     return `@media (min-width: ${size + 1}px) {
@@ -27,7 +36,7 @@ function getDefaultHeight(imageDimensions = []) {
   }
 
   const [{ height = 'auto' }] = imageDimensions;
-  return (height === 'auto') ? height : `${height}px`;
+  return height === 'auto' ? height : `${height}px`;
 }
 
 const ImageWrapper = styled.div`
@@ -36,7 +45,7 @@ const ImageWrapper = styled.div`
   width: 100%;
   text-align: center;
 
-  ${(props) => renderMediaBreakpoints(props)}
+  ${props => renderMediaBreakpoints(props)};
 `;
 
 ImageWrapper.propTypes = {
@@ -47,7 +56,7 @@ ImageWrapper.propTypes = {
         size: PropTypes.number,
       }),
       srcSet: PropTypes.string,
-    })
+    }),
   ),
   imageDimensions: PropTypes.array,
 };

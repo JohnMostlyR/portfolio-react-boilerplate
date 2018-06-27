@@ -1,85 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ExternalLink> should render and match the snapshot 1`] = `
-<StyledA__StyledA
+<StyledA
   color="inherit"
   href="#"
   rel="noopener noreferrer"
   target="_blank"
 >
   <IconExternalLink />
-  <Description__Description>
+  <Description>
     ExternalLink to
-  </Description__Description>
-</StyledA__StyledA>
+  </Description>
+</StyledA>
 `;
 
 exports[`<ExternalLink> with a given "faIcon" property should render with a "codepen" icon 1`] = `
-<StyledA__StyledA
+<StyledA
   color="inherit"
   href="#"
   rel="noopener noreferrer"
   target="_blank"
 >
   <IconCodepen />
-  <Description__Description>
+  <Description>
     ExternalLink to
-  </Description__Description>
-</StyledA__StyledA>
+  </Description>
+</StyledA>
 `;
 
 exports[`<ExternalLink> with a given "faIcon" property should render with a "free-code-camp" icon 1`] = `
-<StyledA__StyledA
+<StyledA
   color="inherit"
   href="#"
   rel="noopener noreferrer"
   target="_blank"
 >
   <IconFreeCodeCamp />
-  <Description__Description>
+  <Description>
     ExternalLink to
-  </Description__Description>
-</StyledA__StyledA>
+  </Description>
+</StyledA>
 `;
 
 exports[`<ExternalLink> with a given "faIcon" property should render with a "github" icon 1`] = `
-<StyledA__StyledA
+<StyledA
   color="inherit"
   href="#"
   rel="noopener noreferrer"
   target="_blank"
 >
   <IconGithub />
-  <Description__Description>
+  <Description>
     ExternalLink to
-  </Description__Description>
-</StyledA__StyledA>
+  </Description>
+</StyledA>
 `;
 
 exports[`<ExternalLink> with a given "faIcon" property should render with a "linkedin" icon 1`] = `
-<StyledA__StyledA
+<StyledA
   color="inherit"
   href="#"
   rel="noopener noreferrer"
   target="_blank"
 >
   <IconLinkedin />
-  <Description__Description>
+  <Description>
     ExternalLink to
-  </Description__Description>
-</StyledA__StyledA>
+  </Description>
+</StyledA>
 `;
 
 exports[`<ExternalLink> with a given "faIcon" property should render with a "linkedin-square" icon 1`] = `
-<StyledA__StyledA
+<StyledA
   color="inherit"
   href="#"
   rel="noopener noreferrer"
   target="_blank"
 >
   <IconLinkedin />
-  <Description__Description>
+  <Description>
     ExternalLink to
-  </Description__Description>
-</StyledA__StyledA>
+  </Description>
+</StyledA>
 `;

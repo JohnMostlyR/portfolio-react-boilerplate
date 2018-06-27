@@ -7,8 +7,7 @@ import { FormattedMessage, injectIntl, intlShape } from 'react-intl';
 import messages from './messages';
 import validateForm from './ValidateForm';
 
-import Form,
-{
+import Form, {
   Footer,
   InfoList,
   InfoListItem,
@@ -17,7 +16,14 @@ import Form,
   TextArea,
 } from '../../components/Form';
 
-function ContactForm({ fieldError, field, changeHandler, intl, onSubmitHandler, sendStatus }) {
+function ContactForm({
+  fieldError,
+  field,
+  changeHandler,
+  intl,
+  onSubmitHandler,
+  sendStatus,
+}) {
   const { subject, message, name, email } = field;
   let formIsInvalid = validateForm({ field, fieldError });
 
@@ -44,9 +50,11 @@ function ContactForm({ fieldError, field, changeHandler, intl, onSubmitHandler, 
               minLength={3}
               name="subject"
               changeHandler={changeHandler}
-              validate={(val) => (isLength(val, { min: 3, max: 50 }))
-                ? false
-                : intl.formatMessage(messages.subjectError)}
+              validate={val =>
+                isLength(val, { min: 3, max: 50 })
+                  ? false
+                  : intl.formatMessage(messages.subjectError)
+              }
               value={subject}
             />
             <TextArea
@@ -56,9 +64,11 @@ function ContactForm({ fieldError, field, changeHandler, intl, onSubmitHandler, 
               minLength={5}
               name="message"
               changeHandler={changeHandler}
-              validate={(val) => (isLength(val, { min: 5, max: 300 }))
-                ? false
-                : intl.formatMessage(messages.yourMessageError)}
+              validate={val =>
+                isLength(val, { min: 5, max: 300 })
+                  ? false
+                  : intl.formatMessage(messages.yourMessageError)
+              }
               value={message}
             />
             <Input
@@ -69,9 +79,11 @@ function ContactForm({ fieldError, field, changeHandler, intl, onSubmitHandler, 
               name="name"
               placeholder={intl.formatMessage(messages.namePlaceholder)}
               changeHandler={changeHandler}
-              validate={(val) => (isLength(val, { min: 2, max: 50 }))
-                ? false
-                : intl.formatMessage(messages.nameError)}
+              validate={val =>
+                isLength(val, { min: 2, max: 50 })
+                  ? false
+                  : intl.formatMessage(messages.nameError)
+              }
               value={name}
             />
             <Input
@@ -81,14 +93,17 @@ function ContactForm({ fieldError, field, changeHandler, intl, onSubmitHandler, 
               name="email"
               placeholder={intl.formatMessage(messages.emailPlaceholder)}
               changeHandler={changeHandler}
-              validate={(val) => (isEmail(val))
-                ? false
-                : intl.formatMessage(messages.emailError)}
+              validate={val =>
+                isEmail(val) ? false : intl.formatMessage(messages.emailError)
+              }
               value={email}
             />
           </div>
           <Footer>
-            <SubmitButton buttonState={sendStatus} formIsValid={!formIsInvalid} />
+            <SubmitButton
+              buttonState={sendStatus}
+              formIsValid={!formIsInvalid}
+            />
           </Footer>
         </div>
       </div>

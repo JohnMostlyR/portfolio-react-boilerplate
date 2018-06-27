@@ -71,8 +71,8 @@ exports[`<BigHeadGear /> should render and match the snapshot 1`] = `
         "portfolio.page.AboutPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
         "portfolio.page.NotFoundPage.contact": "contact",
         "portfolio.page.NotFoundPage.content": "I am sorry, but the page you requested does not exist or has been removed.
-    
-    Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
+
+Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
         "portfolio.page.NotFoundPage.home": "start",
         "portfolio.page.NotFoundPage.pageDescription": "The page you requested does not exist or has been removed. Sorry about that",
         "portfolio.page.NotFoundPage.pageTitle": "NOT FOUND",
@@ -170,8 +170,8 @@ exports[`<BigHeadGear /> should render and match the snapshot 1`] = `
           "portfolio.page.AboutPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
           "portfolio.page.NotFoundPage.contact": "contact",
           "portfolio.page.NotFoundPage.content": "I am sorry, but the page you requested does not exist or has been removed.
-      
-      Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
+
+Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
           "portfolio.page.NotFoundPage.home": "start",
           "portfolio.page.NotFoundPage.pageDescription": "The page you requested does not exist or has been removed. Sorry about that",
           "portfolio.page.NotFoundPage.pageTitle": "NOT FOUND",
@@ -255,7 +255,6 @@ exports[`<BigHeadGear /> should render and match the snapshot 1`] = `
           },
         ]
       }
-      onChangeClientState={[Function]}
       title="Johan Meester : Portfolio : Front-End Developer"
     >
       <SideEffect(NullComponent)
@@ -321,13 +320,12 @@ exports[`<BigHeadGear /> should render and match the snapshot 1`] = `
             },
           ]
         }
-        onChangeClientState={[Function]}
         script={
           Array [
             Object {
               "innerHTML": "
-                  !function(e, t, a, n, g) {e[n] = e[n] || [], e[n].push({'gtm.start': (new Date).getTime(), event: 'gtm.js'});var m = t.getElementsByTagName(a)[0], r = t.createElement(a);r.async = !0, r.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-PLVWW9F', m.parentNode.insertBefore(r, m);}(window, document, 'script', 'dataLayer');
-                ",
+        !function(e, t, a, n, g) {e[n] = e[n] || [], e[n].push({'gtm.start': (new Date).getTime(), event: 'gtm.js'});var m = t.getElementsByTagName(a)[0], r = t.createElement(a);r.async = !0, r.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-PLVWW9F', m.parentNode.insertBefore(r, m);}(window, document, 'script', 'dataLayer');
+      ",
             },
           ]
         }
@@ -396,13 +394,12 @@ exports[`<BigHeadGear /> should render and match the snapshot 1`] = `
               },
             ]
           }
-          onChangeClientState={[Function]}
           script={
             Array [
               Object {
                 "innerHTML": "
-                    !function(e, t, a, n, g) {e[n] = e[n] || [], e[n].push({'gtm.start': (new Date).getTime(), event: 'gtm.js'});var m = t.getElementsByTagName(a)[0], r = t.createElement(a);r.async = !0, r.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-PLVWW9F', m.parentNode.insertBefore(r, m);}(window, document, 'script', 'dataLayer');
-                  ",
+        !function(e, t, a, n, g) {e[n] = e[n] || [], e[n].push({'gtm.start': (new Date).getTime(), event: 'gtm.js'});var m = t.getElementsByTagName(a)[0], r = t.createElement(a);r.async = !0, r.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-PLVWW9F', m.parentNode.insertBefore(r, m);}(window, document, 'script', 'dataLayer');
+      ",
               },
             ]
           }

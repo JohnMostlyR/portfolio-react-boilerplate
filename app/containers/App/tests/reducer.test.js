@@ -1,4 +1,3 @@
-
 import { fromJS } from 'immutable';
 import appReducer from '../reducer';
 import {
@@ -29,23 +28,38 @@ describe('App Reducer', () => {
 
   it('should handle the setSiteNavigationTopPosition action correctly', () => {
     const fixture = 10;
-    const expectedResult = state.setIn(['siteNavigation', 'topPosition'], fixture);
+    const expectedResult = state.setIn(
+      ['siteNavigation', 'topPosition'],
+      fixture,
+    );
 
-    expect(appReducer(state, setSiteNavigationTopPosition(fixture))).toEqual(expectedResult);
+    expect(appReducer(state, setSiteNavigationTopPosition(fixture))).toEqual(
+      expectedResult,
+    );
   });
 
   it('should handle the setSiteNavigationOffsetHeight action correctly', () => {
     const fixture = 100;
-    const expectedResult = state.setIn(['siteNavigation', 'offsetHeight'], fixture);
+    const expectedResult = state.setIn(
+      ['siteNavigation', 'offsetHeight'],
+      fixture,
+    );
 
-    expect(appReducer(state, setSiteNavigationOffsetHeight(fixture))).toEqual(expectedResult);
+    expect(appReducer(state, setSiteNavigationOffsetHeight(fixture))).toEqual(
+      expectedResult,
+    );
   });
 
   it('should handle the setSiteNavigationIsAtScreenTop action correctly', () => {
     const fixture = true;
-    const expectedResult = state.setIn(['siteNavigation', 'isAtScreenTop'], fixture);
+    const expectedResult = state.setIn(
+      ['siteNavigation', 'isAtScreenTop'],
+      fixture,
+    );
 
-    expect(appReducer(state, setSiteNavigationIsAtScreenTop(fixture))).toEqual(expectedResult);
+    expect(appReducer(state, setSiteNavigationIsAtScreenTop(fixture))).toEqual(
+      expectedResult,
+    );
   });
 
   it('should handle the setSiteWidth action correctly', () => {

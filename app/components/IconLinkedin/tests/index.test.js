@@ -11,7 +11,9 @@ describe('<IconLinkedin />', () => {
   });
 
   it('should adopt props', () => {
-    const renderedComponent = shallow(<IconLinkedin height="99px" width="99px" color="green" />);
+    const renderedComponent = shallow(
+      <IconLinkedin height="99px" width="99px" color="green" />,
+    );
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 });

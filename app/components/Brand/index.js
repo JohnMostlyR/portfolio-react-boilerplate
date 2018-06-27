@@ -17,13 +17,15 @@ import Logo from '../../components/Logo';
 const Brand = ({ href, showNameBreakpoint }) => (
   <Wrapper>
     <FormattedMessage {...messages.title}>
-      {
-        (message) => (
-          <BrandLink href={href} showNameBreakpoint={showNameBreakpoint} title={message}>
-            <Logo showNameBreakpoint={showNameBreakpoint} />
-          </BrandLink>
-        )
-      }
+      {message => (
+        <BrandLink
+          href={href}
+          showNameBreakpoint={showNameBreakpoint}
+          title={message}
+        >
+          <Logo showNameBreakpoint={showNameBreakpoint} />
+        </BrandLink>
+      )}
     </FormattedMessage>
   </Wrapper>
 );

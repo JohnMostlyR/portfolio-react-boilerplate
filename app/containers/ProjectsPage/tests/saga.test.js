@@ -33,7 +33,9 @@ describe('getContent Saga', () => {
   it('should dispatch the contentLoaded action if it requests the data successfully', () => {
     const response = contentfulResponse;
     const putDescriptor = getContentGenerator.next(response).value;
-    expect(putDescriptor).toEqual(put(contentLoaded(parsedContentfulData, locale)));
+    expect(putDescriptor).toEqual(
+      put(contentLoaded(parsedContentfulData, locale)),
+    );
   });
 
   it('should call the contentLoadingError action if the response errors', () => {
@@ -121,7 +123,8 @@ describe('parseContent', () => {
               locale: 'en-US',
             },
             fields: {
-              title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+              title:
+                'Presentation showing how this project looks on mobile, tablet and desktop screens',
               file: {
                 url: '/medium-m.png',
                 details: {
@@ -160,7 +163,8 @@ describe('parseContent', () => {
               locale: 'en-US',
             },
             fields: {
-              title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+              title:
+                'Presentation showing how this project looks on mobile, tablet and desktop screens',
               file: {
                 url: '/medium-m.png',
                 details: {
@@ -198,7 +202,8 @@ describe('parseContent', () => {
             fileName: 'medium-m.png',
             url: '/medium-m.png',
           },
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
         },
         title: 'This is the title field for Project 1',
       },
@@ -220,7 +225,8 @@ describe('parseContent', () => {
             fileName: 'medium-m.png',
             url: '/medium-m.png',
           },
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
         },
         title: 'This is the title field for Project 2',
       },
@@ -290,7 +296,8 @@ describe('parseContent', () => {
               locale: 'en-US',
             },
             fields: {
-              title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+              title:
+                'Presentation showing how this project looks on mobile, tablet and desktop screens',
               file: {
                 url: '/medium-m.png',
                 details: {
@@ -329,7 +336,8 @@ describe('parseContent', () => {
               locale: 'en-US',
             },
             fields: {
-              title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+              title:
+                'Presentation showing how this project looks on mobile, tablet and desktop screens',
               file: {
                 url: '/medium-m.png',
                 details: {
@@ -367,7 +375,8 @@ describe('parseContent', () => {
             fileName: 'medium-m.png',
             url: '/medium-m.png',
           },
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
         },
         title: 'This is the title field for Project 1',
       },
@@ -389,7 +398,8 @@ describe('parseContent', () => {
             fileName: 'medium-m.png',
             url: '/medium-m.png',
           },
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
         },
         title: 'This is the title field for Project 2',
       },
@@ -459,7 +469,8 @@ describe('parseContent', () => {
               locale: 'en-US',
             },
             fields: {
-              title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+              title:
+                'Presentation showing how this project looks on mobile, tablet and desktop screens',
               file: {
                 url: '/medium-m.png',
                 details: {
@@ -498,7 +509,8 @@ describe('parseContent', () => {
               locale: 'en-US',
             },
             fields: {
-              title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+              title:
+                'Presentation showing how this project looks on mobile, tablet and desktop screens',
               file: {
                 url: '/medium-m.png',
                 details: {
@@ -536,7 +548,8 @@ describe('parseContent', () => {
             fileName: 'medium-m.png',
             url: '/medium-m.png',
           },
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
         },
         title: 'This is the title field for Project 2',
       },
@@ -558,7 +571,8 @@ describe('parseContent', () => {
             fileName: 'medium-m.png',
             url: '/medium-m.png',
           },
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
         },
         title: 'This is the title field for Project 1',
       },
@@ -649,7 +663,8 @@ describe('parseContent', () => {
               locale: 'en-US',
             },
             fields: {
-              title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+              title:
+                'Presentation showing how this project looks on mobile, tablet and desktop screens',
               file: {
                 url: '/medium-m.png',
                 details: {
@@ -687,7 +702,8 @@ describe('parseContent', () => {
             fileName: 'medium-m.png',
             url: '/medium-m.png',
           },
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
         },
         title: 'This is the title field for Project 1',
       },

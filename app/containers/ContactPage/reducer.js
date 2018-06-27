@@ -5,13 +5,9 @@
  */
 
 import { fromJS } from 'immutable';
-import {
-  SEND_FORM,
-  SEND_FORM_ERROR,
-  SEND_FORM_SUCCESS,
-} from './constants';
+import { SEND_FORM, SEND_FORM_ERROR, SEND_FORM_SUCCESS } from './constants';
 
-const initialState = fromJS({
+export const initialState = fromJS({
   loading: false,
   error: {},
   sendStatus: 'idle',
@@ -31,18 +27,14 @@ function contactPageReducer(state = initialState, action) {
         .set('field', action.field)
         .set('sendStatus', action.status);
     case SEND_FORM_SUCCESS:
-      return state
-        .set('sendStatus', action.status)
-        .set('field', {
-          subject: '',
-          message: '',
-          name: '',
-          email: '',
-        });
+      return state.set('sendStatus', action.status).set('field', {
+        subject: '',
+        message: '',
+        name: '',
+        email: '',
+      });
     case SEND_FORM_ERROR:
-      return state
-        .set('sendStatus', action.status)
-        .set('error', action.error);
+      return state.set('sendStatus', action.status).set('error', action.error);
     default:
       return state;
   }

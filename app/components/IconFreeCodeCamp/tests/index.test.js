@@ -11,7 +11,9 @@ describe('<IconFreeCodeCamp />', () => {
   });
 
   it('should adopt props', () => {
-    const renderedComponent = shallow(<IconFreeCodeCamp height="99px" width="99px" color="green" />);
+    const renderedComponent = shallow(
+      <IconFreeCodeCamp height="99px" width="99px" color="green" />,
+    );
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 });

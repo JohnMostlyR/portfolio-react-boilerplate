@@ -4,9 +4,7 @@ import PropTypes from 'prop-types';
 import StyledArticle from './StyledArticle';
 
 function Article({ loadingContent, ...props }) {
-  return (
-    <StyledArticle {...props} loadingContent={loadingContent} />
-  );
+  return <StyledArticle {...props} loadingContent={loadingContent} />;
 }
 
 Article.propTypes = {

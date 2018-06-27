@@ -4,11 +4,7 @@
  *
  */
 
-import {
-  SEND_FORM,
-  SEND_FORM_SUCCESS,
-  SEND_FORM_ERROR,
-} from './constants';
+import { SEND_FORM, SEND_FORM_SUCCESS, SEND_FORM_ERROR } from './constants';
 
 export function sendForm(field) {
   return {
