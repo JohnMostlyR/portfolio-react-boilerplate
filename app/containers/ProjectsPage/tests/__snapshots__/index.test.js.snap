@@ -2,18 +2,25 @@
 
 exports[`<ProjectsPage /> Expect to render and match the snapshot 1`] = `
 <React.Fragment>
-  <HelmetWrapper
-    defer={true}
-    encodeSpecialCharacters={true}
-  >
-    <title>
-      Mijn projecten
-    </title>
-    <meta
-      content="Mijn projecten pagina van Johan Meester zijn portfolio"
-      name="description"
-    />
-  </HelmetWrapper>
+  <InjectIntl(HeadGear)
+    messages={
+      Object {
+        "metaDescription": Object {
+          "defaultMessage": "This is an overview of my projects. Projects are sorted by date with the most recent on top",
+          "id": "portfolio.page.ProjectsPage.meta.description",
+        },
+        "pageTitle": Object {
+          "defaultMessage": "MY PROJECTS",
+          "id": "portfolio.page.ProjectsPage.pageTitle",
+        },
+        "title": Object {
+          "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "id": "portfolio.page.ProjectsPage.title",
+        },
+      }
+    }
+    path="/projects"
+  />
   <PageContent
     content={
       <Projects
@@ -74,13 +81,14 @@ exports[`<ProjectsPage /> Expect to render and match the snapshot 1`] = `
             },
           ]
         }
+        search=""
       />
     }
     noSpeechBubble={true}
     title={
       <FormattedMessage
         defaultMessage="MY PROJECTS"
-        id="portfolio.page.projects.title"
+        id="portfolio.page.ProjectsPage.pageTitle"
         values={Object {}}
       />
     }
@@ -90,18 +98,25 @@ exports[`<ProjectsPage /> Expect to render and match the snapshot 1`] = `
 
 exports[`<ProjectsPage /> details page Should handle case where a non existent details page is requested 1`] = `
 <React.Fragment>
-  <HelmetWrapper
-    defer={true}
-    encodeSpecialCharacters={true}
-  >
-    <title>
-      Mijn projecten
-    </title>
-    <meta
-      content="Mijn projecten pagina van Johan Meester zijn portfolio"
-      name="description"
-    />
-  </HelmetWrapper>
+  <InjectIntl(HeadGear)
+    messages={
+      Object {
+        "metaDescription": Object {
+          "defaultMessage": "This is an overview of my projects. Projects are sorted by date with the most recent on top",
+          "id": "portfolio.page.ProjectsPage.meta.description",
+        },
+        "pageTitle": Object {
+          "defaultMessage": "MY PROJECTS",
+          "id": "portfolio.page.ProjectsPage.pageTitle",
+        },
+        "title": Object {
+          "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "id": "portfolio.page.ProjectsPage.title",
+        },
+      }
+    }
+    path="/projects/nothing-here"
+  />
   <PageContent
     content={
       <Projects
@@ -162,13 +177,14 @@ exports[`<ProjectsPage /> details page Should handle case where a non existent d
             },
           ]
         }
+        search=""
       />
     }
     noSpeechBubble={true}
     title={
       <FormattedMessage
         defaultMessage="MY PROJECTS"
-        id="portfolio.page.projects.title"
+        id="portfolio.page.ProjectsPage.pageTitle"
         values={Object {}}
       />
     }
@@ -178,73 +194,95 @@ exports[`<ProjectsPage /> details page Should handle case where a non existent d
 
 exports[`<ProjectsPage /> details page Should render the details page when requested 1`] = `
 <React.Fragment>
-  <HelmetWrapper
-    defer={true}
-    encodeSpecialCharacters={true}
-  >
-    <title>
-      Mijn projecten
-    </title>
-    <meta
-      content="Mijn projecten pagina van Johan Meester zijn portfolio"
-      name="description"
-    />
-  </HelmetWrapper>
-  <ProjectDetails
-    project={
+  <InjectIntl(HeadGear)
+    messages={
       Object {
-        "article": "# Article for test case
-      
-      [add attributes to link](https://the.world/)
-      ",
-        "description": "Description for test case",
-        "images": Array [
-          Object {
-            "file": Object {
-              "fileName": "test-s.png",
-              "url": "/test-s.png",
-            },
-            "title": "Test image",
-          },
-          Object {
-            "file": Object {
-              "fileName": "test-m.png",
-              "url": "/test-m.png",
-            },
-            "title": "Test image",
-          },
-          Object {
-            "file": Object {
-              "fileName": "test-l.png",
-              "url": "/test-l.png",
-            },
-            "title": "Test image",
-          },
-          Object {
-            "file": Object {
-              "fileName": "test-xl.png",
-              "url": "/test-xl.png",
-            },
-            "title": "Test image",
-          },
-        ],
-        "thumbnail": Object {
-          "file": Object {
-            "contentType": "image/png",
-            "details": Object {
-              "image": Object {
-                "height": 230,
-                "width": 345,
-              },
-              "size": 22495,
-            },
-            "fileName": "test-m.png",
-            "url": "/test-m.png",
-          },
-          "title": "Test image",
+        "metaDescription": Object {
+          "defaultMessage": "This is an overview of my projects. Projects are sorted by date with the most recent on top",
+          "id": "portfolio.page.ProjectsPage.meta.description",
         },
-        "title": "Title for test case",
+        "pageTitle": Object {
+          "defaultMessage": "MY PROJECTS",
+          "id": "portfolio.page.ProjectsPage.pageTitle",
+        },
+        "title": Object {
+          "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "id": "portfolio.page.ProjectsPage.title",
+        },
       }
+    }
+    path="/projects/title-for-test-case"
+  />
+  <PageContent
+    content={
+      <Projects
+        projects={
+          Array [
+            Object {
+              "article": "# Article for test case
+          
+          [add attributes to link](https://the.world/)
+          ",
+              "description": "Description for test case",
+              "images": Array [
+                Object {
+                  "file": Object {
+                    "fileName": "test-s.png",
+                    "url": "/test-s.png",
+                  },
+                  "title": "Test image",
+                },
+                Object {
+                  "file": Object {
+                    "fileName": "test-m.png",
+                    "url": "/test-m.png",
+                  },
+                  "title": "Test image",
+                },
+                Object {
+                  "file": Object {
+                    "fileName": "test-l.png",
+                    "url": "/test-l.png",
+                  },
+                  "title": "Test image",
+                },
+                Object {
+                  "file": Object {
+                    "fileName": "test-xl.png",
+                    "url": "/test-xl.png",
+                  },
+                  "title": "Test image",
+                },
+              ],
+              "thumbnail": Object {
+                "file": Object {
+                  "contentType": "image/png",
+                  "details": Object {
+                    "image": Object {
+                      "height": 230,
+                      "width": 345,
+                    },
+                    "size": 22495,
+                  },
+                  "fileName": "test-m.png",
+                  "url": "/test-m.png",
+                },
+                "title": "Test image",
+              },
+              "title": "Title for test case",
+            },
+          ]
+        }
+        search=""
+      />
+    }
+    noSpeechBubble={true}
+    title={
+      <FormattedMessage
+        defaultMessage="MY PROJECTS"
+        id="portfolio.page.ProjectsPage.pageTitle"
+        values={Object {}}
+      />
     }
   />
 </React.Fragment>
@@ -252,36 +290,50 @@ exports[`<ProjectsPage /> details page Should render the details page when reque
 
 exports[`<ProjectsPage /> fetching content from external source should handle case where no content is received 1`] = `
 <React.Fragment>
-  <HelmetWrapper
-    defer={true}
-    encodeSpecialCharacters={true}
-  >
-    <title>
-      Mijn projecten
-    </title>
-    <meta
-      content="Mijn projecten pagina van Johan Meester zijn portfolio"
-      name="description"
-    />
-  </HelmetWrapper>
+  <InjectIntl(HeadGear)
+    messages={
+      Object {
+        "metaDescription": Object {
+          "defaultMessage": "This is an overview of my projects. Projects are sorted by date with the most recent on top",
+          "id": "portfolio.page.ProjectsPage.meta.description",
+        },
+        "pageTitle": Object {
+          "defaultMessage": "MY PROJECTS",
+          "id": "portfolio.page.ProjectsPage.pageTitle",
+        },
+        "title": Object {
+          "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "id": "portfolio.page.ProjectsPage.title",
+        },
+      }
+    }
+    path="blank"
+  />
   <React.Fragment />
 </React.Fragment>
 `;
 
 exports[`<ProjectsPage /> fetching content from external source should show an error message when content could not be loaded 1`] = `
 <React.Fragment>
-  <HelmetWrapper
-    defer={true}
-    encodeSpecialCharacters={true}
-  >
-    <title>
-      Mijn projecten
-    </title>
-    <meta
-      content="Mijn projecten pagina van Johan Meester zijn portfolio"
-      name="description"
-    />
-  </HelmetWrapper>
+  <InjectIntl(HeadGear)
+    messages={
+      Object {
+        "metaDescription": Object {
+          "defaultMessage": "This is an overview of my projects. Projects are sorted by date with the most recent on top",
+          "id": "portfolio.page.ProjectsPage.meta.description",
+        },
+        "pageTitle": Object {
+          "defaultMessage": "MY PROJECTS",
+          "id": "portfolio.page.ProjectsPage.pageTitle",
+        },
+        "title": Object {
+          "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "id": "portfolio.page.ProjectsPage.title",
+        },
+      }
+    }
+    path="blank"
+  />
   <ContentLoadingIndicator
     show={true}
     showError={true}

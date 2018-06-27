@@ -8,15 +8,15 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   pageTitle: {
     id: 'portfolio.page.NotFoundPage.pageTitle',
-    defaultMessage: 'Not found : Johan Meester\'s portfolio',
+    defaultMessage: 'NOT FOUND',
   },
   pageDescription: {
     id: 'portfolio.page.NotFoundPage.pageDescription',
-    defaultMessage: 'Page not found.',
+    defaultMessage: 'The page you requested does not exist or has been removed. Sorry about that',
   },
   title: {
     id: 'portfolio.page.NotFoundPage.title',
-    defaultMessage: 'NOT FOUND',
+    defaultMessage: 'Johan Meester : Portfolio : Front-End Developer : {pageTitle}',
   },
   content: {
     id: 'portfolio.page.NotFoundPage.content',

@@ -27,6 +27,7 @@ class ProjectDetails extends React.PureComponent {
 
   render() {
     const {
+      backlink,
       project: {
         article,
         description,
@@ -47,7 +48,7 @@ class ProjectDetails extends React.PureComponent {
     return (
       <Wrapper>
         <ContentWrapper>
-          <BackLink />
+          <BackLink linkTo={backlink} />
           <SpeechBubble
             arrowHeight="9vh"
             arrowPosition={'bottom-right'}
@@ -64,7 +65,7 @@ class ProjectDetails extends React.PureComponent {
             }
             <Article>{reactElementsFromHTML}</Article>
           </SpeechBubble>
-          <BackLink position={'bottom'} />
+          <BackLink linkTo={backlink} position={'bottom'} />
         </ContentWrapper>
       </Wrapper>
     );
@@ -72,6 +73,7 @@ class ProjectDetails extends React.PureComponent {
 }
 
 ProjectDetails.propTypes = {
+  backlink: PropTypes.string.isRequired,
   project: PropTypes.shape({
     article: PropTypes.string,
     description: PropTypes.string.isRequired,

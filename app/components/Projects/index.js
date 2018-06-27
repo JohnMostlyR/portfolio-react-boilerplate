@@ -6,7 +6,7 @@ import ProjectsListItem from './ProjectsListItem';
 
 import Project from '../../components/Project';
 
-function Projects({ projects }) {
+function Projects({ projects, search }) {
   return (
     <React.Fragment>
       <ProjectsList>
@@ -16,6 +16,7 @@ function Projects({ projects }) {
               <Project
                 detailsBodyText={description}
                 isOdd={!(idx % 2)}
+                search={search}
                 thumbnail={thumbnail}
                 title={title}
               />
@@ -29,6 +30,7 @@ function Projects({ projects }) {
 
 Projects.propTypes = {
   projects: PropTypes.array,
+  search: PropTypes.string,
 };
 
 Projects.defaultProps = {

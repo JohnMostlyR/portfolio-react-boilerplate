@@ -12,9 +12,8 @@ import {
   setSiteNavigationOffsetHeight,
   setSiteNavigationTopPosition,
 } from '../../containers/App/actions';
-
+import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
 import Navigation from '../../components/Navigation';
-
 import getElementTop from '../../utils/getElementTop';
 
 class SiteNavigation extends React.PureComponent {
@@ -75,7 +74,7 @@ class SiteNavigation extends React.PureComponent {
   }
 
   render() {
-    const { bigScreenBreakpoint, isAtScreenTop, siteWidth, location } = this.props;
+    const { bigScreenBreakpoint, isAtScreenTop, siteWidth, locale, location } = this.props;
     const { isBigScreen, isExpanded } = this.state;
 
     return (
@@ -84,6 +83,7 @@ class SiteNavigation extends React.PureComponent {
         isAtScreenTop={isAtScreenTop || false}
         isBigScreen={isBigScreen}
         isExpanded={isExpanded}
+        locale={locale}
         location={location}
         navigationRef={(el) => { this.siteNavigation = el; }}
         siteWidth={siteWidth}
@@ -94,6 +94,7 @@ class SiteNavigation extends React.PureComponent {
 }
 
 SiteNavigation.propTypes = {
+  locale: PropTypes.string,
   location: PropTypes.object,
   bigScreenBreakpoint: PropTypes.number, // PIXELS!
   setTopPosition: PropTypes.func.isRequired,
@@ -114,6 +115,7 @@ export function mapDispatchToProps(dispatch) {
 }
 
 const mapStateToProps = createStructuredSelector({
+  locale: makeSelectLocale(),
   location: makeSelectLocation(),
   isAtScreenTop: makeSelectSiteNavigationIsAtScreenTop(),
   siteWidth: makeSelectSiteWidth(),

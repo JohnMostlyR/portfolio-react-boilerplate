@@ -20,6 +20,7 @@ import {
   makeSelectSiteNavigationOffsetHeight,
 } from './selectors';
 import { setSiteWidth, setSiteNavigationIsAtScreenTop } from './actions';
+import BigHeadGear from './BigHeadGear';
 
 import Main from '../../components/Main';
 import SiteHeader from '../../components/SiteHeader';
@@ -105,28 +106,32 @@ class App extends React.PureComponent { // eslint-disable-line react/prefer-stat
   /* eslint-enable no-underscore-dangle */
 
   render() {
+    const { locale, location } = this.props;
     return (
-      <Wrapper innerRef={(el) => { this.wrapper = el; }} lang={this.props.locale}>
-        <FormattedMessage {...messages.skipLink}>
-          {
-            (message) => <a href="#main" lang="en">{message}</a>
-          }
-        </FormattedMessage>
-        <h1 hidden aria-hidden="false"><FormattedMessage {...messages.title} /></h1>
-        <SiteHeader />
-        <SiteNavigation />
-        <Main mainRef={(el) => { this.main = el; }}>
-          <Switch location={this.props.location}>
-            <Route path="/introduction" component={HomePage} />
-            <Route path="/about" component={AboutPage} />
-            <Route path="/skills" component={SkillsPage} />
-            <Route path="/projects" component={ProjectsPage} />
-            <Route path="/contact" component={ContactPage} />
-            <Route exact path="/" render={() => <Redirect to="/introduction" />} />
-            <Route component={NotFoundPage} />
-          </Switch>
-        </Main>
-      </Wrapper>
+      <React.Fragment>
+        <BigHeadGear />
+        <Wrapper innerRef={(el) => { this.wrapper = el; }} lang={locale}>
+          <FormattedMessage {...messages.skipLink}>
+            {
+              (message) => <a href="#main">{message}</a>
+            }
+          </FormattedMessage>
+          <h1 hidden aria-hidden="false"><FormattedMessage {...messages.title} /></h1>
+          <SiteHeader />
+          <SiteNavigation />
+          <Main mainRef={(el) => { this.main = el; }}>
+            <Switch location={location}>
+              <Route path="/introduction" component={HomePage} />
+              <Route path="/about" component={AboutPage} />
+              <Route path="/skills" component={SkillsPage} />
+              <Route path="/projects" component={ProjectsPage} />
+              <Route path="/contact" component={ContactPage} />
+              <Route exact path="/" render={() => <Redirect to="/introduction" />} />
+              <Route component={NotFoundPage} />
+            </Switch>
+          </Main>
+        </Wrapper>
+      </React.Fragment>
     );
   }
 }

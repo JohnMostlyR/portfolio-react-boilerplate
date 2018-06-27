@@ -10,7 +10,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
-import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { Link } from 'react-router-dom';
@@ -22,6 +21,7 @@ import IntroHeader from './IntroHeader';
 import SpeechBubble from './SpeechBubble';
 import MyPicture from './itsme-trevi-rome.jpg';
 import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
+import HeadGear from '../../components/HeadGear';
 
 class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
@@ -181,12 +181,9 @@ class HomePage extends React.PureComponent { // eslint-disable-line react/prefer
   render() {
     return (
       <React.Fragment>
-        <Helmet>
-          <title>Welkom op Johan Meester zijn portfolio</title>
-          <meta name="description" content="Intro pagina van Johan Meester zijn portfolio" />
-        </Helmet>
+        <HeadGear messages={messages} path={'/introduction'} />
         <IntroHeader>
-          <h2 hidden aria-hidden="false"><FormattedMessage {...messages.title} /></h2>
+          <h2 hidden aria-hidden="false"><FormattedMessage {...messages.pageTitle} /></h2>
           <SpeechBubble
             innerRef={
               (d) => {

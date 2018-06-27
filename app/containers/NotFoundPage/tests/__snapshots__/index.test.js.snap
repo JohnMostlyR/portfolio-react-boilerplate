@@ -2,18 +2,6 @@
 
 exports[`<NotFoundPage /> should render and match the snapshot 1`] = `
 <React.Fragment>
-  <HelmetWrapper
-    defer={true}
-    encodeSpecialCharacters={true}
-  >
-    <title>
-      Niet gevonden
-    </title>
-    <meta
-      content="Niet gevonden pagina van Johan Meester zijn portfolio"
-      name="description"
-    />
-  </HelmetWrapper>
   <PageContent
     content={
       <FormattedMessage
@@ -42,7 +30,7 @@ exports[`<NotFoundPage /> should render and match the snapshot 1`] = `
     }
     title={
       <FormattedMessage
-        defaultMessage="NOT FOUND"
+        defaultMessage="Johan Meester : Portfolio : Front-End Developer : {pageTitle}"
         id="portfolio.page.NotFoundPage.title"
         values={Object {}}
       />

@@ -1,0 +1,378 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeadGear /> should render and match the snapshot 1`] = `
+<InjectIntl(HeadGear)
+  intl={
+    Object {
+      "defaultFormats": Object {},
+      "defaultLocale": "en",
+      "formatDate": [Function],
+      "formatHTMLMessage": [Function],
+      "formatMessage": [Function],
+      "formatNumber": [Function],
+      "formatPlural": [Function],
+      "formatRelative": [Function],
+      "formatTime": [Function],
+      "formats": Object {},
+      "formatters": Object {
+        "getDateTimeFormat": [Function],
+        "getMessageFormat": [Function],
+        "getNumberFormat": [Function],
+        "getPluralFormat": [Function],
+        "getRelativeFormat": [Function],
+      },
+      "locale": "en",
+      "messages": Object {
+        "portfolio.component.BrandLink.title": "← Back to the homepage",
+        "portfolio.component.ContentLoadingIndicator.error": "Terribly sorry, but the content cannot be loaded at this time",
+        "portfolio.component.ContentLoadingIndicator.pastDelay": "Loading content",
+        "portfolio.component.ContentLoadingIndicator.timedOut": "Loading is taking longer than expected",
+        "portfolio.components.Form.helperText.range": "Should be between {minLength, number} and {maxLength, number} characters. Is now: {count, number}",
+        "portfolio.components.Form.helperText.valid": "Thanks!",
+        "portfolio.components.LanguageMenu.buttonLabel": "Language",
+        "portfolio.components.LanguageMenu.label": "Choose a Language",
+        "portfolio.components.LanguageMenu.title": "Language menu",
+        "portfolio.components.Project.detailsLink": "More details →",
+        "portfolio.components.ProjectDetails.backLink": "← Back to Projects",
+        "portfolio.components.SubmitButton.error": "Failed. Please try again",
+        "portfolio.components.SubmitButton.idle": "Send",
+        "portfolio.components.SubmitButton.sending": "Sending...",
+        "portfolio.components.SubmitButton.success": "Sent! I'll respond as soon as possible",
+        "portfolio.containers.ContactPage.emailError": "Your email address is required.",
+        "portfolio.containers.ContactPage.emailLabel": "Your email address",
+        "portfolio.containers.ContactPage.emailPlaceholder": "(e.g. my@email.com)",
+        "portfolio.containers.ContactPage.emailText": "Please add your email address here.",
+        "portfolio.containers.ContactPage.meta.description": "For contacting me, please fill in this form. I will respond as soon as possible",
+        "portfolio.containers.ContactPage.nameError": "Your name is required.",
+        "portfolio.containers.ContactPage.nameLabel": "Your name",
+        "portfolio.containers.ContactPage.namePlaceholder": "(e.g. John Doo)",
+        "portfolio.containers.ContactPage.nameText": "Please add your name here.",
+        "portfolio.containers.ContactPage.pageTitle": "CONTACT FORM",
+        "portfolio.containers.ContactPage.requirementOne": "Please fill in all fields",
+        "portfolio.containers.ContactPage.subjectError": "A subject is required.",
+        "portfolio.containers.ContactPage.subjectLabel": "Subject",
+        "portfolio.containers.ContactPage.subjectText": "Please provide a subject for your message.",
+        "portfolio.containers.ContactPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+        "portfolio.containers.ContactPage.yourMessageError": "A message is required.",
+        "portfolio.containers.ContactPage.yourMessageLabel": "Your message",
+        "portfolio.containers.ContactPage.yourMessageText": "Please add your message here.",
+        "portfolio.meta.description": "This is the portfolio website of Johan Meester. An Amsterdam based Front-End Developer specialized in React JS",
+        "portfolio.meta.siteName": "Johan Meester : Portfolio",
+        "portfolio.nav.about": "About",
+        "portfolio.nav.contact": "Contact",
+        "portfolio.nav.header": "Site navigation",
+        "portfolio.nav.home": "Intro",
+        "portfolio.nav.projects": "Projects",
+        "portfolio.nav.showMenuButton": "MENU",
+        "portfolio.nav.skills": "Skills",
+        "portfolio.noscript": "If you are seeing this message, that means that JavaScript has been disabled on your browser. Please enable JavaScript to make this app work.",
+        "portfolio.page.AboutPage.meta.description": "A short description about me and my professional life",
+        "portfolio.page.AboutPage.pageTitle": "ABOUT ME",
+        "portfolio.page.AboutPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+        "portfolio.page.NotFoundPage.contact": "contact",
+        "portfolio.page.NotFoundPage.content": "I am sorry, but the page you requested does not exist or has been removed.
+    
+    Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
+        "portfolio.page.NotFoundPage.home": "start",
+        "portfolio.page.NotFoundPage.pageDescription": "The page you requested does not exist or has been removed. Sorry about that",
+        "portfolio.page.NotFoundPage.pageTitle": "NOT FOUND",
+        "portfolio.page.NotFoundPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+        "portfolio.page.ProjectsPage.meta.description": "This is an overview of my projects. Projects are sorted by date with the most recent on top",
+        "portfolio.page.ProjectsPage.pageTitle": "MY PROJECTS",
+        "portfolio.page.ProjectsPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+        "portfolio.page.SkillsPage.meta.description": "A brief overview of my professional skills",
+        "portfolio.page.SkillsPage.pageTitle": "MY SKILLS",
+        "portfolio.page.SkillsPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+        "portfolio.page.index.header.callToAction": "CONTACT ME",
+        "portfolio.page.index.header.greeting": "WELCOME",
+        "portfolio.page.index.header.intro": "I am {name}",
+        "portfolio.page.index.header.look": "HAVE A LOOK AROUND",
+        "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
+        "portfolio.page.index.meta.description": "Welcome to the portfolio of Johan Meester, Front-End Developer",
+        "portfolio.page.index.pageTitle": "INTRODUCTION",
+        "portfolio.page.index.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+        "portfolio.skiplink": "skip to main content",
+        "portfolio.social_links.header": "Also find me on:",
+        "portfolio.title": "Johan Meester : Portfolio : Front-End Developer",
+      },
+      "now": [Function],
+      "textComponent": "span",
+    }
+  }
+  messages={
+    Object {
+      "metaDescription": Object {
+        "defaultMessage": "Some description",
+        "id": "test.meta.description",
+      },
+      "pageTitle": Object {
+        "defaultMessage": "Page",
+        "id": "test.pageTitle",
+      },
+      "title": Object {
+        "defaultMessage": "Title : {pageTitle}",
+        "id": "test.title",
+      },
+    }
+  }
+  path="/test"
+>
+  <HeadGear
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en",
+        "messages": Object {
+          "portfolio.component.BrandLink.title": "← Back to the homepage",
+          "portfolio.component.ContentLoadingIndicator.error": "Terribly sorry, but the content cannot be loaded at this time",
+          "portfolio.component.ContentLoadingIndicator.pastDelay": "Loading content",
+          "portfolio.component.ContentLoadingIndicator.timedOut": "Loading is taking longer than expected",
+          "portfolio.components.Form.helperText.range": "Should be between {minLength, number} and {maxLength, number} characters. Is now: {count, number}",
+          "portfolio.components.Form.helperText.valid": "Thanks!",
+          "portfolio.components.LanguageMenu.buttonLabel": "Language",
+          "portfolio.components.LanguageMenu.label": "Choose a Language",
+          "portfolio.components.LanguageMenu.title": "Language menu",
+          "portfolio.components.Project.detailsLink": "More details →",
+          "portfolio.components.ProjectDetails.backLink": "← Back to Projects",
+          "portfolio.components.SubmitButton.error": "Failed. Please try again",
+          "portfolio.components.SubmitButton.idle": "Send",
+          "portfolio.components.SubmitButton.sending": "Sending...",
+          "portfolio.components.SubmitButton.success": "Sent! I'll respond as soon as possible",
+          "portfolio.containers.ContactPage.emailError": "Your email address is required.",
+          "portfolio.containers.ContactPage.emailLabel": "Your email address",
+          "portfolio.containers.ContactPage.emailPlaceholder": "(e.g. my@email.com)",
+          "portfolio.containers.ContactPage.emailText": "Please add your email address here.",
+          "portfolio.containers.ContactPage.meta.description": "For contacting me, please fill in this form. I will respond as soon as possible",
+          "portfolio.containers.ContactPage.nameError": "Your name is required.",
+          "portfolio.containers.ContactPage.nameLabel": "Your name",
+          "portfolio.containers.ContactPage.namePlaceholder": "(e.g. John Doo)",
+          "portfolio.containers.ContactPage.nameText": "Please add your name here.",
+          "portfolio.containers.ContactPage.pageTitle": "CONTACT FORM",
+          "portfolio.containers.ContactPage.requirementOne": "Please fill in all fields",
+          "portfolio.containers.ContactPage.subjectError": "A subject is required.",
+          "portfolio.containers.ContactPage.subjectLabel": "Subject",
+          "portfolio.containers.ContactPage.subjectText": "Please provide a subject for your message.",
+          "portfolio.containers.ContactPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "portfolio.containers.ContactPage.yourMessageError": "A message is required.",
+          "portfolio.containers.ContactPage.yourMessageLabel": "Your message",
+          "portfolio.containers.ContactPage.yourMessageText": "Please add your message here.",
+          "portfolio.meta.description": "This is the portfolio website of Johan Meester. An Amsterdam based Front-End Developer specialized in React JS",
+          "portfolio.meta.siteName": "Johan Meester : Portfolio",
+          "portfolio.nav.about": "About",
+          "portfolio.nav.contact": "Contact",
+          "portfolio.nav.header": "Site navigation",
+          "portfolio.nav.home": "Intro",
+          "portfolio.nav.projects": "Projects",
+          "portfolio.nav.showMenuButton": "MENU",
+          "portfolio.nav.skills": "Skills",
+          "portfolio.noscript": "If you are seeing this message, that means that JavaScript has been disabled on your browser. Please enable JavaScript to make this app work.",
+          "portfolio.page.AboutPage.meta.description": "A short description about me and my professional life",
+          "portfolio.page.AboutPage.pageTitle": "ABOUT ME",
+          "portfolio.page.AboutPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "portfolio.page.NotFoundPage.contact": "contact",
+          "portfolio.page.NotFoundPage.content": "I am sorry, but the page you requested does not exist or has been removed.
+      
+      Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
+          "portfolio.page.NotFoundPage.home": "start",
+          "portfolio.page.NotFoundPage.pageDescription": "The page you requested does not exist or has been removed. Sorry about that",
+          "portfolio.page.NotFoundPage.pageTitle": "NOT FOUND",
+          "portfolio.page.NotFoundPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "portfolio.page.ProjectsPage.meta.description": "This is an overview of my projects. Projects are sorted by date with the most recent on top",
+          "portfolio.page.ProjectsPage.pageTitle": "MY PROJECTS",
+          "portfolio.page.ProjectsPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "portfolio.page.SkillsPage.meta.description": "A brief overview of my professional skills",
+          "portfolio.page.SkillsPage.pageTitle": "MY SKILLS",
+          "portfolio.page.SkillsPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "portfolio.page.index.header.callToAction": "CONTACT ME",
+          "portfolio.page.index.header.greeting": "WELCOME",
+          "portfolio.page.index.header.intro": "I am {name}",
+          "portfolio.page.index.header.look": "HAVE A LOOK AROUND",
+          "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
+          "portfolio.page.index.meta.description": "Welcome to the portfolio of Johan Meester, Front-End Developer",
+          "portfolio.page.index.pageTitle": "INTRODUCTION",
+          "portfolio.page.index.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "portfolio.skiplink": "skip to main content",
+          "portfolio.social_links.header": "Also find me on:",
+          "portfolio.title": "Johan Meester : Portfolio : Front-End Developer",
+        },
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+    messages={
+      Object {
+        "metaDescription": Object {
+          "defaultMessage": "Some description",
+          "id": "test.meta.description",
+        },
+        "pageTitle": Object {
+          "defaultMessage": "Page",
+          "id": "test.pageTitle",
+        },
+        "title": Object {
+          "defaultMessage": "Title : {pageTitle}",
+          "id": "test.title",
+        },
+      }
+    }
+    path="/test"
+  >
+    <HelmetWrapper
+      defer={true}
+      encodeSpecialCharacters={true}
+      link={
+        Array [
+          Object {
+            "href": "https://meester-johan.info/test/",
+            "rel": "canonical",
+          },
+          Object {
+            "href": "https://meester-johan.info/test/",
+            "hreflang": "x-default",
+            "rel": "alternate",
+          },
+        ]
+      }
+      meta={
+        Array [
+          Object {
+            "content": "Some description",
+            "name": "description",
+          },
+          Object {
+            "content": "Some description",
+            "property": "og:description",
+          },
+          Object {
+            "content": "Title : Page",
+            "property": "og:title",
+          },
+          Object {
+            "content": "https://meester-johan.info/test/",
+            "property": "og.url",
+          },
+          Object {
+            "content": "Some description",
+            "property": "twitter:description",
+          },
+          Object {
+            "content": "Title : Page",
+            "property": "twitter:title",
+          },
+        ]
+      }
+      title="Title : Page"
+    >
+      <SideEffect(NullComponent)
+        defer={true}
+        encodeSpecialCharacters={true}
+        link={
+          Array [
+            Object {
+              "href": "https://meester-johan.info/test/",
+              "rel": "canonical",
+            },
+            Object {
+              "href": "https://meester-johan.info/test/",
+              "hreflang": "x-default",
+              "rel": "alternate",
+            },
+          ]
+        }
+        meta={
+          Array [
+            Object {
+              "content": "Some description",
+              "name": "description",
+            },
+            Object {
+              "content": "Some description",
+              "property": "og:description",
+            },
+            Object {
+              "content": "Title : Page",
+              "property": "og:title",
+            },
+            Object {
+              "content": "https://meester-johan.info/test/",
+              "property": "og.url",
+            },
+            Object {
+              "content": "Some description",
+              "property": "twitter:description",
+            },
+            Object {
+              "content": "Title : Page",
+              "property": "twitter:title",
+            },
+          ]
+        }
+        title="Title : Page"
+      >
+        <NullComponent
+          defer={true}
+          encodeSpecialCharacters={true}
+          link={
+            Array [
+              Object {
+                "href": "https://meester-johan.info/test/",
+                "rel": "canonical",
+              },
+              Object {
+                "href": "https://meester-johan.info/test/",
+                "hreflang": "x-default",
+                "rel": "alternate",
+              },
+            ]
+          }
+          meta={
+            Array [
+              Object {
+                "content": "Some description",
+                "name": "description",
+              },
+              Object {
+                "content": "Some description",
+                "property": "og:description",
+              },
+              Object {
+                "content": "Title : Page",
+                "property": "og:title",
+              },
+              Object {
+                "content": "https://meester-johan.info/test/",
+                "property": "og.url",
+              },
+              Object {
+                "content": "Some description",
+                "property": "twitter:description",
+              },
+              Object {
+                "content": "Title : Page",
+                "property": "twitter:title",
+              },
+            ]
+          }
+          title="Title : Page"
+        />
+      </SideEffect(NullComponent)>
+    </HelmetWrapper>
+  </HeadGear>
+</InjectIntl(HeadGear)>
+`;

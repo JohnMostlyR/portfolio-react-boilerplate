@@ -24,40 +24,211 @@ exports[`<SkillsPage /> fetching content from external source should handle case
       isLoading={false}
       skillsText={Array []}
     >
-      <HelmetWrapper
-        defer={true}
-        encodeSpecialCharacters={true}
-      >
-        <SideEffect(NullComponent)
-          defer={true}
-          encodeSpecialCharacters={true}
-          meta={
-            Array [
-              Object {
-                "content": "Mijn vaardigheden pagina van Johan Meester zijn portfolio",
-                "name": "description",
-              },
-            ]
+      <InjectIntl(HeadGear)
+        messages={
+          Object {
+            "metaDescription": Object {
+              "defaultMessage": "A brief overview of my professional skills",
+              "id": "portfolio.page.SkillsPage.meta.description",
+            },
+            "pageTitle": Object {
+              "defaultMessage": "MY SKILLS",
+              "id": "portfolio.page.SkillsPage.pageTitle",
+            },
+            "title": Object {
+              "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+              "id": "portfolio.page.SkillsPage.title",
+            },
           }
-          title="Mijn vaardigheden"
-          titleAttributes={Object {}}
+        }
+        path="/skills"
+      >
+        <HeadGear
+          intl={
+            Object {
+              "defaultFormats": Object {},
+              "defaultLocale": "en",
+              "formatDate": [Function],
+              "formatHTMLMessage": [Function],
+              "formatMessage": [Function],
+              "formatNumber": [Function],
+              "formatPlural": [Function],
+              "formatRelative": [Function],
+              "formatTime": [Function],
+              "formats": Object {},
+              "formatters": Object {
+                "getDateTimeFormat": [Function],
+                "getMessageFormat": [Function],
+                "getNumberFormat": [Function],
+                "getPluralFormat": [Function],
+                "getRelativeFormat": [Function],
+              },
+              "locale": "en",
+              "messages": Object {},
+              "now": [Function],
+              "textComponent": "span",
+            }
+          }
+          messages={
+            Object {
+              "metaDescription": Object {
+                "defaultMessage": "A brief overview of my professional skills",
+                "id": "portfolio.page.SkillsPage.meta.description",
+              },
+              "pageTitle": Object {
+                "defaultMessage": "MY SKILLS",
+                "id": "portfolio.page.SkillsPage.pageTitle",
+              },
+              "title": Object {
+                "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+                "id": "portfolio.page.SkillsPage.title",
+              },
+            }
+          }
+          path="/skills"
         >
-          <NullComponent
+          <HelmetWrapper
             defer={true}
             encodeSpecialCharacters={true}
-            meta={
+            link={
               Array [
                 Object {
-                  "content": "Mijn vaardigheden pagina van Johan Meester zijn portfolio",
-                  "name": "description",
+                  "href": "https://meester-johan.info/skills/",
+                  "rel": "canonical",
+                },
+                Object {
+                  "href": "https://meester-johan.info/skills/",
+                  "hreflang": "x-default",
+                  "rel": "alternate",
                 },
               ]
             }
-            title="Mijn vaardigheden"
-            titleAttributes={Object {}}
-          />
-        </SideEffect(NullComponent)>
-      </HelmetWrapper>
+            meta={
+              Array [
+                Object {
+                  "content": "A brief overview of my professional skills",
+                  "name": "description",
+                },
+                Object {
+                  "content": "A brief overview of my professional skills",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://meester-johan.info/skills/",
+                  "property": "og.url",
+                },
+                Object {
+                  "content": "A brief overview of my professional skills",
+                  "property": "twitter:description",
+                },
+                Object {
+                  "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                  "property": "twitter:title",
+                },
+              ]
+            }
+            title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
+          >
+            <SideEffect(NullComponent)
+              defer={true}
+              encodeSpecialCharacters={true}
+              link={
+                Array [
+                  Object {
+                    "href": "https://meester-johan.info/skills/",
+                    "rel": "canonical",
+                  },
+                  Object {
+                    "href": "https://meester-johan.info/skills/",
+                    "hreflang": "x-default",
+                    "rel": "alternate",
+                  },
+                ]
+              }
+              meta={
+                Array [
+                  Object {
+                    "content": "A brief overview of my professional skills",
+                    "name": "description",
+                  },
+                  Object {
+                    "content": "A brief overview of my professional skills",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://meester-johan.info/skills/",
+                    "property": "og.url",
+                  },
+                  Object {
+                    "content": "A brief overview of my professional skills",
+                    "property": "twitter:description",
+                  },
+                  Object {
+                    "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                    "property": "twitter:title",
+                  },
+                ]
+              }
+              title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
+            >
+              <NullComponent
+                defer={true}
+                encodeSpecialCharacters={true}
+                link={
+                  Array [
+                    Object {
+                      "href": "https://meester-johan.info/skills/",
+                      "rel": "canonical",
+                    },
+                    Object {
+                      "href": "https://meester-johan.info/skills/",
+                      "hreflang": "x-default",
+                      "rel": "alternate",
+                    },
+                  ]
+                }
+                meta={
+                  Array [
+                    Object {
+                      "content": "A brief overview of my professional skills",
+                      "name": "description",
+                    },
+                    Object {
+                      "content": "A brief overview of my professional skills",
+                      "property": "og:description",
+                    },
+                    Object {
+                      "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                      "property": "og:title",
+                    },
+                    Object {
+                      "content": "https://meester-johan.info/skills/",
+                      "property": "og.url",
+                    },
+                    Object {
+                      "content": "A brief overview of my professional skills",
+                      "property": "twitter:description",
+                    },
+                    Object {
+                      "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                      "property": "twitter:title",
+                    },
+                  ]
+                }
+                title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
+              />
+            </SideEffect(NullComponent)>
+          </HelmetWrapper>
+        </HeadGear>
+      </InjectIntl(HeadGear)>
     </SkillsPage>
   </IntlProvider>
 </Provider>
@@ -85,40 +256,211 @@ exports[`<SkillsPage /> fetching content from external source should show an err
       error={true}
       getContent={[Function]}
     >
-      <HelmetWrapper
-        defer={true}
-        encodeSpecialCharacters={true}
-      >
-        <SideEffect(NullComponent)
-          defer={true}
-          encodeSpecialCharacters={true}
-          meta={
-            Array [
-              Object {
-                "content": "Mijn vaardigheden pagina van Johan Meester zijn portfolio",
-                "name": "description",
-              },
-            ]
+      <InjectIntl(HeadGear)
+        messages={
+          Object {
+            "metaDescription": Object {
+              "defaultMessage": "A brief overview of my professional skills",
+              "id": "portfolio.page.SkillsPage.meta.description",
+            },
+            "pageTitle": Object {
+              "defaultMessage": "MY SKILLS",
+              "id": "portfolio.page.SkillsPage.pageTitle",
+            },
+            "title": Object {
+              "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+              "id": "portfolio.page.SkillsPage.title",
+            },
           }
-          title="Mijn vaardigheden"
-          titleAttributes={Object {}}
+        }
+        path="/skills"
+      >
+        <HeadGear
+          intl={
+            Object {
+              "defaultFormats": Object {},
+              "defaultLocale": "en",
+              "formatDate": [Function],
+              "formatHTMLMessage": [Function],
+              "formatMessage": [Function],
+              "formatNumber": [Function],
+              "formatPlural": [Function],
+              "formatRelative": [Function],
+              "formatTime": [Function],
+              "formats": Object {},
+              "formatters": Object {
+                "getDateTimeFormat": [Function],
+                "getMessageFormat": [Function],
+                "getNumberFormat": [Function],
+                "getPluralFormat": [Function],
+                "getRelativeFormat": [Function],
+              },
+              "locale": "en",
+              "messages": Object {},
+              "now": [Function],
+              "textComponent": "span",
+            }
+          }
+          messages={
+            Object {
+              "metaDescription": Object {
+                "defaultMessage": "A brief overview of my professional skills",
+                "id": "portfolio.page.SkillsPage.meta.description",
+              },
+              "pageTitle": Object {
+                "defaultMessage": "MY SKILLS",
+                "id": "portfolio.page.SkillsPage.pageTitle",
+              },
+              "title": Object {
+                "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+                "id": "portfolio.page.SkillsPage.title",
+              },
+            }
+          }
+          path="/skills"
         >
-          <NullComponent
+          <HelmetWrapper
             defer={true}
             encodeSpecialCharacters={true}
-            meta={
+            link={
               Array [
                 Object {
-                  "content": "Mijn vaardigheden pagina van Johan Meester zijn portfolio",
-                  "name": "description",
+                  "href": "https://meester-johan.info/skills/",
+                  "rel": "canonical",
+                },
+                Object {
+                  "href": "https://meester-johan.info/skills/",
+                  "hreflang": "x-default",
+                  "rel": "alternate",
                 },
               ]
             }
-            title="Mijn vaardigheden"
-            titleAttributes={Object {}}
-          />
-        </SideEffect(NullComponent)>
-      </HelmetWrapper>
+            meta={
+              Array [
+                Object {
+                  "content": "A brief overview of my professional skills",
+                  "name": "description",
+                },
+                Object {
+                  "content": "A brief overview of my professional skills",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://meester-johan.info/skills/",
+                  "property": "og.url",
+                },
+                Object {
+                  "content": "A brief overview of my professional skills",
+                  "property": "twitter:description",
+                },
+                Object {
+                  "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                  "property": "twitter:title",
+                },
+              ]
+            }
+            title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
+          >
+            <SideEffect(NullComponent)
+              defer={true}
+              encodeSpecialCharacters={true}
+              link={
+                Array [
+                  Object {
+                    "href": "https://meester-johan.info/skills/",
+                    "rel": "canonical",
+                  },
+                  Object {
+                    "href": "https://meester-johan.info/skills/",
+                    "hreflang": "x-default",
+                    "rel": "alternate",
+                  },
+                ]
+              }
+              meta={
+                Array [
+                  Object {
+                    "content": "A brief overview of my professional skills",
+                    "name": "description",
+                  },
+                  Object {
+                    "content": "A brief overview of my professional skills",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://meester-johan.info/skills/",
+                    "property": "og.url",
+                  },
+                  Object {
+                    "content": "A brief overview of my professional skills",
+                    "property": "twitter:description",
+                  },
+                  Object {
+                    "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                    "property": "twitter:title",
+                  },
+                ]
+              }
+              title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
+            >
+              <NullComponent
+                defer={true}
+                encodeSpecialCharacters={true}
+                link={
+                  Array [
+                    Object {
+                      "href": "https://meester-johan.info/skills/",
+                      "rel": "canonical",
+                    },
+                    Object {
+                      "href": "https://meester-johan.info/skills/",
+                      "hreflang": "x-default",
+                      "rel": "alternate",
+                    },
+                  ]
+                }
+                meta={
+                  Array [
+                    Object {
+                      "content": "A brief overview of my professional skills",
+                      "name": "description",
+                    },
+                    Object {
+                      "content": "A brief overview of my professional skills",
+                      "property": "og:description",
+                    },
+                    Object {
+                      "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                      "property": "og:title",
+                    },
+                    Object {
+                      "content": "https://meester-johan.info/skills/",
+                      "property": "og.url",
+                    },
+                    Object {
+                      "content": "A brief overview of my professional skills",
+                      "property": "twitter:description",
+                    },
+                    Object {
+                      "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                      "property": "twitter:title",
+                    },
+                  ]
+                }
+                title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
+              />
+            </SideEffect(NullComponent)>
+          </HelmetWrapper>
+        </HeadGear>
+      </InjectIntl(HeadGear)>
       <ContentLoadingIndicator
         show={true}
         showError={true}
@@ -285,40 +627,211 @@ exports[`<SkillsPage /> fetching content from external source should show the fe
         ]
       }
     >
-      <HelmetWrapper
-        defer={true}
-        encodeSpecialCharacters={true}
-      >
-        <SideEffect(NullComponent)
-          defer={true}
-          encodeSpecialCharacters={true}
-          meta={
-            Array [
-              Object {
-                "content": "Mijn vaardigheden pagina van Johan Meester zijn portfolio",
-                "name": "description",
-              },
-            ]
+      <InjectIntl(HeadGear)
+        messages={
+          Object {
+            "metaDescription": Object {
+              "defaultMessage": "A brief overview of my professional skills",
+              "id": "portfolio.page.SkillsPage.meta.description",
+            },
+            "pageTitle": Object {
+              "defaultMessage": "MY SKILLS",
+              "id": "portfolio.page.SkillsPage.pageTitle",
+            },
+            "title": Object {
+              "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+              "id": "portfolio.page.SkillsPage.title",
+            },
           }
-          title="Mijn vaardigheden"
-          titleAttributes={Object {}}
+        }
+        path="/skills"
+      >
+        <HeadGear
+          intl={
+            Object {
+              "defaultFormats": Object {},
+              "defaultLocale": "en",
+              "formatDate": [Function],
+              "formatHTMLMessage": [Function],
+              "formatMessage": [Function],
+              "formatNumber": [Function],
+              "formatPlural": [Function],
+              "formatRelative": [Function],
+              "formatTime": [Function],
+              "formats": Object {},
+              "formatters": Object {
+                "getDateTimeFormat": [Function],
+                "getMessageFormat": [Function],
+                "getNumberFormat": [Function],
+                "getPluralFormat": [Function],
+                "getRelativeFormat": [Function],
+              },
+              "locale": "en",
+              "messages": Object {},
+              "now": [Function],
+              "textComponent": "span",
+            }
+          }
+          messages={
+            Object {
+              "metaDescription": Object {
+                "defaultMessage": "A brief overview of my professional skills",
+                "id": "portfolio.page.SkillsPage.meta.description",
+              },
+              "pageTitle": Object {
+                "defaultMessage": "MY SKILLS",
+                "id": "portfolio.page.SkillsPage.pageTitle",
+              },
+              "title": Object {
+                "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+                "id": "portfolio.page.SkillsPage.title",
+              },
+            }
+          }
+          path="/skills"
         >
-          <NullComponent
+          <HelmetWrapper
             defer={true}
             encodeSpecialCharacters={true}
-            meta={
+            link={
               Array [
                 Object {
-                  "content": "Mijn vaardigheden pagina van Johan Meester zijn portfolio",
-                  "name": "description",
+                  "href": "https://meester-johan.info/skills/",
+                  "rel": "canonical",
+                },
+                Object {
+                  "href": "https://meester-johan.info/skills/",
+                  "hreflang": "x-default",
+                  "rel": "alternate",
                 },
               ]
             }
-            title="Mijn vaardigheden"
-            titleAttributes={Object {}}
-          />
-        </SideEffect(NullComponent)>
-      </HelmetWrapper>
+            meta={
+              Array [
+                Object {
+                  "content": "A brief overview of my professional skills",
+                  "name": "description",
+                },
+                Object {
+                  "content": "A brief overview of my professional skills",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://meester-johan.info/skills/",
+                  "property": "og.url",
+                },
+                Object {
+                  "content": "A brief overview of my professional skills",
+                  "property": "twitter:description",
+                },
+                Object {
+                  "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                  "property": "twitter:title",
+                },
+              ]
+            }
+            title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
+          >
+            <SideEffect(NullComponent)
+              defer={true}
+              encodeSpecialCharacters={true}
+              link={
+                Array [
+                  Object {
+                    "href": "https://meester-johan.info/skills/",
+                    "rel": "canonical",
+                  },
+                  Object {
+                    "href": "https://meester-johan.info/skills/",
+                    "hreflang": "x-default",
+                    "rel": "alternate",
+                  },
+                ]
+              }
+              meta={
+                Array [
+                  Object {
+                    "content": "A brief overview of my professional skills",
+                    "name": "description",
+                  },
+                  Object {
+                    "content": "A brief overview of my professional skills",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://meester-johan.info/skills/",
+                    "property": "og.url",
+                  },
+                  Object {
+                    "content": "A brief overview of my professional skills",
+                    "property": "twitter:description",
+                  },
+                  Object {
+                    "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                    "property": "twitter:title",
+                  },
+                ]
+              }
+              title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
+            >
+              <NullComponent
+                defer={true}
+                encodeSpecialCharacters={true}
+                link={
+                  Array [
+                    Object {
+                      "href": "https://meester-johan.info/skills/",
+                      "rel": "canonical",
+                    },
+                    Object {
+                      "href": "https://meester-johan.info/skills/",
+                      "hreflang": "x-default",
+                      "rel": "alternate",
+                    },
+                  ]
+                }
+                meta={
+                  Array [
+                    Object {
+                      "content": "A brief overview of my professional skills",
+                      "name": "description",
+                    },
+                    Object {
+                      "content": "A brief overview of my professional skills",
+                      "property": "og:description",
+                    },
+                    Object {
+                      "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                      "property": "og:title",
+                    },
+                    Object {
+                      "content": "https://meester-johan.info/skills/",
+                      "property": "og.url",
+                    },
+                    Object {
+                      "content": "A brief overview of my professional skills",
+                      "property": "twitter:description",
+                    },
+                    Object {
+                      "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
+                      "property": "twitter:title",
+                    },
+                  ]
+                }
+                title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
+              />
+            </SideEffect(NullComponent)>
+          </HelmetWrapper>
+        </HeadGear>
+      </InjectIntl(HeadGear)>
       <PageContent
         content={
           Array [
@@ -332,7 +845,7 @@ exports[`<SkillsPage /> fetching content from external source should show the fe
         title={
           <FormattedMessage
             defaultMessage="MY SKILLS"
-            id="portfolio.page.SkillsPage.title"
+            id="portfolio.page.SkillsPage.pageTitle"
             values={Object {}}
           />
         }
@@ -383,7 +896,7 @@ exports[`<SkillsPage /> fetching content from external source should show the fe
                               >
                                 <FormattedMessage
                                   defaultMessage="MY SKILLS"
-                                  id="portfolio.page.SkillsPage.title"
+                                  id="portfolio.page.SkillsPage.pageTitle"
                                   values={Object {}}
                                 >
                                   <span>
@@ -541,18 +1054,25 @@ exports[`<SkillsPage /> fetching content from external source should show the fe
 
 exports[`<SkillsPage /> should render and match the snapshot 1`] = `
 <React.Fragment>
-  <HelmetWrapper
-    defer={true}
-    encodeSpecialCharacters={true}
-  >
-    <title>
-      Mijn vaardigheden
-    </title>
-    <meta
-      content="Mijn vaardigheden pagina van Johan Meester zijn portfolio"
-      name="description"
-    />
-  </HelmetWrapper>
+  <InjectIntl(HeadGear)
+    messages={
+      Object {
+        "metaDescription": Object {
+          "defaultMessage": "A brief overview of my professional skills",
+          "id": "portfolio.page.SkillsPage.meta.description",
+        },
+        "pageTitle": Object {
+          "defaultMessage": "MY SKILLS",
+          "id": "portfolio.page.SkillsPage.pageTitle",
+        },
+        "title": Object {
+          "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "id": "portfolio.page.SkillsPage.title",
+        },
+      }
+    }
+    path="/skills"
+  />
   <React.Fragment />
 </React.Fragment>
 `;

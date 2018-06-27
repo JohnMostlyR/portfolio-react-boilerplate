@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   }
 `;
 
-function BackLink({ position }) {
+function BackLink({ linkTo, position }) {
   return (
     <Wrapper position={position}>
       <SpeechBubble
@@ -31,7 +31,7 @@ function BackLink({ position }) {
       >
         <FormattedMessage {...messages.backLink}>
           {
-            (message) => <Link to="/projects" color={textColor}>{message}</Link>
+            (message) => <Link to={linkTo} color={textColor}>{message}</Link>
           }
         </FormattedMessage>
       </SpeechBubble>
@@ -40,6 +40,7 @@ function BackLink({ position }) {
 }
 
 BackLink.propTypes = {
+  linkTo: PropTypes.string.isRequired,
   position: PropTypes.oneOf(['top', 'bottom']),
 };
 

@@ -6,16 +6,16 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  pageTitle: {
-    id: 'portfolio.page.SkillsPage.pageTitle',
-    defaultMessage: 'My Skills : Johan Meester\'s portfolio',
-  },
-  pageDescription: {
-    id: 'portfolio.page.SkillsPage.pageDescription',
-    defaultMessage: 'Some of my skills.',
-  },
   title: {
     id: 'portfolio.page.SkillsPage.title',
+    defaultMessage: 'Johan Meester : Portfolio : Front-End Developer : {pageTitle}',
+  },
+  pageTitle: {
+    id: 'portfolio.page.SkillsPage.pageTitle',
     defaultMessage: 'MY SKILLS',
+  },
+  metaDescription: {
+    id: 'portfolio.page.SkillsPage.meta.description',
+    defaultMessage: 'A brief overview of my professional skills',
   },
 });

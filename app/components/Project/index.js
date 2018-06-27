@@ -18,7 +18,7 @@ class Project extends React.PureComponent {
   }
 
   render() {
-    const { detailsBodyText, isOdd, thumbnail, title } = this.props;
+    const { detailsBodyText, isOdd, search, thumbnail, title } = this.props;
 
     return (
       <Article>
@@ -35,7 +35,10 @@ class Project extends React.PureComponent {
               {
                 (message) => (
                   <Link
-                    to={`/projects/${title.toLowerCase().replace(/\W+/g, '-')}`}
+                    to={{
+                      pathname: `/projects/${title.toLowerCase().replace(/\W+/g, '-')}/`,
+                      search,
+                    }}
                     odd={`${isOdd}`}
                   >{message}</Link>
                 )
@@ -51,6 +54,7 @@ class Project extends React.PureComponent {
 Project.propTypes = {
   detailsBodyText: PropTypes.string,
   isOdd: PropTypes.bool,
+  search: PropTypes.string,
   thumbnail: PropTypes.shape({
     file: PropTypes.shape({
       details: PropTypes.shape({

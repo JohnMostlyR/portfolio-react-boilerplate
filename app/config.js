@@ -18,7 +18,7 @@ const DEFAULT_LOCALE = 'en';
  */
 export const WEBSITE_URL = 'https://meester-johan.info/';
 
-export const config = {
+export const config = Object.freeze({
   api: {
     contentful: {
       endpoint: 'https://cdn.contentful.com/spaces/1tymefars1bj/entries?',
@@ -34,8 +34,8 @@ export const config = {
       description: { content: 'metaDescription', isMessageId: true },
       image: {
         content: {
-          url: `${WEBSITE_URL}social-media-logo.png`,
-          secure_url: `${WEBSITE_URL}social-media-logo.png`,
+          url: `${WEBSITE_URL}logo-600x600.png`,
+          secure_url: `${WEBSITE_URL}logo-600x600.png`,
           height: 600, // pixels
           width: 600, // pixels
         },
@@ -47,7 +47,7 @@ export const config = {
       card: { content: 'summary' },
       creator: { content: '' },
       description: { content: 'metaDescription', isMessageId: true },
-      image: { content: `${WEBSITE_URL}social-media-logo.png` },
+      image: { content: `${WEBSITE_URL}logo-600x600.png` },
       site: { content: '' },
     },
   },
@@ -56,4 +56,4 @@ export const config = {
     facebook: { pagesID: '', appID: '' },
     google: { siteVerification: '' },
   },
-};
+});
