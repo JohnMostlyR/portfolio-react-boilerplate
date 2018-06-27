@@ -2,7 +2,7 @@ import { call, put, select, takeLatest } from 'redux-saga/effects';
 import marked from 'marked';
 import { LOAD_CONTENT } from './constants';
 import { contentLoaded, contentLoadingError } from './actions';
-import { config } from '../../private';
+import { config } from '../../config';
 import request from '../../utils/request';
 
 import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
@@ -10,6 +10,8 @@ import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
 marked.options({
   breaks: true,
 });
+
+const { api: { contentful: { endpoint, access_token } } } = config;
 
 // Individual exports for testing
 
@@ -19,9 +21,8 @@ marked.options({
 export function* getContent() {
   const LOCALE = yield select(makeSelectLocale());
   const localeForContentful = (LOCALE === 'en') ? 'en-US' : LOCALE;
-  const ENDPOINT = config.contentful.endpoint;
   const queryParam = {
-    access_token: config.contentful.access_token,
+    access_token,
     content_type: 'about',
     select: 'fields',
     locale: localeForContentful,
@@ -32,7 +33,7 @@ export function* getContent() {
       `${currentValue}=${queryParam[currentValue]}`), [])
     .join('&');
 
-  const requestURL = `${ENDPOINT}${query}`;
+  const requestURL = `${endpoint}${query}`;
 
   try {
     // Call our request helper (see 'utils/request')
