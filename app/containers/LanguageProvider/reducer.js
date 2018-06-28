@@ -7,12 +7,16 @@
 import { fromJS } from 'immutable';
 
 import { CHANGE_LANGUAGE } from './constants';
-import { DEFAULT_LOCALE } from '../App/constants'; // eslint-disable-line
+import { config } from '../../config'; // eslint-disable-line
 
-let locale = DEFAULT_LOCALE;
+const { appLocales, defaultLocale } = config;
+const {
+  navigator: { language },
+} = window;
+let locale = language.substr(0, 2).toLowerCase();
 
-if (window.navigator.language === 'nl') {
-  locale = 'nl';
+if (!appLocales.indexOf(locale)) {
+  locale = defaultLocale;
 }
 
 export const initialState = fromJS({

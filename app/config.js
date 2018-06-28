@@ -27,7 +27,7 @@ export const config = Object.freeze({
     },
   },
   defaultLocale: DEFAULT_LOCALE,
-  locales: appLocales,
+  appLocales,
   seo: {
     baseURL: WEBSITE_URL,
     description: { content: 'metaDescription', isMessageId: true },
