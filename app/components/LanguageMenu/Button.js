@@ -65,9 +65,15 @@ function Button({ label, isExpanded, toggleMenuHandler, buttonRef }) {
     }
   }
 
+  function handleClick(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    toggleMenuHandler();
+  }
+
   return (
     <StyledButton
-      onClick={toggleMenuHandler}
+      onClick={handleClick}
       onKeyDown={handleKeyDown}
       aria-expanded={isExpanded}
       aria-haspopup="true"
