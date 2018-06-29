@@ -8,9 +8,10 @@ import createHistory from 'history/createMemoryHistory';
 
 import SiteNavigation, { mapDispatchToProps } from '../index';
 import {
+  setSiteNavigationIsAtScreenTop,
   setSiteNavigationOffsetHeight,
   setSiteNavigationTopPosition,
-} from '../../../containers/App/actions';
+} from '../actions';
 import getElementTop from '../../../utils/getElementTop';
 import configureStore from '../../../configureStore';
 
@@ -41,7 +42,7 @@ describe('SiteNavigation', () => {
   });
 
   it('should get its own top position on the screen', () => {
-    const wrapper = mount(
+    const renderedComponent = mount(
       <Provider store={store}>
         <IntlProvider locale="en">
           <ConnectedRouter history={history}>
@@ -52,11 +53,11 @@ describe('SiteNavigation', () => {
     );
     const invocationArgs = getElementTop.mock.calls[0];
     expect(invocationArgs[0].nodeType).toBe(1);
-    wrapper.unmount();
+    renderedComponent.unmount();
   });
 
   describe('mapDispatchToProps', () => {
-    describe('setTopPosition', () => {
+    describe('setSiteNavigationTopPosition', () => {
       it('should be injected', () => {
         const dispatch = jest.fn();
         const props = mapDispatchToProps(dispatch);
@@ -88,6 +89,24 @@ describe('SiteNavigation', () => {
         props.setOffsetHeight(offsetHeight);
         expect(dispatch).toHaveBeenCalledWith(
           setSiteNavigationOffsetHeight(offsetHeight),
+        );
+      });
+    });
+
+    describe('setIsAtScreenTop', () => {
+      it('should be injected', () => {
+        const dispatch = jest.fn();
+        const props = mapDispatchToProps(dispatch);
+        expect(props.setIsAtScreenTop).toBeDefined();
+      });
+
+      it('should dispatch isAtScreenTop when mounted', () => {
+        const dispatch = jest.fn();
+        const isAtScreenTop = true;
+        const props = mapDispatchToProps(dispatch);
+        props.setIsAtScreenTop(isAtScreenTop);
+        expect(dispatch).toHaveBeenCalledWith(
+          setSiteNavigationIsAtScreenTop(isAtScreenTop),
         );
       });
     });

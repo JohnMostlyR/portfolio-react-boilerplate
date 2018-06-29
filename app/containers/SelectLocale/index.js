@@ -45,12 +45,10 @@ export class SelectLocale extends React.PureComponent {
     });
   }
 
-  toggleMenu(ev) {
+  toggleMenu() {
     this.setState(prevState => ({
       isExpanded: !prevState.isExpanded,
     }));
-
-    ev.stopPropagation();
   }
 
   render() {

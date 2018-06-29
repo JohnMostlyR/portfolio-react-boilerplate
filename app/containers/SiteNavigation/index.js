@@ -2,19 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+import { compose } from 'redux';
 
 import {
-  makeSelectLocation,
   makeSelectSiteNavigationIsAtScreenTop,
-  makeSelectSiteWidth,
-} from '../../containers/App/selectors';
+  makeSelectSiteNavigationOffsetHeight,
+  makeSelectSiteNavigationTopPosition,
+} from './selectors';
 import {
+  setSiteNavigationIsAtScreenTop,
   setSiteNavigationOffsetHeight,
   setSiteNavigationTopPosition,
-} from '../../containers/App/actions';
+} from './actions';
+import reducer from './reducer';
+
 import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
+import {
+  makeSelectVisualSiteWrapperScrollTop,
+  makeSelectVisualSiteWrapperSiteWidth,
+} from '../../containers/VisualSiteWrapper/selectors';
 import Navigation from '../../components/Navigation';
 import getElementTop from '../../utils/getElementTop';
+import injectReducer from '../../utils/injectReducer';
 
 class SiteNavigation extends React.PureComponent {
   constructor(props) {
@@ -39,8 +48,12 @@ class SiteNavigation extends React.PureComponent {
     const myOffsetHeight = this.siteNavigation
       ? this.siteNavigation.offsetHeight
       : 0;
+    const isAtScreenTop = this.props.scrollTop >= myTopPosition;
+
     this.props.setTopPosition(myTopPosition);
     this.props.setOffsetHeight(myOffsetHeight);
+    this.props.setIsAtScreenTop(isAtScreenTop);
+
     window.addEventListener('click', this.handleOutsideClickEvent);
   }
 
@@ -53,11 +66,18 @@ class SiteNavigation extends React.PureComponent {
         isExpanded: IS_BIG_SCREEN,
       });
     }
+
+    if (this.props.scrollTop !== prevProps.scrollTop) {
+      const isAtScreenTop =
+        this.props.scrollTop >= this.props.siteNavigationTopPosition;
+      this.props.setIsAtScreenTop(isAtScreenTop);
+    }
   }
 
   componentWillUnmount() {
     this.props.setTopPosition(0);
     this.props.setOffsetHeight(0);
+    this.props.setIsAtScreenTop(false);
     window.removeEventListener('click', this.handleOutsideClickEvent);
   }
 
@@ -109,10 +129,13 @@ SiteNavigation.propTypes = {
   locale: PropTypes.string,
   location: PropTypes.object,
   bigScreenBreakpoint: PropTypes.number, // PIXELS!
+  scrollTop: PropTypes.number,
   setTopPosition: PropTypes.func.isRequired,
   setOffsetHeight: PropTypes.func.isRequired,
   isAtScreenTop: PropTypes.bool,
   siteWidth: PropTypes.number,
+  siteNavigationTopPosition: PropTypes.number,
+  setIsAtScreenTop: PropTypes.func.isRequired,
 };
 
 SiteNavigation.defaultProps = {
@@ -125,17 +148,29 @@ export function mapDispatchToProps(dispatch) {
       dispatch(setSiteNavigationTopPosition(topPosition)),
     setOffsetHeight: offsetHeight =>
       dispatch(setSiteNavigationOffsetHeight(offsetHeight)),
+    setIsAtScreenTop: isAtScreenTop =>
+      dispatch(setSiteNavigationIsAtScreenTop(isAtScreenTop)),
   };
 }
 
 const mapStateToProps = createStructuredSelector({
   locale: makeSelectLocale(),
-  location: makeSelectLocation(),
   isAtScreenTop: makeSelectSiteNavigationIsAtScreenTop(),
-  siteWidth: makeSelectSiteWidth(),
+  scrollTop: makeSelectVisualSiteWrapperScrollTop(),
+  siteWidth: makeSelectVisualSiteWrapperSiteWidth(),
+  siteNavigationTopPosition: makeSelectSiteNavigationTopPosition(),
+  siteNavigationIsAtScreenTop: makeSelectSiteNavigationIsAtScreenTop(),
+  siteNavigationOffsetHeight: makeSelectSiteNavigationOffsetHeight(),
 });
 
-export default connect(
+const withConnect = connect(
   mapStateToProps,
   mapDispatchToProps,
+);
+
+const withReducer = injectReducer({ key: 'siteNavigation', reducer });
+
+export default compose(
+  withReducer,
+  withConnect,
 )(SiteNavigation);

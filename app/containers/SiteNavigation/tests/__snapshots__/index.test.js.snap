@@ -3,7 +3,7 @@
 exports[`SiteNavigation should render and match the snapshot 1`] = `
 <nav
   aria-label="site"
-  className="Navigation__Nav-lgxJla ckbRrS"
+  className="Navigation__Nav-lgxJla ijsJvj"
 >
   <h2
     aria-hidden="false"
