@@ -24,12 +24,33 @@ export class SelectLocale extends React.PureComponent {
     };
 
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.handleOutsideClickEvent = this.handleOutsideClickEvent.bind(this);
   }
 
-  toggleMenu() {
+  componentDidMount() {
+    window.addEventListener('click', this.handleOutsideClickEvent);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('click', this.handleOutsideClickEvent);
+  }
+
+  handleOutsideClickEvent() {
+    this.closeMenu();
+  }
+
+  closeMenu() {
+    this.setState({
+      isExpanded: false,
+    });
+  }
+
+  toggleMenu(ev) {
     this.setState(prevState => ({
       isExpanded: !prevState.isExpanded,
     }));
+
+    ev.stopPropagation();
   }
 
   render() {
