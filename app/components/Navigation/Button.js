@@ -51,11 +51,12 @@ const SVGPath = styled.path`
   transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
 `;
 
+/* stylelint-disable block-no-empty */
 const SVGPathOne = styled(SVGPath).attrs({
   d: 'M5 13h141v14H5z',
   transform: ({ isExpanded }) =>
     isExpanded ? 'translate(16 -16) rotate(45 0 0)' : 'rotate(0) translate(0)',
-})``; /* stylelint-disable-line block-no-empty */
+})``;
 
 const SVGPathTwo = styled(SVGPath).attrs({
   d: 'M5 43h90v14H5z',
@@ -63,13 +64,14 @@ const SVGPathTwo = styled(SVGPath).attrs({
   opacity: ${({ isExpanded }) => (isExpanded ? 0 : 1)};
 `;
 
+/* stylelint-disable block-no-empty */
 const SVGPathThree = styled(SVGPath).attrs({
   d: 'M5 73h141v14H5z',
   transform: ({ isExpanded }) =>
     isExpanded
       ? 'translate(16, 16) rotate(-45 0 100)'
       : 'rotate(0) translate(0)',
-})``; /* stylelint-disable-line block-no-empty */
+})``;
 
 const Label = styled.span`
   margin-left: 0.5em;

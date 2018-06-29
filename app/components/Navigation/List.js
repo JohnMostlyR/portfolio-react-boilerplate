@@ -64,12 +64,12 @@ const List = styled.ul.attrs({
     color: inherit;
   }
 
-  & li:not(:last-child) {
-    margin-bottom: ${BASE_LINE_HEIGHT}rem;
-  }
-
   & li {
     display: ${({ isExpanded }) => (isExpanded ? 'inline-block' : 'none')};
+  }
+
+  & li:not(:last-child) {
+    margin-bottom: ${BASE_LINE_HEIGHT}rem;
   }
 
   @media (min-width: ${({ bigScreenBreakpoint }) =>
