@@ -1,6 +1,5 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
 import { IntlProvider, defineMessages } from 'react-intl';
 
 import LanguageMenu from '../index';
@@ -48,7 +47,7 @@ describe('<LanguageMenu />', () => {
         />,
       ),
     ).toBe(true);
-    expect(toJson(renderedComponent)).toMatchSnapshot();
+    expect(renderedComponent).toMatchSnapshot();
   });
 
   it('should have one, default, language selected', () => {
@@ -75,7 +74,7 @@ describe('<LanguageMenu />', () => {
         />,
       ),
     ).toBe(true);
-    expect(toJson(renderedComponent)).toMatchSnapshot();
+    expect(renderedComponent).toMatchSnapshot();
   });
 
   describe('expanded state', () => {

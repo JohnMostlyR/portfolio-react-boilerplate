@@ -65,14 +65,14 @@ exports[`<LanguageMenu /> should have one, default, language selected 1`] = `
               aria-expanded={false}
               aria-haspopup="true"
               innerRef={[Function]}
-              onClick={[MockFunction]}
+              onClick={[Function]}
               onKeyDown={[Function]}
             >
               <button
                 aria-expanded={false}
                 aria-haspopup="true"
                 className="Button__StyledButton-jJDkJK iFzxea"
-                onClick={[MockFunction]}
+                onClick={[Function]}
                 onKeyDown={[Function]}
                 type="button"
               >

@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
 
 import Button from '../Button';
 
@@ -13,7 +12,7 @@ describe('<Button />', () => {
       <Button toggleMenuHandler={toggleMenuHandler} buttonRef={buttonRef} />,
     );
 
-    expect(toJson(renderedComponent)).toMatchSnapshot();
+    expect(renderedComponent).toMatchSnapshot();
   });
 
   it('should adopt the "label" property', () => {
@@ -26,7 +25,7 @@ describe('<Button />', () => {
       />,
     );
 
-    expect(toJson(renderedComponent)).toMatchSnapshot();
+    expect(renderedComponent).toMatchSnapshot();
   });
 
   it('should adopt the "isExpanded" property', () => {
@@ -52,6 +51,7 @@ describe('<Button />', () => {
 
   describe('The "toggleMenuHandler" property', () => {
     const PREVENT_DEFAULT = jest.fn();
+    const STOP_PROPAGATION = jest.fn();
     const renderedComponent = shallow(
       <Button toggleMenuHandler={toggleMenuHandler} buttonRef={buttonRef} />,
     );
@@ -61,7 +61,12 @@ describe('<Button />', () => {
     });
 
     it('should get called on a click event', () => {
-      renderedComponent.simulate('click');
+      renderedComponent.simulate('click', {
+        preventDefault: PREVENT_DEFAULT,
+        stopPropagation: STOP_PROPAGATION,
+      });
+      expect(PREVENT_DEFAULT).toHaveBeenCalledTimes(1);
+      expect(STOP_PROPAGATION).toHaveBeenCalledTimes(1);
       expect(toggleMenuHandler).toHaveBeenCalledTimes(1);
     });
 
