@@ -30,8 +30,8 @@ exports[`<NotFoundPage /> should render and match the snapshot 1`] = `
     }
     title={
       <FormattedMessage
-        defaultMessage="Johan Meester : Portfolio : Front-End Developer : {pageTitle}"
-        id="portfolio.page.NotFoundPage.title"
+        defaultMessage="NOT FOUND"
+        id="portfolio.page.NotFoundPage.pageTitle"
         values={Object {}}
       />
     }

@@ -22,7 +22,7 @@ export default class NotFound extends React.PureComponent { // eslint-disable-li
     return (
       <React.Fragment>
         <PageContent
-          title={<FormattedMessage {...messages.title} />}
+          title={<FormattedMessage {...messages.pageTitle} />}
           content={
             <FormattedMessage
               {...messages.content}
