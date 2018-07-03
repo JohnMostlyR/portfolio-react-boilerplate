@@ -52,7 +52,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
     </button>
   </span>
   <ul
-    className="List-htqUMz exPeBh"
+    className="List-htqUMz dhkWUC"
     hidden="\\"true\\""
     onKeyDown={[Function]}
   >

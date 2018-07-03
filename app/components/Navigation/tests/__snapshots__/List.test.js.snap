@@ -53,12 +53,12 @@ exports[`<List /> should adopt the "isExpanded" property 1`] = `
   color: inherit;
 }
 
-.c0 li:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
 .c0 li {
   display: inline-block;
+}
+
+.c0 li:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width:1px) {
@@ -136,12 +136,12 @@ exports[`<List /> should render and match the snapshot 1`] = `
   color: inherit;
 }
 
-.c0 li:not(:last-child) {
-  margin-bottom: 1.5rem;
-}
-
 .c0 li {
   display: none;
+}
+
+.c0 li:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width:1000px) {
