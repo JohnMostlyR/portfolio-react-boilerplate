@@ -1,9 +1,8 @@
 import React from 'react';
-import toJson from 'enzyme-to-json';
 
 import HeadGear from '../index';
 
-import { mountWithIntl } from '../../../helpers/intl-enzyme-test-helper';
+import { shallowWithIntl } from '../../../helpers/intl-enzyme-test-helper';
 
 const messages = {
   title: {
@@ -22,9 +21,9 @@ const messages = {
 
 describe('<HeadGear />', () => {
   it('should render and match the snapshot', () => {
-    const renderedComponent = mountWithIntl(
+    const renderedComponent = shallowWithIntl(
       <HeadGear messages={messages} path="/test" />,
     );
-    expect(toJson(renderedComponent)).toMatchSnapshot();
+    expect(renderedComponent).toMatchSnapshot();
   });
 });
