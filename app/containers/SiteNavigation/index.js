@@ -16,7 +16,7 @@ import {
 } from './actions';
 import reducer from './reducer';
 
-import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
+import { makeSelectLocation } from '../../containers/App/selectors';
 import {
   makeSelectVisualSiteWrapperScrollTop,
   makeSelectVisualSiteWrapperSiteWidth,
@@ -154,7 +154,7 @@ export function mapDispatchToProps(dispatch) {
 }
 
 const mapStateToProps = createStructuredSelector({
-  locale: makeSelectLocale(),
+  location: makeSelectLocation(),
   isAtScreenTop: makeSelectSiteNavigationIsAtScreenTop(),
   scrollTop: makeSelectVisualSiteWrapperScrollTop(),
   siteWidth: makeSelectVisualSiteWrapperSiteWidth(),

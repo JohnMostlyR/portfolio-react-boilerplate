@@ -1,6 +1,5 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
 import 'jest-styled-components';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
@@ -33,7 +32,7 @@ describe('<Navigation />', () => {
     const renderedComponent = shallow(
       <Navigation bigScreenBreakpoint={1000} toggleMenu={toggleMenu} />,
     );
-    expect(toJson(renderedComponent)).toMatchSnapshot();
+    expect(renderedComponent).toMatchSnapshot();
   });
 
   it('should adopt the "isAtScreenTop" prop', () => {

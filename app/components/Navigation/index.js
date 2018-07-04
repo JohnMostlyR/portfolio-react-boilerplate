@@ -51,7 +51,7 @@ class Navigation extends React.PureComponent {
   componentDidUpdate() {
     if (this.props.isExpanded) {
       const firstAvailableOption = this.getLinksFromListItems(this.list)
-        .filter(child => child.getAttribute('aria-current') === 'false')
+        .filter(child => !(child.getAttribute('aria-current') === 'page'))
         .slice(0, 1);
 
       if (Array.isArray(firstAvailableOption) && firstAvailableOption.length) {
