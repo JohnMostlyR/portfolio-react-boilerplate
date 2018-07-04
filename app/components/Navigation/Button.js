@@ -64,7 +64,6 @@ const SVGPathTwo = styled(SVGPath).attrs({
   opacity: ${({ isExpanded }) => (isExpanded ? 0 : 1)};
 `;
 
-/* stylelint-disable block-no-empty */
 const SVGPathThree = styled(SVGPath).attrs({
   d: 'M5 73h141v14H5z',
   transform: ({ isExpanded }) =>
