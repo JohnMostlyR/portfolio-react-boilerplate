@@ -226,7 +226,7 @@ class HomePage extends React.PureComponent {
                       {message => (
                         <text
                           transform="translate(544 593.37)"
-                          fontFamily="Open Sans"
+                          fontFamily="Noto Sans"
                           fontWeight="400"
                           fontSize="23"
                           fill="#fff"
@@ -273,7 +273,7 @@ class HomePage extends React.PureComponent {
                     {message => (
                       <text
                         transform="translate(559 488.55)"
-                        fontFamily="Open Sans"
+                        fontFamily="Noto Sans"
                         fontWeight="400"
                         fontSize="23"
                         fill="#fff"
@@ -330,7 +330,7 @@ class HomePage extends React.PureComponent {
                   {message => (
                     <text
                       transform="translate(235.72 201.41)"
-                      fontFamily="Open Sans"
+                      fontFamily="Noto Sans"
                       fontWeight="400"
                       fontSize="98"
                       fill="#556e78"
@@ -343,7 +343,7 @@ class HomePage extends React.PureComponent {
                   {message => (
                     <text
                       transform="translate(231.23 195.44)"
-                      fontFamily="Open Sans"
+                      fontFamily="Noto Sans"
                       fontWeight="400"
                       fontSize="98"
                       fill="#95c11f"
@@ -366,7 +366,7 @@ class HomePage extends React.PureComponent {
                           ? 'translate(870 270.6)'
                           : 'translate(840 270.6)'
                       }
-                      fontFamily="Open Sans"
+                      fontFamily="Noto Sans"
                       fontWeight="400"
                       fontSize="70"
                       fill="#fff"
@@ -403,7 +403,7 @@ class HomePage extends React.PureComponent {
                     }
                     fill="#fff"
                     style={{
-                      fontFamily: 'Open Sans',
+                      fontFamily: 'Noto Sans',
                       fontSize: '29px',
                       fontWeight: 400,
                       opacity: 0,
