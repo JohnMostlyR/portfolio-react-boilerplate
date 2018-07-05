@@ -1,11 +1,15 @@
 {
   "portfolio.component.BrandLink.title": "← Terug naar startpagina",
-  "portfolio.component.ContentLoadingIndicator.error": "Tot onze spijt kan de inhoud momenteel niet geladen worden",
-  "portfolio.component.ContentLoadingIndicator.pastDelay": "Ophalen van de content",
-  "portfolio.component.ContentLoadingIndicator.timedOut": "Het ophalen van de content duurt langer dan verwacht",
-  "portfolio.components.Form.helperText.range": "Dient minimaal {minLength, number} en maximaal {maxLength, number} karakters te zijn. Is nu: {count, number}",
+  "portfolio.component.ContentLoadingIndicator.error":
+    "Tot onze spijt kan de inhoud momenteel niet geladen worden",
+  "portfolio.component.ContentLoadingIndicator.pastDelay":
+    "Ophalen van de content",
+  "portfolio.component.ContentLoadingIndicator.timedOut":
+    "Het ophalen van de content duurt langer dan verwacht",
+  "portfolio.components.Form.helperText.range":
+    "Dient minimaal {minLength, number} en maximaal {maxLength, number} karakters te zijn. Is nu: {count, number}",
   "portfolio.components.Form.helperText.valid": "Bedankt!",
-  "portfolio.components.LanguageMenu.buttonLabel": "Taal",
+  "portfolio.components.LanguageMenu.buttonLabel": "Language",
   "portfolio.components.LanguageMenu.label": "Kies een andere taal",
   "portfolio.components.LanguageMenu.title": "Talen menu",
   "portfolio.components.Project.detailsLink": "Meer details →",
@@ -13,26 +17,34 @@
   "portfolio.components.SubmitButton.error": "Mislukt. Probeer nogmaals",
   "portfolio.components.SubmitButton.idle": "Verstuur",
   "portfolio.components.SubmitButton.sending": "Versturen",
-  "portfolio.components.SubmitButton.success": "Verstuurd! Ik reageer zo snel mogelijk",
-  "portfolio.containers.ContactPage.emailError": "U dient uw email adres in te vullen.",
+  "portfolio.components.SubmitButton.success":
+    "Verstuurd! Ik reageer zo snel mogelijk",
+  "portfolio.containers.ContactPage.emailError":
+    "U dient uw email adres in te vullen.",
   "portfolio.containers.ContactPage.emailLabel": "Uw email adres",
   "portfolio.containers.ContactPage.emailPlaceholder": "(b.v. mijn@email.com)",
   "portfolio.containers.ContactPage.emailText": "Vul hier uw email adres in.",
-  "portfolio.containers.ContactPage.meta.description": "Vul dit formulier in om contact met mij op te nemen. Ik reageer zo spoedig mogelijk",
+  "portfolio.containers.ContactPage.meta.description":
+    "Vul dit formulier in om contact met mij op te nemen. Ik reageer zo spoedig mogelijk",
   "portfolio.containers.ContactPage.nameError": "U dient uw naam in te vullen.",
   "portfolio.containers.ContactPage.nameLabel": "Uw naam",
   "portfolio.containers.ContactPage.namePlaceholder": "(b.v. Jan Jansen)",
   "portfolio.containers.ContactPage.nameText": "Vul hier uw naam in.",
   "portfolio.containers.ContactPage.pageTitle": "CONTACT FORMULIER",
-  "portfolio.containers.ContactPage.requirementOne": "Vul alstublieft alle velden in",
-  "portfolio.containers.ContactPage.subjectError": "U dient een onderwerp in te vullen.",
+  "portfolio.containers.ContactPage.requirementOne":
+    "Vul alstublieft alle velden in",
+  "portfolio.containers.ContactPage.subjectError":
+    "U dient een onderwerp in te vullen.",
   "portfolio.containers.ContactPage.subjectLabel": "Onderwerp",
   "portfolio.containers.ContactPage.subjectText": "Vul hier het onderwerp in.",
-  "portfolio.containers.ContactPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
-  "portfolio.containers.ContactPage.yourMessageError": "U dient een bericht in te vullen.",
+  "portfolio.containers.ContactPage.title":
+    "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+  "portfolio.containers.ContactPage.yourMessageError":
+    "U dient een bericht in te vullen.",
   "portfolio.containers.ContactPage.yourMessageLabel": "Uw bericht",
   "portfolio.containers.ContactPage.yourMessageText": "Vul hier uw bericht in.",
-  "portfolio.meta.description": "Dit is de portfolio website van Johan Meester. Een in Amsterdam gevestigde Front-End Developer gespecialiseerd in React JS",
+  "portfolio.meta.description":
+    "Dit is de portfolio website van Johan Meester. Een in Amsterdam gevestigde Front-End Developer gespecialiseerd in React JS",
   "portfolio.meta.siteName": "Johan Meester : Portfolio",
   "portfolio.nav.about": "Over",
   "portfolio.nav.contact": "Contact",
@@ -41,30 +53,42 @@
   "portfolio.nav.projects": "Projecten",
   "portfolio.nav.showMenuButton": "MENU",
   "portfolio.nav.skills": "Vaardigheden",
-  "portfolio.noscript": "Als u dit bericht ziet betekend dat JavaScript is uitgeschakeld in uw browser. Schakel dit alstublieft in opdat deze applicatie zal werken",
-  "portfolio.page.AboutPage.meta.description": "Een korte beschrijving over mij en mijn beroepsleven",
+  "portfolio.noscript":
+    "Als u dit bericht ziet betekend dat JavaScript is uitgeschakeld in uw browser. Schakel dit alstublieft in opdat deze applicatie zal werken",
+  "portfolio.page.AboutPage.meta.description":
+    "Een korte beschrijving over mij en mijn beroepsleven",
   "portfolio.page.AboutPage.pageTitle": "OVER MIJ",
-  "portfolio.page.AboutPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+  "portfolio.page.AboutPage.title":
+    "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
   "portfolio.page.NotFoundPage.contact": "contact",
-  "portfolio.page.NotFoundPage.content": "Het spijt me maar de door u verzochte pagina bestaat helaas niet, of is verwijderd.\n\nGaat u alstublieft naar de {home} pagina of, als u denkt dat dit een fout betreft, naar de {contact} pagina en neem contact met mij op.",
+  "portfolio.page.NotFoundPage.content":
+    "Het spijt me maar de door u verzochte pagina bestaat helaas niet, of is verwijderd.\n\nGaat u alstublieft naar de {home} pagina of, als u denkt dat dit een fout betreft, naar de {contact} pagina en neem contact met mij op.",
   "portfolio.page.NotFoundPage.home": "start",
-  "portfolio.page.NotFoundPage.pageDescription": "Pagina niet gevonden. De door uw verzochte pagina is niet gevonden",
+  "portfolio.page.NotFoundPage.pageDescription":
+    "Pagina niet gevonden. De door uw verzochte pagina is niet gevonden",
   "portfolio.page.NotFoundPage.pageTitle": "NIET GEVONDEN",
-  "portfolio.page.NotFoundPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
-  "portfolio.page.ProjectsPage.meta.description": "Dit is een overzicht van mijn projecten. De projecten zijn gesorteerd op datum met de meest recente bovenaan",
+  "portfolio.page.NotFoundPage.title":
+    "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+  "portfolio.page.ProjectsPage.meta.description":
+    "Dit is een overzicht van mijn projecten. De projecten zijn gesorteerd op datum met de meest recente bovenaan",
   "portfolio.page.ProjectsPage.pageTitle": "MIJN PROJECTEN",
-  "portfolio.page.ProjectsPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
-  "portfolio.page.SkillsPage.meta.description": "Een beknopt overzicht van mijn beroepsmatige vaardigheden",
+  "portfolio.page.ProjectsPage.title":
+    "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+  "portfolio.page.SkillsPage.meta.description":
+    "Een beknopt overzicht van mijn beroepsmatige vaardigheden",
   "portfolio.page.SkillsPage.pageTitle": "MIJN VAARDIGHEDEN",
-  "portfolio.page.SkillsPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+  "portfolio.page.SkillsPage.title":
+    "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
   "portfolio.page.index.header.callToAction": "NEEM CONTACT MET MIJ OP",
   "portfolio.page.index.header.greeting": "WELKOM",
   "portfolio.page.index.header.intro": "Ik ben {name}",
   "portfolio.page.index.header.look": "KIJK EENS ROND",
   "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
-  "portfolio.page.index.meta.description": "Welkom op de portfolio van Johan Meester, Front-End Developer",
+  "portfolio.page.index.meta.description":
+    "Welkom op de portfolio van Johan Meester, Front-End Developer",
   "portfolio.page.index.pageTitle": "INTRODUCTIE",
-  "portfolio.page.index.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+  "portfolio.page.index.title":
+    "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
   "portfolio.skiplink": "spring naar belangrijkste inhoud",
   "portfolio.social_links.header": "Vind mij ook op:",
   "portfolio.title": "Johan Meester : Portfolio : Front-End Developer"

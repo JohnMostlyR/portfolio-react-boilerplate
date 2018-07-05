@@ -72,6 +72,7 @@ exports[`<LanguageMenu /> should have one, default, language selected 1`] = `
                 aria-expanded={false}
                 aria-haspopup="true"
                 className="Button__StyledButton-jJDkJK iFzxea"
+                lang="en"
                 onClick={[Function]}
                 onKeyDown={[Function]}
                 type="button"

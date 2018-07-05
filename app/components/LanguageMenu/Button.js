@@ -14,6 +14,7 @@ import styled from 'styled-components';
 import SVGIcon from '../SVGIcon';
 
 const StyledButton = styled.button.attrs({
+  lang: 'en',
   type: 'button',
 })`
   &:hover {
