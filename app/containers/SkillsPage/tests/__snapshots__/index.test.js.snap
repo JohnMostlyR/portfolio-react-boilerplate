@@ -133,14 +133,6 @@ exports[`<SkillsPage /> fetching content from external source should handle case
                   "content": "https://meester-johan.info/skills/",
                   "property": "og.url",
                 },
-                Object {
-                  "content": "A brief overview of my professional skills",
-                  "property": "twitter:description",
-                },
-                Object {
-                  "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
-                  "property": "twitter:title",
-                },
               ]
             }
             title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
@@ -179,14 +171,6 @@ exports[`<SkillsPage /> fetching content from external source should handle case
                     "content": "https://meester-johan.info/skills/",
                     "property": "og.url",
                   },
-                  Object {
-                    "content": "A brief overview of my professional skills",
-                    "property": "twitter:description",
-                  },
-                  Object {
-                    "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
-                    "property": "twitter:title",
-                  },
                 ]
               }
               title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
@@ -224,14 +208,6 @@ exports[`<SkillsPage /> fetching content from external source should handle case
                     Object {
                       "content": "https://meester-johan.info/skills/",
                       "property": "og.url",
-                    },
-                    Object {
-                      "content": "A brief overview of my professional skills",
-                      "property": "twitter:description",
-                    },
-                    Object {
-                      "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
-                      "property": "twitter:title",
                     },
                   ]
                 }
@@ -377,14 +353,6 @@ exports[`<SkillsPage /> fetching content from external source should show an err
                   "content": "https://meester-johan.info/skills/",
                   "property": "og.url",
                 },
-                Object {
-                  "content": "A brief overview of my professional skills",
-                  "property": "twitter:description",
-                },
-                Object {
-                  "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
-                  "property": "twitter:title",
-                },
               ]
             }
             title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
@@ -423,14 +391,6 @@ exports[`<SkillsPage /> fetching content from external source should show an err
                     "content": "https://meester-johan.info/skills/",
                     "property": "og.url",
                   },
-                  Object {
-                    "content": "A brief overview of my professional skills",
-                    "property": "twitter:description",
-                  },
-                  Object {
-                    "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
-                    "property": "twitter:title",
-                  },
                 ]
               }
               title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
@@ -468,14 +428,6 @@ exports[`<SkillsPage /> fetching content from external source should show an err
                     Object {
                       "content": "https://meester-johan.info/skills/",
                       "property": "og.url",
-                    },
-                    Object {
-                      "content": "A brief overview of my professional skills",
-                      "property": "twitter:description",
-                    },
-                    Object {
-                      "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
-                      "property": "twitter:title",
                     },
                   ]
                 }
@@ -760,14 +712,6 @@ exports[`<SkillsPage /> fetching content from external source should show the fe
                   "content": "https://meester-johan.info/skills/",
                   "property": "og.url",
                 },
-                Object {
-                  "content": "A brief overview of my professional skills",
-                  "property": "twitter:description",
-                },
-                Object {
-                  "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
-                  "property": "twitter:title",
-                },
               ]
             }
             title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
@@ -806,14 +750,6 @@ exports[`<SkillsPage /> fetching content from external source should show the fe
                     "content": "https://meester-johan.info/skills/",
                     "property": "og.url",
                   },
-                  Object {
-                    "content": "A brief overview of my professional skills",
-                    "property": "twitter:description",
-                  },
-                  Object {
-                    "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
-                    "property": "twitter:title",
-                  },
                 ]
               }
               title="Johan Meester : Portfolio : Front-End Developer : MY SKILLS"
@@ -851,14 +787,6 @@ exports[`<SkillsPage /> fetching content from external source should show the fe
                     Object {
                       "content": "https://meester-johan.info/skills/",
                       "property": "og.url",
-                    },
-                    Object {
-                      "content": "A brief overview of my professional skills",
-                      "property": "twitter:description",
-                    },
-                    Object {
-                      "content": "Johan Meester : Portfolio : Front-End Developer : MY SKILLS",
-                      "property": "twitter:title",
                     },
                   ]
                 }

@@ -44,13 +44,16 @@ export const config = Object.freeze({
       site_name: { content: 'metaSiteName', isMessageId: true },
       type: { content: 'website' },
     },
-    twitter: {
-      card: { content: 'summary' },
-      creator: { content: '' },
-      description: { content: 'metaDescription', isMessageId: true },
-      image: { content: `${WEBSITE_URL}logo-600x600.png` },
-      site: { content: '' },
-    },
+
+    /**
+      twitter: {
+        card: { content: 'summary' },
+        creator: { content: '' },
+        description: { content: 'metaDescription', isMessageId: true },
+        image: { content: `${WEBSITE_URL}logo-600x600.png` },
+        site: { content: '' },
+      },
+    */
   },
   verification: {
     bing: { siteAuth: '8449F2E65DAE05C2621A367448F98023' },

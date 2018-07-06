@@ -155,12 +155,7 @@ function BigHeadGear({ intl: { locale, formatMessage } }) {
       htmlAttributes={{ lang: locale }}
       title={formatMessage({ ...messages.title })}
       meta={constructMetaTags({ formatMessage })}
-    >
-      <script>{`
-        !function(e, t, a, n, g) {e[n] = e[n] || [], e[n].push({'gtm.start': (new Date).getTime(), event: 'gtm.js'});var m = t.getElementsByTagName(a)[0], r = t.createElement(a);r.async = !0, r.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-PLVWW9F', m.parentNode.insertBefore(r, m);}(window, document, 'script', 'dataLayer');
-      `}</script>
-      <noscript>{formatMessage({ ...messages.noScript })}</noscript>
-    </Helmet>
+    />
   );
 }
 

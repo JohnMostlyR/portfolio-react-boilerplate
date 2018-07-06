@@ -389,14 +389,6 @@ Please go to the {home} page or, if you think this is an error, to the {contact}
               "content": "https://meester-johan.info/contact/",
               "property": "og.url",
             },
-            Object {
-              "content": "For contacting me, please fill in this form. I will respond as soon as possible",
-              "property": "twitter:description",
-            },
-            Object {
-              "content": "Johan Meester : Portfolio : Front-End Developer : CONTACT FORM",
-              "property": "twitter:title",
-            },
           ]
         }
         title="Johan Meester : Portfolio : Front-End Developer : CONTACT FORM"
@@ -435,14 +427,6 @@ Please go to the {home} page or, if you think this is an error, to the {contact}
                 "content": "https://meester-johan.info/contact/",
                 "property": "og.url",
               },
-              Object {
-                "content": "For contacting me, please fill in this form. I will respond as soon as possible",
-                "property": "twitter:description",
-              },
-              Object {
-                "content": "Johan Meester : Portfolio : Front-End Developer : CONTACT FORM",
-                "property": "twitter:title",
-              },
             ]
           }
           title="Johan Meester : Portfolio : Front-End Developer : CONTACT FORM"
@@ -480,14 +464,6 @@ Please go to the {home} page or, if you think this is an error, to the {contact}
                 Object {
                   "content": "https://meester-johan.info/contact/",
                   "property": "og.url",
-                },
-                Object {
-                  "content": "For contacting me, please fill in this form. I will respond as soon as possible",
-                  "property": "twitter:description",
-                },
-                Object {
-                  "content": "Johan Meester : Portfolio : Front-End Developer : CONTACT FORM",
-                  "property": "twitter:title",
                 },
               ]
             }
