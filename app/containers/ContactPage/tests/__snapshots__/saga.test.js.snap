@@ -5,11 +5,12 @@ Object {
   "@@redux-saga/IO": true,
   "CALL": Object {
     "args": Array [
-      "/",
+      "https://meester-johan.info/contact-request",
       Object {
-        "body": "form-name=contact-form&title=Test",
+        "body": "{\\"title\\":\\"Test\\"}",
         "headers": Object {
-          "Content-Type": "application/x-www-form-urlencoded",
+          "Accept": "application/json",
+          "Content-Type": "application/json",
         },
         "method": "POST",
       },
@@ -25,11 +26,12 @@ Object {
   "@@redux-saga/IO": true,
   "CALL": Object {
     "args": Array [
-      "/",
+      "https://meester-johan.info/contact-request",
       Object {
-        "body": "form-name=contact-form&title=Test",
+        "body": "{\\"title\\":\\"Test\\"}",
         "headers": Object {
-          "Content-Type": "application/x-www-form-urlencoded",
+          "Accept": "application/json",
+          "Content-Type": "application/json",
         },
         "method": "POST",
       },
