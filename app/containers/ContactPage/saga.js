@@ -5,24 +5,25 @@ import request from '../../utils/request';
 
 // Individual exports for testing
 
+export function encode(data) {
+  return Object.keys(data)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&');
+}
+
 /**
  * ContactForm request/response handler
  */
-export function* sendForm(action) {
+export function* sendForm({ field }) {
   try {
     // Call our request helper (see 'utils/request')
-    const result = yield call(
-      request,
-      'https://meester-johan.info/contact-request',
-      {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(action.field),
+    const result = yield call(request, '/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
       },
-    );
+      body: encode({ 'form-name': 'contact-form', ...field }),
+    });
     if (result.success) {
       yield put(sendFormSuccess());
     } else {
