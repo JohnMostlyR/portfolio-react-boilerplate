@@ -123,7 +123,8 @@ export const contentfulResponse = {
           locale: 'en-US',
         },
         fields: {
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
           file: {
             url: '/large-l.png',
             details: {
@@ -162,7 +163,8 @@ export const contentfulResponse = {
           locale: 'en-US',
         },
         fields: {
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
           file: {
             url: '/small-s.png',
             details: {
@@ -201,7 +203,8 @@ export const contentfulResponse = {
           locale: 'en-US',
         },
         fields: {
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
           file: {
             url: '/extra-large-xl.png',
             details: {
@@ -240,7 +243,8 @@ export const contentfulResponse = {
           locale: 'en-US',
         },
         fields: {
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
           file: {
             url: '/medium-m.png',
             details: {
@@ -279,7 +283,8 @@ export const contentfulResponse = {
           locale: 'en-US',
         },
         fields: {
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
           file: {
             url: '/medium-m.png',
             details: {
@@ -318,7 +323,8 @@ export const contentfulResponse = {
           locale: 'en-US',
         },
         fields: {
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
           file: {
             url: '/large-l.png',
             details: {
@@ -357,7 +363,8 @@ export const contentfulResponse = {
           locale: 'en-US',
         },
         fields: {
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
           file: {
             url: '/small-s.png',
             details: {
@@ -396,7 +403,8 @@ export const contentfulResponse = {
           locale: 'en-US',
         },
         fields: {
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
           file: {
             url: '/extra-large-xl.png',
             details: {
@@ -435,7 +443,8 @@ export const contentfulResponse = {
           locale: 'en-US',
         },
         fields: {
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
           file: {
             url: '/medium-m.png',
             details: {
@@ -474,7 +483,8 @@ export const contentfulResponse = {
           locale: 'en-US',
         },
         fields: {
-          title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+          title:
+            'Presentation showing how this project looks on mobile, tablet and desktop screens',
           file: {
             url: '/medium-m.png',
             details: {

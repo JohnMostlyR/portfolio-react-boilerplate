@@ -20,17 +20,17 @@ describe('SubmitButton', () => {
     let wrapper;
 
     it('should change its appearance when state is `sending`', () => {
-      wrapper = shallow(<SubmitButton formIsValid buttonState={'sending'} />);
+      wrapper = shallow(<SubmitButton formIsValid buttonState="sending" />);
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
     it('should change its appearance when state is `success`', () => {
-      wrapper = shallow(<SubmitButton formIsValid buttonState={'success'} />);
+      wrapper = shallow(<SubmitButton formIsValid buttonState="success" />);
       expect(toJson(wrapper)).toMatchSnapshot();
     });
 
     it('should change its appearance when state is `error`', () => {
-      wrapper = shallow(<SubmitButton formIsValid buttonState={'error'} />);
+      wrapper = shallow(<SubmitButton formIsValid buttonState="error" />);
       expect(toJson(wrapper)).toMatchSnapshot();
     });
   });

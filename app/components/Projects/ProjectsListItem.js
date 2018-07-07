@@ -6,10 +6,19 @@ import { BASE_LINE_HEIGHT } from '../../styles/typography';
 const { backgroundColor, color } = theme.project;
 const ARROW_ODD_PATH_ONE_COLOR = lighten(0.1, backgroundColor.odd).substring(1);
 const ARROW_ODD_PATH_TWO_COLOR = darken(0.1, backgroundColor.odd).substring(1);
-const ARROW_ODD_PATH_THREE_COLOR = lighten(0.1, backgroundColor.odd).substring(1);
-const ARROW_EVEN_PATH_ONE_COLOR = lighten(0.1, backgroundColor.even).substring(1);
-const ARROW_EVEN_PATH_TWO_COLOR = darken(0.1, backgroundColor.even).substring(1);
-const ARROW_EVEN_PATH_THREE_COLOR = lighten(0.1, backgroundColor.even).substring(1);
+const ARROW_ODD_PATH_THREE_COLOR = lighten(0.1, backgroundColor.odd).substring(
+  1,
+);
+const ARROW_EVEN_PATH_ONE_COLOR = lighten(0.1, backgroundColor.even).substring(
+  1,
+);
+const ARROW_EVEN_PATH_TWO_COLOR = darken(0.1, backgroundColor.even).substring(
+  1,
+);
+const ARROW_EVEN_PATH_THREE_COLOR = lighten(
+  0.1,
+  backgroundColor.even,
+).substring(1);
 const ARROW_ODD = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 427.9 175.1 132.1' preserveAspectRatio='xMinYMid'%3E%3Cpath stroke='%23${ARROW_ODD_PATH_ONE_COLOR}' fill='%23${ARROW_ODD_PATH_ONE_COLOR}' d='M0 427.9l175.1 65.7-43.7-65.7z'/%3E%3Cpath fill='%23${ARROW_ODD_PATH_TWO_COLOR}' d='M175.1 493.6l-87.5 21.9v-54.8'/%3E%3Cpath fill='%23${ARROW_ODD_PATH_THREE_COLOR}' d='M87.6 515.5l21.2 44.5v-49.8'/%3E%3C/svg%3E`;
 const ARROW_EVEN = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 427.9 175.1 132.1' preserveAspectRatio='xMinYMid'%3E%3Cpath stroke='%23${ARROW_EVEN_PATH_ONE_COLOR}' fill='%23${ARROW_EVEN_PATH_ONE_COLOR}' d='M0 427.9l175.1 65.7-43.7-65.7z'/%3E%3Cpath fill='%23${ARROW_EVEN_PATH_TWO_COLOR}' d='M175.1 493.6l-87.5 21.9v-54.8'/%3E%3Cpath fill='%23${ARROW_EVEN_PATH_THREE_COLOR}' d='M87.6 515.5l21.2 44.5v-49.8'/%3E%3C/svg%3E`;
 
@@ -40,7 +49,7 @@ const ProjectsListItem = styled.li`
       border-bottom-right-radius: 0;
 
       &::after {
-        content: "";
+        content: '';
         height: 9vmin;
         left: 0;
         margin-top: -1px;
@@ -66,7 +75,7 @@ const ProjectsListItem = styled.li`
       border-bottom-left-radius: 0;
 
       &::after {
-        content: "";
+        content: '';
         height: 9vmin;
         left: 0;
         margin-top: -1px;

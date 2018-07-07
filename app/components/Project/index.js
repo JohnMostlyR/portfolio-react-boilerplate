@@ -18,7 +18,7 @@ class Project extends React.PureComponent {
   }
 
   render() {
-    const { detailsBodyText, isOdd, thumbnail, title } = this.props;
+    const { detailsBodyText, isOdd, search, thumbnail, title } = this.props;
 
     return (
       <Article>
@@ -32,14 +32,19 @@ class Project extends React.PureComponent {
           <P>{detailsBodyText}</P>
           <P textAlign="right">
             <FormattedMessage {...messages.detailsLink}>
-              {
-                (message) => (
-                  <Link
-                    to={`/projects/${title.toLowerCase().replace(/\W+/g, '-')}`}
-                    odd={`${isOdd}`}
-                  >{message}</Link>
-                )
-              }
+              {message => (
+                <Link // eslint-disable-line jsx-a11y/anchor-is-valid
+                  to={{
+                    pathname: `/projects/${title
+                      .toLowerCase()
+                      .replace(/\W+/g, '-')}/`,
+                    search,
+                  }}
+                  odd={`${isOdd}`}
+                >
+                  {message}
+                </Link>
+              )}
             </FormattedMessage>
           </P>
         </ProjectBody>
@@ -51,6 +56,7 @@ class Project extends React.PureComponent {
 Project.propTypes = {
   detailsBodyText: PropTypes.string,
   isOdd: PropTypes.bool,
+  search: PropTypes.string,
   thumbnail: PropTypes.shape({
     file: PropTypes.shape({
       details: PropTypes.shape({

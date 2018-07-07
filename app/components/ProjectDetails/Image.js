@@ -13,8 +13,16 @@ const StyledPicture = styled.picture`
 function transformImagesArray(images) {
   const srcSet = {};
 
-  images.forEach((_image) => {
-    const { file: { details: { image: { height, width } }, fileName, url } } = _image;
+  images.forEach(_image => {
+    const {
+      file: {
+        details: {
+          image: { height, width },
+        },
+        fileName,
+        url,
+      },
+    } = _image;
     const [relativeSizeIndication] = fileName
       .replace(/\.(png|jpe?g)/i, '')
       .trim()
@@ -38,10 +46,15 @@ function getImageDescription(images) {
 }
 
 function composeSourceElements(sources) {
-  return sources.map((source) => {
-    const { media: { breakpoint, size }, srcSet } = source;
+  return sources.map(source => {
+    const {
+      media: { breakpoint, size },
+      srcSet,
+    } = source;
 
-    return (<source key={size} media={`(${breakpoint}: ${size}px)`} srcSet={srcSet} />);
+    return (
+      <source key={size} media={`(${breakpoint}: ${size}px)`} srcSet={srcSet} />
+    );
   });
 }
 
@@ -70,7 +83,12 @@ function Image({ images = [] }) {
       srcSet: xl.url,
     },
   ];
-  const imageDimensions = [s.dimensions, m.dimensions, l.dimensions, xl.dimensions];
+  const imageDimensions = [
+    s.dimensions,
+    m.dimensions,
+    l.dimensions,
+    xl.dimensions,
+  ];
 
   return (
     <ImageWrapper
@@ -79,9 +97,7 @@ function Image({ images = [] }) {
       defaultImage={s.dimensions}
     >
       <StyledPicture>
-        {
-          composeSourceElements(breakpoints)
-        }
+        {composeSourceElements(breakpoints)}
         <img src={xl.url} alt={altText} />
       </StyledPicture>
     </ImageWrapper>
@@ -101,7 +117,7 @@ Image.propTypes = {
         url: PropTypes.string.isRequired,
       }).isRequired,
       title: PropTypes.string.isRequired,
-    })
+    }),
   ),
 };
 

@@ -2,7 +2,7 @@ import { call, put, select, takeLatest } from 'redux-saga/effects';
 import marked from 'marked';
 import { LOAD_CONTENT } from './constants';
 import { contentLoaded, contentLoadingError } from './actions';
-import { config } from '../../private';
+import { config } from '../../config';
 import request from '../../utils/request';
 
 import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
@@ -11,6 +11,12 @@ marked.options({
   breaks: true,
 });
 
+const {
+  api: {
+    contentful: { endpoint, access_token }, // eslint-disable-line
+  },
+} = config;
+
 // Individual exports for testing
 
 /**
@@ -18,21 +24,23 @@ marked.options({
  */
 export function* getContent() {
   const LOCALE = yield select(makeSelectLocale());
-  const localeForContentful = (LOCALE === 'en') ? 'en-US' : LOCALE;
-  const ENDPOINT = config.contentful.endpoint;
+  const localeForContentful = LOCALE === 'en' ? 'en-US' : LOCALE;
   const queryParam = {
-    access_token: config.contentful.access_token,
+    access_token,
     content_type: 'skills',
     select: 'fields',
     locale: localeForContentful,
   };
 
   const query = Object.keys(queryParam)
-    .reduce((accumulator, currentValue) => accumulator.concat(
-      `${currentValue}=${queryParam[currentValue]}`), [])
+    .reduce(
+      (accumulator, currentValue) =>
+        accumulator.concat(`${currentValue}=${queryParam[currentValue]}`),
+      [],
+    )
     .join('&');
 
-  const requestURL = `${ENDPOINT}${query}`;
+  const requestURL = `${endpoint}${query}`;
 
   try {
     // Call our request helper (see 'utils/request')

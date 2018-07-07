@@ -1,17 +1,19 @@
 import { createSelector } from 'reselect';
 import { List } from 'immutable';
 
+import { initialState } from './reducer';
+
 /**
  * Direct selector to the projectsPage state domain
  */
-const selectProjectsPageDomain = (state) => state.get('projectsPage');
+const selectProjectsPageDomain = state =>
+  state.get('projectsPage', initialState);
 
 /**
  * Other specific selectors
  */
-const makeSelectProjectsPageProjects = () => createSelector(
-  selectProjectsPageDomain,
-  (substate) => {
+const makeSelectProjectsPageProjects = () =>
+  createSelector(selectProjectsPageDomain, substate => {
     const projects = substate.get('projects');
 
     if (List.isList(projects)) {
@@ -19,23 +21,16 @@ const makeSelectProjectsPageProjects = () => createSelector(
     }
 
     return projects;
-  }
-);
+  });
 
-const makeSelectLoading = () => createSelector(
-  selectProjectsPageDomain,
-  (substate) => substate.get('loading')
-);
+const makeSelectLoading = () =>
+  createSelector(selectProjectsPageDomain, substate => substate.get('loading'));
 
-const makeSelectError = () => createSelector(
-  selectProjectsPageDomain,
-  (substate) => substate.get('error')
-);
+const makeSelectError = () =>
+  createSelector(selectProjectsPageDomain, substate => substate.get('error'));
 
-const makeSelectLocale = () => createSelector(
-  selectProjectsPageDomain,
-  (substate) => substate.get('locale')
-);
+const makeSelectLocale = () =>
+  createSelector(selectProjectsPageDomain, substate => substate.get('locale'));
 
 export {
   selectProjectsPageDomain,

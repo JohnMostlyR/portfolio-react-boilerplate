@@ -9,8 +9,8 @@ const Wrapper = styled.div`
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-areas:
-      "header"
-      "main";
+      'header'
+      'main';
   }
 `;
 

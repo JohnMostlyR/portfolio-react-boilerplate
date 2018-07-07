@@ -1,10 +1,11 @@
 language: node_js
 
 node_js:
+  - 9
   - 8
 
 script:
-  - npm run test
+  - npm test -- --maxWorkers=4
   - npm run build
 
 before_install:

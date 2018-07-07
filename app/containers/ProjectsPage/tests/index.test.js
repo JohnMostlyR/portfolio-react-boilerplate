@@ -10,13 +10,26 @@ import { loadContent } from '../actions';
 jest.useFakeTimers();
 
 const project = Object.freeze({
-  article: '# Article for test case\n\n[add attributes to link](https://the.world/)\n',
+  article:
+    '# Article for test case\n\n[add attributes to link](https://the.world/)\n',
   description: 'Description for test case',
   images: [
-    { file: { fileName: 'test-s.png', url: '/test-s.png' }, title: 'Test image' },
-    { file: { fileName: 'test-m.png', url: '/test-m.png' }, title: 'Test image' },
-    { file: { fileName: 'test-l.png', url: '/test-l.png' }, title: 'Test image' },
-    { file: { fileName: 'test-xl.png', url: '/test-xl.png' }, title: 'Test image' },
+    {
+      file: { fileName: 'test-s.png', url: '/test-s.png' },
+      title: 'Test image',
+    },
+    {
+      file: { fileName: 'test-m.png', url: '/test-m.png' },
+      title: 'Test image',
+    },
+    {
+      file: { fileName: 'test-l.png', url: '/test-l.png' },
+      title: 'Test image',
+    },
+    {
+      file: { fileName: 'test-xl.png', url: '/test-xl.png' },
+      title: 'Test image',
+    },
   ],
   thumbnail: {
     file: {
@@ -36,6 +49,7 @@ const project = Object.freeze({
   title: 'Title for test case',
 });
 
+/* eslint-disable no-restricted-globals */
 describe('<ProjectsPage />', () => {
   const history = createHistory({
     initialEntries: ['/projects'], // The initial URLs in the history stack
@@ -46,9 +60,12 @@ describe('<ProjectsPage />', () => {
   const getContent = jest.fn();
   const componentWillReceivePropsSpy = jest.spyOn(
     ProjectsPage.prototype,
-    'componentWillReceiveProps'
+    'componentWillReceiveProps',
   );
-  const handleIsLoadingSpy = jest.spyOn(ProjectsPage.prototype, 'handleIsLoading');
+  const handleIsLoadingSpy = jest.spyOn(
+    ProjectsPage.prototype,
+    'handleIsLoading',
+  );
   const setIsLoadingSpy = jest.spyOn(ProjectsPage.prototype, 'setIsLoading');
 
   let wrapper = {};
@@ -68,7 +85,7 @@ describe('<ProjectsPage />', () => {
         location={location}
         getContent={getContent}
         projects={[project]}
-      />
+      />,
     );
     expect(toJson(wrapper)).toMatchSnapshot();
   });
@@ -82,65 +99,63 @@ describe('<ProjectsPage />', () => {
       jest.clearAllMocks();
     });
 
-    it('should set the "isLoading" state when the "isLoading" prop is true for more than 200ms',
-      () => {
-        wrapper = shallow(
-          <ProjectsPage
-            error={false}
-            isLoading={false}
-            location={location}
-            getContent={getContent}
-            projects={[project]}
-          />
-        );
-        expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(0);
-        expect(handleIsLoadingSpy).toHaveBeenCalledTimes(0);
-        expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+    it('should set the "isLoading" state when the "isLoading" prop is true for more than 200ms', () => {
+      wrapper = shallow(
+        <ProjectsPage
+          error={false}
+          isLoading={false}
+          location={location}
+          getContent={getContent}
+          projects={[project]}
+        />,
+      );
+      expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(0);
+      expect(handleIsLoadingSpy).toHaveBeenCalledTimes(0);
+      expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
 
-        isLoadingProp = true;
+      isLoadingProp = true;
 
-        wrapper.setProps({ isLoading: isLoadingProp });
+      wrapper.setProps({ isLoading: isLoadingProp });
 
-        expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(1);
-        expect(handleIsLoadingSpy).toHaveBeenCalledTimes(1);
-        expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
-        expect(wrapper.state().isLoading).toBe(false);
+      expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(1);
+      expect(handleIsLoadingSpy).toHaveBeenCalledTimes(1);
+      expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+      expect(wrapper.state().isLoading).toBe(false);
 
-        jest.runTimersToTime(300);
+      jest.runTimersToTime(300);
 
-        expect(setIsLoadingSpy).toHaveBeenCalledTimes(1);
-        expect(wrapper.state().isLoading).toBe(true);
-      });
+      expect(setIsLoadingSpy).toHaveBeenCalledTimes(1);
+      expect(wrapper.state().isLoading).toBe(true);
+    });
 
-    it('should not set the "isLoading" state when the "isLoading" prop is true for less than 200ms',
-      () => {
-        wrapper = shallow(
-          <ProjectsPage
-            error={false}
-            isLoading={false}
-            location={location}
-            getContent={getContent}
-            projects={[project]}
-          />
-        );
-        expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(0);
-        expect(handleIsLoadingSpy).toHaveBeenCalledTimes(0);
-        expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+    it('should not set the "isLoading" state when the "isLoading" prop is true for less than 200ms', () => {
+      wrapper = shallow(
+        <ProjectsPage
+          error={false}
+          isLoading={false}
+          location={location}
+          getContent={getContent}
+          projects={[project]}
+        />,
+      );
+      expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(0);
+      expect(handleIsLoadingSpy).toHaveBeenCalledTimes(0);
+      expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
 
-        isLoadingProp = true;
+      isLoadingProp = true;
 
-        wrapper.setProps({ isLoading: isLoadingProp });
+      wrapper.setProps({ isLoading: isLoadingProp });
 
-        expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(1);
-        expect(handleIsLoadingSpy).toHaveBeenCalledTimes(1);
-        expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
-        expect(wrapper.state().isLoading).toBe(false);
+      expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(1);
+      expect(handleIsLoadingSpy).toHaveBeenCalledTimes(1);
+      expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+      expect(wrapper.state().isLoading).toBe(false);
 
-        jest.runTimersToTime(100);
+      jest.runTimersToTime(100);
 
-        expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
-        expect(wrapper.state().isLoading).toBe(false);
-      });
+      expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+      expect(wrapper.state().isLoading).toBe(false);
+    });
   });
 
   describe('fetching content from external source', () => {
@@ -157,7 +172,7 @@ describe('<ProjectsPage />', () => {
           location={location}
           getContent={getContent}
           projects={[project]}
-        />
+        />,
       );
 
       expect(getContent).toHaveBeenCalledTimes(1);
@@ -171,7 +186,7 @@ describe('<ProjectsPage />', () => {
           location={location}
           getContent={getContent}
           projects={[]}
-        />
+        />,
       );
 
       expect(toJson(wrapper)).toMatchSnapshot();
@@ -185,7 +200,7 @@ describe('<ProjectsPage />', () => {
           location={location}
           getContent={getContent}
           projects={[]}
-        />
+        />,
       );
 
       expect(toJson(wrapper)).toMatchSnapshot();
@@ -227,7 +242,7 @@ describe('<ProjectsPage />', () => {
           location={location}
           getContent={getContent}
           projects={[project]}
-        />
+        />,
       );
       expect(toJson(wrapper)).toMatchSnapshot();
     });
@@ -242,7 +257,7 @@ describe('<ProjectsPage />', () => {
           location={location}
           getContent={getContent}
           projects={[project]}
-        />
+        />,
       );
       expect(toJson(wrapper)).toMatchSnapshot();
     });

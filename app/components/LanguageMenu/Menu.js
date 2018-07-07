@@ -15,7 +15,7 @@ const Menu = styled.div.attrs({
   box-shadow: 0 0 15px grey;
   list-style: none;
   padding: 0;
-  transform: scale(${({ isExpanded }) => isExpanded ? 1 : 0});
+  transform: scale(${({ isExpanded }) => (isExpanded ? 1 : 0)});
   transform-origin: 1.5rem top;
   transition: transform 0.2s 0s ease-in-out;
 

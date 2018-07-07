@@ -10,7 +10,6 @@ import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
-import { Helmet } from 'react-helmet';
 
 import {
   makeSelectSendStatus,
@@ -27,8 +26,10 @@ import validateForm from './ValidateForm';
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
 import PageContent from '../../components/PageContent';
+import HeadGear from '../../components/HeadGear';
 
-export class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export class ContactPage extends React.Component {
+  // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
 
@@ -83,12 +84,9 @@ export class ContactPage extends React.Component { // eslint-disable-line react/
 
     return (
       <React.Fragment>
-        <Helmet>
-          <title>Contact pagina</title>
-          <meta name="description" content="Contact pagina van Johan Meester zijn portfolio" />
-        </Helmet>
+        <HeadGear messages={messages} path="/contact" />
         <PageContent
-          title={<FormattedMessage {...messages.header} />}
+          title={<FormattedMessage {...messages.pageTitle} />}
           content={
             <ContactForm
               field={field}
@@ -112,19 +110,22 @@ ContactPage.propTypes = {
 };
 
 const mapStateToProps = createStructuredSelector({
-  sendStatus: makeSelectSendStatus(),
-  field: makeSelectField(),
   error: makeSelectError(),
+  field: makeSelectField(),
+  sendStatus: makeSelectSendStatus(),
 });
 
 export function mapDispatchToProps(dispatch) {
   return {
-    onSubmit: (field) => dispatch(sendForm(field)),
+    onSubmit: field => dispatch(sendForm(field)),
     dispatch,
   };
 }
 
-const withConnect = connect(mapStateToProps, mapDispatchToProps);
+const withConnect = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+);
 
 const withReducer = injectReducer({ key: 'contactPage', reducer });
 const withSaga = injectSaga({ key: 'contactPage', saga });

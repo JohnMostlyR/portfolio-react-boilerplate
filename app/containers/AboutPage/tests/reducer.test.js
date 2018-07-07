@@ -1,11 +1,7 @@
 import { fromJS } from 'immutable';
 
 import aboutPage from '../reducer';
-import {
-  loadContent,
-  contentLoaded,
-  contentLoadingError,
-} from '../actions';
+import { loadContent, contentLoaded, contentLoadingError } from '../actions';
 
 describe('aboutPage reducer', () => {
   let state;
@@ -41,17 +37,19 @@ describe('aboutPage reducer', () => {
       .set('loading', false)
       .set('locale', locale);
 
-    expect(aboutPage(state, contentLoaded(fixture, locale))).toEqual(expectedResult);
+    expect(aboutPage(state, contentLoaded(fixture, locale))).toEqual(
+      expectedResult,
+    );
   });
 
   it('should handle the contentLoadingError action correctly', () => {
     const fixture = {
       msg: 'Not found',
     };
-    const expectedResult = state
-      .set('error', fixture)
-      .set('loading', false);
+    const expectedResult = state.set('error', fixture).set('loading', false);
 
-    expect(aboutPage(state, contentLoadingError(fixture))).toEqual(expectedResult);
+    expect(aboutPage(state, contentLoadingError(fixture))).toEqual(
+      expectedResult,
+    );
   });
 });

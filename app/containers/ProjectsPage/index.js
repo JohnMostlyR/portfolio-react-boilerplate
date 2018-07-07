@@ -10,7 +10,6 @@ import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
-import { Helmet } from 'react-helmet';
 
 import saga from './saga';
 import messages from './messages';
@@ -22,15 +21,14 @@ import {
 } from './selectors';
 import reducer from './reducer';
 
-import {
-  makeSelectLocation,
-} from '../../containers/App/selectors';
+import { makeSelectLocation } from '../../containers/App/selectors';
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
 import Projects from '../../components/Projects';
 import PageContent from '../../components/PageContent';
 import ProjectDetails from '../../components/ProjectDetails';
 import ContentLoadingIndicator from '../../components/ContentLoadingIndicator';
+import HeadGear from '../../components/HeadGear';
 
 export function delayTimer(isLoading, callback) {
   return setTimeout(() => {
@@ -38,7 +36,8 @@ export function delayTimer(isLoading, callback) {
   }, 200);
 }
 
-export class ProjectsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export class ProjectsPage extends React.PureComponent {
+  // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
 
@@ -78,33 +77,43 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
   }
 
   render() {
-    const { error, location: { pathname }, projects } = this.props;
+    const {
+      error,
+      location: { pathname, search },
+      projects,
+    } = this.props;
     const { isLoading } = this.state;
     let showContent = <React.Fragment />;
 
     if (projects.length) {
       showContent = (
         <PageContent
-          title={<FormattedMessage {...messages.title} />}
-          content={<Projects projects={projects} />}
+          title={<FormattedMessage {...messages.pageTitle} />}
+          content={<Projects projects={projects} search={search} />}
           noSpeechBubble
         />
       );
 
-      const regexp = RegExp('/projects/(.+)');
+      const regexp = RegExp('\\/projects\\/(.+)\\/(?:$|\\?.*)');
 
       if (regexp.test(pathname)) {
         const [, subpath] = regexp.exec(pathname);
-        const project = projects.find((_project) => {
+        const project = projects.find(_project => {
           const { title } = _project;
-          return (subpath === title.toLowerCase().replace(/\W+/g, '-'));
+          return subpath === title.toLowerCase().replace(/\W+/g, '-');
         });
 
         if (project) {
-          showContent = <ProjectDetails project={project} />;
+          showContent = (
+            <ProjectDetails
+              project={project}
+              backlink={`/projects/${search}`}
+            />
+          );
         }
       }
-    } else if (isLoading) { // FROM STATE!
+    } else if (isLoading) {
+      // FROM STATE!
       showContent = <ContentLoadingIndicator show showError={false} />;
     } else if (!!error !== false) {
       showContent = <ContentLoadingIndicator show showError />;
@@ -112,10 +121,7 @@ export class ProjectsPage extends React.PureComponent { // eslint-disable-line r
 
     return (
       <React.Fragment>
-        <Helmet>
-          <title>Mijn projecten</title>
-          <meta name="description" content="Mijn projecten pagina van Johan Meester zijn portfolio" />
-        </Helmet>
+        <HeadGear messages={messages} path={pathname} />
         {showContent}
       </React.Fragment>
     );
@@ -150,7 +156,10 @@ export function mapDispatchToProps(dispatch) {
   };
 }
 
-const withConnect = connect(mapStateToProps, mapDispatchToProps);
+const withConnect = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+);
 
 const withReducer = injectReducer({ key: 'projectsPage', reducer });
 const withSaga = injectSaga({ key: 'projectsPage', saga });

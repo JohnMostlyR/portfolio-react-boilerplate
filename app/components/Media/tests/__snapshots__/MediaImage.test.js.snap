@@ -1,381 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MediaImage /> should adopt the "imageAlign" prop set to "bottom" 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MediaImage
-    imageAlign="bottom"
-    imageAlt="test"
-    imageHeight="auto"
-    imageSource="/test.png"
-    imageWidth="100%"
-    reverse={false}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "imageAlign": "bottom",
-      "imageAlt": "test",
-      "imageHeight": "auto",
-      "imageSource": "/test.png",
-      "imageWidth": "100%",
-      "reverse": false,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "imageAlign": "bottom",
-        "imageAlt": "test",
-        "imageHeight": "auto",
-        "imageSource": "/test.png",
-        "imageWidth": "100%",
-        "reverse": false,
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+<MediaImage__StyledImg
+  imageAlign="bottom"
+  imageAlt="test"
+  imageHeight="auto"
+  imageSource="/test.png"
+  imageWidth="100%"
+  reverse={false}
+/>
 `;
 
 exports[`<MediaImage /> should adopt the "imageAlign" prop set to "middle" 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MediaImage
-    imageAlign="middle"
-    imageAlt="test"
-    imageHeight="auto"
-    imageSource="/test.png"
-    imageWidth="100%"
-    reverse={false}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "imageAlign": "middle",
-      "imageAlt": "test",
-      "imageHeight": "auto",
-      "imageSource": "/test.png",
-      "imageWidth": "100%",
-      "reverse": false,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "imageAlign": "middle",
-        "imageAlt": "test",
-        "imageHeight": "auto",
-        "imageSource": "/test.png",
-        "imageWidth": "100%",
-        "reverse": false,
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+<MediaImage__StyledImg
+  imageAlign="middle"
+  imageAlt="test"
+  imageHeight="auto"
+  imageSource="/test.png"
+  imageWidth="100%"
+  reverse={false}
+/>
 `;
 
 exports[`<MediaImage /> should adopt the "imageAlign" prop set to "top" 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MediaImage
-    imageAlign="top"
-    imageAlt="test"
-    imageHeight="auto"
-    imageSource="/test.png"
-    imageWidth="100%"
-    reverse={false}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "imageAlign": "top",
-      "imageAlt": "test",
-      "imageHeight": "auto",
-      "imageSource": "/test.png",
-      "imageWidth": "100%",
-      "reverse": false,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "imageAlign": "top",
-        "imageAlt": "test",
-        "imageHeight": "auto",
-        "imageSource": "/test.png",
-        "imageWidth": "100%",
-        "reverse": false,
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+<MediaImage__StyledImg
+  imageAlign="top"
+  imageAlt="test"
+  imageHeight="auto"
+  imageSource="/test.png"
+  imageWidth="100%"
+  reverse={false}
+/>
 `;
 
 exports[`<MediaImage /> should adopt the "imageHeight" prop 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MediaImage
-    imageAlign="top"
-    imageAlt="test"
-    imageHeight="10px"
-    imageSource="/test.png"
-    imageWidth="100%"
-    reverse={false}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "imageAlign": "top",
-      "imageAlt": "test",
-      "imageHeight": "10px",
-      "imageSource": "/test.png",
-      "imageWidth": "100%",
-      "reverse": false,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "imageAlign": "top",
-        "imageAlt": "test",
-        "imageHeight": "10px",
-        "imageSource": "/test.png",
-        "imageWidth": "100%",
-        "reverse": false,
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+<MediaImage__StyledImg
+  imageAlign="top"
+  imageAlt="test"
+  imageHeight="10px"
+  imageSource="/test.png"
+  imageWidth="100%"
+  reverse={false}
+/>
 `;
 
 exports[`<MediaImage /> should adopt the "imageWidth" prop 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MediaImage
-    imageAlign="top"
-    imageAlt="test"
-    imageHeight="auto"
-    imageSource="/test.png"
-    imageWidth="10px"
-    reverse={false}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "imageAlign": "top",
-      "imageAlt": "test",
-      "imageHeight": "auto",
-      "imageSource": "/test.png",
-      "imageWidth": "10px",
-      "reverse": false,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "imageAlign": "top",
-        "imageAlt": "test",
-        "imageHeight": "auto",
-        "imageSource": "/test.png",
-        "imageWidth": "10px",
-        "reverse": false,
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+<MediaImage__StyledImg
+  imageAlign="top"
+  imageAlt="test"
+  imageHeight="auto"
+  imageSource="/test.png"
+  imageWidth="10px"
+  reverse={false}
+/>
 `;
 
 exports[`<MediaImage /> should adopt the "reverse" prop 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <MediaImage
-    imageAlign="top"
-    imageAlt="test"
-    imageHeight="auto"
-    imageSource="/test.png"
-    imageWidth="100%"
-    reverse={false}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "imageAlign": "top",
-      "imageAlt": "test",
-      "imageHeight": "auto",
-      "imageSource": "/test.png",
-      "imageWidth": "100%",
-      "reverse": false,
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "imageAlign": "top",
-        "imageAlt": "test",
-        "imageHeight": "auto",
-        "imageSource": "/test.png",
-        "imageWidth": "100%",
-        "reverse": false,
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+<MediaImage__StyledImg
+  imageAlign="top"
+  imageAlt="test"
+  imageHeight="auto"
+  imageSource="/test.png"
+  imageWidth="100%"
+  reverse={false}
+/>
 `;
 
 exports[`<MediaImage /> should render and match the snapshot 1`] = `

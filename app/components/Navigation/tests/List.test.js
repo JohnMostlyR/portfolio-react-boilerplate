@@ -12,7 +12,9 @@ describe('<List />', () => {
   });
 
   it('should adopt the "isExpanded" property', () => {
-    const renderedComponent = shallow(<List bigScreenBreakpoint={1} isExpanded />);
+    const renderedComponent = shallow(
+      <List bigScreenBreakpoint={1} isExpanded />,
+    );
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 });

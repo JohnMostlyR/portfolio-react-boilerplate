@@ -20,44 +20,203 @@ exports[`<AboutPage /> fetching content from external source should handle case 
   >
     <AboutPage
       error={false}
-      getContent={[Function]}
+      getContent={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        }
+      }
       isLoading={false}
       skillsText={Array []}
     >
-      <HelmetWrapper
-        defer={true}
-        encodeSpecialCharacters={true}
-      >
-        <SideEffect(NullComponent)
-          defer={true}
-          encodeSpecialCharacters={true}
-          meta={
-            Array [
-              Object {
-                "content": "Over mij pagina van Johan Meester zijn portfolio",
-                "name": "description",
-              },
-            ]
+      <InjectIntl(HeadGear)
+        messages={
+          Object {
+            "metaDescription": Object {
+              "defaultMessage": "A short description about me and my professional life",
+              "id": "portfolio.page.AboutPage.meta.description",
+            },
+            "pageTitle": Object {
+              "defaultMessage": "ABOUT ME",
+              "id": "portfolio.page.AboutPage.pageTitle",
+            },
+            "title": Object {
+              "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+              "id": "portfolio.page.AboutPage.title",
+            },
           }
-          title="Over mij"
-          titleAttributes={Object {}}
+        }
+        path="/about"
+      >
+        <HeadGear
+          intl={
+            Object {
+              "defaultFormats": Object {},
+              "defaultLocale": "en",
+              "formatDate": [Function],
+              "formatHTMLMessage": [Function],
+              "formatMessage": [Function],
+              "formatNumber": [Function],
+              "formatPlural": [Function],
+              "formatRelative": [Function],
+              "formatTime": [Function],
+              "formats": Object {},
+              "formatters": Object {
+                "getDateTimeFormat": [Function],
+                "getMessageFormat": [Function],
+                "getNumberFormat": [Function],
+                "getPluralFormat": [Function],
+                "getRelativeFormat": [Function],
+              },
+              "locale": "en",
+              "messages": Object {},
+              "now": [Function],
+              "textComponent": "span",
+            }
+          }
+          messages={
+            Object {
+              "metaDescription": Object {
+                "defaultMessage": "A short description about me and my professional life",
+                "id": "portfolio.page.AboutPage.meta.description",
+              },
+              "pageTitle": Object {
+                "defaultMessage": "ABOUT ME",
+                "id": "portfolio.page.AboutPage.pageTitle",
+              },
+              "title": Object {
+                "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+                "id": "portfolio.page.AboutPage.title",
+              },
+            }
+          }
+          path="/about"
         >
-          <NullComponent
+          <HelmetWrapper
             defer={true}
             encodeSpecialCharacters={true}
-            meta={
+            link={
               Array [
                 Object {
-                  "content": "Over mij pagina van Johan Meester zijn portfolio",
-                  "name": "description",
+                  "href": "https://meester-johan.info/about/",
+                  "rel": "canonical",
+                },
+                Object {
+                  "href": "https://meester-johan.info/about/",
+                  "hreflang": "x-default",
+                  "rel": "alternate",
                 },
               ]
             }
-            title="Over mij"
-            titleAttributes={Object {}}
-          />
-        </SideEffect(NullComponent)>
-      </HelmetWrapper>
+            meta={
+              Array [
+                Object {
+                  "content": "A short description about me and my professional life",
+                  "name": "description",
+                },
+                Object {
+                  "content": "A short description about me and my professional life",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "Johan Meester : Portfolio : Front-End Developer : ABOUT ME",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://meester-johan.info/about/",
+                  "property": "og.url",
+                },
+              ]
+            }
+            title="Johan Meester : Portfolio : Front-End Developer : ABOUT ME"
+          >
+            <SideEffect(NullComponent)
+              defer={true}
+              encodeSpecialCharacters={true}
+              link={
+                Array [
+                  Object {
+                    "href": "https://meester-johan.info/about/",
+                    "rel": "canonical",
+                  },
+                  Object {
+                    "href": "https://meester-johan.info/about/",
+                    "hreflang": "x-default",
+                    "rel": "alternate",
+                  },
+                ]
+              }
+              meta={
+                Array [
+                  Object {
+                    "content": "A short description about me and my professional life",
+                    "name": "description",
+                  },
+                  Object {
+                    "content": "A short description about me and my professional life",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "Johan Meester : Portfolio : Front-End Developer : ABOUT ME",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://meester-johan.info/about/",
+                    "property": "og.url",
+                  },
+                ]
+              }
+              title="Johan Meester : Portfolio : Front-End Developer : ABOUT ME"
+            >
+              <NullComponent
+                defer={true}
+                encodeSpecialCharacters={true}
+                link={
+                  Array [
+                    Object {
+                      "href": "https://meester-johan.info/about/",
+                      "rel": "canonical",
+                    },
+                    Object {
+                      "href": "https://meester-johan.info/about/",
+                      "hreflang": "x-default",
+                      "rel": "alternate",
+                    },
+                  ]
+                }
+                meta={
+                  Array [
+                    Object {
+                      "content": "A short description about me and my professional life",
+                      "name": "description",
+                    },
+                    Object {
+                      "content": "A short description about me and my professional life",
+                      "property": "og:description",
+                    },
+                    Object {
+                      "content": "Johan Meester : Portfolio : Front-End Developer : ABOUT ME",
+                      "property": "og:title",
+                    },
+                    Object {
+                      "content": "https://meester-johan.info/about/",
+                      "property": "og.url",
+                    },
+                  ]
+                }
+                title="Johan Meester : Portfolio : Front-End Developer : ABOUT ME"
+              />
+            </SideEffect(NullComponent)>
+          </HelmetWrapper>
+        </HeadGear>
+      </InjectIntl(HeadGear)>
     </AboutPage>
   </IntlProvider>
 </Provider>
@@ -83,51 +242,210 @@ exports[`<AboutPage /> fetching content from external source should show an erro
   >
     <AboutPage
       error={true}
-      getContent={[Function]}
+      getContent={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        }
+      }
     >
-      <HelmetWrapper
-        defer={true}
-        encodeSpecialCharacters={true}
-      >
-        <SideEffect(NullComponent)
-          defer={true}
-          encodeSpecialCharacters={true}
-          meta={
-            Array [
-              Object {
-                "content": "Over mij pagina van Johan Meester zijn portfolio",
-                "name": "description",
-              },
-            ]
+      <InjectIntl(HeadGear)
+        messages={
+          Object {
+            "metaDescription": Object {
+              "defaultMessage": "A short description about me and my professional life",
+              "id": "portfolio.page.AboutPage.meta.description",
+            },
+            "pageTitle": Object {
+              "defaultMessage": "ABOUT ME",
+              "id": "portfolio.page.AboutPage.pageTitle",
+            },
+            "title": Object {
+              "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+              "id": "portfolio.page.AboutPage.title",
+            },
           }
-          title="Over mij"
-          titleAttributes={Object {}}
+        }
+        path="/about"
+      >
+        <HeadGear
+          intl={
+            Object {
+              "defaultFormats": Object {},
+              "defaultLocale": "en",
+              "formatDate": [Function],
+              "formatHTMLMessage": [Function],
+              "formatMessage": [Function],
+              "formatNumber": [Function],
+              "formatPlural": [Function],
+              "formatRelative": [Function],
+              "formatTime": [Function],
+              "formats": Object {},
+              "formatters": Object {
+                "getDateTimeFormat": [Function],
+                "getMessageFormat": [Function],
+                "getNumberFormat": [Function],
+                "getPluralFormat": [Function],
+                "getRelativeFormat": [Function],
+              },
+              "locale": "en",
+              "messages": Object {},
+              "now": [Function],
+              "textComponent": "span",
+            }
+          }
+          messages={
+            Object {
+              "metaDescription": Object {
+                "defaultMessage": "A short description about me and my professional life",
+                "id": "portfolio.page.AboutPage.meta.description",
+              },
+              "pageTitle": Object {
+                "defaultMessage": "ABOUT ME",
+                "id": "portfolio.page.AboutPage.pageTitle",
+              },
+              "title": Object {
+                "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+                "id": "portfolio.page.AboutPage.title",
+              },
+            }
+          }
+          path="/about"
         >
-          <NullComponent
+          <HelmetWrapper
             defer={true}
             encodeSpecialCharacters={true}
-            meta={
+            link={
               Array [
                 Object {
-                  "content": "Over mij pagina van Johan Meester zijn portfolio",
-                  "name": "description",
+                  "href": "https://meester-johan.info/about/",
+                  "rel": "canonical",
+                },
+                Object {
+                  "href": "https://meester-johan.info/about/",
+                  "hreflang": "x-default",
+                  "rel": "alternate",
                 },
               ]
             }
-            title="Over mij"
-            titleAttributes={Object {}}
-          />
-        </SideEffect(NullComponent)>
-      </HelmetWrapper>
+            meta={
+              Array [
+                Object {
+                  "content": "A short description about me and my professional life",
+                  "name": "description",
+                },
+                Object {
+                  "content": "A short description about me and my professional life",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "Johan Meester : Portfolio : Front-End Developer : ABOUT ME",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://meester-johan.info/about/",
+                  "property": "og.url",
+                },
+              ]
+            }
+            title="Johan Meester : Portfolio : Front-End Developer : ABOUT ME"
+          >
+            <SideEffect(NullComponent)
+              defer={true}
+              encodeSpecialCharacters={true}
+              link={
+                Array [
+                  Object {
+                    "href": "https://meester-johan.info/about/",
+                    "rel": "canonical",
+                  },
+                  Object {
+                    "href": "https://meester-johan.info/about/",
+                    "hreflang": "x-default",
+                    "rel": "alternate",
+                  },
+                ]
+              }
+              meta={
+                Array [
+                  Object {
+                    "content": "A short description about me and my professional life",
+                    "name": "description",
+                  },
+                  Object {
+                    "content": "A short description about me and my professional life",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "Johan Meester : Portfolio : Front-End Developer : ABOUT ME",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://meester-johan.info/about/",
+                    "property": "og.url",
+                  },
+                ]
+              }
+              title="Johan Meester : Portfolio : Front-End Developer : ABOUT ME"
+            >
+              <NullComponent
+                defer={true}
+                encodeSpecialCharacters={true}
+                link={
+                  Array [
+                    Object {
+                      "href": "https://meester-johan.info/about/",
+                      "rel": "canonical",
+                    },
+                    Object {
+                      "href": "https://meester-johan.info/about/",
+                      "hreflang": "x-default",
+                      "rel": "alternate",
+                    },
+                  ]
+                }
+                meta={
+                  Array [
+                    Object {
+                      "content": "A short description about me and my professional life",
+                      "name": "description",
+                    },
+                    Object {
+                      "content": "A short description about me and my professional life",
+                      "property": "og:description",
+                    },
+                    Object {
+                      "content": "Johan Meester : Portfolio : Front-End Developer : ABOUT ME",
+                      "property": "og:title",
+                    },
+                    Object {
+                      "content": "https://meester-johan.info/about/",
+                      "property": "og.url",
+                    },
+                  ]
+                }
+                title="Johan Meester : Portfolio : Front-End Developer : ABOUT ME"
+              />
+            </SideEffect(NullComponent)>
+          </HelmetWrapper>
+        </HeadGear>
+      </InjectIntl(HeadGear)>
       <ContentLoadingIndicator
         show={true}
         showError={true}
       >
-        <Article__Article
+        <Article
           show={true}
         >
           <article
-            className="Article__Article-fWCsyc fsmJEP"
+            className="Article-iozEAH ddRhqm"
           >
             <Header>
               <header>
@@ -139,13 +457,13 @@ exports[`<AboutPage /> fetching content from external source should show an erro
                   padding="1.5rem"
                   showArrowBreakpoint="750px"
                 >
-                  <Container__Container
+                  <Container
                     showArrowBreakpoint="750px"
                   >
                     <div
-                      className="Container__Container-duRnZL hevIvZ"
+                      className="Container-gZqETv jUyUSn"
                     >
-                      <Bubble__Bubble
+                      <Bubble
                         arrowPosition="bottom-right"
                         backgroundColor="#465a65"
                         isGhost={false}
@@ -153,17 +471,17 @@ exports[`<AboutPage /> fetching content from external source should show an erro
                         showArrowBreakpoint="750px"
                       >
                         <div
-                          className="Bubble__Bubble-kfMqWC jlpZQX"
+                          className="Bubble-cYQkeS ixgWcF"
                         >
-                          <Content__Content>
+                          <Content>
                             <div
-                              className="Content__Content-bIVvry dSiTpj"
+                              className="Content-zwkXZ gghqRA"
                             >
-                              <H2__H2
+                              <H2
                                 isError={true}
                               >
                                 <h2
-                                  className="H2__H2-eTwhUa eRAOQZ"
+                                  className="H2-eUbBFj hYXgfx"
                                 >
                                   <FormattedMessage
                                     defaultMessage="Terribly sorry, but the content cannot be loaded at this time"
@@ -175,15 +493,15 @@ exports[`<AboutPage /> fetching content from external source should show an erro
                                     </span>
                                   </FormattedMessage>
                                 </h2>
-                              </H2__H2>
-                              <SVGIcon__SVGIcon
+                              </H2>
+                              <SVGIcon
                                 height="2em"
                                 viewBox="0 0 512 512"
                                 width="2em"
                               >
                                 <svg
                                   aria-hidden="true"
-                                  className="SVGIcon__SVGIcon-dvbyrX echoQx"
+                                  className="SVGIcon-ixpDyI cxenSi"
                                   focusable="false"
                                   height="2em"
                                   viewBox="0 0 512 512"
@@ -194,11 +512,11 @@ exports[`<AboutPage /> fetching content from external source should show an erro
                                     d="M304.083 405.907c4.686 4.686 4.686 12.284 0 16.971l-44.674 44.674c-59.263 59.262-155.693 59.266-214.961 0-59.264-59.265-59.264-155.696 0-214.96l44.675-44.675c4.686-4.686 12.284-4.686 16.971 0l39.598 39.598c4.686 4.686 4.686 12.284 0 16.971l-44.675 44.674c-28.072 28.073-28.072 73.75 0 101.823 28.072 28.072 73.75 28.073 101.824 0l44.674-44.674c4.686-4.686 12.284-4.686 16.971 0l39.597 39.598zm-56.568-260.216c4.686 4.686 12.284 4.686 16.971 0l44.674-44.674c28.072-28.075 73.75-28.073 101.824 0 28.072 28.073 28.072 73.75 0 101.823l-44.675 44.674c-4.686 4.686-4.686 12.284 0 16.971l39.598 39.598c4.686 4.686 12.284 4.686 16.971 0l44.675-44.675c59.265-59.265 59.265-155.695 0-214.96-59.266-59.264-155.695-59.264-214.961 0l-44.674 44.674c-4.686 4.686-4.686 12.284 0 16.971l39.597 39.598zm234.828 359.28l22.627-22.627c9.373-9.373 9.373-24.569 0-33.941L63.598 7.029c-9.373-9.373-24.569-9.373-33.941 0L7.029 29.657c-9.373 9.373-9.373 24.569 0 33.941l441.373 441.373c9.373 9.372 24.569 9.372 33.941 0z"
                                   />
                                 </svg>
-                              </SVGIcon__SVGIcon>
+                              </SVGIcon>
                             </div>
-                          </Content__Content>
+                          </Content>
                         </div>
-                      </Bubble__Bubble>
+                      </Bubble>
                       <Arrow
                         arrowPosition="bottom-right"
                         backgroundColor="#465a65"
@@ -212,7 +530,7 @@ exports[`<AboutPage /> fetching content from external source should show an erro
                           showBreakpoint="750px"
                         >
                           <svg
-                            className="Arrow__SVG-iWxuxU iCQjcB"
+                            className="Arrow__SVG-iWxuxU jYKhgf"
                             focusable="false"
                             height="4vh"
                             preserveAspectRatio="xMinYMid meet"
@@ -241,12 +559,12 @@ exports[`<AboutPage /> fetching content from external source should show an erro
                         </Arrow__SVG>
                       </Arrow>
                     </div>
-                  </Container__Container>
+                  </Container>
                 </SpeechBubble>
               </header>
             </Header>
           </article>
-        </Article__Article>
+        </Article>
       </ContentLoadingIndicator>
     </AboutPage>
   </IntlProvider>
@@ -276,79 +594,238 @@ exports[`<AboutPage /> fetching content from external source should show the fet
         Array [
           <p>
             Test Content\\nNew Line
-        </p>,
+          </p>,
           "
-        ",
+",
         ]
       }
       error={false}
-      getContent={[Function]}
+      getContent={
+        [MockFunction] {
+          "calls": Array [
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        }
+      }
       isLoading={false}
     >
-      <HelmetWrapper
-        defer={true}
-        encodeSpecialCharacters={true}
-      >
-        <SideEffect(NullComponent)
-          defer={true}
-          encodeSpecialCharacters={true}
-          meta={
-            Array [
-              Object {
-                "content": "Over mij pagina van Johan Meester zijn portfolio",
-                "name": "description",
-              },
-            ]
+      <InjectIntl(HeadGear)
+        messages={
+          Object {
+            "metaDescription": Object {
+              "defaultMessage": "A short description about me and my professional life",
+              "id": "portfolio.page.AboutPage.meta.description",
+            },
+            "pageTitle": Object {
+              "defaultMessage": "ABOUT ME",
+              "id": "portfolio.page.AboutPage.pageTitle",
+            },
+            "title": Object {
+              "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+              "id": "portfolio.page.AboutPage.title",
+            },
           }
-          title="Over mij"
-          titleAttributes={Object {}}
+        }
+        path="/about"
+      >
+        <HeadGear
+          intl={
+            Object {
+              "defaultFormats": Object {},
+              "defaultLocale": "en",
+              "formatDate": [Function],
+              "formatHTMLMessage": [Function],
+              "formatMessage": [Function],
+              "formatNumber": [Function],
+              "formatPlural": [Function],
+              "formatRelative": [Function],
+              "formatTime": [Function],
+              "formats": Object {},
+              "formatters": Object {
+                "getDateTimeFormat": [Function],
+                "getMessageFormat": [Function],
+                "getNumberFormat": [Function],
+                "getPluralFormat": [Function],
+                "getRelativeFormat": [Function],
+              },
+              "locale": "en",
+              "messages": Object {},
+              "now": [Function],
+              "textComponent": "span",
+            }
+          }
+          messages={
+            Object {
+              "metaDescription": Object {
+                "defaultMessage": "A short description about me and my professional life",
+                "id": "portfolio.page.AboutPage.meta.description",
+              },
+              "pageTitle": Object {
+                "defaultMessage": "ABOUT ME",
+                "id": "portfolio.page.AboutPage.pageTitle",
+              },
+              "title": Object {
+                "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+                "id": "portfolio.page.AboutPage.title",
+              },
+            }
+          }
+          path="/about"
         >
-          <NullComponent
+          <HelmetWrapper
             defer={true}
             encodeSpecialCharacters={true}
-            meta={
+            link={
               Array [
                 Object {
-                  "content": "Over mij pagina van Johan Meester zijn portfolio",
-                  "name": "description",
+                  "href": "https://meester-johan.info/about/",
+                  "rel": "canonical",
+                },
+                Object {
+                  "href": "https://meester-johan.info/about/",
+                  "hreflang": "x-default",
+                  "rel": "alternate",
                 },
               ]
             }
-            title="Over mij"
-            titleAttributes={Object {}}
-          />
-        </SideEffect(NullComponent)>
-      </HelmetWrapper>
+            meta={
+              Array [
+                Object {
+                  "content": "A short description about me and my professional life",
+                  "name": "description",
+                },
+                Object {
+                  "content": "A short description about me and my professional life",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "Johan Meester : Portfolio : Front-End Developer : ABOUT ME",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://meester-johan.info/about/",
+                  "property": "og.url",
+                },
+              ]
+            }
+            title="Johan Meester : Portfolio : Front-End Developer : ABOUT ME"
+          >
+            <SideEffect(NullComponent)
+              defer={true}
+              encodeSpecialCharacters={true}
+              link={
+                Array [
+                  Object {
+                    "href": "https://meester-johan.info/about/",
+                    "rel": "canonical",
+                  },
+                  Object {
+                    "href": "https://meester-johan.info/about/",
+                    "hreflang": "x-default",
+                    "rel": "alternate",
+                  },
+                ]
+              }
+              meta={
+                Array [
+                  Object {
+                    "content": "A short description about me and my professional life",
+                    "name": "description",
+                  },
+                  Object {
+                    "content": "A short description about me and my professional life",
+                    "property": "og:description",
+                  },
+                  Object {
+                    "content": "Johan Meester : Portfolio : Front-End Developer : ABOUT ME",
+                    "property": "og:title",
+                  },
+                  Object {
+                    "content": "https://meester-johan.info/about/",
+                    "property": "og.url",
+                  },
+                ]
+              }
+              title="Johan Meester : Portfolio : Front-End Developer : ABOUT ME"
+            >
+              <NullComponent
+                defer={true}
+                encodeSpecialCharacters={true}
+                link={
+                  Array [
+                    Object {
+                      "href": "https://meester-johan.info/about/",
+                      "rel": "canonical",
+                    },
+                    Object {
+                      "href": "https://meester-johan.info/about/",
+                      "hreflang": "x-default",
+                      "rel": "alternate",
+                    },
+                  ]
+                }
+                meta={
+                  Array [
+                    Object {
+                      "content": "A short description about me and my professional life",
+                      "name": "description",
+                    },
+                    Object {
+                      "content": "A short description about me and my professional life",
+                      "property": "og:description",
+                    },
+                    Object {
+                      "content": "Johan Meester : Portfolio : Front-End Developer : ABOUT ME",
+                      "property": "og:title",
+                    },
+                    Object {
+                      "content": "https://meester-johan.info/about/",
+                      "property": "og.url",
+                    },
+                  ]
+                }
+                title="Johan Meester : Portfolio : Front-End Developer : ABOUT ME"
+              />
+            </SideEffect(NullComponent)>
+          </HelmetWrapper>
+        </HeadGear>
+      </InjectIntl(HeadGear)>
       <PageContent
         content={
           Array [
             <p>
               Test Content\\nNew Line
-          </p>,
+            </p>,
             "
-          ",
+",
           ]
         }
         title={
           <FormattedMessage
             defaultMessage="ABOUT ME"
-            id="portfolio.page.AboutPage.title"
+            id="portfolio.page.AboutPage.pageTitle"
             values={Object {}}
           />
         }
       >
-        <Wrapper__Wrapper
+        <Wrapper
           animate={true}
         >
           <div
-            className="Wrapper__Wrapper-fEDTQp jgxDLY"
+            className="Wrapper-ThVjl ipiXwR"
           >
             <PageHeader
               arrowPosition="bottom-left"
             >
-              <StyledHeader__StyledHeader>
+              <StyledHeader>
                 <header
-                  className="StyledHeader__StyledHeader-kHWYFT brSWxw"
+                  className="StyledHeader-fJIKuc cuJATB"
                 >
                   <SpeechBubble
                     arrowHeight="4vh"
@@ -358,32 +835,32 @@ exports[`<AboutPage /> fetching content from external source should show the fet
                     makeAppear={true}
                     showArrowBreakpoint="750px"
                   >
-                    <Container__Container
+                    <Container
                       makeAppear={true}
                       showArrowBreakpoint="750px"
                     >
                       <div
-                        className="Container__Container-duRnZL gAUglN"
+                        className="Container-gZqETv hayOh"
                       >
-                        <Bubble__Bubble
+                        <Bubble
                           arrowPosition="bottom-left"
                           backgroundColor="#465a65"
                           isGhost={false}
                           showArrowBreakpoint="750px"
                         >
                           <div
-                            className="Bubble__Bubble-kfMqWC hrEoVL"
+                            className="Bubble-cYQkeS errvuT"
                           >
-                            <H2__H2
+                            <H2
                               color="#aedd2c"
                             >
                               <h2
-                                className="H2__H2-eTwhUa iVVlVj"
+                                className="H2-eUbBFj iAWPFe"
                                 color="#aedd2c"
                               >
                                 <FormattedMessage
                                   defaultMessage="ABOUT ME"
-                                  id="portfolio.page.AboutPage.title"
+                                  id="portfolio.page.AboutPage.pageTitle"
                                   values={Object {}}
                                 >
                                   <span>
@@ -391,9 +868,9 @@ exports[`<AboutPage /> fetching content from external source should show the fet
                                   </span>
                                 </FormattedMessage>
                               </h2>
-                            </H2__H2>
+                            </H2>
                           </div>
-                        </Bubble__Bubble>
+                        </Bubble>
                         <Arrow
                           arrowPosition="bottom-left"
                           backgroundColor="#465a65"
@@ -407,7 +884,7 @@ exports[`<AboutPage /> fetching content from external source should show the fet
                             showBreakpoint="750px"
                           >
                             <svg
-                              className="Arrow__SVG-iWxuxU ejSVef"
+                              className="Arrow__SVG-iWxuxU iIEjSv"
                               focusable="false"
                               height="4vh"
                               preserveAspectRatio="xMinYMid meet"
@@ -436,14 +913,14 @@ exports[`<AboutPage /> fetching content from external source should show the fet
                           </Arrow__SVG>
                         </Arrow>
                       </div>
-                    </Container__Container>
+                    </Container>
                   </SpeechBubble>
                 </header>
-              </StyledHeader__StyledHeader>
+              </StyledHeader>
             </PageHeader>
-            <ContentWrapper__ContentWrapper>
+            <ContentWrapper>
               <div
-                className="ContentWrapper__ContentWrapper-lSlQT busshj"
+                className="ContentWrapper-fNtIWq jXZlqv"
               >
                 <SpeechBubble
                   arrowHeight="9vh"
@@ -456,15 +933,15 @@ exports[`<AboutPage /> fetching content from external source should show the fet
                   padding="1.5rem"
                   showArrowBreakpoint="750px"
                 >
-                  <Container__Container
+                  <Container
                     makeAppear={false}
                     maxWidth="30em"
                     showArrowBreakpoint="750px"
                   >
                     <div
-                      className="Container__Container-duRnZL czakBm"
+                      className="Container-gZqETv jsqDeB"
                     >
-                      <Bubble__Bubble
+                      <Bubble
                         arrowPosition="bottom-right"
                         backgroundColor="#aedd2c"
                         color="#000"
@@ -473,7 +950,7 @@ exports[`<AboutPage /> fetching content from external source should show the fet
                         showArrowBreakpoint="750px"
                       >
                         <div
-                          className="Bubble__Bubble-kfMqWC kjxAdG"
+                          className="Bubble-cYQkeS bOhOYj"
                           color="#000"
                         >
                           <p
@@ -482,9 +959,9 @@ exports[`<AboutPage /> fetching content from external source should show the fet
                             Test Content\\nNew Line
                           </p>
                           
-                          
+
                         </div>
-                      </Bubble__Bubble>
+                      </Bubble>
                       <Arrow
                         arrowPosition="bottom-right"
                         backgroundColor="#aedd2c"
@@ -498,7 +975,7 @@ exports[`<AboutPage /> fetching content from external source should show the fet
                           showBreakpoint="750px"
                         >
                           <svg
-                            className="Arrow__SVG-iWxuxU eUZiEN"
+                            className="Arrow__SVG-iWxuxU bOIamW"
                             focusable="false"
                             height="9vh"
                             preserveAspectRatio="xMinYMid meet"
@@ -527,12 +1004,12 @@ exports[`<AboutPage /> fetching content from external source should show the fet
                         </Arrow__SVG>
                       </Arrow>
                     </div>
-                  </Container__Container>
+                  </Container>
                 </SpeechBubble>
               </div>
-            </ContentWrapper__ContentWrapper>
+            </ContentWrapper>
           </div>
-        </Wrapper__Wrapper>
+        </Wrapper>
       </PageContent>
     </AboutPage>
   </IntlProvider>
@@ -541,18 +1018,25 @@ exports[`<AboutPage /> fetching content from external source should show the fet
 
 exports[`<AboutPage /> should render and match the snapshot 1`] = `
 <React.Fragment>
-  <HelmetWrapper
-    defer={true}
-    encodeSpecialCharacters={true}
-  >
-    <title>
-      Over mij
-    </title>
-    <meta
-      content="Over mij pagina van Johan Meester zijn portfolio"
-      name="description"
-    />
-  </HelmetWrapper>
+  <InjectIntl(HeadGear)
+    messages={
+      Object {
+        "metaDescription": Object {
+          "defaultMessage": "A short description about me and my professional life",
+          "id": "portfolio.page.AboutPage.meta.description",
+        },
+        "pageTitle": Object {
+          "defaultMessage": "ABOUT ME",
+          "id": "portfolio.page.AboutPage.pageTitle",
+        },
+        "title": Object {
+          "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "id": "portfolio.page.AboutPage.title",
+        },
+      }
+    }
+    path="/about"
+  />
   <React.Fragment />
 </React.Fragment>
 `;

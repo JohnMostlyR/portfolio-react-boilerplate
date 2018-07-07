@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Brand /> should render and match the snapshot 1`] = `
-<Wrapper__Wrapper>
+<Wrapper>
   <FormattedMessage
     defaultMessage="← Back to the homepage"
     id="portfolio.component.BrandLink.title"
     values={Object {}}
   />
-</Wrapper__Wrapper>
+</Wrapper>
 `;

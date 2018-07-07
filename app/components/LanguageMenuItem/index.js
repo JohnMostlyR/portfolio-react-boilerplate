@@ -1,8 +1,8 @@
 /**
-*
-* LanguageMenuItem
-*
-*/
+ *
+ * LanguageMenuItem
+ *
+ */
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -34,7 +34,8 @@ function LanguageMenuItem({ value, onClickHandler, isSelected }) {
   }
 
   function handleKeyDown(lang, ev) {
-    if (ev.keyCode === 13) { // Enter
+    if (ev.keyCode === 13) {
+      // Enter
       ev.preventDefault();
       onClickHandler(lang);
     }
@@ -49,10 +50,11 @@ function LanguageMenuItem({ value, onClickHandler, isSelected }) {
         tabIndex="-1"
         lang="nl"
         data-hasfocus="false"
-        onClick={(el) => handleClick('nl', el)}
-        onKeyDown={(el) => handleKeyDown('nl', el)}
+        onClick={el => handleClick('nl', el)}
+        onKeyDown={el => handleKeyDown('nl', el)}
       >
-        <IconNL isSelected={isSelected} /><Label isSelected={isSelected}>Nederlands</Label>
+        <IconNL isSelected={isSelected} />
+        <Label isSelected={isSelected}>Nederlands</Label>
       </Button>
     ),
     en: (
@@ -63,10 +65,11 @@ function LanguageMenuItem({ value, onClickHandler, isSelected }) {
         tabIndex="-1"
         lang="en"
         data-hasfocus="false"
-        onClick={(el) => handleClick('en', el)}
-        onKeyDown={(el) => handleKeyDown('en', el)}
+        onClick={el => handleClick('en', el)}
+        onKeyDown={el => handleKeyDown('en', el)}
       >
-        <IconEN isSelected={isSelected} /><Label isSelected={isSelected}>English</Label>
+        <IconEN isSelected={isSelected} />
+        <Label isSelected={isSelected}>English</Label>
       </Button>
     ),
   };

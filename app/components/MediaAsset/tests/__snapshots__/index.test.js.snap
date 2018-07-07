@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MediaAsset should render and match the snapshot 1`] = `
-<Figure__Figure
+<Figure
   isOdd={true}
 >
-  <Body__Body>
-    <ImageWrapper__ImageWrapper
+  <Body>
+    <ImageWrapper
       imageDimensions={
         Object {
           "height": 10,
@@ -17,7 +17,7 @@ exports[`MediaAsset should render and match the snapshot 1`] = `
         alt="Test image"
         src="/test-s.png"
       />
-    </ImageWrapper__ImageWrapper>
-  </Body__Body>
-</Figure__Figure>
+    </ImageWrapper>
+  </Body>
+</Figure>
 `;

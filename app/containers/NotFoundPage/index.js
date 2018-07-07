@@ -11,38 +11,32 @@
 
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import { Helmet } from 'react-helmet';
 
 import messages from './messages';
 import PageContent from '../../components/PageContent';
 import InlineLink from '../../components/InlineLink';
 
-export default class NotFound extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export default class NotFound extends React.PureComponent { // eslint-disable-line
+  // react/prefer-stateless-function
   render() {
     return (
       <React.Fragment>
-        <Helmet>
-          <title>Niet gevonden</title>
-          <meta name="description" content="Niet gevonden pagina van Johan Meester zijn portfolio" />
-        </Helmet>
         <PageContent
-          title={<FormattedMessage {...messages.title} />}
+          title={<FormattedMessage {...messages.pageTitle} />}
           content={
             <FormattedMessage
               {...messages.content}
               values={{
                 home: (
                   <FormattedMessage {...messages.home}>
-                    {
-                      (message) => <InlineLink to={'/'}>{message}</InlineLink>
-                    }
+                    {message => <InlineLink to="/">{message}</InlineLink>}
                   </FormattedMessage>
                 ),
                 contact: (
                   <FormattedMessage {...messages.contact}>
-                    {
-                      (message) => <InlineLink to={'/contact'}>{message}</InlineLink>
-                    }
+                    {message => (
+                      <InlineLink to="/contact">{message}</InlineLink>
+                    )}
                   </FormattedMessage>
                 ),
               }}

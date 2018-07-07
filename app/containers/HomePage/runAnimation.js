@@ -4,7 +4,11 @@
  * @param {Object} timeline
  * @param {number} startFrame=0
  */
-export default function runAnimation({ snapSVGElement, timeline, startFrame = 0 }) {
+export default function runAnimation({
+  snapSVGElement,
+  timeline,
+  startFrame = 0,
+}) {
   let animationTimer = setTimeout(
     function doAnimate(_timeline, currentFrameIndex) {
       const currentFrame = _timeline[currentFrameIndex];

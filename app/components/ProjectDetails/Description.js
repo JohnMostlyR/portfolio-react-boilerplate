@@ -7,7 +7,7 @@ const Description = styled.div`
   line-height: ${BASE_LINE_HEIGHT};
   word-break: break-word;
 
-  @media(min-width: 950px) {
+  @media (min-width: 950px) {
     line-height: ${BASE_LINE_HEIGHT * 1.1};
   }
 `;

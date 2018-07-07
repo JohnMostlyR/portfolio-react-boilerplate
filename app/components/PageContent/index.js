@@ -1,8 +1,8 @@
 /**
-*
-* PageContent
-*
-*/
+ *
+ * PageContent
+ *
+ */
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -37,12 +37,8 @@ function PageContent(props) {
 
   return (
     <Wrapper>
-      <PageHeader arrowPosition={'bottom-left'}>
-        {props.title}
-      </PageHeader>
-      <ContentWrapper>
-        {renderThis}
-      </ContentWrapper>
+      <PageHeader arrowPosition="bottom-left">{props.title}</PageHeader>
+      <ContentWrapper>{renderThis}</ContentWrapper>
     </Wrapper>
   );
 }
@@ -54,4 +50,3 @@ PageContent.propTypes = {
 };
 
 export default PageContent;
-

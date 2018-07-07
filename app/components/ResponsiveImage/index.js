@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import Wrapper from './Wrapper';
 
-const ResponsiveImage = (props) => (
+const ResponsiveImage = props => (
   <Wrapper {...props}>
     <img src={props.imageSource} alt={props.imageAlt} />
   </Wrapper>
@@ -13,10 +13,6 @@ const ResponsiveImage = (props) => (
 ResponsiveImage.propTypes = {
   imageSource: PropTypes.string.isRequired,
   imageAlt: PropTypes.string.isRequired,
-};
-
-ResponsiveImage.defaultProps = {
-  noPlaceholder: false,
 };
 
 export default styled(ResponsiveImage)`

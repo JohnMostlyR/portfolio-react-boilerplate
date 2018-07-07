@@ -15,7 +15,8 @@ const Wrapper = styled.div`
   position: relative;
   height: 0; /* [1] */
   overflow: hidden; /* [2] */
-  background-color: ${(props) => (props.noPlaceholder) ? 'transparent' : '#f0f0f0'};
+  background-color: ${props =>
+    props.noPlaceholder ? 'transparent' : '#f0f0f0'};
 
   /**
    * 1. Force the image to sit on top of the placeholder
@@ -34,7 +35,7 @@ const Wrapper = styled.div`
   /**
    * Aspect radio modifiers
    */
-  padding-bottom: ${(props) => {
+  padding-bottom: ${props => {
     switch (props.ratio) {
       case '1by1':
         return '100%';

@@ -1,4 +1,3 @@
-
 import {
   setSiteNavigationIsAtScreenTop,
   setSiteNavigationOffsetHeight,
@@ -10,7 +9,7 @@ import {
   SET_SITE_NAVIGATION_TOP_POSITION,
 } from '../constants';
 
-describe('App actions', () => {
+describe('SiteNavigation actions', () => {
   describe('setSiteNavigationTopPosition', () => {
     it('should return the correct type and the passed topPosition', () => {
       const topPosition = 10;

@@ -10,7 +10,6 @@ import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
-import { Helmet } from 'react-helmet';
 
 import messages from './messages';
 import {
@@ -26,6 +25,7 @@ import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
 import PageContent from '../../components/PageContent';
 import ContentLoadingIndicator from '../../components/ContentLoadingIndicator';
+import HeadGear from '../../components/HeadGear';
 
 export function delayTimer(isLoading, callback) {
   return setTimeout(() => {
@@ -33,7 +33,8 @@ export function delayTimer(isLoading, callback) {
   }, 200);
 }
 
-export class AboutPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export class AboutPage extends React.PureComponent {
+  // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
 
@@ -78,8 +79,14 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
     let showContent = <React.Fragment />;
 
     if (Array.isArray(aboutMeText) && aboutMeText.length) {
-      showContent = <PageContent title={<FormattedMessage {...messages.title} />} content={aboutMeText} />;
-    } else if (isLoading) { // FROM STATE!
+      showContent = (
+        <PageContent
+          title={<FormattedMessage {...messages.pageTitle} />}
+          content={aboutMeText}
+        />
+      );
+    } else if (isLoading) {
+      // FROM STATE!
       showContent = <ContentLoadingIndicator show showError={false} />;
     } else if (!!error !== false) {
       showContent = <ContentLoadingIndicator show showError />;
@@ -87,10 +94,7 @@ export class AboutPage extends React.PureComponent { // eslint-disable-line reac
 
     return (
       <React.Fragment>
-        <Helmet>
-          <title>Over mij</title>
-          <meta name="description" content="Over mij pagina van Johan Meester zijn portfolio" />
-        </Helmet>
+        <HeadGear messages={messages} path="/about" />
         {showContent}
       </React.Fragment>
     );
@@ -119,7 +123,10 @@ export function mapDispatchToProps(dispatch) {
   };
 }
 
-const withConnect = connect(mapStateToProps, mapDispatchToProps);
+const withConnect = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+);
 
 const withReducer = injectReducer({ key: 'aboutPage', reducer });
 const withSaga = injectSaga({ key: 'aboutPage', saga });

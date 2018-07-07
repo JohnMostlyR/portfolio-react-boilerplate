@@ -7,13 +7,13 @@
 import { css } from 'styled-components';
 
 function svgToURL(svg) {
-  const svgURL = svg.replace(/["%#}{><]/g, (match) => {
+  const svgURL = svg.replace(/["%#}{><]/g, match => {
     let replacement = match;
 
     /* eslint-disable default-case */
     switch (match) {
       case '"':
-        replacement = '\'';
+        replacement = "'";
         break;
       case '%':
         replacement = '%25';
@@ -40,7 +40,7 @@ function svgToURL(svg) {
   return `"data:image/svg+xml;charset=utf-8,${svgURL}"`;
 }
 
-const SVGBackgroundImage = (svg) => css`
+const SVGBackgroundImage = svg => css`
   background-image: url(${svgToURL(svg)});
 `;
 

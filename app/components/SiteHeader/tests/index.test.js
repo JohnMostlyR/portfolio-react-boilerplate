@@ -6,9 +6,7 @@ import SiteHeader from '../index';
 
 describe('<SiteHeader />', () => {
   it('should render and match the snapshot', () => {
-    const wrapper = shallow(
-      <SiteHeader />
-    );
+    const wrapper = shallow(<SiteHeader />);
 
     expect(toJson(wrapper)).toMatchSnapshot();
   });

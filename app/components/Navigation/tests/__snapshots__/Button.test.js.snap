@@ -4,7 +4,7 @@ exports[`<Button /> should adopt the "label" property 1`] = `
 <Button__StyledButton
   aria-expanded={false}
   bigScreenBreakpoint={1000}
-  innerRef={[Function]}
+  innerRef={[MockFunction]}
   onClick={[Function]}
   onKeyDown={[Function]}
 >
@@ -29,7 +29,7 @@ exports[`<Button /> should render and match the snapshot 1`] = `
 <Button__StyledButton
   aria-expanded={false}
   bigScreenBreakpoint={1000}
-  innerRef={[Function]}
+  innerRef={[MockFunction]}
   onClick={[Function]}
   onKeyDown={[Function]}
 >

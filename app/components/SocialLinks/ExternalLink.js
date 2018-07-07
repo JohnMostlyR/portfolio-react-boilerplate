@@ -40,7 +40,12 @@ function ExternalLink({ color, description, href, faIcon }) {
   }
 
   return (
-    <StyledA href={href} target="_blank" rel="noopener noreferrer" color={color}>
+    <StyledA
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      color={color}
+    >
       {renderThis}
       <Description>{description}</Description>
     </StyledA>

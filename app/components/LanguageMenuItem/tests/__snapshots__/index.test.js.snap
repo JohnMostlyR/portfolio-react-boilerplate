@@ -14,11 +14,11 @@ exports[`<LanguageMenuItem /> should adopt the "isSelected" property 1`] = `
   <IconNL
     isSelected={true}
   />
-  <Label__Label
+  <Label
     isSelected={true}
   >
     Nederlands
-  </Label__Label>
+  </Label>
 </LanguageMenuItem__Button>
 `;
 
@@ -36,10 +36,10 @@ exports[`<LanguageMenuItem /> should render and match the snapshot 1`] = `
   <IconNL
     isSelected={false}
   />
-  <Label__Label
+  <Label
     isSelected={false}
   >
     Nederlands
-  </Label__Label>
+  </Label>
 </LanguageMenuItem__Button>
 `;

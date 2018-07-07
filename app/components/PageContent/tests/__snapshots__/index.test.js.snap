@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<PageContent /> Should adopt the "content" property 1`] = `
-<Wrapper__Wrapper
+<Wrapper
   animate={true}
 >
   <PageHeader
     arrowPosition="bottom-left"
   />
-  <ContentWrapper__ContentWrapper>
+  <ContentWrapper>
     <SpeechBubble
       arrowHeight="9vh"
       arrowPosition="bottom-right"
@@ -21,25 +21,25 @@ exports[`<PageContent /> Should adopt the "content" property 1`] = `
     >
       Testing
     </SpeechBubble>
-  </ContentWrapper__ContentWrapper>
-</Wrapper__Wrapper>
+  </ContentWrapper>
+</Wrapper>
 `;
 
 exports[`<PageContent /> Should adopt the "noSpeechBubble" property 1`] = `
-<Wrapper__Wrapper
+<Wrapper
   animate={true}
 >
   <PageHeader
     arrowPosition="bottom-left"
   />
-  <ContentWrapper__ContentWrapper>
+  <ContentWrapper>
     Testing
-  </ContentWrapper__ContentWrapper>
-</Wrapper__Wrapper>
+  </ContentWrapper>
+</Wrapper>
 `;
 
 exports[`<PageContent /> Should adopt the "title" property 1`] = `
-<Wrapper__Wrapper
+<Wrapper
   animate={true}
 >
   <PageHeader
@@ -47,7 +47,7 @@ exports[`<PageContent /> Should adopt the "title" property 1`] = `
   >
     Testing
   </PageHeader>
-  <ContentWrapper__ContentWrapper>
+  <ContentWrapper>
     <SpeechBubble
       arrowHeight="9vh"
       arrowPosition="bottom-right"
@@ -59,18 +59,18 @@ exports[`<PageContent /> Should adopt the "title" property 1`] = `
       padding="1.5rem"
       showArrowBreakpoint="750px"
     />
-  </ContentWrapper__ContentWrapper>
-</Wrapper__Wrapper>
+  </ContentWrapper>
+</Wrapper>
 `;
 
 exports[`<PageContent /> Should render and match the snapshot 1`] = `
-<Wrapper__Wrapper
+<Wrapper
   animate={true}
 >
   <PageHeader
     arrowPosition="bottom-left"
   />
-  <ContentWrapper__ContentWrapper>
+  <ContentWrapper>
     <SpeechBubble
       arrowHeight="9vh"
       arrowPosition="bottom-right"
@@ -82,6 +82,6 @@ exports[`<PageContent /> Should render and match the snapshot 1`] = `
       padding="1.5rem"
       showArrowBreakpoint="750px"
     />
-  </ContentWrapper__ContentWrapper>
-</Wrapper__Wrapper>
+  </ContentWrapper>
+</Wrapper>
 `;

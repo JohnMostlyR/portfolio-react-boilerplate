@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VisualSiteWrapper /> should match the snapshot 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "injectedReducers": Object {
+        "visualSiteWrapper": [Function],
+      },
+      "injectedSagas": Object {},
+      "replaceReducer": [Function],
+      "runSaga": [Function],
+      "subscribe": [Function],
+      Symbol(Symbol.observable): [Function],
+    }
+  }
+>
+  <IntlProvider
+    locale="en"
+  >
+    <withReducer(Connect(VisualSiteWrapper))>
+      <Connect(VisualSiteWrapper)>
+        <VisualSiteWrapper
+          setScrollTop={[Function]}
+          setSiteWidth={[Function]}
+          siteNavigationIsAtScreenTop={false}
+        >
+          <Wrapper>
+            <div
+              className="Wrapper-ThVjl fomUZT"
+            >
+              <div>
+                Children
+              </div>
+            </div>
+          </Wrapper>
+        </VisualSiteWrapper>
+      </Connect(VisualSiteWrapper)>
+    </withReducer(Connect(VisualSiteWrapper))>
+  </IntlProvider>
+</Provider>
+`;

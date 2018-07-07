@@ -45,7 +45,7 @@ describe('<Arrow />', () => {
   });
 
   it('should adopt the "height" prop', () => {
-    const renderedComponent = shallow(<Arrow height={'1em'} />);
+    const renderedComponent = shallow(<Arrow height="1em" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
@@ -55,7 +55,7 @@ describe('<Arrow />', () => {
   });
 
   it('should adopt the "showBreakpoint" prop', () => {
-    const renderedComponent = shallow(<Arrow showBreakpoint={'100px'} />);
+    const renderedComponent = shallow(<Arrow showBreakpoint="100px" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 });

@@ -42,18 +42,22 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
         "portfolio.containers.ContactPage.emailLabel": "Your email address",
         "portfolio.containers.ContactPage.emailPlaceholder": "(e.g. my@email.com)",
         "portfolio.containers.ContactPage.emailText": "Please add your email address here.",
-        "portfolio.containers.ContactPage.header": "CONTACT ME",
+        "portfolio.containers.ContactPage.meta.description": "For contacting me, please fill in this form. I will respond as soon as possible",
         "portfolio.containers.ContactPage.nameError": "Your name is required.",
         "portfolio.containers.ContactPage.nameLabel": "Your name",
         "portfolio.containers.ContactPage.namePlaceholder": "(e.g. John Doo)",
         "portfolio.containers.ContactPage.nameText": "Please add your name here.",
+        "portfolio.containers.ContactPage.pageTitle": "CONTACT FORM",
         "portfolio.containers.ContactPage.requirementOne": "Please fill in all fields",
         "portfolio.containers.ContactPage.subjectError": "A subject is required.",
         "portfolio.containers.ContactPage.subjectLabel": "Subject",
         "portfolio.containers.ContactPage.subjectText": "Please provide a subject for your message.",
+        "portfolio.containers.ContactPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
         "portfolio.containers.ContactPage.yourMessageError": "A message is required.",
         "portfolio.containers.ContactPage.yourMessageLabel": "Your message",
         "portfolio.containers.ContactPage.yourMessageText": "Please add your message here.",
+        "portfolio.meta.description": "This is the portfolio website of Johan Meester. An Amsterdam based Front-End Developer specialized in React JS",
+        "portfolio.meta.siteName": "Johan Meester : Portfolio",
         "portfolio.nav.about": "About",
         "portfolio.nav.contact": "Contact",
         "portfolio.nav.header": "Site navigation",
@@ -61,70 +65,414 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
         "portfolio.nav.projects": "Projects",
         "portfolio.nav.showMenuButton": "MENU",
         "portfolio.nav.skills": "Skills",
-        "portfolio.page.AboutPage.pageDescription": "A short description about me.",
-        "portfolio.page.AboutPage.pageTitle": "About me : Johan Meester's portfolio",
-        "portfolio.page.AboutPage.title": "ABOUT ME",
+        "portfolio.noscript": "If you are seeing this message, that means that JavaScript has been disabled on your browser. Please enable JavaScript to make this app work.",
+        "portfolio.page.AboutPage.meta.description": "A short description about me and my professional life",
+        "portfolio.page.AboutPage.pageTitle": "ABOUT ME",
+        "portfolio.page.AboutPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
         "portfolio.page.NotFoundPage.contact": "contact",
         "portfolio.page.NotFoundPage.content": "I am sorry, but the page you requested does not exist or has been removed.
-    
-    Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
+
+Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
         "portfolio.page.NotFoundPage.home": "start",
-        "portfolio.page.NotFoundPage.pageDescription": "Page not found.",
-        "portfolio.page.NotFoundPage.pageTitle": "Not found : Johan Meester's portfolio",
-        "portfolio.page.NotFoundPage.title": "NOT FOUND",
-        "portfolio.page.SkillsPage.pageDescription": "Some of my skills.",
-        "portfolio.page.SkillsPage.pageTitle": "My Skills : Johan Meester's portfolio",
-        "portfolio.page.SkillsPage.title": "MY SKILLS",
+        "portfolio.page.NotFoundPage.pageDescription": "The page you requested does not exist or has been removed. Sorry about that",
+        "portfolio.page.NotFoundPage.pageTitle": "NOT FOUND",
+        "portfolio.page.NotFoundPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+        "portfolio.page.ProjectsPage.meta.description": "This is an overview of my projects. Projects are sorted by date with the most recent on top",
+        "portfolio.page.ProjectsPage.pageTitle": "MY PROJECTS",
+        "portfolio.page.ProjectsPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+        "portfolio.page.SkillsPage.meta.description": "A brief overview of my professional skills",
+        "portfolio.page.SkillsPage.pageTitle": "MY SKILLS",
+        "portfolio.page.SkillsPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
         "portfolio.page.index.header.callToAction": "CONTACT ME",
         "portfolio.page.index.header.greeting": "WELCOME",
         "portfolio.page.index.header.intro": "I am {name}",
         "portfolio.page.index.header.look": "HAVE A LOOK AROUND",
         "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
-        "portfolio.page.index.title": "Introduction",
-        "portfolio.page.projects.title": "MY PROJECTS",
+        "portfolio.page.index.meta.description": "Welcome to the portfolio of Johan Meester, Front-End Developer",
+        "portfolio.page.index.pageTitle": "INTRODUCTION",
+        "portfolio.page.index.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
         "portfolio.skiplink": "skip to main content",
         "portfolio.social_links.header": "Also find me on:",
-        "portfolio.title": "Welcome to my portfolio",
+        "portfolio.title": "Johan Meester : Portfolio : Front-End Developer",
       },
       "now": [Function],
       "textComponent": "span",
     }
   }
 >
-  <HelmetWrapper
-    defer={true}
-    encodeSpecialCharacters={true}
-  >
-    <SideEffect(NullComponent)
-      defer={true}
-      encodeSpecialCharacters={true}
-      meta={
-        Array [
-          Object {
-            "content": "Contact pagina van Johan Meester zijn portfolio",
-            "name": "description",
-          },
-        ]
+  <InjectIntl(HeadGear)
+    messages={
+      Object {
+        "emailError": Object {
+          "defaultMessage": "Your email address is required.",
+          "id": "portfolio.containers.ContactPage.emailError",
+        },
+        "emailLabel": Object {
+          "defaultMessage": "Your email address",
+          "id": "portfolio.containers.ContactPage.emailLabel",
+        },
+        "emailPlaceholder": Object {
+          "defaultMessage": "(e.g. my@email.com)",
+          "id": "portfolio.containers.ContactPage.emailPlaceholder",
+        },
+        "emailText": Object {
+          "defaultMessage": "Please add your email address here.",
+          "id": "portfolio.containers.ContactPage.emailText",
+        },
+        "metaDescription": Object {
+          "defaultMessage": "For contacting me, please fill in this form. I will respond as soon as possible",
+          "id": "portfolio.containers.ContactPage.meta.description",
+        },
+        "nameError": Object {
+          "defaultMessage": "Your name is required.",
+          "id": "portfolio.containers.ContactPage.nameError",
+        },
+        "nameLabel": Object {
+          "defaultMessage": "Your name",
+          "id": "portfolio.containers.ContactPage.nameLabel",
+        },
+        "namePlaceholder": Object {
+          "defaultMessage": "(e.g. John Doo)",
+          "id": "portfolio.containers.ContactPage.namePlaceholder",
+        },
+        "nameText": Object {
+          "defaultMessage": "Please add your name here.",
+          "id": "portfolio.containers.ContactPage.nameText",
+        },
+        "pageTitle": Object {
+          "defaultMessage": "CONTACT ME",
+          "id": "portfolio.containers.ContactPage.pageTitle",
+        },
+        "requirementOne": Object {
+          "defaultMessage": "Please fill all fields",
+          "id": "portfolio.containers.ContactPage.requirementOne",
+        },
+        "subjectError": Object {
+          "defaultMessage": "A subject is required.",
+          "id": "portfolio.containers.ContactPage.subjectError",
+        },
+        "subjectLabel": Object {
+          "defaultMessage": "Subject",
+          "id": "portfolio.containers.ContactPage.subjectLabel",
+        },
+        "subjectText": Object {
+          "defaultMessage": "Please provide a subject for your message.",
+          "id": "portfolio.containers.ContactPage.subjectText",
+        },
+        "title": Object {
+          "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+          "id": "portfolio.containers.ContactPage.title",
+        },
+        "yourMessageError": Object {
+          "defaultMessage": "A message is required.",
+          "id": "portfolio.containers.ContactPage.yourMessageError",
+        },
+        "yourMessageLabel": Object {
+          "defaultMessage": "Your message",
+          "id": "portfolio.containers.ContactPage.yourMessageLabel",
+        },
+        "yourMessageText": Object {
+          "defaultMessage": "Please add your message here.",
+          "id": "portfolio.containers.ContactPage.yourMessageText",
+        },
       }
-      title="Contact pagina"
-      titleAttributes={Object {}}
+    }
+    path="/contact"
+  >
+    <HeadGear
+      intl={
+        Object {
+          "defaultFormats": Object {},
+          "defaultLocale": "en",
+          "formatDate": [Function],
+          "formatHTMLMessage": [Function],
+          "formatMessage": [Function],
+          "formatNumber": [Function],
+          "formatPlural": [Function],
+          "formatRelative": [Function],
+          "formatTime": [Function],
+          "formats": Object {},
+          "formatters": Object {
+            "getDateTimeFormat": [Function],
+            "getMessageFormat": [Function],
+            "getNumberFormat": [Function],
+            "getPluralFormat": [Function],
+            "getRelativeFormat": [Function],
+          },
+          "locale": "en",
+          "messages": Object {
+            "portfolio.component.BrandLink.title": "← Back to the homepage",
+            "portfolio.component.ContentLoadingIndicator.error": "Terribly sorry, but the content cannot be loaded at this time",
+            "portfolio.component.ContentLoadingIndicator.pastDelay": "Loading content",
+            "portfolio.component.ContentLoadingIndicator.timedOut": "Loading is taking longer than expected",
+            "portfolio.components.Form.helperText.range": "Should be between {minLength, number} and {maxLength, number} characters. Is now: {count, number}",
+            "portfolio.components.Form.helperText.valid": "Thanks!",
+            "portfolio.components.LanguageMenu.buttonLabel": "Language",
+            "portfolio.components.LanguageMenu.label": "Choose a Language",
+            "portfolio.components.LanguageMenu.title": "Language menu",
+            "portfolio.components.Project.detailsLink": "More details →",
+            "portfolio.components.ProjectDetails.backLink": "← Back to Projects",
+            "portfolio.components.SubmitButton.error": "Failed. Please try again",
+            "portfolio.components.SubmitButton.idle": "Send",
+            "portfolio.components.SubmitButton.sending": "Sending...",
+            "portfolio.components.SubmitButton.success": "Sent! I'll respond as soon as possible",
+            "portfolio.containers.ContactPage.emailError": "Your email address is required.",
+            "portfolio.containers.ContactPage.emailLabel": "Your email address",
+            "portfolio.containers.ContactPage.emailPlaceholder": "(e.g. my@email.com)",
+            "portfolio.containers.ContactPage.emailText": "Please add your email address here.",
+            "portfolio.containers.ContactPage.meta.description": "For contacting me, please fill in this form. I will respond as soon as possible",
+            "portfolio.containers.ContactPage.nameError": "Your name is required.",
+            "portfolio.containers.ContactPage.nameLabel": "Your name",
+            "portfolio.containers.ContactPage.namePlaceholder": "(e.g. John Doo)",
+            "portfolio.containers.ContactPage.nameText": "Please add your name here.",
+            "portfolio.containers.ContactPage.pageTitle": "CONTACT FORM",
+            "portfolio.containers.ContactPage.requirementOne": "Please fill in all fields",
+            "portfolio.containers.ContactPage.subjectError": "A subject is required.",
+            "portfolio.containers.ContactPage.subjectLabel": "Subject",
+            "portfolio.containers.ContactPage.subjectText": "Please provide a subject for your message.",
+            "portfolio.containers.ContactPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+            "portfolio.containers.ContactPage.yourMessageError": "A message is required.",
+            "portfolio.containers.ContactPage.yourMessageLabel": "Your message",
+            "portfolio.containers.ContactPage.yourMessageText": "Please add your message here.",
+            "portfolio.meta.description": "This is the portfolio website of Johan Meester. An Amsterdam based Front-End Developer specialized in React JS",
+            "portfolio.meta.siteName": "Johan Meester : Portfolio",
+            "portfolio.nav.about": "About",
+            "portfolio.nav.contact": "Contact",
+            "portfolio.nav.header": "Site navigation",
+            "portfolio.nav.home": "Intro",
+            "portfolio.nav.projects": "Projects",
+            "portfolio.nav.showMenuButton": "MENU",
+            "portfolio.nav.skills": "Skills",
+            "portfolio.noscript": "If you are seeing this message, that means that JavaScript has been disabled on your browser. Please enable JavaScript to make this app work.",
+            "portfolio.page.AboutPage.meta.description": "A short description about me and my professional life",
+            "portfolio.page.AboutPage.pageTitle": "ABOUT ME",
+            "portfolio.page.AboutPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+            "portfolio.page.NotFoundPage.contact": "contact",
+            "portfolio.page.NotFoundPage.content": "I am sorry, but the page you requested does not exist or has been removed.
+
+Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
+            "portfolio.page.NotFoundPage.home": "start",
+            "portfolio.page.NotFoundPage.pageDescription": "The page you requested does not exist or has been removed. Sorry about that",
+            "portfolio.page.NotFoundPage.pageTitle": "NOT FOUND",
+            "portfolio.page.NotFoundPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+            "portfolio.page.ProjectsPage.meta.description": "This is an overview of my projects. Projects are sorted by date with the most recent on top",
+            "portfolio.page.ProjectsPage.pageTitle": "MY PROJECTS",
+            "portfolio.page.ProjectsPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+            "portfolio.page.SkillsPage.meta.description": "A brief overview of my professional skills",
+            "portfolio.page.SkillsPage.pageTitle": "MY SKILLS",
+            "portfolio.page.SkillsPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+            "portfolio.page.index.header.callToAction": "CONTACT ME",
+            "portfolio.page.index.header.greeting": "WELCOME",
+            "portfolio.page.index.header.intro": "I am {name}",
+            "portfolio.page.index.header.look": "HAVE A LOOK AROUND",
+            "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
+            "portfolio.page.index.meta.description": "Welcome to the portfolio of Johan Meester, Front-End Developer",
+            "portfolio.page.index.pageTitle": "INTRODUCTION",
+            "portfolio.page.index.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+            "portfolio.skiplink": "skip to main content",
+            "portfolio.social_links.header": "Also find me on:",
+            "portfolio.title": "Johan Meester : Portfolio : Front-End Developer",
+          },
+          "now": [Function],
+          "textComponent": "span",
+        }
+      }
+      messages={
+        Object {
+          "emailError": Object {
+            "defaultMessage": "Your email address is required.",
+            "id": "portfolio.containers.ContactPage.emailError",
+          },
+          "emailLabel": Object {
+            "defaultMessage": "Your email address",
+            "id": "portfolio.containers.ContactPage.emailLabel",
+          },
+          "emailPlaceholder": Object {
+            "defaultMessage": "(e.g. my@email.com)",
+            "id": "portfolio.containers.ContactPage.emailPlaceholder",
+          },
+          "emailText": Object {
+            "defaultMessage": "Please add your email address here.",
+            "id": "portfolio.containers.ContactPage.emailText",
+          },
+          "metaDescription": Object {
+            "defaultMessage": "For contacting me, please fill in this form. I will respond as soon as possible",
+            "id": "portfolio.containers.ContactPage.meta.description",
+          },
+          "nameError": Object {
+            "defaultMessage": "Your name is required.",
+            "id": "portfolio.containers.ContactPage.nameError",
+          },
+          "nameLabel": Object {
+            "defaultMessage": "Your name",
+            "id": "portfolio.containers.ContactPage.nameLabel",
+          },
+          "namePlaceholder": Object {
+            "defaultMessage": "(e.g. John Doo)",
+            "id": "portfolio.containers.ContactPage.namePlaceholder",
+          },
+          "nameText": Object {
+            "defaultMessage": "Please add your name here.",
+            "id": "portfolio.containers.ContactPage.nameText",
+          },
+          "pageTitle": Object {
+            "defaultMessage": "CONTACT ME",
+            "id": "portfolio.containers.ContactPage.pageTitle",
+          },
+          "requirementOne": Object {
+            "defaultMessage": "Please fill all fields",
+            "id": "portfolio.containers.ContactPage.requirementOne",
+          },
+          "subjectError": Object {
+            "defaultMessage": "A subject is required.",
+            "id": "portfolio.containers.ContactPage.subjectError",
+          },
+          "subjectLabel": Object {
+            "defaultMessage": "Subject",
+            "id": "portfolio.containers.ContactPage.subjectLabel",
+          },
+          "subjectText": Object {
+            "defaultMessage": "Please provide a subject for your message.",
+            "id": "portfolio.containers.ContactPage.subjectText",
+          },
+          "title": Object {
+            "defaultMessage": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+            "id": "portfolio.containers.ContactPage.title",
+          },
+          "yourMessageError": Object {
+            "defaultMessage": "A message is required.",
+            "id": "portfolio.containers.ContactPage.yourMessageError",
+          },
+          "yourMessageLabel": Object {
+            "defaultMessage": "Your message",
+            "id": "portfolio.containers.ContactPage.yourMessageLabel",
+          },
+          "yourMessageText": Object {
+            "defaultMessage": "Please add your message here.",
+            "id": "portfolio.containers.ContactPage.yourMessageText",
+          },
+        }
+      }
+      path="/contact"
     >
-      <NullComponent
+      <HelmetWrapper
         defer={true}
         encodeSpecialCharacters={true}
-        meta={
+        link={
           Array [
             Object {
-              "content": "Contact pagina van Johan Meester zijn portfolio",
-              "name": "description",
+              "href": "https://meester-johan.info/contact/",
+              "rel": "canonical",
+            },
+            Object {
+              "href": "https://meester-johan.info/contact/",
+              "hreflang": "x-default",
+              "rel": "alternate",
             },
           ]
         }
-        title="Contact pagina"
-        titleAttributes={Object {}}
-      />
-    </SideEffect(NullComponent)>
-  </HelmetWrapper>
+        meta={
+          Array [
+            Object {
+              "content": "For contacting me, please fill in this form. I will respond as soon as possible",
+              "name": "description",
+            },
+            Object {
+              "content": "For contacting me, please fill in this form. I will respond as soon as possible",
+              "property": "og:description",
+            },
+            Object {
+              "content": "Johan Meester : Portfolio : Front-End Developer : CONTACT FORM",
+              "property": "og:title",
+            },
+            Object {
+              "content": "https://meester-johan.info/contact/",
+              "property": "og.url",
+            },
+          ]
+        }
+        title="Johan Meester : Portfolio : Front-End Developer : CONTACT FORM"
+      >
+        <SideEffect(NullComponent)
+          defer={true}
+          encodeSpecialCharacters={true}
+          link={
+            Array [
+              Object {
+                "href": "https://meester-johan.info/contact/",
+                "rel": "canonical",
+              },
+              Object {
+                "href": "https://meester-johan.info/contact/",
+                "hreflang": "x-default",
+                "rel": "alternate",
+              },
+            ]
+          }
+          meta={
+            Array [
+              Object {
+                "content": "For contacting me, please fill in this form. I will respond as soon as possible",
+                "name": "description",
+              },
+              Object {
+                "content": "For contacting me, please fill in this form. I will respond as soon as possible",
+                "property": "og:description",
+              },
+              Object {
+                "content": "Johan Meester : Portfolio : Front-End Developer : CONTACT FORM",
+                "property": "og:title",
+              },
+              Object {
+                "content": "https://meester-johan.info/contact/",
+                "property": "og.url",
+              },
+            ]
+          }
+          title="Johan Meester : Portfolio : Front-End Developer : CONTACT FORM"
+        >
+          <NullComponent
+            defer={true}
+            encodeSpecialCharacters={true}
+            link={
+              Array [
+                Object {
+                  "href": "https://meester-johan.info/contact/",
+                  "rel": "canonical",
+                },
+                Object {
+                  "href": "https://meester-johan.info/contact/",
+                  "hreflang": "x-default",
+                  "rel": "alternate",
+                },
+              ]
+            }
+            meta={
+              Array [
+                Object {
+                  "content": "For contacting me, please fill in this form. I will respond as soon as possible",
+                  "name": "description",
+                },
+                Object {
+                  "content": "For contacting me, please fill in this form. I will respond as soon as possible",
+                  "property": "og:description",
+                },
+                Object {
+                  "content": "Johan Meester : Portfolio : Front-End Developer : CONTACT FORM",
+                  "property": "og:title",
+                },
+                Object {
+                  "content": "https://meester-johan.info/contact/",
+                  "property": "og.url",
+                },
+              ]
+            }
+            title="Johan Meester : Portfolio : Front-End Developer : CONTACT FORM"
+          />
+        </SideEffect(NullComponent)>
+      </HelmetWrapper>
+    </HeadGear>
+  </InjectIntl(HeadGear)>
   <PageContent
     content={
       <InjectIntl(ContactForm)
@@ -139,29 +487,28 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
         }
         fieldError={Object {}}
         onSubmitHandler={[Function]}
-        sendStatus={undefined}
       />
     }
     title={
       <FormattedMessage
         defaultMessage="CONTACT ME"
-        id="portfolio.containers.ContactPage.header"
+        id="portfolio.containers.ContactPage.pageTitle"
         values={Object {}}
       />
     }
   >
-    <Wrapper__Wrapper
+    <Wrapper
       animate={true}
     >
       <div
-        className="Wrapper__Wrapper-fEDTQp jgxDLY"
+        className="Wrapper-ThVjl ipiXwR"
       >
         <PageHeader
           arrowPosition="bottom-left"
         >
-          <StyledHeader__StyledHeader>
+          <StyledHeader>
             <header
-              className="StyledHeader__StyledHeader-kHWYFT brSWxw"
+              className="StyledHeader-fJIKuc cuJATB"
             >
               <SpeechBubble
                 arrowHeight="4vh"
@@ -171,42 +518,42 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                 makeAppear={true}
                 showArrowBreakpoint="750px"
               >
-                <Container__Container
+                <Container
                   makeAppear={true}
                   showArrowBreakpoint="750px"
                 >
                   <div
-                    className="Container__Container-duRnZL gAUglN"
+                    className="Container-gZqETv hayOh"
                   >
-                    <Bubble__Bubble
+                    <Bubble
                       arrowPosition="bottom-left"
                       backgroundColor="#465a65"
                       isGhost={false}
                       showArrowBreakpoint="750px"
                     >
                       <div
-                        className="Bubble__Bubble-kfMqWC hrEoVL"
+                        className="Bubble-cYQkeS errvuT"
                       >
-                        <H2__H2
+                        <H2
                           color="#aedd2c"
                         >
                           <h2
-                            className="H2__H2-eTwhUa iVVlVj"
+                            className="H2-eUbBFj iAWPFe"
                             color="#aedd2c"
                           >
                             <FormattedMessage
                               defaultMessage="CONTACT ME"
-                              id="portfolio.containers.ContactPage.header"
+                              id="portfolio.containers.ContactPage.pageTitle"
                               values={Object {}}
                             >
                               <span>
-                                CONTACT ME
+                                CONTACT FORM
                               </span>
                             </FormattedMessage>
                           </h2>
-                        </H2__H2>
+                        </H2>
                       </div>
-                    </Bubble__Bubble>
+                    </Bubble>
                     <Arrow
                       arrowPosition="bottom-left"
                       backgroundColor="#465a65"
@@ -220,7 +567,7 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                         showBreakpoint="750px"
                       >
                         <svg
-                          className="Arrow__SVG-iWxuxU ejSVef"
+                          className="Arrow__SVG-iWxuxU iIEjSv"
                           focusable="false"
                           height="4vh"
                           preserveAspectRatio="xMinYMid meet"
@@ -249,14 +596,14 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                       </Arrow__SVG>
                     </Arrow>
                   </div>
-                </Container__Container>
+                </Container>
               </SpeechBubble>
             </header>
-          </StyledHeader__StyledHeader>
+          </StyledHeader>
         </PageHeader>
-        <ContentWrapper__ContentWrapper>
+        <ContentWrapper>
           <div
-            className="ContentWrapper__ContentWrapper-lSlQT busshj"
+            className="ContentWrapper-fNtIWq jXZlqv"
           >
             <SpeechBubble
               arrowHeight="9vh"
@@ -269,15 +616,15 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
               padding="1.5rem"
               showArrowBreakpoint="750px"
             >
-              <Container__Container
+              <Container
                 makeAppear={false}
                 maxWidth="30em"
                 showArrowBreakpoint="750px"
               >
                 <div
-                  className="Container__Container-duRnZL czakBm"
+                  className="Container-gZqETv jsqDeB"
                 >
-                  <Bubble__Bubble
+                  <Bubble
                     arrowPosition="bottom-right"
                     backgroundColor="#aedd2c"
                     color="#000"
@@ -286,7 +633,7 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                     showArrowBreakpoint="750px"
                   >
                     <div
-                      className="Bubble__Bubble-kfMqWC kjxAdG"
+                      className="Bubble-cYQkeS bOhOYj"
                       color="#000"
                     >
                       <InjectIntl(ContactForm)
@@ -353,18 +700,22 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                 "portfolio.containers.ContactPage.emailLabel": "Your email address",
                                 "portfolio.containers.ContactPage.emailPlaceholder": "(e.g. my@email.com)",
                                 "portfolio.containers.ContactPage.emailText": "Please add your email address here.",
-                                "portfolio.containers.ContactPage.header": "CONTACT ME",
+                                "portfolio.containers.ContactPage.meta.description": "For contacting me, please fill in this form. I will respond as soon as possible",
                                 "portfolio.containers.ContactPage.nameError": "Your name is required.",
                                 "portfolio.containers.ContactPage.nameLabel": "Your name",
                                 "portfolio.containers.ContactPage.namePlaceholder": "(e.g. John Doo)",
                                 "portfolio.containers.ContactPage.nameText": "Please add your name here.",
+                                "portfolio.containers.ContactPage.pageTitle": "CONTACT FORM",
                                 "portfolio.containers.ContactPage.requirementOne": "Please fill in all fields",
                                 "portfolio.containers.ContactPage.subjectError": "A subject is required.",
                                 "portfolio.containers.ContactPage.subjectLabel": "Subject",
                                 "portfolio.containers.ContactPage.subjectText": "Please provide a subject for your message.",
+                                "portfolio.containers.ContactPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
                                 "portfolio.containers.ContactPage.yourMessageError": "A message is required.",
                                 "portfolio.containers.ContactPage.yourMessageLabel": "Your message",
                                 "portfolio.containers.ContactPage.yourMessageText": "Please add your message here.",
+                                "portfolio.meta.description": "This is the portfolio website of Johan Meester. An Amsterdam based Front-End Developer specialized in React JS",
+                                "portfolio.meta.siteName": "Johan Meester : Portfolio",
                                 "portfolio.nav.about": "About",
                                 "portfolio.nav.contact": "Contact",
                                 "portfolio.nav.header": "Site navigation",
@@ -372,30 +723,35 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                 "portfolio.nav.projects": "Projects",
                                 "portfolio.nav.showMenuButton": "MENU",
                                 "portfolio.nav.skills": "Skills",
-                                "portfolio.page.AboutPage.pageDescription": "A short description about me.",
-                                "portfolio.page.AboutPage.pageTitle": "About me : Johan Meester's portfolio",
-                                "portfolio.page.AboutPage.title": "ABOUT ME",
+                                "portfolio.noscript": "If you are seeing this message, that means that JavaScript has been disabled on your browser. Please enable JavaScript to make this app work.",
+                                "portfolio.page.AboutPage.meta.description": "A short description about me and my professional life",
+                                "portfolio.page.AboutPage.pageTitle": "ABOUT ME",
+                                "portfolio.page.AboutPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
                                 "portfolio.page.NotFoundPage.contact": "contact",
                                 "portfolio.page.NotFoundPage.content": "I am sorry, but the page you requested does not exist or has been removed.
-                            
-                            Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
+
+Please go to the {home} page or, if you think this is an error, to the {contact} page and contact me.",
                                 "portfolio.page.NotFoundPage.home": "start",
-                                "portfolio.page.NotFoundPage.pageDescription": "Page not found.",
-                                "portfolio.page.NotFoundPage.pageTitle": "Not found : Johan Meester's portfolio",
-                                "portfolio.page.NotFoundPage.title": "NOT FOUND",
-                                "portfolio.page.SkillsPage.pageDescription": "Some of my skills.",
-                                "portfolio.page.SkillsPage.pageTitle": "My Skills : Johan Meester's portfolio",
-                                "portfolio.page.SkillsPage.title": "MY SKILLS",
+                                "portfolio.page.NotFoundPage.pageDescription": "The page you requested does not exist or has been removed. Sorry about that",
+                                "portfolio.page.NotFoundPage.pageTitle": "NOT FOUND",
+                                "portfolio.page.NotFoundPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+                                "portfolio.page.ProjectsPage.meta.description": "This is an overview of my projects. Projects are sorted by date with the most recent on top",
+                                "portfolio.page.ProjectsPage.pageTitle": "MY PROJECTS",
+                                "portfolio.page.ProjectsPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
+                                "portfolio.page.SkillsPage.meta.description": "A brief overview of my professional skills",
+                                "portfolio.page.SkillsPage.pageTitle": "MY SKILLS",
+                                "portfolio.page.SkillsPage.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
                                 "portfolio.page.index.header.callToAction": "CONTACT ME",
                                 "portfolio.page.index.header.greeting": "WELCOME",
                                 "portfolio.page.index.header.intro": "I am {name}",
                                 "portfolio.page.index.header.look": "HAVE A LOOK AROUND",
                                 "portfolio.page.index.header.trade": "FRONT-END DEVELOPER",
-                                "portfolio.page.index.title": "Introduction",
-                                "portfolio.page.projects.title": "MY PROJECTS",
+                                "portfolio.page.index.meta.description": "Welcome to the portfolio of Johan Meester, Front-End Developer",
+                                "portfolio.page.index.pageTitle": "INTRODUCTION",
+                                "portfolio.page.index.title": "Johan Meester : Portfolio : Front-End Developer : {pageTitle}",
                                 "portfolio.skiplink": "skip to main content",
                                 "portfolio.social_links.header": "Also find me on:",
-                                "portfolio.title": "Welcome to my portfolio",
+                                "portfolio.title": "Johan Meester : Portfolio : Front-End Developer",
                               },
                               "now": [Function],
                               "textComponent": "span",
@@ -403,33 +759,33 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                           }
                           onSubmitHandler={[Function]}
                         >
-                          <Form__Form
+                          <Form
                             onChange={[Function]}
                             onSubmit={[Function]}
                           >
                             <form
-                              className="Form__Form-crBJLB FqFPw"
+                              className="Form-dhHGoS esfMlR"
                               onChange={[Function]}
                               onSubmit={[Function]}
                             >
                               <div>
                                 <div>
                                   <div>
-                                    <InfoList__InfoList>
+                                    <InfoList>
                                       <ul
-                                        className="InfoList__InfoList-hUVVIf hfoUNU"
+                                        className="InfoList-bFUbOM JIzhr"
                                       >
                                         <InfoListItem>
                                           <InfoListItem__Li>
                                             <li
                                               className="InfoListItem__Li-fMSWPj hCpuSE"
                                             >
-                                              <SVGIcon__SVGIcon
+                                              <SVGIcon
                                                 viewBox="0 0 512 512"
                                               >
                                                 <svg
                                                   aria-hidden="true"
-                                                  className="SVGIcon__SVGIcon-dvbyrX kfpRMj"
+                                                  className="SVGIcon-ixpDyI gIDnTS"
                                                   focusable="false"
                                                   viewBox="0 0 512 512"
                                                   xmlns="http://www.w3.org/2000/svg"
@@ -438,13 +794,13 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                                     d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
                                                   />
                                                 </svg>
-                                              </SVGIcon__SVGIcon>
+                                              </SVGIcon>
                                               <InfoListItem__Span>
                                                 <span
                                                   className="InfoListItem__Span-iuvfSH gxPpOU"
                                                 >
                                                   <FormattedMessage
-                                                    defaultMessage="Please fill in all fields"
+                                                    defaultMessage="Please fill all fields"
                                                     id="portfolio.containers.ContactPage.requirementOne"
                                                     values={Object {}}
                                                   >
@@ -458,7 +814,7 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                           </InfoListItem__Li>
                                         </InfoListItem>
                                       </ul>
-                                    </InfoList__InfoList>
+                                    </InfoList>
                                   </div>
                                   <div>
                                     <Input
@@ -472,40 +828,40 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                       validate={[Function]}
                                       value=""
                                     >
-                                      <InputGroup__InputGroup>
+                                      <InputGroup>
                                         <div
-                                          className="InputGroup__InputGroup-hfyRbs frNIVi"
+                                          className="InputGroup-bLbrFg lklykp"
                                         >
-                                          <Label__Label
+                                          <Label
                                             htmlFor="name"
                                             onClick={[Function]}
                                           >
                                             <label
-                                              className="Label__Label-bOFUbQ kfTVjW"
+                                              className="Label-bxMjsr cBsFJx"
                                               htmlFor="name"
                                               onClick={[Function]}
                                             >
-                                              <LabelContent__LabelContent
+                                              <LabelContent
                                                 hasFocus={false}
                                               >
                                                 <span
-                                                  className="LabelContent__LabelContent-cHoOPw bljbwa"
+                                                  className="LabelContent-gWnUXw eGuzay"
                                                 >
                                                   Subject
-                                                  <Placeholder__Placeholder
+                                                  <Placeholder
                                                     hasFocus={false}
                                                   >
                                                     <span
-                                                      className="Placeholder__Placeholder-iEQfbz guEAFF"
+                                                      className="Placeholder-iEcLMX fbeOYY"
                                                     >
                                                       <i />
                                                     </span>
-                                                  </Placeholder__Placeholder>
+                                                  </Placeholder>
                                                 </span>
-                                              </LabelContent__LabelContent>
+                                              </LabelContent>
                                             </label>
-                                          </Label__Label>
-                                          <StyledInput__StyledInput
+                                          </Label>
+                                          <StyledInput
                                             innerRef={[Function]}
                                             name="subject"
                                             onBlur={[Function]}
@@ -515,7 +871,7 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                             value=""
                                           >
                                             <input
-                                              className="StyledInput__StyledInput-bMAqWh roHke"
+                                              className="StyledInput-dwXrMm kInwBn"
                                               name="subject"
                                               onBlur={[Function]}
                                               onChange={[Function]}
@@ -523,20 +879,20 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                               type="text"
                                               value=""
                                             />
-                                          </StyledInput__StyledInput>
-                                          <SubText__SubText>
+                                          </StyledInput>
+                                          <SubText>
                                             <div
-                                              className="SubText__SubText-hjYciJ jOknOk"
+                                              className="SubText-VSxHA eYTSar"
                                             >
-                                              <ErrorMessage__ErrorMessage
+                                              <ErrorMessage
                                                 showError={false}
                                               >
                                                 <span
-                                                  className="ErrorMessage__ErrorMessage-iBtNde fAAdxe"
+                                                  className="ErrorMessage-eJhZpN cVajIv"
                                                 >
                                                   false 
                                                 </span>
-                                              </ErrorMessage__ErrorMessage>
+                                              </ErrorMessage>
                                               <span>
                                                 <span>
                                                   Please provide a subject for your message.
@@ -559,9 +915,9 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                                 </span>
                                               </span>
                                             </div>
-                                          </SubText__SubText>
+                                          </SubText>
                                         </div>
-                                      </InputGroup__InputGroup>
+                                      </InputGroup>
                                     </Input>
                                     <TextArea
                                       changeHandler={[Function]}
@@ -573,40 +929,40 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                       validate={[Function]}
                                       value=""
                                     >
-                                      <InputGroup__InputGroup>
+                                      <InputGroup>
                                         <div
-                                          className="InputGroup__InputGroup-hfyRbs frNIVi"
+                                          className="InputGroup-bLbrFg lklykp"
                                         >
-                                          <Label__Label
+                                          <Label
                                             htmlFor="name"
                                             onClick={[Function]}
                                           >
                                             <label
-                                              className="Label__Label-bOFUbQ kfTVjW"
+                                              className="Label-bxMjsr cBsFJx"
                                               htmlFor="name"
                                               onClick={[Function]}
                                             >
-                                              <LabelContent__LabelContent
+                                              <LabelContent
                                                 hasFocus={false}
                                               >
                                                 <span
-                                                  className="LabelContent__LabelContent-cHoOPw bljbwa"
+                                                  className="LabelContent-gWnUXw eGuzay"
                                                 >
                                                   Your message
-                                                  <Placeholder__Placeholder
+                                                  <Placeholder
                                                     hasFocus={false}
                                                   >
                                                     <span
-                                                      className="Placeholder__Placeholder-iEQfbz guEAFF"
+                                                      className="Placeholder-iEcLMX fbeOYY"
                                                     >
                                                       <i />
                                                     </span>
-                                                  </Placeholder__Placeholder>
+                                                  </Placeholder>
                                                 </span>
-                                              </LabelContent__LabelContent>
+                                              </LabelContent>
                                             </label>
-                                          </Label__Label>
-                                          <StyledTextArea__StyledTextArea
+                                          </Label>
+                                          <StyledTextArea
                                             innerRef={[Function]}
                                             myHeight={0}
                                             name="message"
@@ -616,27 +972,27 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                             value=""
                                           >
                                             <textarea
-                                              className="StyledTextArea__StyledTextArea-ivhKvX cTkwFs"
+                                              className="StyledTextArea-kINxWV hZhUcn"
                                               name="message"
                                               onBlur={[Function]}
                                               onChange={[Function]}
                                               onFocus={[Function]}
                                               value=""
                                             />
-                                          </StyledTextArea__StyledTextArea>
-                                          <SubText__SubText>
+                                          </StyledTextArea>
+                                          <SubText>
                                             <div
-                                              className="SubText__SubText-hjYciJ jOknOk"
+                                              className="SubText-VSxHA eYTSar"
                                             >
-                                              <ErrorMessage__ErrorMessage
+                                              <ErrorMessage
                                                 showError={false}
                                               >
                                                 <span
-                                                  className="ErrorMessage__ErrorMessage-iBtNde fAAdxe"
+                                                  className="ErrorMessage-eJhZpN cVajIv"
                                                 >
                                                   false 
                                                 </span>
-                                              </ErrorMessage__ErrorMessage>
+                                              </ErrorMessage>
                                               <span>
                                                 <span>
                                                   Please add your message here.
@@ -659,9 +1015,9 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                                 </span>
                                               </span>
                                             </div>
-                                          </SubText__SubText>
+                                          </SubText>
                                         </div>
-                                      </InputGroup__InputGroup>
+                                      </InputGroup>
                                     </TextArea>
                                     <Input
                                       changeHandler={[Function]}
@@ -675,42 +1031,42 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                       validate={[Function]}
                                       value=""
                                     >
-                                      <InputGroup__InputGroup>
+                                      <InputGroup>
                                         <div
-                                          className="InputGroup__InputGroup-hfyRbs frNIVi"
+                                          className="InputGroup-bLbrFg lklykp"
                                         >
-                                          <Label__Label
+                                          <Label
                                             htmlFor="name"
                                             onClick={[Function]}
                                           >
                                             <label
-                                              className="Label__Label-bOFUbQ kfTVjW"
+                                              className="Label-bxMjsr cBsFJx"
                                               htmlFor="name"
                                               onClick={[Function]}
                                             >
-                                              <LabelContent__LabelContent
+                                              <LabelContent
                                                 hasFocus={false}
                                               >
                                                 <span
-                                                  className="LabelContent__LabelContent-cHoOPw bljbwa"
+                                                  className="LabelContent-gWnUXw eGuzay"
                                                 >
                                                   Your name
-                                                  <Placeholder__Placeholder
+                                                  <Placeholder
                                                     hasFocus={false}
                                                   >
                                                     <span
-                                                      className="Placeholder__Placeholder-iEQfbz guEAFF"
+                                                      className="Placeholder-iEcLMX fbeOYY"
                                                     >
                                                       <i>
                                                         (e.g. John Doo)
                                                       </i>
                                                     </span>
-                                                  </Placeholder__Placeholder>
+                                                  </Placeholder>
                                                 </span>
-                                              </LabelContent__LabelContent>
+                                              </LabelContent>
                                             </label>
-                                          </Label__Label>
-                                          <StyledInput__StyledInput
+                                          </Label>
+                                          <StyledInput
                                             innerRef={[Function]}
                                             name="name"
                                             onBlur={[Function]}
@@ -720,7 +1076,7 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                             value=""
                                           >
                                             <input
-                                              className="StyledInput__StyledInput-bMAqWh roHke"
+                                              className="StyledInput-dwXrMm kInwBn"
                                               name="name"
                                               onBlur={[Function]}
                                               onChange={[Function]}
@@ -728,20 +1084,20 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                               type="text"
                                               value=""
                                             />
-                                          </StyledInput__StyledInput>
-                                          <SubText__SubText>
+                                          </StyledInput>
+                                          <SubText>
                                             <div
-                                              className="SubText__SubText-hjYciJ jOknOk"
+                                              className="SubText-VSxHA eYTSar"
                                             >
-                                              <ErrorMessage__ErrorMessage
+                                              <ErrorMessage
                                                 showError={false}
                                               >
                                                 <span
-                                                  className="ErrorMessage__ErrorMessage-iBtNde fAAdxe"
+                                                  className="ErrorMessage-eJhZpN cVajIv"
                                                 >
                                                   false 
                                                 </span>
-                                              </ErrorMessage__ErrorMessage>
+                                              </ErrorMessage>
                                               <span>
                                                 <span>
                                                   Please add your name here.
@@ -764,9 +1120,9 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                                 </span>
                                               </span>
                                             </div>
-                                          </SubText__SubText>
+                                          </SubText>
                                         </div>
-                                      </InputGroup__InputGroup>
+                                      </InputGroup>
                                     </Input>
                                     <Input
                                       changeHandler={[Function]}
@@ -778,42 +1134,42 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                       validate={[Function]}
                                       value=""
                                     >
-                                      <InputGroup__InputGroup>
+                                      <InputGroup>
                                         <div
-                                          className="InputGroup__InputGroup-hfyRbs frNIVi"
+                                          className="InputGroup-bLbrFg lklykp"
                                         >
-                                          <Label__Label
+                                          <Label
                                             htmlFor="name"
                                             onClick={[Function]}
                                           >
                                             <label
-                                              className="Label__Label-bOFUbQ kfTVjW"
+                                              className="Label-bxMjsr cBsFJx"
                                               htmlFor="name"
                                               onClick={[Function]}
                                             >
-                                              <LabelContent__LabelContent
+                                              <LabelContent
                                                 hasFocus={false}
                                               >
                                                 <span
-                                                  className="LabelContent__LabelContent-cHoOPw bljbwa"
+                                                  className="LabelContent-gWnUXw eGuzay"
                                                 >
                                                   Your email address
-                                                  <Placeholder__Placeholder
+                                                  <Placeholder
                                                     hasFocus={false}
                                                   >
                                                     <span
-                                                      className="Placeholder__Placeholder-iEQfbz guEAFF"
+                                                      className="Placeholder-iEcLMX fbeOYY"
                                                     >
                                                       <i>
                                                         (e.g. my@email.com)
                                                       </i>
                                                     </span>
-                                                  </Placeholder__Placeholder>
+                                                  </Placeholder>
                                                 </span>
-                                              </LabelContent__LabelContent>
+                                              </LabelContent>
                                             </label>
-                                          </Label__Label>
-                                          <StyledInput__StyledInput
+                                          </Label>
+                                          <StyledInput
                                             innerRef={[Function]}
                                             name="email"
                                             onBlur={[Function]}
@@ -823,7 +1179,7 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                             value=""
                                           >
                                             <input
-                                              className="StyledInput__StyledInput-bMAqWh roHke"
+                                              className="StyledInput-dwXrMm kInwBn"
                                               name="email"
                                               onBlur={[Function]}
                                               onChange={[Function]}
@@ -831,20 +1187,20 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                               type="email"
                                               value=""
                                             />
-                                          </StyledInput__StyledInput>
-                                          <SubText__SubText>
+                                          </StyledInput>
+                                          <SubText>
                                             <div
-                                              className="SubText__SubText-hjYciJ jOknOk"
+                                              className="SubText-VSxHA eYTSar"
                                             >
-                                              <ErrorMessage__ErrorMessage
+                                              <ErrorMessage
                                                 showError={false}
                                               >
                                                 <span
-                                                  className="ErrorMessage__ErrorMessage-iBtNde fAAdxe"
+                                                  className="ErrorMessage-eJhZpN cVajIv"
                                                 >
                                                   false 
                                                 </span>
-                                              </ErrorMessage__ErrorMessage>
+                                              </ErrorMessage>
                                               <span>
                                                 <span>
                                                   Please add your email address here.
@@ -852,32 +1208,32 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                                 </span>
                                               </span>
                                             </div>
-                                          </SubText__SubText>
+                                          </SubText>
                                         </div>
-                                      </InputGroup__InputGroup>
+                                      </InputGroup>
                                     </Input>
                                   </div>
-                                  <Footer__Footer>
+                                  <Footer>
                                     <div
-                                      className="Footer__Footer-kpTuka ejWOEo"
+                                      className="Footer-iInldp gRvKfv"
                                     >
                                       <SubmitButton
                                         buttonState="idle"
                                         formIsValid={false}
                                       >
-                                        <Button__Button
+                                        <Button
                                           isEnabled={false}
                                         >
                                           <button
-                                            className="Button__Button-eELvBW hVcFSv"
+                                            className="Button-kDSBcD cdDmvZ"
                                           >
                                             <span>
-                                              <SVGIcon__SVGIcon
+                                              <SVGIcon
                                                 viewBox="0 0 512 512"
                                               >
                                                 <svg
                                                   aria-hidden="true"
-                                                  className="SVGIcon__SVGIcon-dvbyrX kfpRMj"
+                                                  className="SVGIcon-ixpDyI gIDnTS"
                                                   focusable="false"
                                                   viewBox="0 0 512 512"
                                                   xmlns="http://www.w3.org/2000/svg"
@@ -886,10 +1242,10 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                                     d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
                                                   />
                                                 </svg>
-                                              </SVGIcon__SVGIcon>
-                                              <Label__Label>
+                                              </SVGIcon>
+                                              <Label>
                                                 <span
-                                                  className="Label__Label-bOFUbQ iQUJld"
+                                                  className="Label-bxMjsr kEMeDd"
                                                 >
                                                   <FormattedMessage
                                                     defaultMessage="Send"
@@ -901,21 +1257,21 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                                                     </span>
                                                   </FormattedMessage>
                                                 </span>
-                                              </Label__Label>
+                                              </Label>
                                             </span>
                                           </button>
-                                        </Button__Button>
+                                        </Button>
                                       </SubmitButton>
                                     </div>
-                                  </Footer__Footer>
+                                  </Footer>
                                 </div>
                               </div>
                             </form>
-                          </Form__Form>
+                          </Form>
                         </ContactForm>
                       </InjectIntl(ContactForm)>
                     </div>
-                  </Bubble__Bubble>
+                  </Bubble>
                   <Arrow
                     arrowPosition="bottom-right"
                     backgroundColor="#aedd2c"
@@ -929,7 +1285,7 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                       showBreakpoint="750px"
                     >
                       <svg
-                        className="Arrow__SVG-iWxuxU eUZiEN"
+                        className="Arrow__SVG-iWxuxU bOIamW"
                         focusable="false"
                         height="9vh"
                         preserveAspectRatio="xMinYMid meet"
@@ -958,12 +1314,12 @@ exports[`<ContactPage /> should render and match the snapshot 1`] = `
                     </Arrow__SVG>
                   </Arrow>
                 </div>
-              </Container__Container>
+              </Container>
             </SpeechBubble>
           </div>
-        </ContentWrapper__ContentWrapper>
+        </ContentWrapper>
       </div>
-    </Wrapper__Wrapper>
+    </Wrapper>
   </PageContent>
 </ContactPage>
 `;

@@ -21,7 +21,7 @@ exports[`<Wrapper /> should adopt the "animate" property 1`] = `
   .c0 {
     display: grid;
     grid-area: mainContent;
-    grid-template-areas: "pageHeader" "pageContent";
+    grid-template-areas: 'pageHeader' 'pageContent';
   }
 }
 
@@ -51,7 +51,7 @@ exports[`<Wrapper /> should render and match the snapshot 1`] = `
   .c0 {
     display: grid;
     grid-area: mainContent;
-    grid-template-areas: "pageHeader" "pageContent";
+    grid-template-areas: 'pageHeader' 'pageContent';
   }
 }
 

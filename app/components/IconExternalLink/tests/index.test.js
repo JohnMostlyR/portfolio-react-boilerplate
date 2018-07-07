@@ -11,7 +11,9 @@ describe('<IconExternalLink />', () => {
   });
 
   it('should adopt props', () => {
-    const renderedComponent = shallow(<IconExternalLink height="99px" width="99px" color="green" />);
+    const renderedComponent = shallow(
+      <IconExternalLink height="99px" width="99px" color="green" />,
+    );
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 });

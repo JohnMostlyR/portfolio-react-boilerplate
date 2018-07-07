@@ -26,17 +26,15 @@ class SpeechBubble extends React.PureComponent {
         maxWidth={maxWidth}
         makeAppear={makeAppear}
       >
-        {
-          arrowPosition.startsWith('top-') && (
-            <Arrow
-              arrowPosition={arrowPosition}
-              backgroundColor={backgroundColor}
-              height={arrowHeight}
-              isGhost={isGhost}
-              showBreakpoint={showArrowBreakpoint}
-            />
-          )
-        }
+        {arrowPosition.startsWith('top-') && (
+          <Arrow
+            arrowPosition={arrowPosition}
+            backgroundColor={backgroundColor}
+            height={arrowHeight}
+            isGhost={isGhost}
+            showBreakpoint={showArrowBreakpoint}
+          />
+        )}
         <Bubble
           arrowPosition={arrowPosition}
           backgroundColor={backgroundColor}
@@ -47,17 +45,15 @@ class SpeechBubble extends React.PureComponent {
         >
           {children}
         </Bubble>
-        {
-          arrowPosition.startsWith('bottom-') && (
-            <Arrow
-              arrowPosition={arrowPosition}
-              backgroundColor={backgroundColor}
-              height={arrowHeight}
-              isGhost={isGhost}
-              showBreakpoint={showArrowBreakpoint}
-            />
-          )
-        }
+        {arrowPosition.startsWith('bottom-') && (
+          <Arrow
+            arrowPosition={arrowPosition}
+            backgroundColor={backgroundColor}
+            height={arrowHeight}
+            isGhost={isGhost}
+            showBreakpoint={showArrowBreakpoint}
+          />
+        )}
       </Container>
     );
   }
@@ -65,7 +61,12 @@ class SpeechBubble extends React.PureComponent {
 
 SpeechBubble.propTypes = {
   arrowHeight: PropTypes.string,
-  arrowPosition: PropTypes.oneOf(['bottom-left', 'bottom-right', 'top-left', 'top-right']),
+  arrowPosition: PropTypes.oneOf([
+    'bottom-left',
+    'bottom-right',
+    'top-left',
+    'top-right',
+  ]),
   backgroundColor: PropTypes.string,
   color: PropTypes.string,
   children: PropTypes.oneOfType([

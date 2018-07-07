@@ -14,24 +14,22 @@ const Button = styled.button`
   appearance: none;
   background-color: transparent;
   border: 0;
-  filter: ${({ isEnabled }) => isEnabled ? 'none' : 'grayscale()'};
+  filter: ${({ isEnabled }) => (isEnabled ? 'none' : 'grayscale()')};
   padding: 0;
-  ${BASE_FONT_BOLD}
-
-  > span {
+  ${BASE_FONT_BOLD} > span {
     display: inline-block;
     background-color: ${button.backgroundColor};
     border: 1px solid ${button.backgroundColor};
     border-radius: 5px;
     color: ${button.color};
-    cursor: ${({ isEnabled }) => isEnabled ? 'pointer' : 'not-allowed'};
+    cursor: ${({ isEnabled }) => (isEnabled ? 'pointer' : 'not-allowed')};
     padding: 8px;
   }
 
   &::after,
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     height: 32px;
     top: 50%;
     width: 32px;
@@ -49,9 +47,7 @@ const Button = styled.button`
   }
 
   &::before {
-    transform:
-      translate3d(0, -50%, 0)
-      rotateY(180deg);
+    transform: translate3d(0, -50%, 0) rotateY(180deg);
   }
 
   &:focus,
@@ -61,9 +57,7 @@ const Button = styled.button`
     }
 
     &::before {
-      transform:
-        translate3d(-125%, -50%, 0)
-        rotateY(180deg);
+      transform: translate3d(-125%, -50%, 0) rotateY(180deg);
     }
   }
 `;

@@ -3,7 +3,7 @@
 exports[`SiteNavigation should render and match the snapshot 1`] = `
 <nav
   aria-label="site"
-  className="Navigation__Nav-lgxJla ckbRrS"
+  className="Navigation__Nav-lgxJla ijsJvj"
 >
   <h2
     aria-hidden="false"
@@ -52,24 +52,23 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
     </button>
   </span>
   <ul
-    className="List__List-bdFvnP dxPQqe"
+    className="List-htqUMz dhkWUC"
     hidden="\\"true\\""
     onKeyDown={[Function]}
   >
     <li
-      className="ListItem__ListItem-gWwBzw bdFDsK"
+      className="ListItem-llUgLb hjziCi"
     >
       <a
-        aria-current={false}
-        className="Link__Link-fWcsEQ bwCENz"
+        aria-current={null}
+        className="Link-DKeTA gbIjTt"
         data-hasfocus="false"
         href="/introduction"
         onClick={[Function]}
-        style={undefined}
         tabIndex="-1"
       >
         <svg
-          className="Icon__Icon-dOjpgZ ivfDeb"
+          className="Icon-cxuQhR hZlxIz"
           focusable="false"
           viewBox="0 0 576 512"
           xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +78,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
           />
         </svg>
         <span
-          className="Label__Label-bOFUbQ gkbbBV"
+          className="Label-bxMjsr diaWwm"
         >
           <span>
             Intro
@@ -88,19 +87,18 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
       </a>
     </li>
     <li
-      className="ListItem__ListItem-gWwBzw bdFDsK"
+      className="ListItem-llUgLb hjziCi"
     >
       <a
-        aria-current={false}
-        className="Link__Link-fWcsEQ bwCENz"
+        aria-current={null}
+        className="Link-DKeTA gbIjTt"
         data-hasfocus="false"
         href="/about"
         onClick={[Function]}
-        style={undefined}
         tabIndex="-1"
       >
         <svg
-          className="Icon__Icon-dOjpgZ ivfDeb"
+          className="Icon-cxuQhR hZlxIz"
           focusable="false"
           viewBox="0 0 512 512"
           xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +108,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
           />
         </svg>
         <span
-          className="Label__Label-bOFUbQ gkbbBV"
+          className="Label-bxMjsr diaWwm"
         >
           <span>
             About
@@ -119,19 +117,18 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
       </a>
     </li>
     <li
-      className="ListItem__ListItem-gWwBzw bdFDsK"
+      className="ListItem-llUgLb hjziCi"
     >
       <a
-        aria-current={false}
-        className="Link__Link-fWcsEQ bwCENz"
+        aria-current={null}
+        className="Link-DKeTA gbIjTt"
         data-hasfocus="false"
         href="/skills"
         onClick={[Function]}
-        style={undefined}
         tabIndex="-1"
       >
         <svg
-          className="Icon__Icon-dOjpgZ ivfDeb"
+          className="Icon-cxuQhR hZlxIz"
           focusable="false"
           viewBox="0 0 640 512"
           xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +138,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
           />
         </svg>
         <span
-          className="Label__Label-bOFUbQ gkbbBV"
+          className="Label-bxMjsr diaWwm"
         >
           <span>
             Skills
@@ -150,19 +147,18 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
       </a>
     </li>
     <li
-      className="ListItem__ListItem-gWwBzw bdFDsK"
+      className="ListItem-llUgLb hjziCi"
     >
       <a
-        aria-current={false}
-        className="Link__Link-fWcsEQ bwCENz"
+        aria-current={null}
+        className="Link-DKeTA gbIjTt"
         data-hasfocus="false"
         href="/projects"
         onClick={[Function]}
-        style={undefined}
         tabIndex="-1"
       >
         <svg
-          className="Icon__Icon-dOjpgZ ivfDeb"
+          className="Icon-cxuQhR hZlxIz"
           focusable="false"
           viewBox="0 0 512 512"
           xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +168,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
           />
         </svg>
         <span
-          className="Label__Label-bOFUbQ gkbbBV"
+          className="Label-bxMjsr diaWwm"
         >
           <span>
             Projects
@@ -181,19 +177,18 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
       </a>
     </li>
     <li
-      className="ListItem__ListItem-gWwBzw bdFDsK"
+      className="ListItem-llUgLb hjziCi"
     >
       <a
-        aria-current={false}
-        className="Link__Link-fWcsEQ bwCENz"
+        aria-current={null}
+        className="Link-DKeTA gbIjTt"
         data-hasfocus="false"
         href="/contact"
         onClick={[Function]}
-        style={undefined}
         tabIndex="-1"
       >
         <svg
-          className="Icon__Icon-dOjpgZ ivfDeb"
+          className="Icon-cxuQhR hZlxIz"
           focusable="false"
           viewBox="0 0 512 512"
           xmlns="http://www.w3.org/2000/svg"
@@ -203,7 +198,7 @@ exports[`SiteNavigation should render and match the snapshot 1`] = `
           />
         </svg>
         <span
-          className="Label__Label-bOFUbQ gkbbBV"
+          className="Label-bxMjsr diaWwm"
         >
           <span>
             Contact

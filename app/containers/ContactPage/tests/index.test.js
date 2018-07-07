@@ -4,13 +4,14 @@ import toJson from 'enzyme-to-json';
 import { ContactPage, mapDispatchToProps } from '../index';
 import { sendForm } from '../actions';
 
-import { shallowWithIntl, mountWithIntl } from '../../../helpers/intl-enzyme-test-helper';
+import {
+  shallowWithIntl,
+  mountWithIntl,
+} from '../../../helpers/intl-enzyme-test-helper';
 
 describe('<ContactPage />', () => {
   it('should render and match the snapshot', () => {
-    const wrapper = mountWithIntl(
-      <ContactPage />
-    );
+    const wrapper = mountWithIntl(<ContactPage />);
 
     expect(toJson(wrapper)).toMatchSnapshot();
   });
@@ -56,9 +57,7 @@ describe('<ContactPage />', () => {
         error: 'Some Error',
       };
 
-      const wrapper = shallowWithIntl(
-        <ContactPage />
-      );
+      const wrapper = shallowWithIntl(<ContactPage />);
 
       const instance = wrapper.instance();
       instance.handleChange(argument);
@@ -75,9 +74,7 @@ describe('<ContactPage />', () => {
     let wrapper = null;
 
     beforeEach(() => {
-      wrapper = mountWithIntl(
-        <ContactPage />
-      );
+      wrapper = mountWithIntl(<ContactPage />);
 
       form = wrapper.find('form').first();
 
@@ -97,7 +94,10 @@ describe('<ContactPage />', () => {
     });
 
     it('should call validateForm', () => {
-      const field = Object.assign(initialState.field, { ...field, subject: '' });
+      const field = Object.assign(initialState.field, {
+        ...field,
+        subject: '',
+      });
       initialState = { ...initialState, field };
       wrapper.setState(initialState);
       form.simulate('submit', {

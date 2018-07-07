@@ -30,9 +30,12 @@ describe('<AboutPage />', () => {
   describe('fetch content from external source', () => {
     const componentWillReceivePropsSpy = jest.spyOn(
       AboutPage.prototype,
-      'componentWillReceiveProps'
+      'componentWillReceiveProps',
     );
-    const handleIsLoadingSpy = jest.spyOn(AboutPage.prototype, 'handleIsLoading');
+    const handleIsLoadingSpy = jest.spyOn(
+      AboutPage.prototype,
+      'handleIsLoading',
+    );
     const setIsLoadingSpy = jest.spyOn(AboutPage.prototype, 'setIsLoading');
     const getContent = jest.fn();
     let isLoadingProp = false;
@@ -44,53 +47,51 @@ describe('<AboutPage />', () => {
       jest.clearAllMocks();
     });
 
-    it('should set the "isLoading" state when the "isLoading" prop is true for more than 200ms',
-      () => {
-        wrapper = shallow(
-          <AboutPage getContent={getContent} isLoading={false} />
-        );
-        expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(0);
-        expect(handleIsLoadingSpy).toHaveBeenCalledTimes(0);
-        expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+    it('should set the "isLoading" state when the "isLoading" prop is true for more than 200ms', () => {
+      wrapper = shallow(
+        <AboutPage getContent={getContent} isLoading={false} />,
+      );
+      expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(0);
+      expect(handleIsLoadingSpy).toHaveBeenCalledTimes(0);
+      expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
 
-        isLoadingProp = true;
+      isLoadingProp = true;
 
-        wrapper.setProps({ isLoading: isLoadingProp });
+      wrapper.setProps({ isLoading: isLoadingProp });
 
-        expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(1);
-        expect(handleIsLoadingSpy).toHaveBeenCalledTimes(1);
-        expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
-        expect(wrapper.state().isLoading).toBe(false);
+      expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(1);
+      expect(handleIsLoadingSpy).toHaveBeenCalledTimes(1);
+      expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+      expect(wrapper.state().isLoading).toBe(false);
 
-        jest.runTimersToTime(300);
+      jest.runTimersToTime(300);
 
-        expect(setIsLoadingSpy).toHaveBeenCalledTimes(1);
-        expect(wrapper.state().isLoading).toBe(true);
-      });
+      expect(setIsLoadingSpy).toHaveBeenCalledTimes(1);
+      expect(wrapper.state().isLoading).toBe(true);
+    });
 
-    it('should not set the "isLoading" state when the "isLoading" prop is true for less than 200ms',
-      () => {
-        wrapper = shallow(
-          <AboutPage getContent={getContent} isLoading={false} />
-        );
-        expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(0);
-        expect(handleIsLoadingSpy).toHaveBeenCalledTimes(0);
-        expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+    it('should not set the "isLoading" state when the "isLoading" prop is true for less than 200ms', () => {
+      wrapper = shallow(
+        <AboutPage getContent={getContent} isLoading={false} />,
+      );
+      expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(0);
+      expect(handleIsLoadingSpy).toHaveBeenCalledTimes(0);
+      expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
 
-        isLoadingProp = true;
+      isLoadingProp = true;
 
-        wrapper.setProps({ isLoading: isLoadingProp });
+      wrapper.setProps({ isLoading: isLoadingProp });
 
-        expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(1);
-        expect(handleIsLoadingSpy).toHaveBeenCalledTimes(1);
-        expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
-        expect(wrapper.state().isLoading).toBe(false);
+      expect(componentWillReceivePropsSpy).toHaveBeenCalledTimes(1);
+      expect(handleIsLoadingSpy).toHaveBeenCalledTimes(1);
+      expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+      expect(wrapper.state().isLoading).toBe(false);
 
-        jest.runTimersToTime(100);
+      jest.runTimersToTime(100);
 
-        expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
-        expect(wrapper.state().isLoading).toBe(false);
-      });
+      expect(setIsLoadingSpy).toHaveBeenCalledTimes(0);
+      expect(wrapper.state().isLoading).toBe(false);
+    });
   });
 
   describe('fetching content from external source', () => {
@@ -107,10 +108,10 @@ describe('<AboutPage />', () => {
     it('should call getContent() to load external data', () => {
       mount(
         <Provider store={store}>
-          <IntlProvider locale={'en'}>
+          <IntlProvider locale="en">
             <AboutPage getContent={getContent} />
           </IntlProvider>
-        </Provider>
+        </Provider>,
       );
 
       expect(getContent).toBeCalled();
@@ -119,10 +120,10 @@ describe('<AboutPage />', () => {
     it('should show an error message when content could not be loaded', () => {
       wrapper = mount(
         <Provider store={store}>
-          <IntlProvider locale={'en'}>
+          <IntlProvider locale="en">
             <AboutPage getContent={getContent} error />
           </IntlProvider>
-        </Provider>
+        </Provider>,
       );
 
       expect(toJson(wrapper)).toMatchSnapshot();
@@ -131,7 +132,7 @@ describe('<AboutPage />', () => {
     it('should handle case where invalid content is received without any error', () => {
       wrapper = mount(
         <Provider store={store}>
-          <IntlProvider locale={'en'}>
+          <IntlProvider locale="en">
             <AboutPage
               getContent={getContent}
               isLoading={false}
@@ -139,7 +140,7 @@ describe('<AboutPage />', () => {
               skillsText={[]}
             />
           </IntlProvider>
-        </Provider>
+        </Provider>,
       );
 
       expect(toJson(wrapper)).toMatchSnapshot();
@@ -149,7 +150,7 @@ describe('<AboutPage />', () => {
       const fixture = String.raw`Test Content\nNew Line`;
       wrapper = mount(
         <Provider store={store}>
-          <IntlProvider locale={'en'}>
+          <IntlProvider locale="en">
             <AboutPage
               getContent={getContent}
               isLoading={false}
@@ -157,7 +158,7 @@ describe('<AboutPage />', () => {
               aboutMeText={Parser(marked(fixture))}
             />
           </IntlProvider>
-        </Provider>
+        </Provider>,
       );
 
       expect(wrapper.contains(PageContent)).toEqual(true);

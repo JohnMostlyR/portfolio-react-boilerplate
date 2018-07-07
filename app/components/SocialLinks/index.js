@@ -45,36 +45,31 @@ class SocialLinks extends React.PureComponent {
     return (
       <Nav aria-labelledby="SocialLinks-title">
         <FormattedMessage {...messages.header}>
-          {
-            (message) => <h1 id="SocialLinks-title" hidden aria-hidden="false">{message}</h1>
-          }
+          {message => (
+            <h1 id="SocialLinks-title" hidden aria-hidden="false">
+              {message}
+            </h1>
+          )}
         </FormattedMessage>
         <StyledUL
-          innerRef={
-            (e) => {
-              this.list = e;
-            }
-          }
+          innerRef={e => {
+            this.list = e;
+          }}
         >
-          {
-            externalLinks.map((externalLink) => (
-              <StyledLI
-                key={externalLink.url}
-                data-tip={externalLink.name}
-              >
-                <ThemeContext.Consumer>
-                  {
-                    ({ pageHeader }) => (<ExternalLink
-                      href={externalLink.url}
-                      faIcon={externalLink.icon}
-                      description={externalLink.name}
-                      color={pageHeader.backgroundColor}
-                    />)
-                  }
-                </ThemeContext.Consumer>
-              </StyledLI>
-            ))
-          }
+          {externalLinks.map(externalLink => (
+            <StyledLI key={externalLink.url} data-tip={externalLink.name}>
+              <ThemeContext.Consumer>
+                {({ pageHeader }) => (
+                  <ExternalLink
+                    href={externalLink.url}
+                    faIcon={externalLink.icon}
+                    description={externalLink.name}
+                    color={pageHeader.backgroundColor}
+                  />
+                )}
+              </ThemeContext.Consumer>
+            </StyledLI>
+          ))}
         </StyledUL>
         <ReactTooltip />
       </Nav>

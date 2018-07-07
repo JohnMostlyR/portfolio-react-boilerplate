@@ -23,12 +23,12 @@ exports[`<Article /> should render and match the snapshot 1`] = `
   transition: color 0.1s ease-out;
 }
 
-.c0 a[href^=http] {
+.c0 a[href^='http'] {
   padding-right: 1em;
 }
 
-.c0 a[href^=http]::after {
-  content: "";
+.c0 a[href^='http']::after {
+  content: '';
   height: 1em;
   position: absolute;
   width: 1em;

@@ -26,7 +26,7 @@ describe('<TextArea />', () => {
         name={props.name}
         label={props.label}
         changeHandler={props.changeHandler}
-      />
+      />,
     );
 
     expect(toJson(wrapper)).toMatchSnapshot();

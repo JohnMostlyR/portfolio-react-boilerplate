@@ -42,7 +42,7 @@ exports[`<ProjectsListItem /> should render and match the snapshot 1`] = `
   }
 
   .c0:nth-child(odd)::after {
-    content: "";
+    content: '';
     height: 9vmin;
     left: 0;
     margin-top: -1px;
@@ -67,7 +67,7 @@ exports[`<ProjectsListItem /> should render and match the snapshot 1`] = `
   }
 
   .c0:nth-child(even)::after {
-    content: "";
+    content: '';
     height: 9vmin;
     left: 0;
     margin-top: -1px;

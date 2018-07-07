@@ -1,11 +1,7 @@
 import { fromJS } from 'immutable';
 
 import projectsPageReducer from '../reducer';
-import {
-  loadContent,
-  contentLoaded,
-  contentLoadingError,
-} from '../actions';
+import { loadContent, contentLoaded, contentLoadingError } from '../actions';
 
 describe('projectsPageReducer', () => {
   let state;
@@ -40,17 +36,19 @@ describe('projectsPageReducer', () => {
       .set('loading', false)
       .set('locale', locale);
 
-    expect(projectsPageReducer(state, contentLoaded(fixture, locale))).toEqual(expectedResult);
+    expect(projectsPageReducer(state, contentLoaded(fixture, locale))).toEqual(
+      expectedResult,
+    );
   });
 
   it('should handle the contentLoadingError action correctly', () => {
     const fixture = {
       msg: 'Not found',
     };
-    const expectedResult = state
-      .set('error', fixture)
-      .set('loading', false);
+    const expectedResult = state.set('error', fixture).set('loading', false);
 
-    expect(projectsPageReducer(state, contentLoadingError(fixture))).toEqual(expectedResult);
+    expect(projectsPageReducer(state, contentLoadingError(fixture))).toEqual(
+      expectedResult,
+    );
   });
 });

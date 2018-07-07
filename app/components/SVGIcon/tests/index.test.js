@@ -9,8 +9,10 @@ describe('<SVGIcon>', () => {
   it('Should render and match the snapshot', () => {
     const wrapper = shallow(
       <SVGIcon>
-        <text x="0" y="15">TEST</text>
-      </SVGIcon>
+        <text x="0" y="15">
+          TEST
+        </text>
+      </SVGIcon>,
     );
 
     expect(toJson(wrapper)).toMatchSnapshot();
@@ -20,8 +22,10 @@ describe('<SVGIcon>', () => {
     const VIEW_BOX = '0 0 10 10';
     const wrapper = shallow(
       <SVGIcon viewBox={VIEW_BOX}>
-        <text x="0" y="15">TEST</text>
-      </SVGIcon>
+        <text x="0" y="15">
+          TEST
+        </text>
+      </SVGIcon>,
     );
 
     expect(wrapper.prop('viewBox')).toBe(VIEW_BOX);
@@ -31,8 +35,10 @@ describe('<SVGIcon>', () => {
     const FOCUSABLE = false;
     const wrapper = shallow(
       <SVGIcon focusable={FOCUSABLE}>
-        <text x="0" y="15">TEST</text>
-      </SVGIcon>
+        <text x="0" y="15">
+          TEST
+        </text>
+      </SVGIcon>,
     );
 
     expect(wrapper.prop('focusable')).toBe(FOCUSABLE);
@@ -42,8 +48,10 @@ describe('<SVGIcon>', () => {
     const VALUE = '#bada55';
     const wrapper = shallow(
       <SVGIcon color={VALUE}>
-        <text x="0" y="15">TEST</text>
-      </SVGIcon>
+        <text x="0" y="15">
+          TEST
+        </text>
+      </SVGIcon>,
     );
 
     expect(toJson(wrapper)).toMatchSnapshot();
@@ -53,8 +61,10 @@ describe('<SVGIcon>', () => {
     const VALUE = '9999px';
     const wrapper = shallow(
       <SVGIcon height={VALUE}>
-        <text x="0" y="15">TEST</text>
-      </SVGIcon>
+        <text x="0" y="15">
+          TEST
+        </text>
+      </SVGIcon>,
     );
 
     expect(toJson(wrapper)).toMatchSnapshot();
@@ -64,8 +74,10 @@ describe('<SVGIcon>', () => {
     const VALUE = '9999px';
     const wrapper = shallow(
       <SVGIcon width={VALUE}>
-        <text x="0" y="15">TEST</text>
-      </SVGIcon>
+        <text x="0" y="15">
+          TEST
+        </text>
+      </SVGIcon>,
     );
 
     expect(toJson(wrapper)).toMatchSnapshot();
@@ -75,8 +87,10 @@ describe('<SVGIcon>', () => {
     const VALUE = 'rotate';
     const wrapper = shallow(
       <SVGIcon animate={VALUE}>
-        <text x="0" y="15">TEST</text>
-      </SVGIcon>
+        <text x="0" y="15">
+          TEST
+        </text>
+      </SVGIcon>,
     );
 
     expect(toJson(wrapper)).toMatchSnapshot();

@@ -12,12 +12,12 @@ describe('<Bubble />', () => {
   });
 
   it('should adopt the "backgroundColor" prop', () => {
-    const renderedComponent = shallow(<Bubble backgroundColor={'white'} />);
+    const renderedComponent = shallow(<Bubble backgroundColor="white" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   it('should adopt the "color" prop', () => {
-    const renderedComponent = shallow(<Bubble color={'white'} />);
+    const renderedComponent = shallow(<Bubble color="white" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
@@ -27,12 +27,12 @@ describe('<Bubble />', () => {
   });
 
   it('should adopt the "padding" prop', () => {
-    const renderedComponent = shallow(<Bubble padding={'0 1em'} />);
+    const renderedComponent = shallow(<Bubble padding="0 1em" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   it('should adopt the "showArrowBreakpoint" prop', () => {
-    const renderedComponent = shallow(<Bubble showArrowBreakpoint={'10rem'} />);
+    const renderedComponent = shallow(<Bubble showArrowBreakpoint="10rem" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 

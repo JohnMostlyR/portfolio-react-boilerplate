@@ -11,20 +11,22 @@ const fadeIn = keyframes`
   }
 `;
 
+/* eslint-disable indent */
 const Container = styled.div`
   display: inline-flex;
   flex-flow: column nowrap;
   z-index: 10;
   filter: none;
-  opacity: ${({ makeAppear }) => makeAppear ? 0 : 1};
+  opacity: ${({ makeAppear }) => (makeAppear ? 0 : 1)};
   animation-delay: 0ms;
   animation-direction: normal;
   animation-duration: 1s;
   animation-fill-mode: both;
-  animation-name: ${({ makeAppear }) => makeAppear ? fadeIn : 'none'};
+  animation-name: ${({ makeAppear }) => (makeAppear ? fadeIn : 'none')};
   animation-timing-function: ease-in-out;
 
-  @media (min-height: ${({ showArrowBreakpoint }) => showArrowBreakpoint || '100%'}) {
+  @media (min-height: ${({ showArrowBreakpoint }) =>
+      showArrowBreakpoint || '100%'}) {
     filter: drop-shadow(0 0 5px grey);
   }
 

@@ -9,7 +9,7 @@ describe('<LanguageMenuItem />', () => {
 
   it('should render and match the snapshot', () => {
     const renderedComponent = shallow(
-      <LanguageMenuItem value={'nl'} onClickHandler={onClickHandler} />
+      <LanguageMenuItem value="nl" onClickHandler={onClickHandler} />,
     );
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
@@ -17,7 +17,7 @@ describe('<LanguageMenuItem />', () => {
   it('should adopt the "onClickHandler" property', () => {
     const preventDefault = jest.fn();
     const renderedComponent = shallow(
-      <LanguageMenuItem value={'en'} onClickHandler={onClickHandler} />
+      <LanguageMenuItem value="en" onClickHandler={onClickHandler} />,
     );
 
     renderedComponent.simulate('Click', { preventDefault });
@@ -37,10 +37,10 @@ describe('<LanguageMenuItem />', () => {
     const PROPERTY_VALUE = true;
     const renderedComponent = shallow(
       <LanguageMenuItem
-        value={'nl'}
+        value="nl"
         onClickHandler={onClickHandler}
         isSelected={PROPERTY_VALUE}
-      />
+      />,
     );
 
     expect(toJson(renderedComponent)).toMatchSnapshot();

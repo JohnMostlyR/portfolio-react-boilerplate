@@ -12,7 +12,7 @@ function Header(props) {
   return (
     <header>
       <SpeechBubble
-        arrowHeight={'4vh'}
+        arrowHeight="4vh"
         arrowPosition="bottom-right"
         backgroundColor={backgroundColor}
         padding={`${BASE_LINE_HEIGHT}rem`}

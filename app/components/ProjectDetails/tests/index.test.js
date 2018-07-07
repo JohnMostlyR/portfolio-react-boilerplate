@@ -6,7 +6,8 @@ import ProjectDetails from '../index';
 
 describe('<ProjectDetails />', () => {
   const project = Object.freeze({
-    article: '# Article for test case\n\n[add attributes to link](https://the.world/)\n',
+    article:
+      '# Article for test case\n\n[add attributes to link](https://the.world/)\n',
     description: 'Description for test case',
     images: [
       {
@@ -71,8 +72,12 @@ describe('<ProjectDetails />', () => {
   });
 
   it('Should handle case where "images" is not provided', () => {
-    const projectWithImagesNotBeingAnArray = Object.assign({}, project, { images: [] });
-    const wrapper = shallow(<ProjectDetails project={projectWithImagesNotBeingAnArray} />);
+    const projectWithImagesNotBeingAnArray = Object.assign({}, project, {
+      images: [],
+    });
+    const wrapper = shallow(
+      <ProjectDetails project={projectWithImagesNotBeingAnArray} />,
+    );
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

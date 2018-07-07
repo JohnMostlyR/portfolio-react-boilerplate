@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { theme } from '../theme';
 
 const ErrorMessage = styled.span`
-  display: ${(props) => props.showError ? 'inline' : 'none'};
+  display: ${props => (props.showError ? 'inline' : 'none')};
   color: ${theme.errorMessageColor};
 `;
 

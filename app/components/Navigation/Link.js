@@ -42,11 +42,11 @@ const Link = styled(NavLink).attrs({
     background-image: ${() => `url(${svgToURL(handPointingLeftSVG)})`};
     background-position: 10% center;
     background-repeat: no-repeat;
-    background-size: ${MODULAR_SCALE_FACTOR ** 2}rem ${MODULAR_SCALE_FACTOR ** 2}rem; /* stylelint-disable-line declaration-colon-space-after */
+    background-size: ${MODULAR_SCALE_FACTOR ** 2}rem
+      ${MODULAR_SCALE_FACTOR ** 2}rem; /* stylelint-disable-line declaration-colon-space-after */
     color: inherit;
     transform: translateX(0) rotateY(180deg);
-    transition:
-      transform 0.3s 0s ease-in-out;
+    transition: transform 0.3s 0s ease-in-out;
     transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
   }
 
@@ -69,8 +69,7 @@ const Link = styled(NavLink).attrs({
     }
   }
 
-  &.${activeClassName},
-  &:hover {
+  &.${activeClassName}, &:hover {
     @media (min-width: 1350px) {
       box-shadow: 0 0 1px dimgrey;
     }

@@ -14,7 +14,8 @@ import { changeLanguage } from '../LanguageProvider/actions';
 import { makeSelectLocale } from '../LanguageProvider/selectors';
 import LanguageMenu from '../../components/LanguageMenu';
 
-export class SelectLocale extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export class SelectLocale extends React.PureComponent {
+  // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
 
@@ -23,14 +24,31 @@ export class SelectLocale extends React.PureComponent { // eslint-disable-line r
     };
 
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.handleOutsideClickEvent = this.handleOutsideClickEvent.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('click', this.handleOutsideClickEvent);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('click', this.handleOutsideClickEvent);
+  }
+
+  handleOutsideClickEvent() {
+    this.closeMenu();
+  }
+
+  closeMenu() {
+    this.setState({
+      isExpanded: false,
+    });
   }
 
   toggleMenu() {
-    this.setState((prevState) => (
-      {
-        isExpanded: !prevState.isExpanded,
-      }
-    ));
+    this.setState(prevState => ({
+      isExpanded: !prevState.isExpanded,
+    }));
   }
 
   render() {
@@ -52,16 +70,18 @@ SelectLocale.propTypes = {
   locale: PropTypes.string,
 };
 
-const mapStateToProps = createSelector(
-  makeSelectLocale(),
-  (locale) => ({ locale })
-);
+const mapStateToProps = createSelector(makeSelectLocale(), locale => ({
+  locale,
+}));
 
 export function mapDispatchToProps(dispatch) {
   return {
-    changeLanguageHandler: (lang) => dispatch(changeLanguage(lang)),
+    changeLanguageHandler: lang => dispatch(changeLanguage(lang)),
     dispatch,
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SelectLocale);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(SelectLocale);

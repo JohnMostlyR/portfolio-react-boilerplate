@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProjectDetails /> Should adopt the "project" property 1`] = `
-<Wrapper__Wrapper
+<Wrapper
   animate={true}
 >
-  <ContentWrapper__ContentWrapper>
+  <ContentWrapper>
     <BackLink
       position="top"
     />
@@ -21,9 +21,9 @@ exports[`<ProjectDetails /> Should adopt the "project" property 1`] = `
       <h1>
         Title for test case
       </h1>
-      <Description__Description>
+      <Description>
         Description for test case
-      </Description__Description>
+      </Description>
       <Image
         images={
           Array [
@@ -82,7 +82,7 @@ exports[`<ProjectDetails /> Should adopt the "project" property 1`] = `
           ]
         }
       />
-      <Article__Article>
+      <Article>
         <h1
           id="article-for-test-case"
           key="0"
@@ -90,7 +90,7 @@ exports[`<ProjectDetails /> Should adopt the "project" property 1`] = `
           Article for test case
         </h1>
         
-        
+
         <p
           key="2"
         >
@@ -103,21 +103,21 @@ exports[`<ProjectDetails /> Should adopt the "project" property 1`] = `
           </a>
         </p>
         
-        
-      </Article__Article>
+
+      </Article>
     </SpeechBubble>
     <BackLink
       position="bottom"
     />
-  </ContentWrapper__ContentWrapper>
-</Wrapper__Wrapper>
+  </ContentWrapper>
+</Wrapper>
 `;
 
 exports[`<ProjectDetails /> Should handle case where "images" is not provided 1`] = `
-<Wrapper__Wrapper
+<Wrapper
   animate={true}
 >
-  <ContentWrapper__ContentWrapper>
+  <ContentWrapper>
     <BackLink
       position="top"
     />
@@ -134,13 +134,13 @@ exports[`<ProjectDetails /> Should handle case where "images" is not provided 1`
       <h1>
         Title for test case
       </h1>
-      <Description__Description>
+      <Description>
         Description for test case
-      </Description__Description>
+      </Description>
       <Image
         images={Array []}
       />
-      <Article__Article>
+      <Article>
         <h1
           id="article-for-test-case"
           key="0"
@@ -148,7 +148,7 @@ exports[`<ProjectDetails /> Should handle case where "images" is not provided 1`
           Article for test case
         </h1>
         
-        
+
         <p
           key="2"
         >
@@ -161,12 +161,12 @@ exports[`<ProjectDetails /> Should handle case where "images" is not provided 1`
           </a>
         </p>
         
-        
-      </Article__Article>
+
+      </Article>
     </SpeechBubble>
     <BackLink
       position="bottom"
     />
-  </ContentWrapper__ContentWrapper>
-</Wrapper__Wrapper>
+  </ContentWrapper>
+</Wrapper>
 `;

@@ -6,7 +6,13 @@ import Body from './Body';
 import ImageWrapper from './ImageWrapper';
 
 function MediaAsset({ imageSource = {}, isOdd }) {
-  const { file: { details: { image }, url }, title = '' } = imageSource;
+  const {
+    file: {
+      details: { image },
+      url,
+    },
+    title = '',
+  } = imageSource;
   return (
     <Figure isOdd={isOdd}>
       <Body>

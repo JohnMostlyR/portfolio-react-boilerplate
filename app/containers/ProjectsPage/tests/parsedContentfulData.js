@@ -17,7 +17,8 @@ export const parsedContentfulData = [
           fileName: 'small-s.png',
           url: '/small-s.png',
         },
-        title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+        title:
+          'Presentation showing how this project looks on mobile, tablet and desktop screens',
       },
       {
         file: {
@@ -32,7 +33,8 @@ export const parsedContentfulData = [
           fileName: 'medium-m.png',
           url: '/medium-m.png',
         },
-        title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+        title:
+          'Presentation showing how this project looks on mobile, tablet and desktop screens',
       },
       {
         file: {
@@ -47,7 +49,8 @@ export const parsedContentfulData = [
           fileName: 'large-l.png',
           url: '/large-l.png',
         },
-        title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+        title:
+          'Presentation showing how this project looks on mobile, tablet and desktop screens',
       },
       {
         file: {
@@ -62,7 +65,8 @@ export const parsedContentfulData = [
           fileName: 'extra-large-xl.png',
           url: '/extra-large-xl.png',
         },
-        title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+        title:
+          'Presentation showing how this project looks on mobile, tablet and desktop screens',
       },
     ],
     thumbnail: {
@@ -78,7 +82,8 @@ export const parsedContentfulData = [
         fileName: 'medium-m.png',
         url: '/medium-m.png',
       },
-      title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+      title:
+        'Presentation showing how this project looks on mobile, tablet and desktop screens',
     },
     title: 'This is the title field for Project 1',
   },
@@ -100,7 +105,8 @@ export const parsedContentfulData = [
           fileName: 'small-s.png',
           url: '/small-s.png',
         },
-        title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+        title:
+          'Presentation showing how this project looks on mobile, tablet and desktop screens',
       },
       {
         file: {
@@ -115,7 +121,8 @@ export const parsedContentfulData = [
           fileName: 'medium-m.png',
           url: '/medium-m.png',
         },
-        title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+        title:
+          'Presentation showing how this project looks on mobile, tablet and desktop screens',
       },
       {
         file: {
@@ -130,7 +137,8 @@ export const parsedContentfulData = [
           fileName: 'large-l.png',
           url: '/large-l.png',
         },
-        title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+        title:
+          'Presentation showing how this project looks on mobile, tablet and desktop screens',
       },
       {
         file: {
@@ -145,7 +153,8 @@ export const parsedContentfulData = [
           fileName: 'extra-large-xl.png',
           url: '/extra-large-xl.png',
         },
-        title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+        title:
+          'Presentation showing how this project looks on mobile, tablet and desktop screens',
       },
     ],
     thumbnail: {
@@ -161,7 +170,8 @@ export const parsedContentfulData = [
         fileName: 'medium-m.png',
         url: '/medium-m.png',
       },
-      title: 'Presentation showing how this project looks on mobile, tablet and desktop screens',
+      title:
+        'Presentation showing how this project looks on mobile, tablet and desktop screens',
     },
     title: 'This is the title field for Project 2',
   },

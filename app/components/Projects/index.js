@@ -6,22 +6,21 @@ import ProjectsListItem from './ProjectsListItem';
 
 import Project from '../../components/Project';
 
-function Projects({ projects }) {
+function Projects({ projects, search }) {
   return (
     <React.Fragment>
       <ProjectsList>
-        {
-          projects.map(({ title, description, thumbnail }, idx) => (
-            <ProjectsListItem key={title}>
-              <Project
-                detailsBodyText={description}
-                isOdd={!(idx % 2)}
-                thumbnail={thumbnail}
-                title={title}
-              />
-            </ProjectsListItem>
-          ))
-        }
+        {projects.map(({ title, description, thumbnail }, idx) => (
+          <ProjectsListItem key={title}>
+            <Project
+              detailsBodyText={description}
+              isOdd={!(idx % 2)}
+              search={search}
+              thumbnail={thumbnail}
+              title={title}
+            />
+          </ProjectsListItem>
+        ))}
       </ProjectsList>
     </React.Fragment>
   );
@@ -29,6 +28,7 @@ function Projects({ projects }) {
 
 Projects.propTypes = {
   projects: PropTypes.array,
+  search: PropTypes.string,
 };
 
 Projects.defaultProps = {

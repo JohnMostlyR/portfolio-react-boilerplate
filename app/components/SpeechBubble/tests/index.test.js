@@ -11,37 +11,43 @@ describe('<SpeechBubble />', () => {
   });
 
   it('should adopt the "arrowHeight" prop', () => {
-    const renderedComponent = shallow(<SpeechBubble arrowHeight={'1vw'} />);
+    const renderedComponent = shallow(<SpeechBubble arrowHeight="1vw" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   it('should adopt the "backgroundColor" prop', () => {
-    const renderedComponent = shallow(<SpeechBubble backgroundColor={'#000'} />);
+    const renderedComponent = shallow(<SpeechBubble backgroundColor="#000" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   it('should adopt the "color" prop', () => {
-    const renderedComponent = shallow(<SpeechBubble color={'#fff'} />);
+    const renderedComponent = shallow(<SpeechBubble color="#fff" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   it('should adopt the "maxWidth" prop', () => {
-    const renderedComponent = shallow(<SpeechBubble maxWidth={'10em'} />);
+    const renderedComponent = shallow(<SpeechBubble maxWidth="10em" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   it('should adopt the "padding" prop', () => {
-    const renderedComponent = shallow(<SpeechBubble padding={'0 0px'} />);
+    const renderedComponent = shallow(<SpeechBubble padding="0 0px" />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   it('should adopt the "showArrowBreakpoint" prop', () => {
-    const renderedComponent = shallow(<SpeechBubble showArrowBreakpoint={'100px'} />);
+    const renderedComponent = shallow(
+      <SpeechBubble showArrowBreakpoint="100px" />,
+    );
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   it('should adopt any children', () => {
-    const renderedComponent = shallow(<SpeechBubble><span>A Child</span></SpeechBubble>);
+    const renderedComponent = shallow(
+      <SpeechBubble>
+        <span>A Child</span>
+      </SpeechBubble>,
+    );
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 

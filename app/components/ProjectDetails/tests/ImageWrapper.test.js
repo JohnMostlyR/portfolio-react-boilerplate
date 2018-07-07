@@ -23,21 +23,23 @@ const imageDimensions = [
 describe('<ImageWrapper />', () => {
   it('should render and match the snapshot', () => {
     const renderedComponent = shallow(
-      <ImageWrapper breakpoints={breakpoints} imageDimensions={imageDimensions} />
+      <ImageWrapper
+        breakpoints={breakpoints}
+        imageDimensions={imageDimensions}
+      />,
     );
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
   it('should render without any props given', () => {
-    const renderedComponent = shallow(
-      <ImageWrapper />
-    );
+    const renderedComponent = shallow(<ImageWrapper />);
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 
-  it('should throw an error when the lengths of the breakpoints and imageDimensions do not match',
-    () => {
-      const _breakpoints = breakpoints.slice(-1); // eslint-disable-line no-underscore-dangle
-      expect(() => renderMediaBreakpoints({ _breakpoints, imageDimensions })).toThrow();
-    });
+  it('should throw an error when the lengths of the breakpoints and imageDimensions do not match', () => {
+    const _breakpoints = breakpoints.slice(-1); // eslint-disable-line no-underscore-dangle
+    expect(() =>
+      renderMediaBreakpoints({ _breakpoints, imageDimensions }),
+    ).toThrow();
+  });
 });

@@ -11,7 +11,7 @@ import {
   LOAD_CONTENT_ERROR,
 } from './constants';
 
-const initialState = fromJS({
+export const initialState = fromJS({
   loading: false,
   error: false,
   projects: [],
@@ -31,9 +31,7 @@ function projectsPageReducer(state = initialState, action) {
         .set('loading', false)
         .set('locale', action.locale);
     case LOAD_CONTENT_ERROR:
-      return state
-        .set('error', action.error)
-        .set('loading', false);
+      return state.set('error', action.error).set('loading', false);
     default:
       return state;
   }

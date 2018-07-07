@@ -11,7 +11,9 @@ describe('<IconGithub />', () => {
   });
 
   it('should adopt props', () => {
-    const renderedComponent = shallow(<IconGithub height="99px" width="99px" color="green" />);
+    const renderedComponent = shallow(
+      <IconGithub height="99px" width="99px" color="green" />,
+    );
     expect(toJson(renderedComponent)).toMatchSnapshot();
   });
 });

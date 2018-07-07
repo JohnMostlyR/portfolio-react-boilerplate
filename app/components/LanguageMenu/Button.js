@@ -14,6 +14,7 @@ import styled from 'styled-components';
 import SVGIcon from '../SVGIcon';
 
 const StyledButton = styled.button.attrs({
+  lang: 'en',
   type: 'button',
 })`
   &:hover {
@@ -54,9 +55,9 @@ function Button({ label, isExpanded, toggleMenuHandler, buttonRef }) {
     const { keyCode } = evt;
 
     switch (keyCode) {
-      case 13:  // Enter
-      case 32:  // Space
-      case 40:  // Arrow Down
+      case 13: // Enter
+      case 32: // Space
+      case 40: // Arrow Down
         evt.preventDefault();
         toggleMenuHandler();
         break;
@@ -65,9 +66,15 @@ function Button({ label, isExpanded, toggleMenuHandler, buttonRef }) {
     }
   }
 
+  function handleClick(evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+    toggleMenuHandler();
+  }
+
   return (
     <StyledButton
-      onClick={toggleMenuHandler}
+      onClick={handleClick}
       onKeyDown={handleKeyDown}
       aria-expanded={isExpanded}
       aria-haspopup="true"

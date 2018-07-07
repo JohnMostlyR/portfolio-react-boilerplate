@@ -11,14 +11,20 @@ describe('<Main />', () => {
 
   it('should adopt the fixedSiteNavOffset prop', () => {
     const fixedSiteNavOffset = 10;
-    const renderedComponent = mount(<StyledMain fixedSiteNavOffset={fixedSiteNavOffset} />);
-    expect(renderedComponent.prop('fixedSiteNavOffset')).toBe(fixedSiteNavOffset);
+    const renderedComponent = mount(
+      <StyledMain fixedSiteNavOffset={fixedSiteNavOffset} />,
+    );
+    expect(renderedComponent.prop('fixedSiteNavOffset')).toBe(
+      fixedSiteNavOffset,
+    );
     renderedComponent.unmount();
   });
 
   it('should adopt the siteNavIsFixed prop', () => {
     const siteNavIsFixed = false;
-    const renderedComponent = mount(<StyledMain siteNavIsFixed={siteNavIsFixed} />);
+    const renderedComponent = mount(
+      <StyledMain siteNavIsFixed={siteNavIsFixed} />,
+    );
     expect(renderedComponent.prop('siteNavIsFixed')).toBe(siteNavIsFixed);
     renderedComponent.unmount();
   });

@@ -11,7 +11,6 @@ import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 import { withRouter } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 
 import {
   makeSelectSkillsText,
@@ -27,6 +26,7 @@ import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
 import PageContent from '../../components/PageContent';
 import ContentLoadingIndicator from '../../components/ContentLoadingIndicator';
+import HeadGear from '../../components/HeadGear';
 
 export function delayTimer(isLoading, callback) {
   return setTimeout(() => {
@@ -34,7 +34,8 @@ export function delayTimer(isLoading, callback) {
   }, 200);
 }
 
-export class SkillsPage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+export class SkillsPage extends React.PureComponent {
+  // eslint-disable-line react/prefer-stateless-function
   constructor(props) {
     super(props);
 
@@ -79,8 +80,14 @@ export class SkillsPage extends React.PureComponent { // eslint-disable-line rea
     let showContent = <React.Fragment />;
 
     if (Array.isArray(skillsText) && skillsText.length) {
-      showContent = <PageContent title={<FormattedMessage {...messages.title} />} content={skillsText} />;
-    } else if (isLoading) { // FROM STATE!
+      showContent = (
+        <PageContent
+          title={<FormattedMessage {...messages.pageTitle} />}
+          content={skillsText}
+        />
+      );
+    } else if (isLoading) {
+      // FROM STATE!
       showContent = <ContentLoadingIndicator show showError={false} />;
     } else if (!!error !== false) {
       showContent = <ContentLoadingIndicator show showError />;
@@ -88,10 +95,7 @@ export class SkillsPage extends React.PureComponent { // eslint-disable-line rea
 
     return (
       <React.Fragment>
-        <Helmet>
-          <title>Mijn vaardigheden</title>
-          <meta name="description" content="Mijn vaardigheden pagina van Johan Meester zijn portfolio" />
-        </Helmet>
+        <HeadGear messages={messages} path="/skills" />
         {showContent}
       </React.Fragment>
     );
@@ -99,16 +103,16 @@ export class SkillsPage extends React.PureComponent { // eslint-disable-line rea
 }
 
 SkillsPage.propTypes = {
-  getContent: PropTypes.func.isRequired,
-  skillsText: PropTypes.node,
-  isLoading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
+  getContent: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool,
+  skillsText: PropTypes.node,
 };
 
 const mapStateToProps = createStructuredSelector({
-  skillsText: makeSelectSkillsText(),
-  isLoading: makeSelectLoading(),
   error: makeSelectError(),
+  isLoading: makeSelectLoading(),
+  skillsText: makeSelectSkillsText(),
 });
 
 export function mapDispatchToProps(dispatch) {
@@ -120,7 +124,10 @@ export function mapDispatchToProps(dispatch) {
   };
 }
 
-const withConnect = connect(mapStateToProps, mapDispatchToProps);
+const withConnect = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+);
 
 const withReducer = injectReducer({ key: 'skillsPage', reducer });
 const withSaga = injectSaga({ key: 'skillsPage', saga });

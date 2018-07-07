@@ -6,13 +6,24 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  header: {
-    id: 'portfolio.containers.ContactPage.header',
+  title: {
+    id: 'portfolio.containers.ContactPage.title',
+    defaultMessage:
+      'Johan Meester : Portfolio : Front-End Developer : {pageTitle}',
+  },
+  pageTitle: {
+    id: 'portfolio.containers.ContactPage.pageTitle',
     defaultMessage: 'CONTACT ME',
+  },
+  metaDescription: {
+    id: 'portfolio.containers.ContactPage.meta.description',
+    defaultMessage:
+      'For contacting me, please fill in this form. I will respond as soon as' +
+      ' possible',
   },
   requirementOne: {
     id: 'portfolio.containers.ContactPage.requirementOne',
-    defaultMessage: 'Please fill in all fields',
+    defaultMessage: 'Please fill all fields',
   },
   subjectText: {
     id: 'portfolio.containers.ContactPage.subjectText',
