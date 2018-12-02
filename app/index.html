@@ -52,6 +52,13 @@
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLVWW9F" height="0" width="0"
               style="display:none;visibility:hidden"></iframe>
     </noscript>
+    <!-- A little help for the Netlify bots -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+    </form>
     <div id="app"></div>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="preconnect stylesheet">
   </body>
