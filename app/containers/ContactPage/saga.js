@@ -19,7 +19,7 @@ function encode(data) {
 /**
  * ContactForm request/response handler
  */
-export function* sendForm(formData) {
+export function* sendForm({ field }) {
   try {
     // Call our request helper (see 'utils/request')
     const result = yield call(request, '/', {
@@ -27,7 +27,7 @@ export function* sendForm(formData) {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: encode({ 'form-name': 'contact', ...formData }),
+      body: encode({ 'form-name': 'contact', ...field }),
     });
     if (result.success) {
       yield put(sendFormSuccess());
