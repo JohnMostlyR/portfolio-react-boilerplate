@@ -1,0 +1,11 @@
+{
+  "name": "lambda",
+  "description": "Package for helping Netlify to find dependencies for Lambda Functions",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Johan Meester",
+  "license": "MIT",
+  "devDependencies": {
+    "validator": "10.9.0"
+  }
+}
