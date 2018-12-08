@@ -1,0 +1,11 @@
+{
+  "name": "submission-created",
+  "version": "1.0.0",
+  "description": "",
+  "main": "submission-created.js",
+  "author": "Johan Meester",
+  "license": "MIT",
+  "devDependencies": {
+    "validator": "10.9.0"
+  }
+}

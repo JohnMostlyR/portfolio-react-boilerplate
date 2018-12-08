@@ -17,6 +17,7 @@
     "npmcheckversion": "node ./internals/scripts/npmcheckversion.js",
     "preinstall": "npm run npmcheckversion",
     "prebuild": "npm run build:clean",
+    "postbuild": "npm run netlify:build",
     "build": "cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
     "build:clean": "rimraf ./build",
     "start": "cross-env NODE_ENV=development node server",
@@ -39,7 +40,9 @@
     "test": "cross-env NODE_ENV=test jest --coverage --no-cache",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "prettify": "prettier --write"
+    "prettify": "prettier --write",
+    "netlify:serve": "netlify-lambda serve app/lambdas",
+    "netlify:build": "netlify-lambda build app/lambdas"
   },
   "lint-staged": {
     "*.js": [
@@ -139,6 +142,7 @@
     "jest-cli": "23.6.0",
     "jest-styled-components": "6.3.1",
     "lint-staged": "8.1.0",
+    "netlify-lambda": "1.1.0",
     "ngrok": "3.1.0",
     "node-plop": "0.16.0",
     "null-loader": "0.1.1",
