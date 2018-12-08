@@ -6,6 +6,8 @@ exports[`<Brand /> should render and match the snapshot 1`] = `
     defaultMessage="← Back to the homepage"
     id="portfolio.component.BrandLink.title"
     values={Object {}}
-  />
+  >
+    <Component />
+  </FormattedMessage>
 </Wrapper>
 `;

@@ -13,24 +13,36 @@ const selectProjectsPageDomain = state =>
  * Other specific selectors
  */
 const makeSelectProjectsPageProjects = () =>
-  createSelector(selectProjectsPageDomain, substate => {
-    const projects = substate.get('projects');
+  createSelector(
+    selectProjectsPageDomain,
+    substate => {
+      const projects = substate.get('projects');
 
-    if (List.isList(projects)) {
-      return projects.toJS();
-    }
+      if (List.isList(projects)) {
+        return projects.toJS();
+      }
 
-    return projects;
-  });
+      return projects;
+    },
+  );
 
 const makeSelectLoading = () =>
-  createSelector(selectProjectsPageDomain, substate => substate.get('loading'));
+  createSelector(
+    selectProjectsPageDomain,
+    substate => substate.get('loading'),
+  );
 
 const makeSelectError = () =>
-  createSelector(selectProjectsPageDomain, substate => substate.get('error'));
+  createSelector(
+    selectProjectsPageDomain,
+    substate => substate.get('error'),
+  );
 
 const makeSelectLocale = () =>
-  createSelector(selectProjectsPageDomain, substate => substate.get('locale'));
+  createSelector(
+    selectProjectsPageDomain,
+    substate => substate.get('locale'),
+  );
 
 export {
   selectProjectsPageDomain,

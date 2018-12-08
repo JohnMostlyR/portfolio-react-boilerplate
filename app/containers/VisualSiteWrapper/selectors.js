@@ -10,13 +10,15 @@ const selectVisualSiteWrapper = state =>
   state.get('visualSiteWrapper', initialState);
 
 const makeSelectVisualSiteWrapperScrollTop = () =>
-  createSelector(selectVisualSiteWrapper, substate =>
-    substate.get('scrollTop'),
+  createSelector(
+    selectVisualSiteWrapper,
+    substate => substate.get('scrollTop'),
   );
 
 const makeSelectVisualSiteWrapperSiteWidth = () =>
-  createSelector(selectVisualSiteWrapper, substate =>
-    substate.get('siteWidth'),
+  createSelector(
+    selectVisualSiteWrapper,
+    substate => substate.get('siteWidth'),
   );
 
 export {

@@ -3,7 +3,7 @@ import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { Provider } from 'react-redux';
 import { IntlProvider } from 'react-intl';
-import { ConnectedRouter } from 'react-router-redux';
+import { ConnectedRouter } from 'connected-react-router/immutable';
 import createHistory from 'history/createMemoryHistory';
 
 import NotFoundPage from '../index';

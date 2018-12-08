@@ -78,7 +78,9 @@ exports[`<SkillsPage /> fetching content from external source should handle case
               "locale": "en",
               "messages": Object {},
               "now": [Function],
+              "onError": [Function],
               "textComponent": "span",
+              "timeZone": null,
             }
           }
           messages={
@@ -298,7 +300,9 @@ exports[`<SkillsPage /> fetching content from external source should show an err
               "locale": "en",
               "messages": Object {},
               "now": [Function],
+              "onError": [Function],
               "textComponent": "span",
+              "timeZone": null,
             }
           }
           messages={
@@ -657,7 +661,9 @@ exports[`<SkillsPage /> fetching content from external source should show the fe
               "locale": "en",
               "messages": Object {},
               "now": [Function],
+              "onError": [Function],
               "textComponent": "span",
+              "timeZone": null,
             }
           }
           messages={
@@ -1017,7 +1023,7 @@ exports[`<SkillsPage /> fetching content from external source should show the fe
 `;
 
 exports[`<SkillsPage /> should render and match the snapshot 1`] = `
-<React.Fragment>
+<Fragment>
   <InjectIntl(HeadGear)
     messages={
       Object {
@@ -1037,6 +1043,5 @@ exports[`<SkillsPage /> should render and match the snapshot 1`] = `
     }
     path="/skills"
   />
-  <React.Fragment />
-</React.Fragment>
+</Fragment>
 `;

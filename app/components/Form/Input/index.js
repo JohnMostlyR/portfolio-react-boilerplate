@@ -112,7 +112,8 @@ class Input extends React.Component {
             {helperText}&nbsp;{helperTextRange}
           </span>
         );
-      } else if (!_error) {
+      }
+      if (!_error) {
         return <FormattedMessage {...messages.valid} />;
       }
 

@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import StyledA from './StyledA';
 import Description from './Description';
 
-import IconCodepen from '../../components/IconCodepen';
-import IconFreeCodeCamp from '../../components/IconFreeCodeCamp';
-import IconGithub from '../../components/IconGithub';
-import IconLinkedin from '../../components/IconLinkedin';
-import IconExternalLink from '../../components/IconExternalLink';
+import IconCodepen from '../IconCodepen';
+import IconFreeCodeCamp from '../IconFreeCodeCamp';
+import IconGithub from '../IconGithub';
+import IconLinkedin from '../IconLinkedin';
+import IconExternalLink from '../IconExternalLink';
 
 export const VALID_ICONS = [
   'free-code-camp',

@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { Provider } from 'react-redux';
 import { IntlProvider } from 'react-intl';
-import { ConnectedRouter } from 'react-router-redux';
+import { ConnectedRouter } from 'connected-react-router/immutable';
 import createHistory from 'history/createMemoryHistory';
 
 import HomePage from '../index';

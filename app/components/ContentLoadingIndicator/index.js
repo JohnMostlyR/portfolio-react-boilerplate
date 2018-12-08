@@ -8,7 +8,7 @@ import Header from './Header';
 import H2 from './H2';
 import Content from './Content';
 
-import SVGIcon from '../../components/SVGIcon';
+import SVGIcon from '../SVGIcon';
 
 const SPINNER_ICON = (
   <SVGIcon viewBox="0 0 512 512" height="2em" width="2em" animate="rotate">

@@ -8,7 +8,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import SVGIcon from '../../../components/SVGIcon';
+import SVGIcon from '../../SVGIcon';
 
 const Li = styled.li`
   align-items: center;

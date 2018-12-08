@@ -19,7 +19,9 @@ exports[`<Navigation /> should render and match the snapshot 1`] = `
       defaultMessage="MENU"
       id="portfolio.nav.showMenuButton"
       values={Object {}}
-    />
+    >
+      <Component />
+    </FormattedMessage>
   </Navigation__ButtonBlock>
   <List
     bigScreenBreakpoint={1000}

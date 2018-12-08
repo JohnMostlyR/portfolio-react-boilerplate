@@ -96,7 +96,9 @@ Please go to the {home} page or, if you think this is an error, to the {contact}
         "portfolio.title": "Johan Meester : Portfolio : Front-End Developer",
       },
       "now": [Function],
+      "onError": [Function],
       "textComponent": "span",
+      "timeZone": null,
     }
   }
 />
