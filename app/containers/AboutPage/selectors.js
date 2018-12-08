@@ -12,18 +12,28 @@ const selectAboutPageDomain = state => state.get('aboutPage', initialState);
  * Other specific selectors
  */
 const makeSelectAboutMeText = () =>
-  createSelector(selectAboutPageDomain, substate =>
-    Parser(substate.get('aboutMeText')),
+  createSelector(
+    selectAboutPageDomain,
+    substate => Parser(substate.get('aboutMeText')),
   );
 
 const makeSelectLoading = () =>
-  createSelector(selectAboutPageDomain, substate => substate.get('loading'));
+  createSelector(
+    selectAboutPageDomain,
+    substate => substate.get('loading'),
+  );
 
 const makeSelectError = () =>
-  createSelector(selectAboutPageDomain, substate => substate.get('error'));
+  createSelector(
+    selectAboutPageDomain,
+    substate => substate.get('error'),
+  );
 
 const makeSelectLocale = () =>
-  createSelector(selectAboutPageDomain, substate => substate.get('locale'));
+  createSelector(
+    selectAboutPageDomain,
+    substate => substate.get('locale'),
+  );
 
 export {
   selectAboutPageDomain,

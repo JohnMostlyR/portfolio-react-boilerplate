@@ -17,7 +17,9 @@ exports[`<BackLink /> should render and match the snapshot 1`] = `
       defaultMessage="← Back to Projects"
       id="portfolio.components.ProjectDetails.backLink"
       values={Object {}}
-    />
+    >
+      <Component />
+    </FormattedMessage>
   </SpeechBubble>
 </BackLink__Wrapper>
 `;
@@ -39,7 +41,9 @@ exports[`<BackLink /> the "position" property should accept "bottom" as value 1`
       defaultMessage="← Back to Projects"
       id="portfolio.components.ProjectDetails.backLink"
       values={Object {}}
-    />
+    >
+      <Component />
+    </FormattedMessage>
   </SpeechBubble>
 </BackLink__Wrapper>
 `;
@@ -61,7 +65,9 @@ exports[`<BackLink /> the "position" property should accept "top" as value 1`] =
       defaultMessage="← Back to Projects"
       id="portfolio.components.ProjectDetails.backLink"
       values={Object {}}
-    />
+    >
+      <Component />
+    </FormattedMessage>
   </SpeechBubble>
 </BackLink__Wrapper>
 `;

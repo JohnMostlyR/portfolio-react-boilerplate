@@ -12,7 +12,7 @@ import Button from './Button';
 import Label from './Label';
 import messages from './messages';
 
-import SVGIcon from '../../../components/SVGIcon';
+import SVGIcon from '../../SVGIcon';
 
 function setLabel(buttonState) {
   switch (buttonState) {

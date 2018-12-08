@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import ProjectsList from './ProjectsList';
 import ProjectsListItem from './ProjectsListItem';
 
-import Project from '../../components/Project';
+import Project from '../Project';
 
 function Projects({ projects, search }) {
   return (

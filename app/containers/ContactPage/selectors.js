@@ -12,30 +12,37 @@ const selectContactPageDomain = state => state.get('contactPage', initialState);
  * Other specific selectors
  */
 const makeSelectField = () =>
-  createSelector(selectContactPageDomain, substate => {
-    const field = substate.get('field');
+  createSelector(
+    selectContactPageDomain,
+    substate => {
+      const field = substate.get('field');
 
-    if (Map.isMap(field)) {
-      return field.toJS();
-    }
+      if (Map.isMap(field)) {
+        return field.toJS();
+      }
 
-    return field;
-  });
+      return field;
+    },
+  );
 
 const makeSelectSendStatus = () =>
-  createSelector(selectContactPageDomain, substate =>
-    substate.get('sendStatus'),
+  createSelector(
+    selectContactPageDomain,
+    substate => substate.get('sendStatus'),
   );
 const makeSelectError = () =>
-  createSelector(selectContactPageDomain, substate => {
-    const error = substate.get('error');
+  createSelector(
+    selectContactPageDomain,
+    substate => {
+      const error = substate.get('error');
 
-    if (Map.isMap(error)) {
-      return error.toJS();
-    }
+      if (Map.isMap(error)) {
+        return error.toJS();
+      }
 
-    return error;
-  });
+      return error;
+    },
+  );
 
 export {
   selectContactPageDomain,

@@ -5,7 +5,7 @@ import { contentLoaded, contentLoadingError } from './actions';
 import { config } from '../../config';
 import request from '../../utils/request';
 
-import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
+import { makeSelectLocale } from '../LanguageProvider/selectors';
 
 const {
   api: {
@@ -42,7 +42,8 @@ export function parseContent({
 
         if (dateA < dateB) {
           return 1;
-        } else if (dateA > dateB) {
+        }
+        if (dateA > dateB) {
           return -1;
         }
         return 0;

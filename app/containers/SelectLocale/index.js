@@ -70,9 +70,12 @@ SelectLocale.propTypes = {
   locale: PropTypes.string,
 };
 
-const mapStateToProps = createSelector(makeSelectLocale(), locale => ({
-  locale,
-}));
+const mapStateToProps = createSelector(
+  makeSelectLocale(),
+  locale => ({
+    locale,
+  }),
+);
 
 export function mapDispatchToProps(dispatch) {
   return {

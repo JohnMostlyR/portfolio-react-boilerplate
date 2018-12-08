@@ -12,7 +12,7 @@ import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import Wrapper from './Wrapper';
 import BrandLink from './BrandLink';
-import Logo from '../../components/Logo';
+import Logo from '../Logo';
 
 const Brand = ({ href, showNameBreakpoint }) => (
   <Wrapper>

@@ -21,7 +21,7 @@ import runAnimation from './runAnimation';
 import IntroHeader from './IntroHeader';
 import SpeechBubble from './SpeechBubble';
 import MyPicture from './itsme-trevi-rome.jpg';
-import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
+import { makeSelectLocale } from '../LanguageProvider/selectors';
 import HeadGear from '../../components/HeadGear';
 
 /* eslint-disable jsx-a11y/anchor-is-valid */

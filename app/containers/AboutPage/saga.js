@@ -5,7 +5,7 @@ import { contentLoaded, contentLoadingError } from './actions';
 import { config } from '../../config';
 import request from '../../utils/request';
 
-import { makeSelectLocale } from '../../containers/LanguageProvider/selectors';
+import { makeSelectLocale } from '../LanguageProvider/selectors';
 
 marked.options({
   breaks: true,

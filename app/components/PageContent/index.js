@@ -11,8 +11,8 @@ import { theme } from '../../styles/theme';
 import Wrapper from './Wrapper';
 import ContentWrapper from './ContentWrapper';
 
-import SpeechBubble from '../../components/SpeechBubble';
-import PageHeader from '../../components/PageHeader';
+import SpeechBubble from '../SpeechBubble';
+import PageHeader from '../PageHeader';
 import { BASE_LINE_HEIGHT } from '../../styles/typography';
 
 function PageContent(props) {

@@ -18,13 +18,13 @@ import BigHeadGear from './BigHeadGear';
 import Main from '../../components/Main';
 import SiteHeader from '../../components/SiteHeader';
 import SiteNavigation from '../SiteNavigation';
-import VisualSiteWrapper from '../../containers/VisualSiteWrapper';
-import HomePage from '../../containers/HomePage/Loadable';
-import AboutPage from '../../containers/AboutPage/Loadable';
-import SkillsPage from '../../containers/SkillsPage/Loadable';
-import ProjectsPage from '../../containers/ProjectsPage/Loadable';
-import ContactPage from '../../containers/ContactPage/Loadable';
-import NotFoundPage from '../../containers/NotFoundPage/Loadable';
+import VisualSiteWrapper from '../VisualSiteWrapper';
+import HomePage from '../HomePage/Loadable';
+import AboutPage from '../AboutPage/Loadable';
+import SkillsPage from '../SkillsPage/Loadable';
+import ProjectsPage from '../ProjectsPage/Loadable';
+import ContactPage from '../ContactPage/Loadable';
+import NotFoundPage from '../NotFoundPage/Loadable';
 
 class App extends React.PureComponent {
   // eslint-disable-line react/prefer-stateless-function

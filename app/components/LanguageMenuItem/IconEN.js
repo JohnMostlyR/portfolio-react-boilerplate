@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import SVGIcon from '../../components/SVGIcon';
+import SVGIcon from '../SVGIcon';
 
 function IconEN(props) {
   return (
