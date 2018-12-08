@@ -21,7 +21,7 @@ import {
 } from './selectors';
 import reducer from './reducer';
 
-import { makeSelectLocation } from '../../containers/App/selectors';
+import { makeSelectLocation } from '../App/selectors';
 import injectSaga from '../../utils/injectSaga';
 import injectReducer from '../../utils/injectReducer';
 import Projects from '../../components/Projects';

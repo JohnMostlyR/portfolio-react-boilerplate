@@ -3,7 +3,7 @@ import { IntlProvider } from 'react-intl';
 import { mount } from 'enzyme';
 import { Provider } from 'react-redux';
 import { Route } from 'react-router-dom';
-import { ConnectedRouter } from 'react-router-redux';
+import { ConnectedRouter } from 'connected-react-router/immutable';
 import createHistory from 'history/createMemoryHistory';
 
 import App from '../index';

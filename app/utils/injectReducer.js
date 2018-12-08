@@ -14,20 +14,20 @@ import getInjectors from './reducerInjectors';
 export default ({ key, reducer }) => WrappedComponent => {
   class ReducerInjector extends React.Component {
     static WrappedComponent = WrappedComponent;
+
     static contextTypes = {
       store: PropTypes.object.isRequired,
     };
+
     static displayName = `withReducer(${WrappedComponent.displayName ||
       WrappedComponent.name ||
       'Component'})`;
 
-    componentWillMount() {
-      const { injectReducer } = this.injectors;
+    constructor(props, context) {
+      super(props, context);
 
-      injectReducer(key, reducer);
+      getInjectors(context.store).injectReducer(key, reducer);
     }
-
-    injectors = getInjectors(this.context.store);
 
     render() {
       return <WrappedComponent {...this.props} />;

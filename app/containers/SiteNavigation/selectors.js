@@ -10,18 +10,21 @@ const selectSiteNavigationDomain = state =>
   state.get('siteNavigation', initialState);
 
 const makeSelectSiteNavigationTopPosition = () =>
-  createSelector(selectSiteNavigationDomain, substate =>
-    substate.get('topPosition'),
+  createSelector(
+    selectSiteNavigationDomain,
+    substate => substate.get('topPosition'),
   );
 
 const makeSelectSiteNavigationOffsetHeight = () =>
-  createSelector(selectSiteNavigationDomain, substate =>
-    substate.get('offsetHeight'),
+  createSelector(
+    selectSiteNavigationDomain,
+    substate => substate.get('offsetHeight'),
   );
 
 const makeSelectSiteNavigationIsAtScreenTop = () =>
-  createSelector(selectSiteNavigationDomain, substate =>
-    substate.get('isAtScreenTop'),
+  createSelector(
+    selectSiteNavigationDomain,
+    substate => substate.get('isAtScreenTop'),
   );
 
 export {

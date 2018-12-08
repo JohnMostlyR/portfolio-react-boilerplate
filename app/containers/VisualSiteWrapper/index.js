@@ -14,7 +14,7 @@ import { setScrollTop, setSiteWidth } from './actions';
 import reducer from './reducer';
 import Wrapper from './Wrapper';
 
-import { makeSelectSiteNavigationIsAtScreenTop } from '../../containers/SiteNavigation/selectors';
+import { makeSelectSiteNavigationIsAtScreenTop } from '../SiteNavigation/selectors';
 import injectReducer from '../../utils/injectReducer';
 
 class VisualSiteWrapper extends React.PureComponent {

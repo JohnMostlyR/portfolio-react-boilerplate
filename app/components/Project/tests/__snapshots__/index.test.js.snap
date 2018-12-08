@@ -42,7 +42,9 @@ exports[`Project should adopt the "isOdd" property 1`] = `
         defaultMessage="More details →"
         id="portfolio.components.Project.detailsLink"
         values={Object {}}
-      />
+      >
+        <Component />
+      </FormattedMessage>
     </P>
   </ProjectBody>
 </Article>
@@ -90,7 +92,9 @@ exports[`Project should render and match the snapshot 1`] = `
         defaultMessage="More details →"
         id="portfolio.components.Project.detailsLink"
         values={Object {}}
-      />
+      >
+        <Component />
+      </FormattedMessage>
     </P>
   </ProjectBody>
 </Article>

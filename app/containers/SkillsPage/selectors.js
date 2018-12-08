@@ -12,18 +12,28 @@ const selectSkillsPageDomain = state => state.get('skillsPage', initialState);
  * Other specific selectors
  */
 const makeSelectSkillsText = () =>
-  createSelector(selectSkillsPageDomain, substate =>
-    Parser(substate.get('skillsText')),
+  createSelector(
+    selectSkillsPageDomain,
+    substate => Parser(substate.get('skillsText')),
   );
 
 const makeSelectLoading = () =>
-  createSelector(selectSkillsPageDomain, substate => substate.get('loading'));
+  createSelector(
+    selectSkillsPageDomain,
+    substate => substate.get('loading'),
+  );
 
 const makeSelectError = () =>
-  createSelector(selectSkillsPageDomain, substate => substate.get('error'));
+  createSelector(
+    selectSkillsPageDomain,
+    substate => substate.get('error'),
+  );
 
 const makeSelectLocale = () =>
-  createSelector(selectSkillsPageDomain, substate => substate.get('locale'));
+  createSelector(
+    selectSkillsPageDomain,
+    substate => substate.get('locale'),
+  );
 
 export {
   selectSkillsPageDomain,

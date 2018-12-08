@@ -16,11 +16,11 @@ import {
 } from './actions';
 import reducer from './reducer';
 
-import { makeSelectLocation } from '../../containers/App/selectors';
+import { makeSelectLocation } from '../App/selectors';
 import {
   makeSelectVisualSiteWrapperScrollTop,
   makeSelectVisualSiteWrapperSiteWidth,
-} from '../../containers/VisualSiteWrapper/selectors';
+} from '../VisualSiteWrapper/selectors';
 import Navigation from '../../components/Navigation';
 import getElementTop from '../../utils/getElementTop';
 import injectReducer from '../../utils/injectReducer';

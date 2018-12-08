@@ -10,7 +10,7 @@ import Article from './Article';
 import Image from './Image';
 import Description from './Description';
 
-import SpeechBubble from '../../components/SpeechBubble';
+import SpeechBubble from '../SpeechBubble';
 import { BASE_LINE_HEIGHT } from '../../styles/typography';
 import { theme } from '../../styles/theme';
 

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ProjectsPage /> Expect to render and match the snapshot 1`] = `
-<React.Fragment>
+<Fragment>
   <InjectIntl(HeadGear)
     messages={
       Object {
@@ -93,11 +93,11 @@ exports[`<ProjectsPage /> Expect to render and match the snapshot 1`] = `
       />
     }
   />
-</React.Fragment>
+</Fragment>
 `;
 
 exports[`<ProjectsPage /> details page Should handle case where a non existent details page is requested 1`] = `
-<React.Fragment>
+<Fragment>
   <InjectIntl(HeadGear)
     messages={
       Object {
@@ -189,11 +189,11 @@ exports[`<ProjectsPage /> details page Should handle case where a non existent d
       />
     }
   />
-</React.Fragment>
+</Fragment>
 `;
 
 exports[`<ProjectsPage /> details page Should render the details page when requested 1`] = `
-<React.Fragment>
+<Fragment>
   <InjectIntl(HeadGear)
     messages={
       Object {
@@ -285,11 +285,11 @@ exports[`<ProjectsPage /> details page Should render the details page when reque
       />
     }
   />
-</React.Fragment>
+</Fragment>
 `;
 
 exports[`<ProjectsPage /> fetching content from external source should handle case where no content is received 1`] = `
-<React.Fragment>
+<Fragment>
   <InjectIntl(HeadGear)
     messages={
       Object {
@@ -307,14 +307,13 @@ exports[`<ProjectsPage /> fetching content from external source should handle ca
         },
       }
     }
-    path="blank"
+    path="/"
   />
-  <React.Fragment />
-</React.Fragment>
+</Fragment>
 `;
 
 exports[`<ProjectsPage /> fetching content from external source should show an error message when content could not be loaded 1`] = `
-<React.Fragment>
+<Fragment>
   <InjectIntl(HeadGear)
     messages={
       Object {
@@ -332,11 +331,11 @@ exports[`<ProjectsPage /> fetching content from external source should show an e
         },
       }
     }
-    path="blank"
+    path="/"
   />
   <ContentLoadingIndicator
     show={true}
     showError={true}
   />
-</React.Fragment>
+</Fragment>
 `;
