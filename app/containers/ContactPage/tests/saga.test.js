@@ -41,7 +41,7 @@ describe('sendForm Saga', () => {
     expect(putDescriptor).toEqual(put(sendFormSuccess(successResponse)));
   });
 
-  it('should dispatch the sendFormError action if server side validation failed', () => {
+  it.skip('should dispatch the sendFormError action if server side validation failed', () => {
     const putDescriptor = sendContentGenerator.next(errorResponse).value;
     expect(putDescriptor).toEqual(put(sendFormError(errorResponse.error)));
   });

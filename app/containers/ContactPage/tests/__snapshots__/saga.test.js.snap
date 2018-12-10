@@ -7,7 +7,7 @@ Object {
     "args": Array [
       "/",
       Object {
-        "body": "form-name=contact&field=%5Bobject%20Object%5D",
+        "body": "form-name=contact&title=Test",
         "headers": Object {
           "Content-Type": "application/x-www-form-urlencoded",
         },
