@@ -6,6 +6,6 @@
   "author": "Johan Meester",
   "license": "MIT",
   "devDependencies": {
-    "validator": "10.9.0"
+    "validator": "13.7.0"
   }
 }
