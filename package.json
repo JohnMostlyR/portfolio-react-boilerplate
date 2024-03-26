@@ -64,7 +64,7 @@
     "compression": "1.7.3",
     "connected-react-router": "5.0.1",
     "cross-env": "5.2.0",
-    "express": "4.16.4",
+    "express": "4.19.2",
     "fontfaceobserver": "2.0.13",
     "history": "4.7.2",
     "hoist-non-react-statics": "3.1.0",
