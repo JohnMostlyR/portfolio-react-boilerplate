@@ -7,14 +7,14 @@
 <h1 align="center">My Portfolio Website build with React Boilerplate</h1>
 
 <div align="center">
-  <p><strong>My <a href="https://github.com/Mensae/portfolio-react">original</a> portfolio website rebuild with React</strong></p>
+  <p><strong>My <a href="https://github.com/JohnMostlyR/portfolio-react">original</a> portfolio website rebuild with React</strong></p>
   <!-- Build Status -->
-  <a href="https://travis-ci.org/Mensae/portfolio-react-boilerplate">
-    <img src="https://travis-ci.org/Mensae/portfolio-react-boilerplate.svg" alt="Build Status" />
+  <a href="https://travis-ci.org/JohnMostlyR/portfolio-react-boilerplate">
+    <img src="https://travis-ci.org/JohnMostlyR/portfolio-react-boilerplate.svg" alt="Build Status" />
   </a>
   <!-- Test Coverage -->
-  <a href='https://coveralls.io/github/Mensae/portfolio-react-boilerplate?branch=master'>
-    <img src='https://coveralls.io/repos/github/Mensae/portfolio-react-boilerplate/badge.svg?branch=master' alt='Coverage Status' />
+  <a href='https://coveralls.io/github/JohnMostlyR/portfolio-react-boilerplate?branch=master'>
+    <img src='https://coveralls.io/repos/github/JohnMostlyR/portfolio-react-boilerplate/badge.svg?branch=master' alt='Coverage Status' />
   </a>
 </div>
 
@@ -45,4 +45,3 @@
 - [How to Install and Configure Postfix on Ubuntu 16.04](https://poweruphosting.com/blog/how-to-install-and-configure-postfix-on-ubuntu-16-04-2/)
 - [Running a Production Server](https://react-server.io/docs/guides/production)
 - [OWASP Secure Configuration Guide](https://www.owasp.org/index.php/SCG_WS_nginx)
-
