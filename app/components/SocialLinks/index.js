@@ -28,7 +28,7 @@ class SocialLinks extends React.PureComponent {
       {
         icon: 'github',
         name: 'GitHub',
-        url: 'https://github.com/Mensae',
+        url: 'https://github.com/JohnMostlyR',
       },
       {
         icon: 'linkedin',
