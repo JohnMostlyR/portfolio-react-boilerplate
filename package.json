@@ -166,7 +166,7 @@
     "webpack-cli": "3.3.12",
     "webpack-dev-middleware": "3.4.0",
     "webpack-hot-middleware": "2.26.1",
-    "webpack-pwa-manifest": "3.7.1",
+    "webpack-pwa-manifest": "4.3.0",
     "whatwg-fetch": "3.6.20"
   }
 }
