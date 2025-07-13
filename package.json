@@ -81,7 +81,7 @@
     "prop-types": "15.8.1",
     "react": "16.14.0",
     "react-dom": "16.14.0",
-    "react-helmet": "5.2.0",
+    "react-helmet": "5.2.1",
     "react-intl": "2.7.2",
     "react-redux": "5.1.1",
     "react-router-dom": "4.3.1",
